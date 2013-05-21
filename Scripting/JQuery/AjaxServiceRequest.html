@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+        <script type="text/javascript" src="Jquery/V1.8.2/jquery-1.8.2.js">
+        </script>
+    <script type="text/javascript">
+
+        $.support.cors = true;
+        //$(document).ready(function () {
+        //    $.ajax(
+        //     {
+        //         type: "GET",
+        //         url: "http://localhost:38342/Admin/Services/TestManagerReadOnlyService.svc/ajax/GetTestManagerDetails?TestManagerID=" + "2",
+        //         contentType: "application/json; charset=utf-8",
+        //         dataType: "json",
+        //         async: false,
+        //         //data: JSON.stringify(param),
+        //         success: function (result) {
+        //             $("#lblInfo").append(result.GetTestManagerDetailsResult.TestName);
+        //         },
+        //         error: function (result) {
+        //             tempResult = false;
+        //         }
+        //     }
+        //                )
+        //});
+        var TestQuestionSetRequest = new Object();
+        TestQuestionSetRequest.TestManagerID = 1;
+        TestQuestionSetRequest.Question = "This is 1st Question ";
+        TestQuestionSetRequest.QuestionMark = 1;
+
+        var TestQuestionsAnswerSets = new Array();
+
+        for (var x = 0; x < 4; x++) {
+            TestQuestionsAnswerSet = new Object();
+            TestQuestionsAnswerSet.Answer = "Answer " + x;
+            TestQuestionsAnswerSet.CorrectAnswer = false;
+            TestQuestionsAnswerSets[x] = TestQuestionsAnswerSet;
+        }
+        TestQuestionsAnswerSet = new Object();
+        TestQuestionsAnswerSet.Answer = "Answer 5";
+        TestQuestionsAnswerSet.CorrectAnswer = true;
+        TestQuestionsAnswerSets[4] = TestQuestionsAnswerSet;
+        //var TestQuestionsAnswerSet = new Object();
+        //TestQuestionsAnswerSet.Answer = "Answer 2";
+        //TestQuestionsAnswerSet.CorrectAnswer = false;
+        //TestQuestionSetRequest.TestQuestionAnswerSet = TestQuestionsAnswerSet;
+
+        //TestQuestionsAnswerSet.Answer = "Answer 3";
+        //TestQuestionsAnswerSet.CorrectAnswer = false;
+        //TestQuestionSetRequest.TestQuestionAnswerSet = TestQuestionsAnswerSet;
+        TestQuestionSetRequest.AnswerSet = TestQuestionsAnswerSets;
+        //alert(JSON.stringify(TestQuestionSetRequest));
+
+        $(document).ready(function () {
+            $.ajax(
+             {
+                 type: "GET",
+                 url: "http://localhost:38342/Admin/services/TestManagerReadOnlyService.svc/ajax/GetTestQuestions?TestManagerID=1",
+                 contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                 async: false,
+                 data: JSON.stringify(TestQuestionSetRequest),
+                 success: OnSuccess,
+                 error: function (result) {
+                     tempResult = false;
+                 }
+             }
+                        )
+        });
+        function OnSuccess(result) {
+            var list = "<ul>";
+            $.each(result.GetTestQuestionsResult, function (i, data) {
+                list += "<li>"+data.Questions+"</li>";
+            });
+            list += "</ul>";
+            $("#lblInfo").append(list);
+        }
+    </script>
+
+</head>
+<body>
+
+    <input type="button" id="btn" value="Click" onclick="temp()" />
+    <div id="lblInfo">
+    </div>
+    <!--<div id="panel">
+        <div id="div1">
+                        <textarea id="txtQuestionArea" cols="20" rows="2"></textarea>
+            <input type="radio" id="radio1" value="radio1" checked="checked" />
+        </div>
+        <div id="div2">
+                        <textarea id="Textarea1" cols="20" rows="2"></textarea>
+            <input type="radio" id="radio2" value="radio1" />
+        </div>
+        <div id="div3">
+                        <textarea id="Textarea2" cols="20" rows="2"></textarea>
+            <input type="radio" id="radio3" value="radio1" />
+        </div>
+        <div id="div4">
+                        <textarea id="Textarea3" cols="20" rows="2"></textarea><input type="radio" id="radio4" value="radio1" />
+        </div>
+        <div id="div5">
+            <textarea id="Textarea4" cols="20" rows="2"></textarea>
+            <input type="radio" id="radio5" value="radio1" />
+        </div>
+    </div>-->
+
+    <div id="result">
+        <input type="button" id="btn1" value="click"  />
+    </div>
+    <script type="text/javascript">
+        //var arr = new Array();
+        //for (var x = 0; x < 5; x++) {
+        //    var idr = new Object();
+        //    idr.TextID = "text" + x;
+        //    idr.RadioID = "radio" + x;
+        //    arr[x] = idr;
+        //}
+
+        //$("#btn1").click(function () {
+        //    $.each(arr, function (i, item) {
+
+        //        if ($("#" + item.RadioID).attr('checked') == 'checked') {
+        //            alert(true);
+        //        }
+        //        if ($("#" + item.TextID).val() != undefined) {
+        //            $("#result").append($("#" + item.TextID).val() + "||");
+        //        }
+        //    });
+        //});
+
+        //$("#btn1").click(function () {
+        //    $("#panel div").each(function () {
+
+        //        $("#" + this.id + " textarea").each(function () {
+        //            alert($(this).val());
+        //        });
+
+        //        $("#" + this.id + " input[type=radio]").each(function () {
+        //            alert($(this).val());
+        //        });
+
+        //    });
+        //});
+
+            //function btn1Click() {
+            //    $.each(arr, function (i, item) {
+            //        $("#result").append($("#" + item.TextID).val()));
+            //    })
+            //}
+    </script>
+</body>
+</html>

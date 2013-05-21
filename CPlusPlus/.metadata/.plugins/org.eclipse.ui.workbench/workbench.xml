@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="37" version="2.0">
+<workbenchAdvisor/>
+<window height="768" maximized="true" width="1024" x="110" y="102">
+<fastViewData fastViewLocation="1024"/>
+<intro standby="true"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="154" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="161" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="85" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="124" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="98" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="109" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="185" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1349769686964" focus="true" label="Workspace - C/C++">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Calculator.cpp" partName="Calculator.cpp" path="D:/MyPractices/CPlusPlus/Calculator/src/Calculator.cpp" title="Calculator.cpp" tooltip="Calculator/src/Calculator.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Calculator/src/Calculator.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="803" selectionTopPixel="329"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Calculator.h" partName="Calculator.h" path="D:/MyPractices/CPlusPlus/Calculator/src/Headers/Calculator.h" title="Calculator.h" tooltip="Calculator/src/Headers/Calculator.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Calculator/src/Headers/Calculator.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="213" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Person.h" partName="Person.h" path="D:/MyPractices/CPlusPlus/Calculator/src/Headers/Person.h" title="Person.h" tooltip="Calculator/src/Headers/Person.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Calculator/src/Headers/Person.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="671" selectionTopPixel="480"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Person.cpp" partName="Person.cpp" path="D:/MyPractices/CPlusPlus/Calculator/src/Person.cpp" title="Person.cpp" tooltip="Calculator/src/Person.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Calculator/src/Person.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="319" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="strSample.cpp" partName="strSample.cpp" path="D:/MyPractices/CPlusPlus/stringSamples/src/strSample.cpp" title="strSample.cpp" tooltip="stringSamples/src/strSample.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stringSamples/src/strSample.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="135" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.cdt.ui.typeHierarchy" partName="Type Hierarchy">
+<viewState filterFields="false" filterNonPublic="false" filterStatic="false" showFilesInLabels="false" showInheritedMembers="false" splitterWeight1="350" splitterWeight2="650" viewOrientation="0"/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.debug.ui.executablesView" partName="Executables"/>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="250" org.eclipse.ui.ide.locationField="75" org.eclipse.ui.ide.markerType="75" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.priorityField="25" org.eclipse.ui.ide.resourceField="75"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors (2 items)"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="75" org.eclipse.ui.ide.markerType="75" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.resourceField="75" org.eclipse.ui.ide.severityAndDescriptionField="250"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.internal.introview" partName="Welcome">
+<viewState>
+<presentation currentPage="root" restore="true"/>
+<standbyPart/>
+</viewState>
+</view>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
+</views>
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.SearchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.buildConfigActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.NavigationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.OpenActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.cdt.codan.internal.ui.views.ProblemDetails"/>
+<show_view_action id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.cdt.ui.includeBrowser"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.ConvertToMakeWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewMakeFromExisting"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewCWizard1"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewCWizard2"/>
+<new_wizard_action id="org.eclipse.linuxtools.cdt.autotools.ui.wizards.conversionWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewHeaderFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.mylyn.tasks.ui.wizards.new.repository.task"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.cdt.ui.typeHierarchy"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@191e466" orientation="256" selectedTabId="org.eclipse.ui.internal.introview" style="0">
+<fastViews>
+<view id="org.eclipse.ui.internal.introview" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@191e466" ratio="0.75" ratioLeft="756" ratioRight="252" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="252" ratioRight="756" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.69451696" ratioLeft="532" ratioRight="234" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.cdt.ui.typeHierarchy" label="Type Hierarchy"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.75" ratioLeft="567" ratioRight="189" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.cdt.make.ui.views.MakeView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.SignalsView"/>
+<show_view_action id="org.eclipse.debug.ui.RegisterView"/>
+<show_view_action id="org.eclipse.debug.ui.ModuleView"/>
+<show_view_action id="org.eclipse.debug.ui.MemoryView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.executablesView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser"/>
+<show_view_action id="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view"/>
+<show_view_action id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<perspective_action id="org.eclipse.cdt.ui.CPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.cdt.debug.ui.executablesView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.internal.introview"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@f352a8" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7490247" ratioLeft="576" ratioRight="193" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.4496528" ratioLeft="259" ratioRight="317" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="716" ratioRight="716" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Calculator/src/Calculator.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Calculator/src/Headers/Person.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Calculator/src/Person.cpp"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="C:\MinGW\include\string.h" project="Calculator"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stringSamples/src/strSample.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/HelloWorldUI/HelloWorldUIMessageBox.cpp"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="C:\MinGW\include\windows.h" project="HelloWorldUI"/>
+</editors>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="950" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="647" y="0"/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position info="not_deleted" x="1016" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="767" y="0"/>
+</item>
+<item historyLabel="Person.h" index="1">
+<position info="not_deleted" x="495" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="767" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="979" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="40" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position/>
+</item>
+<item historyLabel="string.h" index="3">
+<position info="not_deleted" x="1476" y="6"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position info="not_deleted" x="1016" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="453" y="0"/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position info="not_deleted" x="1016" y="0"/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position info="not_deleted" x="948" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="453" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="429" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="374" y="0"/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position info="not_deleted" x="948" y="0"/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="427" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="394" y="0"/>
+</item>
+<item historyLabel="Person.h" index="1">
+<position info="not_deleted" x="671" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="430" y="0"/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position info="not_deleted" x="1043" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="899" y="0"/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position info="not_deleted" x="949" y="0"/>
+</item>
+<item historyLabel="Person.cpp" index="2">
+<position info="not_deleted" x="319" y="0"/>
+</item>
+<item historyLabel="Calculator.cpp" index="0">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="strSample.cpp" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="strSample.cpp" index="4">
+<position info="not_deleted" x="101" y="0"/>
+</item>
+<item historyLabel="strSample.cpp" index="4">
+<position info="not_deleted" x="274" y="0"/>
+</item>
+<item historyLabel="strSample.cpp" index="4">
+<position info="not_deleted" x="135" y="0"/>
+</item>
+<item historyLabel="HelloWorldUIMessageBox.cpp" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="HelloWorldUIMessageBox.cpp" index="5">
+<position/>
+</item>
+<item historyLabel="windows.h" index="6">
+<position info="not_deleted" x="353" y="0"/>
+</item>
+<item historyLabel="HelloWorldUIMessageBox.cpp" index="5">
+<position/>
+</item>
+<item historyLabel="HelloWorldUIMessageBox.cpp" index="5">
+<position/>
+</item>
+<item active="true" historyLabel="strSample.cpp" index="4">
+<position info="not_deleted" x="135" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="topRight"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+<trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@191e466"/>
+<trimItem IMemento.internal.id="bottom"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="windows.h" tooltip="C:\MinGW\include\windows.h">
+<persistable path="C:\MinGW\include\windows.h" project="HelloWorldUI"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="HelloWorldUIMessageBox.cpp" tooltip="HelloWorldUI/HelloWorldUIMessageBox.cpp">
+<persistable path="/HelloWorldUI/HelloWorldUIMessageBox.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="strSample.cpp" tooltip="stringSamples/src/strSample.cpp">
+<persistable path="/stringSamples/src/strSample.cpp"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="string.h" tooltip="C:\MinGW\include\string.h">
+<persistable path="C:\MinGW\include\string.h" project="Calculator"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Person.cpp" tooltip="Calculator/src/Person.cpp">
+<persistable path="/Calculator/src/Person.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Person.h" tooltip="Calculator/src/Headers/Person.h">
+<persistable path="/Calculator/src/Headers/Person.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Calculator.h" tooltip="Calculator/src/Headers/Calculator.h">
+<persistable path="/Calculator/src/Headers/Calculator.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Calculator.cpp" tooltip="Calculator/src/Calculator.cpp">
+<persistable path="/Calculator/src/Calculator.cpp"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="winsock2.h" tooltip="C:\MinGW\include\winsock2.h">
+<persistable path="C:\MinGW\include\winsock2.h" project="SocketServer"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Server.cpp" tooltip="SocketServer/Server.cpp">
+<persistable path="/SocketServer/Server.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Defs.cpp" tooltip="DefinedMethods/Defs.cpp">
+<persistable path="/DefinedMethods/Defs.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="iostream" tooltip="D:\MinGW\include\c++\3.4.5\iostream">
+<persistable uri="file:/D:/MinGW/include/c++/3.4.5/iostream"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Defined.cpp" tooltip="DefinedMethods/Defined.cpp">
+<persistable path="/DefinedMethods/Defined.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Defs.h" tooltip="DefinedMethods/Defs.h">
+<persistable path="/DefinedMethods/Defs.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="winuser.h" tooltip="D:\MinGW\include\winuser.h">
+<persistable path="D:\MinGW\include\winuser.h" project="PointerProject"/>
+</file>
+</mruList>
+</workbench>

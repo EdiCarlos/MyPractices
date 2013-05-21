@@ -1,0 +1,13 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+char name = 'a';
+printf("this is aplhabet %c", name);
+getch();
+
+}

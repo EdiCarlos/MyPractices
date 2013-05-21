@@ -1,0 +1,10 @@
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\bin\Debug\UseOfLoginControl.exe
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\bin\Debug\UseOfLoginControl.pdb
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\bin\Debug\MyButton.dll
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\bin\Debug\MyButton.pdb
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\obj\Debug\UseOfLoginControl.Form1.resources
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\obj\Debug\UseOfLoginControl.Properties.Resources.resources
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\obj\Debug\UseOfLoginControl.csproj.GenerateResource.Cache
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\obj\Debug\UseOfLoginControl.exe
+D:\temp\VisualC#\ButtonInherit\UseOfLoginControl\UseOfLoginControl\obj\Debug\UseOfLoginControl.pdb

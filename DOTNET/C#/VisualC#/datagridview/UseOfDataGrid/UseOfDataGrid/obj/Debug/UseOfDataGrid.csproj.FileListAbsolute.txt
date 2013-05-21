@@ -1,0 +1,9 @@
+D:\temp\VisualC#\datagridview\UseOfDataGrid\UseOfDataGrid\bin\Debug\UseOfDataGrid.exe.config
+D:\temp\VisualC#\datagridview\UseOfDataGrid\UseOfDataGrid\bin\Debug\UseOfDataGrid.exe
+D:\temp\VisualC#\datagridview\UseOfDataGrid\UseOfDataGrid\bin\Debug\UseOfDataGrid.pdb
+D:\temp\VisualC#\datagridview\UseOfDataGrid\UseOfDataGrid\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\datagridview\UseOfDataGrid\UseOfDataGrid\obj\Debug\UseOfDataGrid.Form1.resources
+D:\temp\VisualC#\datagridview\UseOfDataGrid\UseOfDataGrid\obj\Debug\UseOfDataGrid.Properties.Resources.resources
+D:\temp\VisualC#\datagridview\UseOfDataGrid\UseOfDataGrid\obj\Debug\UseOfDataGrid.csproj.GenerateResource.Cache
+D:\temp\VisualC#\datagridview\UseOfDataGrid\UseOfDataGrid\obj\Debug\UseOfDataGrid.exe
+D:\temp\VisualC#\datagridview\UseOfDataGrid\UseOfDataGrid\obj\Debug\UseOfDataGrid.pdb

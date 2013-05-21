@@ -1,0 +1,49 @@
+AddSet Home
+AddPhoto Dinner.jpg
+AddSet Pets Going down another level
+AddPhoto Dog.jpg
+AddPhoto Cat.jpg
+Find Album Ensures Garden is at same level as Home
+AddSet Garden
+AddPhoto Spring.jpg
+AddPhoto Summer.jpg
+AddPhoto Flowers.jpg
+AddPhoto Trees.jpg
+Display Returns to start of Album
+Set Album length :2
+--Set Home length :2
+----Dinner.jpg
+----Set Pets length :2
+------Dog.jpg
+------Cat.jpg
+--Set Garden length :4
+----Spring.jpg
+----Summer.jpg
+----Flowers.jpg
+----Trees.jpg
+Remove Flowers.jpg Will remain at Garden
+AddPhoto BetterFlowers.jpg To end of Garden
+Display
+Set Album length :2
+--Set Home length :2
+----Dinner.jpg
+----Set Pets length :2
+------Dog.jpg
+------Cat.jpg
+--Set Garden length :4
+----Spring.jpg
+----Summer.jpg
+----Trees.jpg
+----BetterFlowers.jpg
+Find Home
+Remove Pets
+Display
+Set Album length :2
+--Set Home length :1
+----Dinner.jpg
+--Set Garden length :4
+----Spring.jpg
+----Summer.jpg
+----Trees.jpg
+----BetterFlowers.jpg
+Quit

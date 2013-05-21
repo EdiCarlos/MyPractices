@@ -1,0 +1,68 @@
+<Sequence mc:Ignorable="sads sap" sap:VirtualizedContainerService.HintSize="271.2,606.4" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mssa="clr-namespace:Microsoft.Samples.SqlServer.Activities;assembly=Microsoft.Samples.SqlServer.Activities"
+ xmlns:mssaa="clr-namespace:Microsoft.Samples.SqlServer.Activities.ActivityPublishers;assembly=Microsoft.Samples.SqlServer.Activities"
+ xmlns:mssado="clr-namespace:Microsoft.Samples.SqlServer.Activities.Designers.OData;assembly=Microsoft.Samples.SqlServer.Activities"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:s1="clr-namespace:System;assembly=System.Core"
+ xmlns:s2="clr-namespace:System;assembly=System"
+ xmlns:s3="clr-namespace:System;assembly=System.ServiceModel"
+ xmlns:s4="clr-namespace:System;assembly=System.ComponentModel.Composition"
+ xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence.Variables>
+    <x:Reference>__ReferenceID0</x:Reference>
+  </Sequence.Variables>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <mssa:QueryFeed ServiceQueryString="{x:Null}" Skip="{x:Null}" Top="{x:Null}" sap:VirtualizedContainerService.HintSize="248.8,289.6" Resource="ProductCatalog" Uri="http://services.odata.org/AdventureWorksV3/AdventureWorks.svc">
+    <mssa:QueryFeed.EntityProperties>
+      <OutArgument x:TypeArguments="scg:IEnumerable(scg:IEnumerable(mssado:EntityProperty))">
+        <VariableReference x:TypeArguments="scg:IEnumerable(scg:IEnumerable(mssado:EntityProperty))">
+          <VariableReference.Variable>
+            <Variable x:TypeArguments="scg:IEnumerable(scg:IEnumerable(mssado:EntityProperty))" x:Name="__ReferenceID0" Name="EntityProperties" />
+          </VariableReference.Variable>
+        </VariableReference>
+      </OutArgument>
+    </mssa:QueryFeed.EntityProperties>
+    <mssa:QueryFeed.FilterActivities>
+      <mssa:Filter ComparisonOperator="Eq" sap:VirtualizedContainerService.HintSize="232,51.2" LogicalOperator="End" Name="CultureID" Value="&quot;en&quot;">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </mssa:Filter>
+    </mssa:QueryFeed.FilterActivities>
+    <mssa:QueryFeed.NamedResources>
+      <scg:List x:TypeArguments="x:String" Capacity="4">
+        <x:String>ThumbNailPhoto</x:String>
+      </scg:List>
+    </mssa:QueryFeed.NamedResources>
+    <mssa:QueryFeed.OrderBy>
+      <scg:List x:TypeArguments="x:String" Capacity="0" />
+    </mssa:QueryFeed.OrderBy>
+    <mssa:QueryFeed.SelectProperties>
+      <scg:List x:TypeArguments="x:String" Capacity="4">
+        <x:String>ThumbNailPhoto</x:String>
+        <x:String>LargePhoto</x:String>
+        <x:String>ProductID</x:String>
+        <x:String>Description</x:String>
+      </scg:List>
+    </mssa:QueryFeed.SelectProperties>
+  </mssa:QueryFeed>
+  <mssa:EntityProperties DocumentPart="{x:Null}" sap:VirtualizedContainerService.HintSize="248.8,152" Properties="[EntityProperties]">
+    <mssa:EntityProperties.DocumentPartActivity>
+      <mssaa:TablePartPublisher sap:VirtualizedContainerService.HintSize="206.4,82.4" Resource="ThumbNailPhoto" StyleName="Medium List 2 - Accent 5" />
+    </mssa:EntityProperties.DocumentPartActivity>
+  </mssa:EntityProperties>
+</Sequence>

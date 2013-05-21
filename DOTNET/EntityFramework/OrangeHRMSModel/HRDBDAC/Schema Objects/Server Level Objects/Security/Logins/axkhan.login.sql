@@ -1,0 +1,4 @@
+﻿CREATE LOGIN [axkhan]
+    WITH PASSWORD = N'aabwp#ua<sueeIXphjczzj KmsFT7_&#$!~<plZfdkdcUiaf', SID = 0x81BC3B4D6FB6934693A856580AC3B03A, DEFAULT_DATABASE = [master], DEFAULT_LANGUAGE = [us_english], CHECK_EXPIRATION = ON;
+
+

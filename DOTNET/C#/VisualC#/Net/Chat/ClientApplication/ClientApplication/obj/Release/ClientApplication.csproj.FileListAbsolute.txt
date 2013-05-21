@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\bin\Release\ClientApplication.exe
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\bin\Release\ClientApplication.pdb
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\obj\Release\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\obj\Release\ClientApplication.exe
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\obj\Release\ClientApplication.pdb

@@ -1,0 +1,10 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\Security\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\Security\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Configuration.DesignResources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\Security\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Configuration.Manageability.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\Security\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\Security\obj\Debug\Security.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\Security\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\Security\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.pdb

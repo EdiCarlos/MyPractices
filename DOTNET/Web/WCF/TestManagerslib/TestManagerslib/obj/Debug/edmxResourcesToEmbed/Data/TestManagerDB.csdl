@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="TestManagerDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="TestManagerDBContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TestManagers" EntityType="TestManagerDB.TestManager" />
+    <FunctionImport Name="InsertTestManager">
+      <Parameter Name="testName" Mode="In" Type="String" />
+      <Parameter Name="description" Mode="In" Type="String" />
+      <Parameter Name="numberOfQuestion" Mode="In" Type="Int32" />
+      <Parameter Name="passPercentage" Mode="In" Type="Decimal" />
+      <Parameter Name="totalMarks" Mode="In" Type="Int32" />
+      <Parameter Name="gradeId" Mode="In" Type="Int32" />
+      <Parameter Name="testDuration" Mode="In" Type="Int32" />
+      <Parameter Name="passMark" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="TestManager">
+    <Key>
+      <PropertyRef Name="TestManagerID" />
+    </Key>
+    <Property Type="Int32" Name="TestManagerID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TestName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TestDescription" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="NumberOfQuestions" />
+    <Property Type="Decimal" Name="PassPercentage" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="TotalMarks" />
+    <Property Type="Int32" Name="GradeTypeID" />
+    <Property Type="Int32" Name="TestDuration" />
+    <Property Type="Int32" Name="PassingMark" />
+  </EntityType>
+</Schema>

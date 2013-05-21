@@ -1,0 +1,7 @@
+D:\temp\VisualC#\Events\CustomEventExample\CustomEventExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Events\CustomEventExample\CustomEventExample\obj\Debug\CustomEventExample.Properties.Resources.resources
+D:\temp\VisualC#\Events\CustomEventExample\CustomEventExample\obj\Debug\CustomEventExample.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Events\CustomEventExample\CustomEventExample\bin\Debug\CustomEventExample.exe
+D:\temp\VisualC#\Events\CustomEventExample\CustomEventExample\bin\Debug\CustomEventExample.pdb
+D:\temp\VisualC#\Events\CustomEventExample\CustomEventExample\obj\Debug\CustomEventExample.exe
+D:\temp\VisualC#\Events\CustomEventExample\CustomEventExample\obj\Debug\CustomEventExample.pdb

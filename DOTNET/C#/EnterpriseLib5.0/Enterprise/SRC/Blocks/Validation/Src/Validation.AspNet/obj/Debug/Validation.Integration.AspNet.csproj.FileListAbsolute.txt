@@ -1,0 +1,8 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.AspNet\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.AspNet\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.AspNet\obj\Debug\Validation.Integration.AspNet.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.AspNet\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.AspNet\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.pdb

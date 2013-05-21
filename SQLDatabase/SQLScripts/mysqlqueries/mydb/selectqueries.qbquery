@@ -1,0 +1,25 @@
+﻿create database mydb2;
+
+create table temp1
+(
+id int auto_increment primary key,
+fname varchar(30) not null,
+lname varchar(30) not null,
+mname varchar(30) not null,
+fulltext(fname)
+)engine=myisam;
+
+select * from temp1;
+
+insert into temp1(fname, lname, mname) values('arif', 'khan', 'hasan');
+
+delimiter $$
+create procedure inserttemp1(in fname varchar(20), in lname  varchar(20),in mname varchar(30))
+begin
+insert into temp1(fname, lname, mname) values(fname, lname, mname);
+select * from temp1;
+end;
+$$
+delimiter;
+
+call inserttemp1('afreen', 'khan', 'hasan');

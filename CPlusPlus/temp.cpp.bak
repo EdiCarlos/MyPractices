@@ -1,0 +1,16 @@
+#include <iostream>
+#include <typeinfo>
+using namespace std;
+
+class myclass
+{
+};
+
+int main()
+{
+	myclass c1, c2;
+	cout<<typeid(c1).name()<<endl;
+	cout<<typeid(c2).name()<<endl;
+	
+	return 0;
+}

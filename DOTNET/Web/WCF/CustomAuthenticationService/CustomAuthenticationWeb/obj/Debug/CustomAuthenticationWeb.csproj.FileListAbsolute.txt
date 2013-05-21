@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationWeb\bin\CustomAuthenticationWeb.dll
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationWeb\bin\CustomAuthenticationWeb.pdb
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationWeb\obj\Debug\CustomAuthenticationWeb.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationWeb\obj\Debug\CustomAuthenticationWeb.dll
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationWeb\obj\Debug\CustomAuthenticationWeb.pdb

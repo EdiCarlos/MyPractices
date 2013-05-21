@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Microsoft.Samples.SqlServer.Activities.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServiceUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:1234/AdventureWorks.svc</Value>
+    </Setting>
+    <Setting Name="ServiceUrl_Live" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://services.odata.org/AdventureWorksV3/AdventureWorks.svc</Value>
+    </Setting>
+    <Setting Name="ServiceUrl_LocalHost1234" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:1234/AdventureWorks.svc</Value>
+    </Setting>
+    <Setting Name="SelectIcons" Type="System.String" Scope="User">
+      <Value Profile="(Default)">file://C:\Projects\Microsoft.Samples.SqlServer.OData\Common\Activities\Designers\OData\</Value>
+    </Setting>
+    <Setting Name="ServiceUrl_LocalHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost/AdventureWorks_ODataService/AdventureWorks.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,42 @@
+﻿@model List<MyBlog.Models.Post>
+@{
+    ViewBag.Title = ViewData["blogtitle"];
+}
+
+<h2>@ViewBag.Message</h2>
+
+@if (Model != null)
+{
+    foreach (MyBlog.Models.Post post in Model)
+    {
+    <div class="blogcontainer">
+        <div id="sideContainer">
+            <ul id="blogList">
+                <li>UserName: @post.Name</li>
+                <li>Email: @post.Email</li>
+            </ul>
+        </div>
+        <div>
+            <p style="padding-left: 20px;">
+                @post.BlogPost
+            </p>
+        </div>
+        <div>
+            <div style="">
+                @using(Html.BeginForm("DeletePost", "Post", new { blogId = post.BlogId, blogtitle = ViewData["blogtitle"], postId = post.PostId }, FormMethod.Post))
+                {
+                    <input type="submit" value="Delete" />
+                }
+            </div>
+            <label>Date : @post.PostDate</label>
+        </div>
+    </div>
+   
+    }
+       
+    @Html.Partial("_AddPost", ViewData.Model.Select(e => e).First(), ViewData)
+}
+else
+{
+    @Html.Partial("_AddPost", ViewData)
+}

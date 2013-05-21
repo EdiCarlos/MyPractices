@@ -1,0 +1,13 @@
+
+comp = "."
+
+Set objtime = CreateObject("WbemScripting.SWbemDateTime")
+
+Set objwmiservice = GetObject("winmgmts:\\"&comp&"\root\cimv2")
+
+Set objquery = objwmiservice.ExecQuery("select * from Win32_OperatingSystem")
+For Each strobjs in objquery
+   objtime.Value = strobjs.InstallDate
+   Wscript.Echo installdate.GetVarDate
+  Next
+   

@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Events\EventDictionary\EventDictionary\bin\Debug\EventDictionary.exe
+D:\temp\VisualC#\Events\EventDictionary\EventDictionary\bin\Debug\EventDictionary.pdb
+D:\temp\VisualC#\Events\EventDictionary\EventDictionary\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Events\EventDictionary\EventDictionary\obj\Debug\EventDictionary.exe
+D:\temp\VisualC#\Events\EventDictionary\EventDictionary\obj\Debug\EventDictionary.pdb

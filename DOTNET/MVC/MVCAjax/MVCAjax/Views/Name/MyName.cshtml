@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "MyName";
+}
+
+<h2>MyName</h2>
+
+
+<div id="fullName">
+@Ajax.ActionLink("Show Full Name", "FullName", new AjaxOptions {
+    UpdateTargetId = "fullName",
+InsertionMode = InsertionMode.Replace,
+HttpMethod="GET"
+})
+</div>

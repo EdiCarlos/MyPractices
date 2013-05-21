@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\WCF\httpSample\httpSample\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\WCF\httpSample\httpSample\bin\httpSample.dll
+D:\MyPractices\DOTNET\WCF\httpSample\httpSample\bin\httpSample.pdb
+D:\MyPractices\DOTNET\WCF\httpSample\httpSample\obj\Debug\httpSample.dll
+D:\MyPractices\DOTNET\WCF\httpSample\httpSample\obj\Debug\httpSample.pdb

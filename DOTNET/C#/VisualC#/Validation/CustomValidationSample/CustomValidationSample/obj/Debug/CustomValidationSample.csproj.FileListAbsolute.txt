@@ -1,0 +1,12 @@
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\obj\Debug\CustomValidationSample.Properties.Resources.resources
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\obj\Debug\CustomValidationSample.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\bin\Debug\CustomValidationSample.exe
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\bin\Debug\CustomValidationSample.pdb
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\obj\Debug\CustomValidationSample.exe
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\obj\Debug\CustomValidationSample.pdb
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\obj\Debug\CustomValidationSample.Form1.resources
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\obj\Debug\CustomValidationSample.CustomValidation.resources
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\obj\Debug\CustomValidationSample.MyRequiredFieldValidator.resources
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\bin\Debug\CustomErrorProvider.dll
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomValidationSample\bin\Debug\CustomErrorProvider.pdb

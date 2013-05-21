@@ -1,0 +1,10 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Common\Src\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Common\Src\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.Configuration.DesignResources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Common\Src\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Manageability.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Common\Src\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Common\Src\obj\Debug\Common.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Common\Src\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Common\Src\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb

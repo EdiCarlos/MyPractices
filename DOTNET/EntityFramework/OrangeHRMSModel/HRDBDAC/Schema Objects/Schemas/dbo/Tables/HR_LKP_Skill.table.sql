@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[HR_LKP_Skill](
+	[SkillID] [int] IDENTITY(1,1) NOT NULL,
+	[SkillName] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[SkillDescritpion] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+ CONSTRAINT [PK_HR_LKP_Skill] PRIMARY KEY CLUSTERED 
+(
+	[SkillID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON)
+)
+
+

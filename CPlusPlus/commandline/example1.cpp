@@ -1,0 +1,38 @@
+#include <iostream> 
+using namespace std; 
+
+int showargs(int argc, char* argv[])
+{
+	  for(int i = 1; i < argc; i++) { 
+    cout << argv[i] << "\n"; 
+  } 
+
+
+try
+{
+	
+if(argc[10])
+{
+	throw argc[10];
+}
+}
+catch(char* i)
+{
+	cout<<i<<" exception code"<<endl;
+}
+
+} 
+
+int main(int argc, char *argv[]) 
+{ 
+ 
+   try
+  {
+  	showargs(argc, argv);
+  }
+  catch(int i)
+  {
+  	cout<<i<<endl;
+  }
+  return 0; 
+}

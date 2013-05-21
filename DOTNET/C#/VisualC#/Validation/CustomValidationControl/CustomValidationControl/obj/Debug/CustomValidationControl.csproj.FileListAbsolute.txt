@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Validation\CustomValidationControl\CustomValidationControl\bin\Debug\CustomValidationControl.dll
+D:\temp\VisualC#\Validation\CustomValidationControl\CustomValidationControl\bin\Debug\CustomValidationControl.pdb
+D:\temp\VisualC#\Validation\CustomValidationControl\CustomValidationControl\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Validation\CustomValidationControl\CustomValidationControl\obj\Debug\CustomValidationControl.dll
+D:\temp\VisualC#\Validation\CustomValidationControl\CustomValidationControl\obj\Debug\CustomValidationControl.pdb

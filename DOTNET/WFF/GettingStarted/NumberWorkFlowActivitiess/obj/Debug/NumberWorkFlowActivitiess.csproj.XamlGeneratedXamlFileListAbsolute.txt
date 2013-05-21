@@ -1,0 +1,3 @@
+obj\Debug\Prompt.g.xaml
+obj\Debug\FlowchartNumberGuessWorkflow.g.xaml
+obj\Debug\SequentialNumberGuessWorkflow.g.xaml

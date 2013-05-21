@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseSoapReverserExtension", "http://localhost/ExerciseSoapReverserExtension/ExerciseSoapReverserExtension.csproj", "{F801E054-CFC2-44E6-A473-8C4B2BCCAC7C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F801E054-CFC2-44E6-A473-8C4B2BCCAC7C}.Debug.ActiveCfg = Debug|.NET
+		{F801E054-CFC2-44E6-A473-8C4B2BCCAC7C}.Debug.Build.0 = Debug|.NET
+		{F801E054-CFC2-44E6-A473-8C4B2BCCAC7C}.Release.ActiveCfg = Release|.NET
+		{F801E054-CFC2-44E6-A473-8C4B2BCCAC7C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

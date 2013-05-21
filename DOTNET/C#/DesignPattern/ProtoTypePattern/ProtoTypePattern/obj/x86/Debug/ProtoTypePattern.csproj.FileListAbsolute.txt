@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\DesignPattern\ProtoTypePattern\ProtoTypePattern\bin\Debug\ProtoTypePattern.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\ProtoTypePattern\ProtoTypePattern\bin\Debug\ProtoTypePattern.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\ProtoTypePattern\ProtoTypePattern\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\DesignPattern\ProtoTypePattern\ProtoTypePattern\obj\x86\Debug\ProtoTypePattern.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\ProtoTypePattern\ProtoTypePattern\obj\x86\Debug\ProtoTypePattern.pdb

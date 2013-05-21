@@ -1,0 +1,43 @@
+﻿@model List<MyBlog.Models.Blog>
+@{
+    ViewBag.Title = "ShowAllBlogs";
+}
+
+<h2>ShowAllBlogs</h2>
+<div style="float: right; margin-right: 200px; margin-top: -20px; font-weight: bold; text-decoration: none;">
+    @Html.ActionLink("Add Blog", "AddBlog", "Blog")
+</div>
+@{
+    if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+    <label style="color: red; font-weight: bold;">ViewBag.ErrorMessage;</label>
+    }   
+}
+<div style="width: inherit;">
+    <ul>
+
+        @foreach (MyBlog.Models.Blog blog in Model)
+        {
+            <li style="width: inherit;">
+                <div style="width: 800px; height: 100px; border: 1px inset gray; margin-top: 5px;">
+                    <div style="float: left; height: inherit;">
+                        <h5 style="vertical-align: top;">
+                            @Html.ActionLink(blog.Title, "GetAllPost", "Post", new { blogId = blog.BlogId, title = blog.Title }, null)</h5>
+
+                        <p>
+                            @blog.Description
+                        </p>
+                    </div>
+                    <div style="float: right;">
+                        @using (Html.BeginForm("DeleteBlog", "Blog", new { blogId = blog.BlogId }, FormMethod.Post))
+                        {
+                            <input type="submit" value="Delete Blog" />
+
+                        }
+                        <p>Creation Date: @blog.CreationDate.ToShortDateString()</p>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

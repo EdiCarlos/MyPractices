@@ -1,0 +1,6 @@
+D:\temp\VisualC#\dateTime\dateTime\bin\Debug\dateTime.exe
+D:\temp\VisualC#\dateTime\dateTime\bin\Debug\dateTime.pdb
+D:\temp\VisualC#\dateTime\dateTime\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\dateTime\dateTime\obj\Debug\dateTime.exe
+D:\temp\VisualC#\dateTime\dateTime\obj\Debug\dateTime.pdb
+D:\temp\VisualC#\dateTime\dateTime\bin\Debug\dateTime.exe.config

@@ -1,0 +1,15 @@
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\TestManagerService.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\TestManagerService.pdb
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\TestManagerslib.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\EntityFramework.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\TestManagerslib.pdb
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\EntityFramework.xml
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\obj\Debug\TestManagerService.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\obj\Debug\TestManagerService.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\obj\Debug\TestManagerService.pdb
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\Test.Manager.MembershipProvider.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\Test.Manager.ProviderData.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\Test.Manager.MembershipProvider.pdb
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\Test.Manager.ProviderData.pdb
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\Test.Manager.Provider.RoleProvider.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerService\bin\Test.Manager.Provider.RoleProvider.pdb

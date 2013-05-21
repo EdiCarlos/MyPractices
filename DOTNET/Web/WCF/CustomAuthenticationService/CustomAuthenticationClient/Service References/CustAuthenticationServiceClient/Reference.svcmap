@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e364b6d-2f0e-4c73-b0e2-d770347af87f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1556/ICustomAuthenticationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ICustomAuthenticationService.xsd" MetadataType="Schema" ID="ed9b2830-f1c8-4627-a1d8-b01ba447259f" SourceId="1" SourceUrl="http://localhost:1556/ICustomAuthenticationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ICustomAuthenticationService.disco" MetadataType="Disco" ID="00700b7c-162e-479b-abb0-55ff38e1fec8" SourceId="1" SourceUrl="http://localhost:1556/ICustomAuthenticationService.svc?disco" />
+    <MetadataFile FileName="CustAuthenticationService.wsdl" MetadataType="Wsdl" ID="893a36a4-b934-44b4-8abb-67d9291606c9" SourceId="1" SourceUrl="http://localhost:1556/ICustomAuthenticationService.svc?wsdl" />
+    <MetadataFile FileName="ICustomAuthenticationService1.xsd" MetadataType="Schema" ID="d481f1eb-118e-4d0d-bb30-4b2df80fbf16" SourceId="1" SourceUrl="http://localhost:1556/ICustomAuthenticationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ICustomAuthenticationService2.xsd" MetadataType="Schema" ID="50dbeb89-d9fa-4206-b3fe-a6c724defaaa" SourceId="1" SourceUrl="http://localhost:1556/ICustomAuthenticationService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

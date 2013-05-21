@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+
+    <script type="text/javascript">
+    </script>
+
+</head>
+<body onload="onChange()">
+
+ 
+
+    <span id="sp1" style="display: block;">
+        <select id="Select1" name="D1">
+            <option id="val1">Custom</option>
+            <option id="Option1">Custom1</option>
+            <option id="Option2">Custom2</option>
+            <option id="Option3">Custom3</option>
+        </select>
+    </span>
+
+    <script type="text/javascript">
+
+        function onChange()
+        {
+        try{
+        myAlert();
+        }
+        catch(err)
+        {
+        alert(err.description);
+        }
+        }
+
+    </script>
+  
+    <span id="sp1">
+        <select id="Select2" name="D2">
+            <option id="val2">Custom</option>
+            <option id="Option4">Custom1</option>
+            <option id="Option5">Custom2</option>
+            <option id="Option6">Custom3</option>
+        </select>
+    </span>
+     <script type="text/javascript">
+            function myAlert()
+            {
+            alert("hello world");
+            }
+    </script>
+    
+ <script type="text/javascript">
+
+var reportType = document.getElementById("ReportType");
+var cmb = reportType.getElementsByTagName("SELECT")[0];
+
+cmb.onchange = cmbItemSelected;
+
+function cmbItemSelected()
+{
+var dateType = document.getElementById("dateType");
+var date = dateType.getElementsByTagName("SELECT")[0];
+var curdate = new Date();
+
+if(cmb.selectedIndex == 4) //if accural is selected the select Financial status date
+{
+    date.selectedIndex = 7; //Financial status date 
+//set the from date to seven days ago
+var dDate = new Date();
+dDate.setDate(dDate.getDate()-30);
+pickerControlmyFromDate1.setValue(getFormatDate(dDate, 0 , 'YMD'));//sets the from date to seven days ago
+pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+}
+else
+{
+pickerControlmyFromDate1.setValue(getFormatDate(curdate, 0 , 'YMD'));//sets the from date to current date
+pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+}
+
+if(cmb.selectedIndex == 2)//if call for fund is selected the select Payment Initiated date
+{
+    date.selectedIndex = 5;//Payment initiated date
+
+//set the from date to seven days ago
+var dDate = new Date();
+dDate.setDate(dDate.getDate()-7);
+pickerControlmyFromDate1.setValue(getFormatDate(dDate, 0 , 'YMD'));//sets the from date to seven days ago
+pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+}
+else
+{
+pickerControlmyFromDate1.setValue(getFormatDate(curdate, 0 , 'YMD'));//sets the from date to current date
+pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+}
+
+if(cmb.selectedIndex == 5)//if custom is selected the select Issue date
+{
+date.selectedIndex = 2;//Issue date
+document.getElementById("customStatus").style.display = 'block'; //shows the cusom Report financial status block
+document.getElementById("customStatusLabel").style.display = 'block';
+document.getElementById("customStatus").style
+pickerControlmyFromDate1.setValue(getFormatDate(curdate, 0 , 'YMD'));//sets the from date to current date
+pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+}
+else
+{
+document.getElementById("customStatus").style.display = 'none'; //hides the cusom Report financial status block
+document.getElementById("customStatusLabel").style.display = 'none';
+}
+
+if(cmb.selectedIndex == 3)//if Actual(paid) is selected the select Payment settled date
+{
+    date.selectedIndex = 6;//Payment settled date
+//set the from date to seven days ago
+var dDate = new Date();
+dDate.setDate(dDate.getDate()-7);
+pickerControlmyFromDate1.setValue(getFormatDate(dDate, 0 , 'YMD'));//sets the from date to seven days ago
+pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+}
+else
+{
+pickerControlmyFromDate1.setValue(getFormatDate(curdate, 0 , 'YMD'));//sets the from date to current date
+pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+}
+}
+</script>
+
+</body>
+</html>

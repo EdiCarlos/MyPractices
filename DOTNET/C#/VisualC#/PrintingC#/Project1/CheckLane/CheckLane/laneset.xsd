@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="laneset" targetNamespace="http://tempuri.org/laneset.xsd" xmlns:mstns="http://tempuri.org/laneset.xsd" xmlns="http://tempuri.org/laneset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.CheckLane.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tariff_oceanTableAdapter" GeneratorDataComponentClassName="tariff_oceanTableAdapter" Name="tariff_ocean" UserDataComponentName="tariff_oceanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="tariff_ocean" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     land_id
+FROM         tariff_ocean</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="land_id" DataSetColumn="land_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="laneset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="laneset" msprop:Generator_UserDSName="laneset" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tariff_ocean" msprop:Generator_UserTableName="tariff_ocean" msprop:Generator_RowDeletedName="tariff_oceanRowDeleted" msprop:Generator_TableClassName="tariff_oceanDataTable" msprop:Generator_RowChangedName="tariff_oceanRowChanged" msprop:Generator_RowClassName="tariff_oceanRow" msprop:Generator_RowChangingName="tariff_oceanRowChanging" msprop:Generator_RowEvArgName="tariff_oceanRowChangeEvent" msprop:Generator_RowEvHandlerName="tariff_oceanRowChangeEventHandler" msprop:Generator_TablePropName="tariff_ocean" msprop:Generator_TableVarName="tabletariff_ocean" msprop:Generator_RowDeletingName="tariff_oceanRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="land_id" msprop:Generator_UserColumnName="land_id" msprop:Generator_ColumnPropNameInRow="land_id" msprop:Generator_ColumnVarNameInTable="columnland_id" msprop:Generator_ColumnPropNameInTable="land_idColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

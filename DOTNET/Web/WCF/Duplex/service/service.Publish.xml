@@ -1,0 +1,8 @@
+<publishData>
+  <publishTarget publishUrl="http://localhost/DuplexService/">
+    <file relUrl="Web.config" publishTime="04/05/2012 13:00:24" />
+    <file relUrl="bin/service.dll" publishTime="04/05/2012 13:01:32" />
+    <file relUrl="bin/service.pdb" publishTime="04/05/2012 13:01:32" />
+    <file relUrl="service.svc" publishTime="04/05/2012 13:02:04" />
+  </publishTarget>
+</publishData>

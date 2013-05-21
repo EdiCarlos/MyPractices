@@ -1,0 +1,15 @@
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\bin\Debug\UseAcrobatDll.exe
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\bin\Debug\UseAcrobatDll.pdb
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\bin\Debug\Interop.Acrobat.dll
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\Interop.Acrobat.dll
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\UseAcrobatDll.csproj.ResolveComReference.cache
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\UseAcrobatDll.Form1.resources
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\UseAcrobatDll.Properties.Resources.resources
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\UseAcrobatDll.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\UseAcrobatDll.exe
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\UseAcrobatDll.pdb
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\bin\Debug\Interop.AcroPDFLib.dll
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\bin\Debug\AxInterop.AcroPDFLib.dll
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\Interop.AcroPDFLib.dll
+D:\temp\VisualC#\Acrobat\UseAcrobatDll\UseAcrobatDll\obj\Debug\AxInterop.AcroPDFLib.dll

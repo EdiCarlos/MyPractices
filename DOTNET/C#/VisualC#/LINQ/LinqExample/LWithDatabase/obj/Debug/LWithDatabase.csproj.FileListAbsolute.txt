@@ -1,0 +1,11 @@
+D:\temp\VisualC#\LINQ\LinqExample\LWithDatabase\bin\Debug\LWithDatabase.exe.config
+D:\temp\VisualC#\LINQ\LinqExample\LWithDatabase\bin\Debug\LWithDatabase.exe
+D:\temp\VisualC#\LINQ\LinqExample\LWithDatabase\bin\Debug\LWithDatabase.pdb
+D:\temp\VisualC#\LINQ\LinqExample\LWithDatabase\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\LinqExample\LWithDatabase\obj\Debug\LWithDatabase.exe
+D:\temp\VisualC#\LINQ\LinqExample\LWithDatabase\obj\Debug\LWithDatabase.pdb
+D:\temp\VisualC#\LINQ\LinqExample\LWithDatabase\obj\Debug\LWithDatabase.Form1.resources
+D:\temp\VisualC#\LINQ\LinqExample\LWithDatabase\obj\Debug\LWithDatabase.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LWithDatabase\bin\Debug\LWithDatabase.exe.config
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LWithDatabase\obj\Debug\LWithDatabase.exe
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LWithDatabase\obj\Debug\LWithDatabase.pdb

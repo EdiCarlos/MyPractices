@@ -1,0 +1,133 @@
+﻿<%--
+Slick-Ticket v1.0 - 2008
+http://slick-ticket.com
+Developed by Stan Naspinski - stan@naspinski.net
+http://naspinski.net
+--%>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="Stylesheet" href="css/main.css" type="text/css" />
+    <link rel="Stylesheet" type="text/css" href="css/theme.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="css/ie6.css" />
+    <![endif]-->
+    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" />
+    <![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="base_text">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <asp:UpdateProgress ID="UpdateProgress" runat="server" >
+            <ProgressTemplate>
+                <asp:panel ID="pnlWorking" runat="server" cssclass="working">
+                    <asp:literal ID="litWorking" runat="server" meta:resourcekey="litWorkingResource1" />
+                </asp:panel>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+        
+        <div id="header" class="border_color" >
+            <h1 class="top_header">
+                <a runat="server" id="home" href="~/">
+                    <asp:Image ID="imgTitle" runat="server" 
+                    meta:resourcekey="imgTitleResource1" />
+                    <asp:Label ID="lblTitle" CssClass="header" style="font-size:2em;" runat="server" Text="Slick-Ticket" />
+                </a>
+            </h1>
+            <div class="top_header" style="padding:0 10px 0 0;">
+                <asp:PlaceHolder ID="phMenu" runat="server" />
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div id="content">
+            
+            
+            <div id="main_body">
+            
+                <asp:Panel runat="server" id="main_container" >
+                               
+                    <div runat="server" id="divMainContainer" class="large_container border_color">   
+                        <!-- MAIN BODY -->                        
+                        <asp:ContentPlaceHolder id="body" runat="server" />  
+                            
+                    </div>
+                </asp:Panel>
+                
+                <asp:Panel runat="server" id="side_bar" >
+                    <div class="small_container border_color">
+                        <fieldset class="inner_color">
+                            <table id="current_page">
+                                <tr>
+                                    <td style="width:32px;">
+                                        <asp:Image runat="server" ID="imgCurrentPage" />
+                                    </td>
+                                    <td>
+                                        <h2 style="text-align:center;"><asp:Label ID="lblCurrentPage" runat="server" /></h2>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </div>
+                    <div class="small_container border_color">
+                        <fieldset class="inner_color">
+                        
+                            <h2>
+                                <a runat="server" style="float:right;" class="smaller" href="~/profile.aspx">
+                                    <%= Resources.Common.Profile %>
+                                </a>
+                                <asp:Label ID="lblUserName" runat="server" />
+                            </h2>
+                            <asp:Label ID="lblTickets" runat="server" />
+                            <div style="text-align:left;">
+                                <br />
+                                <asp:Label ID="lblEmail" runat="server" /><br />
+                                <asp:Label ID="lblPhone" runat="server"  /><br />
+                                <asp:Label ID="lblUnit" runat="server" /><br />
+                                <asp:Label ID="lblSubUnit" runat="server" />
+                                <div class='bold'>
+                                    <br /><asp:literal ID="litAccess" runat="server" meta:resourcekey="litAccessResource1" />
+                                    : [<asp:Label ID="lblAccess" runat="server" meta:resourcekey="lblAccessResource1" />] 
+                                    <asp:Label ID="lblAccessName" runat="server" />
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="small_container border_color">
+                        <fieldset class="inner_color">
+                            <asp:Panel ID="pnlquik" runat="server" DefaultButton="btnQuickJump">
+                                <h2>
+                                <asp:RegularExpressionValidator ID="regQuickJump" CssClass="error top_error" ValidationExpression="^\d+$" ValidationGroup="QuickJump"
+                                    ControlToValidate="txtQuickJump" runat="server" Display="Dynamic" meta:resourcekey="regQuickJumpResource1" />
+                                <asp:label ID="lblQuickJump" runat="server" meta:resourcekey="lblQuickJumpResource1" />
+                                <asp:TextBox ID="txtQuickJump" runat="server" style="width:70px;" />
+                                <asp:Button CssClass="button smaller" ID="btnQuickJump"  runat="server" onclick="btnQuickJump_Click" ValidationGroup="QuickJump" 
+                                    meta:resourcekey="btnQuickJumpResource1" />
+                                </h2>
+                            </asp:Panel>
+                        </fieldset>
+                    </div>
+                    <asp:ContentPlaceHolder ID="sidebar" runat="server" />
+                </asp:Panel>
+                <div id="footer">
+                    <asp:Label ID="lblFooter" runat="server" />
+                    <asp:Panel ID="pnlFooter" CssClass="footer" runat="server" >
+                    </asp:Panel>
+                    <br /><a href="http://slick-ticket.com">Slick-Ticket</a> &copy;2008-<%= DateTime.Now.Year %> <a href="http://naspinski.net">Stan Naspinski</a><br />
+                    <asp:literal runat="server" ID="litLicensedUnder" meta:resourcekey="litLicensedUnderResource1" /> <a href="http://slickticket.codeplex.com/license">MIT License</a>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>

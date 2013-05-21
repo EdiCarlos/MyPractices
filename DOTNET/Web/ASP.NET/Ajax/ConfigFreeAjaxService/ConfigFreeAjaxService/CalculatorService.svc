@@ -1,0 +1,2 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ConfigFreeAjaxService.CalculatorService" CodeBehind="CalculatorService.svc.cs" 
+    Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory"%>

@@ -1,0 +1,4 @@
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\EAISchemas\bin\Debug\EAISchemas.dll
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\EAISchemas\bin\Debug\EAISchemas.pdb
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\EAISchemas\obj\Debug\EAISchemas.dll
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\EAISchemas\obj\Debug\EAISchemas.pdb

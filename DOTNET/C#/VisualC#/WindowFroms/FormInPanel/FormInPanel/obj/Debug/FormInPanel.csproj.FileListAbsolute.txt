@@ -1,0 +1,9 @@
+D:\temp\VisualC#\WindowFroms\FormInPanel\FormInPanel\bin\Debug\FormInPanel.exe
+D:\temp\VisualC#\WindowFroms\FormInPanel\FormInPanel\bin\Debug\FormInPanel.pdb
+D:\temp\VisualC#\WindowFroms\FormInPanel\FormInPanel\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\WindowFroms\FormInPanel\FormInPanel\obj\Debug\FormInPanel.Form1.resources
+D:\temp\VisualC#\WindowFroms\FormInPanel\FormInPanel\obj\Debug\FormInPanel.Form2.resources
+D:\temp\VisualC#\WindowFroms\FormInPanel\FormInPanel\obj\Debug\FormInPanel.Properties.Resources.resources
+D:\temp\VisualC#\WindowFroms\FormInPanel\FormInPanel\obj\Debug\FormInPanel.csproj.GenerateResource.Cache
+D:\temp\VisualC#\WindowFroms\FormInPanel\FormInPanel\obj\Debug\FormInPanel.exe
+D:\temp\VisualC#\WindowFroms\FormInPanel\FormInPanel\obj\Debug\FormInPanel.pdb

@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Iterator\IteratorExample\IteratorExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Iterator\IteratorExample\IteratorExample\bin\Debug\IteratorExample.exe
+D:\temp\VisualC#\Iterator\IteratorExample\IteratorExample\bin\Debug\IteratorExample.pdb
+D:\temp\VisualC#\Iterator\IteratorExample\IteratorExample\obj\Debug\IteratorExample.exe
+D:\temp\VisualC#\Iterator\IteratorExample\IteratorExample\obj\Debug\IteratorExample.pdb

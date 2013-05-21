@@ -1,0 +1,8 @@
+ CREATE TABLE AuthorBook(
+       AuthID SMALLINT NOT NULL,
+       BookID SMALLINT NOT NULL,
+       PRIMARY KEY (AuthID, BookID),
+       FOREIGN KEY (AuthID) REFERENCES Authors (AuthID),
+       FOREIGN KEY (BookID) REFERENCES Books (BookID)
+    )
+    ENGINE=INNODB;

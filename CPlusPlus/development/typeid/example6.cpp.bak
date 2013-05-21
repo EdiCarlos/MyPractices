@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+template <class T> class myclass
+{
+	T a;
+	public:
+	myclass(T i){a = i;}
+};
+int main()
+{
+	myclass<int> o1(10), o2(20);
+	mcclass<double> o3(0.30);
+	
+	cout<<"type of o1 is "<<typeid(o1).name()<<endl;
+	cout<<"type of o2 is "<<typeid(o2).name()<<endl;
+	cout<<"type of o3 is "<<typeid(o3).name()<<endl;
+	
+	return 0;
+}

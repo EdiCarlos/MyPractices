@@ -1,0 +1,1496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MyHRMSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="MyHRMSModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="HR_Employee" EntityType="MyHRMSModel.HR_Employee" />
+    <EntitySet Name="HR_Emp_Property" EntityType="MyHRMSModel.HR_Emp_Property" />
+    <EntitySet Name="HR_LKP_PropertyTypeID" EntityType="MyHRMSModel.HR_LKP_PropertyTypeID" />
+    <EntitySet Name="HR_Company" EntityType="MyHRMSModel.HR_Company" />
+    <AssociationSet Name="HR_CompanyHR_Employee" Association="MyHRMSModel.HR_CompanyHR_Employee">
+      <End Role="HR_Company" EntitySet="HR_Company" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="HR_EmployeeHR_CompanyProperty" Association="MyHRMSModel.HR_EmployeeHR_CompanyProperty">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_CompanyProperty" EntitySet="HR_Emp_Property" />
+    </AssociationSet>
+    <EntitySet Name="HR_CompanyAssets" EntityType="MyHRMSModel.HR_CompanyAssets" />
+    <AssociationSet Name="HR_LK_PropertyTypeIDHR_CompanyAssets" Association="MyHRMSModel.HR_LK_PropertyTypeIDHR_CompanyAssets">
+      <End Role="HR_LK_PropertyTypeID" EntitySet="HR_LKP_PropertyTypeID" />
+      <End Role="HR_CompanyAssets" EntitySet="HR_CompanyAssets" />
+    </AssociationSet>
+    <AssociationSet Name="HR_CompanyAssetsHR_EmployeeProperty" Association="MyHRMSModel.HR_CompanyAssetsHR_EmployeeProperty">
+      <End Role="HR_CompanyAssets" EntitySet="HR_CompanyAssets" />
+      <End Role="HR_EmployeeProperty" EntitySet="HR_Emp_Property" />
+    </AssociationSet>
+    <EntitySet Name="HR_Address" EntityType="MyHRMSModel.HR_Address" />
+    <AssociationSet Name="HR_Emp_AddressHR_Employee" Association="MyHRMSModel.HR_Emp_AddressHR_Employee">
+      <End Role="HR_Emp_Address" EntitySet="HR_Address" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <EntitySet Name="HR_LKP_Country" EntityType="MyHRMSModel.HR_LKP_Country" />
+    <EntitySet Name="HR_Locations" EntityType="MyHRMSModel.HR_Locations" />
+    <AssociationSet Name="HR_LK_CountryHR_Locations" Association="MyHRMSModel.HR_LK_CountryHR_Locations">
+      <End Role="HR_LK_Country" EntitySet="HR_LKP_Country" />
+      <End Role="HR_Locations" EntitySet="HR_Locations" />
+    </AssociationSet>
+    <AssociationSet Name="HR_LocationsHR_Emp_Address" Association="MyHRMSModel.HR_LocationsHR_Emp_Address">
+      <End Role="HR_Locations" EntitySet="HR_Locations" />
+      <End Role="HR_Emp_Address" EntitySet="HR_Address" />
+    </AssociationSet>
+    <EntitySet Name="HR_Emp_ContactDetails" EntityType="MyHRMSModel.HR_Emp_ContactDetails" />
+    <EntitySet Name="HR_LKP_AddressType" EntityType="MyHRMSModel.HR_LKP_AddressType" />
+    <AssociationSet Name="HR_LK_AddressTypeHR_Emp_Address" Association="MyHRMSModel.HR_LK_AddressTypeHR_Emp_Address">
+      <End Role="HR_LK_AddressType" EntitySet="HR_LKP_AddressType" />
+      <End Role="HR_Emp_Address" EntitySet="HR_Address" />
+    </AssociationSet>
+    <AssociationSet Name="HR_EmployeeHR_ContactDetails" Association="MyHRMSModel.HR_EmployeeHR_ContactDetails">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_ContactDetails" EntitySet="HR_Emp_ContactDetails" />
+    </AssociationSet>
+    <EntitySet Name="HR_GLB_LKP_NameTitle" EntityType="MyHRMSModel.HR_GLB_LKP_NameTitle" />
+    <AssociationSet Name="HR_GLB_LKP_NameTitleHR_Employee" Association="MyHRMSModel.HR_GLB_LKP_NameTitleHR_Employee">
+      <End Role="HR_GLB_LKP_NameTitle" EntitySet="HR_GLB_LKP_NameTitle" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <EntitySet Name="HR_LKP_SalaryGrades" EntityType="MyHRMSModel.HR_LKP_SalaryGrades" />
+    <AssociationSet Name="HR_SalaryGradesHR_Employee" Association="MyHRMSModel.HR_SalaryGradesHR_Employee">
+      <End Role="HR_SalaryGrades" EntitySet="HR_LKP_SalaryGrades" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <EntitySet Name="HR_LK_Currency" EntityType="MyHRMSModel.HR_LK_Currency" />
+    <AssociationSet Name="HR_LK_CountryHR_LK_Currency" Association="MyHRMSModel.HR_LK_CountryHR_LK_Currency">
+      <End Role="HR_LK_Country" EntitySet="HR_LKP_Country" />
+      <End Role="HR_LK_Currency" EntitySet="HR_LK_Currency" />
+    </AssociationSet>
+    <EntitySet Name="HR_LKP_SalaryGradeDetails" EntityType="MyHRMSModel.HR_LKP_SalaryGradeDetails" />
+    <AssociationSet Name="HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades" Association="MyHRMSModel.HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades">
+      <End Role="HR_LKP_SalaryGradeDetails" EntitySet="HR_LKP_SalaryGradeDetails" />
+      <End Role="HR_LKP_SalaryGrades" EntitySet="HR_LKP_SalaryGrades" />
+    </AssociationSet>
+    <EntitySet Name="HR_Emp_FamilyMembers" EntityType="MyHRMSModel.HR_Emp_FamilyMembers" />
+    <EntitySet Name="HR_GLB_LKP_RelationType" EntityType="MyHRMSModel.HR_GLB_LKP_RelationType" />
+    <AssociationSet Name="HR_LKP_RelationTypeHR_Emp_FamilyMembers" Association="MyHRMSModel.HR_LKP_RelationTypeHR_Emp_FamilyMembers">
+      <End Role="HR_LKP_RelationType" EntitySet="HR_GLB_LKP_RelationType" />
+      <End Role="HR_Emp_FamilyMembers" EntitySet="HR_Emp_FamilyMembers" />
+    </AssociationSet>
+    <AssociationSet Name="HR_EmployeeHR_Emp_FamilyMembers" Association="MyHRMSModel.HR_EmployeeHR_Emp_FamilyMembers">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_FamilyMembers" EntitySet="HR_Emp_FamilyMembers" />
+    </AssociationSet>
+    <EntitySet Name="HR_LKP_Departments" EntityType="MyHRMSModel.HR_LKP_Departments" />
+    <AssociationSet Name="HR_EmployeeHR_LKP_Departments" Association="MyHRMSModel.HR_EmployeeHR_LKP_Departments">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_LKP_Departments" EntitySet="HR_LKP_Departments" />
+    </AssociationSet>
+    <EntitySet Name="HR_LKP_JobTitle" EntityType="MyHRMSModel.HR_LKP_JobTitle" />
+    <AssociationSet Name="HR_EmployeeHR_LKP_JobTitle" Association="MyHRMSModel.HR_EmployeeHR_LKP_JobTitle">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_LKP_JobTitle" EntitySet="HR_LKP_JobTitle" />
+    </AssociationSet>
+    <EntitySet Name="HR_Emp_RelatedDocs" EntityType="MyHRMSModel.HR_Emp_RelatedDocs" />
+    <EntitySet Name="HR_Emp_Passport" EntityType="MyHRMSModel.HR_Emp_Passport" />
+    <EntitySet Name="HR_Emp_ReportingDetails" EntityType="MyHRMSModel.HR_Emp_ReportingDetails" />
+    <EntitySet Name="HR_Emp_RelatedDocs_Hist" EntityType="MyHRMSModel.HR_Emp_RelatedDocs_Hist" />
+    <EntitySet Name="HR_Emp_PreviousEmploymentDetails" EntityType="MyHRMSModel.HR_Emp_PreviousEmploymentDetails" />
+    <AssociationSet Name="HR_EmployeeHR_Emp_PreviousEmploymentDetails" Association="MyHRMSModel.HR_EmployeeHR_Emp_PreviousEmploymentDetails">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_PreviousEmploymentDetails" EntitySet="HR_Emp_PreviousEmploymentDetails" />
+    </AssociationSet>
+    <EntitySet Name="HR_LKP_Skill" EntityType="MyHRMSModel.HR_LKP_Skill" />
+    <EntitySet Name="HR_Emp_Skills" EntityType="MyHRMSModel.HR_Emp_Skills" />
+    <AssociationSet Name="HR_Emp_SkillsHR_LKP_Skill" Association="MyHRMSModel.HR_Emp_SkillsHR_LKP_Skill">
+      <End Role="HR_Emp_Skills" EntitySet="HR_Emp_Skills" />
+      <End Role="HR_LKP_Skill" EntitySet="HR_LKP_Skill" />
+    </AssociationSet>
+    <EntitySet Name="HR_Emp_EmergenceContact" EntityType="MyHRMSModel.HR_Emp_EmergenceContact" />
+    <AssociationSet Name="HR_EmployeeHR_Emp_EmergenceContact" Association="MyHRMSModel.HR_EmployeeHR_Emp_EmergenceContact">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_EmergenceContact" EntitySet="HR_Emp_EmergenceContact" />
+    </AssociationSet>
+    <EntitySet Name="HR_Emp_EducationDetails" EntityType="MyHRMSModel.HR_Emp_EducationDetails" />
+    <EntitySet Name="HR_LKP_EductionType" EntityType="MyHRMSModel.HR_LKP_EductionType" />
+    <EntitySet Name="HR_LKP_DiplomaDetails" EntityType="MyHRMSModel.HR_LKP_DiplomaDetails" />
+    <AssociationSet Name="HR_EmployeeHR_Emp_EducationDetails" Association="MyHRMSModel.HR_EmployeeHR_Emp_EducationDetails">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_EducationDetails" EntitySet="HR_Emp_EducationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="HR_LKP_DiplomaDetailsHR_Emp_EducationDetails" Association="MyHRMSModel.HR_LKP_DiplomaDetailsHR_Emp_EducationDetails">
+      <End Role="HR_LKP_DiplomaDetails" EntitySet="HR_LKP_DiplomaDetails" />
+      <End Role="HR_Emp_EducationDetails" EntitySet="HR_Emp_EducationDetails" />
+    </AssociationSet>
+    <EntitySet Name="HR_Emp_BankAccountDetails" EntityType="MyHRMSModel.HR_Emp_BankAccountDetails" />
+    <EntitySet Name="HR_GLB_LKP_Banks" EntityType="MyHRMSModel.HR_GLB_LKP_Banks" />
+    <EntitySet Name="HR_LKP_BankAccountTypes" EntityType="MyHRMSModel.HR_LKP_BankAccountTypes" />
+    <EntitySet Name="HR_CMP_AccountsWithBanks" EntityType="MyHRMSModel.HR_CMP_AccountsWithBanks" />
+    <EntitySet Name="HR_CMP_Stations" EntityType="MyHRMSModel.HR_CMP_Stations" />
+    <EntitySet Name="HR_CMP_LKP_StationType" EntityType="MyHRMSModel.HR_CMP_LKP_StationType" />
+    <EntitySet Name="HR_CMP_Policies" EntityType="MyHRMSModel.HR_CMP_Policies" />
+    <EntitySet Name="HR_CMP_AS_PolicyAppliedTo" EntityType="MyHRMSModel.HR_CMP_AS_PolicyAppliedTo" />
+    <EntitySet Name="HR_CMP_LKP_Holidays" EntityType="MyHRMSModel.HR_CMP_LKP_Holidays" />
+    <EntitySet Name="HR_CMP_WorkShifts" EntityType="MyHRMSModel.HR_CMP_WorkShifts" />
+    <EntitySet Name="HR_GBL_LKP_IndustryType" EntityType="MyHRMSModel.HR_GBL_LKP_IndustryType" />
+    <EntitySet Name="HR_CMP_AS_WorkShifts" EntityType="MyHRMSModel.HR_CMP_AS_WorkShifts" />
+    <EntitySet Name="HR_CMP_LKP_Leaves" EntityType="MyHRMSModel.HR_CMP_LKP_Leaves" />
+    <EntitySet Name="HR_CMP_LKP_LeaveTypes" EntityType="MyHRMSModel.HR_CMP_LKP_LeaveTypes" />
+    <EntitySet Name="HR_CMP_LKP_LeaveQouta" EntityType="MyHRMSModel.HR_CMP_LKP_LeaveQouta" />
+    <EntitySet Name="HR_Emp_AS_EmployeeInProbation" EntityType="MyHRMSModel.HR_Emp_AS_EmployeeInProbation" />
+    <EntitySet Name="HR_CMP_LKP_ProbationPeriod" EntityType="MyHRMSModel.HR_CMP_LKP_ProbationPeriod" />
+    <EntitySet Name="HR_Emp_LeaveRequest" EntityType="MyHRMSModel.HR_Emp_LeaveRequest" />
+    <EntitySet Name="HR_Emp_LeaveApprovalMessage" EntityType="MyHRMSModel.HR_Emp_LeaveApprovalMessage" />
+    <EntitySet Name="HR_EMP_LeaveQoutaDetails" EntityType="MyHRMSModel.HR_EMP_LeaveQoutaDetails" />
+    <EntitySet Name="HR_GBL_LKP_ApprovalStatus" EntityType="MyHRMSModel.HR_GBL_LKP_ApprovalStatus" />
+    <EntitySet Name="HR_EMP_Leave_Hist" EntityType="MyHRMSModel.HR_EMP_Leave_Hist" />
+    <EntitySet Name="HR_CMP_InsurancePolicy" EntityType="MyHRMSModel.HR_CMP_InsurancePolicy" />
+    <EntitySet Name="HR_Emp_InsuranceDetails" EntityType="MyHRMSModel.HR_Emp_InsuranceDetails" />
+    <EntitySet Name="HR_CMP_LKP_InsuranceCompanyDetail" EntityType="MyHRMSModel.HR_CMP_LKP_InsuranceCompanyDetail" />
+    <EntitySet Name="HR_Emp_EducationDocs" EntityType="MyHRMSModel.HR_Emp_EducationDocs" />
+    <EntitySet Name="HR_Emp_AS_EducationDocs" EntityType="MyHRMSModel.HR_Emp_AS_EducationDocs" />
+    <AssociationSet Name="HR_Emp_EducationDocsHR_Emp_AS_EducationDocs" Association="MyHRMSModel.HR_Emp_EducationDocsHR_Emp_AS_EducationDocs">
+      <End Role="HR_Emp_EducationDocs" EntitySet="HR_Emp_EducationDocs" />
+      <End Role="HR_Emp_AS_EducationDocs" EntitySet="HR_Emp_AS_EducationDocs" />
+    </AssociationSet>
+    <EntitySet Name="HR_CMP_Messages" EntityType="MyHRMSModel.HR_CMP_Messages" />
+    <EntitySet Name="HR_Emp_Inbox" EntityType="MyHRMSModel.HR_Emp_Inbox" />
+    <EntitySet Name="HR_Emp_SentMessages" EntityType="MyHRMSModel.HR_Emp_SentMessages" />
+    <EntitySet Name="HR_Emp_ProvidentFundDetails" EntityType="MyHRMSModel.HR_Emp_ProvidentFundDetails" />
+    <EntitySet Name="HR_Emp_AnnualSalaryDetails" EntityType="MyHRMSModel.HR_Emp_AnnualSalaryDetails" />
+    <EntitySet Name="HR_Emp_AnnualTaxDeductionDetails" EntityType="MyHRMSModel.HR_Emp_AnnualTaxDeductionDetails" />
+    <EntitySet Name="HR_GBL_TaxRules" EntityType="MyHRMSModel.HR_GBL_TaxRules" />
+    <EntitySet Name="HR_CMP_ExemptionsType" EntityType="MyHRMSModel.HR_CMP_ExemptionsType" />
+    <EntitySet Name="HR_CMP_ExemptionRules" EntityType="MyHRMSModel.HR_CMP_ExemptionRules" />
+    <EntitySet Name="HR_Emp_EstimateExemptions" EntityType="MyHRMSModel.HR_Emp_EstimateExemptions" />
+    <EntitySet Name="HR_Emp_ActualExemptions" EntityType="MyHRMSModel.HR_Emp_ActualExemptions" />
+    <EntitySet Name="HR_Emp_ExemptionDocuments" EntityType="MyHRMSModel.HR_Emp_ExemptionDocuments" />
+    <EntitySet Name="HR_Emp_MonthlySalaryDetails" EntityType="MyHRMSModel.HR_Emp_MonthlySalaryDetails" />
+    <EntitySet Name="HR_Emp_MonthlySalaryDeductionDetails" EntityType="MyHRMSModel.HR_Emp_MonthlySalaryDeductionDetails" />
+    <EntitySet Name="HR_Cmp_SalaryGenerationDate" EntityType="MyHRMSModel.HR_Cmp_SalaryGenerationDate" />
+    <EntitySet Name="HR_Emp_EstimateAnnualTaxExemptionDetails" EntityType="MyHRMSModel.HR_Emp_EstimateAnnualTaxExemptionDetails" />
+    <EntitySet Name="HR_Emp_ActualAnnualTaxExemptionDetails" EntityType="MyHRMSModel.HR_Emp_ActualAnnualTaxExemptionDetails" />
+    <EntitySet Name="HR_Cmp_PerformanceRatingType" EntityType="MyHRMSModel.HR_Cmp_PerformanceRatingType" />
+    <EntitySet Name="HR_Emp_SmartGoals" EntityType="MyHRMSModel.HR_Emp_SmartGoals" />
+    <EntitySet Name="HR_Emp_ReviewDetails" EntityType="MyHRMSModel.HR_Emp_ReviewDetails" />
+    <EntitySet Name="HR_Emp_Users" EntityType="MyHRMSModel.HR_Emp_Users" />
+    <EntitySet Name="HR_Emp_UserGroup" EntityType="MyHRMSModel.HR_Emp_UserGroup" />
+  </EntityContainer>
+  <EntityType Name="HR_Employee">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Guid" Name="EmployeeUID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CompanyEmployeeID" Nullable="false" />
+    <Property Type="String" Name="Lastname" Nullable="false" />
+    <Property Type="String" Name="Firstname" Nullable="false" />
+    <Property Type="String" Name="Middlename" Nullable="false" />
+    <Property Type="DateTime" Name="Birthday" />
+    <Property Type="String" Name="NationCode" />
+    <Property Type="Int16" Name="Gender" />
+    <Property Type="String" Name="MaritalStatus" />
+    <Property Type="String" Name="SSNNumber" />
+    <Property Type="String" Name="LicenseNumber" />
+    <Property Type="DateTime" Name="LicencseExpiryDate" />
+    <Property Type="String" Name="Status" />
+    <Property Type="Int32" Name="TitleCode" Nullable="false" />
+    <Property Type="Int32" Name="SalaryGradeCode" Nullable="false" />
+    <Property Type="DateTime" Name="JoinedDate" Nullable="false" />
+    <Property Type="DateTime" Name="TerminateDate" Nullable="true" />
+    <Property Type="String" Name="TerminationReason" Nullable="true" />
+    <NavigationProperty Name="HR_Company" Relationship="MyHRMSModel.HR_CompanyHR_Employee" FromRole="HR_Employee" ToRole="HR_Company" />
+    <NavigationProperty Name="HR_EmployeeProperty" Relationship="MyHRMSModel.HR_EmployeeHR_CompanyProperty" FromRole="HR_Employee" ToRole="HR_CompanyProperty" />
+    <NavigationProperty Name="HR_Emp_Address" Relationship="MyHRMSModel.HR_Emp_AddressHR_Employee" FromRole="HR_Employee" ToRole="HR_Emp_Address" />
+    <NavigationProperty Name="HR_ContactDetails" Relationship="MyHRMSModel.HR_EmployeeHR_ContactDetails" FromRole="HR_Employee" ToRole="HR_ContactDetails" />
+    <NavigationProperty Name="HR_GLB_LKP_NameTitle" Relationship="MyHRMSModel.HR_GLB_LKP_NameTitleHR_Employee" FromRole="HR_Employee" ToRole="HR_GLB_LKP_NameTitle" />
+    <Property Type="String" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="HR_SalaryGrades" Relationship="MyHRMSModel.HR_SalaryGradesHR_Employee" FromRole="HR_Employee" ToRole="HR_SalaryGrades" />
+    <Property Type="String" Name="BloodGroup" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="Nationality" Nullable="false" />
+    <NavigationProperty Name="HR_Emp_FamilyMembers" Relationship="MyHRMSModel.HR_EmployeeHR_Emp_FamilyMembers" FromRole="HR_Employee" ToRole="HR_Emp_FamilyMembers" />
+    <Property Type="Int32" Name="DepartmentID" Nullable="true" />
+    <NavigationProperty Name="HR_LKP_Departments" Relationship="MyHRMSModel.HR_EmployeeHR_LKP_Departments" FromRole="HR_Employee" ToRole="HR_LKP_Departments" />
+    <Property Type="Int32" Name="JobID" Nullable="true" />
+    <NavigationProperty Name="HR_LKP_JobTitle" Relationship="MyHRMSModel.HR_EmployeeHR_LKP_JobTitle" FromRole="HR_Employee" ToRole="HR_LKP_JobTitle" />
+    <NavigationProperty Name="HR_Emp_PreviousEmploymentDetails" Relationship="MyHRMSModel.HR_EmployeeHR_Emp_PreviousEmploymentDetails" FromRole="HR_Employee" ToRole="HR_Emp_PreviousEmploymentDetails" />
+    <NavigationProperty Name="HR_Emp_EmergenceContact" Relationship="MyHRMSModel.HR_EmployeeHR_Emp_EmergenceContact" FromRole="HR_Employee" ToRole="HR_Emp_EmergenceContact" />
+    <NavigationProperty Name="HR_Emp_EducationDetails" Relationship="MyHRMSModel.HR_EmployeeHR_Emp_EducationDetails" FromRole="HR_Employee" ToRole="HR_Emp_EducationDetails" />
+    <Property Type="Boolean" Name="InProbation" Nullable="true" />
+    <Property Type="Boolean" Name="EligibleForInsurance" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Property">
+    <Key>
+      <PropertyRef Name="AssetID" />
+    </Key>
+    <Property Type="Int32" Name="AssetID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_EmployeeHR_CompanyProperty" FromRole="HR_CompanyProperty" ToRole="HR_Employee" />
+    <NavigationProperty Name="HR_CompanyAssets" Relationship="MyHRMSModel.HR_CompanyAssetsHR_EmployeeProperty" FromRole="HR_EmployeeProperty" ToRole="HR_CompanyAssets" />
+  </EntityType>
+  <EntityType Name="HR_LKP_PropertyTypeID">
+    <Key>
+      <PropertyRef Name="PropertyTypeID" />
+    </Key>
+    <Property Type="Int32" Name="PropertyTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="PropertyType" Nullable="false" />
+    <Property Type="String" Name="PropertyName" Nullable="false" />
+    <NavigationProperty Name="HR_CompanyAssets" Relationship="MyHRMSModel.HR_LK_PropertyTypeIDHR_CompanyAssets" FromRole="HR_LK_PropertyTypeID" ToRole="HR_CompanyAssets" />
+  </EntityType>
+  <EntityType Name="HR_Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Type="Int64" Name="CompanyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CompanyName" Nullable="false" MaxLength="100" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_CompanyHR_Employee" FromRole="HR_Company" ToRole="HR_Employee" />
+    <Property Type="String" Name="OrganizationCode" Nullable="false" />
+    <Property Type="String" Name="WebsiteUrl" Nullable="false" />
+    <Property Type="String" Name="OrganizationLogo" Nullable="false" />
+    <Property Type="Int32" Name="NumberOfEmployees" Nullable="true" />
+    <Property Type="String" Name="RegisteredEmailAddress" Nullable="false" />
+    <Property Type="String" Name="CompanyDescription" Nullable="false" MaxLength="1000" />
+    <Property Type="String" Name="IsGovermentSector" Nullable="true" />
+    <Property Type="Int32" Name="IndustryTypeID" Nullable="true" />
+  </EntityType>
+  <Association Name="HR_CompanyHR_Employee">
+    <End Type="MyHRMSModel.HR_Company" Role="HR_Company" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HR_EmployeeHR_CompanyProperty">
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="0..1" />
+    <End Type="MyHRMSModel.HR_Emp_Property" Role="HR_CompanyProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_CompanyProperty">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_CompanyAssets">
+    <Key>
+      <PropertyRef Name="AssetID" />
+    </Key>
+    <Property Type="Int32" Name="AssetID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="HR_LK_PropertyTypeID" Relationship="MyHRMSModel.HR_LK_PropertyTypeIDHR_CompanyAssets" FromRole="HR_CompanyAssets" ToRole="HR_LK_PropertyTypeID" />
+    <Property Type="Int32" Name="PropertyTypeID" Nullable="false" />
+    <NavigationProperty Name="HR_EmployeeProperty" Relationship="MyHRMSModel.HR_CompanyAssetsHR_EmployeeProperty" FromRole="HR_CompanyAssets" ToRole="HR_EmployeeProperty" />
+    <Property Type="String" Name="ModelNumber" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+  </EntityType>
+  <Association Name="HR_LK_PropertyTypeIDHR_CompanyAssets">
+    <End Type="MyHRMSModel.HR_LKP_PropertyTypeID" Role="HR_LK_PropertyTypeID" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_CompanyAssets" Role="HR_CompanyAssets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LK_PropertyTypeID">
+        <PropertyRef Name="PropertyTypeID" />
+      </Principal>
+      <Dependent Role="HR_CompanyAssets">
+        <PropertyRef Name="PropertyTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HR_CompanyAssetsHR_EmployeeProperty">
+    <End Type="MyHRMSModel.HR_CompanyAssets" Role="HR_CompanyAssets" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Emp_Property" Role="HR_EmployeeProperty" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="HR_CompanyAssets">
+        <PropertyRef Name="AssetID" />
+      </Principal>
+      <Dependent Role="HR_EmployeeProperty">
+        <PropertyRef Name="AssetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_Address">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Type="Int32" Name="AddressID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_Emp_AddressHR_Employee" FromRole="HR_Emp_Address" ToRole="HR_Employee" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true" />
+    <Property Type="String" Name="Street1" Nullable="false" />
+    <Property Type="String" Name="Street2" Nullable="false" />
+    <NavigationProperty Name="HR_Locations" Relationship="MyHRMSModel.HR_LocationsHR_Emp_Address" FromRole="HR_Emp_Address" ToRole="HR_Locations" />
+    <Property Type="Int32" Name="LocationID" Nullable="true" />
+    <NavigationProperty Name="HR_LK_AddressType" Relationship="MyHRMSModel.HR_LK_AddressTypeHR_Emp_Address" FromRole="HR_Emp_Address" ToRole="HR_LK_AddressType" />
+    <Property Type="Int32" Name="AddressTypeID" Nullable="false" />
+    <Property Type="Int32" Name="FamilyMemberID" Nullable="true" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+    <Property Type="Int32" Name="StationID" Nullable="true" />
+    <Property Type="Int32" Name="InusranceCompanyID" Nullable="true" />
+  </EntityType>
+  <Association Name="HR_Emp_AddressHR_Employee">
+    <End Type="MyHRMSModel.HR_Address" Role="HR_Emp_Address" Multiplicity="*" />
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_Address">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_LKP_Country">
+    <Key>
+      <PropertyRef Name="CountryCode" />
+    </Key>
+    <Property Type="String" Name="CountryCode" Nullable="false" annotation:StoreGeneratedPattern="None" MaxLength="3" />
+    <Property Type="String" Name="Name" Nullable="false" />
+    <Property Type="String" Name="ISOCode" Nullable="false" />
+    <NavigationProperty Name="HR_Locations" Relationship="MyHRMSModel.HR_LK_CountryHR_Locations" FromRole="HR_LK_Country" ToRole="HR_Locations" />
+    <Property Type="Int32" Name="CurrencyID" Nullable="false" />
+    <NavigationProperty Name="HR_LK_Currency" Relationship="MyHRMSModel.HR_LK_CountryHR_LK_Currency" FromRole="HR_LK_Country" ToRole="HR_LK_Currency" />
+  </EntityType>
+  <EntityType Name="HR_Locations">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Type="Int32" Name="LocationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CountryCode" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="State" Nullable="false" />
+    <Property Type="String" Name="City" Nullable="false" />
+    <Property Type="String" Name="ZipCode" Nullable="false" />
+    <NavigationProperty Name="HR_LK_Country" Relationship="MyHRMSModel.HR_LK_CountryHR_Locations" FromRole="HR_Locations" ToRole="HR_LK_Country" />
+    <NavigationProperty Name="HR_Emp_Address" Relationship="MyHRMSModel.HR_LocationsHR_Emp_Address" FromRole="HR_Locations" ToRole="HR_Emp_Address" />
+  </EntityType>
+  <Association Name="HR_LK_CountryHR_Locations">
+    <End Type="MyHRMSModel.HR_LKP_Country" Role="HR_LK_Country" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Locations" Role="HR_Locations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LK_Country">
+        <PropertyRef Name="CountryCode" />
+      </Principal>
+      <Dependent Role="HR_Locations">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HR_LocationsHR_Emp_Address">
+    <End Type="MyHRMSModel.HR_Locations" Role="HR_Locations" Multiplicity="0..1" />
+    <End Type="MyHRMSModel.HR_Address" Role="HR_Emp_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="HR_Emp_Address">
+        <PropertyRef Name="LocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_Emp_ContactDetails">
+    <Key>
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Type="Int32" Name="ContactID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="String" Name="MobileNumber" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="TelNumber" Nullable="true" MaxLength="30" />
+    <Property Type="Boolean" Name="IsPrimaryMobile" Nullable="true" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_EmployeeHR_ContactDetails" FromRole="HR_ContactDetails" ToRole="HR_Employee" />
+    <Property Type="Boolean" Name="IsEmergencyContact" Nullable="true" />
+    <Property Type="String" Name="WorkTelephone" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="EmpOtherEmail" Nullable="false" />
+    <Property Type="String" Name="WorkEmailAddress" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_AddressType">
+    <Key>
+      <PropertyRef Name="AddressTypeID" />
+    </Key>
+    <Property Type="Int32" Name="AddressTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="AddressType" Nullable="false" MaxLength="30">
+      <Documentation>
+        <Summary>Permanent, Temporary, Residential, Mail Address etc</Summary>
+        <LongDescription>This field will contain data like Permanent, Office Address, Residential Address, Temporary, Mail Address</LongDescription>
+      </Documentation>
+    </Property>
+    <NavigationProperty Name="HR_Emp_Address" Relationship="MyHRMSModel.HR_LK_AddressTypeHR_Emp_Address" FromRole="HR_LK_AddressType" ToRole="HR_Emp_Address" />
+  </EntityType>
+  <Association Name="HR_LK_AddressTypeHR_Emp_Address">
+    <End Type="MyHRMSModel.HR_LKP_AddressType" Role="HR_LK_AddressType" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Address" Role="HR_Emp_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LK_AddressType">
+        <PropertyRef Name="AddressTypeID" />
+      </Principal>
+      <Dependent Role="HR_Emp_Address">
+        <PropertyRef Name="AddressTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HR_EmployeeHR_ContactDetails">
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Emp_ContactDetails" Role="HR_ContactDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_ContactDetails">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_GLB_LKP_NameTitle">
+    <Key>
+      <PropertyRef Name="TitleCode" />
+    </Key>
+    <Property Type="Int32" Name="TitleCode" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TitleName" Nullable="false" MaxLength="5" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_GLB_LKP_NameTitleHR_Employee" FromRole="HR_GLB_LKP_NameTitle" ToRole="HR_Employee" />
+  </EntityType>
+  <Association Name="HR_GLB_LKP_NameTitleHR_Employee">
+    <End Type="MyHRMSModel.HR_GLB_LKP_NameTitle" Role="HR_GLB_LKP_NameTitle" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_GLB_LKP_NameTitle">
+        <PropertyRef Name="TitleCode" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="TitleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_LKP_SalaryGrades">
+    <Key>
+      <PropertyRef Name="SalaryGradeCode" />
+    </Key>
+    <Property Type="Int32" Name="SalaryGradeCode" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SalaryGrade" Nullable="false" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_SalaryGradesHR_Employee" FromRole="HR_SalaryGrades" ToRole="HR_Employee" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <NavigationProperty Name="HR_LKP_SalaryGradeDetails" Relationship="MyHRMSModel.HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades" FromRole="HR_LKP_SalaryGrades" ToRole="HR_LKP_SalaryGradeDetails" />
+    <Property Type="Int32" Name="CurrencyID" Nullable="true" />
+  </EntityType>
+  <Association Name="HR_SalaryGradesHR_Employee">
+    <End Type="MyHRMSModel.HR_LKP_SalaryGrades" Role="HR_SalaryGrades" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_SalaryGrades">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_LK_Currency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Type="Int32" Name="CurrencyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CurrencyName" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="CurrencyCode" Nullable="false" MaxLength="5" />
+    <NavigationProperty Name="HR_LK_Country" Relationship="MyHRMSModel.HR_LK_CountryHR_LK_Currency" FromRole="HR_LK_Currency" ToRole="HR_LK_Country" />
+  </EntityType>
+  <Association Name="HR_LK_CountryHR_LK_Currency">
+    <End Type="MyHRMSModel.HR_LKP_Country" Role="HR_LK_Country" Multiplicity="*" />
+    <End Type="MyHRMSModel.HR_LK_Currency" Role="HR_LK_Currency" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LK_Currency">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="HR_LK_Country">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_LKP_SalaryGradeDetails">
+    <Key>
+      <PropertyRef Name="SalaryDetailID" />
+    </Key>
+    <Property Type="Int32" Name="SalaryDetailID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="HR_LKP_SalaryGrades" Relationship="MyHRMSModel.HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades" FromRole="HR_LKP_SalaryGradeDetails" ToRole="HR_LKP_SalaryGrades" />
+    <Property Type="Int32" Name="SalaryGradeCode" Nullable="false" />
+    <Property Type="String" Name="CompanyID" Nullable="false" />
+    <Property Type="Decimal" Name="MinCTC" Nullable="false" />
+    <Property Type="Decimal" Name="MaxCTC" Nullable="false" />
+    <Property Type="Int32" Name="MinExperience" Nullable="false" />
+    <Property Type="Int32" Name="MaxExperience" Nullable="false" />
+    <Property Type="Int32" Name="CurrencyID" Nullable="true" />
+  </EntityType>
+  <Association Name="HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades">
+    <End Type="MyHRMSModel.HR_LKP_SalaryGradeDetails" Role="HR_LKP_SalaryGradeDetails" Multiplicity="*" />
+    <End Type="MyHRMSModel.HR_LKP_SalaryGrades" Role="HR_LKP_SalaryGrades" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_SalaryGrades">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Principal>
+      <Dependent Role="HR_LKP_SalaryGradeDetails">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_Emp_FamilyMembers">
+    <Key>
+      <PropertyRef Name="FamilyMemberID" />
+    </Key>
+    <Property Type="Int32" Name="FamilyMemberID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" />
+    <Property Type="String" Name="Age" Nullable="false" />
+    <Property Type="Int32" Name="RelationID" Nullable="false" />
+    <NavigationProperty Name="HR_LKP_RelationType" Relationship="MyHRMSModel.HR_LKP_RelationTypeHR_Emp_FamilyMembers" FromRole="HR_Emp_FamilyMembers" ToRole="HR_LKP_RelationType" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" />
+    <Property Type="Boolean" Name="IsMinor" Nullable="true">
+      <Documentation>
+        <Summary>Tells if the family member is minor (Children)</Summary>
+      </Documentation>
+    </Property>
+    <Property Type="Boolean" Name="IsDependent" Nullable="true">
+      <Documentation>
+        <Summary>Whether family member is dependent on employee</Summary>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="IsNominee" Nullable="false">
+      <Documentation>
+        <Summary>Incase of death or other or deal family member is nominated with renumerations</Summary>
+      </Documentation>
+    </Property>
+    <Property Type="Boolean" Name="ResidesWithEmployee" Nullable="true">
+      <Documentation>
+        <Summary>Tells if family member resides with employee</Summary>
+      </Documentation>
+    </Property>
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_EmployeeHR_Emp_FamilyMembers" FromRole="HR_Emp_FamilyMembers" ToRole="HR_Employee" />
+    <Property Type="Boolean" Name="ContactPersonInEmergency" Nullable="false">
+      <Documentation>
+        <Summary>Sets the family member as person to be contacted in case of emergency</Summary>
+      </Documentation>
+    </Property>
+    <Property Type="Boolean" Name="EligibleForInsurance" Nullable="true">
+      <Documentation>
+        <Summary>Set the family eligible for insurance policy</Summary>
+      </Documentation>
+    </Property>
+  </EntityType>
+  <EntityType Name="HR_GLB_LKP_RelationType">
+    <Key>
+      <PropertyRef Name="RelationID" />
+    </Key>
+    <Property Type="Int32" Name="RelationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RelationName" Nullable="false" />
+    <NavigationProperty Name="HR_Emp_FamilyMembers" Relationship="MyHRMSModel.HR_LKP_RelationTypeHR_Emp_FamilyMembers" FromRole="HR_LKP_RelationType" ToRole="HR_Emp_FamilyMembers" />
+  </EntityType>
+  <Association Name="HR_LKP_RelationTypeHR_Emp_FamilyMembers">
+    <End Type="MyHRMSModel.HR_GLB_LKP_RelationType" Role="HR_LKP_RelationType" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Emp_FamilyMembers" Role="HR_Emp_FamilyMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_RelationType">
+        <PropertyRef Name="RelationID" />
+      </Principal>
+      <Dependent Role="HR_Emp_FamilyMembers">
+        <PropertyRef Name="RelationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HR_EmployeeHR_Emp_FamilyMembers">
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="0..1" />
+    <End Type="MyHRMSModel.HR_Emp_FamilyMembers" Role="HR_Emp_FamilyMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_FamilyMembers">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_LKP_Departments">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Type="Int32" Name="DepartmentID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DepartmentName" Nullable="false" />
+    <Property Type="String" Name="DepartmentRole" Nullable="false" />
+    <Property Type="String" Name="DepartmentDescription" Nullable="false" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_EmployeeHR_LKP_Departments" FromRole="HR_LKP_Departments" ToRole="HR_Employee" />
+  </EntityType>
+  <Association Name="HR_EmployeeHR_LKP_Departments">
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="*" />
+    <End Type="MyHRMSModel.HR_LKP_Departments" Role="HR_LKP_Departments" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_Departments">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_LKP_JobTitle">
+    <Key>
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Type="Int32" Name="JobID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="JobTitle" Nullable="false" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+    <Property Type="String" Name="JobRole" Nullable="false" />
+    <Property Type="String" Name="JobDescription" Nullable="false" />
+    <Property Type="Int32" Name="DepartmentID" Nullable="true" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_EmployeeHR_LKP_JobTitle" FromRole="HR_LKP_JobTitle" ToRole="HR_Employee" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="Int32" Name="SalaryGradeCode" Nullable="false" />
+  </EntityType>
+  <Association Name="HR_EmployeeHR_LKP_JobTitle">
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="*" />
+    <End Type="MyHRMSModel.HR_LKP_JobTitle" Role="HR_LKP_JobTitle" Multiplicity="0..1" />
+  </Association>
+  <EntityType Name="HR_Emp_RelatedDocs">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Type="Int32" Name="EmployeeNumber" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="String" Name="PicPath" Nullable="false" />
+    <Property Type="String" Name="ResumePath" Nullable="false" />
+    <Property Type="String" Name="PicName" Nullable="false" />
+    <Property Type="String" Name="ResumeName" Nullable="false" />
+    <Property Type="String" Name="ResumeHeadLine" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdateDate" Nullable="false" />
+    <Property Type="String" Name="LicensePicPath" Nullable="false" />
+    <Property Type="String" Name="EmployeeFolderName" Nullable="false" />
+    <Property Type="String" Name="PanCarPicPath" Nullable="false" />
+    <Property Type="String" Name="PassportPicPath" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Passport">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+      <PropertyRef Name="PassportNumber" />
+    </Key>
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="String" Name="PassportNumber" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="IssuedDate" Nullable="true" />
+    <Property Type="DateTime" Name="ExpireDate" Nullable="true" />
+    <Property Type="String" Name="CountryCode" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ReportingDetails">
+    <Key>
+      <PropertyRef Name="EmployeeManagerId" />
+    </Key>
+    <Property Type="Int32" Name="EmployeeManagerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_RelatedDocs_Hist">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PicPath" Nullable="false" />
+    <Property Type="String" Name="ResumePath" Nullable="false" />
+    <Property Type="String" Name="ResumeName" Nullable="false" />
+    <Property Type="String" Name="ResumeHeaderLine" Nullable="false" />
+    <Property Type="String" Name="PicName" Nullable="false" />
+    <Property Type="DateTime" Name="LastUsedDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_PreviousEmploymentDetails">
+    <Key>
+      <PropertyRef Name="EmploymentDetailID" />
+    </Key>
+    <Property Type="Int32" Name="EmploymentDetailID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Int16" Name="EmployeeSeqNumber" Nullable="false" />
+    <Property Type="String" Name="EmployerName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="FromDate" Nullable="false" />
+    <Property Type="DateTime" Name="ToDate" Nullable="false" />
+    <Property Type="Decimal" Name="CTC" Nullable="false" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_EmployeeHR_Emp_PreviousEmploymentDetails" FromRole="HR_Emp_PreviousEmploymentDetails" ToRole="HR_Employee" />
+    <Property Type="String" Name="JobDescription" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <Association Name="HR_EmployeeHR_Emp_PreviousEmploymentDetails">
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Emp_PreviousEmploymentDetails" Role="HR_Emp_PreviousEmploymentDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_PreviousEmploymentDetails">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_LKP_Skill">
+    <Key>
+      <PropertyRef Name="SkillID" />
+    </Key>
+    <Property Type="Int32" Name="SkillID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SkillName" Nullable="false" />
+    <Property Type="String" Name="SkillDescritpion" Nullable="false" />
+    <NavigationProperty Name="HR_Emp_Skills" Relationship="MyHRMSModel.HR_Emp_SkillsHR_LKP_Skill" FromRole="HR_LKP_Skill" ToRole="HR_Emp_Skills" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Skills">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="Int32" Name="SkillID" Nullable="false" />
+    <Property Type="Int32" Name="ExperienceInMonths" Nullable="true" />
+    <Property Type="Int32" Name="ExperienceInYears" Nullable="true" />
+    <Property Type="Int32" Name="TotalExperience" Nullable="true" />
+    <NavigationProperty Name="HR_LKP_Skill" Relationship="MyHRMSModel.HR_Emp_SkillsHR_LKP_Skill" FromRole="HR_Emp_Skills" ToRole="HR_LKP_Skill" />
+  </EntityType>
+  <Association Name="HR_Emp_SkillsHR_LKP_Skill">
+    <End Type="MyHRMSModel.HR_Emp_Skills" Role="HR_Emp_Skills" Multiplicity="*" />
+    <End Type="MyHRMSModel.HR_LKP_Skill" Role="HR_LKP_Skill" Multiplicity="1" />
+  </Association>
+  <EntityType Name="HR_Emp_EmergenceContact">
+    <Key>
+      <PropertyRef Name="EmergencyContactID" />
+    </Key>
+    <Property Type="Int32" Name="EmergencyContactID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="FamilyMemberID" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="false" />
+    <Property Type="Int32" Name="RelationID" Nullable="false" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_EmployeeHR_Emp_EmergenceContact" FromRole="HR_Emp_EmergenceContact" ToRole="HR_Employee" />
+  </EntityType>
+  <Association Name="HR_EmployeeHR_Emp_EmergenceContact">
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Emp_EmergenceContact" Role="HR_Emp_EmergenceContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_EmergenceContact">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_Emp_EducationDetails">
+    <Key>
+      <PropertyRef Name="EducationDetailID" />
+    </Key>
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="String" Name="EducationID" Nullable="false" />
+    <Property Type="String" Name="SchoolName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UniversityName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="CollegeName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="StartDate" Nullable="false" />
+    <Property Type="String" Name="EndDate" Nullable="false" />
+    <Property Type="Int16" Name="EduSeqNo" Nullable="false" />
+    <Property Type="Decimal" Name="PassPercentage" Nullable="true" />
+    <Property Type="String" Name="PassGrade" Nullable="true" FixedLength="true" MaxLength="2" />
+    <Property Type="Int32" Name="DiplomaID" Nullable="true" />
+    <NavigationProperty Name="HR_Employee" Relationship="MyHRMSModel.HR_EmployeeHR_Emp_EducationDetails" FromRole="HR_Emp_EducationDetails" ToRole="HR_Employee" />
+    <Property Type="Int32" Name="EducationDetailID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="HR_LKP_DiplomaDetails" Relationship="MyHRMSModel.HR_LKP_DiplomaDetailsHR_Emp_EducationDetails" FromRole="HR_Emp_EducationDetails" ToRole="HR_LKP_DiplomaDetails" />
+  </EntityType>
+  <EntityType Name="HR_LKP_EductionType">
+    <Key>
+      <PropertyRef Name="EducationID" />
+    </Key>
+    <Property Type="Int32" Name="EducationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EducationShortCode" Nullable="false" />
+    <Property Type="String" Name="EducationFullName" Nullable="false" />
+    <Property Type="String" Name="EducationDescription" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_LKP_DiplomaDetails">
+    <Key>
+      <PropertyRef Name="DiplomaID" />
+    </Key>
+    <Property Type="Int32" Name="DiplomaID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="InstituteName" Nullable="false" />
+    <Property Type="String" Name="CourseName" Nullable="false" />
+    <Property Type="String" Name="PassGrade" Nullable="false" />
+    <NavigationProperty Name="HR_Emp_EducationDetails" Relationship="MyHRMSModel.HR_LKP_DiplomaDetailsHR_Emp_EducationDetails" FromRole="HR_LKP_DiplomaDetails" ToRole="HR_Emp_EducationDetails" />
+  </EntityType>
+  <Association Name="HR_EmployeeHR_Emp_EducationDetails">
+    <End Type="MyHRMSModel.HR_Employee" Role="HR_Employee" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Emp_EducationDetails" Role="HR_Emp_EducationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_EducationDetails">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="HR_LKP_DiplomaDetailsHR_Emp_EducationDetails">
+    <End Type="MyHRMSModel.HR_LKP_DiplomaDetails" Role="HR_LKP_DiplomaDetails" Multiplicity="0..1" />
+    <End Type="MyHRMSModel.HR_Emp_EducationDetails" Role="HR_Emp_EducationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_DiplomaDetails">
+        <PropertyRef Name="DiplomaID" />
+      </Principal>
+      <Dependent Role="HR_Emp_EducationDetails">
+        <PropertyRef Name="DiplomaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_Emp_BankAccountDetails">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="Int32" Name="BankID" Nullable="true" />
+    <Property Type="Int32" Name="AccountNumber" Nullable="false" />
+    <Property Type="Boolean" Name="IsSalaryAccount" Nullable="true" />
+    <Property Type="Boolean" Name="IsSalaryCreditAccount" />
+    <Property Type="Int32" Name="BankAccountTypeID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_GLB_LKP_Banks">
+    <Key>
+      <PropertyRef Name="BankID" />
+    </Key>
+    <Property Type="Int32" Name="BankID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="BankName" Nullable="false" />
+    <Property Type="Int32" Name="BankAddressID" Nullable="false" />
+    <Property Type="String" Name="IsNationalBank" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_BankAccountTypes">
+    <Key>
+      <PropertyRef Name="BankTypeID" />
+    </Key>
+    <Property Type="Int32" Name="BankTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="BankAccountType" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_AccountsWithBanks">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Type="Int64" Name="CompanyID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="Int32" Name="BankID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_Stations">
+    <Key>
+      <PropertyRef Name="StationID" />
+    </Key>
+    <Property Type="Int32" Name="StationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="StationName" Nullable="false" />
+    <Property Type="String" Name="StationTypeID" Nullable="false" />
+    <Property Type="String" Name="Location" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_StationType">
+    <Key>
+      <PropertyRef Name="StationTypeID" />
+    </Key>
+    <Property Type="Int32" Name="StationTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StationType" Nullable="false" />
+    <Property Type="String" Name="CompanyID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_Policies">
+    <Key>
+      <PropertyRef Name="PolicyID" />
+    </Key>
+    <Property Type="Int32" Name="PolicyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="PolicyName" Nullable="false" />
+    <Property Type="String" Name="PolicyDescription" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_AS_PolicyAppliedTo">
+    <Key>
+      <PropertyRef Name="PolicyID" />
+    </Key>
+    <Property Type="Int32" Name="PolicyID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="String" Name="StationID" Nullable="false" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_Holidays">
+    <Key>
+      <PropertyRef Name="HolidayID" />
+    </Key>
+    <Property Type="Int32" Name="HolidayID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="String" Name="HolidayTitle" Nullable="false" />
+    <Property Type="String" Name="HolidayDescription" Nullable="false" />
+    <Property Type="String" Name="HolidayDate" Nullable="false" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_WorkShifts">
+    <Key>
+      <PropertyRef Name="WorkShiftID" />
+    </Key>
+    <Property Type="Int32" Name="WorkShiftID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Weekdays" Nullable="false" />
+    <Property Type="String" Name="Weekends" Nullable="false" />
+    <Property Type="String" Name="ShiftName" Nullable="false" />
+    <Property Type="String" Name="WorkingHoursFrom" Nullable="false" />
+    <Property Type="String" Name="LunchBreakHoursFrom" Nullable="false" />
+    <Property Type="String" Name="WorkingHoursTo" Nullable="false" />
+    <Property Type="String" Name="LunchBreakHoursTo" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_GBL_LKP_IndustryType">
+    <Key>
+      <PropertyRef Name="IndustryTypeID" />
+    </Key>
+    <Property Type="Int32" Name="IndustryTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="IndustryType" Nullable="false" />
+    <Property Type="String" Name="Domain" Nullable="false" />
+    <Property Type="String" Name="NatureOfBusiness" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_AS_WorkShifts">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Type="Int64" Name="CompanyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="WorkShiftID" Nullable="false" />
+    <Property Type="Int32" Name="StationID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_Leaves">
+    <Key>
+      <PropertyRef Name="LeaveID" />
+    </Key>
+    <Property Type="Int32" Name="LeaveID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="LeaveTypeID" Nullable="true" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+    <Property Type="Int32" Name="NumberOfLeaves" Nullable="false" />
+    <Property Type="Boolean" Name="IsPaid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_LeaveTypes">
+    <Key>
+      <PropertyRef Name="LeaveTypeID" />
+    </Key>
+    <Property Type="Int32" Name="LeaveTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="LeaveType" Nullable="false" />
+    <Property Type="String" Name="LeaveDescription" Nullable="false" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_LeaveQouta">
+    <Key>
+      <PropertyRef Name="LeaveQuotaID" />
+    </Key>
+    <Property Type="Int32" Name="LeaveQuotaID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+    <Property Type="String" Name="LeaveQouta" Nullable="false" />
+    <Property Type="Int32" Name="PorbationLeaveQouta" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AS_EmployeeInProbation">
+    <Key>
+      <PropertyRef Name="ProbationID" />
+    </Key>
+    <Property Type="Int32" Name="ProbationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true" />
+    <Property Type="DateTime" Name="ProbationStartDate" Nullable="false" />
+    <Property Type="DateTime" Name="ProbationEndDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_ProbationPeriod">
+    <Key>
+      <PropertyRef Name="ProbationPeriodID" />
+    </Key>
+    <Property Type="Int32" Name="ProbationPeriodID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ProbationInMonths" Nullable="false" />
+    <Property Type="String" Name="CompanyID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_LeaveRequest">
+    <Key>
+      <PropertyRef Name="LeaveRequestID" />
+    </Key>
+    <Property Type="Int32" Name="LeaveRequestID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true" />
+    <Property Type="Int32" Name="LeaveID" Nullable="true" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" />
+    <Property Type="DateTime" Name="EndDate" Nullable="false" />
+    <Property Type="Int32" Name="TotalNoLeavesRequested" Nullable="false" />
+    <Property Type="String" Name="ApprovalStatusID" Nullable="true" MaxLength="10">
+      <Documentation>
+        <Summary>Denied, Approved and Pending</Summary>
+      </Documentation>
+    </Property>
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_LeaveApprovalMessage">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Type="Int32" Name="MessageID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="LeaveRequestID" Nullable="false" />
+    <Property Type="String" Name="RequestToEMPNumber" Nullable="false" />
+    <Property Type="String" Name="ApprovalStatusID" Nullable="false" MaxLength="10">
+      <Documentation>
+        <Summary>Denied, Approved and Pending</Summary>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="ApprovedReason" Nullable="false" MaxLength="1000" />
+    <Property Type="String" Name="DeniedReason" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="HR_EMP_LeaveQoutaDetails">
+    <Key>
+      <PropertyRef Name="LeaveQoutaDetailID" />
+    </Key>
+    <Property Type="Int32" Name="LeaveQoutaDetailID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true" />
+    <Property Type="Int32" Name="LeaveTypeID" Nullable="false" />
+    <Property Type="Int32" Name="AvaiableLeaves" Nullable="false" />
+    <Property Type="Int32" Name="LeaveTaken" Nullable="false" />
+    <Property Type="Int32" Name="TotalLeaves" Nullable="false" />
+    <Property Type="String" Name="Year" Nullable="false" />
+    <Property Type="Int32" Name="PreviousYearsLeave" Nullable="true" />
+    <Property Type="Int32" Name="Month" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_GBL_LKP_ApprovalStatus">
+    <Key>
+      <PropertyRef Name="ApprovalStatusID" />
+    </Key>
+    <Property Type="Int32" Name="ApprovalStatusID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="10">
+      <Documentation>
+        <Summary>Denied, Approved and Pending</Summary>
+        <LongDescription>Denied, Approved and Pending</LongDescription>
+      </Documentation>
+    </Property>
+  </EntityType>
+  <EntityType Name="HR_EMP_Leave_Hist">
+    <Key>
+      <PropertyRef Name="LeaveHistId" />
+    </Key>
+    <Property Type="Int32" Name="LeaveHistId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="DateTime" Name="StartDate" Nullable="true" />
+    <Property Type="DateTime" Name="EndDate" Nullable="true" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+    <Property Type="Int32" Name="LeaveRequestID" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_InsurancePolicy">
+    <Key>
+      <PropertyRef Name="InsurancePolicyID" />
+    </Key>
+    <Property Type="Int32" Name="InsurancePolicyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="InusranceCompanyID" Nullable="false">
+      <Documentation>
+        <Summary>Stores the Insurance company Name</Summary>
+      </Documentation>
+    </Property>
+    <Property Type="Decimal" Name="PolicyAmount" Nullable="false">
+      <Documentation>
+        <Summary>Amount of policy</Summary>
+      </Documentation>
+    </Property>
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+    <Property Type="String" Name="PolicyDescription" Nullable="false" />
+    <Property Type="String" Name="CompanyURL" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_InsuranceDetails">
+    <Key>
+      <PropertyRef Name="InsuredID" />
+    </Key>
+    <Property Type="Int32" Name="InsuredID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EmployeeNumber" Nullable="true" />
+    <Property Type="Int32" Name="InsurancePolicyID" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_InsuranceCompanyDetail">
+    <Key>
+      <PropertyRef Name="InusranceCompanyID" />
+    </Key>
+    <Property Type="Int32" Name="InusranceCompanyID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CompanyName" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EducationDocs">
+    <Key>
+      <PropertyRef Name="EducationDocID" />
+    </Key>
+    <Property Type="Int32" Name="EducationDocID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CertificatePath" Nullable="false" />
+    <Property Type="String" Name="MarkSheetPath" Nullable="false" />
+    <Property Type="String" Name="DiplomaCertificatePath" Nullable="false" />
+    <NavigationProperty Name="HR_Emp_AS_EducationDocs" Relationship="MyHRMSModel.HR_Emp_EducationDocsHR_Emp_AS_EducationDocs" FromRole="HR_Emp_EducationDocs" ToRole="HR_Emp_AS_EducationDocs" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AS_EducationDocs">
+    <Key>
+      <PropertyRef Name="AssociateDocID" />
+    </Key>
+    <Property Type="Int32" Name="AssociateDocID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Int32" Name="EducationDocID" Nullable="false" />
+    <NavigationProperty Name="HR_Emp_EducationDocs" Relationship="MyHRMSModel.HR_Emp_EducationDocsHR_Emp_AS_EducationDocs" FromRole="HR_Emp_AS_EducationDocs" ToRole="HR_Emp_EducationDocs" />
+  </EntityType>
+  <Association Name="HR_Emp_EducationDocsHR_Emp_AS_EducationDocs">
+    <End Type="MyHRMSModel.HR_Emp_EducationDocs" Role="HR_Emp_EducationDocs" Multiplicity="1" />
+    <End Type="MyHRMSModel.HR_Emp_AS_EducationDocs" Role="HR_Emp_AS_EducationDocs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Emp_EducationDocs">
+        <PropertyRef Name="EducationDocID" />
+      </Principal>
+      <Dependent Role="HR_Emp_AS_EducationDocs">
+        <PropertyRef Name="EducationDocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="HR_CMP_Messages">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Type="Int32" Name="MessageID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CompanyNumber" Nullable="false" />
+    <Property Type="String" Name="FromEmployeeNumber" Nullable="false" />
+    <Property Type="String" Name="MessageToEmployeeNumber" Nullable="false" />
+    <Property Type="String" Name="Subject" Nullable="false" />
+    <Property Type="String" Name="Body" Nullable="false" />
+    <Property Type="String" Name="MessageDate" Nullable="false" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Inbox">
+    <Key>
+      <PropertyRef Name="InboxID" />
+    </Key>
+    <Property Type="Int32" Name="InboxID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="MessageToEmployeeNumber" Nullable="false" />
+    <Property Type="Int32" Name="MessageID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_SentMessages">
+    <Key>
+      <PropertyRef Name="SentMessageID" />
+    </Key>
+    <Property Type="Int32" Name="SentMessageID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="MessageToEmployeeNumber" Nullable="false" />
+    <Property Type="String" Name="MessageID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ProvidentFundDetails">
+    <Documentation>
+      <LongDescription>This table will help to keep track of PF related details of employee</LongDescription>
+    </Documentation>
+    <Key>
+      <PropertyRef Name="ProvidentFundID" />
+    </Key>
+    <Property Type="Int32" Name="ProvidentFundID" Nullable="false" annotation:StoreGeneratedPattern="Identity">
+      <Documentation>
+        <LongDescription>Just an ID to keep track of PF details</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true">
+      <Documentation>
+        <LongDescription>Employee Number helps to refers details of employee</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="PFNumber" Nullable="false" MaxLength="30">
+      <Documentation>
+        <LongDescription>Stores the PF number of Employee</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="Decimal" Name="TotalPFAmount" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AnnualSalaryDetails">
+    <Key>
+      <PropertyRef Name="AnnualSalaryID" />
+    </Key>
+    <Property Type="Int32" Name="AnnualSalaryID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Int32" Name="SalaryGradeCode" Nullable="true" />
+    <Property Type="Decimal" Name="AnnualBasic" Nullable="false" />
+    <Property Type="Decimal" Name="AnnualHouseRent" Nullable="false" />
+    <Property Type="Decimal" Name="AnnualMedicalReimbursment" Nullable="false" />
+    <Property Type="Decimal" Name="AnnualLTAReimbursment" Nullable="false" />
+    <Property Type="Decimal" Name="AnnualFuelReimbursment" Nullable="false" />
+    <Property Type="Decimal" Name="AnnualProfessionalDevelopment" Nullable="false" />
+    <Property Type="Decimal" Name="Misc1" Nullable="true" />
+    <Property Type="Decimal" Name="Misc2" Nullable="true" />
+    <Property Type="Decimal" Name="Misc3" Nullable="true" />
+    <Property Type="Decimal" Name="Misc4" Nullable="true" />
+    <Property Type="Decimal" Name="Misc5" Nullable="true" />
+    <Property Type="Decimal" Name="Misc6" Nullable="true" />
+    <Property Type="Decimal" Name="Misc7" Nullable="true" />
+    <Property Type="Decimal" Name="Misc8" Nullable="true" />
+    <Property Type="Decimal" Name="Misc9" Nullable="true" />
+    <Property Type="String" Name="Misc1Description" Nullable="true" />
+    <Property Type="String" Name="Misc2Description" Nullable="true" />
+    <Property Type="String" Name="Misc3Description" Nullable="true" />
+    <Property Type="String" Name="Misc4Description" Nullable="true" />
+    <Property Type="String" Name="Misc5Description" Nullable="true" />
+    <Property Type="String" Name="Misc6Description" Nullable="true" />
+    <Property Type="String" Name="Misc7Description" Nullable="true" />
+    <Property Type="String" Name="Misc8Description" Nullable="true" />
+    <Property Type="String" Name="Misc9Description" Nullable="true" />
+    <Property Type="Decimal" Name="AnnualGrossSalary" Nullable="false" />
+    <Property Type="Decimal" Name="AnnualNetSalary" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AnnualTaxDeductionDetails">
+    <Key>
+      <PropertyRef Name="AnnualTaxDeductionID" />
+    </Key>
+    <Property Type="Int32" Name="AnnualTaxDeductionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Decimal" Name="ProffessionalTax" Nullable="false" />
+    <Property Type="Decimal" Name="ProvidentFund" Nullable="false" />
+    <Property Type="Decimal" Name="VoluntaryPF" Nullable="false" />
+    <Property Type="Decimal" Name="IncomeTax" Nullable="false" />
+    <Property Type="Decimal" Name="LifeInsurance" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction1" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction2" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction3" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction4" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction5" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction6" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction7" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction8" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction9" Nullable="false" />
+    <Property Type="String" Name="OD1Description" Nullable="true" />
+    <Property Type="String" Name="OD2Description" Nullable="true" />
+    <Property Type="String" Name="OD3Description" Nullable="true" />
+    <Property Type="String" Name="OD4Description" Nullable="true" />
+    <Property Type="String" Name="OD5Description" Nullable="true" />
+    <Property Type="String" Name="OD6Description" Nullable="true" />
+    <Property Type="String" Name="OD7Description" Nullable="true" />
+    <Property Type="String" Name="OD8Description" Nullable="true" />
+    <Property Type="String" Name="OD9Description" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_GBL_TaxRules">
+    <Key>
+      <PropertyRef Name="TaxRuleID" />
+    </Key>
+    <Property Type="Int32" Name="TaxRuleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RuleName" Nullable="false" />
+    <Property Type="String" Name="RuleDescription" Nullable="false" />
+    <Property Type="String" Name="RuleValue" Nullable="false" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_ExemptionsType">
+    <Key>
+      <PropertyRef Name="ExemptionTypeId" />
+    </Key>
+    <Property Type="Int32" Name="ExemptionTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ExemptionType" Nullable="false" />
+    <Property Type="String" Name="ExemptionDescriptions" Nullable="false" />
+    <Property Type="Decimal" Name="CompanyID" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_ExemptionRules">
+    <Key>
+      <PropertyRef Name="ExemptionRuleID" />
+    </Key>
+    <Property Type="Int32" Name="ExemptionRuleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="CompanyID" Nullable="true" />
+    <Property Type="String" Name="ExemptionTypeID" Nullable="false" />
+    <Property Type="String" Name="ExemptionRule" Nullable="false" />
+    <Property Type="String" Name="ExemptionRuleDescription" Nullable="false" />
+    <Property Type="String" Name="ExemptionLimitedAmount" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EstimateExemptions">
+    <Key>
+      <PropertyRef Name="EstimateExemptionID" />
+    </Key>
+    <Property Type="Int32" Name="EstimateExemptionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Int32" Name="ExemptionRuleID" Nullable="false" />
+    <Property Type="Decimal" Name="ExemptionAmount" Nullable="false" />
+    <Property Type="Int32" Name="EstimateTaxExemptionID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ActualExemptions">
+    <Key>
+      <PropertyRef Name="MiscExemptionID" />
+    </Key>
+    <Property Type="Int32" Name="MiscExemptionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Int32" Name="ExemptionRuleID" Nullable="false" />
+    <Property Type="Decimal" Name="ExemptionAmount" Nullable="false" />
+    <Property Type="Int32" Name="ActualTaxExemptionID" Nullable="false" annotation:StoreGeneratedPattern="None" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ExemptionDocuments">
+    <Key>
+      <PropertyRef Name="DocumentID" />
+    </Key>
+    <Property Type="Int32" Name="DocumentID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="MiscExemptionID" Nullable="false" />
+    <Property Type="String" Name="DocumentName" Nullable="false" />
+    <Property Type="String" Name="DocumentPath" Nullable="false" />
+    <Property Type="String" Name="UploadDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_MonthlySalaryDetails">
+    <Key>
+      <PropertyRef Name="MonthlySalaryID" />
+    </Key>
+    <Property Type="Int32" Name="MonthlySalaryID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Int32" Name="SalaryGradeCode" Nullable="true" />
+    <Property Type="Decimal" Name="Basic" Nullable="false" />
+    <Property Type="Decimal" Name="HouseRent" Nullable="false" />
+    <Property Type="Decimal" Name="MedicalReimbursment" Nullable="false" />
+    <Property Type="Decimal" Name="LTAReimbursment" Nullable="false" />
+    <Property Type="Decimal" Name="FuelReimbursment" Nullable="false" />
+    <Property Type="Decimal" Name="ProfessionalDevelopment" Nullable="false" />
+    <Property Type="Decimal" Name="Misc1" Nullable="true" />
+    <Property Type="Decimal" Name="Misc2" Nullable="true" />
+    <Property Type="Decimal" Name="Misc3" Nullable="true" />
+    <Property Type="Decimal" Name="Misc4" Nullable="true" />
+    <Property Type="Decimal" Name="Misc5" Nullable="true" />
+    <Property Type="Decimal" Name="Misc6" Nullable="true" />
+    <Property Type="Decimal" Name="Misc7" Nullable="true" />
+    <Property Type="Decimal" Name="Misc8" Nullable="true" />
+    <Property Type="Decimal" Name="Misc9" Nullable="true" />
+    <Property Type="String" Name="Misc1Description" Nullable="true" />
+    <Property Type="String" Name="Misc2Description" Nullable="true" />
+    <Property Type="String" Name="Misc3Description" Nullable="true" />
+    <Property Type="String" Name="Misc4Description" Nullable="true" />
+    <Property Type="String" Name="Misc5Description" Nullable="true" />
+    <Property Type="String" Name="Misc6Description" Nullable="true" />
+    <Property Type="String" Name="Misc7Description" Nullable="true" />
+    <Property Type="String" Name="Misc8Description" Nullable="true" />
+    <Property Type="String" Name="Misc9Description" Nullable="true" />
+    <Property Type="Int16" Name="Month" Nullable="false" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="String" Name="CreationDate" Nullable="false" />
+    <Property Type="Decimal" Name="GrossSalary" Nullable="false" />
+    <Property Type="Decimal" Name="NetSalary" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_MonthlySalaryDeductionDetails">
+    <Key>
+      <PropertyRef Name="MonthlyDeductionID" />
+    </Key>
+    <Property Type="Int32" Name="MonthlyDeductionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="MonthlySalaryID" Nullable="true" />
+    <Property Type="Decimal" Name="ProffessionalTax" Nullable="false" />
+    <Property Type="Decimal" Name="ProvidentFund" Nullable="false" />
+    <Property Type="Decimal" Name="VoluntaryPF" Nullable="false" />
+    <Property Type="Decimal" Name="IncomeTax" Nullable="false" />
+    <Property Type="Decimal" Name="LifeInsurance" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction1" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction2" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction3" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction4" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction5" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction6" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction7" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction8" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction9" Nullable="false" />
+    <Property Type="String" Name="OD1Description" Nullable="true" />
+    <Property Type="String" Name="OD2Description" Nullable="true" />
+    <Property Type="String" Name="OD3Description" Nullable="true" />
+    <Property Type="String" Name="OD4Description" Nullable="true" />
+    <Property Type="String" Name="OD5Description" Nullable="true" />
+    <Property Type="String" Name="OD6Description" Nullable="true" />
+    <Property Type="String" Name="OD7Description" Nullable="true" />
+    <Property Type="String" Name="OD8Description" Nullable="true" />
+    <Property Type="String" Name="OD9Description" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Cmp_SalaryGenerationDate">
+    <Key>
+      <PropertyRef Name="GenerationId" />
+    </Key>
+    <Property Type="Int32" Name="GenerationId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="CompanyID" Nullable="false" />
+    <Property Type="Int16" Name="GenerationDay" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EstimateAnnualTaxExemptionDetails">
+    <Key>
+      <PropertyRef Name="EstimateTaxExemptionID" />
+    </Key>
+    <Property Type="Int32" Name="EstimateTaxExemptionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Decimal" Name="ProffessionalTax" Nullable="false" />
+    <Property Type="Decimal" Name="ProvidentFund" Nullable="false" />
+    <Property Type="Decimal" Name="VoluntaryPF" Nullable="false" />
+    <Property Type="Decimal" Name="IncomeTax" Nullable="false" />
+    <Property Type="Decimal" Name="LifeInsurance" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction1" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction2" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction3" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction4" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction5" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction6" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction7" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction8" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction9" Nullable="false" />
+    <Property Type="String" Name="OD1Description" Nullable="true" />
+    <Property Type="String" Name="OD2Description" Nullable="true" />
+    <Property Type="String" Name="OD3Description" Nullable="true" />
+    <Property Type="String" Name="OD4Description" Nullable="true" />
+    <Property Type="String" Name="OD5Description" Nullable="true" />
+    <Property Type="String" Name="OD6Description" Nullable="true" />
+    <Property Type="String" Name="OD7Description" Nullable="true" />
+    <Property Type="String" Name="OD8Description" Nullable="true" />
+    <Property Type="String" Name="OD9Description" Nullable="true" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdateDate" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ActualAnnualTaxExemptionDetails">
+    <Key>
+      <PropertyRef Name="ActualTaxExemptionID" />
+    </Key>
+    <Property Type="Int32" Name="ActualTaxExemptionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Decimal" Name="ProffessionalTax" Nullable="false" />
+    <Property Type="Decimal" Name="ProvidentFund" Nullable="false" />
+    <Property Type="Decimal" Name="VoluntaryPF" Nullable="false" />
+    <Property Type="Decimal" Name="IncomeTax" Nullable="false" />
+    <Property Type="Decimal" Name="LifeInsurance" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction1" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction2" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction3" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction4" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction5" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction6" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction7" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction8" Nullable="false" />
+    <Property Type="Decimal" Name="OtherDeduction9" Nullable="false" />
+    <Property Type="String" Name="OD1Description" Nullable="true" />
+    <Property Type="String" Name="OD2Description" Nullable="true" />
+    <Property Type="String" Name="OD3Description" Nullable="true" />
+    <Property Type="String" Name="OD4Description" Nullable="true" />
+    <Property Type="String" Name="OD5Description" Nullable="true" />
+    <Property Type="String" Name="OD6Description" Nullable="true" />
+    <Property Type="String" Name="OD7Description" Nullable="true" />
+    <Property Type="String" Name="OD8Description" Nullable="true" />
+    <Property Type="String" Name="OD9Description" Nullable="true" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdateDate" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Cmp_PerformanceRatingType">
+    <Key>
+      <PropertyRef Name="RatingTypeID" />
+    </Key>
+    <Property Type="Int32" Name="RatingTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RatingType" Nullable="false" />
+    <Property Type="String" Name="RatingDescription" Nullable="false" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_SmartGoals">
+    <Key>
+      <PropertyRef Name="SmartGoalID" />
+    </Key>
+    <Property Type="Int32" Name="SmartGoalID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="CompanyID" Nullable="true" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true" />
+    <Property Type="String" Name="GoalHeadLine" Nullable="false" />
+    <Property Type="String" Name="GoalDescription" Nullable="false" />
+    <Property Type="String" Name="Year" Nullable="false" />
+    <Property Type="String" Name="DocPath" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ReviewDetails">
+    <Key>
+      <PropertyRef Name="ReviewID" />
+    </Key>
+    <Property Type="Int32" Name="ReviewID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int64" Name="ReviewerID" Nullable="true" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="true" />
+    <Property Type="DateTime" Name="ReviewStartDate" Nullable="false" />
+    <Property Type="DateTime" Name="ReviewEndDate" Nullable="false" />
+    <Property Type="DateTime" Name="DateOfReview" Nullable="false" />
+    <Property Type="String" Name="DocPath" Nullable="false" />
+    <Property Type="Int32" Name="RatingTypeID" Nullable="true" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Users">
+    <Key>
+      <PropertyRef Name="UserGuid" />
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Type="Guid" Name="UserGuid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" />
+    <Property Type="String" Name="HashKey" Nullable="false" />
+    <Property Type="Boolean" Name="IsAdmin" Nullable="true" />
+    <Property Type="Int64" Name="EmployeeNumber" Nullable="false" />
+    <Property Type="Boolean" Name="ReceiveNotification" Nullable="true" />
+    <Property Type="DateTime" Name="DateEntered" Nullable="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" />
+    <Property Type="String" Name="ModifiedUserID" Nullable="false" />
+    <Property Type="Int32" Name="UserGroupID" Nullable="true" />
+    <Property Type="String" Name="IsActive" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_UserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupID" />
+    </Key>
+    <Property Type="Int32" Name="UserGroupID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="GroupName" Nullable="false" />
+  </EntityType>
+</Schema>

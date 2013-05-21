@@ -1,0 +1,6 @@
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\ExecutingWeblogQueries\bin\Debug\ExecutingWeblogQueries.exe.config
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\ExecutingWeblogQueries\bin\Debug\ExecutingWeblogQueries.exe
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\ExecutingWeblogQueries\bin\Debug\ExecutingWeblogQueries.pdb
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\ExecutingWeblogQueries\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\ExecutingWeblogQueries\obj\Debug\ExecutingWeblogQueries.exe
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\ExecutingWeblogQueries\obj\Debug\ExecutingWeblogQueries.pdb

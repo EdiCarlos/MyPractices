@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[HR_Emp_Property](
+	[AssetID] [int] NOT NULL,
+	[EmployeeNumber] [bigint] NULL,
+ CONSTRAINT [PK_HR_Emp_Property] PRIMARY KEY CLUSTERED 
+(
+	[AssetID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON),
+)
+
+

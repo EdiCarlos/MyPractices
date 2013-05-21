@@ -1,0 +1,8 @@
+D:\temp\VisualC#\backgroundwork\BackGroundWork\BackGroundWork\bin\Debug\BackGroundWork.exe
+D:\temp\VisualC#\backgroundwork\BackGroundWork\BackGroundWork\bin\Debug\BackGroundWork.pdb
+D:\temp\VisualC#\backgroundwork\BackGroundWork\BackGroundWork\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\backgroundwork\BackGroundWork\BackGroundWork\obj\Debug\BackGroundWork.Form1.resources
+D:\temp\VisualC#\backgroundwork\BackGroundWork\BackGroundWork\obj\Debug\BackGroundWork.Properties.Resources.resources
+D:\temp\VisualC#\backgroundwork\BackGroundWork\BackGroundWork\obj\Debug\BackGroundWork.csproj.GenerateResource.Cache
+D:\temp\VisualC#\backgroundwork\BackGroundWork\BackGroundWork\obj\Debug\BackGroundWork.exe
+D:\temp\VisualC#\backgroundwork\BackGroundWork\BackGroundWork\obj\Debug\BackGroundWork.pdb

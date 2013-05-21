@@ -1,0 +1,7 @@
+<collections:Hashtable
+xmlns:collections="clr-namespace:System.Collections;assembly=mscorlib"
+xmlns:sys="clr-namespace:System;assembly=mscorlib"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<sys:Int32 x:Key="key1">7</sys:Int32>
+<sys:Int32 x:Key="key2">23</sys:Int32>
+</collections:Hashtable>

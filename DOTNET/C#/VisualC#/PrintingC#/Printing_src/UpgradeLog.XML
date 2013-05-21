@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Print">
+</Property><Property Name="Solution File" Value="D:\PrintingC#\Printing_src\Print.sln">
+</Property><Property Name="Date" Value="Monday, April 12, 2010">
+</Property><Property Name="Time" Value="11:08 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Print.sln" Description="File successfully backed up as D:\PrintingC#\Printing_src\Backup\Print.sln">
+</Event><Event ErrorLevel="0" Project="Print" Source="Print.csproj" Description="Project file successfully backed up as D:\PrintingC#\Printing_src\Backup\Print.csproj">
+</Event><Event ErrorLevel="0" Project="Print" Source="Print.csproj.user" Description="Project user file successfully backed up as D:\PrintingC#\Printing_src\Backup\Print.csproj.user">
+</Event><Event ErrorLevel="0" Project="Print" Source="AssemblyInfo.cs" Description="File successfully backed up as D:\PrintingC#\Printing_src\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Print" Source="Print.cs" Description="File successfully backed up as D:\PrintingC#\Printing_src\Backup\Print.cs">
+</Event><Event ErrorLevel="0" Project="Print" Source="app.config" Description="File successfully backed up as D:\PrintingC#\Printing_src\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="Print" Source="App.ico" Description="File successfully backed up as D:\PrintingC#\Printing_src\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="Print" Source="Print.resx" Description="File successfully backed up as D:\PrintingC#\Printing_src\Backup\Print.resx">
+</Event><Event ErrorLevel="0" Project="Print" Source="Print.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Print" Source="Print.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Print.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Print.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Print" Source="Print.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

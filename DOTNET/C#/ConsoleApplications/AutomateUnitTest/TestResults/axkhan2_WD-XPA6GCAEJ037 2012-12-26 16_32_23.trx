@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="12f64b27-d84b-4875-8d0b-2c48c4f0c27c" name="axkhan2@WD-XPA6GCAEJ037 2012-12-26 16:32:23" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="60d2611c-ed31-4dc8-9970-8070981fe519">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="axkhan2_WD-XPA6GCAEJ037 2012-12-26 16_32_23">
+      <DeploymentItem filename="D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest\bin\Debug\AutomateUnitTest.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-26T16:32:23.0131472+05:30" queuing="2012-12-26T16:32:24.0443840+05:30" start="2012-12-26T16:32:24.1693824+05:30" finish="2012-12-26T16:32:25.1068704+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Auth_Syncada_10KLevel_Request" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="a3b504e4-e695-a155-0c0b-e02c1e0702e0">
+      <Execution id="da0e6ebb-749f-47a7-a92c-b2ae66db3a79" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.MyGeneratedClass, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Auth_Syncada_10KLevel_Request" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a3b504e4-e695-a155-0c0b-e02c1e0702e0" executionId="da0e6ebb-749f-47a7-a92c-b2ae66db3a79" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="da0e6ebb-749f-47a7-a92c-b2ae66db3a79" testId="a3b504e4-e695-a155-0c0b-e02c1e0702e0" testName="Auth_Syncada_10KLevel_Request" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0192152" startTime="2012-12-26T16:32:24.2943808+05:30" endTime="2012-12-26T16:32:25.0756208+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da0e6ebb-749f-47a7-a92c-b2ae66db3a79">
+    </UnitTestResult>
+  </Results>
+</TestRun>

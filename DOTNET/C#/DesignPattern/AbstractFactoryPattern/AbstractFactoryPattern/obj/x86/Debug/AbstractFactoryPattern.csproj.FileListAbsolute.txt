@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\DesignPattern\AbstractFactoryPattern\AbstractFactoryPattern\bin\Debug\AbstractFactoryPattern.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\AbstractFactoryPattern\AbstractFactoryPattern\bin\Debug\AbstractFactoryPattern.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\AbstractFactoryPattern\AbstractFactoryPattern\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\DesignPattern\AbstractFactoryPattern\AbstractFactoryPattern\obj\x86\Debug\AbstractFactoryPattern.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\AbstractFactoryPattern\AbstractFactoryPattern\obj\x86\Debug\AbstractFactoryPattern.pdb

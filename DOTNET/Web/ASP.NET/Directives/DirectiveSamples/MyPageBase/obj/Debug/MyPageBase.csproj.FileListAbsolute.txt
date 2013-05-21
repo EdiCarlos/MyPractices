@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\MyPageBase\bin\Debug\MyPageBase.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\MyPageBase\bin\Debug\MyPageBase.pdb
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\MyPageBase\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\MyPageBase\obj\Debug\MyPageBase.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\MyPageBase\obj\Debug\MyPageBase.pdb

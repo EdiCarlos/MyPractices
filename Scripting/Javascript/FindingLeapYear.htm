@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+<script type='text/javascript'>
+    debugger;
+    //var date = new Date();
+    var ear = 2008;
+    var resultMod = ear % 4;
+    if (resultMod == 0) {
+        alert('is leap year');
+    }
+    else {
+        alert('is not leap year');
+    }
+</script>
+<script type='text/javascript'>
+ function getNumberFromMonth(mon)
+    {
+    var month = mon.toString().toUpperCase();
+      if(month == "JAN")
+        return '01';
+        else if(month == "FEB")
+        return '02';
+        else if(month == "MAR")
+        return '03';
+        else if(month == "APR")
+        return '04';
+        else if(month == "MAY")
+        return '05';
+        else if(month == "JUN")
+        return '06';
+        else if(month == "JUL")
+        return '07';
+        else if(month == "AUG")
+        return '08';
+        else if(month == "SEP")
+        return '09';
+        else if(month == "OCT")
+        return '10';
+        else if(month == "NOV")
+        return '11';
+        else if(month == "DEC")
+        return '12';
+    }
+
+
+function ValidateForSpace(txt)
+{
+//validation for spatial characters
+if(txt.value.match(/^\s+|\s+$/g, ''))
+{
+var temp = txt.value.replace(/^\s+|\s+$/g, '');
+if(temp.length <= 0)
+{
+txt.value = temp;
+return false;
+}
+}
+}
+function getDateElement(dt)
+{
+var dateBlock = document.getElementById(dt);
+var  date = dateBlock.getElementsByTagName("input");
+if(date[1] != null)
+{
+return date[1];
+}
+return null;
+}
+//replace this function with ValidateIfEmpty functions to apply new validation
+function ValidateIfEmpty(block, txt)
+{
+try
+{
+var txtValue = txt.value;
+if(txt.value == '' &&  document.getElementById(block).style.display == 'block')
+{
+return false;
+}
+if(txt.value.match(/^\s+|\s+$/g, ''))
+{
+var temp = txt.value.replace(/^\s+|\s+$/g, '');
+if(temp.length <= 0)
+{
+txt.value = temp;
+return false;
+}
+}
+}
+catch(err)
+{
+alert("Error in ValidateIfEmpty() " + err.description);
+}
+return true;
+}
+
+function ValidateDates()
+{
+if(!IsValid())
+{
+alert("From Month Or From Year Cannot be More Than Through Month Or Through Year");
+return false;
+}
+var fromDate = new Date();
+fromDate.setFullYear(parseInt(frmYear[frmYear.selectedIndex].value));
+fromDate.setMonth(parseInt(getMonthInIndex(frmMonth[frmMonth.selectedIndex].value)) -1 );
+fromDate.setDate(1);
+var throughDate = new Date();
+throughDate.setFullYear(parseInt(thrYear[thrYear.selectedIndex].value));
+throughDate.setMonth(parseInt(getMonthInIndex(thrMonth[thrMonth.selectedIndex].value)) -1);
+switch(parseInt(getMonthInIndex(thrMonth[thrMonth.selectedIndex].value)))
+{
+case 1:
+throughDate.setDate(31);
+break;
+case 2:
+  var ear = parseInt(frmYear[frmYear.selectedIndex].value);
+  var resultMode = ear % 4;
+  if(resultMode == 0)
+{
+throughDate.setDate(29);
+}
+else
+{
+throughDate.setDate(28);
+}
+break;
+case 3:
+throughDate.setDate(31);
+break;
+case 4:
+throughDate.setDate(30);
+break;
+case 5:
+throughDate.setDate(31);
+break;
+case 6:
+throughDate.setDate(30);
+break;
+case 7:
+throughDate.setDate(31);
+break;
+case 8:
+throughDate.setDate(31);
+break;
+case 9:
+throughDate.setDate(30);
+break;
+case 10:
+throughDate.setDate(31);
+break;
+case 11:
+throughDate.setDate(30);
+break;
+case 12:
+throughDate.setDate(31);
+break;
+}
+//var from = parseInt(fromDate.getMonth().toString()+""+fromDate.getFullYear().toString());
+//var through = parseInt(throughDate.getMonth().toString()+""+throughDate.getFullYear().toString());
+var msPerDay = 24 * 60 * 60 * 1000;
+alert(throughDate - fromDate);
+alert(msPerDay);
+//alert(((throughDate - fromDate) / msPerDay) + 1);
+if(((throughDate - fromDate) / msPerDay) + 1 > 396)
+{
+alert("More than 13 months selected");
+return false;
+}
+return true;
+}
+function validate()
+{
+
+try
+{
+//ValidateForSpace(fW._textEditBox_txt_buyerId);
+//ValidateForSpace(fW._textEditBox_txt_sellerId);
+}
+catch(err)
+{
+alert(err.description);
+}
+//try
+//{
+//if(!ValidateIfEmpty("buyerBlock", fW._textEditBoxtxt_buyerName))
+//{
+//alert("One or more of the required values is missing.Required values are needed to produce the report."); return;}
+//}
+//catch(err)
+//{
+//alert(err.description);
+//}
+//try
+//{
+//if(!ValidateIfEmpty("sellerCompanyBlock", fW._textEditBoxtxt_sellerCompany))
+//{
+//alert("One or more of the required values is missing.Required values are needed to produce the report."); return;}
+//}
+//catch(err)
+//{
+//alert(err.description);
+//}
+//try
+//{
+//if(!ValidateIfEmpty("sellerBlock", fW._textEditBoxtxt_sellerName))
+//{
+//alert("One or more of the required values is missing.Required values are needed to produce the report."); return;}
+//}
+//catch(err)
+//{
+//alert(err.description);
+//}
+//try
+//{
+//if(!ValidateIfEmpty("billAccountBlock", fW._textEditBoxtxt_billNumber))
+//{
+//alert("One or more of the required values is missing.Required values are needed to produce the report."); return;}
+//}
+//catch(err)
+//{
+//alert(err.description);
+//}
+if(document.getElementById("desiredanalysBlock").style.display == 'block' && fW._textEditBoxtxt_daysLastInvoice.value.length == 0)
+{
+alert("One or more of the required values is missing.Required values are needed to produce the report.");
+return;
+}
+else
+{
+if(parseInt(fW._textEditBoxtxt_daysLastInvoice.value) <= 0)
+{
+alert("Days Since Last Invoice cannot have 0 or negative number");
+return;
+}
+}
+
+if(!ValidateDates())
+{
+return false;
+}
+
+if(!canSubmitPrompt())
+{
+return;
+}
+else                                
+{
+
+fW._textEditBox_from_month.value = getNumberFromMonth(frmMonth[frmMonth.selectedIndex].text);
+fW._textEditBox_from_year.value = frmYear[frmYear.selectedIndex].text;
+fW._textEditBox_through_month.value = getNumberFromMonth(thrMonth[thrMonth.selectedIndex].text);
+fW._textEditBox_through_year.value = thrYear[thrYear.selectedIndex].text;
+
+setTimeout(promptButtonFinish,0);
+}
+}
+    </script>
+ <button class="bp" onclick="validate();"> Submit</button>
+</head>
+<body>
+
+</body>
+</html>

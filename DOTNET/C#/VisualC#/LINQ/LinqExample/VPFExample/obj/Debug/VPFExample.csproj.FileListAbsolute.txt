@@ -1,0 +1,6 @@
+D:\temp\VisualC#\LINQ\LinqExample\VPFExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\LinqExample\VPFExample\bin\Debug\VPFExample.exe.config
+D:\temp\VisualC#\LINQ\LinqExample\VPFExample\bin\Debug\VPFExample.exe
+D:\temp\VisualC#\LINQ\LinqExample\VPFExample\bin\Debug\VPFExample.pdb
+D:\temp\VisualC#\LINQ\LinqExample\VPFExample\obj\Debug\VPFExample.exe
+D:\temp\VisualC#\LINQ\LinqExample\VPFExample\obj\Debug\VPFExample.pdb

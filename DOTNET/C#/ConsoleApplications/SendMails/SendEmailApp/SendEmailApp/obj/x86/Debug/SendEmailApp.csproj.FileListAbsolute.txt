@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\ConsoleApplications\SendMails\SendEmailApp\SendEmailApp\bin\Debug\SendEmailApp.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\SendMails\SendEmailApp\SendEmailApp\bin\Debug\SendEmailApp.pdb
+D:\MyPractices\DOTNET\C#\ConsoleApplications\SendMails\SendEmailApp\SendEmailApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\ConsoleApplications\SendMails\SendEmailApp\SendEmailApp\obj\x86\Debug\SendEmailApp.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\SendMails\SendEmailApp\SendEmailApp\obj\x86\Debug\SendEmailApp.pdb

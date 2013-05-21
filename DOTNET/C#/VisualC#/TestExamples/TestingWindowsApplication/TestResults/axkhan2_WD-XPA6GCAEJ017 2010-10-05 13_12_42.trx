@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="60996fc5-de85-446b-985c-4937ca2a21dd" name="axkhan2@WD-XPA6GCAEJ017 2010-10-05 13:12:42" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="ef5a1ccc-2fa5-48ba-b05f-bcc3e7ca5974">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="D:\temp\VisualC#\TestExamples\TestingWindowsApplication\TestResults\axkhan2_WD-XPA6GCAEJ017 2010-10-05 13_12_42">
+      <DeploymentItem filename="D:\temp\VisualC#\TestExamples\TestingWindowsApplication\TestingWindowsApplication\bin\Debug\TestingWindowsApplication.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-10-05T13:12:42.0068950+05:30" queuing="2010-10-05T13:12:43.3506450+05:30" start="2010-10-05T13:12:43.5225200+05:30" finish="2010-10-05T13:12:47.6631450+05:30" />
+  <TestDefinitions>
+    <UnitTest name="button1_ClickTest" storage="d:\temp\visualc#\testexamples\testingwindowsapplication\mytestproject\bin\debug\mytestproject.dll" id="2b81c674-1001-0790-2d38-8442141c07db">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <DeploymentItems>
+        <DeploymentItem filename="TestingWindowsApplication.exe" />
+      </DeploymentItems>
+      <Execution id="544b9845-2639-4cba-9d62-049cdcd19049" />
+      <TestMethod codeBase="D:\temp\VisualC#\TestExamples\TestingWindowsApplication\MyTestProject\bin\Debug\MyTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyTestProject.Form1Test, MyTestProject" name="button1_ClickTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2b81c674-1001-0790-2d38-8442141c07db" executionId="544b9845-2639-4cba-9d62-049cdcd19049" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="544b9845-2639-4cba-9d62-049cdcd19049" testId="2b81c674-1001-0790-2d38-8442141c07db" testName="button1_ClickTest" computerName="WD-XPA6GCAEJ017" duration="00:00:03.6521695" startTime="2010-10-05T13:12:43.6318950+05:30" endTime="2010-10-05T13:12:47.5537700+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at MyTestProject.Form1Test.button1_ClickTest() in D:\temp\VisualC#\TestExamples\TestingWindowsApplication\MyTestProject\Form1Test.cs:line 94
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

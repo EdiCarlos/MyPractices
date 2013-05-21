@@ -1,0 +1,16 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+
+int value = 12367;
+int *ptr = &value;
+cout<<"hexadecimal = 0X" <<hex<<value<<endl;
+cout<<"number = "<<dec<<0x304f<<endl;
+cout<<"number = "<<dec<<&value<<endl;
+return 0;
+}

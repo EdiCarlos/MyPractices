@@ -1,0 +1,8 @@
+D:\temp\VisualC#\VSS\Sample2\Sample2\bin\Debug\Sample2.exe
+D:\temp\VisualC#\VSS\Sample2\Sample2\bin\Debug\Sample2.pdb
+D:\temp\VisualC#\VSS\Sample2\Sample2\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\VSS\Sample2\Sample2\obj\Debug\Sample2.Form1.resources
+D:\temp\VisualC#\VSS\Sample2\Sample2\obj\Debug\Sample2.Properties.Resources.resources
+D:\temp\VisualC#\VSS\Sample2\Sample2\obj\Debug\Sample2.csproj.GenerateResource.Cache
+D:\temp\VisualC#\VSS\Sample2\Sample2\obj\Debug\Sample2.exe
+D:\temp\VisualC#\VSS\Sample2\Sample2\obj\Debug\Sample2.pdb

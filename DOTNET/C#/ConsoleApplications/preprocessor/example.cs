@@ -1,0 +1,18 @@
+#define arif
+#define khan
+
+using System;
+
+class myclass
+{
+	public static void Main()
+	{
+		#if(arif && khan)
+		Console.WriteLine("arif and khan is defined");
+		#elif(arif && !khan)
+		Console.WriteLine("arif is defined khan is not defined");
+		#elif(!arif && khan)
+		Console.WriteLine("arif is not defined khan is defined");
+		#endif
+	}
+}

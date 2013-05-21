@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        class Customer
+        {
+            public string ID { get; set; }
+            public string City { get; set; }
+            public string Country { get; set; }
+            public string Region { get; set; }
+            public decimal Sales { get; set; }
+
+        }
+        class Employee
+        {
+            public int ID { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string MiddleName { get; set; }
+        }
+        class Orders
+        {
+            public string ID { get; set; }
+            public decimal Amount { get; set; }
+        }
+        static void Main()
+        {
+            String[] QueryString = { "One", "Two", "Three", "Four", "Five",
+              "Six", "Seven", "Eight", "Nine", "Ten" };
+
+            String[] IndexArray = { "A", "B", "C", "D", "E", "F", "G", "H", "I",
+              "J", "K", "L", "M", "N", "O", "P", "Q", "R",
+              "S", "T", "U", "V", "W", "X", "Y", "Z" };
+
+            //var queryResult = from queryStr in QueryString join index in IndexArray on index equal select queryStr;
+            var result = from indexStr in IndexArray join queryStr in QueryString on indexStr equals queryStr.Substring(0, 1) select new { indexStr, queryStr };
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(item.indexStr +" "+ item.queryStr);
+            }
+                              
+
+        }
+    }
+}

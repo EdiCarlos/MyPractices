@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Encoding\Encryption\Encryption\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Encoding\Encryption\Encryption\bin\Debug\Encryption.exe
+D:\temp\VisualC#\Encoding\Encryption\Encryption\bin\Debug\Encryption.pdb
+D:\temp\VisualC#\Encoding\Encryption\Encryption\obj\Debug\Encryption.exe
+D:\temp\VisualC#\Encoding\Encryption\Encryption\obj\Debug\Encryption.pdb

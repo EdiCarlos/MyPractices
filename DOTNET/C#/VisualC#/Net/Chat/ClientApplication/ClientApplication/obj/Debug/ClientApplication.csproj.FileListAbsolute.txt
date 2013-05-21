@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\bin\Debug\ClientApplication.exe
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\bin\Debug\ClientApplication.pdb
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\obj\Debug\ClientApplication.exe
+D:\temp\VisualC#\Net\Chat\ClientApplication\ClientApplication\obj\Debug\ClientApplication.pdb

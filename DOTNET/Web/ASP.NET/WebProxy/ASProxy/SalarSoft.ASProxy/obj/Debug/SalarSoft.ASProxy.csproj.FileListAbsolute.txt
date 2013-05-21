@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\WebProxy\ASProxy\SalarSoft.ASProxy\bin\Debug\SalarSoft.ASProxy.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\WebProxy\ASProxy\SalarSoft.ASProxy\bin\Debug\SalarSoft.ASProxy.pdb
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\WebProxy\ASProxy\SalarSoft.ASProxy\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\WebProxy\ASProxy\SalarSoft.ASProxy\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\WebProxy\ASProxy\SalarSoft.ASProxy\obj\Debug\SalarSoft.ASProxy.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\WebProxy\ASProxy\SalarSoft.ASProxy\obj\Debug\SalarSoft.ASProxy.pdb

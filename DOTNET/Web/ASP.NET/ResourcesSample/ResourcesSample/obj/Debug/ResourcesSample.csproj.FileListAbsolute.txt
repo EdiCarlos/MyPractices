@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\ResourcesSample\ResourcesSample\bin\ResourcesSample.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\ResourcesSample\ResourcesSample\bin\ResourcesSample.pdb
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\ResourcesSample\ResourcesSample\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\ResourcesSample\ResourcesSample\obj\Debug\ResourcesSample.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\ResourcesSample\ResourcesSample\obj\Debug\ResourcesSample.pdb

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RunningInstanceOfIE">
+</Property><Property Name="Solution File" Value="D:\temp\VisualC#\IExplore\RunningInstanceIE_src\runningInstanceIE_src\RunningInstanceOfIE.sln">
+</Property><Property Name="User Options File" Value="D:\temp\VisualC#\IExplore\RunningInstanceIE_src\runningInstanceIE_src\RunningInstanceOfIE.suo">
+</Property><Property Name="Date" Value="Monday, May 17, 2010">
+</Property><Property Name="Time" Value="16:53 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="RunningInstanceOfIE.sln" Description="File successfully backed up as D:\temp\VisualC#\IExplore\RunningInstanceIE_src\runningInstanceIE_src\RunningInstanceOfIE.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="RunningInstanceOfIE.suo" Description="File successfully backed up as D:\temp\VisualC#\IExplore\RunningInstanceIE_src\runningInstanceIE_src\RunningInstanceOfIE.suo.old">
+</Event><Event ErrorLevel="0" Project="RunningInstanceOfIE" Source="RunningInstanceOfIE.csproj" Description="Project file successfully backed up as D:\temp\VisualC#\IExplore\RunningInstanceIE_src\runningInstanceIE_src\RunningInstanceOfIE.csproj.old">
+</Event><Event ErrorLevel="0" Project="RunningInstanceOfIE" Source="RunningInstanceOfIE.csproj.user" Description="Project user file successfully backed up as D:\temp\VisualC#\IExplore\RunningInstanceIE_src\runningInstanceIE_src\RunningInstanceOfIE.csproj.user.old">
+</Event><Event ErrorLevel="0" Project="RunningInstanceOfIE" Source="RunningInstanceOfIE.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RunningInstanceOfIE" Source="RunningInstanceOfIE.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="geIMVCode" Source="..\..\geIMVCode\geIMVCode.vcproj" Description="Failed to upgrade project file 'D:\temp\VisualC#\IExplore\geIMVCode\geIMVCode.vcproj'.  Please make sure the file exists and is not write-protected.">
+</Event><Event ErrorLevel="2" Project="geIMVCode" Source="..\..\geIMVCode\geIMVCode.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="geIMVCode" Source="..\..\geIMVCode\geIMVCode.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="PostMsg" Source="..\..\..\PostMsg\PostMsg.vcproj" Description="Failed to upgrade project file 'D:\temp\VisualC#\PostMsg\PostMsg.vcproj'.  Please make sure the file exists and is not write-protected.">
+</Event><Event ErrorLevel="2" Project="PostMsg" Source="..\..\..\PostMsg\PostMsg.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="PostMsg" Source="..\..\..\PostMsg\PostMsg.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="" Source="RunningInstanceOfIE.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="RunningInstanceOfIE.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RunningInstanceOfIE" Source="RunningInstanceOfIE.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

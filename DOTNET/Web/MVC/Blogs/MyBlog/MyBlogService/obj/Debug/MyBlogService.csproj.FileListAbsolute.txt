@@ -1,0 +1,17 @@
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\obj\Debug\MyBlogService.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\MyBlogService.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\MyBlogService.pdb
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\EntityFramework.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\Microsoft.Data.Edm.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\Microsoft.Data.OData.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\Microsoft.Data.Services.Client.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\Microsoft.Data.Services.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\System.Spatial.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\EntityFramework.xml
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\Microsoft.Data.Edm.xml
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\Microsoft.Data.OData.xml
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\Microsoft.Data.Services.xml
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\Microsoft.Data.Services.Client.xml
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\bin\System.Spatial.xml
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\obj\Debug\MyBlogService.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogService\obj\Debug\MyBlogService.pdb

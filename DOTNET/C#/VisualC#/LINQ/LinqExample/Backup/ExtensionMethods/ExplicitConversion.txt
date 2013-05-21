@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        public static void Main()
+        {
+            ArrayList list = new ArrayList();
+            list.Add("Arif");
+            list.Add("Khan");
+            list.Add("Hasan");
+
+            var strings = from string name in list select name.Substring(0, 3).ToUpper();
+
+            foreach (var item in strings)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+}

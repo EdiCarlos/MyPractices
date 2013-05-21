@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+try
+{
+	throw "out of range";
+}
+	return 0;
+}

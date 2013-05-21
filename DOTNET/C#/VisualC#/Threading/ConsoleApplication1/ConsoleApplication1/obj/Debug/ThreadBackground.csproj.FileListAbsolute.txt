@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Threading\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\temp\VisualC#\Threading\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\temp\VisualC#\Threading\ConsoleApplication1\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Threading\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\temp\VisualC#\Threading\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

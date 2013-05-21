@@ -1,0 +1,9 @@
+D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe
+D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.pdb
+D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\obj\x86\Debug\MathService.MyCalcService.resources
+D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\obj\x86\Debug\MathService.ProjectInstaller.resources
+D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\obj\x86\Debug\MathService.exe
+D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\obj\x86\Debug\MathService.pdb

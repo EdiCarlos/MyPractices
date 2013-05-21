@@ -1,0 +1,35 @@
+﻿@model MvcValidation.Models.PersonModel
+@{
+    ViewBag.Title = "Person";
+}
+<h2>
+    Person</h2>
+@Html.ValidationSummary()
+
+@using (Html.BeginForm())
+{
+    <div>@Html.LabelFor(p => p.Name)</div>
+    <div>@Html.TextBoxFor(p => p.Name)</div>
+    <div>@Html.ValidationMessage("Name", "*")</div>
+
+    <div>@Html.LabelFor(p => p.Age)</div>
+    <div>@Html.TextBoxFor(p => p.Age)</div>
+    <div>
+        @Html.ValidationMessage("Name", "*")
+    </div>
+    
+    
+    <div>@Html.LabelFor(p => p.Phone)</div>
+    <div>@Html.TextBoxFor(p => p.Phone)</div>
+    <div>@Html.ValidationMessage("Name", "*")</div>       
+
+    <div>@Html.LabelFor(p => p.Mobile)</div>
+    <div>@Html.TextBoxFor(p => p.Mobile)</div>
+    <div>@Html.ValidationMessage("Name", "*")</div>
+    <input type="submit" value="confirm" />
+
+}
+<script type="text/javascript">
+
+
+</script>

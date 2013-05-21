@@ -1,0 +1,5 @@
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\SendRequestConsole\bin\Debug\SendRequestConsole.exe
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\SendRequestConsole\bin\Debug\SendRequestConsole.pdb
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\SendRequestConsole\obj\x86\Debug\SendRequestConsole.exe
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\SendRequestConsole\obj\x86\Debug\SendRequestConsole.pdb
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\SendRequestConsole\bin\Debug\SendRequestConsole.exe.config

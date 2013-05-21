@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Preprocessor\useofPreprocessor\useofPreprocessor\bin\Debug\useofPreprocessor.exe
+D:\temp\VisualC#\Preprocessor\useofPreprocessor\useofPreprocessor\bin\Debug\useofPreprocessor.pdb
+D:\temp\VisualC#\Preprocessor\useofPreprocessor\useofPreprocessor\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Preprocessor\useofPreprocessor\useofPreprocessor\obj\Debug\useofPreprocessor.exe
+D:\temp\VisualC#\Preprocessor\useofPreprocessor\useofPreprocessor\obj\Debug\useofPreprocessor.pdb

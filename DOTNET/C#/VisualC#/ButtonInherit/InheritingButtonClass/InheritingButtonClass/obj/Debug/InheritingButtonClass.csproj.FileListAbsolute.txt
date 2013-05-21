@@ -1,0 +1,10 @@
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\bin\Debug\InheritingButtonClass.exe
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\bin\Debug\InheritingButtonClass.pdb
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\obj\Debug\InheritingButtonClass.Properties.Resources.resources
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\obj\Debug\InheritingButtonClass.csproj.GenerateResource.Cache
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\obj\Debug\InheritingButtonClass.exe
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\obj\Debug\InheritingButtonClass.pdb
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\obj\Debug\InheritingButtonClass.Form1.resources
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\bin\Debug\MyButton.dll
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\InheritingButtonClass\bin\Debug\MyButton.pdb

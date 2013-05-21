@@ -1,0 +1,8 @@
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\sendkeyexample\bin\Debug\sendkeyexample.exe
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\sendkeyexample\bin\Debug\sendkeyexample.pdb
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\sendkeyexample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\sendkeyexample\obj\Debug\sendkeyexample.exe
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\sendkeyexample\obj\Debug\sendkeyexample.pdb
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\sendkeyexample\bin\Debug\Interop.SHDocVw.dll
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\sendkeyexample\obj\Debug\Interop.SHDocVw.dll
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\sendkeyexample\obj\Debug\sendkeyexample.csproj.ResolveComReference.cache

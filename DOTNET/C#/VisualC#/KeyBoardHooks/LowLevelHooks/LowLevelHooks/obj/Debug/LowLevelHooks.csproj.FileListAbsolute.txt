@@ -1,0 +1,8 @@
+D:\temp\VisualC#\KeyBoardHooks\LowLevelHooks\LowLevelHooks\bin\Debug\LowLevelHooks.exe
+D:\temp\VisualC#\KeyBoardHooks\LowLevelHooks\LowLevelHooks\bin\Debug\LowLevelHooks.pdb
+D:\temp\VisualC#\KeyBoardHooks\LowLevelHooks\LowLevelHooks\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\KeyBoardHooks\LowLevelHooks\LowLevelHooks\obj\Debug\LowLevelHooks.Form1.resources
+D:\temp\VisualC#\KeyBoardHooks\LowLevelHooks\LowLevelHooks\obj\Debug\LowLevelHooks.Properties.Resources.resources
+D:\temp\VisualC#\KeyBoardHooks\LowLevelHooks\LowLevelHooks\obj\Debug\LowLevelHooks.csproj.GenerateResource.Cache
+D:\temp\VisualC#\KeyBoardHooks\LowLevelHooks\LowLevelHooks\obj\Debug\LowLevelHooks.exe
+D:\temp\VisualC#\KeyBoardHooks\LowLevelHooks\LowLevelHooks\obj\Debug\LowLevelHooks.pdb

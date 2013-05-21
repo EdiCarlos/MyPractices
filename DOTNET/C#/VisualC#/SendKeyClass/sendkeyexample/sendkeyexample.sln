@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sendkeyexample", "sendkeyexample\sendkeyexample.csproj", "{522F21A0-B1F9-4E61-9806-D1B3DBB2A042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowForm", "ShowForm\ShowForm.csproj", "{F3A37E6B-60F3-4874-89A8-241D8FDD6A75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{522F21A0-B1F9-4E61-9806-D1B3DBB2A042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522F21A0-B1F9-4E61-9806-D1B3DBB2A042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522F21A0-B1F9-4E61-9806-D1B3DBB2A042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{522F21A0-B1F9-4E61-9806-D1B3DBB2A042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A37E6B-60F3-4874-89A8-241D8FDD6A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A37E6B-60F3-4874-89A8-241D8FDD6A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A37E6B-60F3-4874-89A8-241D8FDD6A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A37E6B-60F3-4874-89A8-241D8FDD6A75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

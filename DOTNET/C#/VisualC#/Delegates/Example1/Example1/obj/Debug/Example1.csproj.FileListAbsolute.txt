@@ -1,0 +1,10 @@
+D:\temp\VisualC#\Delegates\Example1\Example1\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Delegates\Example1\Example1\bin\Debug\Example1.exe
+D:\temp\VisualC#\Delegates\Example1\Example1\bin\Debug\Example1.pdb
+D:\temp\VisualC#\Delegates\Example1\Example1\obj\Debug\Example1.exe
+D:\temp\VisualC#\Delegates\Example1\Example1\obj\Debug\Example1.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\Delegates\Example1\Example1\obj\Debug\Example1.exe
+D:\MyPractices\DOTNET\C#\VisualC#\Delegates\Example1\Example1\obj\Debug\Example1.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\Delegates\Example1\Example1\obj\Debug\Example1.csprojResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\VisualC#\Delegates\Example1\Example1\bin\Debug\Example1.exe
+D:\MyPractices\DOTNET\C#\VisualC#\Delegates\Example1\Example1\bin\Debug\Example1.pdb

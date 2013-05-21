@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+            <form id="form1" runat="server">
+    <div>
+    <table style="width:100%;">
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                This is Login Menu</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                </ul>
+                </td>
+            <td>
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+            </td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdditionalAttachment" xml:space="preserve">
+    <value>Agregar más de un adjunto</value>
+    <comment>wording to ask for another attachment</comment>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Administración</value>
+    <comment>main menu</comment>
+  </data>
+  <data name="Any" xml:space="preserve">
+    <value>Cualquiera</value>
+    <comment>Any</comment>
+  </data>
+  <data name="AssignedTo" xml:space="preserve">
+    <value>Asignado a</value>
+    <comment>for use in table displays</comment>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>Adjuntos</value>
+    <comment>word used to describe attachments</comment>
+  </data>
+  <data name="BackToTop" xml:space="preserve">
+    <value>Ir al principio</value>
+    <comment>return to top of page</comment>
+  </data>
+  <data name="Bytes" xml:space="preserve">
+    <value>bytes</value>
+    <comment>bytes</comment>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Cerrado</value>
+    <comment>make sure this lines up with row 5 in the status table</comment>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contacto</value>
+    <comment>main menu</comment>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Portal de entrada</value>
+    <comment>main menu</comment>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Borrar</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Borrado</value>
+    <comment>Deleted</comment>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+    <comment>Edit</comment>
+  </data>
+  <data name="EmailError" xml:space="preserve">
+    <value>Error enviando email</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+    <comment>Error</comment>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Grupo</value>
+    <comment>word used for each 'group'</comment>
+  </data>
+  <data name="Groups" xml:space="preserve">
+    <value>Grupos</value>
+    <comment>admin menu</comment>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Ayuda/Preguntas frecuentes</value>
+    <comment>main menu</comment>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Información</value>
+    <comment>admin menu</comment>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Email inválido</value>
+    <comment>Invalid Email Error</comment>
+  </data>
+  <data name="LastAction" xml:space="preserve">
+    <value>Acción reciente</value>
+    <comment>for use in table displays</comment>
+  </data>
+  <data name="MyIssues" xml:space="preserve">
+    <value>Mis Tickets</value>
+    <comment>main menu</comment>
+  </data>
+  <data name="NewTicket" xml:space="preserve">
+    <value>Nuevo Ticket</value>
+    <comment>main menu</comment>
+  </data>
+  <data name="NoAccess" xml:space="preserve">
+    <value>Sin Acceso</value>
+    <comment>No Access</comment>
+  </data>
+  <data name="NoGroups" xml:space="preserve">
+    <value>No hay grupos disponibles para Usted</value>
+  </data>
+  <data name="NoGroupsExplanation" xml:space="preserve">
+    <value>No hay grupos con un nivel de acceso suficientemente bajo al que Usted se pueda unir, por favor</value>
+  </data>
+  <data name="OriginatingGroup" xml:space="preserve">
+    <value>Originando Grupos</value>
+    <comment>for use in table displays</comment>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Permisos</value>
+    <comment>admin menu</comment>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Prioridad</value>
+    <comment>word use for 'priority'</comment>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Perfil</value>
+    <comment>main menu</comment>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Requerido</value>
+    <comment>Required</comment>
+  </data>
+  <data name="Resolved" xml:space="preserve">
+    <value>Resuelto</value>
+    <comment>make sure this lines up with row 4 in the status table</comment>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Guardado</value>
+    <comment>Saved</comment>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Buscar</value>
+    <comment>main menu</comment>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Configuraciones</value>
+    <comment>admin menu</comment>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Estadísticas</value>
+    <comment>admin menu</comment>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Estado</value>
+    <comment>word used for 'status'</comment>
+  </data>
+  <data name="Subgroup" xml:space="preserve">
+    <value>Sub-Grupo</value>
+    <comment>word used for 'sub-groups'</comment>
+  </data>
+  <data name="Subgroups" xml:space="preserve">
+    <value>Sub-Grupos</value>
+    <comment>plural for Subgroup</comment>
+  </data>
+  <data name="Submitter" xml:space="preserve">
+    <value>Solicitante</value>
+    <comment>for use in table displays</comment>
+  </data>
+  <data name="Ticket" xml:space="preserve">
+    <value>Ticket</value>
+  </data>
+  <data name="TicketNumber" xml:space="preserve">
+    <value>Número de Ticket</value>
+    <comment>for use in table displays</comment>
+  </data>
+  <data name="Undefined" xml:space="preserve">
+    <value>Indefinido</value>
+    <comment>Undefined</comment>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Actualizar</value>
+    <comment>Update</comment>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Actualizado</value>
+    <comment>Updated</comment>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Usuarios</value>
+    <comment>admin menu</comment>
+  </data>
+  <data name="ViewTicket" xml:space="preserve">
+    <value>Ver Ticket</value>
+    <comment>main menu</comment>
+  </data>
+</root>

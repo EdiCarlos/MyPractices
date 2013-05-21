@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        public static void Main()
+        {
+            Dictionary<string, object> testData = new Dictionary<string, object>();
+            testData.Add("One", 1);
+            testData.Add("Two", "Two");
+            testData.Add("Three", 3);
+            testData.Add("Four", "Four");
+            testData.Add("Five", "Five");
+            testData.Add("Six", 7);
+            var strNumber = (from test in testData select test.Value).OfType<int>();
+            foreach (int tst in strNumber)
+            {
+                Console.WriteLine(tst);
+            }
+
+        }
+    }
+}

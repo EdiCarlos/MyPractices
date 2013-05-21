@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="practiceDB" Class="practiceDatatDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=practiceDB;Integrated Security=True" SettingsObjectName="LinqNorthWind.Properties.Settings" SettingsPropertyName="practiceDBConnectionString" Provider="System.Data.SqlClient" />
+</Database>

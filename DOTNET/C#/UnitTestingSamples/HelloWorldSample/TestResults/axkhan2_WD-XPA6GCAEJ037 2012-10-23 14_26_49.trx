@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ff72a64f-1852-4026-bf05-77d36da2d375" name="axkhan2@WD-XPA6GCAEJ037 2012-10-23 14:26:49" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a5e260da-ebf3-411a-82d7-291e0f3a3670">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="axkhan2_WD-XPA6GCAEJ037 2012-10-23 14_26_49">
+      <DeploymentItem filename="D:\MyPractices\DOTNET\C#\UnitTestingSamples\HelloWorldSample\HelloWorldSample\bin\Debug\HelloWorldSample.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-23T14:26:49.3373242+05:30" queuing="2012-10-23T14:26:50.1493874+05:30" start="2012-10-23T14:26:50.2118538+05:30" finish="2012-10-23T14:27:03.2204816+05:30" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ShowString" storage="d:\mypractices\dotnet\c#\unittestingsamples\helloworldsample\helloworldtestproject\bin\debug\helloworldtestproject.dll" id="1e61a3c0-3e83-0224-2a68-ecc2256dfe11">
+      <Execution id="399b9237-1fbc-4d19-b257-a8cd89ac8308" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/UnitTestingSamples/HelloWorldSample/HelloWorldTestProject/bin/Debug/HelloWorldTestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HelloWorldTestProject.HelloWorldUnitTest, HelloWorldTestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ShowString" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1e61a3c0-3e83-0224-2a68-ecc2256dfe11" executionId="399b9237-1fbc-4d19-b257-a8cd89ac8308" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="399b9237-1fbc-4d19-b257-a8cd89ac8308" testId="1e61a3c0-3e83-0224-2a68-ecc2256dfe11" testName="ShowString" computerName="WD-XPA6GCAEJ037" duration="00:00:12.2772062" startTime="2012-10-23T14:26:50.2430870+05:30" endTime="2012-10-23T14:27:03.1580152+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="399b9237-1fbc-4d19-b257-a8cd89ac8308">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. </Message>
+          <StackTrace>   at HelloWorldTestProject.HelloWorldUnitTest.ShowString() in D:\MyPractices\DOTNET\C#\UnitTestingSamples\HelloWorldSample\HelloWorldTestProject\HelloWorldUnitTest.cs:line 73
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

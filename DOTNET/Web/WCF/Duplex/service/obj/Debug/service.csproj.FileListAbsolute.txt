@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\service\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\service\bin\service.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\service\bin\service.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\service\obj\Debug\service.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\service\obj\Debug\service.pdb

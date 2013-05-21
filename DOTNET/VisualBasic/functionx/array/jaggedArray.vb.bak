@@ -1,0 +1,19 @@
+Module module1
+
+Sub Main()
+Dim arr()() as Integer = new Integer(2)(){}
+arr(0) = new Integer(4){1,2,3,4,5}
+arr(1) = new Integer(2){1,2,3}
+arr(2) = new Integer(1){1,2}
+
+for i as Integer = 0 to arr.Length - 1
+for j as Integer = 0 to arr(i).Length - 1
+Console.Write(arr(i)(j) & " ")
+next
+Console.WriteLine(
+next
+
+
+End Sub
+
+End Module

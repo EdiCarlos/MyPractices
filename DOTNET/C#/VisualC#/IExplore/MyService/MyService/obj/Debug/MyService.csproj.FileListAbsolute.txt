@@ -1,0 +1,5 @@
+D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.exe
+D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.pdb
+D:\temp\VisualC#\IExplore\MyService\MyService\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\IExplore\MyService\MyService\obj\Debug\MyService.exe
+D:\temp\VisualC#\IExplore\MyService\MyService\obj\Debug\MyService.pdb

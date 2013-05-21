@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        class Customer
+        {
+            public string ID { get; set; }
+            public string City { get; set; }
+            public string Country { get; set; }
+            public string Region { get; set; }
+            public decimal Sales { get; set; }
+
+        }
+        class Employee
+        {
+            public int ID { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string MiddleName { get; set; }
+        }
+        class Orders
+        {
+            public string ID { get; set; }
+            public decimal Amount { get; set; }
+        }
+        static void Main()
+        {
+            int[] Array1 = { 1, 2, 3, 4, 5 };
+            int[] Array2 = { 1, 2, 3, 4, 5 };
+
+            var squareRoot = from n1 in Array1 from n2 in Array2 let Sqaure = n1 * n2 select new { n1, n2, Sqaure };
+
+            foreach (var item in squareRoot)
+            {
+                Console.WriteLine("Number1 " + item.n1 + " number2 " + item.n2 + " Result " + item.Sqaure);
+            }
+
+        }
+    }
+}

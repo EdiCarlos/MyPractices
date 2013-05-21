@@ -1,0 +1,5 @@
+D:\temp\VisualC#\UseofTracePoint\TracePointExampe\TracePointExampe\bin\Debug\TracePointExampe.exe
+D:\temp\VisualC#\UseofTracePoint\TracePointExampe\TracePointExampe\bin\Debug\TracePointExampe.pdb
+D:\temp\VisualC#\UseofTracePoint\TracePointExampe\TracePointExampe\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\UseofTracePoint\TracePointExampe\TracePointExampe\obj\Debug\TracePointExampe.exe
+D:\temp\VisualC#\UseofTracePoint\TracePointExampe\TracePointExampe\obj\Debug\TracePointExampe.pdb

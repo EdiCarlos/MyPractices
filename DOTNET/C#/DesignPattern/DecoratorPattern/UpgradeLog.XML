@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DecoratorPattern">
+</Property><Property Name="Solution File" Value="D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\DecoratorPattern.sln">
+</Property><Property Name="User Options File" Value="D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\DecoratorPattern.suo">
+</Property><Property Name="Date" Value="Thursday, September 27, 2012">
+</Property><Property Name="Time" Value="18:51 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DecoratorPattern.sln" Description="File successfully backed up as D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\Backup\DecoratorPattern.sln">
+</Event><Event ErrorLevel="0" Project="" Source="DecoratorPattern.suo" Description="File successfully backed up as D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\Backup\DecoratorPattern.suo">
+</Event><Event ErrorLevel="0" Project="DecoratorPattern" Source="DecoratorPattern\DecoratorPattern.csproj" Description="Project file successfully backed up as D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\Backup\DecoratorPattern\DecoratorPattern.csproj">
+</Event><Event ErrorLevel="0" Project="DecoratorPattern" Source="DecoratorPattern\Program.cs" Description="File successfully backed up as D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\Backup\DecoratorPattern\Program.cs">
+</Event><Event ErrorLevel="0" Project="DecoratorPattern" Source="DecoratorPattern\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\Backup\DecoratorPattern\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DecoratorPattern" Source="DecoratorPattern\DecoratorPattern.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DecoratorPattern" Source="DecoratorPattern\DecoratorPattern.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="DecoratorPattern.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="DecoratorPattern.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DecoratorPattern" Source="DecoratorPattern\DecoratorPattern.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

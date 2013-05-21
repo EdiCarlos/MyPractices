@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcValidation", "MvcValidation\MvcValidation.csproj", "{869BD13C-5086-427B-B761-E7B1D94D0FE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcValidation.Tests", "MvcValidation.Tests\MvcValidation.Tests.csproj", "{6EC4D8DA-58F7-4588-B448-E2A9B2220471}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{869BD13C-5086-427B-B761-E7B1D94D0FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869BD13C-5086-427B-B761-E7B1D94D0FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869BD13C-5086-427B-B761-E7B1D94D0FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869BD13C-5086-427B-B761-E7B1D94D0FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC4D8DA-58F7-4588-B448-E2A9B2220471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC4D8DA-58F7-4588-B448-E2A9B2220471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC4D8DA-58F7-4588-B448-E2A9B2220471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC4D8DA-58F7-4588-B448-E2A9B2220471}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

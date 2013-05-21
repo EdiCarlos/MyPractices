@@ -1,0 +1,8 @@
+D:\MyPractices\DOTNET\WFF\GettingStarted\NumberGuessWorkFlowHost\bin\Debug\NumberGuessWorkFlowHost.exe.config
+D:\MyPractices\DOTNET\WFF\GettingStarted\NumberGuessWorkFlowHost\bin\Debug\NumberGuessWorkFlowHost.exe
+D:\MyPractices\DOTNET\WFF\GettingStarted\NumberGuessWorkFlowHost\bin\Debug\NumberGuessWorkFlowHost.pdb
+D:\MyPractices\DOTNET\WFF\GettingStarted\NumberGuessWorkFlowHost\bin\Debug\NumberWorkFlowActivitiess.dll
+D:\MyPractices\DOTNET\WFF\GettingStarted\NumberGuessWorkFlowHost\bin\Debug\NumberWorkFlowActivitiess.pdb
+D:\MyPractices\DOTNET\WFF\GettingStarted\NumberGuessWorkFlowHost\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\WFF\GettingStarted\NumberGuessWorkFlowHost\obj\x86\Debug\NumberGuessWorkFlowHost.exe
+D:\MyPractices\DOTNET\WFF\GettingStarted\NumberGuessWorkFlowHost\obj\x86\Debug\NumberGuessWorkFlowHost.pdb

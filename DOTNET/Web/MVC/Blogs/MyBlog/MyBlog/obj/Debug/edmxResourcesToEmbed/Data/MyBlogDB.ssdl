@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyBlogModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MyBlogModelStoreContainer">
+    <EntitySet Name="BlogPosts" EntityType="MyBlogModel.Store.BlogPosts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Blogs" EntityType="MyBlogModel.Store.Blogs" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_BlogsBlogPost" Association="MyBlogModel.Store.FK_BlogsBlogPost">
+      <End Role="Blogs" EntitySet="Blogs" />
+      <End Role="BlogPosts" EntitySet="BlogPosts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BlogPosts">
+    <Key>
+      <PropertyRef Name="PostID" />
+    </Key>
+    <Property Name="PostID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BlogID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Post" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TStamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Blogs">
+    <Key>
+      <PropertyRef Name="BlogID" />
+    </Key>
+    <Property Name="BlogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="TStamp" Type="datetime" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <Association Name="FK_BlogsBlogPost">
+    <End Role="Blogs" Type="MyBlogModel.Store.Blogs" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BlogPosts" Type="MyBlogModel.Store.BlogPosts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Blogs">
+        <PropertyRef Name="BlogID" />
+      </Principal>
+      <Dependent Role="BlogPosts">
+        <PropertyRef Name="BlogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

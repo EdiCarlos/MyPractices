@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<groups>
+  <group>[example] All Users</group>
+  <group>[example] Authenticated Users</group>
+  <group>[example] Local Admins</group>
+  <group>[example] System Admins</group>
+  <group>[example] Domain Admins</group>
+  <group>[example] God</group>
+  <group>[example] Viewers</group>
+  <group>[example] Limited Access</group>
+  <group>[example] Sales</group>
+  <group>[example] Marketing</group>
+  <group>[example] Upper Management</group>
+  <group>[example] Owner</group>
+  <group>[example] Legal</group>
+  <group>[example] Ninjas</group>
+</groups>

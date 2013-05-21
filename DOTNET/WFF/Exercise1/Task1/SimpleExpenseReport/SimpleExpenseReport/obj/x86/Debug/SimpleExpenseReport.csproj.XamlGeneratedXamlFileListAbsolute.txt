@@ -1,0 +1,2 @@
+obj\x86\Debug\FlowChartActivityForAmount.g.xaml
+obj\x86\Debug\MainWindowActivity.g.xaml

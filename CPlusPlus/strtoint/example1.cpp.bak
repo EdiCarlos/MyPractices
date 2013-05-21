@@ -1,0 +1,10 @@
+#include <iostream>
+#include <cstdlib>
+using std::atof;
+
+int main()
+{
+	double d = atof("99.10");
+	cout<<d / 2.0<<endl;
+	return 0;
+}

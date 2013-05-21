@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace ExtensionMethods
+{
+    class Program
+    {
+        public enum Relation
+        {
+            Father, 
+            Mother, 
+            Bother,
+            Sister,
+            Son, 
+            Daughter
+        }
+        public static void Main()
+        {
+            var family = new { Name = "Bannehasan", Age = 48, Relations =  Relation.Father };
+            var familyMembers = new[] {
+            new { Name = "Bannehasan", Age = 48, Relations =  Relation.Father },
+            new { Name = "Noor", Age = 20, Relations =  Relation.Bother },
+            new { Name = "Kaneez", Age = 48, Relations =  Relation.Mother }
+            };
+            foreach (var members in familyMembers)
+            {
+                Console.WriteLine("Name {0}, Age = {1}, Relation = {2} ", members.Name, members.Age, members.Relations);
+            }
+        }
+    }
+}

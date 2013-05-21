@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AdventureWorksModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="AdventureWorksModelStoreContainer">
+          <EntitySet Name="Department" EntityType="AdventureWorksModel.Store.Department" store:Type="Tables" Schema="HumanResources" />
+          <EntitySet Name="Employee" EntityType="AdventureWorksModel.Store.Employee" store:Type="Tables" Schema="HumanResources" />
+          <EntitySet Name="EmployeeAddress" EntityType="AdventureWorksModel.Store.EmployeeAddress" store:Type="Tables" Schema="HumanResources" />
+          <EntitySet Name="Address" EntityType="AdventureWorksModel.Store.Address" store:Type="Tables" Schema="Person" />
+          <AssociationSet Name="FK_Employee_Employee_ManagerID" Association="AdventureWorksModel.Store.FK_Employee_Employee_ManagerID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Employee1" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeAddress_Address_AddressID" Association="AdventureWorksModel.Store.FK_EmployeeAddress_Address_AddressID">
+            <End Role="Address" EntitySet="Address" />
+            <End Role="EmployeeAddress" EntitySet="EmployeeAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeAddress_Employee_EmployeeID" Association="AdventureWorksModel.Store.FK_EmployeeAddress_Employee_EmployeeID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeAddress" EntitySet="EmployeeAddress" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentID" />
+          </Key>
+          <Property Name="DepartmentID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="GroupName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NationalIDNumber" Type="nvarchar" Nullable="false" MaxLength="15" />
+          <Property Name="ContactID" Type="int" Nullable="false" />
+          <Property Name="LoginID" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="ManagerID" Type="int" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="BirthDate" Type="datetime" Nullable="false" />
+          <Property Name="MaritalStatus" Type="nchar" Nullable="false" MaxLength="1" />
+          <Property Name="Gender" Type="nchar" Nullable="false" MaxLength="1" />
+          <Property Name="HireDate" Type="datetime" Nullable="false" />
+          <Property Name="SalariedFlag" Type="bit" Nullable="false" />
+          <Property Name="VacationHours" Type="smallint" Nullable="false" />
+          <Property Name="SickLeaveHours" Type="smallint" Nullable="false" />
+          <Property Name="CurrentFlag" Type="bit" Nullable="false" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EmployeeAddress">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="AddressID" Type="int" Nullable="false" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="AddressID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="60" />
+          <Property Name="AddressLine2" Type="nvarchar" MaxLength="60" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="StateProvinceID" Type="int" Nullable="false" />
+          <Property Name="PostalCode" Type="nvarchar" Nullable="false" MaxLength="15" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Employee_Employee_ManagerID">
+          <End Role="Employee" Type="AdventureWorksModel.Store.Employee" Multiplicity="0..1" />
+          <End Role="Employee1" Type="AdventureWorksModel.Store.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="Employee1">
+              <PropertyRef Name="ManagerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeAddress_Address_AddressID">
+          <End Role="Address" Type="AdventureWorksModel.Store.Address" Multiplicity="1" />
+          <End Role="EmployeeAddress" Type="AdventureWorksModel.Store.EmployeeAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Address">
+              <PropertyRef Name="AddressID" />
+            </Principal>
+            <Dependent Role="EmployeeAddress">
+              <PropertyRef Name="AddressID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeAddress_Employee_EmployeeID">
+          <End Role="Employee" Type="AdventureWorksModel.Store.Employee" Multiplicity="1" />
+          <End Role="EmployeeAddress" Type="AdventureWorksModel.Store.EmployeeAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="EmployeeAddress">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AdventureWorksModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="AdventureWorksEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Employees" EntityType="AdventureWorksModel.Employee" />
+          <EntitySet Name="EmployeeAddresses" EntityType="AdventureWorksModel.EmployeeAddress" />
+          <EntitySet Name="Addresses" EntityType="AdventureWorksModel.Address" />
+          <AssociationSet Name="FK_Employee_Employee_ManagerID" Association="AdventureWorksModel.FK_Employee_Employee_ManagerID">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Employee1" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeAddress_Employee_EmployeeID" Association="AdventureWorksModel.FK_EmployeeAddress_Employee_EmployeeID">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeAddress" EntitySet="EmployeeAddresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmployeeAddress_Address_AddressID" Association="AdventureWorksModel.FK_EmployeeAddress_Address_AddressID">
+            <End Role="Address" EntitySet="Addresses" />
+            <End Role="EmployeeAddress" EntitySet="EmployeeAddresses" />
+          </AssociationSet>
+          <EntitySet Name="Departments" EntityType="AdventureWorksModel.Department" />
+        </EntityContainer>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NationalIDNumber" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="ContactID" Type="Int32" Nullable="false" />
+          <Property Name="LoginID" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ManagerID" Type="Int32" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="BirthDate" Type="DateTime" Nullable="false" />
+          <Property Name="MaritalStatus" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="Gender" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="HireDate" Type="DateTime" Nullable="false" />
+          <Property Name="SalariedFlag" Type="Boolean" Nullable="false" />
+          <Property Name="VacationHours" Type="Int16" Nullable="false" />
+          <Property Name="SickLeaveHours" Type="Int16" Nullable="false" />
+          <Property Name="CurrentFlag" Type="Boolean" Nullable="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Employee1" Relationship="AdventureWorksModel.FK_Employee_Employee_ManagerID" FromRole="Employee" ToRole="Employee1" />
+          <NavigationProperty Name="Employee2" Relationship="AdventureWorksModel.FK_Employee_Employee_ManagerID" FromRole="Employee1" ToRole="Employee" />
+          <NavigationProperty Name="EmployeeAddresses" Relationship="AdventureWorksModel.FK_EmployeeAddress_Employee_EmployeeID" FromRole="Employee" ToRole="EmployeeAddress" />
+        </EntityType>
+        <EntityType Name="EmployeeAddress">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+          <Property Name="AddressID" Type="Int32" Nullable="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Employee" Relationship="AdventureWorksModel.FK_EmployeeAddress_Employee_EmployeeID" FromRole="EmployeeAddress" ToRole="Employee" />
+          <NavigationProperty Name="Address" Relationship="AdventureWorksModel.FK_EmployeeAddress_Address_AddressID" FromRole="EmployeeAddress" ToRole="Address" />
+        </EntityType>
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="AddressID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+          <Property Name="AddressLine2" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="StateProvinceID" Type="Int32" Nullable="false" />
+          <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="EmployeeAddresses" Relationship="AdventureWorksModel.FK_EmployeeAddress_Address_AddressID" FromRole="Address" ToRole="EmployeeAddress" />
+        </EntityType>
+        <Association Name="FK_Employee_Employee_ManagerID">
+          <End Role="Employee" Type="AdventureWorksModel.Employee" Multiplicity="0..1" />
+          <End Role="Employee1" Type="AdventureWorksModel.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="Employee1">
+              <PropertyRef Name="ManagerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeAddress_Employee_EmployeeID">
+          <End Role="Employee" Type="AdventureWorksModel.Employee" Multiplicity="1" />
+          <End Role="EmployeeAddress" Type="AdventureWorksModel.EmployeeAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="EmployeeAddress">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmployeeAddress_Address_AddressID">
+          <End Role="Address" Type="AdventureWorksModel.Address" Multiplicity="1" />
+          <End Role="EmployeeAddress" Type="AdventureWorksModel.EmployeeAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Address">
+              <PropertyRef Name="AddressID" />
+            </Principal>
+            <Dependent Role="EmployeeAddress">
+              <PropertyRef Name="AddressID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentID" />
+          </Key>
+          <Property Type="Int16" Name="DepartmentID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GroupName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AdventureWorksModelStoreContainer" CdmEntityContainer="AdventureWorksEntities1">
+          <EntitySetMapping Name="Employees"><EntityTypeMapping TypeName="AdventureWorksModel.Employee"><MappingFragment StoreEntitySet="Employee">
+            <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+            <ScalarProperty Name="NationalIDNumber" ColumnName="NationalIDNumber" />
+            <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+            <ScalarProperty Name="LoginID" ColumnName="LoginID" />
+            <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+            <ScalarProperty Name="Title" ColumnName="Title" />
+            <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+            <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+            <ScalarProperty Name="Gender" ColumnName="Gender" />
+            <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+            <ScalarProperty Name="SalariedFlag" ColumnName="SalariedFlag" />
+            <ScalarProperty Name="VacationHours" ColumnName="VacationHours" />
+            <ScalarProperty Name="SickLeaveHours" ColumnName="SickLeaveHours" />
+            <ScalarProperty Name="CurrentFlag" ColumnName="CurrentFlag" />
+            <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+            <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="EmployeeAddresses"><EntityTypeMapping TypeName="AdventureWorksModel.EmployeeAddress"><MappingFragment StoreEntitySet="EmployeeAddress">
+            <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+            <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+            <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+            <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Addresses"><EntityTypeMapping TypeName="AdventureWorksModel.Address"><MappingFragment StoreEntitySet="Address">
+            <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+            <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+            <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="StateProvinceID" ColumnName="StateProvinceID" />
+            <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+            <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+            <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="AdventureWorksModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ET_Employee">
+        <EntityTypeShape EntityType="AdventureWorksModel.Employee" Width="1.5" PointX="0.75" PointY="1" Height="4.0575162760416656" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksModel.EmployeeAddress" Width="1.5" PointX="3" PointY="2.125" Height="1.9210009765624996" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksModel.Address" Width="1.5" PointX="5.625" PointY="2.75" Height="2.4140429687499996" IsExpanded="true" />
+        <AssociationConnector Association="AdventureWorksModel.FK_Employee_Employee_ManagerID" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.2819230769230767" PointY="5.0575162760416656" />
+          <ConnectorPoint PointX="1.2819230769230767" PointY="5.3075162760416656" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="5.3075162760416656" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="5.0575162760416656" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdventureWorksModel.FK_EmployeeAddress_Employee_EmployeeID" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="3.08550048828125" />
+          <ConnectorPoint PointX="3" PointY="3.08550048828125" />
+        </AssociationConnector>
+        <AssociationConnector Association="AdventureWorksModel.FK_EmployeeAddress_Address_AddressID" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.625" PointY="3.39800048828125" />
+          <ConnectorPoint PointX="4.5" PointY="3.39800048828125" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="AdventureWorksModel.Department" Width="1.5" PointX="2.875" PointY="4.375" Height="1.5923063151041674" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

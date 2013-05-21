@@ -1,0 +1,15 @@
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\bin\Debug\SampleWindowsApp.exe
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\bin\Debug\SampleWindowsApp.pdb
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\MainWindow.baml
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\MainWindow.g.cs
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\App.g.cs
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\SampleWindowsApp_MarkupCompile.cache
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\SampleWindowsApp.g.resources
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\SampleWindowsApp.Properties.Resources.resources
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\SampleWindowsApp.exe
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\SampleWindowsApp.pdb
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\CommandsSample.baml
+D:\MyPractices\DOTNET\WPF\SampleWindowsApp\SampleWindowsApp\obj\x86\Debug\CommandsSample.g.cs

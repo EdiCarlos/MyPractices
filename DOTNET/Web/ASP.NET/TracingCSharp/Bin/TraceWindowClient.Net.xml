@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TraceWindowClient.Net</name>
+    </assembly>
+    <members>
+        <member name="T:TraceWindow.Kernel32">
+            <summary>
+            Provides direct interop access to the OutputDebugString Win32 function
+            </summary>
+        </member>
+        <member name="M:TraceWindow.Kernel32.OutputDebugString(System.String)">
+            <summary>
+            Displays the specified string in the current debugger
+            </summary>
+            <param name="sMsg">The string to display</param>
+        </member>
+        <member name="T:TraceWindow.Client">
+            <summary>
+            Implements a sockets based client to the TraceWindow debugging utility
+            </summary>
+        </member>
+        <member name="M:TraceWindow.Client.GetIpPortNumber">
+            <summary>
+            Attempts to obtain the Ip Port Number setup in the registry entry:
+            HKLM\SOFTWARE\\Debugging\\TraceWindow @IpPortNumber
+            </summary>
+            <returns>Returns the number of the configured IP Port as an integer</returns>
+        </member>
+        <member name="M:TraceWindow.Client.#ctor">
+            <summary>
+            Constructs a disconnected instance of TraceWindow.Client and allocates
+            an internal buffer big enough to send 1024 bytes to the TraceWindow. 
+            Note that the TraceWindow always receives ANSI strings.
+            </summary>
+        </member>
+        <member name="M:TraceWindow.Client.#ctor(System.Int32)">
+            <summary>
+            Constructs a disconnected instance of TraceWindow.Client and allocates
+            an internal buffer big enough to send nBufferSize bytes to the 
+            TraceWindow. Note that the TraceWindow always receives ANSI strings.
+            </summary>
+            <param name="nBufferSize">The internal buffer size to allocate in bytes</param>
+        </member>
+        <member name="M:TraceWindow.Client.#ctor(System.String)">
+            <summary>
+            Constructs an instance of TraceWindow.Client which automatically attempts
+            to connect to the TraceWindow machine specified in sHost and allocates
+            an internal buffer big enough to send 1024 bytes to the TraceWindow.
+            Note that the TraceWindow always receives ANSI strings.
+            </summary>
+            <param name="sHost">The name of the host to connect to</param>
+        </member>
+        <member name="M:TraceWindow.Client.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructs an instance of TraceWindow.Client which automatically attempts
+            to connect to the TraceWindow machine specified in sHost and allocates
+            an internal buffer big enough to send nBufferSize bytes to the 
+            TraceWindow. Note that the TraceWindow always receives ANSI strings.
+            </summary>
+            <param name="sHost">The name of the host to connect to</param>
+            <param name="nBufferSize">The internal buffer size to allocate in bytes</param>
+        </member>
+        <member name="M:TraceWindow.Client.Connect(System.String)">
+            <summary>
+            Constructs an instance of TraceWindow.Client which automatically attempts
+            to connect to the TraceWindow machine specified in sHost
+            </summary>
+            <param name="sHost">The name of the host to connect to</param>
+        </member>
+        <member name="M:TraceWindow.Client.IsConnected">
+            <summary>
+            Returns the connection success or failure status
+            </summary>
+            <returns>Returns true if connected, or false otherwise</returns>
+        </member>
+        <member name="M:TraceWindow.Client.Write(System.String)">
+            <summary>
+            Writes the specified string to the TraceWindow
+            </summary>
+            <param name="sMsg">The message to send</param>
+        </member>
+        <member name="M:TraceWindow.Client.WriteLine(System.String)">
+            <summary>
+            Writes the specified string appended with a new line to the TraceWindow
+            </summary>
+            <param name="sLine">The message line to send</param>
+        </member>
+        <member name="M:TraceWindow.Client.Clear">
+            <summary>
+            Clears the contents of the TraceWindow
+            </summary>
+        </member>
+        <member name="M:TraceWindow.Client.System#IDisposable#Dispose">
+            <summary>
+            Implements standard resource cleanup
+            </summary>
+        </member>
+        <member name="F:TraceWindow.Client.buffer">
+            <summary>
+            The internal buffer of bytes used to transfer bytes to the TraceWindow 
+            over a socket connection
+            </summary>
+        </member>
+        <member name="F:TraceWindow.Client.socket">
+            <summary>
+            The socket connection object used to comunicate with the TraceWindow host
+            </summary>
+        </member>
+        <member name="T:TraceWindow.Listener">
+            <summary>
+            Implements a TraceListener wrapper for the class TraceWindow.Client
+            </summary>
+        </member>
+        <member name="M:TraceWindow.Listener.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the TraceWindow.Client.Listener class
+            </summary>
+            <param name="sHost">The host computer to connect to</param>
+        </member>
+        <member name="M:TraceWindow.Listener.Write(System.String)">
+            <summary>
+            Writes the specified string to the TraceWindow
+            </summary>
+            <param name="sMsg">The message to send</param>
+        </member>
+        <member name="M:TraceWindow.Listener.WriteLine(System.String)">
+            <summary>
+            Writes the specified string appended with a new line to the TraceWindow
+            </summary>
+            <param name="sLine">The message line to send</param>
+        </member>
+        <member name="T:TraceWindow.Local">
+            <summary>
+            Implements a sockets based client to the TraceWindow debugging utility
+            which automatically connects to the localhost address
+            </summary>
+        </member>
+        <member name="F:TraceWindow.Local.Client">
+            <summary>
+            The actual Local.Client global object
+            </summary>
+        </member>
+        <member name="T:TraceWindow.Local.Listener">
+            <summary>
+            Implements a TraceListener wrapper for TraceWindow.Local.Client
+            </summary>
+        </member>
+        <member name="M:TraceWindow.Local.Listener.Write(System.String)">
+            <summary>
+            Writes the specified string to the TraceWindow
+            </summary>
+            <param name="sMsg">The message to send</param>
+        </member>
+        <member name="M:TraceWindow.Local.Listener.WriteLine(System.String)">
+            <summary>
+            Writes the specified string appended with a new line to the TraceWindow
+            </summary>
+            <param name="sLine">The message line to send</param>
+        </member>
+        <member name="T:TraceWindow.Default">
+            <summary>
+            Implements a sockets based client to the TraceWindow debugging utility
+            which automatically connects to the address or name setup in the registry
+            under: HKLM\SOFTWARE\Debugging\TraceWindow @MachineName
+            </summary>
+        </member>
+        <member name="M:TraceWindow.Default.GetHostName">
+            <summary>
+            Attempts to obtain the TraceWindow host name (or address) configured in 
+            the registry
+            </summary>
+            <returns>Returns the host name as a string</returns>
+        </member>
+        <member name="F:TraceWindow.Default.Client">
+            <summary>
+            The actual Default.Client global object
+            </summary>
+        </member>
+        <member name="T:TraceWindow.Default.Listener">
+            <summary>
+            Implements a TraceListener wrapper for TraceWindow.Default.Client
+            </summary>
+        </member>
+        <member name="M:TraceWindow.Default.Listener.Write(System.String)">
+            <summary>
+            Writes the specified string to the TraceWindow
+            </summary>
+            <param name="sMsg">The message to send</param>
+        </member>
+        <member name="M:TraceWindow.Default.Listener.WriteLine(System.String)">
+            <summary>
+            Writes the specified string appended with a new line to the TraceWindow
+            </summary>
+            <param name="sLine">The message line to send</param>
+        </member>
+    </members>
+</doc>

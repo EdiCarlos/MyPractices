@@ -1,0 +1,11 @@
+11/7/2012 12:53:55 PM	This log contains information about the import operation of the script 'SchemaUpdate_HRDBDAC_1.sql' into project 'HRDBDAC' on computer 'WD-XPA6GCAEJ037' by user'axkhan2.
+11/7/2012 12:53:55 PM	Started importing file: D:\Documents and Settings\axkhan2\My Documents\SchemaUpdate_HRDBDAC_1.sql 
+11/7/2012 12:53:55 PM	File name D:\Documents and Settings\axkhan2\My Documents\SchemaUpdate_HRDBDAC_1.sql (size: 15293)
+11/7/2012 12:53:55 PM	Parsing import script
+11/7/2012 12:53:55 PM	Total number of batches in script: 106
+11/7/2012 12:53:55 PM	Total number of statements in script: 106
+11/7/2012 12:53:55 PM	The script was successfully imported into the project.
+11/7/2012 12:53:55 PM	Analyzing schema objects...
+11/7/2012 12:53:56 PM	In the script that you provided to the import operation, one or more statements were not fully understood. These statements were moved to the D:\MyPractices\DOTNET\EntityFramework\OrangeHRMSModel\HRDBDAC\Scripts\ScriptsIgnoredOnImport.sql file. Review the file contents for additional information.
+11/7/2012 12:53:56 PM	A summary of the import operation was saved to the log file D:\MyPractices\DOTNET\EntityFramework\OrangeHRMSModel\HRDBDAC\Import Script Logs\SchemaUpdate_HRDBDAC_20121107072355.log.
+11/7/2012 12:53:56 PM	Click Finish to continue...

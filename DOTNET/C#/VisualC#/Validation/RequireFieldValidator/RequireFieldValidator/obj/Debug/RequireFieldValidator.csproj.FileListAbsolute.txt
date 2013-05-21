@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Validation\RequireFieldValidator\RequireFieldValidator\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Validation\RequireFieldValidator\RequireFieldValidator\bin\Debug\RequireFieldValidator.dll
+D:\temp\VisualC#\Validation\RequireFieldValidator\RequireFieldValidator\bin\Debug\RequireFieldValidator.pdb
+D:\temp\VisualC#\Validation\RequireFieldValidator\RequireFieldValidator\obj\Debug\RequireFieldValidator.dll
+D:\temp\VisualC#\Validation\RequireFieldValidator\RequireFieldValidator\obj\Debug\RequireFieldValidator.pdb

@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Attributes\mysolutions\Calculator\bin\Debug\Calculator.dll
+D:\temp\VisualC#\Attributes\mysolutions\Calculator\bin\Debug\Calculator.pdb
+D:\temp\VisualC#\Attributes\mysolutions\Calculator\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Attributes\mysolutions\Calculator\obj\Debug\Calculator.dll
+D:\temp\VisualC#\Attributes\mysolutions\Calculator\obj\Debug\Calculator.pdb

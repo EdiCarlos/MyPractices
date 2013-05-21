@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+void changeValue(int* ptr)
+{
+*ptr = 1000;
+}
+int main()
+{
+int value = 10;
+int *ptr1 = &value;
+int **ptr2 = &ptr1;
+
+cout<<"value of values " <<value<<endl;
+cout<<"valud of pointer"<<*ptr1<<endl;
+cout<<"valud of pointer"<<**ptr2<<endl;
+
+**ptr2 = 100;
+cout<<"value of values " <<value<<endl;
+cout<<"valud of pointer"<<*ptr1<<endl;
+cout<<"valud of pointer"<<**ptr2<<endl;
+
+changeValue(&value);
+cout<<"value of values " <<value<<endl;
+cout<<"valud of pointer"<<*ptr1<<endl;
+cout<<"valud of pointer"<<**ptr2<<endl;
+
+}
+

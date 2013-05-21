@@ -1,0 +1,5 @@
+D:\DDriveBackup\MyPractices\WIX\ConsoleWix\WixWebInstaller\bin\Debug\WixWebInstaller.msi
+D:\DDriveBackup\MyPractices\WIX\ConsoleWix\WixWebInstaller\bin\Debug\WixWebInstaller.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\Product.Generated.wixobj
+obj\Debug\WebsiteFeature.wixobj

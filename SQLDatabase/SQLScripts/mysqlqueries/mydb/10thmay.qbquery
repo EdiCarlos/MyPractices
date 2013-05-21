@@ -1,0 +1,102 @@
+﻿create database mydb2;
+
+create table temp1
+(
+id int auto_increment primary key,
+fname varchar(30) not null,
+lname varchar(30) not null,
+mname varchar(30) not null,
+fulltext(fname)
+)engine=myisam;
+
+select * from temp1;
+
+insert into temp1(fname, lname, mname) values('arif', 'khan', 'hasan');
+
+delimiter $$
+create procedure inserttemp1(in fname varchar(20), in lname  varchar(20),in mname varchar(30))
+begin
+insert into temp1(fname, lname, mname) values(fname, lname, mname);
+select * from temp1;
+end;
+$$
+delimiter;
+
+SELECT * FROM authorbook a;
+
+create temporary table mytemp1
+(
+id int auto_increment primary key,
+username varchar(30) not null,
+userpass varchar(30) not null,
+useremail nvarchar(50) not null,
+unique key (username, useremail)
+);
+
+insert into mytemp1(username, userpass, useremail) values('arif788', 'pass', 'arif788@gmail.com');
+
+select * from mytemp1;
+
+SELECT * FROM datedetails d;
+
+describe authorbook;
+
+show create table authorbook;
+
+select * from books b where exists (select authid from authorbook au where b.bookid = au.bookid);
+
+select * from books b join authorbook au on b.bookid = au.bookid;
+
+select * from books b join authorbook au using (bookid);
+
+set sql_mode = 'strict_trans_tables';
+
+create table mytopic engine=myisam SELECT * FROM topic t;
+
+drop table mytopic;
+select * from mytopic;
+
+alter table mytopic
+add fulltext(name);
+
+select * from mytopic where  match(name) against('c++');
+
+select * from mytopic;
+
+create table article
+(
+id int unsigned auto_increment primary key,
+title varchar(30),
+body text,
+fulltext(title, body)
+);
+select * from mytopic;
+select * from mytopic where match(name) against('java2s.com perl python java javascript c  uml vb.net ');
+insert into article (title, body) values('MySQL Security','When configured properly, MySQL ...');
+select * from mytopic where match(name) against('+java -javascript' in boolean mode);
+
+select * from article where match(title, body) against('database');
+
+select count(IF(match(title, body) against('database'), 1, null)) as cound from article;
+
+select id, match(title, body) against('database') from article;
+
+select * from article where match(title, body) against('+Mysql -yoursql' in boolean mode);
+
+select * from mytopic where match(name) against('java*' in boolean mode);
+
+select * from temp;
+alter table temp
+add gender enum('F', 'M');
+
+update temp set gender = 'F';
+
+insert into temp(fname, lname, mname, gender) values('asif', 'khan', 'shakeel', 'M');
+
+select fname, lname, mname, case gender when 'M' then 'Male' when 'F' then 'Female' else 'Nothing' end from temp;
+
+select fname, lname, mname, IF(gender = 'M', 'Male', 'Female') as Gender from temp;
+
+select * from books where copyright > all(select b.copyright from books as b join authorbook as ab using (bookid) join authors as  a using (authid) where authln = 'java');
+
+select b.copyright from books as b join authorbook as ab using (bookid) join authors as  a using (authid) where authln = 'java';

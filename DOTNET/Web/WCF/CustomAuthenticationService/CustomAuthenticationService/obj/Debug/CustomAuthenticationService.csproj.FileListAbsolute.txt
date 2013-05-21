@@ -1,0 +1,7 @@
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationService\obj\Debug\CustomAuthenticationService.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationService\bin\CustomAuthenticationService.dll
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationService\bin\CustomAuthenticationService.pdb
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationService\obj\Debug\CustomAuthenticationService.dll
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationService\obj\Debug\CustomAuthenticationService.pdb
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationService\bin\CustomAuthenticationLib.dll
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationService\bin\CustomAuthenticationLib.pdb

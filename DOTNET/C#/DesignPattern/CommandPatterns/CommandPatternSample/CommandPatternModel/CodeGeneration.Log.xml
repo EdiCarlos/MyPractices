@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2013-04-04T10:52:29" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2013-04-04T10:52:29" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2013-04-04T10:52:29" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2013-04-04T10:52:29" Importance="Diagnostic" Text="ProjectPath = ..\CommandPatternModelLib\CommandPatternModelLib.csproj" />
+  <Message Timestamp="2013-04-04T10:52:29" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2013-04-04T10:52:29" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2013-04-04T10:52:29" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2013-04-04T10:52:29" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2013-04-04T10:52:29" Importance="Medium" Text="CommandPatternModel's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'CommandPatternModel::Switch' -  (Class), 'CommandPatternModel::Light' -  (Class), 'CommandPatternModel::FlipUp' -  (Class), 'CommandPatternModel::FlipDown' -  (Class), 'CommandPatternModel::Client' -  (Class) " />
+  <Message Timestamp="2013-04-04T10:52:43" Importance="Medium" Text="Project Added: D:\MyPractices\DOTNET\C#\DesignPattern\CommandPatterns\CommandPatternSample\CommandPatternModelLib\CommandPatternModelLib.csproj" />
+  <Message Timestamp="2013-04-04T10:52:43" Importance="Medium" Text="'CommandPatternModel::Switch' -  (Class) : success (file created) - D:\MyPractices\DOTNET\C#\DesignPattern\CommandPatterns\CommandPatternSample\CommandPatternModelLib\GeneratedCode\Switch.cs" />
+  <Message Timestamp="2013-04-04T10:52:44" Importance="Medium" Text="'CommandPatternModel::Light' -  (Class) : success (file created) - D:\MyPractices\DOTNET\C#\DesignPattern\CommandPatterns\CommandPatternSample\CommandPatternModelLib\GeneratedCode\Light.cs" />
+  <Message Timestamp="2013-04-04T10:52:44" Importance="Medium" Text="'CommandPatternModel::FlipUp' -  (Class) : success (file created) - D:\MyPractices\DOTNET\C#\DesignPattern\CommandPatterns\CommandPatternSample\CommandPatternModelLib\GeneratedCode\FlipUp.cs" />
+  <Message Timestamp="2013-04-04T10:52:44" Importance="Medium" Text="'CommandPatternModel::FlipDown' -  (Class) : success (file created) - D:\MyPractices\DOTNET\C#\DesignPattern\CommandPatterns\CommandPatternSample\CommandPatternModelLib\GeneratedCode\FlipDown.cs" />
+  <Message Timestamp="2013-04-04T10:52:44" Importance="Medium" Text="'CommandPatternModel::Client' -  (Class) : success (file created) - D:\MyPractices\DOTNET\C#\DesignPattern\CommandPatterns\CommandPatternSample\CommandPatternModelLib\GeneratedCode\Client.cs" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="Name = InterfaceTemplate" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="ProjectPath = ..\CommandPatternModelLib\CommandPatternModelLib.csproj" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Medium" Text="CommandPatternModel's Text Template Binding: 'InterfaceTemplate' will apply InterfaceTemplate.t4 to: 'CommandPatternModel::ICommand' -  (Interface) " />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Medium" Text="'CommandPatternModel::ICommand' -  (Interface) : success (file created) - D:\MyPractices\DOTNET\C#\DesignPattern\CommandPatterns\CommandPatternSample\CommandPatternModelLib\GeneratedCode\ICommand.cs" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="ProjectPath = ..\CommandPatternModelLib\CommandPatternModelLib.csproj" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Medium" Text="CommandPatternModel's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'CommandPatternModel::Switch' -  (Class), 'CommandPatternModel::Light' -  (Class), 'CommandPatternModel::FlipUp' -  (Class), 'CommandPatternModel::FlipDown' -  (Class), 'CommandPatternModel::Client' -  (Class) " />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="'CommandPatternModel::Switch' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2013-04-04T10:52:45" Importance="Diagnostic" Text="'CommandPatternModel::Light' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel::FlipUp' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel::FlipDown' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel::Client' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="The selection included 7 elements which were not bound to a template." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel' -  (ModelStoreModel): no bound template." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel::' -  (Association): no bound template." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel::' -  (Association): no bound template." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel::' -  (Association): no bound template." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="Diagnostic" Text="'CommandPatternModel::' -  (Association): no bound template." />
+  <Message Timestamp="2013-04-04T10:52:46" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

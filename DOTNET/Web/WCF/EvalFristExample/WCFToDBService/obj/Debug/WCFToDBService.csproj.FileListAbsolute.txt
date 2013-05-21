@@ -1,0 +1,7 @@
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\WCFToDBService\bin\WCFToDBService.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\WCFToDBService\bin\WCFToDBService.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\WCFToDBService\bin\WCFToDB.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\WCFToDBService\bin\WCFToDB.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\WCFToDBService\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\WCFToDBService\obj\Debug\WCFToDBService.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\WCFToDBService\obj\Debug\WCFToDBService.pdb

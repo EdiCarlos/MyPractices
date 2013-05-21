@@ -1,0 +1,8 @@
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogDBSchema\bin\Debug\MyBlogDBSchema.dll.config
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogDBSchema\bin\Debug\MyBlogDBSchema.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogDBSchema\bin\Debug\MyBlogDBSchema.pdb
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogDBSchema\bin\Debug\EntityFramework.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogDBSchema\bin\Debug\EntityFramework.xml
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogDBSchema\obj\Debug\MyBlogDBSchema.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogDBSchema\obj\Debug\MyBlogDBSchema.dll
+D:\MyPractices\Web\MVC\Blogs\MyBlog\MyBlogDBSchema\obj\Debug\MyBlogDBSchema.pdb

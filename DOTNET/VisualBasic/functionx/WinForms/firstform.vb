@@ -1,0 +1,56 @@
+Imports System
+Imports System.Drawing
+Imports System.Windows.Forms
+Imports System.Threading
+
+Class Example 
+inherits Form
+
+Dim WithEvents btn as Button
+Public Dim WithEvents lbl as Label
+
+public Sub New()
+ InitializeComponents()    
+End Sub
+
+public Sub InitializeComponents()
+lbl = new Label()
+btn = new Button()
+
+Me.Text = "this is My Form"
+Me.Height = 500
+me.Width = 500
+
+btn.Text = "Button"
+btn.Size = new Size(100, 40)
+
+lbl.Text = "This is Label"
+lbl.ForeColor = Color.Green
+lbl.Location = new Point(100, 200)
+
+me.Controls.Add(btn)
+me.Controls.Add(lbl)
+
+Me.ShowDialog()
+
+End Sub
+
+public Sub Button_Click(ByVal sender as Object, ByVal e as EventArgs) Handles btn.Click
+MsgBox("Button Clicked")
+End Sub
+
+End Class
+
+class MyButton : Inherits Button
+
+Public Sub New()
+
+End Sub
+
+end Class
+
+Module Module1
+Sub Main()
+Dim exe as Example = new Example()
+End Sub
+End Module

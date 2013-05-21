@@ -1,0 +1,5 @@
+D:\temp\VisualC#\TestExamples\CreatePryamid\CreatePryamid\bin\Debug\CreatePryamid.exe
+D:\temp\VisualC#\TestExamples\CreatePryamid\CreatePryamid\bin\Debug\CreatePryamid.pdb
+D:\temp\VisualC#\TestExamples\CreatePryamid\CreatePryamid\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\TestExamples\CreatePryamid\CreatePryamid\obj\Debug\CreatePryamid.exe
+D:\temp\VisualC#\TestExamples\CreatePryamid\CreatePryamid\obj\Debug\CreatePryamid.pdb

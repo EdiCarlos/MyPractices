@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+	long x = atol("10000");
+	cout<<x<<endl;
+	cout<<atol("10000")<<endl;
+	return 0;
+}

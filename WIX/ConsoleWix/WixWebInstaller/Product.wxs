@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="6e5c83ac-a1de-4f0b-9d5d-098958b4e32a" Name="WixWebInstaller" Language="1033" Version="1.0.0.0" Manufacturer="WixWebInstaller" UpgradeCode="a392d6e6-505b-4788-bf69-ad2da21e29b7">
+		<Package InstallerVersion="200" Compressed="yes" />
+
+		<Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="Appserver" Name="Appserver">
+				<Directory Id="INSTALLLOCATION" Name="WixSampleWeb">
+				</Directory>
+			</Directory>
+		</Directory>
+
+    <!--<WixVariable Id="WixUILicense" Value="This is Wix Sample Project"/>-->
+    <WixVariable Id="WixUISupportPerUser" Value="1"/>
+
+    <UIRef Id="WixUI_InstallDir"/>
+
+    <!--<Property Id="LicenseAccepted" Value="1" />-->
+    <Property Id="DISABLEADVTSHORTCUTS" Value="1" />
+
+    <!--<PropertyRef Id="IISMAJORVERSION" />
+    <PropertyRef Id="NETFRAMEWORK40FULL"/>
+    <PropertyRef Id="IISMAJORVERSION"/>
+
+    <Condition Message="This application requires IIS. Please install IIS then run this installer again.">
+      <![CDATA[Installed OR IISMAJORVERSION]]>
+    </Condition>
+
+    <PropertyRef Id="NETFRAMEWORK40FULL"/>
+    <Condition Message="This application requires .NET Framework 4.0. Please install the .NET Framework 4.0 then run this installer again.">
+      <![CDATA[Installed OR NETFRAMEWORK40FULL]]>
+    </Condition>-->
+
+    <FeatureRef Id="WebsiteFeature" />
+
+    <!--<Feature Id="ProductFeature" Title="WixWebInstaller" Level="1">
+			--><!-- TODO: Remove the comments around this ComponentRef element and the Component above in order to add resources to this installer. --><!--
+			--><!-- <ComponentRef Id="ProductComponent" /> --><!--
+			
+			--><!-- Note: The following ComponentGroupRef is required to pull in generated authoring from project references. --><!--
+			--><!--<ComponentGroupRef Id="Product.Generated" />--><!--
+		</Feature>-->
+	</Product>
+</Wix>

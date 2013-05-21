@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\WCF\MessageSecurity\client\client\bin\Debug\client.exe
+D:\MyPractices\DOTNET\WCF\MessageSecurity\client\client\bin\Debug\client.pdb
+D:\MyPractices\DOTNET\WCF\MessageSecurity\client\client\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\WCF\MessageSecurity\client\client\obj\x86\Debug\client.exe
+D:\MyPractices\DOTNET\WCF\MessageSecurity\client\client\obj\x86\Debug\client.pdb
+D:\MyPractices\DOTNET\WCF\MessageSecurity\client\client\bin\Debug\client.exe.config

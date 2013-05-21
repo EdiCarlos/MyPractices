@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int i;
+	char * ch = "This is pointer";
+	i = reinterpret_cast<int> (ch);
+	cout<<i<<endl;
+	
+	return 0;
+}

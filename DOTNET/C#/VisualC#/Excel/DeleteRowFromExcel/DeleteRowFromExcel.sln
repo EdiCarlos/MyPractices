@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteRowFromExcel", "DeleteRowFromExcel\DeleteRowFromExcel.csproj", "{46032FDD-56F2-464D-AB8E-D7A0C583755E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteExcelRow", "..\..\..\..\Development\InvoiceCDE\LatestInvoiceCDE\DeleteExcelRow\DeleteExcelRow.csproj", "{A285CF00-AD96-4C42-AFE2-7DAEB3227EA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46032FDD-56F2-464D-AB8E-D7A0C583755E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46032FDD-56F2-464D-AB8E-D7A0C583755E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46032FDD-56F2-464D-AB8E-D7A0C583755E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46032FDD-56F2-464D-AB8E-D7A0C583755E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A285CF00-AD96-4C42-AFE2-7DAEB3227EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A285CF00-AD96-4C42-AFE2-7DAEB3227EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A285CF00-AD96-4C42-AFE2-7DAEB3227EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A285CF00-AD96-4C42-AFE2-7DAEB3227EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

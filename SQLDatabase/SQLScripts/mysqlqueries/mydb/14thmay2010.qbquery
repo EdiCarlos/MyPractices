@@ -1,0 +1,148 @@
+﻿use mydb;
+show tables;
+set @fname = 'Arif';
+select @name as Name;
+set @mname = 'hasan';
+set @lname = 'khan';
+
+select concat(@fname, ' ' , @lname) as name;
+select concat(concat(@fname, ' ' , @lname), ' ', @mname) as FullName;
+
+set @i = 10;
+
+select IF(@i > 20, 'True', 'False');
+declare @myvar int default 0;
+
+select @myvar as Variable;
+set @myvar = 100;
+
+-- Declaretion of global variables
+
+set global max_connections  = 300;
+
+delimiter $$
+
+create procedure myexe(in_sql varchar(5000))
+begin
+
+set @my_statement=in_sql;
+prepare s1 from @my_statement;
+execute s1;
+deallocate prepare s1;
+end;$$
+
+CREATE PROCEDURE execute_immediate(in_sql varchar(4000))
+     BEGIN
+
+       SET @tmp_sql=in_sql;
+       PREPARE s1 FROM @tmp_sql;
+       EXECUTE s1;
+       DEALLOCATE PREPARE s1;
+
+     END$$
+drop procedure if exists myexe;$$
+create procedure myexe(in_sql varchar(5000))
+begin
+-- declare temp varchar(5000) default in_sql;
+ set @temp = in_sql;
+prepare s1 from @temp;
+execute s1;
+deallocate prepare s1;
+end;$$
+set @i  = 0;$$
+if (@i < 0) then set @i = 10; else set @i = 0 end if;$$
+create procedure show_While(st int, en int)
+begin
+if st < en then
+while st < en do
+set st = st + 1;
+select st;
+end while;
+else
+select 'st cannot be less than en';
+end if;
+end;$$
+call show_While(10, 20);$$
+
+-- get maximum function Which help to identify maximum number out of three number passed as parameter in get max function
+
+create function getMax(num1 int, num2 int, num3 int)
+returns int
+begin
+return IF(num1 > num2, IF(num1 > num3, num1, num3), IF(num2 > num3, num2, num3));
+end;$$
+-- Use of getMax function in mysql
+select getMax(10, 20, 30);$$
+-- Use of getMax function in nested form
+select getMax(getMax(30, 20, 20), getMax(50, 70, 80), getMax(100, 20, 200));$$
+
+end;$$
+
+create function doiterate(num1 int)
+returns int
+begin
+loop1 : Loop
+set num1 = num1 + 1;
+if num1 < 10 then iterate loop1; else leave loop1; end if;
+end loop loop1;
+return num1;
+end;$$
+select doiterate(1);$$
+drop function if exists dorepeat;$$
+create function dorepeat(num1 int)
+returns int
+begin
+repeat
+set num1 = num1 + 1;
+until num1 mod 12 = 0
+end repeat;
+return num1;
+end;$$
+select dorepeat(1);$$
+create function test_repeat(num1 int)
+returns int
+begin
+inc : repeat
+set num1 = num1 + 1;
+until num1 > 12
+end repeat inc;
+return num1;
+end;$$
+select test_repeat(1);$$
+select * from employee;$$
+
+drop procedure myproc;$$
+
+call myproc(1);$$
+drop function getcitylist;$$
+create function getcitylist() returns varchar(255)
+begin
+-- declaration of variables
+declare finished int default 0;
+declare city_name varchar(50) default '';
+declare l_city varchar(500) default '';
+declare csr cursor for select city from employee;
+declare continue handler for not found set finished = 1;
+-- opening of cursor
+open csr;
+-- begin of loop
+get_city:loop
+-- fetch city into city_name variable
+fetch csr into city_name;
+-- check condition if finished = 0
+if finished then
+leave get_city;
+end if;
+-- set l_city
+set l_city = concat(l_city, ', ' , city_name);
+-- end of get_city loop
+end loop get_city;
+-- close cursor
+close csr;
+-- return string
+return substr(l_city, 3);
+end;$$
+select city from employee;$$
+select getcitylist();$$
+delimiter;
+

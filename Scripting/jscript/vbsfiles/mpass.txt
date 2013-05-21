@@ -1,0 +1,11 @@
+Microsoft (R) Windows Script Host Version 5.7
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+115
+104
+121
+109
+97
+55
+56
+56

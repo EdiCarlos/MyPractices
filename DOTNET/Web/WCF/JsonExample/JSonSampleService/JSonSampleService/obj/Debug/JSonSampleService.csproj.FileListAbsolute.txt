@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WCF\JsonExample\JSonSampleService\JSonSampleService\obj\Debug\JSonSampleService.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\JsonExample\JSonSampleService\JSonSampleService\bin\JSonSampleService.dll
+D:\MyPractices\Web\WCF\JsonExample\JSonSampleService\JSonSampleService\bin\JSonSampleService.pdb
+D:\MyPractices\Web\WCF\JsonExample\JSonSampleService\JSonSampleService\obj\Debug\JSonSampleService.dll
+D:\MyPractices\Web\WCF\JsonExample\JSonSampleService\JSonSampleService\obj\Debug\JSonSampleService.pdb

@@ -1,0 +1,5 @@
+D:\MyPractices\Scripting\LibraryExample\CreatingJLibrary\CreatingJLibrary\bin\CreatingJLibrary.dll
+D:\MyPractices\Scripting\LibraryExample\CreatingJLibrary\CreatingJLibrary\bin\CreatingJLibrary.pdb
+D:\MyPractices\Scripting\LibraryExample\CreatingJLibrary\CreatingJLibrary\obj\Debug\CreatingJLibrary.csprojResolveAssemblyReference.cache
+D:\MyPractices\Scripting\LibraryExample\CreatingJLibrary\CreatingJLibrary\obj\Debug\CreatingJLibrary.dll
+D:\MyPractices\Scripting\LibraryExample\CreatingJLibrary\CreatingJLibrary\obj\Debug\CreatingJLibrary.pdb

@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	char f[20], l[20];
+	strcpy(f,"arif");
+	strcpy(l,"khan");
+	char * fname = "arifkhan";
+	char * lname = "hasan";
+	strcat(f, l);
+	//cout<<f;
+	char fn[] = "hello world";
+	char ln[] = "\tmy world";
+	
+	strncat(fn, ln, 3);
+	cout<<fn;
+	return 0;
+}

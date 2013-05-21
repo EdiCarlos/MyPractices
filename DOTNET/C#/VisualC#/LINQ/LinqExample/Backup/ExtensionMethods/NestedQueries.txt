@@ -1,0 +1,106 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+namespace ExtensionMethods
+{
+    class Program
+    {
+        class Customer
+        {
+            public string ID { get; set; }
+            public string City { get; set; }
+            public string Country { get; set; }
+            public string Region { get; set; }
+            public decimal Sales { get; set; }
+        }
+        class Orders
+        {
+            public string ID { get; set; }
+            public decimal Amount { get; set; }
+        }
+        class Employee
+        {
+            int id, role;
+            public int Id
+            {
+                get { return id; }
+                set { id = value; }
+            }
+            public int Role
+            {
+                get { return role; }
+                set { role = value; }
+            }
+            string firstName, lastName;
+            public string FirstName
+            {
+                get { return firstName; }
+                set { firstName = value; }
+            }
+            public string LastName
+            {
+                get { return lastName; }
+                set { lastName = value; }
+            }
+            //public int ID { get; set; }
+            //public int Role { get; set; }
+            //public string FirstName { get; set; }
+            //public string LastName { get; set; }
+            ////public string MiddleName { get; set; }
+        }
+        class Role
+        {
+            int _id;
+            public int Id
+            {
+                get { return _id; }
+                set { _id = value; }
+            }
+            string role;
+            public string Role1
+            {
+                get { return role; }
+                set { role = value; }
+            }
+        }
+        static void Main()
+        {
+            List<Employee> employee = new List<Employee>{
+                new Employee{ Id=1, Role=1, FirstName="A", LastName="B"}, 
+                new Employee{ Id=2, Role=2, FirstName="C", LastName="D"}, 
+                new Employee{ Id=3, Role=2, FirstName="E", LastName="F"}, 
+                new Employee{ Id=4, Role=1, FirstName="G", LastName="H"}};
+
+            List<Role> role = new List<Role>
+            {
+                new Role{ Id=1, Role1="Manager"},
+                new Role{ Id=2, Role1="Developer"},
+            };
+
+            //var query = employee.Where(e => e.Id == 1).SelectMany(p => role.Where(r => r.Id == p.Id).Select(r => new {p.FirstName, p.LastName, r.Role1}));
+
+            //var query = employee.SelectMany(p => role.Where(r => r.Id == p.Id).Select(r => new{p.FirstName, p.LastName, r.Role1}));
+
+            var query = role.SelectMany(p => employee.Where(e => e.Id == p.Id).Select(r => new { r.FirstName, r.LastName, p.Role1 }));
+
+            var query1 = employee.Where(e => e.Id == 2).Select(r => r.Id);
+            var query3 = employee.Where(e => e.Id == role.Where(r => r.Role1 == "Developer").First().Id);
+
+            foreach (var item in query3)
+            {
+                Console.WriteLine(item.Id);
+            }
+            foreach (var item in query1)
+            {
+                Console.WriteLine("First Name " + item);
+            }
+            foreach (var item in query)
+            {
+                Console.WriteLine("First Name " + item.FirstName + " Last Name " + item.LastName + " Role " + item.Role1);
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+union Number
+{
+	int num1;
+	float num2;
+double num3;
+};
+int main()
+{
+	Number n;
+	n.num1 = 100;
+	cout<<"value of num1 is "<<n.num1<<endl;
+	
+	n.num2 = 10.00;
+	cout<<"value of num1 is "<<n.num1<<endl;
+	
+	cout<<"value of num2 is "<<n.num2<<endl;
+	cout<<"value of num2 is "<<n.num3<<endl;
+
+	return 0;
+}

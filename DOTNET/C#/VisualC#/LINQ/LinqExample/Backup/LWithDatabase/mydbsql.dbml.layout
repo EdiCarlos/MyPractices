@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="mydbsql">
+  <DataContextMoniker Name="/mydbsqlDataContext" />
+  <nestedChildShapes>
+    <classShape Id="44ba0be1-c7ac-495e-bc56-94cda05ec308" absoluteBounds="1.125, 1, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/mydbsqlDataContext/det" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e32cc4e2-1e5c-4341-a3d0-867b224dfa47" absoluteBounds="1.1400000000000001, 1.46, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b13cf56b-b6c0-4663-abd0-c107ee4c7922" absoluteBounds="3.75, 1.625, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/mydbsqlDataContext/condet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c924a840-a40b-4624-a0ca-5d801b0e1b56" absoluteBounds="3.7650000000000006, 2.085, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 2.10709757486979); (3.75 : 2.10709757486979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/mydbsqlDataContext/det/det_condet" />
+      <nodes>
+        <classShapeMoniker Id="44ba0be1-c7ac-495e-bc56-94cda05ec308" />
+        <classShapeMoniker Id="b13cf56b-b6c0-4663-abd0-c107ee4c7922" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

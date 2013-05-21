@@ -1,0 +1,1090 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="hr_mysqlModelStoreContainer" CdmEntityContainer="hr_mysqlEntities">
+    <EntitySetMapping Name="hs_hr_attendance">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_attendance">
+        <MappingFragment StoreEntitySet="hs_hr_attendance">
+          <ScalarProperty Name="attendance_id" ColumnName="attendance_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="punchin_time" ColumnName="punchin_time" />
+          <ScalarProperty Name="punchout_time" ColumnName="punchout_time" />
+          <ScalarProperty Name="in_note" ColumnName="in_note" />
+          <ScalarProperty Name="out_note" ColumnName="out_note" />
+          <ScalarProperty Name="timestamp_diff" ColumnName="timestamp_diff" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_comp_property">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_comp_property">
+        <MappingFragment StoreEntitySet="hs_hr_comp_property">
+          <ScalarProperty Name="prop_id" ColumnName="prop_id" />
+          <ScalarProperty Name="prop_name" ColumnName="prop_name" />
+          <ScalarProperty Name="emp_id" ColumnName="emp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_compstructtree">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_compstructtree">
+        <MappingFragment StoreEntitySet="hs_hr_compstructtree">
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="loc_code" ColumnName="loc_code" />
+          <ScalarProperty Name="lft" ColumnName="lft" />
+          <ScalarProperty Name="rgt" ColumnName="rgt" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="parnt" ColumnName="parnt" />
+          <ScalarProperty Name="dept_id" ColumnName="dept_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_config">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_config">
+        <MappingFragment StoreEntitySet="hs_hr_config">
+          <ScalarProperty Name="key" ColumnName="key" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_country">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_country">
+        <MappingFragment StoreEntitySet="hs_hr_country">
+          <ScalarProperty Name="cou_code" ColumnName="cou_code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cou_name" ColumnName="cou_name" />
+          <ScalarProperty Name="iso3" ColumnName="iso3" />
+          <ScalarProperty Name="numcode" ColumnName="numcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_currency_type">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_currency_type">
+        <MappingFragment StoreEntitySet="hs_hr_currency_type">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="currency_id" ColumnName="currency_id" />
+          <ScalarProperty Name="currency_name" ColumnName="currency_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_custom_export">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_custom_export">
+        <MappingFragment StoreEntitySet="hs_hr_custom_export">
+          <ScalarProperty Name="export_id" ColumnName="export_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="fields" ColumnName="fields" />
+          <ScalarProperty Name="headings" ColumnName="headings" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_custom_fields">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_custom_fields">
+        <MappingFragment StoreEntitySet="hs_hr_custom_fields">
+          <ScalarProperty Name="field_num" ColumnName="field_num" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="extra_data" ColumnName="extra_data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_custom_import">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_custom_import">
+        <MappingFragment StoreEntitySet="hs_hr_custom_import">
+          <ScalarProperty Name="import_id" ColumnName="import_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="fields" ColumnName="fields" />
+          <ScalarProperty Name="has_heading" ColumnName="has_heading" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_customer">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_customer">
+        <MappingFragment StoreEntitySet="hs_hr_customer">
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_db_version">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_db_version">
+        <MappingFragment StoreEntitySet="hs_hr_db_version">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="entered_date" ColumnName="entered_date" />
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+          <ScalarProperty Name="entered_by" ColumnName="entered_by" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_developer">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_developer">
+        <MappingFragment StoreEntitySet="hs_hr_developer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="reports_to_id" ColumnName="reports_to_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="department" ColumnName="department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_district">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_district">
+        <MappingFragment StoreEntitySet="hs_hr_district">
+          <ScalarProperty Name="district_code" ColumnName="district_code" />
+          <ScalarProperty Name="district_name" ColumnName="district_name" />
+          <ScalarProperty Name="province_code" ColumnName="province_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_education">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_education">
+        <MappingFragment StoreEntitySet="hs_hr_education">
+          <ScalarProperty Name="edu_code" ColumnName="edu_code" />
+          <ScalarProperty Name="edu_uni" ColumnName="edu_uni" />
+          <ScalarProperty Name="edu_deg" ColumnName="edu_deg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_eec">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_eec">
+        <MappingFragment StoreEntitySet="hs_hr_eec">
+          <ScalarProperty Name="eec_code" ColumnName="eec_code" />
+          <ScalarProperty Name="eec_desc" ColumnName="eec_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_attachment">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_attachment">
+        <MappingFragment StoreEntitySet="hs_hr_emp_attachment">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="eattach_id" ColumnName="eattach_id" />
+          <ScalarProperty Name="eattach_desc" ColumnName="eattach_desc" />
+          <ScalarProperty Name="eattach_filename" ColumnName="eattach_filename" />
+          <ScalarProperty Name="eattach_size" ColumnName="eattach_size" />
+          <ScalarProperty Name="eattach_attachment" ColumnName="eattach_attachment" />
+          <ScalarProperty Name="eattach_type" ColumnName="eattach_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_basicsalary">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_basicsalary">
+        <MappingFragment StoreEntitySet="hs_hr_emp_basicsalary">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="sal_grd_code" ColumnName="sal_grd_code" />
+          <ScalarProperty Name="currency_id" ColumnName="currency_id" />
+          <ScalarProperty Name="ebsal_basic_salary" ColumnName="ebsal_basic_salary" />
+          <ScalarProperty Name="payperiod_code" ColumnName="payperiod_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_children">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_children">
+        <MappingFragment StoreEntitySet="hs_hr_emp_children">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="ec_seqno" ColumnName="ec_seqno" />
+          <ScalarProperty Name="ec_name" ColumnName="ec_name" />
+          <ScalarProperty Name="ec_date_of_birth" ColumnName="ec_date_of_birth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_contract_extend">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_contract_extend">
+        <MappingFragment StoreEntitySet="hs_hr_emp_contract_extend">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="econ_extend_id" ColumnName="econ_extend_id" />
+          <ScalarProperty Name="econ_extend_start_date" ColumnName="econ_extend_start_date" />
+          <ScalarProperty Name="econ_extend_end_date" ColumnName="econ_extend_end_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_dependents">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_dependents">
+        <MappingFragment StoreEntitySet="hs_hr_emp_dependents">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="ed_seqno" ColumnName="ed_seqno" />
+          <ScalarProperty Name="ed_name" ColumnName="ed_name" />
+          <ScalarProperty Name="ed_relationship" ColumnName="ed_relationship" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_directdebit">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_directdebit">
+        <MappingFragment StoreEntitySet="hs_hr_emp_directdebit">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="dd_seqno" ColumnName="dd_seqno" />
+          <ScalarProperty Name="dd_routing_num" ColumnName="dd_routing_num" />
+          <ScalarProperty Name="dd_account" ColumnName="dd_account" />
+          <ScalarProperty Name="dd_amount" ColumnName="dd_amount" />
+          <ScalarProperty Name="dd_account_type" ColumnName="dd_account_type" />
+          <ScalarProperty Name="dd_transaction_type" ColumnName="dd_transaction_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_education">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_education">
+        <MappingFragment StoreEntitySet="hs_hr_emp_education">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="edu_code" ColumnName="edu_code" />
+          <ScalarProperty Name="edu_major" ColumnName="edu_major" />
+          <ScalarProperty Name="edu_year" ColumnName="edu_year" />
+          <ScalarProperty Name="edu_gpa" ColumnName="edu_gpa" />
+          <ScalarProperty Name="edu_start_date" ColumnName="edu_start_date" />
+          <ScalarProperty Name="edu_end_date" ColumnName="edu_end_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_emergency_contacts">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_emergency_contacts">
+        <MappingFragment StoreEntitySet="hs_hr_emp_emergency_contacts">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="eec_seqno" ColumnName="eec_seqno" />
+          <ScalarProperty Name="eec_name" ColumnName="eec_name" />
+          <ScalarProperty Name="eec_relationship" ColumnName="eec_relationship" />
+          <ScalarProperty Name="eec_home_no" ColumnName="eec_home_no" />
+          <ScalarProperty Name="eec_mobile_no" ColumnName="eec_mobile_no" />
+          <ScalarProperty Name="eec_office_no" ColumnName="eec_office_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_history_of_ealier_pos">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_history_of_ealier_pos">
+        <MappingFragment StoreEntitySet="hs_hr_emp_history_of_ealier_pos">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="emp_seqno" ColumnName="emp_seqno" />
+          <ScalarProperty Name="ehoep_job_title" ColumnName="ehoep_job_title" />
+          <ScalarProperty Name="ehoep_years" ColumnName="ehoep_years" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_jobtitle_history">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_jobtitle_history">
+        <MappingFragment StoreEntitySet="hs_hr_emp_jobtitle_history">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_language">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_language">
+        <MappingFragment StoreEntitySet="hs_hr_emp_language">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="lang_code" ColumnName="lang_code" />
+          <ScalarProperty Name="elang_type" ColumnName="elang_type" />
+          <ScalarProperty Name="competency" ColumnName="competency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_licenses">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_licenses">
+        <MappingFragment StoreEntitySet="hs_hr_emp_licenses">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="licenses_code" ColumnName="licenses_code" />
+          <ScalarProperty Name="licenses_date" ColumnName="licenses_date" />
+          <ScalarProperty Name="licenses_renewal_date" ColumnName="licenses_renewal_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_location_history">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_location_history">
+        <MappingFragment StoreEntitySet="hs_hr_emp_location_history">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_member_detail">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_member_detail">
+        <MappingFragment StoreEntitySet="hs_hr_emp_member_detail">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="membship_code" ColumnName="membship_code" />
+          <ScalarProperty Name="membtype_code" ColumnName="membtype_code" />
+          <ScalarProperty Name="ememb_subscript_ownership" ColumnName="ememb_subscript_ownership" />
+          <ScalarProperty Name="ememb_subscript_amount" ColumnName="ememb_subscript_amount" />
+          <ScalarProperty Name="ememb_commence_date" ColumnName="ememb_commence_date" />
+          <ScalarProperty Name="ememb_renewal_date" ColumnName="ememb_renewal_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_passport">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_passport">
+        <MappingFragment StoreEntitySet="hs_hr_emp_passport">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="ep_seqno" ColumnName="ep_seqno" />
+          <ScalarProperty Name="ep_passport_num" ColumnName="ep_passport_num" />
+          <ScalarProperty Name="ep_passportissueddate" ColumnName="ep_passportissueddate" />
+          <ScalarProperty Name="ep_passportexpiredate" ColumnName="ep_passportexpiredate" />
+          <ScalarProperty Name="ep_comments" ColumnName="ep_comments" />
+          <ScalarProperty Name="ep_passport_type_flg" ColumnName="ep_passport_type_flg" />
+          <ScalarProperty Name="ep_i9_status" ColumnName="ep_i9_status" />
+          <ScalarProperty Name="ep_i9_review_date" ColumnName="ep_i9_review_date" />
+          <ScalarProperty Name="cou_code" ColumnName="cou_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_picture">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_picture">
+        <MappingFragment StoreEntitySet="hs_hr_emp_picture">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="epic_picture" ColumnName="epic_picture" />
+          <ScalarProperty Name="epic_filename" ColumnName="epic_filename" />
+          <ScalarProperty Name="epic_type" ColumnName="epic_type" />
+          <ScalarProperty Name="epic_file_size" ColumnName="epic_file_size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_reportto">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_reportto">
+        <MappingFragment StoreEntitySet="hs_hr_emp_reportto">
+          <ScalarProperty Name="erep_sup_emp_number" ColumnName="erep_sup_emp_number" />
+          <ScalarProperty Name="erep_sub_emp_number" ColumnName="erep_sub_emp_number" />
+          <ScalarProperty Name="erep_reporting_mode" ColumnName="erep_reporting_mode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_skill">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_skill">
+        <MappingFragment StoreEntitySet="hs_hr_emp_skill">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="skill_code" ColumnName="skill_code" />
+          <ScalarProperty Name="years_of_exp" ColumnName="years_of_exp" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_subdivision_history">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_subdivision_history">
+        <MappingFragment StoreEntitySet="hs_hr_emp_subdivision_history">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_us_tax">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_us_tax">
+        <MappingFragment StoreEntitySet="hs_hr_emp_us_tax">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="tax_federal_status" ColumnName="tax_federal_status" />
+          <ScalarProperty Name="tax_federal_exceptions" ColumnName="tax_federal_exceptions" />
+          <ScalarProperty Name="tax_state" ColumnName="tax_state" />
+          <ScalarProperty Name="tax_state_status" ColumnName="tax_state_status" />
+          <ScalarProperty Name="tax_state_exceptions" ColumnName="tax_state_exceptions" />
+          <ScalarProperty Name="tax_unemp_state" ColumnName="tax_unemp_state" />
+          <ScalarProperty Name="tax_work_state" ColumnName="tax_work_state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_emp_work_experience">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_emp_work_experience">
+        <MappingFragment StoreEntitySet="hs_hr_emp_work_experience">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="eexp_seqno" ColumnName="eexp_seqno" />
+          <ScalarProperty Name="eexp_employer" ColumnName="eexp_employer" />
+          <ScalarProperty Name="eexp_jobtit" ColumnName="eexp_jobtit" />
+          <ScalarProperty Name="eexp_from_date" ColumnName="eexp_from_date" />
+          <ScalarProperty Name="eexp_to_date" ColumnName="eexp_to_date" />
+          <ScalarProperty Name="eexp_comments" ColumnName="eexp_comments" />
+          <ScalarProperty Name="eexp_internal" ColumnName="eexp_internal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_employee">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_employee">
+        <MappingFragment StoreEntitySet="hs_hr_employee">
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="emp_lastname" ColumnName="emp_lastname" />
+          <ScalarProperty Name="emp_firstname" ColumnName="emp_firstname" />
+          <ScalarProperty Name="emp_middle_name" ColumnName="emp_middle_name" />
+          <ScalarProperty Name="emp_nick_name" ColumnName="emp_nick_name" />
+          <ScalarProperty Name="emp_smoker" ColumnName="emp_smoker" />
+          <ScalarProperty Name="ethnic_race_code" ColumnName="ethnic_race_code" />
+          <ScalarProperty Name="emp_birthday" ColumnName="emp_birthday" />
+          <ScalarProperty Name="nation_code" ColumnName="nation_code" />
+          <ScalarProperty Name="emp_gender" ColumnName="emp_gender" />
+          <ScalarProperty Name="emp_marital_status" ColumnName="emp_marital_status" />
+          <ScalarProperty Name="emp_ssn_num" ColumnName="emp_ssn_num" />
+          <ScalarProperty Name="emp_sin_num" ColumnName="emp_sin_num" />
+          <ScalarProperty Name="emp_other_id" ColumnName="emp_other_id" />
+          <ScalarProperty Name="emp_dri_lice_num" ColumnName="emp_dri_lice_num" />
+          <ScalarProperty Name="emp_dri_lice_exp_date" ColumnName="emp_dri_lice_exp_date" />
+          <ScalarProperty Name="emp_military_service" ColumnName="emp_military_service" />
+          <ScalarProperty Name="emp_status" ColumnName="emp_status" />
+          <ScalarProperty Name="job_title_code" ColumnName="job_title_code" />
+          <ScalarProperty Name="eeo_cat_code" ColumnName="eeo_cat_code" />
+          <ScalarProperty Name="work_station" ColumnName="work_station" />
+          <ScalarProperty Name="emp_street1" ColumnName="emp_street1" />
+          <ScalarProperty Name="emp_street2" ColumnName="emp_street2" />
+          <ScalarProperty Name="city_code" ColumnName="city_code" />
+          <ScalarProperty Name="coun_code" ColumnName="coun_code" />
+          <ScalarProperty Name="provin_code" ColumnName="provin_code" />
+          <ScalarProperty Name="emp_zipcode" ColumnName="emp_zipcode" />
+          <ScalarProperty Name="emp_hm_telephone" ColumnName="emp_hm_telephone" />
+          <ScalarProperty Name="emp_mobile" ColumnName="emp_mobile" />
+          <ScalarProperty Name="emp_work_telephone" ColumnName="emp_work_telephone" />
+          <ScalarProperty Name="emp_work_email" ColumnName="emp_work_email" />
+          <ScalarProperty Name="sal_grd_code" ColumnName="sal_grd_code" />
+          <ScalarProperty Name="joined_date" ColumnName="joined_date" />
+          <ScalarProperty Name="emp_oth_email" ColumnName="emp_oth_email" />
+          <ScalarProperty Name="terminated_date" ColumnName="terminated_date" />
+          <ScalarProperty Name="termination_reason" ColumnName="termination_reason" />
+          <ScalarProperty Name="custom1" ColumnName="custom1" />
+          <ScalarProperty Name="custom2" ColumnName="custom2" />
+          <ScalarProperty Name="custom3" ColumnName="custom3" />
+          <ScalarProperty Name="custom4" ColumnName="custom4" />
+          <ScalarProperty Name="custom5" ColumnName="custom5" />
+          <ScalarProperty Name="custom6" ColumnName="custom6" />
+          <ScalarProperty Name="custom7" ColumnName="custom7" />
+          <ScalarProperty Name="custom8" ColumnName="custom8" />
+          <ScalarProperty Name="custom9" ColumnName="custom9" />
+          <ScalarProperty Name="custom10" ColumnName="custom10" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_employee_leave_quota">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_employee_leave_quota">
+        <MappingFragment StoreEntitySet="hs_hr_employee_leave_quota">
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="leave_type_id" ColumnName="leave_type_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="no_of_days_allotted" ColumnName="no_of_days_allotted" />
+          <ScalarProperty Name="leave_taken" ColumnName="leave_taken" />
+          <ScalarProperty Name="leave_brought_forward" ColumnName="leave_brought_forward" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_empreport">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_empreport">
+        <MappingFragment StoreEntitySet="hs_hr_empreport">
+          <ScalarProperty Name="rep_code" ColumnName="rep_code" />
+          <ScalarProperty Name="rep_name" ColumnName="rep_name" />
+          <ScalarProperty Name="rep_cridef_str" ColumnName="rep_cridef_str" />
+          <ScalarProperty Name="rep_flddef_str" ColumnName="rep_flddef_str" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_empstat">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_empstat">
+        <MappingFragment StoreEntitySet="hs_hr_empstat">
+          <ScalarProperty Name="estat_code" ColumnName="estat_code" />
+          <ScalarProperty Name="estat_name" ColumnName="estat_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_ethnic_race">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_ethnic_race">
+        <MappingFragment StoreEntitySet="hs_hr_ethnic_race">
+          <ScalarProperty Name="ethnic_race_code" ColumnName="ethnic_race_code" />
+          <ScalarProperty Name="ethnic_race_desc" ColumnName="ethnic_race_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_file_version">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_file_version">
+        <MappingFragment StoreEntitySet="hs_hr_file_version">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="altered_module" ColumnName="altered_module" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="entered_date" ColumnName="entered_date" />
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+          <ScalarProperty Name="entered_by" ColumnName="entered_by" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_geninfo">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_geninfo">
+        <MappingFragment StoreEntitySet="hs_hr_geninfo">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="geninfo_keys" ColumnName="geninfo_keys" />
+          <ScalarProperty Name="geninfo_values" ColumnName="geninfo_values" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_holidays">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_holidays">
+        <MappingFragment StoreEntitySet="hs_hr_holidays">
+          <ScalarProperty Name="holiday_id" ColumnName="holiday_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="recurring" ColumnName="recurring" />
+          <ScalarProperty Name="length" ColumnName="length" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_hsp">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_hsp">
+        <MappingFragment StoreEntitySet="hs_hr_hsp">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="benefit_year" ColumnName="benefit_year" />
+          <ScalarProperty Name="hsp_value" ColumnName="hsp_value" />
+          <ScalarProperty Name="total_acrued" ColumnName="total_acrued" />
+          <ScalarProperty Name="accrued_last_updated" ColumnName="accrued_last_updated" />
+          <ScalarProperty Name="amount_per_day" ColumnName="amount_per_day" />
+          <ScalarProperty Name="edited_status" ColumnName="edited_status" />
+          <ScalarProperty Name="termination_date" ColumnName="termination_date" />
+          <ScalarProperty Name="halted" ColumnName="halted" />
+          <ScalarProperty Name="halted_date" ColumnName="halted_date" />
+          <ScalarProperty Name="terminated" ColumnName="terminated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_hsp_payment_request">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_hsp_payment_request">
+        <MappingFragment StoreEntitySet="hs_hr_hsp_payment_request">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="hsp_id" ColumnName="hsp_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="date_incurred" ColumnName="date_incurred" />
+          <ScalarProperty Name="provider_name" ColumnName="provider_name" />
+          <ScalarProperty Name="person_incurring_expense" ColumnName="person_incurring_expense" />
+          <ScalarProperty Name="expense_description" ColumnName="expense_description" />
+          <ScalarProperty Name="expense_amount" ColumnName="expense_amount" />
+          <ScalarProperty Name="payment_made_to" ColumnName="payment_made_to" />
+          <ScalarProperty Name="third_party_account_number" ColumnName="third_party_account_number" />
+          <ScalarProperty Name="mail_address" ColumnName="mail_address" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+          <ScalarProperty Name="date_paid" ColumnName="date_paid" />
+          <ScalarProperty Name="check_number" ColumnName="check_number" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="hr_notes" ColumnName="hr_notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_hsp_summary">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_hsp_summary">
+        <MappingFragment StoreEntitySet="hs_hr_hsp_summary">
+          <ScalarProperty Name="summary_id" ColumnName="summary_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="hsp_plan_id" ColumnName="hsp_plan_id" />
+          <ScalarProperty Name="hsp_plan_year" ColumnName="hsp_plan_year" />
+          <ScalarProperty Name="hsp_plan_status" ColumnName="hsp_plan_status" />
+          <ScalarProperty Name="annual_limit" ColumnName="annual_limit" />
+          <ScalarProperty Name="employer_amount" ColumnName="employer_amount" />
+          <ScalarProperty Name="employee_amount" ColumnName="employee_amount" />
+          <ScalarProperty Name="total_accrued" ColumnName="total_accrued" />
+          <ScalarProperty Name="total_used" ColumnName="total_used" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_job_application">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_job_application">
+        <MappingFragment StoreEntitySet="hs_hr_job_application">
+          <ScalarProperty Name="application_id" ColumnName="application_id" />
+          <ScalarProperty Name="vacancy_id" ColumnName="vacancy_id" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="street1" ColumnName="street1" />
+          <ScalarProperty Name="street2" ColumnName="street2" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="country_code" ColumnName="country_code" />
+          <ScalarProperty Name="province" ColumnName="province" />
+          <ScalarProperty Name="zip" ColumnName="zip" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="qualifications" ColumnName="qualifications" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="applied_datetime" ColumnName="applied_datetime" />
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="resume_name" ColumnName="resume_name" />
+          <ScalarProperty Name="resume_data" ColumnName="resume_data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_job_application_events">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_job_application_events">
+        <MappingFragment StoreEntitySet="hs_hr_job_application_events">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="application_id" ColumnName="application_id" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="owner" ColumnName="owner" />
+          <ScalarProperty Name="event_time" ColumnName="event_time" />
+          <ScalarProperty Name="event_type" ColumnName="event_type" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_job_spec">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_job_spec">
+        <MappingFragment StoreEntitySet="hs_hr_job_spec">
+          <ScalarProperty Name="jobspec_id" ColumnName="jobspec_id" />
+          <ScalarProperty Name="jobspec_name" ColumnName="jobspec_name" />
+          <ScalarProperty Name="jobspec_desc" ColumnName="jobspec_desc" />
+          <ScalarProperty Name="jobspec_duties" ColumnName="jobspec_duties" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_job_title">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_job_title">
+        <MappingFragment StoreEntitySet="hs_hr_job_title">
+          <ScalarProperty Name="jobtit_code" ColumnName="jobtit_code" />
+          <ScalarProperty Name="jobtit_name" ColumnName="jobtit_name" />
+          <ScalarProperty Name="jobtit_desc" ColumnName="jobtit_desc" />
+          <ScalarProperty Name="jobtit_comm" ColumnName="jobtit_comm" />
+          <ScalarProperty Name="sal_grd_code" ColumnName="sal_grd_code" />
+          <ScalarProperty Name="jobspec_id" ColumnName="jobspec_id" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_job_vacancy">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_job_vacancy">
+        <MappingFragment StoreEntitySet="hs_hr_job_vacancy">
+          <ScalarProperty Name="vacancy_id" ColumnName="vacancy_id" />
+          <ScalarProperty Name="jobtit_code" ColumnName="jobtit_code" />
+          <ScalarProperty Name="manager_id" ColumnName="manager_id" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_kpi">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_kpi">
+        <MappingFragment StoreEntitySet="hs_hr_kpi">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="job_title_code" ColumnName="job_title_code" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="rate_min" ColumnName="rate_min" />
+          <ScalarProperty Name="rate_max" ColumnName="rate_max" />
+          <ScalarProperty Name="rate_default" ColumnName="rate_default" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_language">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_language">
+        <MappingFragment StoreEntitySet="hs_hr_language">
+          <ScalarProperty Name="lang_code" ColumnName="lang_code" />
+          <ScalarProperty Name="lang_name" ColumnName="lang_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_leave">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_leave">
+        <MappingFragment StoreEntitySet="hs_hr_leave">
+          <ScalarProperty Name="leave_id" ColumnName="leave_id" />
+          <ScalarProperty Name="leave_date" ColumnName="leave_date" />
+          <ScalarProperty Name="leave_status" ColumnName="leave_status" />
+          <ScalarProperty Name="leave_comments" ColumnName="leave_comments" />
+          <ScalarProperty Name="leave_request_id" ColumnName="leave_request_id" />
+          <ScalarProperty Name="leave_type_id" ColumnName="leave_type_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_leave_requests">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_leave_requests">
+        <MappingFragment StoreEntitySet="hs_hr_leave_requests">
+          <ScalarProperty Name="leave_request_id" ColumnName="leave_request_id" />
+          <ScalarProperty Name="leave_type_id" ColumnName="leave_type_id" />
+          <ScalarProperty Name="leave_type_name" ColumnName="leave_type_name" />
+          <ScalarProperty Name="date_applied" ColumnName="date_applied" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_leavetype">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_leavetype">
+        <MappingFragment StoreEntitySet="hs_hr_leavetype">
+          <ScalarProperty Name="leave_type_id" ColumnName="leave_type_id" />
+          <ScalarProperty Name="leave_type_name" ColumnName="leave_type_name" />
+          <ScalarProperty Name="available_flag" ColumnName="available_flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_licenses">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_licenses">
+        <MappingFragment StoreEntitySet="hs_hr_licenses">
+          <ScalarProperty Name="licenses_code" ColumnName="licenses_code" />
+          <ScalarProperty Name="licenses_desc" ColumnName="licenses_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_location">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_location">
+        <MappingFragment StoreEntitySet="hs_hr_location">
+          <ScalarProperty Name="loc_code" ColumnName="loc_code" />
+          <ScalarProperty Name="loc_name" ColumnName="loc_name" />
+          <ScalarProperty Name="loc_country" ColumnName="loc_country" />
+          <ScalarProperty Name="loc_state" ColumnName="loc_state" />
+          <ScalarProperty Name="loc_city" ColumnName="loc_city" />
+          <ScalarProperty Name="loc_add" ColumnName="loc_add" />
+          <ScalarProperty Name="loc_zip" ColumnName="loc_zip" />
+          <ScalarProperty Name="loc_phone" ColumnName="loc_phone" />
+          <ScalarProperty Name="loc_fax" ColumnName="loc_fax" />
+          <ScalarProperty Name="loc_comments" ColumnName="loc_comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_mailnotifications">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_mailnotifications">
+        <MappingFragment StoreEntitySet="hs_hr_mailnotifications">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="notification_type_id" ColumnName="notification_type_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_membership">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_membership">
+        <MappingFragment StoreEntitySet="hs_hr_membership">
+          <ScalarProperty Name="membship_code" ColumnName="membship_code" />
+          <ScalarProperty Name="membtype_code" ColumnName="membtype_code" />
+          <ScalarProperty Name="membship_name" ColumnName="membship_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_membership_type">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_membership_type">
+        <MappingFragment StoreEntitySet="hs_hr_membership_type">
+          <ScalarProperty Name="membtype_code" ColumnName="membtype_code" />
+          <ScalarProperty Name="membtype_name" ColumnName="membtype_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_module">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_module">
+        <MappingFragment StoreEntitySet="hs_hr_module">
+          <ScalarProperty Name="mod_id" ColumnName="mod_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="owner" ColumnName="owner" />
+          <ScalarProperty Name="owner_email" ColumnName="owner_email" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_nationality">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_nationality">
+        <MappingFragment StoreEntitySet="hs_hr_nationality">
+          <ScalarProperty Name="nat_code" ColumnName="nat_code" />
+          <ScalarProperty Name="nat_name" ColumnName="nat_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_pay_period">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_pay_period">
+        <MappingFragment StoreEntitySet="hs_hr_pay_period">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="close_date" ColumnName="close_date" />
+          <ScalarProperty Name="check_date" ColumnName="check_date" />
+          <ScalarProperty Name="timesheet_aproval_due_date" ColumnName="timesheet_aproval_due_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_payperiod">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_payperiod">
+        <MappingFragment StoreEntitySet="hs_hr_payperiod">
+          <ScalarProperty Name="payperiod_code" ColumnName="payperiod_code" />
+          <ScalarProperty Name="payperiod_name" ColumnName="payperiod_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_performance_review">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_performance_review">
+        <MappingFragment StoreEntitySet="hs_hr_performance_review">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="reviewer_id" ColumnName="reviewer_id" />
+          <ScalarProperty Name="creator_id" ColumnName="creator_id" />
+          <ScalarProperty Name="job_title_code" ColumnName="job_title_code" />
+          <ScalarProperty Name="sub_division_id" ColumnName="sub_division_id" />
+          <ScalarProperty Name="creation_date" ColumnName="creation_date" />
+          <ScalarProperty Name="period_from" ColumnName="period_from" />
+          <ScalarProperty Name="period_to" ColumnName="period_to" />
+          <ScalarProperty Name="due_date" ColumnName="due_date" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="kpis" ColumnName="kpis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_performance_review_comments">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_performance_review_comments">
+        <MappingFragment StoreEntitySet="hs_hr_performance_review_comments">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pr_id" ColumnName="pr_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_project">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_project">
+        <MappingFragment StoreEntitySet="hs_hr_project">
+          <ScalarProperty Name="project_id" ColumnName="project_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_project_activity">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_project_activity">
+        <MappingFragment StoreEntitySet="hs_hr_project_activity">
+          <ScalarProperty Name="activity_id" ColumnName="activity_id" />
+          <ScalarProperty Name="project_id" ColumnName="project_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_project_admin">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_project_admin">
+        <MappingFragment StoreEntitySet="hs_hr_project_admin">
+          <ScalarProperty Name="project_id" ColumnName="project_id" />
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_province">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_province">
+        <MappingFragment StoreEntitySet="hs_hr_province">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="province_name" ColumnName="province_name" />
+          <ScalarProperty Name="province_code" ColumnName="province_code" />
+          <ScalarProperty Name="cou_code" ColumnName="cou_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_rights">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_rights">
+        <MappingFragment StoreEntitySet="hs_hr_rights">
+          <ScalarProperty Name="userg_id" ColumnName="userg_id" />
+          <ScalarProperty Name="mod_id" ColumnName="mod_id" />
+          <ScalarProperty Name="addition" ColumnName="addition" />
+          <ScalarProperty Name="editing" ColumnName="editing" />
+          <ScalarProperty Name="deletion" ColumnName="deletion" />
+          <ScalarProperty Name="viewing" ColumnName="viewing" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_skill">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_skill">
+        <MappingFragment StoreEntitySet="hs_hr_skill">
+          <ScalarProperty Name="skill_code" ColumnName="skill_code" />
+          <ScalarProperty Name="skill_name" ColumnName="skill_name" />
+          <ScalarProperty Name="skill_description" ColumnName="skill_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_time_event">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_time_event">
+        <MappingFragment StoreEntitySet="hs_hr_time_event">
+          <ScalarProperty Name="time_event_id" ColumnName="time_event_id" />
+          <ScalarProperty Name="project_id" ColumnName="project_id" />
+          <ScalarProperty Name="activity_id" ColumnName="activity_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="timesheet_id" ColumnName="timesheet_id" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="reported_date" ColumnName="reported_date" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_timesheet">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_timesheet">
+        <MappingFragment StoreEntitySet="hs_hr_timesheet">
+          <ScalarProperty Name="timesheet_id" ColumnName="timesheet_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="timesheet_period_id" ColumnName="timesheet_period_id" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_timesheet_submission_period">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_timesheet_submission_period">
+        <MappingFragment StoreEntitySet="hs_hr_timesheet_submission_period">
+          <ScalarProperty Name="timesheet_period_id" ColumnName="timesheet_period_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="frequency" ColumnName="frequency" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="start_day" ColumnName="start_day" />
+          <ScalarProperty Name="end_day" ColumnName="end_day" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_unique_id">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_unique_id">
+        <MappingFragment StoreEntitySet="hs_hr_unique_id">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="last_id" ColumnName="last_id" />
+          <ScalarProperty Name="table_name" ColumnName="table_name" />
+          <ScalarProperty Name="field_name" ColumnName="field_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_user_group">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_user_group">
+        <MappingFragment StoreEntitySet="hs_hr_user_group">
+          <ScalarProperty Name="userg_id" ColumnName="userg_id" />
+          <ScalarProperty Name="userg_name" ColumnName="userg_name" />
+          <ScalarProperty Name="userg_repdef" ColumnName="userg_repdef" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_users">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_users">
+        <MappingFragment StoreEntitySet="hs_hr_users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_password" ColumnName="user_password" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+          <ScalarProperty Name="user_hash" ColumnName="user_hash" />
+          <ScalarProperty Name="is_admin" ColumnName="is_admin" />
+          <ScalarProperty Name="receive_notification" ColumnName="receive_notification" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="date_entered" ColumnName="date_entered" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="modified_user_id" ColumnName="modified_user_id" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="department" ColumnName="department" />
+          <ScalarProperty Name="phone_home" ColumnName="phone_home" />
+          <ScalarProperty Name="phone_mobile" ColumnName="phone_mobile" />
+          <ScalarProperty Name="phone_work" ColumnName="phone_work" />
+          <ScalarProperty Name="phone_other" ColumnName="phone_other" />
+          <ScalarProperty Name="phone_fax" ColumnName="phone_fax" />
+          <ScalarProperty Name="email1" ColumnName="email1" />
+          <ScalarProperty Name="email2" ColumnName="email2" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="address_street" ColumnName="address_street" />
+          <ScalarProperty Name="address_city" ColumnName="address_city" />
+          <ScalarProperty Name="address_state" ColumnName="address_state" />
+          <ScalarProperty Name="address_country" ColumnName="address_country" />
+          <ScalarProperty Name="address_postalcode" ColumnName="address_postalcode" />
+          <ScalarProperty Name="user_preferences" ColumnName="user_preferences" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="employee_status" ColumnName="employee_status" />
+          <ScalarProperty Name="userg_id" ColumnName="userg_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_versions">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_versions">
+        <MappingFragment StoreEntitySet="hs_hr_versions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="entered_date" ColumnName="entered_date" />
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="db_version" ColumnName="db_version" />
+          <ScalarProperty Name="file_version" ColumnName="file_version" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_weekends">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_weekends">
+        <MappingFragment StoreEntitySet="hs_hr_weekends">
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="length" ColumnName="length" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_hr_workshift">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_hr_workshift">
+        <MappingFragment StoreEntitySet="hs_hr_workshift">
+          <ScalarProperty Name="workshift_id" ColumnName="workshift_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="hours_per_day" ColumnName="hours_per_day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_pr_salary_currency_detail">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_pr_salary_currency_detail">
+        <MappingFragment StoreEntitySet="hs_pr_salary_currency_detail">
+          <ScalarProperty Name="sal_grd_code" ColumnName="sal_grd_code" />
+          <ScalarProperty Name="currency_id" ColumnName="currency_id" />
+          <ScalarProperty Name="salcurr_dtl_minsalary" ColumnName="salcurr_dtl_minsalary" />
+          <ScalarProperty Name="salcurr_dtl_stepsalary" ColumnName="salcurr_dtl_stepsalary" />
+          <ScalarProperty Name="salcurr_dtl_maxsalary" ColumnName="salcurr_dtl_maxsalary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hs_pr_salary_grade">
+      <EntityTypeMapping TypeName="hr_mysqlModel.hs_pr_salary_grade">
+        <MappingFragment StoreEntitySet="hs_pr_salary_grade">
+          <ScalarProperty Name="sal_grd_code" ColumnName="sal_grd_code" />
+          <ScalarProperty Name="sal_grd_name" ColumnName="sal_grd_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="hs_hr_emp_locations" TypeName="hr_mysqlModel.hs_hr_emp_locations" StoreEntitySet="hs_hr_emp_locations">
+      <EndProperty Name="hs_hr_location">
+        <ScalarProperty Name="loc_code" ColumnName="loc_code" />
+      </EndProperty>
+      <EndProperty Name="hs_hr_employee">
+        <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="hs_hr_employee_timesheet_period" TypeName="hr_mysqlModel.hs_hr_employee_timesheet_period" StoreEntitySet="hs_hr_employee_timesheet_period">
+      <EndProperty Name="hs_hr_employee">
+        <ScalarProperty Name="emp_number" ColumnName="employee_id" />
+      </EndProperty>
+      <EndProperty Name="hs_hr_timesheet_submission_period">
+        <ScalarProperty Name="timesheet_period_id" ColumnName="timesheet_period_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="hs_hr_employee_workshift" TypeName="hr_mysqlModel.hs_hr_employee_workshift" StoreEntitySet="hs_hr_employee_workshift">
+      <EndProperty Name="hs_hr_workshift">
+        <ScalarProperty Name="workshift_id" ColumnName="workshift_id" />
+      </EndProperty>
+      <EndProperty Name="hs_hr_employee">
+        <ScalarProperty Name="emp_number" ColumnName="emp_number" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="hs_hr_emprep_usergroup" TypeName="hr_mysqlModel.hs_hr_emprep_usergroup" StoreEntitySet="hs_hr_emprep_usergroup">
+      <EndProperty Name="hs_hr_user_group">
+        <ScalarProperty Name="userg_id" ColumnName="userg_id" />
+      </EndProperty>
+      <EndProperty Name="hs_hr_empreport">
+        <ScalarProperty Name="rep_code" ColumnName="rep_code" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="hs_hr_jobtit_empstat" TypeName="hr_mysqlModel.hs_hr_jobtit_empstat" StoreEntitySet="hs_hr_jobtit_empstat">
+      <EndProperty Name="hs_hr_job_title">
+        <ScalarProperty Name="jobtit_code" ColumnName="jobtit_code" />
+      </EndProperty>
+      <EndProperty Name="hs_hr_empstat">
+        <ScalarProperty Name="estat_code" ColumnName="estat_code" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

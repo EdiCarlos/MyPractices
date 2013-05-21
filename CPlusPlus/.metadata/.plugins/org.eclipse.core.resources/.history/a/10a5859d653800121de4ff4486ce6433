@@ -1,0 +1,35 @@
+/*
+ * Person.h
+ *
+ *  Created on: Nov 26, 2012
+ *      Author: axkhan2
+ */
+
+#ifndef PERSON_H_
+#define PERSON_H_
+
+class Person
+{
+	private:
+		char* firstName;
+		char* lastName;
+		int age;
+	public:
+		Person(char* firstName, char * lastName, int age);
+       int GetAge();
+       char* FirstName();
+       char* LastName();
+};
+
+class Employee : Person
+{
+private:
+	double baseSalary;
+public:
+	Employee(double salary): Person(char * fname, char* lname);
+	void ShowNameAndSalary();
+};
+
+
+
+#endif /* PERSON_H_ */

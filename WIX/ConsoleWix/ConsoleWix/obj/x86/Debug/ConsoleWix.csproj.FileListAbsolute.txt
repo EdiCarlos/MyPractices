@@ -1,0 +1,7 @@
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\ConsoleWix\ConsoleWix\bin\Debug\ConsoleWix.exe
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\ConsoleWix\ConsoleWix\bin\Debug\ConsoleWix.pdb
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\ConsoleWix\ConsoleWix\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\ConsoleWix\ConsoleWix\obj\x86\Debug\ConsoleWix.exe
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\ConsoleWix\ConsoleWix\obj\x86\Debug\ConsoleWix.pdb
+D:\DDriveBackup\MyPractices\WIX\ConsoleWix\ConsoleWix\obj\x86\Debug\ConsoleWix.exe
+D:\DDriveBackup\MyPractices\WIX\ConsoleWix\ConsoleWix\obj\x86\Debug\ConsoleWix.pdb

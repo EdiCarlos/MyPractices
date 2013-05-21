@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+namespace ExtensionMethods
+{
+    class Program
+    {
+        class Employee
+        {
+            int id, role;
+            public int Id
+            {
+                get { return id; }
+                set { id = value; }
+            }
+            public int Role
+            {
+                get { return role; }
+                set { role = value; }
+            }
+            string firstName, lastName;
+            public string FirstName
+            {
+                get { return firstName; }
+                set { firstName = value; }
+            }
+            public string LastName
+            {
+                get { return lastName; }
+                set { lastName = value; }
+            }
+            //public int ID { get; set; }
+            //public int Role { get; set; }
+            //public string FirstName { get; set; }
+            //public string LastName { get; set; }
+            ////public string MiddleName { get; set; }
+        }
+        static void Main()
+        {
+            List<Employee> list = new List<Employee>{ new Employee{ Id=1, Role=1, FirstName="A", LastName="B"},
+                new Employee{ Id=2, Role=1, FirstName="C", LastName="D"},
+                new Employee{ Id=3, Role=2, FirstName="E", LastName="F"},
+                new Employee{ Id=4, Role=2, FirstName="G", LastName="H"},
+                new Employee{ Id=5, Role=1, FirstName="H", LastName="I"}};
+            var query = list.Where((p, index) => p.Role == index).Select(s => new { Id = s.Id, FirstName = s.FirstName }); 
+            
+            foreach (var item in query)
+            {
+                //Console.WriteLine(item.Id + " " + item.Role + " " + item.FirstName );
+                Console.WriteLine(item.Id);
+            }
+        }
+    }
+}

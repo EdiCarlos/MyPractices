@@ -1,0 +1,5 @@
+D:\DDriveBackup\MyPractices\WIX\ConsoleWix\WixSampleWeb\bin\WixSampleWeb.dll
+D:\DDriveBackup\MyPractices\WIX\ConsoleWix\WixSampleWeb\bin\WixSampleWeb.pdb
+D:\DDriveBackup\MyPractices\WIX\ConsoleWix\WixSampleWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\DDriveBackup\MyPractices\WIX\ConsoleWix\WixSampleWeb\obj\Debug\WixSampleWeb.dll
+D:\DDriveBackup\MyPractices\WIX\ConsoleWix\WixSampleWeb\obj\Debug\WixSampleWeb.pdb

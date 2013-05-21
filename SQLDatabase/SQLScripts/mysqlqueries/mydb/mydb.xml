@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="mydb">
+	<table_structure name="mytb">
+		<field Field="userid" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" />
+		<field Field="username" Type="varchar(30)" Null="NO" Key="UNI" Extra="" />
+		<field Field="userpass" Type="varchar(30)" Null="NO" Key="" Extra="" />
+		<field Field="useremail" Type="varchar(30)" Null="NO" Key="" Extra="" />
+		<key Table="mytb" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="userid" Collation="A" Cardinality="3" Null="" Index_type="BTREE" Comment="" />
+		<key Table="mytb" Non_unique="0" Key_name="username" Seq_in_index="1" Column_name="username" Collation="A" Cardinality="3" Null="" Index_type="BTREE" Comment="" />
+		<options Name="mytb" Engine="InnoDB" Version="10" Row_format="Compact" Rows="3" Avg_row_length="5461" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="4" Create_time="2010-04-13 04:32:23" Collation="latin1_swedish_ci" Create_options="" Comment="InnoDB free: 4096 kB" />
+	</table_structure>
+	<table_data name="mytb">
+	<row>
+		<field name="userid">1</field>
+		<field name="username">arif788</field>
+		<field name="userpass">password</field>
+		<field name="useremail">arif788@gmail.com</field>
+	</row>
+	<row>
+		<field name="userid">2</field>
+		<field name="username">chhavi</field>
+		<field name="userpass">password</field>
+		<field name="useremail">chhavikapoor.04@gmail.com</field>
+	</row>
+	<row>
+		<field name="userid">3</field>
+		<field name="username">saima788</field>
+		<field name="userpass">password</field>
+		<field name="useremail">saima@gmail.com</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

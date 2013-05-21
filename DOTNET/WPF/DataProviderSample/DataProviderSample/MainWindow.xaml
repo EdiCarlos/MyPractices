@@ -1,0 +1,54 @@
+﻿<Window x:Class="DataProviderSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <!--<HierarchicalDataTemplate DataType="GameStats" ItemsSource="{Binding XPath=*}">
+            <TextBlock FontStyle="Italic" Text="All Game Stats" />
+        </HierarchicalDataTemplate>
+        <HierarchicalDataTemplate DataType="GameStat" ItemsSource="{Binding XPath=*}">
+            <TextBlock FontStyle="Bold" FontSize="20" Text="{Binding XPath=@type}" />
+        </HierarchicalDataTemplate>
+        <DataTemplate DataType="HighScore">
+            <TextBlock Foreground="Blue" Text="{Binding XPath=.}"></TextBlock>
+        </DataTemplate>
+        <XmlDataProvider x:Key="dataProvider" XPath="GameStats">
+            <x:XData>
+            <GameStats xmlns="">
+                <GameStat type="Biginner">
+                    <HighScore>203</HighScore>
+                </GameStat>
+                <GameStat type="Advanced">
+                    <HighScore >204</HighScore>
+                </GameStat>
+                <GameStat type="Intermediate">
+                    <HighScore>205</HighScore>
+                </GameStat>
+            </GameStats>
+            </x:XData>
+        </XmlDataProvider>-->
+        <XmlNamespaceMappingCollection x:Key="nameSpaceMapping">
+            <XmlNamespaceMapping Uri="http://www.w3.org/2001/XMLSchema-instance" Prefix="xx" />
+            <XmlNamespaceMapping Uri="http://www.sitemaps.org/schemas/sitemap/0.9" Prefix="x1" />
+
+        </XmlNamespaceMappingCollection>
+        <XmlDataProvider x:Key="googleSiteMap" Source="http://www.google.com/hostednews/sitemap_index.xml" XmlNamespaceManager="{StaticResource nameSpaceMapping}" XPath="sitemapindex/sitemap">
+            
+        </XmlDataProvider>
+
+    </Window.Resources>
+   
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox ItemsSource="{Binding  Source={StaticResource googleSiteMap}, XPath=xx:loc}" Grid.Column="0" Grid.Row="0"></ListBox>
+        <!--<TreeView ItemsSource="{Binding Source={StaticResource dataProvider}, XPath=.}" Grid.Column="1"></TreeView>-->
+    </Grid>
+</Window>

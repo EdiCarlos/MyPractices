@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\DesignPattern\BridgePattern\BridgePattern\bin\Debug\BridgePattern.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\BridgePattern\BridgePattern\bin\Debug\BridgePattern.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\BridgePattern\BridgePattern\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\DesignPattern\BridgePattern\BridgePattern\obj\x86\Debug\BridgePattern.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\BridgePattern\BridgePattern\obj\x86\Debug\BridgePattern.pdb

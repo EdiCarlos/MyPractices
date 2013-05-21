@@ -1,0 +1,159 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>UseOfExcelWorkBook</RootNamespace>
+    <AssemblyName>UseOfExcelWorkBook</AssemblyName>
+    <VSTO_HostDocumentName>UseOfExcelWorkBook.xls</VSTO_HostDocumentName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ProjectGuid>{07E0BF24-08A2-44BA-9D85-77C12BFFBFEC}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VSTO_TrustAssembliesLocation>true</VSTO_TrustAssembliesLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sheet1.resx">
+      <DependentUpon>Sheet1.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UseOfExcelWorkBook.xls" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sheet1.cs">
+      <DependentUpon>UseOfExcelWorkBook.xls</DependentUpon>
+    </Compile>
+    <Compile Include="Sheet1.Designer.cs">
+      <DependentUpon>Sheet1.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Sheet2.cs">
+      <DependentUpon>UseOfExcelWorkBook.xls</DependentUpon>
+    </Compile>
+    <Compile Include="Sheet2.Designer.cs">
+      <DependentUpon>Sheet2.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="Sheet3.cs">
+      <DependentUpon>UseOfExcelWorkBook.xls</DependentUpon>
+    </Compile>
+    <Compile Include="Sheet3.Designer.cs">
+      <DependentUpon>Sheet3.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="ThisWorkbook.cs">
+      <DependentUpon>UseOfExcelWorkBook.xls</DependentUpon>
+    </Compile>
+    <Compile Include="ThisWorkbook.Designer.cs">
+      <DependentUpon>ThisWorkbook.Designer.xml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ThisWorkbook.Designer.xml">
+      <DependentUpon>ThisWorkbook.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sheet1.Designer.xml">
+      <DependentUpon>Sheet1.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sheet2.Designer.xml">
+      <DependentUpon>Sheet2.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sheet3.Designer.xml">
+      <DependentUpon>Sheet3.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\OfficeTools\Microsoft.VisualStudio.Tools.Office.Office2003.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="UseOfExcelWorkBook.xls" HostPackage="{42A976AE-48FF-4603-9794-9AB73A5A4891}" OfficeVersion="11.0" VstxVersion="3.0" ApplicationType="XLS" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files\Microsoft Office 2003\OFFICE11\Excel.exe" DebugInfoCommandLine="&quot;[$OUTPUT]UseOfExcelWorkBook.xls&quot;" />
+        <Host Name="Excel Document" Path=".\UseOfExcelWorkBook.xls" GeneratedCodeNamespace="UseOfExcelWorkBook">
+          <HostItem Name="Sheet1" Code="Sheet1.cs" CanonicalName="Sheet1" DisplayName="Sheet1" Blueprint="Sheet1.Designer.xml" GeneratedCode="Sheet1.Designer.cs" />
+          <HostItem Name="Sheet2" Code="Sheet2.cs" CanonicalName="Sheet2" DisplayName="Sheet2" Blueprint="Sheet2.Designer.xml" GeneratedCode="Sheet2.Designer.cs" />
+          <HostItem Name="Sheet3" Code="Sheet3.cs" CanonicalName="Sheet3" DisplayName="Sheet3" Blueprint="Sheet3.Designer.xml" GeneratedCode="Sheet3.Designer.cs" />
+          <HostItem Name="ThisWorkbook" Code="ThisWorkbook.cs" CanonicalName="ThisWorkbook" Blueprint="ThisWorkbook.Designer.xml" GeneratedCode="ThisWorkbook.Designer.cs" />
+        </Host>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!--
+    To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

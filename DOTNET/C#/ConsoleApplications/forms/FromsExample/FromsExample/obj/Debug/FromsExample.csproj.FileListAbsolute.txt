@@ -1,0 +1,8 @@
+D:\temp\csc\forms\FromsExample\FromsExample\bin\Debug\FromsExample.exe
+D:\temp\csc\forms\FromsExample\FromsExample\bin\Debug\FromsExample.pdb
+D:\temp\csc\forms\FromsExample\FromsExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\csc\forms\FromsExample\FromsExample\obj\Debug\FromsExample.Form1.resources
+D:\temp\csc\forms\FromsExample\FromsExample\obj\Debug\FromsExample.Properties.Resources.resources
+D:\temp\csc\forms\FromsExample\FromsExample\obj\Debug\FromsExample.csproj.GenerateResource.Cache
+D:\temp\csc\forms\FromsExample\FromsExample\obj\Debug\FromsExample.exe
+D:\temp\csc\forms\FromsExample\FromsExample\obj\Debug\FromsExample.pdb

@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+class cl
+{
+	public:
+	cl(){cout<<"Constructor called"<<endl;}
+	~cl(){cout<<"Destrutor called"<<endl;}
+};
+class cc
+{
+	public:
+	cc();
+	~cc();
+};
+
+cc::cc()
+{
+	cout<<"Constructor called of class cc"<<endl;
+}
+cc::~cc()
+{
+	cout<<"destructor called of class cc"<<endl;
+}
+int main()
+{
+	cl c;
+	cc ccc;
+	
+	return 0;
+}

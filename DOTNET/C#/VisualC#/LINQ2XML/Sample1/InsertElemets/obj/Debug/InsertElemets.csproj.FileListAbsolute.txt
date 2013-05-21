@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\InsertElemets\bin\Debug\InsertElemets.exe
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\InsertElemets\bin\Debug\InsertElemets.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\InsertElemets\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\InsertElemets\obj\Debug\InsertElemets.exe
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\InsertElemets\obj\Debug\InsertElemets.pdb

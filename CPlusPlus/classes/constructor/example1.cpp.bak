@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+class myclass
+{
+	public:
+	myclass():a(1){}
+  myclass(int v):a(v){}
+  virtual	~myclass(){ }
+	int getvalue()const{return a;}	
+		private:
+		int a;
+	
+};
+
+int main()
+{
+	myclass cl;
+	cout<<cl.getvalue();
+	myclass cll(100);
+	cout<<cll.getvalue()<<endl;
+	return 0;
+}

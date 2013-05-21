@@ -1,0 +1,8 @@
+D:\temp\VisualC#\Printing\printerResolution\printerResolution\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Printing\printerResolution\printerResolution\obj\Debug\printerResolution.Form1.resources
+D:\temp\VisualC#\Printing\printerResolution\printerResolution\obj\Debug\printerResolution.Properties.Resources.resources
+D:\temp\VisualC#\Printing\printerResolution\printerResolution\obj\Debug\printerResolution.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Printing\printerResolution\printerResolution\bin\Debug\printerResolution.exe
+D:\temp\VisualC#\Printing\printerResolution\printerResolution\bin\Debug\printerResolution.pdb
+D:\temp\VisualC#\Printing\printerResolution\printerResolution\obj\Debug\printerResolution.exe
+D:\temp\VisualC#\Printing\printerResolution\printerResolution\obj\Debug\printerResolution.pdb

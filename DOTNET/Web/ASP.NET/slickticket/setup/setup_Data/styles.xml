@@ -1,0 +1,10 @@
+<styles>
+  <style style_name="current" text_color="#e0e0e0" borders="#4c5762" body="#37414A" links="#93bb3a" hover="#c3e671" button_text="#3d454d" header="#f2f2f2" alt_rows="#4c5762" background="#4c5762" />
+  <style style_name="default" text_color="#e0e0e0" borders="#4c5762" body="#37414A" links="#93bb3a" hover="#c3e671" button_text="#3d454d" header="#f2f2f2" alt_rows="#4c5762" background="#4c5762" />
+  <style style_name="Light Blue" text_color="#444444" borders="#c3d9ff" body="#e0ecff" links="#ff7700" hover="#ffa500" button_text="#ffffff" header="#444444" alt_rows="#eff5ff" background="#ffffff" />
+  <style style_name="Maroon and Grey" text_color="#444444" borders="#4a4a4a" body="#ffffff" links="#ff7700" hover="#ffa500" button_text="#ffffff" header="#ffffff" alt_rows="#ededed" background="#A53C3C" />
+  <style style_name="Basic" text_color="#444444" borders="#4a4a4a" body="#ffffff" links="#0100ff" hover="#07008f" button_text="#ffffff" header="#ffffff" alt_rows="#ededed" background="#ededed" />
+  <style style_name="Blue/Green" text_color="#02243C" borders="#02243C" body="#F9F9F9" links="#5BC236" hover="#a0e189" button_text="#F9F9F9" header="#F9F9F9" alt_rows="#E6E6E6" background="#005DB3" />
+  <style style_name="Forest" text_color="#374D3C" borders="#374D3C" body="#f5f5f5" links="#b87800" hover="#faa300" button_text="#f5f5f5" header="#DADAD4" alt_rows="#e0e0e0" background="#DADAD4" />
+  <style style_name="Dark" text_color="#444444" borders="#4a4a4a" body="#ffffff" links="#ff7700" hover="#ffa500" button_text="#ffffff" header="#ffffff" alt_rows="#ededed" background="#555555" />
+</styles>

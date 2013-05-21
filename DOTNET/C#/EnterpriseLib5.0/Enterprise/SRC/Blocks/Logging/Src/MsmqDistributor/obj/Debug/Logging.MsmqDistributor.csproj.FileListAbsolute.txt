@@ -1,0 +1,12 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\App.config
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\MsmqDistributor.exe.config
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\MsmqDistributor.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\MsmqDistributor.exe
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\MsmqDistributor.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\MsmqDistributor\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\MsmqDistributor\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.MsmqDistributor.DistributorService.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\MsmqDistributor\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.MsmqDistributor.ProjectInstaller.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\MsmqDistributor\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.MsmqDistributor.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\MsmqDistributor\obj\Debug\Logging.MsmqDistributor.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\MsmqDistributor\obj\Debug\MsmqDistributor.exe
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\MsmqDistributor\obj\Debug\MsmqDistributor.pdb

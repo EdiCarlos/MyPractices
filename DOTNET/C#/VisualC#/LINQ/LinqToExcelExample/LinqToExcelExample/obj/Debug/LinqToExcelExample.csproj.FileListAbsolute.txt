@@ -1,0 +1,5 @@
+D:\temp\VisualC#\LINQ\LinqToExcelExample\LinqToExcelExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\LinqToExcelExample\LinqToExcelExample\bin\Debug\LinqToExcelExample.exe
+D:\temp\VisualC#\LINQ\LinqToExcelExample\LinqToExcelExample\bin\Debug\LinqToExcelExample.pdb
+D:\temp\VisualC#\LINQ\LinqToExcelExample\LinqToExcelExample\obj\Debug\LinqToExcelExample.exe
+D:\temp\VisualC#\LINQ\LinqToExcelExample\LinqToExcelExample\obj\Debug\LinqToExcelExample.pdb

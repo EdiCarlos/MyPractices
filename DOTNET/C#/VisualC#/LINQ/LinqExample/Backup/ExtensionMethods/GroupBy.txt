@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        class Customer
+        {
+            public string ID { get; set; }
+            public string City { get; set; }
+            public string Country { get; set; }
+            public string Region { get; set; }
+            public decimal Sales { get; set; }
+
+        }
+        class Employee
+        {
+            public int ID { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string MiddleName { get; set; }
+        }
+        class Orders
+        {
+            public string ID { get; set; }
+            public decimal Amount { get; set; }
+        }
+        static void Main()
+        {
+            List<Customer> customers = new List<Customer>{ new Customer{ ID="X", City="Mumbai", Country="India", Region="Maharastra", Sales=8000},
+                new Customer{ID="Y", City="Kanpur", Country="India", Region="Utter Pradesh", Sales=10000},
+new Customer{ID="Z", City="Hydrebad", Country="India", Region="AndraPradesh", Sales=7000},
+new Customer{ID="A", City="New Delhi", Country="India", Region="Delhi", Sales=11000}, 
+            new Customer{ID="B", City="New Delhi", Country="India", Region="Delhi", Sales=11000}};
+            List<Orders> order = new List<Orders>{new Orders{ ID="X", Amount=900},
+                new Orders{ID="Y", Amount=1000},
+new Orders{ID="Z", Amount=11000},
+new Orders{ID="A", Amount=12000},
+new Orders{ID="B", Amount=13000}};
+
+            var combinedResult = from c in customers join o in order on c.ID equals o.ID select new { ID = c.ID, City = c.City, Region = c.Region, Sales = c.Sales, Amount = o.Amount };
+            foreach (var item in combinedResult)
+            {
+                Console.WriteLine(item.ID +" "+ item.City +" "+item.Region +" "+item.Sales +" "+item.Amount);
+            }
+
+
+            List<Employee> employee = new List<Employee>{new Employee{ID = 1, FirstName="arif", LastName="BanneHasan", MiddleName="Khan"},
+                new Employee{ID = 2, FirstName="asif", LastName="Shakeel", MiddleName="Khan"},
+                new Employee{ID = 3, FirstName="tarik", LastName="BanneHasan", MiddleName="Khan"},
+                new Employee{ID = 1, FirstName="afreen", LastName="arif", MiddleName="Khan"}};
+
+            //var queryResult = from emp in employee group emp by emp.LastName into emp1 select new { LName = emp1.Key, Count = emp1.Count() };
+            ////var queryResult = from c in customers group c by c.Region into cg select new { TotalSales = cg.Sum(c => c.Sales), Region = cg.Key };
+
+            ////var queryResult1 = from c in customers group c by c.Region into cg select new { TotalSales = cg.Sum(c => c.Sales), Region = cg.Key };
+
+            ////var orderedResult = from cg in queryResult1 orderby cg.TotalSales descending select cg;
+            //var orderedResult = from eg in queryResult orderby eg.LName descending select eg;
+            //IEnumerable<Employee> emply = employee.Where(emp => emp.FirstName.StartsWith("a"));
+
+            //foreach (var item in emply)
+            //{
+            //    Console.WriteLine(item.FirstName);
+            //}
+
+        }
+    }
+}

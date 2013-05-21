@@ -1,0 +1,8 @@
+D:\temp\VisualC#\WindowFroms\UseOfLabel\UseOfLabel\bin\Debug\UseOfLabel.exe
+D:\temp\VisualC#\WindowFroms\UseOfLabel\UseOfLabel\bin\Debug\UseOfLabel.pdb
+D:\temp\VisualC#\WindowFroms\UseOfLabel\UseOfLabel\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\WindowFroms\UseOfLabel\UseOfLabel\obj\Debug\UseOfLabel.Form1.resources
+D:\temp\VisualC#\WindowFroms\UseOfLabel\UseOfLabel\obj\Debug\UseOfLabel.Properties.Resources.resources
+D:\temp\VisualC#\WindowFroms\UseOfLabel\UseOfLabel\obj\Debug\UseOfLabel.csproj.GenerateResource.Cache
+D:\temp\VisualC#\WindowFroms\UseOfLabel\UseOfLabel\obj\Debug\UseOfLabel.exe
+D:\temp\VisualC#\WindowFroms\UseOfLabel\UseOfLabel\obj\Debug\UseOfLabel.pdb

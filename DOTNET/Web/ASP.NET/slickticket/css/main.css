@@ -1,0 +1,121 @@
+﻿html {min-height:100%;}
+a{ text-decoration:none; }
+a:hover{ text-decoration:underline; }
+body { font-family:verdana; }
+h1,h2,h3,h4,h5,h6{ text-align:left; font-weight:bold; }
+h1{ padding: 10px 0 10px 15px;}
+h2, h4{ font-size:1.4em; padding:5px 0; }
+h3{ font-size:1.2em; margin: 5px 0; text-align:right; }
+h4{ text-align:right; }
+h5{ text-align:center;font-size:1.1em;}
+h6{ font-size:1.6em; padding-top: 5px;}
+#header .top_header a:hover { text-decoration:none; }
+q, blockquote{padding:5px; font-size:12px; display:block; text-align:left;}
+fieldset{ padding:10px; border:none; }
+input, select, .iframeText, textarea{ font-weight:bold; color:#666666; padding:0; border:1px solid #cccccc;background:white;}
+input[type='checkbox'], input[type='radio'] { border:0; background:transparent; }
+table tr td { text-align:left; }
+ol{ margin:0 0 0 30px; }
+ol li { list-style-type:upper-roman; padding:5px; }
+ul li { list-style-type:none; }
+
+ul.sublist  li { list-style-type:square; margin-left:15px; }
+
+table.list { width:100%;}
+table.list tr th {font-weight:bold; }
+table.list, table.list tr td, table.list tr th { border:0; padding:1px 5px;  }
+
+table.by2 {width:100%;}
+    table.by2 tr td {padding:3px;width:50%;}
+ 
+   
+a.big_button { display:block; height:50px; width:100%;font-size:1.1em; padding:2px; }
+    a.big_button span {font-weight:bold; font-size:1.2em; display:block; }
+    a.big_button:hover{text-decoration:none;}
+    
+ul.list_menu {display:block; margin:0 0 0 12px; font-weight:bold; }
+ul.list_menu li{ float:left; display:inline;  }
+ul.list_menu li a{ display:block; padding: 5px 15px;}
+ul.list_menu li a:hover{ text-decoration:none;} 
+
+.small_container, .large_container { padding: 2px; margin-top:10px;}
+.divider { height:10px; width:110%; margin:2px 0 2px -20px; }
+
+.collapse { height:0; overflow:hidden; }
+.toolbar1 { background:#dddddd; padding:10px; }
+.header { padding: 5px; }
+.small_container { width:260px; }
+.large_container{ width:717px;}
+.autoSuggestBox{ height:50px; overflow:scroll; position:relative; z-index:10; }
+.autoSuggest{ font-size:.8em;background:white; color:#666666; }
+.autoSuggestSelect{ background-color:#cccccc; font-weight:bold; }
+.faq_body ul li {list-style-type:square; margin:2px 2px 2px 15px; }
+.rollover {width:220px;}
+.button{border-width:0px; cursor:pointer;}
+.textarea{border:1px;}
+.clear {clear:both;display:block;}
+.highlight { background:White; }
+.bold {font-weight:bold; }
+.half_table{ width:100%; }
+.title_header{ float:left; }
+.top_error{display:block;clear:both;text-align:left; }
+.error_area { padding:10px; margin:10px 0; font-weight:bold; }
+.sub_error { font-size:.7em; padding:5px 10px; }
+.error{ color:Red; font-size:.8em; }
+.success{ color:Green; font-size:.8em; }
+.large_container, .small_container {}
+.footer {clear:both;}
+.smaller {font-size:.8em; }
+.larger {font-size:1.2em; }
+.modal_background {background-color:Black; filter:alpha(opacity=70); opacity:0.7; }
+.modal_popup { position:relative;}
+.inside_small_container { width:220px; }
+.attachment { width:100%;}
+.comment_border { padding:1px; }
+.comment{ padding:5px; }
+.comment_header{ margin-bottom:5px;}
+.pointer { cursor:pointer; }
+.working { position:fixed; left:0; top:0; padding:5px 10px; z-index:100; background:Red; font-weight:bold; color:White; z-index:100; }
+.gv_buttons { width:110px;}
+.color_it { text-align:center;padding:2px; font-weight:bold; }
+.faq {float:left;width:75%;}
+.right{float:right;}
+.ajax__calendar_days table tr td { padding:0; margin:0; }
+.top_header { margin-left:auto; margin-right:auto; width:995px; position:relative; }
+.center { text-align:center; }
+.iframeText{ width:100% ;}
+.full_window{ width:100%; }
+
+#current_page { width:100%; } 
+#content { text-align:center; clear:both; }
+#sticky_footer { padding:5px; font-weight:bold; width:100%; text-align:center; background:#f7f4b5;  position:fixed; bottom:0;}
+#header{ text-align:center; }
+#footer{ clear:both; text-align:center; font-weight:bold; font-size:.8em; padding:20px; }
+#quick_jump { position:absolute; right:7px; top:0; padding:2px; font-size:.8em;}
+#main_body { width:995px; padding:0 10px; margin-left:auto; margin-right:auto; text-align:left; }
+ 
+.right { float:right;}
+.left { float:left; }
+
+    
+a.tooltip{position:relative; z-index:0;}
+   a.tooltip:hover{z-index:25; cursor:default;}
+   a.tooltip span{ display: none;position:absolute;bottom:1.5em; left:5em; padding:2px; }
+   a.tooltip span.inner_tooltip{ padding:5px; font-size:12px; display:block; }
+   a.tooltip:hover span{display:block; font-weight:normal; text-decoration:none;}
+   a.tooltip:hover span q{ text-decoration:none; }
+   a.tooltip em {cursor:pointer;}
+   a.limited span{  width:200px; left:1em }
+   a.large span {width: 400px; left:1em; }
+   
+#nav { float:left; width:100%; padding:0 0 0 10px; }
+#nav ul { margin:0; padding:0 0 0 0; list-style:none; }
+#nav li { float:left; display:inline; margin:0 0 0 5px; position:relative; }
+#nav a { float:left; display:block; position:relative; left:-10px; margin-right:-10px; padding:5px 16px; text-decoration:none; font-weight:bold; }
+#nav > ul a { width:auto; }
+#nav > ul span {display:none; font-weight:normal; position:absolute; top:13px; text-decoration:none; }
+#nav > ul li:hover span{ display:block; }
+#nav > ul span a { width:107px; filter:alpha(opacity=90); opacity:0.9; }
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#nav a {float:none;}
+/* End IE5-Mac hack */

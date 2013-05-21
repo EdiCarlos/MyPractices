@@ -1,0 +1,7 @@
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\MyButton\bin\Debug\MyButton.dll
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\MyButton\bin\Debug\MyButton.pdb
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\MyButton\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\MyButton\obj\Debug\MyButton.LoginControl.resources
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\MyButton\obj\Debug\MyButton.csproj.GenerateResource.Cache
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\MyButton\obj\Debug\MyButton.dll
+D:\temp\VisualC#\ButtonInherit\InheritingButtonClass\MyButton\obj\Debug\MyButton.pdb

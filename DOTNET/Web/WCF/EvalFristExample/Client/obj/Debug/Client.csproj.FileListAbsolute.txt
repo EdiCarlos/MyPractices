@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\Client\bin\Debug\Client.exe
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\Client\bin\Debug\Client.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\Client\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\Client\obj\Debug\Client.exe
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\Client\obj\Debug\Client.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\Client\bin\Debug\Client.exe.config

@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\ImplementsSample\bin\ImplementsSample.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\ImplementsSample\bin\ImplementsSample.pdb
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\ImplementsSample\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\ImplementsSample\obj\Debug\ImplementsSample.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\ImplementsSample\obj\Debug\ImplementsSample.pdb

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="kendo/js/jquery.min.js"></script>
+    <script type="text/javascript" src="kendo/js/kendo.web.min.js"></script>
+    <link href="kendo/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="kendo/styles/kendo.default.min.css" rel="stylesheet" />
+    <style>
+        
+            /*#menu h2 {
+                font-size: 1em;
+                text-transform: uppercase;
+                padding: 5px 10px;
+            }*/
+    </style>
+</head>
+<body>
+    <div id="example" class="k-content">
+    <div id="megaStore">
+        <ul id="menu">
+            <li>Option 1
+                <ul>
+                    <li>Option1.1</li>
+                    <li>Option1.2</li>
+                    <li>Option1.3</li>
+                </ul>
+            </li>
+            <li>Option 2
+                                <ul>
+                                    <li>Option2.1</li>
+                                    <li>Option2.2</li>
+                                    <li>Option2.3</li>
+                                </ul>
+
+            </li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+            <li>Option 5</li>
+
+        </ul>
+    </div>
+    </div>
+    <script>
+        $("#menu").css("width", "200");
+        $(document).ready(function () {
+            $("#menu").kendoMenu({orientation:"vertical"});
+        });
+    </script>
+</body>
+</html>

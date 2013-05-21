@@ -1,0 +1,7 @@
+D:\PrintingC#\Printing_src\bin\Debug\Print.exe
+D:\PrintingC#\Printing_src\bin\Debug\Print.pdb
+D:\PrintingC#\Printing_src\obj\Debug\ResolveAssemblyReference.cache
+D:\PrintingC#\Printing_src\obj\Debug\Print.frmPrint.resources
+D:\PrintingC#\Printing_src\obj\Debug\Print.csproj.GenerateResource.Cache
+D:\PrintingC#\Printing_src\obj\Debug\Print.exe
+D:\PrintingC#\Printing_src\obj\Debug\Print.pdb

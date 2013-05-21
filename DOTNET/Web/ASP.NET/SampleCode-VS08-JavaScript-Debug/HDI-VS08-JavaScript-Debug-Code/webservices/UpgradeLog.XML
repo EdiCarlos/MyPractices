@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="webservices">
+</Property><Property Name="Solution File" Value="D:\temp\WebProjects\SampleCode-VS08-JavaScript-Debug\HDI-VS08-JavaScript-Debug-Code\webservices\webservices.sln">
+</Property><Property Name="Date" Value="Tuesday, June 14, 2011">
+</Property><Property Name="Time" Value="11:32:57 AM">
+</Property></Properties><Event ErrorLevel="0" Project="ExerciseSoapReverserExtension" Source="..\..\..\..\..\Development\Reporting\ASPColumn0403\ExerciseSoapReverserExtension\ExerciseSoapReverserExtension.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="3" Project="ExerciseSoapReverserExtension" Source="ExerciseSoapReverserExtension.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ExerciseSoapReverserExtension" Source="ExerciseSoapReverserExtension.csproj" Description="You have completed the first step in converting your Visual Studio .NET 2003 web project. To complete the conversion, please select your project in the Solution Explorer and choose the 'Convert to Web Application' context menu item.">
+</Event></UpgradeLog>

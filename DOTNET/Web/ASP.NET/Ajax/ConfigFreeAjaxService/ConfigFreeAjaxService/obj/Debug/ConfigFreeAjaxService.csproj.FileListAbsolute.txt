@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WebExamples\Ajax\ConfigFreeAjaxService\ConfigFreeAjaxService\bin\ConfigFreeAjaxService.dll
+D:\MyPractices\Web\WebExamples\Ajax\ConfigFreeAjaxService\ConfigFreeAjaxService\bin\ConfigFreeAjaxService.pdb
+D:\MyPractices\Web\WebExamples\Ajax\ConfigFreeAjaxService\ConfigFreeAjaxService\obj\Debug\ConfigFreeAjaxService.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WebExamples\Ajax\ConfigFreeAjaxService\ConfigFreeAjaxService\obj\Debug\ConfigFreeAjaxService.dll
+D:\MyPractices\Web\WebExamples\Ajax\ConfigFreeAjaxService\ConfigFreeAjaxService\obj\Debug\ConfigFreeAjaxService.pdb

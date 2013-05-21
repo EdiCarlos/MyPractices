@@ -1,0 +1,26 @@
+<job id="includeexample">
+
+<script language="JScript">
+    function fnFolderItemsItemJ()
+    {
+        var objShell = new ActiveXObject("Shell.Application");
+        var objFolder;
+        var ssfWINDOWS = 36;
+        
+        objFolder = objShell.NameSpace(ssfWINDOWS);
+        if (objFolder != null)
+        {
+            var objFolderItems;
+            
+            objFolderItems = objFolder.Items();
+            if (objFolderItems != null)
+            {
+                var objFolderItem;
+                
+                objFolderItem = objFolderItems.Item(objFolderItems.Count - 1);
+                WScript.Echo(objFolderItem.Name);
+            }
+        }
+    }
+</script>
+</job>	

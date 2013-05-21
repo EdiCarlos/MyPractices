@@ -1,0 +1,5 @@
+D:\temp\VisualC#\TestExamples\ReverseInteger\ReverseInteger\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\TestExamples\ReverseInteger\ReverseInteger\bin\Debug\ReverseInteger.exe
+D:\temp\VisualC#\TestExamples\ReverseInteger\ReverseInteger\bin\Debug\ReverseInteger.pdb
+D:\temp\VisualC#\TestExamples\ReverseInteger\ReverseInteger\obj\Debug\ReverseInteger.exe
+D:\temp\VisualC#\TestExamples\ReverseInteger\ReverseInteger\obj\Debug\ReverseInteger.pdb

@@ -1,0 +1,6 @@
+D:\MyPractices\Web\WCF\Basic\MessageSecurity\MessageSecuritySLN\MesssageSecurityService\bin\Debug\MesssageSecurityService.exe.config
+D:\MyPractices\Web\WCF\Basic\MessageSecurity\MessageSecuritySLN\MesssageSecurityService\bin\Debug\MesssageSecurityService.exe
+D:\MyPractices\Web\WCF\Basic\MessageSecurity\MessageSecuritySLN\MesssageSecurityService\bin\Debug\MesssageSecurityService.pdb
+D:\MyPractices\Web\WCF\Basic\MessageSecurity\MessageSecuritySLN\MesssageSecurityService\obj\Debug\MesssageSecurityService.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\Basic\MessageSecurity\MessageSecuritySLN\MesssageSecurityService\obj\Debug\MesssageSecurityService.exe
+D:\MyPractices\Web\WCF\Basic\MessageSecurity\MessageSecuritySLN\MesssageSecurityService\obj\Debug\MesssageSecurityService.pdb

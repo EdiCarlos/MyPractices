@@ -1,0 +1,10 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security.Cryptography\Src\Cryptography\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security.Cryptography\Src\Cryptography\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.Configuration.DesignResources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security.Cryptography\Src\Cryptography\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.Configuration.Manageability.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security.Cryptography\Src\Cryptography\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security.Cryptography\Src\Cryptography\obj\Debug\Security.Cryptography.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security.Cryptography\Src\Cryptography\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security.Cryptography\Src\Cryptography\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.pdb

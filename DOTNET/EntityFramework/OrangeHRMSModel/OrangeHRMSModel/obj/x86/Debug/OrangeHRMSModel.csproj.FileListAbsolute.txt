@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\EntityFramework\OrangeHRMSModel\OrangeHRMSModel\bin\Debug\OrangeHRMSModel.exe.config
+D:\MyPractices\DOTNET\EntityFramework\OrangeHRMSModel\OrangeHRMSModel\bin\Debug\OrangeHRMSModel.exe
+D:\MyPractices\DOTNET\EntityFramework\OrangeHRMSModel\OrangeHRMSModel\bin\Debug\OrangeHRMSModel.pdb
+D:\MyPractices\DOTNET\EntityFramework\OrangeHRMSModel\OrangeHRMSModel\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\EntityFramework\OrangeHRMSModel\OrangeHRMSModel\obj\x86\Debug\OrangeHRMSModel.exe
+D:\MyPractices\DOTNET\EntityFramework\OrangeHRMSModel\OrangeHRMSModel\obj\x86\Debug\OrangeHRMSModel.pdb

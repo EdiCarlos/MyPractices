@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<steps>
+  <db_creation>True</db_creation>
+  <active_directory>True</active_directory>
+</steps>

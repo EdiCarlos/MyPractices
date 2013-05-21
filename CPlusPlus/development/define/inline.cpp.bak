@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+inline unsigned double Square(unsigned double a) { return a*a; }
+inline unsigned double Cube(unsigned double b) {return b * b * b;}
+int main()
+{
+	cout<<Square(10)<<endl;
+	cout<<Cube(3)<<endl;
+	return 0;
+}

@@ -1,0 +1,29 @@
+using System;
+class example
+{
+	private example()
+	{
+		Console.WriteLine("constructor called");
+	}
+	
+	public example(string str)
+	{
+		Console.WriteLine(str);
+	}
+	
+}
+class example1 : example
+{
+	public example1():base("hello world")
+	{
+		Console.WriteLine("example1 constructor called");
+	}
+}
+class exe
+{
+	public static void Main()
+	{
+		example1 ex = new example1("hello world");
+	//	example ex = new example();
+	}
+}

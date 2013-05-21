@@ -1,0 +1,5 @@
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\ClassTestProject\bin\Debug\ClassTestProject.exe
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\ClassTestProject\bin\Debug\ClassTestProject.pdb
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\ClassTestProject\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\ClassTestProject\obj\Debug\ClassTestProject.exe
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\ClassTestProject\obj\Debug\ClassTestProject.pdb

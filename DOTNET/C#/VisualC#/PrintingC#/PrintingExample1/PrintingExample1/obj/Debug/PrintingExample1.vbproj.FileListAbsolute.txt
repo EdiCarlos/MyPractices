@@ -1,0 +1,10 @@
+D:\PrintingC#\PrintingExample1\PrintingExample1\bin\Debug\PrintingExample1.exe
+D:\PrintingC#\PrintingExample1\PrintingExample1\bin\Debug\PrintingExample1.pdb
+D:\PrintingC#\PrintingExample1\PrintingExample1\bin\Debug\PrintingExample1.xml
+D:\PrintingC#\PrintingExample1\PrintingExample1\obj\Debug\ResolveAssemblyReference.cache
+D:\PrintingC#\PrintingExample1\PrintingExample1\obj\Debug\PrintingExample1.Form1.resources
+D:\PrintingC#\PrintingExample1\PrintingExample1\obj\Debug\PrintingExample1.Resources.resources
+D:\PrintingC#\PrintingExample1\PrintingExample1\obj\Debug\PrintingExample1.vbproj.GenerateResource.Cache
+D:\PrintingC#\PrintingExample1\PrintingExample1\obj\Debug\PrintingExample1.exe
+D:\PrintingC#\PrintingExample1\PrintingExample1\obj\Debug\PrintingExample1.xml
+D:\PrintingC#\PrintingExample1\PrintingExample1\obj\Debug\PrintingExample1.pdb

@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Excel\UseCalcDll\UseCalcDll\bin\Debug\UseCalcDll.exe
+D:\temp\VisualC#\Excel\UseCalcDll\UseCalcDll\bin\Debug\UseCalcDll.pdb
+D:\temp\VisualC#\Excel\UseCalcDll\UseCalcDll\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Excel\UseCalcDll\UseCalcDll\obj\Debug\UseCalcDll.exe
+D:\temp\VisualC#\Excel\UseCalcDll\UseCalcDll\obj\Debug\UseCalcDll.pdb

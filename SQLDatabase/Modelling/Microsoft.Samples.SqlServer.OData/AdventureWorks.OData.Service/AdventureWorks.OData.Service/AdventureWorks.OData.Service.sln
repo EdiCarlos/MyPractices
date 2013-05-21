@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.OData.Service", "AdventureWorks.OData.Service.csproj", "{D11BC669-6F0E-4AB4-A36E-E728C5ADE376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks_ODataTest", "..\AdventureWorks.OData.Test\AdventureWorks_ODataTest.csproj", "{AA637FF7-2467-4FE4-A4E6-F84FFC1A37B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D11BC669-6F0E-4AB4-A36E-E728C5ADE376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11BC669-6F0E-4AB4-A36E-E728C5ADE376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11BC669-6F0E-4AB4-A36E-E728C5ADE376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11BC669-6F0E-4AB4-A36E-E728C5ADE376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA637FF7-2467-4FE4-A4E6-F84FFC1A37B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA637FF7-2467-4FE4-A4E6-F84FFC1A37B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA637FF7-2467-4FE4-A4E6-F84FFC1A37B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA637FF7-2467-4FE4-A4E6-F84FFC1A37B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

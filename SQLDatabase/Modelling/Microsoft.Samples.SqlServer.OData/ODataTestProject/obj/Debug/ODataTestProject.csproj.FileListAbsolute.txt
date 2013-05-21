@@ -1,0 +1,7 @@
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\ODataTestProject\bin\Debug\ODataTestProject.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\ODataTestProject\bin\Debug\ODataTestProject.pdb
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\ODataTestProject\bin\Debug\Microsoft.Samples.SqlServer.Activities.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\ODataTestProject\bin\Debug\Microsoft.Samples.SqlServer.Activities.pdb
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\ODataTestProject\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\ODataTestProject\obj\Debug\ODataTestProject.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\ODataTestProject\obj\Debug\ODataTestProject.pdb

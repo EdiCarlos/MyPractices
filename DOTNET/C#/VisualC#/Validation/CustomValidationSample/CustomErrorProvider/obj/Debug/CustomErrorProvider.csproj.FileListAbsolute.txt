@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomErrorProvider\bin\Debug\CustomErrorProvider.dll
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomErrorProvider\bin\Debug\CustomErrorProvider.pdb
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomErrorProvider\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomErrorProvider\obj\Debug\CustomErrorProvider.dll
+D:\temp\VisualC#\Validation\CustomValidationSample\CustomErrorProvider\obj\Debug\CustomErrorProvider.pdb

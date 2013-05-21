@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[HR_GLB_LKP_Banks](
+	[BankID] [int] IDENTITY(1,1) NOT NULL,
+	[BankName] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[BankAddressID] [int] NOT NULL,
+	[IsNationalBank] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+ CONSTRAINT [PK_HR_GLB_LKP_Banks] PRIMARY KEY CLUSTERED 
+(
+	[BankID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON)
+)
+
+

@@ -1,0 +1,26 @@
+﻿<Window x:Class="ControlsSample.ToolTipSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ToolTipSample" Height="300" Width="300">
+    <Grid>
+        <Button Width="70" Height="40" Name="btnSubmit" HorizontalAlignment="Left" ToolTipService.ShowDuration="3000">
+            Ok
+            <Button.ToolTip>
+                <StackPanel>
+                    <Label FontWeight="Bold" Background="Blue" Foreground="White">The Submit Button</Label>
+                    <TextBlock Padding="10" TextWrapping="WrapWithOverflow" Width="200">
+                        Button is Familiar Control. But in WPF's, it's not much 
+                        more than a button styled frequently!
+                    </TextBlock>
+                    <Line Stroke="Black" X2="200" StrokeThickness="1"></Line>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="2" Source="http://icons.iconarchive.com/icons/delacro/id/32/Help-icon.png"/>
+                        <Label FontWeight="Bold">Press F1 for more help</Label>
+                    </StackPanel>
+                </StackPanel>
+            </Button.ToolTip>
+        </Button>
+        <Button Content="Cancel" ToolTipService.ShowOnDisabled="True" IsEnabled="False" Margin="100, 0, 0, 0"  HorizontalAlignment="Left" Width="70" Height="40" Name="btnCancel" ToolTip="Cancel Button">
+        </Button>
+    </Grid>
+</Window>

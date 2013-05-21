@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyBlogStoreContainer" CdmEntityContainer="MyBlogContainer">
+    <EntitySetMapping Name="Blogs">
+      <EntityTypeMapping TypeName="IsTypeOf(MyBlog.Blogs)">
+        <MappingFragment StoreEntitySet="Blogs">
+          <ScalarProperty Name="BlogID" ColumnName="BlogID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TStamp" ColumnName="TStamp" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlogPosts">
+      <EntityTypeMapping TypeName="IsTypeOf(MyBlog.BlogPost)">
+        <MappingFragment StoreEntitySet="BlogPosts">
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="BlogID" ColumnName="BlogID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Post" ColumnName="Post" />
+          <ScalarProperty Name="TStamp" ColumnName="TStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

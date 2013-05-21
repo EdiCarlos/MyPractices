@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1a7a0b03-5ed4-4b10-950e-6280d10ab170" name="axkhan2@WD-XPA6GCAEJ017 2010-11-11 16:09:22" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="2c894182-914a-4f68-8dd2-cab7f4535c6c">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestResults\axkhan2_WD-XPA6GCAEJ017 2010-11-11 16_09_22">
+      <DeploymentItem filename="D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestWindowsApplication\bin\Debug\TestWindowsApplication.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-11-11T16:09:22.2887975+05:30" queuing="2010-11-11T16:09:24.6795449+05:30" start="2010-11-11T16:09:24.9139319+05:30" finish="2010-11-11T16:09:25.8983573+05:30" />
+  <TestDefinitions>
+    <UnitTest name="SumTest" storage="d:\temp\visualc#\testexamples\testwindowsapplication\mytestapplication\bin\debug\mytestapplication.dll" id="c44f766d-89ff-78d1-c246-f530a6564776">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="e30c2d9b-f530-4870-938d-223f730935ad" />
+      <TestMethod codeBase="D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\bin\Debug\MyTestApplication.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyTestApplication.Form1Test, MyTestApplication" name="SumTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c44f766d-89ff-78d1-c246-f530a6564776" executionId="e30c2d9b-f530-4870-938d-223f730935ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e30c2d9b-f530-4870-938d-223f730935ad" testId="c44f766d-89ff-78d1-c246-f530a6564776" testName="SumTest" computerName="WD-XPA6GCAEJ017" duration="00:00:00.4215717" startTime="2010-11-11T16:09:25.0701899+05:30" endTime="2010-11-11T16:09:25.8046025+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

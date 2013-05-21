@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Microsoft.Samples.SqlServer.Workflow.Designer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ToolboxImagesPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Projects\Microsoft.Samples.SqlServer.OData\Images\</Value>
+    </Setting>
+    <Setting Name="WorkflowPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Projects\Microsoft.Samples.SqlServer\Common\WorkflowDesigner\ExpressionActivities\</Value>
+    </Setting>
+    <Setting Name="ServiceUrl_Northwind" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://services.odata.org/Northwind/Northwind.svc</Value>
+    </Setting>
+    <Setting Name="ServiceUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://services.odata.org/AdventureWorksV3/AdventureWorks.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

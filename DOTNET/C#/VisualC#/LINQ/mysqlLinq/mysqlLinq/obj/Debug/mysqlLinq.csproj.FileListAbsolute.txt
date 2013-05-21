@@ -1,0 +1,2 @@
+D:\temp\VisualC#\LINQ\mysqlLinq\mysqlLinq\bin\Debug\mysqlLinq.exe.config
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\mysqlLinq\mysqlLinq\bin\Debug\mysqlLinq.exe.config

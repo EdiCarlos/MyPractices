@@ -1,0 +1,70 @@
+﻿<job id="main">
+	<!--<script language="JScript">
+		'WScript.Echo("JScript");
+	</script>-->
+	
+	<script language="VBScript">
+	
+dim inter, objshell
+
+set objshell = CreateObject("wscript.Shell")
+set inter = CreateObject("InternetExplorer.Application")
+
+Sub Wait(IE)
+  Do
+    WScript.Sleep 1000
+  Loop While IE.ReadyState < 4 And IE.Busy 
+  Do
+    WScript.Sleep 1000
+  Loop While IE.Busy 
+End Sub
+
+Sub OpenSite(url, istab, userid, password, secans)
+
+inter.Visible = true
+'inter.Navigate2("https://localhost/Syncada")
+'inter.Navigate2("https://vmamna1hx18M7F.nc.us.bank-dns.com/usbank")
+if IsNull(istab) then
+inter.Navigate2  url '"https://network.syncada.com"
+else
+inter.Navigate2 url, istab
+end if
+Wait inter
+
+'objshell.AppActivate "Log In  Syncada ® from Visa"
+objshell.AppActivate "Certificate Error: Navigation Blocked"
+Wait inter
+
+'objshell.SendKeys "arif788"
+dim doc
+set doc = inter.document.all
+
+if IsNull(doc.Item("overridelink")) then
+doc.Item("overridelink").click()
+end if
+
+Wait inter
+
+doc.Item("ctl00_Main_txtUserID").Value = userid
+wscript.sleep 1000
+doc.Item("ctl00_Main_txtPassword").Value = password
+wscript.sleep 1000
+dim subm
+set subm = doc.Item("ctl00_Main_btnContinue")
+subm.click()
+
+Wait inter
+
+wscript.sleep 20000
+
+doc.Item("ctl00_Main_txtSecurityQuestionAnswer").Value = secans
+doc.Item("ctl00_Main_btnLogIn").click()
+
+Wait inter
+
+end sub
+
+OpenSite "http://localhost/syncada", null, "virtual1", "syncada1", "1"
+OpenSite "http://localhost/syncada", 65536, "virtual1", "syncada1", "1"
+	</script>
+</job>

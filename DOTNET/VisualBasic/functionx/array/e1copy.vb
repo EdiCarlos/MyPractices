@@ -1,0 +1,33 @@
+Class mycl
+Dim arr() as Integer = new Integer(10){}
+
+Public Sub New()
+Console.WriteLine("Constructor")
+FillArray()
+LoopArray(arr)
+End Sub
+
+Public Sub LoopArray(ByVal arr() as Integer)
+for each i as Integer in arr
+Console.WriteLine(i)
+next
+End Sub
+
+Public Sub FillArray()
+
+for i as Integer = 1 to arr.Length - 1
+arr(i) = i
+next
+
+End Sub
+
+End Class
+
+Module Module1
+
+Sub Main()
+Dim c as mycl = new mycl()
+
+End Sub
+
+End Module

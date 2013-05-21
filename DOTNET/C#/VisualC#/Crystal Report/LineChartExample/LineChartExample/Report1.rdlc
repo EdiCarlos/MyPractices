@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ConnectionString1">
+      <rd:DataSourceID>965ee2f8-f20e-4818-a8da-013bb6f3c9b9</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>ODBC</DataProvider>
+        <ConnectString>Dsn=Xtreme Sample Database 2008;dbq=C:\Program Files\Microsoft Visual Studio 9.0\Crystal Reports\Samples\En\databases\xtreme.mdb;driverid=25;fil=MS Access;maxbuffersize=2048;pagetimeout=5</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <BottomMargin>1in</BottomMargin>
+  <rd:ReportID>c31b4530-8f68-4bb3-a636-f003f645ed6b</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet2_Employee">
+      <Fields>
+        <Field Name="Employee_ID">
+          <DataField>Employee ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Supervisor_ID">
+          <DataField>Supervisor ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Last_Name">
+          <DataField>Last Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="First_Name">
+          <DataField>First Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Position">
+          <DataField>Position</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Birth_Date">
+          <DataField>Birth Date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Hire_Date">
+          <DataField>Hire Date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Home_Phone">
+          <DataField>Home Phone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Extension">
+          <DataField>Extension</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Photo">
+          <DataField>Photo</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="Notes">
+          <DataField>Notes</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Reports_To">
+          <DataField>Reports To</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Salary">
+          <DataField>Salary</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SSN">
+          <DataField>SSN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Emergency_Contact_First_Name">
+          <DataField>Emergency Contact First Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Emergency_Contact_Last_Name">
+          <DataField>Emergency Contact Last Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Emergency_Contact_Relationship">
+          <DataField>Emergency Contact Relationship</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Emergency_Contact_Phone">
+          <DataField>Emergency Contact Phone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>ConnectionString1</DataSourceName>
+        <CommandText>SELECT [Employee ID], [Supervisor ID], [Last Name], [First Name], [Position], [Birth Date], [Hire Date], [Home Phone], Extension, Photo, Notes, [Reports To], Salary, SSN, [Emergency Contact First Name], [Emergency Contact Last Name], [Emergency Contact Relationship], [Emergency Contact Phone] FROM Employee</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet2</rd:DataSetName>
+        <rd:TableName>Employee</rd:TableName>
+        <rd:TableAdapterName>EmployeeTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>10.5in</Width>
+  <Body>
+    <ReportItems>
+      <Chart Name="chart1">
+        <Legend>
+          <Visible>true</Visible>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+          <Position>RightCenter</Position>
+        </Legend>
+        <CategoryAxis>
+          <Axis>
+            <Title />
+            <MajorGridLines>
+              <ShowGridLines>true</ShowGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <Visible>true</Visible>
+          </Axis>
+        </CategoryAxis>
+        <DataSetName>DataSet2_Employee</DataSetName>
+        <PlotArea>
+          <Style>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+        </PlotArea>
+        <ThreeDProperties>
+          <Rotation>30</Rotation>
+          <Inclination>30</Inclination>
+          <Shading>Simple</Shading>
+          <WallThickness>50</WallThickness>
+        </ThreeDProperties>
+        <PointWidth>0</PointWidth>
+        <SeriesGroupings>
+          <SeriesGrouping>
+            <DynamicSeries>
+              <Grouping Name="chart1_SeriesGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Position.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Label>=Fields!Position.Value</Label>
+            </DynamicSeries>
+          </SeriesGrouping>
+        </SeriesGroupings>
+        <Subtype>Stacked</Subtype>
+        <ValueAxis>
+          <Axis>
+            <Title />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <ShowGridLines>true</ShowGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <MinorInterval>2</MinorInterval>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+            <Scalar>true</Scalar>
+          </Axis>
+        </ValueAxis>
+        <Type>Column</Type>
+        <Width>10.25in</Width>
+        <CategoryGroupings>
+          <CategoryGrouping>
+            <DynamicCategories>
+              <Grouping Name="chart1_CategoryGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Position.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Label>=Fields!Position.Value</Label>
+            </DynamicCategories>
+          </CategoryGrouping>
+        </CategoryGroupings>
+        <Palette>Default</Palette>
+        <ChartData>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Count(Fields!Position.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel />
+                <Marker />
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+        </ChartData>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Title />
+        <Height>5.125in</Height>
+        <Left>0.125in</Left>
+      </Chart>
+    </ReportItems>
+    <Height>5.25in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

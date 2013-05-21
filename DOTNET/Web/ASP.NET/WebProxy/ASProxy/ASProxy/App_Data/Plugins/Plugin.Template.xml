@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<plugin>
+	<info ASProxyVersion="5.*">
+		<Name>TemplatePlugin</Name>
+		<Author>ASProxy, SalarSoft</Author>
+		<Version>1.0</Version>
+		<Description>This is a template plugin</Description>
+		<Date>2009-7-12</Date>
+		<ConfigUiUrl>./default.aspx</ConfigUiUrl>
+	</info>
+
+	<update enabled="false" updateInfoUrl="http://localhost:3000/ASProxy/_dev/!Release/PluginUpdateInfo.xml">
+	</update>
+
+	<classType typeName="Namespace.IPluginHost, Assembly.Name"></classType>
+</plugin>

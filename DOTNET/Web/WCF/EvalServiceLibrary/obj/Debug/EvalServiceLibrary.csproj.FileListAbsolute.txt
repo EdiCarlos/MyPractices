@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\C#\WEB\WCF\EvalServiceLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WEB\WCF\EvalServiceLibrary\bin\Debug\EvalServiceLibrary.dll.config
+D:\MyPractices\DOTNET\C#\WEB\WCF\EvalServiceLibrary\bin\Debug\EvalServiceLibrary.dll
+D:\MyPractices\DOTNET\C#\WEB\WCF\EvalServiceLibrary\bin\Debug\EvalServiceLibrary.pdb
+D:\MyPractices\DOTNET\C#\WEB\WCF\EvalServiceLibrary\obj\Debug\EvalServiceLibrary.dll
+D:\MyPractices\DOTNET\C#\WEB\WCF\EvalServiceLibrary\obj\Debug\EvalServiceLibrary.pdb

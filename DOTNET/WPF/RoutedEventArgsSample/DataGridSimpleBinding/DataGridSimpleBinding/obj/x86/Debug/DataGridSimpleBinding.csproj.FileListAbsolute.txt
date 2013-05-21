@@ -1,0 +1,14 @@
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\bin\Debug\DataGridSimpleBinding.exe.config
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\bin\Debug\DataGridSimpleBinding.exe
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\bin\Debug\DataGridSimpleBinding.pdb
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\MainWindow.baml
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\MainWindow.g.cs
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\App.g.cs
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\DataGridSimpleBinding_MarkupCompile.cache
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\DataGridSimpleBinding.g.resources
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\DataGridSimpleBinding.Properties.Resources.resources
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\DataGridSimpleBinding.exe
+D:\MyPractices\DOTNET\WPF\RoutedEventArgsSample\DataGridSimpleBinding\DataGridSimpleBinding\obj\x86\Debug\DataGridSimpleBinding.pdb

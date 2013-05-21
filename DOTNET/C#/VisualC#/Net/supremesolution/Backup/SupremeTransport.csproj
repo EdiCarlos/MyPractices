@@ -1,0 +1,370 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D23B1EC-88C0-4AE5-BA46-13FB32D7F1FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SupremeTransport</RootNamespace>
+    <AssemblyName>SupremeTransport</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="NotificationControl, Version=1.0.3747.29872, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\suprememodules\NotificationControl\NotificationControl\bin\Debug\NotificationControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TextNumeric, Version=1.0.2922.8205, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\suprememodules\TextNumeric\TextNumeric\bin\Debug\TextNumeric.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateUserAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUserAccount.Designer.cs">
+      <DependentUpon>CreateUserAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DdBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DdBackup.Designer.cs">
+      <DependentUpon>DdBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dispatchDataSet.cs">
+      <DependentUpon>dispatchDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dispatchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dispatchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatch_report.Designer.cs">
+      <DependentUpon>Dispatch_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatus.cs" />
+    <Compile Include="lclsupset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lclsupset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogOutFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogOutFrm.Designer.cs">
+      <DependentUpon>LogOutFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maindataset.cs">
+      <DependentUpon>maindataset.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="maindataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>maindataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintingClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreateUserAccount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CreateUserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DdBackup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DdBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatch_report.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Dispatch_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogOutFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogOutFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainBillReport.rdlc" />
+    <EmbeddedResource Include="TempSupreme.rdlc" />
+    <EmbeddedResource Include="SupBillReceived.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SupBillReceived.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupLocalBillRecieved.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SupLocalBillRecieved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupremeMainBillCrystalReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SupremeMainBillCrystalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupremeReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SupremeReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supreme_Bill.resx">
+      <DependentUpon>Supreme_Bill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supreme_local.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Supreme_local.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supreme_local_pending.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Supreme_local_pending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supreme_Pend.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Supreme_Pend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZahBillRecieved.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZahBillRecieved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zahid_mainBill.resx">
+      <DependentUpon>zahid_mainBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zahid_Pending.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Zahid_Pending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZahPaymentReceived.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZahPaymentReceived.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="dispatchDataSet.xsc">
+      <DependentUpon>dispatchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dispatchDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dispatchDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dispatchDataSet.xss">
+      <DependentUpon>dispatchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lclsupset.xsc">
+      <DependentUpon>lclsupset.xsd</DependentUpon>
+    </None>
+    <None Include="lclsupset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lclsupset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="lclsupset.xss">
+      <DependentUpon>lclsupset.xsd</DependentUpon>
+    </None>
+    <None Include="maindataset.xsc">
+      <DependentUpon>maindataset.xsd</DependentUpon>
+    </None>
+    <None Include="maindataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>maindataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="maindataset.xss">
+      <DependentUpon>maindataset.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="zmaindataset.xsc">
+      <DependentUpon>zmaindataset.xsd</DependentUpon>
+    </None>
+    <None Include="zmaindataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>zmaindataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="zmaindataset.xss">
+      <DependentUpon>zmaindataset.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SqlBillId.cs" />
+    <Compile Include="SupBillReceived.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupBillReceived.Designer.cs">
+      <DependentUpon>SupBillReceived.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupLocalBillRecieved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupLocalBillRecieved.Designer.cs">
+      <DependentUpon>SupLocalBillRecieved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupremeMainBillCrystalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupremeMainBillCrystalReport.Designer.cs">
+      <DependentUpon>SupremeMainBillCrystalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupremeReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupremeReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Supreme_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supreme_Bill.designer.cs">
+      <DependentUpon>Supreme_Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supreme_local.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supreme_local.Designer.cs">
+      <DependentUpon>Supreme_local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supreme_local_pending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supreme_local_pending.Designer.cs">
+      <DependentUpon>Supreme_local_pending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supreme_Pend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supreme_Pend.Designer.cs">
+      <DependentUpon>Supreme_Pend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserClass.cs" />
+    <Compile Include="UserLogin.cs" />
+    <Compile Include="ValidationClass.cs" />
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZahBillRecieved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZahBillRecieved.Designer.cs">
+      <DependentUpon>ZahBillRecieved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zahid_mainBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zahid_mainBill.designer.cs">
+      <DependentUpon>zahid_mainBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zahid_Pending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zahid_Pending.Designer.cs">
+      <DependentUpon>Zahid_Pending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZahPaymentReceived.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZahPaymentReceived.Designer.cs">
+      <DependentUpon>ZahPaymentReceived.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zmaindataset.cs">
+      <DependentUpon>zmaindataset.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="zmaindataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>zmaindataset.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

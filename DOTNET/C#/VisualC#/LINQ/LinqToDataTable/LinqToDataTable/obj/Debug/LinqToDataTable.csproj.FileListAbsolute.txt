@@ -1,0 +1,5 @@
+D:\temp\VisualC#\LINQ\LinqToDataTable\LinqToDataTable\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\LinqToDataTable\LinqToDataTable\bin\Debug\LinqToDataTable.exe
+D:\temp\VisualC#\LINQ\LinqToDataTable\LinqToDataTable\bin\Debug\LinqToDataTable.pdb
+D:\temp\VisualC#\LINQ\LinqToDataTable\LinqToDataTable\obj\Debug\LinqToDataTable.exe
+D:\temp\VisualC#\LINQ\LinqToDataTable\LinqToDataTable\obj\Debug\LinqToDataTable.pdb

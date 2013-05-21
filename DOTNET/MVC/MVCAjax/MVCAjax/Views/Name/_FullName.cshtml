@@ -1,0 +1,14 @@
+﻿@model MVCAjax.Models.NameModel
+@{
+    ViewBag.Title = "_FullName";
+}
+
+<h2>_FullName</h2>
+<div>
+<label>First Name:</label>
+<div>@Html.TextAreaFor(e => e.FirstName)</div>
+<label>Last Name:</label>
+<div>@Html.TextAreaFor(e => e.LastName)</div>
+<label>Middle Name:</label>
+<div>@Html.TextAreaFor(e => e.MiddleName)</div>
+</div>

@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Collections\UseOfStack\UseOfStack\bin\Debug\UseOfStack.exe
+D:\temp\VisualC#\Collections\UseOfStack\UseOfStack\bin\Debug\UseOfStack.pdb
+D:\temp\VisualC#\Collections\UseOfStack\UseOfStack\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Collections\UseOfStack\UseOfStack\obj\Debug\UseOfStack.exe
+D:\temp\VisualC#\Collections\UseOfStack\UseOfStack\obj\Debug\UseOfStack.pdb

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationProj1", "ValidationProj1\ValidationProj1.csproj", "{8C20C574-8429-4DF9-A394-D30C843B1302}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationProj1.Tests", "ValidationProj1.Tests\ValidationProj1.Tests.csproj", "{3856B439-B87F-4F19-98CA-B2E2B3998E3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C20C574-8429-4DF9-A394-D30C843B1302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C20C574-8429-4DF9-A394-D30C843B1302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C20C574-8429-4DF9-A394-D30C843B1302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C20C574-8429-4DF9-A394-D30C843B1302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3856B439-B87F-4F19-98CA-B2E2B3998E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3856B439-B87F-4F19-98CA-B2E2B3998E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3856B439-B87F-4F19-98CA-B2E2B3998E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3856B439-B87F-4F19-98CA-B2E2B3998E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

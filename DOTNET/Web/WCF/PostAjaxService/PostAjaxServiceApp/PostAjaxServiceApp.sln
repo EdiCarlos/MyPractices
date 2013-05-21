@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostAjaxServiceApp", "PostAjaxServiceApp\PostAjaxServiceApp.csproj", "{5822FE70-E220-44F2-B761-1C4A68AE4DF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostAjaxServiceWeb", "PostAjaxServiceWeb\PostAjaxServiceWeb.csproj", "{92AAF161-A389-431F-B84F-A13F2F8209A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5822FE70-E220-44F2-B761-1C4A68AE4DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5822FE70-E220-44F2-B761-1C4A68AE4DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5822FE70-E220-44F2-B761-1C4A68AE4DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5822FE70-E220-44F2-B761-1C4A68AE4DF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92AAF161-A389-431F-B84F-A13F2F8209A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92AAF161-A389-431F-B84F-A13F2F8209A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92AAF161-A389-431F-B84F-A13F2F8209A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92AAF161-A389-431F-B84F-A13F2F8209A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

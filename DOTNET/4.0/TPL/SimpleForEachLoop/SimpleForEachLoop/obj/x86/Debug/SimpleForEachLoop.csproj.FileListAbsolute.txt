@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForEachLoop\SimpleForEachLoop\bin\Debug\SimpleForEachLoop.exe
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForEachLoop\SimpleForEachLoop\bin\Debug\SimpleForEachLoop.pdb
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForEachLoop\SimpleForEachLoop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForEachLoop\SimpleForEachLoop\obj\x86\Debug\SimpleForEachLoop.exe
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForEachLoop\SimpleForEachLoop\obj\x86\Debug\SimpleForEachLoop.pdb

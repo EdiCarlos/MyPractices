@@ -1,0 +1,2709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hr_mysqlModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="hr_mysqlEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="hs_hr_attendance" EntityType="hr_mysqlModel.hs_hr_attendance" />
+    <EntitySet Name="hs_hr_comp_property" EntityType="hr_mysqlModel.hs_hr_comp_property" />
+    <EntitySet Name="hs_hr_compstructtree" EntityType="hr_mysqlModel.hs_hr_compstructtree" />
+    <EntitySet Name="hs_hr_config" EntityType="hr_mysqlModel.hs_hr_config" />
+    <EntitySet Name="hs_hr_country" EntityType="hr_mysqlModel.hs_hr_country" />
+    <EntitySet Name="hs_hr_currency_type" EntityType="hr_mysqlModel.hs_hr_currency_type" />
+    <EntitySet Name="hs_hr_custom_export" EntityType="hr_mysqlModel.hs_hr_custom_export" />
+    <EntitySet Name="hs_hr_custom_fields" EntityType="hr_mysqlModel.hs_hr_custom_fields" />
+    <EntitySet Name="hs_hr_custom_import" EntityType="hr_mysqlModel.hs_hr_custom_import" />
+    <EntitySet Name="hs_hr_customer" EntityType="hr_mysqlModel.hs_hr_customer" />
+    <EntitySet Name="hs_hr_db_version" EntityType="hr_mysqlModel.hs_hr_db_version" />
+    <EntitySet Name="hs_hr_developer" EntityType="hr_mysqlModel.hs_hr_developer" />
+    <EntitySet Name="hs_hr_district" EntityType="hr_mysqlModel.hs_hr_district" />
+    <EntitySet Name="hs_hr_education" EntityType="hr_mysqlModel.hs_hr_education" />
+    <EntitySet Name="hs_hr_eec" EntityType="hr_mysqlModel.hs_hr_eec" />
+    <EntitySet Name="hs_hr_emp_attachment" EntityType="hr_mysqlModel.hs_hr_emp_attachment" />
+    <EntitySet Name="hs_hr_emp_basicsalary" EntityType="hr_mysqlModel.hs_hr_emp_basicsalary" />
+    <EntitySet Name="hs_hr_emp_children" EntityType="hr_mysqlModel.hs_hr_emp_children" />
+    <EntitySet Name="hs_hr_emp_contract_extend" EntityType="hr_mysqlModel.hs_hr_emp_contract_extend" />
+    <EntitySet Name="hs_hr_emp_dependents" EntityType="hr_mysqlModel.hs_hr_emp_dependents" />
+    <EntitySet Name="hs_hr_emp_directdebit" EntityType="hr_mysqlModel.hs_hr_emp_directdebit" />
+    <EntitySet Name="hs_hr_emp_education" EntityType="hr_mysqlModel.hs_hr_emp_education" />
+    <EntitySet Name="hs_hr_emp_emergency_contacts" EntityType="hr_mysqlModel.hs_hr_emp_emergency_contacts" />
+    <EntitySet Name="hs_hr_emp_history_of_ealier_pos" EntityType="hr_mysqlModel.hs_hr_emp_history_of_ealier_pos" />
+    <EntitySet Name="hs_hr_emp_jobtitle_history" EntityType="hr_mysqlModel.hs_hr_emp_jobtitle_history" />
+    <EntitySet Name="hs_hr_emp_language" EntityType="hr_mysqlModel.hs_hr_emp_language" />
+    <EntitySet Name="hs_hr_emp_licenses" EntityType="hr_mysqlModel.hs_hr_emp_licenses" />
+    <EntitySet Name="hs_hr_emp_location_history" EntityType="hr_mysqlModel.hs_hr_emp_location_history" />
+    <EntitySet Name="hs_hr_emp_member_detail" EntityType="hr_mysqlModel.hs_hr_emp_member_detail" />
+    <EntitySet Name="hs_hr_emp_passport" EntityType="hr_mysqlModel.hs_hr_emp_passport" />
+    <EntitySet Name="hs_hr_emp_picture" EntityType="hr_mysqlModel.hs_hr_emp_picture" />
+    <EntitySet Name="hs_hr_emp_reportto" EntityType="hr_mysqlModel.hs_hr_emp_reportto" />
+    <EntitySet Name="hs_hr_emp_skill" EntityType="hr_mysqlModel.hs_hr_emp_skill" />
+    <EntitySet Name="hs_hr_emp_subdivision_history" EntityType="hr_mysqlModel.hs_hr_emp_subdivision_history" />
+    <EntitySet Name="hs_hr_emp_us_tax" EntityType="hr_mysqlModel.hs_hr_emp_us_tax" />
+    <EntitySet Name="hs_hr_emp_work_experience" EntityType="hr_mysqlModel.hs_hr_emp_work_experience" />
+    <EntitySet Name="hs_hr_employee" EntityType="hr_mysqlModel.hs_hr_employee" />
+    <EntitySet Name="hs_hr_employee_leave_quota" EntityType="hr_mysqlModel.hs_hr_employee_leave_quota" />
+    <EntitySet Name="hs_hr_empreport" EntityType="hr_mysqlModel.hs_hr_empreport" />
+    <EntitySet Name="hs_hr_empstat" EntityType="hr_mysqlModel.hs_hr_empstat" />
+    <EntitySet Name="hs_hr_ethnic_race" EntityType="hr_mysqlModel.hs_hr_ethnic_race" />
+    <EntitySet Name="hs_hr_file_version" EntityType="hr_mysqlModel.hs_hr_file_version" />
+    <EntitySet Name="hs_hr_geninfo" EntityType="hr_mysqlModel.hs_hr_geninfo" />
+    <EntitySet Name="hs_hr_holidays" EntityType="hr_mysqlModel.hs_hr_holidays" />
+    <EntitySet Name="hs_hr_hsp" EntityType="hr_mysqlModel.hs_hr_hsp" />
+    <EntitySet Name="hs_hr_hsp_payment_request" EntityType="hr_mysqlModel.hs_hr_hsp_payment_request" />
+    <EntitySet Name="hs_hr_hsp_summary" EntityType="hr_mysqlModel.hs_hr_hsp_summary" />
+    <EntitySet Name="hs_hr_job_application" EntityType="hr_mysqlModel.hs_hr_job_application" />
+    <EntitySet Name="hs_hr_job_application_events" EntityType="hr_mysqlModel.hs_hr_job_application_events" />
+    <EntitySet Name="hs_hr_job_spec" EntityType="hr_mysqlModel.hs_hr_job_spec" />
+    <EntitySet Name="hs_hr_job_title" EntityType="hr_mysqlModel.hs_hr_job_title" />
+    <EntitySet Name="hs_hr_job_vacancy" EntityType="hr_mysqlModel.hs_hr_job_vacancy" />
+    <EntitySet Name="hs_hr_kpi" EntityType="hr_mysqlModel.hs_hr_kpi" />
+    <EntitySet Name="hs_hr_language" EntityType="hr_mysqlModel.hs_hr_language" />
+    <EntitySet Name="hs_hr_leave" EntityType="hr_mysqlModel.hs_hr_leave" />
+    <EntitySet Name="hs_hr_leave_requests" EntityType="hr_mysqlModel.hs_hr_leave_requests" />
+    <EntitySet Name="hs_hr_leavetype" EntityType="hr_mysqlModel.hs_hr_leavetype" />
+    <EntitySet Name="hs_hr_licenses" EntityType="hr_mysqlModel.hs_hr_licenses" />
+    <EntitySet Name="hs_hr_location" EntityType="hr_mysqlModel.hs_hr_location" />
+    <EntitySet Name="hs_hr_mailnotifications" EntityType="hr_mysqlModel.hs_hr_mailnotifications" />
+    <EntitySet Name="hs_hr_membership" EntityType="hr_mysqlModel.hs_hr_membership" />
+    <EntitySet Name="hs_hr_membership_type" EntityType="hr_mysqlModel.hs_hr_membership_type" />
+    <EntitySet Name="hs_hr_module" EntityType="hr_mysqlModel.hs_hr_module" />
+    <EntitySet Name="hs_hr_nationality" EntityType="hr_mysqlModel.hs_hr_nationality" />
+    <EntitySet Name="hs_hr_pay_period" EntityType="hr_mysqlModel.hs_hr_pay_period" />
+    <EntitySet Name="hs_hr_payperiod" EntityType="hr_mysqlModel.hs_hr_payperiod" />
+    <EntitySet Name="hs_hr_performance_review" EntityType="hr_mysqlModel.hs_hr_performance_review" />
+    <EntitySet Name="hs_hr_performance_review_comments" EntityType="hr_mysqlModel.hs_hr_performance_review_comments" />
+    <EntitySet Name="hs_hr_project" EntityType="hr_mysqlModel.hs_hr_project" />
+    <EntitySet Name="hs_hr_project_activity" EntityType="hr_mysqlModel.hs_hr_project_activity" />
+    <EntitySet Name="hs_hr_project_admin" EntityType="hr_mysqlModel.hs_hr_project_admin" />
+    <EntitySet Name="hs_hr_province" EntityType="hr_mysqlModel.hs_hr_province" />
+    <EntitySet Name="hs_hr_rights" EntityType="hr_mysqlModel.hs_hr_rights" />
+    <EntitySet Name="hs_hr_skill" EntityType="hr_mysqlModel.hs_hr_skill" />
+    <EntitySet Name="hs_hr_time_event" EntityType="hr_mysqlModel.hs_hr_time_event" />
+    <EntitySet Name="hs_hr_timesheet" EntityType="hr_mysqlModel.hs_hr_timesheet" />
+    <EntitySet Name="hs_hr_timesheet_submission_period" EntityType="hr_mysqlModel.hs_hr_timesheet_submission_period" />
+    <EntitySet Name="hs_hr_unique_id" EntityType="hr_mysqlModel.hs_hr_unique_id" />
+    <EntitySet Name="hs_hr_user_group" EntityType="hr_mysqlModel.hs_hr_user_group" />
+    <EntitySet Name="hs_hr_users" EntityType="hr_mysqlModel.hs_hr_users" />
+    <EntitySet Name="hs_hr_versions" EntityType="hr_mysqlModel.hs_hr_versions" />
+    <EntitySet Name="hs_hr_weekends" EntityType="hr_mysqlModel.hs_hr_weekends" />
+    <EntitySet Name="hs_hr_workshift" EntityType="hr_mysqlModel.hs_hr_workshift" />
+    <EntitySet Name="hs_pr_salary_currency_detail" EntityType="hr_mysqlModel.hs_pr_salary_currency_detail" />
+    <EntitySet Name="hs_pr_salary_grade" EntityType="hr_mysqlModel.hs_pr_salary_grade" />
+    <AssociationSet Name="hs_hr_compstructtree_ibfk_1" Association="hr_mysqlModel.hs_hr_compstructtree_ibfk_1">
+      <End Role="hs_hr_location" EntitySet="hs_hr_location" />
+      <End Role="hs_hr_compstructtree" EntitySet="hs_hr_compstructtree" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_ibfk_1" Association="hr_mysqlModel.hs_hr_employee_ibfk_1">
+      <End Role="hs_hr_compstructtree" EntitySet="hs_hr_compstructtree" />
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_location_ibfk_1" Association="hr_mysqlModel.hs_hr_location_ibfk_1">
+      <End Role="hs_hr_country" EntitySet="hs_hr_country" />
+      <End Role="hs_hr_location" EntitySet="hs_hr_location" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_basicsalary_ibfk_2" Association="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_2">
+      <End Role="hs_hr_currency_type" EntitySet="hs_hr_currency_type" />
+      <End Role="hs_hr_emp_basicsalary" EntitySet="hs_hr_emp_basicsalary" />
+    </AssociationSet>
+    <AssociationSet Name="hs_pr_salary_currency_detail_ibfk_1" Association="hr_mysqlModel.hs_pr_salary_currency_detail_ibfk_1">
+      <End Role="hs_hr_currency_type" EntitySet="hs_hr_currency_type" />
+      <End Role="hs_pr_salary_currency_detail" EntitySet="hs_pr_salary_currency_detail" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_project_ibfk_1" Association="hr_mysqlModel.hs_hr_project_ibfk_1">
+      <End Role="hs_hr_customer" EntitySet="hs_hr_customer" />
+      <End Role="hs_hr_project" EntitySet="hs_hr_project" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_db_version_ibfk_1" Association="hr_mysqlModel.hs_hr_db_version_ibfk_1">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_db_version" EntitySet="hs_hr_db_version" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_db_version_ibfk_2" Association="hr_mysqlModel.hs_hr_db_version_ibfk_2">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_db_version" EntitySet="hs_hr_db_version" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_versions_ibfk_3" Association="hr_mysqlModel.hs_hr_versions_ibfk_3">
+      <End Role="hs_hr_db_version" EntitySet="hs_hr_db_version" />
+      <End Role="hs_hr_versions" EntitySet="hs_hr_versions" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_education_ibfk_2" Association="hr_mysqlModel.hs_hr_emp_education_ibfk_2">
+      <End Role="hs_hr_education" EntitySet="hs_hr_education" />
+      <End Role="hs_hr_emp_education" EntitySet="hs_hr_emp_education" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_ibfk_6" Association="hr_mysqlModel.hs_hr_employee_ibfk_6">
+      <End Role="hs_hr_eec" EntitySet="hs_hr_eec" />
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_attachment_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_attachment_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_attachment" EntitySet="hs_hr_emp_attachment" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_basicsalary_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_1">
+      <End Role="hs_pr_salary_grade" EntitySet="hs_pr_salary_grade" />
+      <End Role="hs_hr_emp_basicsalary" EntitySet="hs_hr_emp_basicsalary" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_basicsalary_ibfk_3" Association="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_3">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_basicsalary" EntitySet="hs_hr_emp_basicsalary" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_basicsalary_ibfk_4" Association="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_4">
+      <End Role="hs_hr_payperiod" EntitySet="hs_hr_payperiod" />
+      <End Role="hs_hr_emp_basicsalary" EntitySet="hs_hr_emp_basicsalary" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_children_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_children_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_children" EntitySet="hs_hr_emp_children" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_contract_extend_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_contract_extend_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_contract_extend" EntitySet="hs_hr_emp_contract_extend" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_dependents_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_dependents_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_dependents" EntitySet="hs_hr_emp_dependents" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_directdebit_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_directdebit_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_directdebit" EntitySet="hs_hr_emp_directdebit" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_education_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_education_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_education" EntitySet="hs_hr_emp_education" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_emergency_contacts_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_emergency_contacts_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_emergency_contacts" EntitySet="hs_hr_emp_emergency_contacts" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_history_of_ealier_pos_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_history_of_ealier_pos_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_history_of_ealier_pos" EntitySet="hs_hr_emp_history_of_ealier_pos" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_jobtitle_history_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_jobtitle_history_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_jobtitle_history" EntitySet="hs_hr_emp_jobtitle_history" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_language_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_language_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_language" EntitySet="hs_hr_emp_language" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_language_ibfk_2" Association="hr_mysqlModel.hs_hr_emp_language_ibfk_2">
+      <End Role="hs_hr_language" EntitySet="hs_hr_language" />
+      <End Role="hs_hr_emp_language" EntitySet="hs_hr_emp_language" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_licenses_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_licenses_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_licenses" EntitySet="hs_hr_emp_licenses" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_licenses_ibfk_2" Association="hr_mysqlModel.hs_hr_emp_licenses_ibfk_2">
+      <End Role="hs_hr_licenses" EntitySet="hs_hr_licenses" />
+      <End Role="hs_hr_emp_licenses" EntitySet="hs_hr_emp_licenses" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_location_history_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_location_history_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_location_history" EntitySet="hs_hr_emp_location_history" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_member_detail_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_member_detail_ibfk_1">
+      <End Role="hs_hr_membership_type" EntitySet="hs_hr_membership_type" />
+      <End Role="hs_hr_emp_member_detail" EntitySet="hs_hr_emp_member_detail" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_member_detail_ibfk_2" Association="hr_mysqlModel.hs_hr_emp_member_detail_ibfk_2">
+      <End Role="hs_hr_membership" EntitySet="hs_hr_membership" />
+      <End Role="hs_hr_emp_member_detail" EntitySet="hs_hr_emp_member_detail" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_member_detail_ibfk_3" Association="hr_mysqlModel.hs_hr_emp_member_detail_ibfk_3">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_member_detail" EntitySet="hs_hr_emp_member_detail" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_passport_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_passport_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_passport" EntitySet="hs_hr_emp_passport" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_picture_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_picture_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_picture" EntitySet="hs_hr_emp_picture" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_reportto_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_reportto_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_reportto" EntitySet="hs_hr_emp_reportto" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_reportto_ibfk_2" Association="hr_mysqlModel.hs_hr_emp_reportto_ibfk_2">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_reportto" EntitySet="hs_hr_emp_reportto" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_skill_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_skill_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_skill" EntitySet="hs_hr_emp_skill" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_skill_ibfk_2" Association="hr_mysqlModel.hs_hr_emp_skill_ibfk_2">
+      <End Role="hs_hr_skill" EntitySet="hs_hr_skill" />
+      <End Role="hs_hr_emp_skill" EntitySet="hs_hr_emp_skill" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_subdivision_history_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_subdivision_history_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_subdivision_history" EntitySet="hs_hr_emp_subdivision_history" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_us_tax_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_us_tax_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_us_tax" EntitySet="hs_hr_emp_us_tax" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_work_experience_ibfk_1" Association="hr_mysqlModel.hs_hr_emp_work_experience_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_emp_work_experience" EntitySet="hs_hr_emp_work_experience" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_ibfk_2" Association="hr_mysqlModel.hs_hr_employee_ibfk_2">
+      <End Role="hs_hr_ethnic_race" EntitySet="hs_hr_ethnic_race" />
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_ibfk_3" Association="hr_mysqlModel.hs_hr_employee_ibfk_3">
+      <End Role="hs_hr_nationality" EntitySet="hs_hr_nationality" />
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_ibfk_4" Association="hr_mysqlModel.hs_hr_employee_ibfk_4">
+      <End Role="hs_hr_job_title" EntitySet="hs_hr_job_title" />
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_ibfk_5" Association="hr_mysqlModel.hs_hr_employee_ibfk_5">
+      <End Role="hs_hr_empstat" EntitySet="hs_hr_empstat" />
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_leave_quota_ibfk_2" Association="hr_mysqlModel.hs_hr_employee_leave_quota_ibfk_2">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_employee_leave_quota" EntitySet="hs_hr_employee_leave_quota" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_hsp_ibfk_1" Association="hr_mysqlModel.hs_hr_hsp_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_hsp" EntitySet="hs_hr_hsp" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_hsp_payment_request_ibfk_1" Association="hr_mysqlModel.hs_hr_hsp_payment_request_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_hsp_payment_request" EntitySet="hs_hr_hsp_payment_request" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_job_application_events_ibfk_3" Association="hr_mysqlModel.hs_hr_job_application_events_ibfk_3">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_job_application_events" EntitySet="hs_hr_job_application_events" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_job_vacancy_ibfk_1" Association="hr_mysqlModel.hs_hr_job_vacancy_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_job_vacancy" EntitySet="hs_hr_job_vacancy" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_leave_requests_ibfk_1" Association="hr_mysqlModel.hs_hr_leave_requests_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_leave_requests" EntitySet="hs_hr_leave_requests" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_project_admin_ibfk_2" Association="hr_mysqlModel.hs_hr_project_admin_ibfk_2">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_project_admin" EntitySet="hs_hr_project_admin" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_time_event_ibfk_4" Association="hr_mysqlModel.hs_hr_time_event_ibfk_4">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_time_event" EntitySet="hs_hr_time_event" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_timesheet_ibfk_1" Association="hr_mysqlModel.hs_hr_timesheet_ibfk_1">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_timesheet" EntitySet="hs_hr_timesheet" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_users_ibfk_4" Association="hr_mysqlModel.hs_hr_users_ibfk_4">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_leave_quota_ibfk_1" Association="hr_mysqlModel.hs_hr_employee_leave_quota_ibfk_1">
+      <End Role="hs_hr_leavetype" EntitySet="hs_hr_leavetype" />
+      <End Role="hs_hr_employee_leave_quota" EntitySet="hs_hr_employee_leave_quota" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_file_version_ibfk_1" Association="hr_mysqlModel.hs_hr_file_version_ibfk_1">
+      <End Role="hs_hr_module" EntitySet="hs_hr_module" />
+      <End Role="hs_hr_file_version" EntitySet="hs_hr_file_version" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_file_version_ibfk_2" Association="hr_mysqlModel.hs_hr_file_version_ibfk_2">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_file_version" EntitySet="hs_hr_file_version" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_file_version_ibfk_3" Association="hr_mysqlModel.hs_hr_file_version_ibfk_3">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_file_version" EntitySet="hs_hr_file_version" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_versions_ibfk_4" Association="hr_mysqlModel.hs_hr_versions_ibfk_4">
+      <End Role="hs_hr_file_version" EntitySet="hs_hr_file_version" />
+      <End Role="hs_hr_versions" EntitySet="hs_hr_versions" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_job_application_events_ibfk_1" Association="hr_mysqlModel.hs_hr_job_application_events_ibfk_1">
+      <End Role="hs_hr_job_application" EntitySet="hs_hr_job_application" />
+      <End Role="hs_hr_job_application_events" EntitySet="hs_hr_job_application_events" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_job_application_ibfk_1" Association="hr_mysqlModel.hs_hr_job_application_ibfk_1">
+      <End Role="hs_hr_job_vacancy" EntitySet="hs_hr_job_vacancy" />
+      <End Role="hs_hr_job_application" EntitySet="hs_hr_job_application" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_job_application_events_ibfk_2" Association="hr_mysqlModel.hs_hr_job_application_events_ibfk_2">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_job_application_events" EntitySet="hs_hr_job_application_events" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_job_title_ibfk_2" Association="hr_mysqlModel.hs_hr_job_title_ibfk_2">
+      <End Role="hs_hr_job_spec" EntitySet="hs_hr_job_spec" />
+      <End Role="hs_hr_job_title" EntitySet="hs_hr_job_title" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_job_title_ibfk_1" Association="hr_mysqlModel.hs_hr_job_title_ibfk_1">
+      <End Role="hs_pr_salary_grade" EntitySet="hs_pr_salary_grade" />
+      <End Role="hs_hr_job_title" EntitySet="hs_hr_job_title" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_job_vacancy_ibfk_2" Association="hr_mysqlModel.hs_hr_job_vacancy_ibfk_2">
+      <End Role="hs_hr_job_title" EntitySet="hs_hr_job_title" />
+      <End Role="hs_hr_job_vacancy" EntitySet="hs_hr_job_vacancy" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_leave_ibfk_1" Association="hr_mysqlModel.hs_hr_leave_ibfk_1">
+      <End Role="hs_hr_leave_requests" EntitySet="hs_hr_leave_requests" />
+      <End Role="hs_hr_leave" EntitySet="hs_hr_leave" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_leave_requests_ibfk_2" Association="hr_mysqlModel.hs_hr_leave_requests_ibfk_2">
+      <End Role="hs_hr_leavetype" EntitySet="hs_hr_leavetype" />
+      <End Role="hs_hr_leave_requests" EntitySet="hs_hr_leave_requests" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_mailnotifications_ibfk_1" Association="hr_mysqlModel.hs_hr_mailnotifications_ibfk_1">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_mailnotifications" EntitySet="hs_hr_mailnotifications" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_membership_ibfk_1" Association="hr_mysqlModel.hs_hr_membership_ibfk_1">
+      <End Role="hs_hr_membership_type" EntitySet="hs_hr_membership_type" />
+      <End Role="hs_hr_membership" EntitySet="hs_hr_membership" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_module_ibfk_1" Association="hr_mysqlModel.hs_hr_module_ibfk_1">
+      <End Role="hs_hr_versions" EntitySet="hs_hr_versions" />
+      <End Role="hs_hr_module" EntitySet="hs_hr_module" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_rights_ibfk_1" Association="hr_mysqlModel.hs_hr_rights_ibfk_1">
+      <End Role="hs_hr_module" EntitySet="hs_hr_module" />
+      <End Role="hs_hr_rights" EntitySet="hs_hr_rights" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_time_event_ibfk_2" Association="hr_mysqlModel.hs_hr_time_event_ibfk_2">
+      <End Role="hs_hr_project_activity" EntitySet="hs_hr_project_activity" />
+      <End Role="hs_hr_time_event" EntitySet="hs_hr_time_event" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_rights_ibfk_2" Association="hr_mysqlModel.hs_hr_rights_ibfk_2">
+      <End Role="hs_hr_user_group" EntitySet="hs_hr_user_group" />
+      <End Role="hs_hr_rights" EntitySet="hs_hr_rights" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_timesheet_ibfk_2" Association="hr_mysqlModel.hs_hr_timesheet_ibfk_2">
+      <End Role="hs_hr_timesheet_submission_period" EntitySet="hs_hr_timesheet_submission_period" />
+      <End Role="hs_hr_timesheet" EntitySet="hs_hr_timesheet" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_users_ibfk_3" Association="hr_mysqlModel.hs_hr_users_ibfk_3">
+      <End Role="hs_hr_user_group" EntitySet="hs_hr_user_group" />
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_users_ibfk_1" Association="hr_mysqlModel.hs_hr_users_ibfk_1">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_users1" EntitySet="hs_hr_users" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_users_ibfk_2" Association="hr_mysqlModel.hs_hr_users_ibfk_2">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_users1" EntitySet="hs_hr_users" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_versions_ibfk_1" Association="hr_mysqlModel.hs_hr_versions_ibfk_1">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_versions" EntitySet="hs_hr_versions" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_versions_ibfk_2" Association="hr_mysqlModel.hs_hr_versions_ibfk_2">
+      <End Role="hs_hr_users" EntitySet="hs_hr_users" />
+      <End Role="hs_hr_versions" EntitySet="hs_hr_versions" />
+    </AssociationSet>
+    <AssociationSet Name="hs_pr_salary_currency_detail_ibfk_2" Association="hr_mysqlModel.hs_pr_salary_currency_detail_ibfk_2">
+      <End Role="hs_pr_salary_grade" EntitySet="hs_pr_salary_grade" />
+      <End Role="hs_pr_salary_currency_detail" EntitySet="hs_pr_salary_currency_detail" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emp_locations" Association="hr_mysqlModel.hs_hr_emp_locations">
+      <End Role="hs_hr_location" EntitySet="hs_hr_location" />
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_timesheet_period" Association="hr_mysqlModel.hs_hr_employee_timesheet_period">
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+      <End Role="hs_hr_timesheet_submission_period" EntitySet="hs_hr_timesheet_submission_period" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_employee_workshift" Association="hr_mysqlModel.hs_hr_employee_workshift">
+      <End Role="hs_hr_workshift" EntitySet="hs_hr_workshift" />
+      <End Role="hs_hr_employee" EntitySet="hs_hr_employee" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_emprep_usergroup" Association="hr_mysqlModel.hs_hr_emprep_usergroup">
+      <End Role="hs_hr_user_group" EntitySet="hs_hr_user_group" />
+      <End Role="hs_hr_empreport" EntitySet="hs_hr_empreport" />
+    </AssociationSet>
+    <AssociationSet Name="hs_hr_jobtit_empstat" Association="hr_mysqlModel.hs_hr_jobtit_empstat">
+      <End Role="hs_hr_job_title" EntitySet="hs_hr_job_title" />
+      <End Role="hs_hr_empstat" EntitySet="hs_hr_empstat" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="hs_hr_attendance">
+    <Key>
+      <PropertyRef Name="attendance_id" />
+    </Key>
+    <Property Name="attendance_id" Type="Int32" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="punchin_time" Type="DateTime" />
+    <Property Name="punchout_time" Type="DateTime" />
+    <Property Name="in_note" Type="String" />
+    <Property Name="out_note" Type="String" />
+    <Property Name="timestamp_diff" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="String" />
+  </EntityType>
+  <EntityType Name="hs_hr_comp_property">
+    <Key>
+      <PropertyRef Name="prop_id" />
+    </Key>
+    <Property Name="prop_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prop_name" Type="String" Nullable="false" />
+    <Property Name="emp_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="hs_hr_compstructtree">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="title" Type="String" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" />
+    <Property Name="loc_code" Type="String" />
+    <Property Name="lft" Type="Int32" Nullable="false" />
+    <Property Name="rgt" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="parnt" Type="Int32" Nullable="false" />
+    <Property Name="dept_id" Type="String" />
+    <NavigationProperty Name="hs_hr_location" Relationship="hr_mysqlModel.hs_hr_compstructtree_ibfk_1" FromRole="hs_hr_compstructtree" ToRole="hs_hr_location" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_1" FromRole="hs_hr_compstructtree" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_config">
+    <Key>
+      <PropertyRef Name="key" />
+    </Key>
+    <Property Name="key" Type="String" Nullable="false" />
+    <Property Name="value" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="hs_hr_country">
+    <Key>
+      <PropertyRef Name="cou_code" />
+    </Key>
+    <Property Name="cou_code" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="cou_name" Type="String" Nullable="false" />
+    <Property Name="iso3" Type="String" />
+    <Property Name="numcode" Type="Int16" />
+    <NavigationProperty Name="hs_hr_location" Relationship="hr_mysqlModel.hs_hr_location_ibfk_1" FromRole="hs_hr_country" ToRole="hs_hr_location" />
+  </EntityType>
+  <EntityType Name="hs_hr_currency_type">
+    <Key>
+      <PropertyRef Name="currency_id" />
+    </Key>
+    <Property Name="code" Type="Int32" Nullable="false" />
+    <Property Name="currency_id" Type="String" Nullable="false" />
+    <Property Name="currency_name" Type="String" Nullable="false" />
+    <NavigationProperty Name="hs_hr_emp_basicsalary" Relationship="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_2" FromRole="hs_hr_currency_type" ToRole="hs_hr_emp_basicsalary" />
+    <NavigationProperty Name="hs_pr_salary_currency_detail" Relationship="hr_mysqlModel.hs_pr_salary_currency_detail_ibfk_1" FromRole="hs_hr_currency_type" ToRole="hs_pr_salary_currency_detail" />
+  </EntityType>
+  <EntityType Name="hs_hr_custom_export">
+    <Key>
+      <PropertyRef Name="export_id" />
+    </Key>
+    <Property Name="export_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="fields" Type="String" />
+    <Property Name="headings" Type="String" />
+  </EntityType>
+  <EntityType Name="hs_hr_custom_fields">
+    <Key>
+      <PropertyRef Name="field_num" />
+    </Key>
+    <Property Name="field_num" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="type" Type="Int32" Nullable="false" />
+    <Property Name="extra_data" Type="String" />
+  </EntityType>
+  <EntityType Name="hs_hr_custom_import">
+    <Key>
+      <PropertyRef Name="import_id" />
+    </Key>
+    <Property Name="import_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="fields" Type="String" />
+    <Property Name="has_heading" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="hs_hr_customer">
+    <Key>
+      <PropertyRef Name="customer_id" />
+    </Key>
+    <Property Name="customer_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="description" Type="String" />
+    <Property Name="deleted" Type="Boolean" />
+    <NavigationProperty Name="hs_hr_project" Relationship="hr_mysqlModel.hs_hr_project_ibfk_1" FromRole="hs_hr_customer" ToRole="hs_hr_project" />
+  </EntityType>
+  <EntityType Name="hs_hr_db_version">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="description" Type="String" />
+    <Property Name="entered_date" Type="DateTime" />
+    <Property Name="modified_date" Type="DateTime" />
+    <Property Name="entered_by" Type="String" />
+    <Property Name="modified_by" Type="String" />
+    <NavigationProperty Name="hs_hr_users" Relationship="hr_mysqlModel.hs_hr_db_version_ibfk_1" FromRole="hs_hr_db_version" ToRole="hs_hr_users" />
+    <NavigationProperty Name="hs_hr_users1" Relationship="hr_mysqlModel.hs_hr_db_version_ibfk_2" FromRole="hs_hr_db_version" ToRole="hs_hr_users" />
+    <NavigationProperty Name="hs_hr_versions" Relationship="hr_mysqlModel.hs_hr_versions_ibfk_3" FromRole="hs_hr_db_version" ToRole="hs_hr_versions" />
+  </EntityType>
+  <EntityType Name="hs_hr_developer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" />
+    <Property Name="first_name" Type="String" />
+    <Property Name="last_name" Type="String" />
+    <Property Name="reports_to_id" Type="String" />
+    <Property Name="description" Type="String" />
+    <Property Name="department" Type="String" />
+  </EntityType>
+  <EntityType Name="hs_hr_district">
+    <Key>
+      <PropertyRef Name="district_code" />
+    </Key>
+    <Property Name="district_code" Type="String" Nullable="false" />
+    <Property Name="district_name" Type="String" />
+    <Property Name="province_code" Type="String" />
+  </EntityType>
+  <EntityType Name="hs_hr_education">
+    <Key>
+      <PropertyRef Name="edu_code" />
+    </Key>
+    <Property Name="edu_code" Type="String" Nullable="false" />
+    <Property Name="edu_uni" Type="String" />
+    <Property Name="edu_deg" Type="String" />
+    <NavigationProperty Name="hs_hr_emp_education" Relationship="hr_mysqlModel.hs_hr_emp_education_ibfk_2" FromRole="hs_hr_education" ToRole="hs_hr_emp_education" />
+  </EntityType>
+  <EntityType Name="hs_hr_eec">
+    <Key>
+      <PropertyRef Name="eec_code" />
+    </Key>
+    <Property Name="eec_code" Type="String" Nullable="false" />
+    <Property Name="eec_desc" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_6" FromRole="hs_hr_eec" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_attachment">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="eattach_id" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="eattach_id" Type="Decimal" Nullable="false" />
+    <Property Name="eattach_desc" Type="String" />
+    <Property Name="eattach_filename" Type="String" />
+    <Property Name="eattach_size" Type="Int32" />
+    <Property Name="eattach_attachment" Type="Binary" />
+    <Property Name="eattach_type" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_attachment_ibfk_1" FromRole="hs_hr_emp_attachment" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_basicsalary">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="sal_grd_code" />
+      <PropertyRef Name="currency_id" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="sal_grd_code" Type="String" Nullable="false" />
+    <Property Name="currency_id" Type="String" Nullable="false" />
+    <Property Name="ebsal_basic_salary" Type="String" />
+    <Property Name="payperiod_code" Type="String" />
+    <NavigationProperty Name="hs_hr_currency_type" Relationship="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_2" FromRole="hs_hr_emp_basicsalary" ToRole="hs_hr_currency_type" />
+    <NavigationProperty Name="hs_pr_salary_grade" Relationship="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_1" FromRole="hs_hr_emp_basicsalary" ToRole="hs_pr_salary_grade" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_3" FromRole="hs_hr_emp_basicsalary" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_payperiod" Relationship="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_4" FromRole="hs_hr_emp_basicsalary" ToRole="hs_hr_payperiod" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_children">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="ec_seqno" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="ec_seqno" Type="Decimal" Nullable="false" />
+    <Property Name="ec_name" Type="String" />
+    <Property Name="ec_date_of_birth" Type="DateTime" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_children_ibfk_1" FromRole="hs_hr_emp_children" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_contract_extend">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="econ_extend_id" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="econ_extend_id" Type="Decimal" Nullable="false" />
+    <Property Name="econ_extend_start_date" Type="DateTime" />
+    <Property Name="econ_extend_end_date" Type="DateTime" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_contract_extend_ibfk_1" FromRole="hs_hr_emp_contract_extend" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_dependents">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="ed_seqno" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="ed_seqno" Type="Decimal" Nullable="false" />
+    <Property Name="ed_name" Type="String" />
+    <Property Name="ed_relationship" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_dependents_ibfk_1" FromRole="hs_hr_emp_dependents" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_directdebit">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="dd_seqno" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="dd_seqno" Type="Decimal" Nullable="false" />
+    <Property Name="dd_routing_num" Type="Int32" Nullable="false" />
+    <Property Name="dd_account" Type="String" Nullable="false" />
+    <Property Name="dd_amount" Type="Decimal" Nullable="false" />
+    <Property Name="dd_account_type" Type="String" Nullable="false" />
+    <Property Name="dd_transaction_type" Type="String" Nullable="false" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_directdebit_ibfk_1" FromRole="hs_hr_emp_directdebit" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_education">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="edu_code" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="edu_code" Type="String" Nullable="false" />
+    <Property Name="edu_major" Type="String" />
+    <Property Name="edu_year" Type="Decimal" />
+    <Property Name="edu_gpa" Type="String" />
+    <Property Name="edu_start_date" Type="DateTime" />
+    <Property Name="edu_end_date" Type="DateTime" />
+    <NavigationProperty Name="hs_hr_education" Relationship="hr_mysqlModel.hs_hr_emp_education_ibfk_2" FromRole="hs_hr_emp_education" ToRole="hs_hr_education" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_education_ibfk_1" FromRole="hs_hr_emp_education" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_emergency_contacts">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="eec_seqno" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="eec_seqno" Type="Decimal" Nullable="false" />
+    <Property Name="eec_name" Type="String" />
+    <Property Name="eec_relationship" Type="String" />
+    <Property Name="eec_home_no" Type="String" />
+    <Property Name="eec_mobile_no" Type="String" />
+    <Property Name="eec_office_no" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_emergency_contacts_ibfk_1" FromRole="hs_hr_emp_emergency_contacts" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_history_of_ealier_pos">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="emp_seqno" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="emp_seqno" Type="Decimal" Nullable="false" />
+    <Property Name="ehoep_job_title" Type="String" />
+    <Property Name="ehoep_years" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_history_of_ealier_pos_ibfk_1" FromRole="hs_hr_emp_history_of_ealier_pos" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_jobtitle_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="start_date" Type="DateTime" />
+    <Property Name="end_date" Type="DateTime" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_jobtitle_history_ibfk_1" FromRole="hs_hr_emp_jobtitle_history" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_language">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="lang_code" />
+      <PropertyRef Name="elang_type" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="lang_code" Type="String" Nullable="false" />
+    <Property Name="elang_type" Type="Int16" Nullable="false" />
+    <Property Name="competency" Type="Int16" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_language_ibfk_1" FromRole="hs_hr_emp_language" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_language" Relationship="hr_mysqlModel.hs_hr_emp_language_ibfk_2" FromRole="hs_hr_emp_language" ToRole="hs_hr_language" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_licenses">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="licenses_code" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="licenses_code" Type="String" Nullable="false" />
+    <Property Name="licenses_date" Type="DateTime" />
+    <Property Name="licenses_renewal_date" Type="DateTime" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_licenses_ibfk_1" FromRole="hs_hr_emp_licenses" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_licenses" Relationship="hr_mysqlModel.hs_hr_emp_licenses_ibfk_2" FromRole="hs_hr_emp_licenses" ToRole="hs_hr_licenses" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_location_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="start_date" Type="DateTime" />
+    <Property Name="end_date" Type="DateTime" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_location_history_ibfk_1" FromRole="hs_hr_emp_location_history" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_member_detail">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="membship_code" />
+      <PropertyRef Name="membtype_code" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="membship_code" Type="String" Nullable="false" />
+    <Property Name="membtype_code" Type="String" Nullable="false" />
+    <Property Name="ememb_subscript_ownership" Type="String" />
+    <Property Name="ememb_subscript_amount" Type="Decimal" />
+    <Property Name="ememb_commence_date" Type="DateTime" />
+    <Property Name="ememb_renewal_date" Type="DateTime" />
+    <NavigationProperty Name="hs_hr_membership_type" Relationship="hr_mysqlModel.hs_hr_emp_member_detail_ibfk_1" FromRole="hs_hr_emp_member_detail" ToRole="hs_hr_membership_type" />
+    <NavigationProperty Name="hs_hr_membership" Relationship="hr_mysqlModel.hs_hr_emp_member_detail_ibfk_2" FromRole="hs_hr_emp_member_detail" ToRole="hs_hr_membership" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_member_detail_ibfk_3" FromRole="hs_hr_emp_member_detail" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_passport">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="ep_seqno" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="ep_seqno" Type="Decimal" Nullable="false" />
+    <Property Name="ep_passport_num" Type="String" Nullable="false" />
+    <Property Name="ep_passportissueddate" Type="DateTime" />
+    <Property Name="ep_passportexpiredate" Type="DateTime" />
+    <Property Name="ep_comments" Type="String" />
+    <Property Name="ep_passport_type_flg" Type="Int16" />
+    <Property Name="ep_i9_status" Type="String" />
+    <Property Name="ep_i9_review_date" Type="DateTime" />
+    <Property Name="cou_code" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_passport_ibfk_1" FromRole="hs_hr_emp_passport" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_picture">
+    <Key>
+      <PropertyRef Name="emp_number" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="epic_picture" Type="Binary" />
+    <Property Name="epic_filename" Type="String" />
+    <Property Name="epic_type" Type="String" />
+    <Property Name="epic_file_size" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_picture_ibfk_1" FromRole="hs_hr_emp_picture" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_reportto">
+    <Key>
+      <PropertyRef Name="erep_sup_emp_number" />
+      <PropertyRef Name="erep_sub_emp_number" />
+      <PropertyRef Name="erep_reporting_mode" />
+    </Key>
+    <Property Name="erep_sup_emp_number" Type="Int32" Nullable="false" />
+    <Property Name="erep_sub_emp_number" Type="Int32" Nullable="false" />
+    <Property Name="erep_reporting_mode" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_reportto_ibfk_1" FromRole="hs_hr_emp_reportto" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_employee1" Relationship="hr_mysqlModel.hs_hr_emp_reportto_ibfk_2" FromRole="hs_hr_emp_reportto" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_skill">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="skill_code" />
+      <PropertyRef Name="years_of_exp" />
+      <PropertyRef Name="comments" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="skill_code" Type="String" Nullable="false" />
+    <Property Name="years_of_exp" Type="Decimal" Nullable="false" />
+    <Property Name="comments" Type="String" Nullable="false" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_skill_ibfk_1" FromRole="hs_hr_emp_skill" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_skill" Relationship="hr_mysqlModel.hs_hr_emp_skill_ibfk_2" FromRole="hs_hr_emp_skill" ToRole="hs_hr_skill" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_subdivision_history">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="start_date" Type="DateTime" />
+    <Property Name="end_date" Type="DateTime" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_subdivision_history_ibfk_1" FromRole="hs_hr_emp_subdivision_history" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_us_tax">
+    <Key>
+      <PropertyRef Name="emp_number" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="tax_federal_status" Type="String" />
+    <Property Name="tax_federal_exceptions" Type="Int32" />
+    <Property Name="tax_state" Type="String" />
+    <Property Name="tax_state_status" Type="String" />
+    <Property Name="tax_state_exceptions" Type="Int32" />
+    <Property Name="tax_unemp_state" Type="String" />
+    <Property Name="tax_work_state" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_us_tax_ibfk_1" FromRole="hs_hr_emp_us_tax" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_emp_work_experience">
+    <Key>
+      <PropertyRef Name="emp_number" />
+      <PropertyRef Name="eexp_seqno" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="eexp_seqno" Type="Decimal" Nullable="false" />
+    <Property Name="eexp_employer" Type="String" />
+    <Property Name="eexp_jobtit" Type="String" />
+    <Property Name="eexp_from_date" Type="DateTime" />
+    <Property Name="eexp_to_date" Type="DateTime" />
+    <Property Name="eexp_comments" Type="String" />
+    <Property Name="eexp_internal" Type="Int32" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_work_experience_ibfk_1" FromRole="hs_hr_emp_work_experience" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_employee">
+    <Key>
+      <PropertyRef Name="emp_number" />
+    </Key>
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <Property Name="employee_id" Type="String" />
+    <Property Name="emp_lastname" Type="String" Nullable="false" />
+    <Property Name="emp_firstname" Type="String" Nullable="false" />
+    <Property Name="emp_middle_name" Type="String" Nullable="false" />
+    <Property Name="emp_nick_name" Type="String" />
+    <Property Name="emp_smoker" Type="Int16" />
+    <Property Name="ethnic_race_code" Type="String" />
+    <Property Name="emp_birthday" Type="DateTime" />
+    <Property Name="nation_code" Type="String" />
+    <Property Name="emp_gender" Type="Int16" />
+    <Property Name="emp_marital_status" Type="String" />
+    <Property Name="emp_ssn_num" Type="String" />
+    <Property Name="emp_sin_num" Type="String" />
+    <Property Name="emp_other_id" Type="String" />
+    <Property Name="emp_dri_lice_num" Type="String" />
+    <Property Name="emp_dri_lice_exp_date" Type="DateTime" />
+    <Property Name="emp_military_service" Type="String" />
+    <Property Name="emp_status" Type="String" />
+    <Property Name="job_title_code" Type="String" />
+    <Property Name="eeo_cat_code" Type="String" />
+    <Property Name="work_station" Type="Int32" />
+    <Property Name="emp_street1" Type="String" />
+    <Property Name="emp_street2" Type="String" />
+    <Property Name="city_code" Type="String" />
+    <Property Name="coun_code" Type="String" />
+    <Property Name="provin_code" Type="String" />
+    <Property Name="emp_zipcode" Type="String" />
+    <Property Name="emp_hm_telephone" Type="String" />
+    <Property Name="emp_mobile" Type="String" />
+    <Property Name="emp_work_telephone" Type="String" />
+    <Property Name="emp_work_email" Type="String" />
+    <Property Name="sal_grd_code" Type="String" />
+    <Property Name="joined_date" Type="DateTime" />
+    <Property Name="emp_oth_email" Type="String" />
+    <Property Name="terminated_date" Type="DateTime" />
+    <Property Name="termination_reason" Type="String" />
+    <Property Name="custom1" Type="String" />
+    <Property Name="custom2" Type="String" />
+    <Property Name="custom3" Type="String" />
+    <Property Name="custom4" Type="String" />
+    <Property Name="custom5" Type="String" />
+    <Property Name="custom6" Type="String" />
+    <Property Name="custom7" Type="String" />
+    <Property Name="custom8" Type="String" />
+    <Property Name="custom9" Type="String" />
+    <Property Name="custom10" Type="String" />
+    <NavigationProperty Name="hs_hr_compstructtree" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_compstructtree" />
+    <NavigationProperty Name="hs_hr_eec" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_6" FromRole="hs_hr_employee" ToRole="hs_hr_eec" />
+    <NavigationProperty Name="hs_hr_emp_attachment" Relationship="hr_mysqlModel.hs_hr_emp_attachment_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_attachment" />
+    <NavigationProperty Name="hs_hr_emp_basicsalary" Relationship="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_3" FromRole="hs_hr_employee" ToRole="hs_hr_emp_basicsalary" />
+    <NavigationProperty Name="hs_hr_emp_children" Relationship="hr_mysqlModel.hs_hr_emp_children_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_children" />
+    <NavigationProperty Name="hs_hr_emp_contract_extend" Relationship="hr_mysqlModel.hs_hr_emp_contract_extend_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_contract_extend" />
+    <NavigationProperty Name="hs_hr_emp_dependents" Relationship="hr_mysqlModel.hs_hr_emp_dependents_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_dependents" />
+    <NavigationProperty Name="hs_hr_emp_directdebit" Relationship="hr_mysqlModel.hs_hr_emp_directdebit_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_directdebit" />
+    <NavigationProperty Name="hs_hr_emp_education" Relationship="hr_mysqlModel.hs_hr_emp_education_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_education" />
+    <NavigationProperty Name="hs_hr_emp_emergency_contacts" Relationship="hr_mysqlModel.hs_hr_emp_emergency_contacts_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_emergency_contacts" />
+    <NavigationProperty Name="hs_hr_emp_history_of_ealier_pos" Relationship="hr_mysqlModel.hs_hr_emp_history_of_ealier_pos_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_history_of_ealier_pos" />
+    <NavigationProperty Name="hs_hr_emp_jobtitle_history" Relationship="hr_mysqlModel.hs_hr_emp_jobtitle_history_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_jobtitle_history" />
+    <NavigationProperty Name="hs_hr_emp_language" Relationship="hr_mysqlModel.hs_hr_emp_language_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_language" />
+    <NavigationProperty Name="hs_hr_emp_licenses" Relationship="hr_mysqlModel.hs_hr_emp_licenses_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_licenses" />
+    <NavigationProperty Name="hs_hr_emp_location_history" Relationship="hr_mysqlModel.hs_hr_emp_location_history_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_location_history" />
+    <NavigationProperty Name="hs_hr_emp_member_detail" Relationship="hr_mysqlModel.hs_hr_emp_member_detail_ibfk_3" FromRole="hs_hr_employee" ToRole="hs_hr_emp_member_detail" />
+    <NavigationProperty Name="hs_hr_emp_passport" Relationship="hr_mysqlModel.hs_hr_emp_passport_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_passport" />
+    <NavigationProperty Name="hs_hr_emp_picture" Relationship="hr_mysqlModel.hs_hr_emp_picture_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_picture" />
+    <NavigationProperty Name="hs_hr_emp_reportto" Relationship="hr_mysqlModel.hs_hr_emp_reportto_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_reportto" />
+    <NavigationProperty Name="hs_hr_emp_reportto1" Relationship="hr_mysqlModel.hs_hr_emp_reportto_ibfk_2" FromRole="hs_hr_employee" ToRole="hs_hr_emp_reportto" />
+    <NavigationProperty Name="hs_hr_emp_skill" Relationship="hr_mysqlModel.hs_hr_emp_skill_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_skill" />
+    <NavigationProperty Name="hs_hr_emp_subdivision_history" Relationship="hr_mysqlModel.hs_hr_emp_subdivision_history_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_subdivision_history" />
+    <NavigationProperty Name="hs_hr_emp_us_tax" Relationship="hr_mysqlModel.hs_hr_emp_us_tax_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_us_tax" />
+    <NavigationProperty Name="hs_hr_emp_work_experience" Relationship="hr_mysqlModel.hs_hr_emp_work_experience_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_emp_work_experience" />
+    <NavigationProperty Name="hs_hr_ethnic_race" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_2" FromRole="hs_hr_employee" ToRole="hs_hr_ethnic_race" />
+    <NavigationProperty Name="hs_hr_nationality" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_3" FromRole="hs_hr_employee" ToRole="hs_hr_nationality" />
+    <NavigationProperty Name="hs_hr_job_title" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_4" FromRole="hs_hr_employee" ToRole="hs_hr_job_title" />
+    <NavigationProperty Name="hs_hr_empstat" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_5" FromRole="hs_hr_employee" ToRole="hs_hr_empstat" />
+    <NavigationProperty Name="hs_hr_employee_leave_quota" Relationship="hr_mysqlModel.hs_hr_employee_leave_quota_ibfk_2" FromRole="hs_hr_employee" ToRole="hs_hr_employee_leave_quota" />
+    <NavigationProperty Name="hs_hr_hsp" Relationship="hr_mysqlModel.hs_hr_hsp_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_hsp" />
+    <NavigationProperty Name="hs_hr_hsp_payment_request" Relationship="hr_mysqlModel.hs_hr_hsp_payment_request_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_hsp_payment_request" />
+    <NavigationProperty Name="hs_hr_job_application_events" Relationship="hr_mysqlModel.hs_hr_job_application_events_ibfk_3" FromRole="hs_hr_employee" ToRole="hs_hr_job_application_events" />
+    <NavigationProperty Name="hs_hr_job_vacancy" Relationship="hr_mysqlModel.hs_hr_job_vacancy_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_job_vacancy" />
+    <NavigationProperty Name="hs_hr_leave_requests" Relationship="hr_mysqlModel.hs_hr_leave_requests_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_leave_requests" />
+    <NavigationProperty Name="hs_hr_project_admin" Relationship="hr_mysqlModel.hs_hr_project_admin_ibfk_2" FromRole="hs_hr_employee" ToRole="hs_hr_project_admin" />
+    <NavigationProperty Name="hs_hr_time_event" Relationship="hr_mysqlModel.hs_hr_time_event_ibfk_4" FromRole="hs_hr_employee" ToRole="hs_hr_time_event" />
+    <NavigationProperty Name="hs_hr_timesheet" Relationship="hr_mysqlModel.hs_hr_timesheet_ibfk_1" FromRole="hs_hr_employee" ToRole="hs_hr_timesheet" />
+    <NavigationProperty Name="hs_hr_users" Relationship="hr_mysqlModel.hs_hr_users_ibfk_4" FromRole="hs_hr_employee" ToRole="hs_hr_users" />
+    <NavigationProperty Name="hs_hr_location" Relationship="hr_mysqlModel.hs_hr_emp_locations" FromRole="hs_hr_employee" ToRole="hs_hr_location" />
+    <NavigationProperty Name="hs_hr_timesheet_submission_period" Relationship="hr_mysqlModel.hs_hr_employee_timesheet_period" FromRole="hs_hr_employee" ToRole="hs_hr_timesheet_submission_period" />
+    <NavigationProperty Name="hs_hr_workshift" Relationship="hr_mysqlModel.hs_hr_employee_workshift" FromRole="hs_hr_employee" ToRole="hs_hr_workshift" />
+  </EntityType>
+  <EntityType Name="hs_hr_employee_leave_quota">
+    <Key>
+      <PropertyRef Name="year" />
+      <PropertyRef Name="leave_type_id" />
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="year" Type="Int16" Nullable="false" />
+    <Property Name="leave_type_id" Type="String" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="no_of_days_allotted" Type="Decimal" />
+    <Property Name="leave_taken" Type="Decimal" />
+    <Property Name="leave_brought_forward" Type="Decimal" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_employee_leave_quota_ibfk_2" FromRole="hs_hr_employee_leave_quota" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_leavetype" Relationship="hr_mysqlModel.hs_hr_employee_leave_quota_ibfk_1" FromRole="hs_hr_employee_leave_quota" ToRole="hs_hr_leavetype" />
+  </EntityType>
+  <EntityType Name="hs_hr_empreport">
+    <Key>
+      <PropertyRef Name="rep_code" />
+    </Key>
+    <Property Name="rep_code" Type="String" Nullable="false" />
+    <Property Name="rep_name" Type="String" />
+    <Property Name="rep_cridef_str" Type="String" />
+    <Property Name="rep_flddef_str" Type="String" />
+    <NavigationProperty Name="hs_hr_user_group" Relationship="hr_mysqlModel.hs_hr_emprep_usergroup" FromRole="hs_hr_empreport" ToRole="hs_hr_user_group" />
+  </EntityType>
+  <EntityType Name="hs_hr_empstat">
+    <Key>
+      <PropertyRef Name="estat_code" />
+    </Key>
+    <Property Name="estat_code" Type="String" Nullable="false" />
+    <Property Name="estat_name" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_5" FromRole="hs_hr_empstat" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_job_title" Relationship="hr_mysqlModel.hs_hr_jobtit_empstat" FromRole="hs_hr_empstat" ToRole="hs_hr_job_title" />
+  </EntityType>
+  <EntityType Name="hs_hr_ethnic_race">
+    <Key>
+      <PropertyRef Name="ethnic_race_code" />
+    </Key>
+    <Property Name="ethnic_race_code" Type="String" Nullable="false" />
+    <Property Name="ethnic_race_desc" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_2" FromRole="hs_hr_ethnic_race" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_file_version">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" />
+    <Property Name="altered_module" Type="String" />
+    <Property Name="description" Type="String" />
+    <Property Name="entered_date" Type="DateTime" />
+    <Property Name="modified_date" Type="DateTime" />
+    <Property Name="entered_by" Type="String" />
+    <Property Name="modified_by" Type="String" />
+    <Property Name="name" Type="String" />
+    <NavigationProperty Name="hs_hr_module" Relationship="hr_mysqlModel.hs_hr_file_version_ibfk_1" FromRole="hs_hr_file_version" ToRole="hs_hr_module" />
+    <NavigationProperty Name="hs_hr_users" Relationship="hr_mysqlModel.hs_hr_file_version_ibfk_2" FromRole="hs_hr_file_version" ToRole="hs_hr_users" />
+    <NavigationProperty Name="hs_hr_users1" Relationship="hr_mysqlModel.hs_hr_file_version_ibfk_3" FromRole="hs_hr_file_version" ToRole="hs_hr_users" />
+    <NavigationProperty Name="hs_hr_versions" Relationship="hr_mysqlModel.hs_hr_versions_ibfk_4" FromRole="hs_hr_file_version" ToRole="hs_hr_versions" />
+  </EntityType>
+  <EntityType Name="hs_hr_geninfo">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="String" Nullable="false" />
+    <Property Name="geninfo_keys" Type="String" />
+    <Property Name="geninfo_values" Type="String" />
+  </EntityType>
+  <EntityType Name="hs_hr_holidays">
+    <Key>
+      <PropertyRef Name="holiday_id" />
+    </Key>
+    <Property Name="holiday_id" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" />
+    <Property Name="date" Type="DateTime" />
+    <Property Name="recurring" Type="Boolean" />
+    <Property Name="length" Type="Int32" />
+  </EntityType>
+  <EntityType Name="hs_hr_hsp">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="benefit_year" Type="DateTime" />
+    <Property Name="hsp_value" Type="Decimal" Nullable="false" />
+    <Property Name="total_acrued" Type="Decimal" Nullable="false" />
+    <Property Name="accrued_last_updated" Type="DateTime" />
+    <Property Name="amount_per_day" Type="Decimal" Nullable="false" />
+    <Property Name="edited_status" Type="SByte" />
+    <Property Name="termination_date" Type="DateTime" />
+    <Property Name="halted" Type="SByte" />
+    <Property Name="halted_date" Type="DateTime" />
+    <Property Name="terminated" Type="SByte" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_hsp_ibfk_1" FromRole="hs_hr_hsp" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_hsp_payment_request">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="hsp_id" Type="Int32" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="date_incurred" Type="DateTime" Nullable="false" />
+    <Property Name="provider_name" Type="String" />
+    <Property Name="person_incurring_expense" Type="String" />
+    <Property Name="expense_description" Type="String" />
+    <Property Name="expense_amount" Type="Decimal" Nullable="false" />
+    <Property Name="payment_made_to" Type="String" />
+    <Property Name="third_party_account_number" Type="String" />
+    <Property Name="mail_address" Type="String" />
+    <Property Name="comments" Type="String" />
+    <Property Name="date_paid" Type="DateTime" />
+    <Property Name="check_number" Type="String" />
+    <Property Name="status" Type="SByte" />
+    <Property Name="hr_notes" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_hsp_payment_request_ibfk_1" FromRole="hs_hr_hsp_payment_request" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_hsp_summary">
+    <Key>
+      <PropertyRef Name="summary_id" />
+    </Key>
+    <Property Name="summary_id" Type="Int32" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="hsp_plan_id" Type="SByte" Nullable="false" />
+    <Property Name="hsp_plan_year" Type="Int32" Nullable="false" />
+    <Property Name="hsp_plan_status" Type="SByte" Nullable="false" />
+    <Property Name="annual_limit" Type="Decimal" Nullable="false" />
+    <Property Name="employer_amount" Type="Decimal" Nullable="false" />
+    <Property Name="employee_amount" Type="Decimal" Nullable="false" />
+    <Property Name="total_accrued" Type="Decimal" Nullable="false" />
+    <Property Name="total_used" Type="Decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="hs_hr_job_application">
+    <Key>
+      <PropertyRef Name="application_id" />
+    </Key>
+    <Property Name="application_id" Type="Int32" Nullable="false" />
+    <Property Name="vacancy_id" Type="Int32" Nullable="false" />
+    <Property Name="lastname" Type="String" Nullable="false" />
+    <Property Name="firstname" Type="String" Nullable="false" />
+    <Property Name="middlename" Type="String" Nullable="false" />
+    <Property Name="street1" Type="String" />
+    <Property Name="street2" Type="String" />
+    <Property Name="city" Type="String" />
+    <Property Name="country_code" Type="String" />
+    <Property Name="province" Type="String" />
+    <Property Name="zip" Type="String" />
+    <Property Name="phone" Type="String" />
+    <Property Name="mobile" Type="String" />
+    <Property Name="email" Type="String" />
+    <Property Name="qualifications" Type="String" />
+    <Property Name="status" Type="Int16" />
+    <Property Name="applied_datetime" Type="DateTime" />
+    <Property Name="emp_number" Type="Int32" />
+    <Property Name="resume_name" Type="String" />
+    <Property Name="resume_data" Type="Binary" />
+    <NavigationProperty Name="hs_hr_job_application_events" Relationship="hr_mysqlModel.hs_hr_job_application_events_ibfk_1" FromRole="hs_hr_job_application" ToRole="hs_hr_job_application_events" />
+    <NavigationProperty Name="hs_hr_job_vacancy" Relationship="hr_mysqlModel.hs_hr_job_application_ibfk_1" FromRole="hs_hr_job_application" ToRole="hs_hr_job_vacancy" />
+  </EntityType>
+  <EntityType Name="hs_hr_job_application_events">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="application_id" Type="Int32" Nullable="false" />
+    <Property Name="created_time" Type="DateTime" />
+    <Property Name="created_by" Type="String" />
+    <Property Name="owner" Type="Int32" />
+    <Property Name="event_time" Type="DateTime" />
+    <Property Name="event_type" Type="Int16" />
+    <Property Name="status" Type="Int16" />
+    <Property Name="notes" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_job_application_events_ibfk_3" FromRole="hs_hr_job_application_events" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_job_application" Relationship="hr_mysqlModel.hs_hr_job_application_events_ibfk_1" FromRole="hs_hr_job_application_events" ToRole="hs_hr_job_application" />
+    <NavigationProperty Name="hs_hr_users" Relationship="hr_mysqlModel.hs_hr_job_application_events_ibfk_2" FromRole="hs_hr_job_application_events" ToRole="hs_hr_users" />
+  </EntityType>
+  <EntityType Name="hs_hr_job_spec">
+    <Key>
+      <PropertyRef Name="jobspec_id" />
+    </Key>
+    <Property Name="jobspec_id" Type="Int32" Nullable="false" />
+    <Property Name="jobspec_name" Type="String" />
+    <Property Name="jobspec_desc" Type="String" />
+    <Property Name="jobspec_duties" Type="String" />
+    <NavigationProperty Name="hs_hr_job_title" Relationship="hr_mysqlModel.hs_hr_job_title_ibfk_2" FromRole="hs_hr_job_spec" ToRole="hs_hr_job_title" />
+  </EntityType>
+  <EntityType Name="hs_hr_job_title">
+    <Key>
+      <PropertyRef Name="jobtit_code" />
+    </Key>
+    <Property Name="jobtit_code" Type="String" Nullable="false" />
+    <Property Name="jobtit_name" Type="String" />
+    <Property Name="jobtit_desc" Type="String" />
+    <Property Name="jobtit_comm" Type="String" />
+    <Property Name="sal_grd_code" Type="String" />
+    <Property Name="jobspec_id" Type="Int32" />
+    <Property Name="is_active" Type="SByte" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_4" FromRole="hs_hr_job_title" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_job_spec" Relationship="hr_mysqlModel.hs_hr_job_title_ibfk_2" FromRole="hs_hr_job_title" ToRole="hs_hr_job_spec" />
+    <NavigationProperty Name="hs_pr_salary_grade" Relationship="hr_mysqlModel.hs_hr_job_title_ibfk_1" FromRole="hs_hr_job_title" ToRole="hs_pr_salary_grade" />
+    <NavigationProperty Name="hs_hr_job_vacancy" Relationship="hr_mysqlModel.hs_hr_job_vacancy_ibfk_2" FromRole="hs_hr_job_title" ToRole="hs_hr_job_vacancy" />
+    <NavigationProperty Name="hs_hr_empstat" Relationship="hr_mysqlModel.hs_hr_jobtit_empstat" FromRole="hs_hr_job_title" ToRole="hs_hr_empstat" />
+  </EntityType>
+  <EntityType Name="hs_hr_job_vacancy">
+    <Key>
+      <PropertyRef Name="vacancy_id" />
+    </Key>
+    <Property Name="vacancy_id" Type="Int32" Nullable="false" />
+    <Property Name="jobtit_code" Type="String" />
+    <Property Name="manager_id" Type="Int32" />
+    <Property Name="active" Type="Boolean" Nullable="false" />
+    <Property Name="description" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_job_vacancy_ibfk_1" FromRole="hs_hr_job_vacancy" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_job_application" Relationship="hr_mysqlModel.hs_hr_job_application_ibfk_1" FromRole="hs_hr_job_vacancy" ToRole="hs_hr_job_application" />
+    <NavigationProperty Name="hs_hr_job_title" Relationship="hr_mysqlModel.hs_hr_job_vacancy_ibfk_2" FromRole="hs_hr_job_vacancy" ToRole="hs_hr_job_title" />
+  </EntityType>
+  <EntityType Name="hs_hr_kpi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="job_title_code" Type="String" />
+    <Property Name="description" Type="String" />
+    <Property Name="rate_min" Type="Double" />
+    <Property Name="rate_max" Type="Double" />
+    <Property Name="rate_default" Type="SByte" />
+    <Property Name="is_active" Type="SByte" />
+  </EntityType>
+  <EntityType Name="hs_hr_language">
+    <Key>
+      <PropertyRef Name="lang_code" />
+    </Key>
+    <Property Name="lang_code" Type="String" Nullable="false" />
+    <Property Name="lang_name" Type="String" />
+    <NavigationProperty Name="hs_hr_emp_language" Relationship="hr_mysqlModel.hs_hr_emp_language_ibfk_2" FromRole="hs_hr_language" ToRole="hs_hr_emp_language" />
+  </EntityType>
+  <EntityType Name="hs_hr_leave">
+    <Key>
+      <PropertyRef Name="leave_id" />
+      <PropertyRef Name="leave_request_id" />
+      <PropertyRef Name="leave_type_id" />
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="leave_id" Type="Int32" Nullable="false" />
+    <Property Name="leave_date" Type="DateTime" />
+    <Property Name="leave_status" Type="Int16" />
+    <Property Name="leave_comments" Type="String" />
+    <Property Name="leave_request_id" Type="Int32" Nullable="false" />
+    <Property Name="leave_type_id" Type="String" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="start_time" Type="Time" />
+    <Property Name="end_time" Type="Time" />
+    <NavigationProperty Name="hs_hr_leave_requests" Relationship="hr_mysqlModel.hs_hr_leave_ibfk_1" FromRole="hs_hr_leave" ToRole="hs_hr_leave_requests" />
+  </EntityType>
+  <EntityType Name="hs_hr_leave_requests">
+    <Key>
+      <PropertyRef Name="leave_request_id" />
+      <PropertyRef Name="leave_type_id" />
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="leave_request_id" Type="Int32" Nullable="false" />
+    <Property Name="leave_type_id" Type="String" Nullable="false" />
+    <Property Name="leave_type_name" Type="String" />
+    <Property Name="date_applied" Type="DateTime" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_leave_requests_ibfk_1" FromRole="hs_hr_leave_requests" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_leave" Relationship="hr_mysqlModel.hs_hr_leave_ibfk_1" FromRole="hs_hr_leave_requests" ToRole="hs_hr_leave" />
+    <NavigationProperty Name="hs_hr_leavetype" Relationship="hr_mysqlModel.hs_hr_leave_requests_ibfk_2" FromRole="hs_hr_leave_requests" ToRole="hs_hr_leavetype" />
+  </EntityType>
+  <EntityType Name="hs_hr_leavetype">
+    <Key>
+      <PropertyRef Name="leave_type_id" />
+    </Key>
+    <Property Name="leave_type_id" Type="String" Nullable="false" />
+    <Property Name="leave_type_name" Type="String" />
+    <Property Name="available_flag" Type="Int16" />
+    <NavigationProperty Name="hs_hr_employee_leave_quota" Relationship="hr_mysqlModel.hs_hr_employee_leave_quota_ibfk_1" FromRole="hs_hr_leavetype" ToRole="hs_hr_employee_leave_quota" />
+    <NavigationProperty Name="hs_hr_leave_requests" Relationship="hr_mysqlModel.hs_hr_leave_requests_ibfk_2" FromRole="hs_hr_leavetype" ToRole="hs_hr_leave_requests" />
+  </EntityType>
+  <EntityType Name="hs_hr_licenses">
+    <Key>
+      <PropertyRef Name="licenses_code" />
+    </Key>
+    <Property Name="licenses_code" Type="String" Nullable="false" />
+    <Property Name="licenses_desc" Type="String" />
+    <NavigationProperty Name="hs_hr_emp_licenses" Relationship="hr_mysqlModel.hs_hr_emp_licenses_ibfk_2" FromRole="hs_hr_licenses" ToRole="hs_hr_emp_licenses" />
+  </EntityType>
+  <EntityType Name="hs_hr_location">
+    <Key>
+      <PropertyRef Name="loc_code" />
+    </Key>
+    <Property Name="loc_code" Type="String" Nullable="false" />
+    <Property Name="loc_name" Type="String" />
+    <Property Name="loc_country" Type="String" />
+    <Property Name="loc_state" Type="String" />
+    <Property Name="loc_city" Type="String" />
+    <Property Name="loc_add" Type="String" />
+    <Property Name="loc_zip" Type="String" />
+    <Property Name="loc_phone" Type="String" />
+    <Property Name="loc_fax" Type="String" />
+    <Property Name="loc_comments" Type="String" />
+    <NavigationProperty Name="hs_hr_compstructtree" Relationship="hr_mysqlModel.hs_hr_compstructtree_ibfk_1" FromRole="hs_hr_location" ToRole="hs_hr_compstructtree" />
+    <NavigationProperty Name="hs_hr_country" Relationship="hr_mysqlModel.hs_hr_location_ibfk_1" FromRole="hs_hr_location" ToRole="hs_hr_country" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_emp_locations" FromRole="hs_hr_location" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_mailnotifications">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="notification_type_id" />
+      <PropertyRef Name="status" />
+    </Key>
+    <Property Name="user_id" Type="String" Nullable="false" />
+    <Property Name="notification_type_id" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="hs_hr_users" Relationship="hr_mysqlModel.hs_hr_mailnotifications_ibfk_1" FromRole="hs_hr_mailnotifications" ToRole="hs_hr_users" />
+  </EntityType>
+  <EntityType Name="hs_hr_membership">
+    <Key>
+      <PropertyRef Name="membship_code" />
+    </Key>
+    <Property Name="membship_code" Type="String" Nullable="false" />
+    <Property Name="membtype_code" Type="String" />
+    <Property Name="membship_name" Type="String" />
+    <NavigationProperty Name="hs_hr_emp_member_detail" Relationship="hr_mysqlModel.hs_hr_emp_member_detail_ibfk_2" FromRole="hs_hr_membership" ToRole="hs_hr_emp_member_detail" />
+    <NavigationProperty Name="hs_hr_membership_type" Relationship="hr_mysqlModel.hs_hr_membership_ibfk_1" FromRole="hs_hr_membership" ToRole="hs_hr_membership_type" />
+  </EntityType>
+  <EntityType Name="hs_hr_membership_type">
+    <Key>
+      <PropertyRef Name="membtype_code" />
+    </Key>
+    <Property Name="membtype_code" Type="String" Nullable="false" />
+    <Property Name="membtype_name" Type="String" />
+    <NavigationProperty Name="hs_hr_emp_member_detail" Relationship="hr_mysqlModel.hs_hr_emp_member_detail_ibfk_1" FromRole="hs_hr_membership_type" ToRole="hs_hr_emp_member_detail" />
+    <NavigationProperty Name="hs_hr_membership" Relationship="hr_mysqlModel.hs_hr_membership_ibfk_1" FromRole="hs_hr_membership_type" ToRole="hs_hr_membership" />
+  </EntityType>
+  <EntityType Name="hs_hr_module">
+    <Key>
+      <PropertyRef Name="mod_id" />
+    </Key>
+    <Property Name="mod_id" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="owner" Type="String" />
+    <Property Name="owner_email" Type="String" />
+    <Property Name="version" Type="String" />
+    <Property Name="description" Type="String" />
+    <NavigationProperty Name="hs_hr_file_version" Relationship="hr_mysqlModel.hs_hr_file_version_ibfk_1" FromRole="hs_hr_module" ToRole="hs_hr_file_version" />
+    <NavigationProperty Name="hs_hr_versions" Relationship="hr_mysqlModel.hs_hr_module_ibfk_1" FromRole="hs_hr_module" ToRole="hs_hr_versions" />
+    <NavigationProperty Name="hs_hr_rights" Relationship="hr_mysqlModel.hs_hr_rights_ibfk_1" FromRole="hs_hr_module" ToRole="hs_hr_rights" />
+  </EntityType>
+  <EntityType Name="hs_hr_nationality">
+    <Key>
+      <PropertyRef Name="nat_code" />
+    </Key>
+    <Property Name="nat_code" Type="String" Nullable="false" />
+    <Property Name="nat_name" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_employee_ibfk_3" FromRole="hs_hr_nationality" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_pay_period">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="start_date" Type="DateTime" Nullable="false" />
+    <Property Name="end_date" Type="DateTime" Nullable="false" />
+    <Property Name="close_date" Type="DateTime" Nullable="false" />
+    <Property Name="check_date" Type="DateTime" Nullable="false" />
+    <Property Name="timesheet_aproval_due_date" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="hs_hr_payperiod">
+    <Key>
+      <PropertyRef Name="payperiod_code" />
+    </Key>
+    <Property Name="payperiod_code" Type="String" Nullable="false" />
+    <Property Name="payperiod_name" Type="String" />
+    <NavigationProperty Name="hs_hr_emp_basicsalary" Relationship="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_4" FromRole="hs_hr_payperiod" ToRole="hs_hr_emp_basicsalary" />
+  </EntityType>
+  <EntityType Name="hs_hr_performance_review">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="reviewer_id" Type="Int32" Nullable="false" />
+    <Property Name="creator_id" Type="String" />
+    <Property Name="job_title_code" Type="String" Nullable="false" />
+    <Property Name="sub_division_id" Type="Int32" />
+    <Property Name="creation_date" Type="DateTime" Nullable="false" />
+    <Property Name="period_from" Type="DateTime" Nullable="false" />
+    <Property Name="period_to" Type="DateTime" Nullable="false" />
+    <Property Name="due_date" Type="DateTime" Nullable="false" />
+    <Property Name="state" Type="SByte" />
+    <Property Name="kpis" Type="String" />
+  </EntityType>
+  <EntityType Name="hs_hr_performance_review_comments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pr_id" Type="Int32" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" />
+    <Property Name="comment" Type="String" />
+    <Property Name="create_date" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="hs_hr_project">
+    <Key>
+      <PropertyRef Name="project_id" />
+      <PropertyRef Name="customer_id" />
+    </Key>
+    <Property Name="project_id" Type="Int32" Nullable="false" />
+    <Property Name="customer_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="description" Type="String" />
+    <Property Name="deleted" Type="Boolean" />
+    <NavigationProperty Name="hs_hr_customer" Relationship="hr_mysqlModel.hs_hr_project_ibfk_1" FromRole="hs_hr_project" ToRole="hs_hr_customer" />
+  </EntityType>
+  <EntityType Name="hs_hr_project_activity">
+    <Key>
+      <PropertyRef Name="activity_id" />
+    </Key>
+    <Property Name="activity_id" Type="Int32" Nullable="false" />
+    <Property Name="project_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="deleted" Type="Boolean" />
+    <NavigationProperty Name="hs_hr_time_event" Relationship="hr_mysqlModel.hs_hr_time_event_ibfk_2" FromRole="hs_hr_project_activity" ToRole="hs_hr_time_event" />
+  </EntityType>
+  <EntityType Name="hs_hr_project_admin">
+    <Key>
+      <PropertyRef Name="project_id" />
+      <PropertyRef Name="emp_number" />
+    </Key>
+    <Property Name="project_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_number" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_project_admin_ibfk_2" FromRole="hs_hr_project_admin" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_province">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="province_name" Type="String" Nullable="false" />
+    <Property Name="province_code" Type="String" Nullable="false" />
+    <Property Name="cou_code" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="hs_hr_rights">
+    <Key>
+      <PropertyRef Name="userg_id" />
+      <PropertyRef Name="mod_id" />
+    </Key>
+    <Property Name="userg_id" Type="String" Nullable="false" />
+    <Property Name="mod_id" Type="String" Nullable="false" />
+    <Property Name="addition" Type="Int32" />
+    <Property Name="editing" Type="Int32" />
+    <Property Name="deletion" Type="Int32" />
+    <Property Name="viewing" Type="Int32" />
+    <NavigationProperty Name="hs_hr_module" Relationship="hr_mysqlModel.hs_hr_rights_ibfk_1" FromRole="hs_hr_rights" ToRole="hs_hr_module" />
+    <NavigationProperty Name="hs_hr_user_group" Relationship="hr_mysqlModel.hs_hr_rights_ibfk_2" FromRole="hs_hr_rights" ToRole="hs_hr_user_group" />
+  </EntityType>
+  <EntityType Name="hs_hr_skill">
+    <Key>
+      <PropertyRef Name="skill_code" />
+    </Key>
+    <Property Name="skill_code" Type="String" Nullable="false" />
+    <Property Name="skill_name" Type="String" />
+    <Property Name="skill_description" Type="String" />
+    <NavigationProperty Name="hs_hr_emp_skill" Relationship="hr_mysqlModel.hs_hr_emp_skill_ibfk_2" FromRole="hs_hr_skill" ToRole="hs_hr_emp_skill" />
+  </EntityType>
+  <EntityType Name="hs_hr_time_event">
+    <Key>
+      <PropertyRef Name="time_event_id" />
+      <PropertyRef Name="project_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="timesheet_id" />
+    </Key>
+    <Property Name="time_event_id" Type="Int32" Nullable="false" />
+    <Property Name="project_id" Type="Int32" Nullable="false" />
+    <Property Name="activity_id" Type="Int32" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="timesheet_id" Type="Int32" Nullable="false" />
+    <Property Name="start_time" Type="DateTime" />
+    <Property Name="end_time" Type="DateTime" />
+    <Property Name="reported_date" Type="DateTime" />
+    <Property Name="duration" Type="Int32" />
+    <Property Name="description" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_time_event_ibfk_4" FromRole="hs_hr_time_event" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_project_activity" Relationship="hr_mysqlModel.hs_hr_time_event_ibfk_2" FromRole="hs_hr_time_event" ToRole="hs_hr_project_activity" />
+  </EntityType>
+  <EntityType Name="hs_hr_timesheet">
+    <Key>
+      <PropertyRef Name="timesheet_id" />
+      <PropertyRef Name="employee_id" />
+      <PropertyRef Name="timesheet_period_id" />
+    </Key>
+    <Property Name="timesheet_id" Type="Int32" Nullable="false" />
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="timesheet_period_id" Type="Int32" Nullable="false" />
+    <Property Name="start_date" Type="DateTime" />
+    <Property Name="end_date" Type="DateTime" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="comment" Type="String" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_timesheet_ibfk_1" FromRole="hs_hr_timesheet" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_timesheet_submission_period" Relationship="hr_mysqlModel.hs_hr_timesheet_ibfk_2" FromRole="hs_hr_timesheet" ToRole="hs_hr_timesheet_submission_period" />
+  </EntityType>
+  <EntityType Name="hs_hr_timesheet_submission_period">
+    <Key>
+      <PropertyRef Name="timesheet_period_id" />
+    </Key>
+    <Property Name="timesheet_period_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="frequency" Type="Int32" Nullable="false" />
+    <Property Name="period" Type="Int32" />
+    <Property Name="start_day" Type="Int32" />
+    <Property Name="end_day" Type="Int32" />
+    <Property Name="description" Type="String" />
+    <NavigationProperty Name="hs_hr_timesheet" Relationship="hr_mysqlModel.hs_hr_timesheet_ibfk_2" FromRole="hs_hr_timesheet_submission_period" ToRole="hs_hr_timesheet" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_employee_timesheet_period" FromRole="hs_hr_timesheet_submission_period" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_hr_unique_id">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="last_id" Type="Int64" Nullable="false" />
+    <Property Name="table_name" Type="String" Nullable="false" />
+    <Property Name="field_name" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="hs_hr_user_group">
+    <Key>
+      <PropertyRef Name="userg_id" />
+    </Key>
+    <Property Name="userg_id" Type="String" Nullable="false" />
+    <Property Name="userg_name" Type="String" />
+    <Property Name="userg_repdef" Type="Int32" />
+    <NavigationProperty Name="hs_hr_rights" Relationship="hr_mysqlModel.hs_hr_rights_ibfk_2" FromRole="hs_hr_user_group" ToRole="hs_hr_rights" />
+    <NavigationProperty Name="hs_hr_users" Relationship="hr_mysqlModel.hs_hr_users_ibfk_3" FromRole="hs_hr_user_group" ToRole="hs_hr_users" />
+    <NavigationProperty Name="hs_hr_empreport" Relationship="hr_mysqlModel.hs_hr_emprep_usergroup" FromRole="hs_hr_user_group" ToRole="hs_hr_empreport" />
+  </EntityType>
+  <EntityType Name="hs_hr_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" />
+    <Property Name="user_name" Type="String" />
+    <Property Name="user_password" Type="String" />
+    <Property Name="first_name" Type="String" />
+    <Property Name="last_name" Type="String" />
+    <Property Name="emp_number" Type="Int32" />
+    <Property Name="user_hash" Type="String" />
+    <Property Name="is_admin" Type="String" />
+    <Property Name="receive_notification" Type="String" />
+    <Property Name="description" Type="String" />
+    <Property Name="date_entered" Type="DateTime" />
+    <Property Name="date_modified" Type="DateTime" />
+    <Property Name="modified_user_id" Type="String" />
+    <Property Name="created_by" Type="String" />
+    <Property Name="title" Type="String" />
+    <Property Name="department" Type="String" />
+    <Property Name="phone_home" Type="String" />
+    <Property Name="phone_mobile" Type="String" />
+    <Property Name="phone_work" Type="String" />
+    <Property Name="phone_other" Type="String" />
+    <Property Name="phone_fax" Type="String" />
+    <Property Name="email1" Type="String" />
+    <Property Name="email2" Type="String" />
+    <Property Name="status" Type="String" />
+    <Property Name="address_street" Type="String" />
+    <Property Name="address_city" Type="String" />
+    <Property Name="address_state" Type="String" />
+    <Property Name="address_country" Type="String" />
+    <Property Name="address_postalcode" Type="String" />
+    <Property Name="user_preferences" Type="String" />
+    <Property Name="deleted" Type="Boolean" Nullable="false" />
+    <Property Name="employee_status" Type="String" />
+    <Property Name="userg_id" Type="String" />
+    <NavigationProperty Name="hs_hr_db_version" Relationship="hr_mysqlModel.hs_hr_db_version_ibfk_1" FromRole="hs_hr_users" ToRole="hs_hr_db_version" />
+    <NavigationProperty Name="hs_hr_db_version1" Relationship="hr_mysqlModel.hs_hr_db_version_ibfk_2" FromRole="hs_hr_users" ToRole="hs_hr_db_version" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_users_ibfk_4" FromRole="hs_hr_users" ToRole="hs_hr_employee" />
+    <NavigationProperty Name="hs_hr_file_version" Relationship="hr_mysqlModel.hs_hr_file_version_ibfk_2" FromRole="hs_hr_users" ToRole="hs_hr_file_version" />
+    <NavigationProperty Name="hs_hr_file_version1" Relationship="hr_mysqlModel.hs_hr_file_version_ibfk_3" FromRole="hs_hr_users" ToRole="hs_hr_file_version" />
+    <NavigationProperty Name="hs_hr_job_application_events" Relationship="hr_mysqlModel.hs_hr_job_application_events_ibfk_2" FromRole="hs_hr_users" ToRole="hs_hr_job_application_events" />
+    <NavigationProperty Name="hs_hr_mailnotifications" Relationship="hr_mysqlModel.hs_hr_mailnotifications_ibfk_1" FromRole="hs_hr_users" ToRole="hs_hr_mailnotifications" />
+    <NavigationProperty Name="hs_hr_user_group" Relationship="hr_mysqlModel.hs_hr_users_ibfk_3" FromRole="hs_hr_users" ToRole="hs_hr_user_group" />
+    <NavigationProperty Name="hs_hr_users1" Relationship="hr_mysqlModel.hs_hr_users_ibfk_1" FromRole="hs_hr_users" ToRole="hs_hr_users1" />
+    <NavigationProperty Name="hs_hr_users2" Relationship="hr_mysqlModel.hs_hr_users_ibfk_1" FromRole="hs_hr_users1" ToRole="hs_hr_users" />
+    <NavigationProperty Name="hs_hr_users11" Relationship="hr_mysqlModel.hs_hr_users_ibfk_2" FromRole="hs_hr_users" ToRole="hs_hr_users1" />
+    <NavigationProperty Name="hs_hr_users3" Relationship="hr_mysqlModel.hs_hr_users_ibfk_2" FromRole="hs_hr_users1" ToRole="hs_hr_users" />
+    <NavigationProperty Name="hs_hr_versions" Relationship="hr_mysqlModel.hs_hr_versions_ibfk_1" FromRole="hs_hr_users" ToRole="hs_hr_versions" />
+    <NavigationProperty Name="hs_hr_versions1" Relationship="hr_mysqlModel.hs_hr_versions_ibfk_2" FromRole="hs_hr_users" ToRole="hs_hr_versions" />
+  </EntityType>
+  <EntityType Name="hs_hr_versions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" />
+    <Property Name="entered_date" Type="DateTime" />
+    <Property Name="modified_date" Type="DateTime" />
+    <Property Name="modified_by" Type="String" />
+    <Property Name="created_by" Type="String" />
+    <Property Name="deleted" Type="SByte" Nullable="false" />
+    <Property Name="db_version" Type="String" />
+    <Property Name="file_version" Type="String" />
+    <Property Name="description" Type="String" />
+    <NavigationProperty Name="hs_hr_db_version" Relationship="hr_mysqlModel.hs_hr_versions_ibfk_3" FromRole="hs_hr_versions" ToRole="hs_hr_db_version" />
+    <NavigationProperty Name="hs_hr_file_version" Relationship="hr_mysqlModel.hs_hr_versions_ibfk_4" FromRole="hs_hr_versions" ToRole="hs_hr_file_version" />
+    <NavigationProperty Name="hs_hr_module" Relationship="hr_mysqlModel.hs_hr_module_ibfk_1" FromRole="hs_hr_versions" ToRole="hs_hr_module" />
+    <NavigationProperty Name="hs_hr_users" Relationship="hr_mysqlModel.hs_hr_versions_ibfk_1" FromRole="hs_hr_versions" ToRole="hs_hr_users" />
+    <NavigationProperty Name="hs_hr_users1" Relationship="hr_mysqlModel.hs_hr_versions_ibfk_2" FromRole="hs_hr_versions" ToRole="hs_hr_users" />
+  </EntityType>
+  <EntityType Name="hs_hr_weekends">
+    <Key>
+      <PropertyRef Name="day" />
+      <PropertyRef Name="length" />
+    </Key>
+    <Property Name="day" Type="Int32" Nullable="false" />
+    <Property Name="length" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="hs_hr_workshift">
+    <Key>
+      <PropertyRef Name="workshift_id" />
+    </Key>
+    <Property Name="workshift_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="hours_per_day" Type="Decimal" Nullable="false" />
+    <NavigationProperty Name="hs_hr_employee" Relationship="hr_mysqlModel.hs_hr_employee_workshift" FromRole="hs_hr_workshift" ToRole="hs_hr_employee" />
+  </EntityType>
+  <EntityType Name="hs_pr_salary_currency_detail">
+    <Key>
+      <PropertyRef Name="sal_grd_code" />
+      <PropertyRef Name="currency_id" />
+    </Key>
+    <Property Name="sal_grd_code" Type="String" Nullable="false" />
+    <Property Name="currency_id" Type="String" Nullable="false" />
+    <Property Name="salcurr_dtl_minsalary" Type="Double" />
+    <Property Name="salcurr_dtl_stepsalary" Type="Double" />
+    <Property Name="salcurr_dtl_maxsalary" Type="Double" />
+    <NavigationProperty Name="hs_hr_currency_type" Relationship="hr_mysqlModel.hs_pr_salary_currency_detail_ibfk_1" FromRole="hs_pr_salary_currency_detail" ToRole="hs_hr_currency_type" />
+    <NavigationProperty Name="hs_pr_salary_grade" Relationship="hr_mysqlModel.hs_pr_salary_currency_detail_ibfk_2" FromRole="hs_pr_salary_currency_detail" ToRole="hs_pr_salary_grade" />
+  </EntityType>
+  <EntityType Name="hs_pr_salary_grade">
+    <Key>
+      <PropertyRef Name="sal_grd_code" />
+    </Key>
+    <Property Name="sal_grd_code" Type="String" Nullable="false" />
+    <Property Name="sal_grd_name" Type="String" />
+    <NavigationProperty Name="hs_hr_emp_basicsalary" Relationship="hr_mysqlModel.hs_hr_emp_basicsalary_ibfk_1" FromRole="hs_pr_salary_grade" ToRole="hs_hr_emp_basicsalary" />
+    <NavigationProperty Name="hs_hr_job_title" Relationship="hr_mysqlModel.hs_hr_job_title_ibfk_1" FromRole="hs_pr_salary_grade" ToRole="hs_hr_job_title" />
+    <NavigationProperty Name="hs_pr_salary_currency_detail" Relationship="hr_mysqlModel.hs_pr_salary_currency_detail_ibfk_2" FromRole="hs_pr_salary_grade" ToRole="hs_pr_salary_currency_detail" />
+  </EntityType>
+  <Association Name="hs_hr_compstructtree_ibfk_1">
+    <End Role="hs_hr_location" Type="hr_mysqlModel.hs_hr_location" Multiplicity="0..1" />
+    <End Role="hs_hr_compstructtree" Type="hr_mysqlModel.hs_hr_compstructtree" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_location">
+        <PropertyRef Name="loc_code" />
+      </Principal>
+      <Dependent Role="hs_hr_compstructtree">
+        <PropertyRef Name="loc_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_employee_ibfk_1">
+    <End Role="hs_hr_compstructtree" Type="hr_mysqlModel.hs_hr_compstructtree" Multiplicity="0..1" />
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_compstructtree">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_employee">
+        <PropertyRef Name="work_station" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_location_ibfk_1">
+    <End Role="hs_hr_country" Type="hr_mysqlModel.hs_hr_country" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_location" Type="hr_mysqlModel.hs_hr_location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_country">
+        <PropertyRef Name="cou_code" />
+      </Principal>
+      <Dependent Role="hs_hr_location">
+        <PropertyRef Name="loc_country" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_basicsalary_ibfk_2">
+    <End Role="hs_hr_currency_type" Type="hr_mysqlModel.hs_hr_currency_type" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_basicsalary" Type="hr_mysqlModel.hs_hr_emp_basicsalary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_currency_type">
+        <PropertyRef Name="currency_id" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_basicsalary">
+        <PropertyRef Name="currency_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_pr_salary_currency_detail_ibfk_1">
+    <End Role="hs_hr_currency_type" Type="hr_mysqlModel.hs_hr_currency_type" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_pr_salary_currency_detail" Type="hr_mysqlModel.hs_pr_salary_currency_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_currency_type">
+        <PropertyRef Name="currency_id" />
+      </Principal>
+      <Dependent Role="hs_pr_salary_currency_detail">
+        <PropertyRef Name="currency_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_project_ibfk_1">
+    <End Role="hs_hr_customer" Type="hr_mysqlModel.hs_hr_customer" Multiplicity="1" />
+    <End Role="hs_hr_project" Type="hr_mysqlModel.hs_hr_project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_customer">
+        <PropertyRef Name="customer_id" />
+      </Principal>
+      <Dependent Role="hs_hr_project">
+        <PropertyRef Name="customer_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_db_version_ibfk_1">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_db_version" Type="hr_mysqlModel.hs_hr_db_version" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_db_version">
+        <PropertyRef Name="entered_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_db_version_ibfk_2">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_db_version" Type="hr_mysqlModel.hs_hr_db_version" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_db_version">
+        <PropertyRef Name="modified_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_versions_ibfk_3">
+    <End Role="hs_hr_db_version" Type="hr_mysqlModel.hs_hr_db_version" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_versions" Type="hr_mysqlModel.hs_hr_versions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_db_version">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_versions">
+        <PropertyRef Name="db_version" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_education_ibfk_2">
+    <End Role="hs_hr_education" Type="hr_mysqlModel.hs_hr_education" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_education" Type="hr_mysqlModel.hs_hr_emp_education" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_education">
+        <PropertyRef Name="edu_code" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_education">
+        <PropertyRef Name="edu_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_employee_ibfk_6">
+    <End Role="hs_hr_eec" Type="hr_mysqlModel.hs_hr_eec" Multiplicity="0..1" />
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_eec">
+        <PropertyRef Name="eec_code" />
+      </Principal>
+      <Dependent Role="hs_hr_employee">
+        <PropertyRef Name="eeo_cat_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_attachment_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_attachment" Type="hr_mysqlModel.hs_hr_emp_attachment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_attachment">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_basicsalary_ibfk_1">
+    <End Role="hs_pr_salary_grade" Type="hr_mysqlModel.hs_pr_salary_grade" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_basicsalary" Type="hr_mysqlModel.hs_hr_emp_basicsalary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_pr_salary_grade">
+        <PropertyRef Name="sal_grd_code" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_basicsalary">
+        <PropertyRef Name="sal_grd_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_basicsalary_ibfk_3">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_basicsalary" Type="hr_mysqlModel.hs_hr_emp_basicsalary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_basicsalary">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_basicsalary_ibfk_4">
+    <End Role="hs_hr_payperiod" Type="hr_mysqlModel.hs_hr_payperiod" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_basicsalary" Type="hr_mysqlModel.hs_hr_emp_basicsalary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_payperiod">
+        <PropertyRef Name="payperiod_code" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_basicsalary">
+        <PropertyRef Name="payperiod_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_children_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_children" Type="hr_mysqlModel.hs_hr_emp_children" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_children">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_contract_extend_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_contract_extend" Type="hr_mysqlModel.hs_hr_emp_contract_extend" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_contract_extend">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_dependents_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_dependents" Type="hr_mysqlModel.hs_hr_emp_dependents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_dependents">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_directdebit_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_directdebit" Type="hr_mysqlModel.hs_hr_emp_directdebit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_directdebit">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_education_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_education" Type="hr_mysqlModel.hs_hr_emp_education" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_education">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_emergency_contacts_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_emergency_contacts" Type="hr_mysqlModel.hs_hr_emp_emergency_contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_emergency_contacts">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_history_of_ealier_pos_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_history_of_ealier_pos" Type="hr_mysqlModel.hs_hr_emp_history_of_ealier_pos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_history_of_ealier_pos">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_jobtitle_history_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_jobtitle_history" Type="hr_mysqlModel.hs_hr_emp_jobtitle_history" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_jobtitle_history">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_language_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_language" Type="hr_mysqlModel.hs_hr_emp_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_language">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_language_ibfk_2">
+    <End Role="hs_hr_language" Type="hr_mysqlModel.hs_hr_language" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_language" Type="hr_mysqlModel.hs_hr_emp_language" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_language">
+        <PropertyRef Name="lang_code" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_language">
+        <PropertyRef Name="lang_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_licenses_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_licenses" Type="hr_mysqlModel.hs_hr_emp_licenses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_licenses">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_licenses_ibfk_2">
+    <End Role="hs_hr_licenses" Type="hr_mysqlModel.hs_hr_licenses" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_licenses" Type="hr_mysqlModel.hs_hr_emp_licenses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_licenses">
+        <PropertyRef Name="licenses_code" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_licenses">
+        <PropertyRef Name="licenses_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_location_history_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_location_history" Type="hr_mysqlModel.hs_hr_emp_location_history" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_location_history">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_member_detail_ibfk_1">
+    <End Role="hs_hr_membership_type" Type="hr_mysqlModel.hs_hr_membership_type" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_member_detail" Type="hr_mysqlModel.hs_hr_emp_member_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_membership_type">
+        <PropertyRef Name="membtype_code" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_member_detail">
+        <PropertyRef Name="membtype_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_member_detail_ibfk_2">
+    <End Role="hs_hr_membership" Type="hr_mysqlModel.hs_hr_membership" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_member_detail" Type="hr_mysqlModel.hs_hr_emp_member_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_membership">
+        <PropertyRef Name="membship_code" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_member_detail">
+        <PropertyRef Name="membship_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_member_detail_ibfk_3">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_member_detail" Type="hr_mysqlModel.hs_hr_emp_member_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_member_detail">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_passport_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_passport" Type="hr_mysqlModel.hs_hr_emp_passport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_passport">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_picture_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_picture" Type="hr_mysqlModel.hs_hr_emp_picture" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_picture">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_reportto_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_reportto" Type="hr_mysqlModel.hs_hr_emp_reportto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_reportto">
+        <PropertyRef Name="erep_sup_emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_reportto_ibfk_2">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_reportto" Type="hr_mysqlModel.hs_hr_emp_reportto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_reportto">
+        <PropertyRef Name="erep_sub_emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_skill_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_skill" Type="hr_mysqlModel.hs_hr_emp_skill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_skill">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_skill_ibfk_2">
+    <End Role="hs_hr_skill" Type="hr_mysqlModel.hs_hr_skill" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_skill" Type="hr_mysqlModel.hs_hr_emp_skill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_skill">
+        <PropertyRef Name="skill_code" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_skill">
+        <PropertyRef Name="skill_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_subdivision_history_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_subdivision_history" Type="hr_mysqlModel.hs_hr_emp_subdivision_history" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_subdivision_history">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_us_tax_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_us_tax" Type="hr_mysqlModel.hs_hr_emp_us_tax" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_us_tax">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_work_experience_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_emp_work_experience" Type="hr_mysqlModel.hs_hr_emp_work_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_emp_work_experience">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_employee_ibfk_2">
+    <End Role="hs_hr_ethnic_race" Type="hr_mysqlModel.hs_hr_ethnic_race" Multiplicity="0..1" />
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_ethnic_race">
+        <PropertyRef Name="ethnic_race_code" />
+      </Principal>
+      <Dependent Role="hs_hr_employee">
+        <PropertyRef Name="ethnic_race_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_employee_ibfk_3">
+    <End Role="hs_hr_nationality" Type="hr_mysqlModel.hs_hr_nationality" Multiplicity="0..1" />
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_nationality">
+        <PropertyRef Name="nat_code" />
+      </Principal>
+      <Dependent Role="hs_hr_employee">
+        <PropertyRef Name="nation_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_employee_ibfk_4">
+    <End Role="hs_hr_job_title" Type="hr_mysqlModel.hs_hr_job_title" Multiplicity="0..1" />
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_job_title">
+        <PropertyRef Name="jobtit_code" />
+      </Principal>
+      <Dependent Role="hs_hr_employee">
+        <PropertyRef Name="job_title_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_employee_ibfk_5">
+    <End Role="hs_hr_empstat" Type="hr_mysqlModel.hs_hr_empstat" Multiplicity="0..1" />
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_empstat">
+        <PropertyRef Name="estat_code" />
+      </Principal>
+      <Dependent Role="hs_hr_employee">
+        <PropertyRef Name="emp_status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_employee_leave_quota_ibfk_2">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_employee_leave_quota" Type="hr_mysqlModel.hs_hr_employee_leave_quota" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_employee_leave_quota">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_hsp_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_hsp" Type="hr_mysqlModel.hs_hr_hsp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_hsp">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_hsp_payment_request_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_hsp_payment_request" Type="hr_mysqlModel.hs_hr_hsp_payment_request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_hsp_payment_request">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_job_application_events_ibfk_3">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="0..1" />
+    <End Role="hs_hr_job_application_events" Type="hr_mysqlModel.hs_hr_job_application_events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_job_application_events">
+        <PropertyRef Name="owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_job_vacancy_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="0..1" />
+    <End Role="hs_hr_job_vacancy" Type="hr_mysqlModel.hs_hr_job_vacancy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_job_vacancy">
+        <PropertyRef Name="manager_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_leave_requests_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_leave_requests" Type="hr_mysqlModel.hs_hr_leave_requests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_leave_requests">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_project_admin_ibfk_2">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_project_admin" Type="hr_mysqlModel.hs_hr_project_admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_project_admin">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_time_event_ibfk_4">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_time_event" Type="hr_mysqlModel.hs_hr_time_event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_time_event">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_timesheet_ibfk_1">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_timesheet" Type="hr_mysqlModel.hs_hr_timesheet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_timesheet">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_users_ibfk_4">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="0..1" />
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_employee">
+        <PropertyRef Name="emp_number" />
+      </Principal>
+      <Dependent Role="hs_hr_users">
+        <PropertyRef Name="emp_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_employee_leave_quota_ibfk_1">
+    <End Role="hs_hr_leavetype" Type="hr_mysqlModel.hs_hr_leavetype" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_employee_leave_quota" Type="hr_mysqlModel.hs_hr_employee_leave_quota" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_leavetype">
+        <PropertyRef Name="leave_type_id" />
+      </Principal>
+      <Dependent Role="hs_hr_employee_leave_quota">
+        <PropertyRef Name="leave_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_file_version_ibfk_1">
+    <End Role="hs_hr_module" Type="hr_mysqlModel.hs_hr_module" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_file_version" Type="hr_mysqlModel.hs_hr_file_version" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_module">
+        <PropertyRef Name="mod_id" />
+      </Principal>
+      <Dependent Role="hs_hr_file_version">
+        <PropertyRef Name="altered_module" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_file_version_ibfk_2">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_file_version" Type="hr_mysqlModel.hs_hr_file_version" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_file_version">
+        <PropertyRef Name="entered_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_file_version_ibfk_3">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_file_version" Type="hr_mysqlModel.hs_hr_file_version" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_file_version">
+        <PropertyRef Name="modified_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_versions_ibfk_4">
+    <End Role="hs_hr_file_version" Type="hr_mysqlModel.hs_hr_file_version" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_versions" Type="hr_mysqlModel.hs_hr_versions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_file_version">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_versions">
+        <PropertyRef Name="file_version" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_job_application_events_ibfk_1">
+    <End Role="hs_hr_job_application" Type="hr_mysqlModel.hs_hr_job_application" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_job_application_events" Type="hr_mysqlModel.hs_hr_job_application_events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_job_application">
+        <PropertyRef Name="application_id" />
+      </Principal>
+      <Dependent Role="hs_hr_job_application_events">
+        <PropertyRef Name="application_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_job_application_ibfk_1">
+    <End Role="hs_hr_job_vacancy" Type="hr_mysqlModel.hs_hr_job_vacancy" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_job_application" Type="hr_mysqlModel.hs_hr_job_application" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_job_vacancy">
+        <PropertyRef Name="vacancy_id" />
+      </Principal>
+      <Dependent Role="hs_hr_job_application">
+        <PropertyRef Name="vacancy_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_job_application_events_ibfk_2">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="0..1" />
+    <End Role="hs_hr_job_application_events" Type="hr_mysqlModel.hs_hr_job_application_events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_job_application_events">
+        <PropertyRef Name="created_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_job_title_ibfk_2">
+    <End Role="hs_hr_job_spec" Type="hr_mysqlModel.hs_hr_job_spec" Multiplicity="0..1" />
+    <End Role="hs_hr_job_title" Type="hr_mysqlModel.hs_hr_job_title" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_job_spec">
+        <PropertyRef Name="jobspec_id" />
+      </Principal>
+      <Dependent Role="hs_hr_job_title">
+        <PropertyRef Name="jobspec_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_job_title_ibfk_1">
+    <End Role="hs_pr_salary_grade" Type="hr_mysqlModel.hs_pr_salary_grade" Multiplicity="0..1" />
+    <End Role="hs_hr_job_title" Type="hr_mysqlModel.hs_hr_job_title" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_pr_salary_grade">
+        <PropertyRef Name="sal_grd_code" />
+      </Principal>
+      <Dependent Role="hs_hr_job_title">
+        <PropertyRef Name="sal_grd_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_job_vacancy_ibfk_2">
+    <End Role="hs_hr_job_title" Type="hr_mysqlModel.hs_hr_job_title" Multiplicity="0..1" />
+    <End Role="hs_hr_job_vacancy" Type="hr_mysqlModel.hs_hr_job_vacancy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_job_title">
+        <PropertyRef Name="jobtit_code" />
+      </Principal>
+      <Dependent Role="hs_hr_job_vacancy">
+        <PropertyRef Name="jobtit_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_leave_ibfk_1">
+    <End Role="hs_hr_leave_requests" Type="hr_mysqlModel.hs_hr_leave_requests" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_leave" Type="hr_mysqlModel.hs_hr_leave" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_leave_requests">
+        <PropertyRef Name="leave_request_id" />
+        <PropertyRef Name="leave_type_id" />
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="hs_hr_leave">
+        <PropertyRef Name="leave_request_id" />
+        <PropertyRef Name="leave_type_id" />
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_leave_requests_ibfk_2">
+    <End Role="hs_hr_leavetype" Type="hr_mysqlModel.hs_hr_leavetype" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_leave_requests" Type="hr_mysqlModel.hs_hr_leave_requests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_leavetype">
+        <PropertyRef Name="leave_type_id" />
+      </Principal>
+      <Dependent Role="hs_hr_leave_requests">
+        <PropertyRef Name="leave_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_mailnotifications_ibfk_1">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_mailnotifications" Type="hr_mysqlModel.hs_hr_mailnotifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_mailnotifications">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_membership_ibfk_1">
+    <End Role="hs_hr_membership_type" Type="hr_mysqlModel.hs_hr_membership_type" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_membership" Type="hr_mysqlModel.hs_hr_membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_membership_type">
+        <PropertyRef Name="membtype_code" />
+      </Principal>
+      <Dependent Role="hs_hr_membership">
+        <PropertyRef Name="membtype_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_module_ibfk_1">
+    <End Role="hs_hr_versions" Type="hr_mysqlModel.hs_hr_versions" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_module" Type="hr_mysqlModel.hs_hr_module" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_versions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_module">
+        <PropertyRef Name="version" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_rights_ibfk_1">
+    <End Role="hs_hr_module" Type="hr_mysqlModel.hs_hr_module" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_rights" Type="hr_mysqlModel.hs_hr_rights" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_module">
+        <PropertyRef Name="mod_id" />
+      </Principal>
+      <Dependent Role="hs_hr_rights">
+        <PropertyRef Name="mod_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_time_event_ibfk_2">
+    <End Role="hs_hr_project_activity" Type="hr_mysqlModel.hs_hr_project_activity" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_time_event" Type="hr_mysqlModel.hs_hr_time_event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_project_activity">
+        <PropertyRef Name="activity_id" />
+      </Principal>
+      <Dependent Role="hs_hr_time_event">
+        <PropertyRef Name="activity_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_rights_ibfk_2">
+    <End Role="hs_hr_user_group" Type="hr_mysqlModel.hs_hr_user_group" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_rights" Type="hr_mysqlModel.hs_hr_rights" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_user_group">
+        <PropertyRef Name="userg_id" />
+      </Principal>
+      <Dependent Role="hs_hr_rights">
+        <PropertyRef Name="userg_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_timesheet_ibfk_2">
+    <End Role="hs_hr_timesheet_submission_period" Type="hr_mysqlModel.hs_hr_timesheet_submission_period" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_timesheet" Type="hr_mysqlModel.hs_hr_timesheet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_timesheet_submission_period">
+        <PropertyRef Name="timesheet_period_id" />
+      </Principal>
+      <Dependent Role="hs_hr_timesheet">
+        <PropertyRef Name="timesheet_period_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_users_ibfk_3">
+    <End Role="hs_hr_user_group" Type="hr_mysqlModel.hs_hr_user_group" Multiplicity="0..1" />
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_user_group">
+        <PropertyRef Name="userg_id" />
+      </Principal>
+      <Dependent Role="hs_hr_users">
+        <PropertyRef Name="userg_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_users_ibfk_1">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="0..1" />
+    <End Role="hs_hr_users1" Type="hr_mysqlModel.hs_hr_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_users1">
+        <PropertyRef Name="modified_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_users_ibfk_2">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="0..1" />
+    <End Role="hs_hr_users1" Type="hr_mysqlModel.hs_hr_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_users1">
+        <PropertyRef Name="created_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_versions_ibfk_1">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_versions" Type="hr_mysqlModel.hs_hr_versions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_versions">
+        <PropertyRef Name="modified_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_versions_ibfk_2">
+    <End Role="hs_hr_users" Type="hr_mysqlModel.hs_hr_users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_hr_versions" Type="hr_mysqlModel.hs_hr_versions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_hr_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="hs_hr_versions">
+        <PropertyRef Name="created_by" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_pr_salary_currency_detail_ibfk_2">
+    <End Role="hs_pr_salary_grade" Type="hr_mysqlModel.hs_pr_salary_grade" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="hs_pr_salary_currency_detail" Type="hr_mysqlModel.hs_pr_salary_currency_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hs_pr_salary_grade">
+        <PropertyRef Name="sal_grd_code" />
+      </Principal>
+      <Dependent Role="hs_pr_salary_currency_detail">
+        <PropertyRef Name="sal_grd_code" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="hs_hr_emp_locations">
+    <End Role="hs_hr_location" Type="hr_mysqlModel.hs_hr_location" Multiplicity="*" />
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="*" />
+  </Association>
+  <Association Name="hs_hr_employee_timesheet_period">
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="*" />
+    <End Role="hs_hr_timesheet_submission_period" Type="hr_mysqlModel.hs_hr_timesheet_submission_period" Multiplicity="*" />
+  </Association>
+  <Association Name="hs_hr_employee_workshift">
+    <End Role="hs_hr_workshift" Type="hr_mysqlModel.hs_hr_workshift" Multiplicity="*" />
+    <End Role="hs_hr_employee" Type="hr_mysqlModel.hs_hr_employee" Multiplicity="*" />
+  </Association>
+  <Association Name="hs_hr_emprep_usergroup">
+    <End Role="hs_hr_user_group" Type="hr_mysqlModel.hs_hr_user_group" Multiplicity="*" />
+    <End Role="hs_hr_empreport" Type="hr_mysqlModel.hs_hr_empreport" Multiplicity="*" />
+  </Association>
+  <Association Name="hs_hr_jobtit_empstat">
+    <End Role="hs_hr_job_title" Type="hr_mysqlModel.hs_hr_job_title" Multiplicity="*" />
+    <End Role="hs_hr_empstat" Type="hr_mysqlModel.hs_hr_empstat" Multiplicity="*" />
+  </Association>
+</Schema>

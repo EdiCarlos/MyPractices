@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\ConsoleApplications\ThrowReturn\ThrowReturn\bin\Debug\ThrowReturn.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\ThrowReturn\ThrowReturn\bin\Debug\ThrowReturn.pdb
+D:\MyPractices\DOTNET\C#\ConsoleApplications\ThrowReturn\ThrowReturn\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\ConsoleApplications\ThrowReturn\ThrowReturn\obj\x86\Debug\ThrowReturn.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\ThrowReturn\ThrowReturn\obj\x86\Debug\ThrowReturn.pdb

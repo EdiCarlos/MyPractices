@@ -1,0 +1,24 @@
+/*
+ * Calculator.h
+ *
+ *  Created on: Nov 26, 2012
+ *      Author: axkhan2
+ */
+
+#ifndef CALCULATOR_H_
+#define CALCULATOR_H_
+
+class Calculator
+{
+private:
+	double num1, num2;
+	double result;
+public:
+	double Addition(double n1, double n2);
+	double Addition(int n2, int n1);
+	double Subtraction(double n1, double n2);
+	double *& ShowResult();
+};
+
+
+#endif /* CALCULATOR_H_ */

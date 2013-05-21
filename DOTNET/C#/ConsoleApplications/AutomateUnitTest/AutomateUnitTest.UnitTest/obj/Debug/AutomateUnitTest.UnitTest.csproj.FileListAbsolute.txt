@@ -1,0 +1,7 @@
+D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest.UnitTest\bin\Debug\AutomateUnitTest.UnitTest.dll
+D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest.UnitTest\bin\Debug\AutomateUnitTest.UnitTest.pdb
+D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest.UnitTest\bin\Debug\AutomateUnitTest.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest.UnitTest\bin\Debug\AutomateUnitTest.pdb
+D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest.UnitTest\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest.UnitTest\obj\Debug\AutomateUnitTest.UnitTest.dll
+D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest.UnitTest\obj\Debug\AutomateUnitTest.UnitTest.pdb

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TestManagerDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="TestManagerDBStoreContainer">
+          <EntitySet Name="TestManagers" EntityType="TestManagerDB.Store.TestManagers" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="TestManagers">
+          <Key>
+            <PropertyRef Name="TestManagerID" />
+          </Key>
+          <Property Name="TestManagerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TestName" Type="nvarchar" Nullable="false" MaxLength="150" />
+          <Property Name="TestDescription" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NumberOfQuestions" Type="int" />
+          <Property Name="PassPercentage" Type="decimal" />
+          <Property Name="TotalMarks" Type="int" />
+          <Property Name="GradeTypeID" Type="int" />
+          <Property Name="TestDuration" Type="int" />
+          <Property Name="PassingMark" Type="int" />
+        </EntityType>
+        <Function Name="InsertTestManager" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="testName" Type="varchar" Mode="In" />
+          <Parameter Name="description" Type="varchar" Mode="In" />
+          <Parameter Name="numberOfQuestion" Type="int" Mode="In" />
+          <Parameter Name="passPercentage" Type="decimal" Mode="In" />
+          <Parameter Name="totalMarks" Type="int" Mode="In" />
+          <Parameter Name="gradeId" Type="int" Mode="In" />
+          <Parameter Name="testDuration" Type="int" Mode="In" />
+          <Parameter Name="passMark" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="TestManagerDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="TestManagerDBContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TestManagers" EntityType="TestManagerDB.TestManager" />
+          <FunctionImport Name="InsertTestManager">
+            <Parameter Name="testName" Mode="In" Type="String" />
+            <Parameter Name="description" Mode="In" Type="String" />
+            <Parameter Name="numberOfQuestion" Mode="In" Type="Int32" />
+            <Parameter Name="passPercentage" Mode="In" Type="Decimal" />
+            <Parameter Name="totalMarks" Mode="In" Type="Int32" />
+            <Parameter Name="gradeId" Mode="In" Type="Int32" />
+            <Parameter Name="testDuration" Mode="In" Type="Int32" />
+            <Parameter Name="passMark" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="TestManager">
+          <Key>
+            <PropertyRef Name="TestManagerID" />
+          </Key>
+          <Property Type="Int32" Name="TestManagerID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TestName" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TestDescription" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="NumberOfQuestions" />
+          <Property Type="Decimal" Name="PassPercentage" Precision="18" Scale="0" />
+          <Property Type="Int32" Name="TotalMarks" />
+          <Property Type="Int32" Name="GradeTypeID" />
+          <Property Type="Int32" Name="TestDuration" />
+          <Property Type="Int32" Name="PassingMark" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="TestManagerDB" />
+        <Alias Key="Target" Value="TestManagerDB.Store" />
+        <EntityContainerMapping CdmEntityContainer="TestManagerDBContainer" StorageEntityContainer="TestManagerDBStoreContainer">
+          <EntitySetMapping Name="TestManagers">
+            <EntityTypeMapping TypeName="TestManagerDB.TestManager">
+              <MappingFragment StoreEntitySet="TestManagers">
+                <ScalarProperty Name="PassingMark" ColumnName="PassingMark" />
+                <ScalarProperty Name="TestDuration" ColumnName="TestDuration" />
+                <ScalarProperty Name="GradeTypeID" ColumnName="GradeTypeID" />
+                <ScalarProperty Name="TotalMarks" ColumnName="TotalMarks" />
+                <ScalarProperty Name="PassPercentage" ColumnName="PassPercentage" />
+                <ScalarProperty Name="NumberOfQuestions" ColumnName="NumberOfQuestions" />
+                <ScalarProperty Name="TestDescription" ColumnName="TestDescription" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="TestManagerID" ColumnName="TestManagerID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="InsertTestManager" FunctionName="TestManagerDB.Store.InsertTestManager" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Default" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

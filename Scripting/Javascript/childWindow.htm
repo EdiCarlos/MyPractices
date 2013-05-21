@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+   <script type="text/javascript">
+       var Parent;
+       function init() {
+           window.onunload += WindowUnload;
+       }
+       function CloseParent() {
+//           window.opener.txtFirstName.value = first.value;
+//           window.opener.open("http://www.google.com", "OpenThisWindow");
+           window.parent.open("D:/Javascript/lastPage.htm", "LastPage");
+       }
+       function WindowUnload() {
+       }
+   </script>
+</head>
+<body onload="init()">
+<label>First Name</label>
+<input type="text" id="first" />
+<label>Last Name</label>
+<input type="text" id="last" />
+<input type='button' value="Close Parent Window" id="MyButton1" onclick="CloseParent()"/>
+</body>
+</html>

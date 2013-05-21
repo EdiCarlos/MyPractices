@@ -1,0 +1,11 @@
+D:\temp\VisualC#\LINQ2XML\Sample1\Sample1\bin\Debug\Sample1.exe
+D:\temp\VisualC#\LINQ2XML\Sample1\Sample1\bin\Debug\Sample1.pdb
+D:\temp\VisualC#\LINQ2XML\Sample1\Sample1\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ2XML\Sample1\Sample1\obj\Debug\Sample1.exe
+D:\temp\VisualC#\LINQ2XML\Sample1\Sample1\obj\Debug\Sample1.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\Sample1\obj\Debug\Sample1.exe
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\Sample1\obj\Debug\Sample1.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\Sample1\bin\Debug\Sample1.exe
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\Sample1\bin\Debug\Sample1.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\Sample1\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ2XML\Sample1\Sample1\bin\Debug\Sample1.exe.config

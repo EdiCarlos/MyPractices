@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="mydb" Class="mydbContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;Initial Catalog=mydb;User ID=arifkhan" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="mydbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MyPriority" Member="MyPriorities">
+    <Type Name="MyPriority">
+      <Column Name="PID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="MyPriority_tb_tasklist" Member="tb_tasklists" ThisKey="PID" OtherKey="tPriority" Type="tb_tasklist" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_tasklist" Member="tb_tasklists">
+    <Type Name="tb_tasklist">
+      <Column Name="taskid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="task" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="tPriority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="taskdate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="date_completed" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="MyPriority_tb_tasklist" Member="MyPriority" ThisKey="tPriority" OtherKey="PID" Type="MyPriority" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

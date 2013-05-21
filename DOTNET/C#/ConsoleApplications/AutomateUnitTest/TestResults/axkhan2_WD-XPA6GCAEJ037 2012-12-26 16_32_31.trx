@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="73894d91-47f8-4fb8-b968-bdfb58af50fc" name="axkhan2@WD-XPA6GCAEJ037 2012-12-26 16:32:31" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="60d2611c-ed31-4dc8-9970-8070981fe519">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="axkhan2_WD-XPA6GCAEJ037 2012-12-26 16_32_31">
+      <DeploymentItem filename="D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest\bin\Debug\AutomateUnitTest.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-26T16:32:31.2630416+05:30" queuing="2012-12-26T16:32:32.1692800+05:30" start="2012-12-26T16:32:32.2942784+05:30" finish="2012-12-26T16:32:37.6692096+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="9" executed="9" passed="9" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AdditionTest" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="b4588f87-32e5-cf36-428d-a6e5fa89780f">
+      <Execution id="a7808082-bad2-4b1a-ae85-6354346c7ca6" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.ProgramTest, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AdditionTest" />
+    </UnitTest>
+    <UnitTest name="RunTest" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="13677812-2b29-30dd-9331-8d956ee1838d">
+      <Execution id="992c32a3-3e8e-4f1a-8149-57783b27762e" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.ProgramTest, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RunTest" />
+    </UnitTest>
+    <UnitTest name="Auto_Syncada_Inv_Mktg_Request" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="7d8558fa-b8e9-fec2-6b66-8e08bdb56b52">
+      <Execution id="006d1cb7-4e1d-4331-aee3-b738e7937f30" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.MyGeneratedClass, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Auto_Syncada_Inv_Mktg_Request" />
+    </UnitTest>
+    <UnitTest name="Auto_Syncada_Inv_Collierville_Request" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="8d500357-6737-694b-960b-8307546a9638">
+      <Execution id="02de1853-5f45-4cde-a300-87c5cd97e744" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.MyGeneratedClass, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Auto_Syncada_Inv_Collierville_Request" />
+    </UnitTest>
+    <UnitTest name="Auth_Syncada_10KLevel_Request" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="a3b504e4-e695-a155-0c0b-e02c1e0702e0">
+      <Execution id="9469bca7-4f61-4025-9d0f-2cec5a7352e0" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.MyGeneratedClass, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Auth_Syncada_10KLevel_Request" />
+    </UnitTest>
+    <UnitTest name="SubtractionTest" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="698bc669-a7aa-7938-b853-f280423d79e4">
+      <Execution id="c925b83a-af8c-46a4-86b3-fde1e4503b0d" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.ProgramTest, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubtractionTest" />
+    </UnitTest>
+    <UnitTest name="Auth_Syncada_MS_Authority_Request" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="565c1eef-90e7-ef24-82c8-2d1ab346ba72">
+      <Execution id="c09e6fb1-7377-4d79-ab42-50a63123d838" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.MyGeneratedClass, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Auth_Syncada_MS_Authority_Request" />
+    </UnitTest>
+    <UnitTest name="Auto_Syncada_eBill_Dollar_Request" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="c1aabd09-f287-2222-cd50-011b05d3e6b9">
+      <Execution id="5a037cfc-e15f-4437-a892-3d6ac390b7e4" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.MyGeneratedClass, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Auto_Syncada_eBill_Dollar_Request" />
+    </UnitTest>
+    <UnitTest name="Auth_Syncada_ZeroLevel_Request" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="96a2d1e6-c5ea-da1c-d8ec-678d7dd80ee8">
+      <Execution id="51f3057e-6a80-47ad-b4aa-099a076ac626" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.MyGeneratedClass, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Auth_Syncada_ZeroLevel_Request" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="13677812-2b29-30dd-9331-8d956ee1838d" executionId="992c32a3-3e8e-4f1a-8149-57783b27762e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="565c1eef-90e7-ef24-82c8-2d1ab346ba72" executionId="c09e6fb1-7377-4d79-ab42-50a63123d838" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="698bc669-a7aa-7938-b853-f280423d79e4" executionId="c925b83a-af8c-46a4-86b3-fde1e4503b0d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d8558fa-b8e9-fec2-6b66-8e08bdb56b52" executionId="006d1cb7-4e1d-4331-aee3-b738e7937f30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8d500357-6737-694b-960b-8307546a9638" executionId="02de1853-5f45-4cde-a300-87c5cd97e744" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96a2d1e6-c5ea-da1c-d8ec-678d7dd80ee8" executionId="51f3057e-6a80-47ad-b4aa-099a076ac626" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3b504e4-e695-a155-0c0b-e02c1e0702e0" executionId="9469bca7-4f61-4025-9d0f-2cec5a7352e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4588f87-32e5-cf36-428d-a6e5fa89780f" executionId="a7808082-bad2-4b1a-ae85-6354346c7ca6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1aabd09-f287-2222-cd50-011b05d3e6b9" executionId="5a037cfc-e15f-4437-a892-3d6ac390b7e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="992c32a3-3e8e-4f1a-8149-57783b27762e" testId="13677812-2b29-30dd-9331-8d956ee1838d" testName="RunTest" computerName="WD-XPA6GCAEJ037" duration="00:00:04.3932715" startTime="2012-12-26T16:32:32.4192768+05:30" endTime="2012-12-26T16:32:37.5285864+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="992c32a3-3e8e-4f1a-8149-57783b27762e">
+      <Output>
+        <StdOut>Hello world</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c09e6fb1-7377-4d79-ab42-50a63123d838" testId="565c1eef-90e7-ef24-82c8-2d1ab346ba72" testName="Auth_Syncada_MS_Authority_Request" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0119772" startTime="2012-12-26T16:32:37.5285864+05:30" endTime="2012-12-26T16:32:37.5598360+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c09e6fb1-7377-4d79-ab42-50a63123d838">
+    </UnitTestResult>
+    <UnitTestResult executionId="c925b83a-af8c-46a4-86b3-fde1e4503b0d" testId="698bc669-a7aa-7938-b853-f280423d79e4" testName="SubtractionTest" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0002672" startTime="2012-12-26T16:32:37.5598360+05:30" endTime="2012-12-26T16:32:37.5754608+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c925b83a-af8c-46a4-86b3-fde1e4503b0d">
+    </UnitTestResult>
+    <UnitTestResult executionId="006d1cb7-4e1d-4331-aee3-b738e7937f30" testId="7d8558fa-b8e9-fec2-6b66-8e08bdb56b52" testName="Auto_Syncada_Inv_Mktg_Request" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0001672" startTime="2012-12-26T16:32:37.5754608+05:30" endTime="2012-12-26T16:32:37.5754608+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="006d1cb7-4e1d-4331-aee3-b738e7937f30">
+    </UnitTestResult>
+    <UnitTestResult executionId="02de1853-5f45-4cde-a300-87c5cd97e744" testId="8d500357-6737-694b-960b-8307546a9638" testName="Auto_Syncada_Inv_Collierville_Request" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0001680" startTime="2012-12-26T16:32:37.5754608+05:30" endTime="2012-12-26T16:32:37.5910856+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02de1853-5f45-4cde-a300-87c5cd97e744">
+    </UnitTestResult>
+    <UnitTestResult executionId="51f3057e-6a80-47ad-b4aa-099a076ac626" testId="96a2d1e6-c5ea-da1c-d8ec-678d7dd80ee8" testName="Auth_Syncada_ZeroLevel_Request" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0001700" startTime="2012-12-26T16:32:37.5910856+05:30" endTime="2012-12-26T16:32:37.5910856+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51f3057e-6a80-47ad-b4aa-099a076ac626">
+    </UnitTestResult>
+    <UnitTestResult executionId="9469bca7-4f61-4025-9d0f-2cec5a7352e0" testId="a3b504e4-e695-a155-0c0b-e02c1e0702e0" testName="Auth_Syncada_10KLevel_Request" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0001692" startTime="2012-12-26T16:32:37.5910856+05:30" endTime="2012-12-26T16:32:37.6067104+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9469bca7-4f61-4025-9d0f-2cec5a7352e0">
+    </UnitTestResult>
+    <UnitTestResult executionId="a7808082-bad2-4b1a-ae85-6354346c7ca6" testId="b4588f87-32e5-cf36-428d-a6e5fa89780f" testName="AdditionTest" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0006127" startTime="2012-12-26T16:32:37.6067104+05:30" endTime="2012-12-26T16:32:37.6067104+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7808082-bad2-4b1a-ae85-6354346c7ca6">
+    </UnitTestResult>
+    <UnitTestResult executionId="5a037cfc-e15f-4437-a892-3d6ac390b7e4" testId="c1aabd09-f287-2222-cd50-011b05d3e6b9" testName="Auto_Syncada_eBill_Dollar_Request" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0001714" startTime="2012-12-26T16:32:37.6067104+05:30" endTime="2012-12-26T16:32:37.6223352+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a037cfc-e15f-4437-a892-3d6ac390b7e4">
+    </UnitTestResult>
+  </Results>
+</TestRun>

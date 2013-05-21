@@ -1,0 +1,12 @@
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\obj\Debug\DeleteRowFromExcel.csproj.ResolveComReference.cache
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\obj\Debug\DeleteRowFromExcel.Properties.Resources.resources
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\obj\Debug\DeleteRowFromExcel.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\bin\Debug\DeleteRowFromExcel.exe
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\bin\Debug\DeleteRowFromExcel.pdb
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\obj\Debug\DeleteRowFromExcel.exe
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\obj\Debug\DeleteRowFromExcel.pdb
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\bin\Debug\DeleteExcelRow.dll
+D:\temp\VisualC#\Excel\DeleteRowFromExcel\DeleteRowFromExcel\bin\Debug\DeleteExcelRow.pdb

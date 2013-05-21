@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StatePattern.StatePatternSample">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="StatePattern.StatePatternSample.FastState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StatePatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="StatePattern.StatePatternSample.NormalState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StatePatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="StatePattern.StatePatternSample.Context" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StatePatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Interface Name="StatePattern.StatePatternSample.IState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StatePatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="StatePattern.StatePatternSample.Client" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StatePatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StatePatternSample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

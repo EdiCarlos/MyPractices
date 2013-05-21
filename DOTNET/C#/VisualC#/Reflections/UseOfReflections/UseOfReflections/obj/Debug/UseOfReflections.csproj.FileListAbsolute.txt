@@ -1,0 +1,12 @@
+D:\temp\VisualC#\Reflections\UseOfReflections\UseOfReflections\bin\Debug\UseOfReflections.exe
+D:\temp\VisualC#\Reflections\UseOfReflections\UseOfReflections\bin\Debug\UseOfReflections.pdb
+D:\temp\VisualC#\Reflections\UseOfReflections\UseOfReflections\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Reflections\UseOfReflections\UseOfReflections\obj\Debug\UseOfReflections.exe
+D:\temp\VisualC#\Reflections\UseOfReflections\UseOfReflections\obj\Debug\UseOfReflections.pdb
+D:\temp\VisualC#\Reflections\UseOfReflections\UseOfReflections\bin\Debug\UseOfReflections.exe.config
+D:\MyPractices\DOTNET\C#\VisualC#\Reflections\UseOfReflections\UseOfReflections\bin\Debug\UseOfReflections.exe.config
+D:\MyPractices\DOTNET\C#\VisualC#\Reflections\UseOfReflections\UseOfReflections\obj\Debug\UseOfReflections.exe
+D:\MyPractices\DOTNET\C#\VisualC#\Reflections\UseOfReflections\UseOfReflections\obj\Debug\UseOfReflections.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\Reflections\UseOfReflections\UseOfReflections\bin\Debug\UseOfReflections.exe
+D:\MyPractices\DOTNET\C#\VisualC#\Reflections\UseOfReflections\UseOfReflections\bin\Debug\UseOfReflections.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\Reflections\UseOfReflections\UseOfReflections\obj\Debug\ResolveAssemblyReference.cache

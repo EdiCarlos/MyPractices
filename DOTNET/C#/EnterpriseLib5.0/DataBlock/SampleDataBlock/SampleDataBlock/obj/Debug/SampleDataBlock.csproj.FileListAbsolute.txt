@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\DataBlock\SampleDataBlock\SampleDataBlock\bin\Debug\SampleDataBlock.exe
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\DataBlock\SampleDataBlock\SampleDataBlock\bin\Debug\SampleDataBlock.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\DataBlock\SampleDataBlock\SampleDataBlock\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\DataBlock\SampleDataBlock\SampleDataBlock\obj\Debug\SampleDataBlock.exe
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\DataBlock\SampleDataBlock\SampleDataBlock\obj\Debug\SampleDataBlock.pdb

@@ -1,0 +1,5 @@
+D:\PrintingC#\Project1\TextBoxV\TextBoxV\bin\Debug\TextBoxV.dll
+D:\PrintingC#\Project1\TextBoxV\TextBoxV\bin\Debug\TextBoxV.pdb
+D:\PrintingC#\Project1\TextBoxV\TextBoxV\obj\Debug\ResolveAssemblyReference.cache
+D:\PrintingC#\Project1\TextBoxV\TextBoxV\obj\Debug\TextBoxV.dll
+D:\PrintingC#\Project1\TextBoxV\TextBoxV\obj\Debug\TextBoxV.pdb

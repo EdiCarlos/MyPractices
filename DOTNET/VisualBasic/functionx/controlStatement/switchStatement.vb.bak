@@ -1,0 +1,9 @@
+Module Module1
+
+Sub Main()
+Dim num as Integer = CInt(InputBox("enter Number"))
+Console.WriteLine(Microsoft.VisualBasic.Switch(num >= 10, "Greater Than Ten", num < 10, "Less Than ten", num = 10, _
+"Equal to ten"))
+End Sub
+
+End Module

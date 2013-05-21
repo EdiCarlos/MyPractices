@@ -1,0 +1,9 @@
+Imports System
+
+Module Module1
+Sub Main()
+Dim i# 
+i# = 1000.000
+Console.WriteLine(i)
+End Sub
+End Module

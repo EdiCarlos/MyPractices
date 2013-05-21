@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\StaticInterface\StaticInterface\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\StaticInterface\StaticInterface\bin\Debug\StaticInterface.exe
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\StaticInterface\StaticInterface\bin\Debug\StaticInterface.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\StaticInterface\StaticInterface\obj\x86\Debug\StaticInterface.exe
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\StaticInterface\StaticInterface\obj\x86\Debug\StaticInterface.pdb

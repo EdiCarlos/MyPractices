@@ -1,0 +1,7 @@
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalService\bin\EvalService.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalService\bin\EvalService.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalService\bin\EvalFristExample.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalService\bin\EvalFristExample.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalService\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalService\obj\Debug\EvalService.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalService\obj\Debug\EvalService.pdb

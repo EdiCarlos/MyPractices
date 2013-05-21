@@ -1,0 +1,2 @@
+DO "T:\g\Development\RITtoolsClass\loadrit_toolsclassvariables.FXP"
+WAIT WINDOW loconvert.convert_amt(380,"USD","EUR",111.6,DATE(2010,03,05))

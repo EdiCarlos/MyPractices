@@ -1,0 +1,5 @@
+D:\temp\xml\UseOfXmlReader\UseOfXmlReader\bin\Debug\UseOfXmlReader.exe
+D:\temp\xml\UseOfXmlReader\UseOfXmlReader\bin\Debug\UseOfXmlReader.pdb
+D:\temp\xml\UseOfXmlReader\UseOfXmlReader\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\xml\UseOfXmlReader\UseOfXmlReader\obj\Debug\UseOfXmlReader.exe
+D:\temp\xml\UseOfXmlReader\UseOfXmlReader\obj\Debug\UseOfXmlReader.pdb

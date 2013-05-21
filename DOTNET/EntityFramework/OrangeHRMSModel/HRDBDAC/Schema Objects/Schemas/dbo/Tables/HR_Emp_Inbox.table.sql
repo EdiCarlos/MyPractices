@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[HR_Emp_Inbox](
+	[InboxID] [int] IDENTITY(1,1) NOT NULL,
+	[MessageToEmployeeNumber] [bigint] NOT NULL,
+	[MessageID] [int] NOT NULL,
+ CONSTRAINT [PK_HR_Emp_Inbox] PRIMARY KEY CLUSTERED 
+(
+	[InboxID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON)
+)
+
+

@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationClient\bin\Debug\CustomAuthenticationClient.exe.config
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationClient\bin\Debug\CustomAuthenticationClient.exe
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationClient\bin\Debug\CustomAuthenticationClient.pdb
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationClient\obj\Debug\CustomAuthenticationClient.exe
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationClient\obj\Debug\CustomAuthenticationClient.pdb

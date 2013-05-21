@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <title></title>
+  <image>images/LOGO.png</image>
+  <restrict_email_addresses>False</restrict_email_addresses>
+  <attachments>/attachments/</attachments>
+  <admin_email>admin@your_domain.com</admin_email>
+  <smtp>YOUR_SMTP_SERVER</smtp>
+  <system_email>SlickTicket@your_domain.com</system_email>
+  <ad_groups>14</ad_groups>
+  <domain_controller>YOUR_DOMAIN_CONTROLLER</domain_controller>
+  <email_notification>True</email_notification>
+  <sidebar>right</sidebar>
+  <installed>true</installed>
+</settings>

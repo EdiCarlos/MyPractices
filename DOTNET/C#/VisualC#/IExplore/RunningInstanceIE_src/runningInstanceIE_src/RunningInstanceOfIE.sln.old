@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningInstanceOfIE", "RunningInstanceOfIE.csproj", "{E95B8A89-68F3-4CBE-A4CA-C467508D5118}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geIMVCode", "..\..\geIMVCode\geIMVCode.vcproj", "{29177F04-89C5-4FEC-97E2-7A7190526890}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PostMsg", "..\..\..\PostMsg\PostMsg.vcproj", "{2213240E-1491-43DD-9627-FD831C420DB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E95B8A89-68F3-4CBE-A4CA-C467508D5118}.Debug.ActiveCfg = Debug|.NET
+		{E95B8A89-68F3-4CBE-A4CA-C467508D5118}.Debug.Build.0 = Debug|.NET
+		{E95B8A89-68F3-4CBE-A4CA-C467508D5118}.Release.ActiveCfg = Release|.NET
+		{E95B8A89-68F3-4CBE-A4CA-C467508D5118}.Release.Build.0 = Release|.NET
+		{29177F04-89C5-4FEC-97E2-7A7190526890}.Debug.ActiveCfg = Debug|Win32
+		{29177F04-89C5-4FEC-97E2-7A7190526890}.Debug.Build.0 = Debug|Win32
+		{29177F04-89C5-4FEC-97E2-7A7190526890}.Release.ActiveCfg = Release|Win32
+		{29177F04-89C5-4FEC-97E2-7A7190526890}.Release.Build.0 = Release|Win32
+		{2213240E-1491-43DD-9627-FD831C420DB1}.Debug.ActiveCfg = Debug|Win32
+		{2213240E-1491-43DD-9627-FD831C420DB1}.Debug.Build.0 = Debug|Win32
+		{2213240E-1491-43DD-9627-FD831C420DB1}.Release.ActiveCfg = Release|Win32
+		{2213240E-1491-43DD-9627-FD831C420DB1}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

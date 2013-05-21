@@ -1,0 +1,8 @@
+D:\temp\VisualC#\NotificationExample\NotificationSample\NotificationSample\bin\Debug\NotificationSample.exe
+D:\temp\VisualC#\NotificationExample\NotificationSample\NotificationSample\bin\Debug\NotificationSample.pdb
+D:\temp\VisualC#\NotificationExample\NotificationSample\NotificationSample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\NotificationExample\NotificationSample\NotificationSample\obj\Debug\NotificationSample.Form1.resources
+D:\temp\VisualC#\NotificationExample\NotificationSample\NotificationSample\obj\Debug\NotificationSample.Properties.Resources.resources
+D:\temp\VisualC#\NotificationExample\NotificationSample\NotificationSample\obj\Debug\NotificationSample.csproj.GenerateResource.Cache
+D:\temp\VisualC#\NotificationExample\NotificationSample\NotificationSample\obj\Debug\NotificationSample.exe
+D:\temp\VisualC#\NotificationExample\NotificationSample\NotificationSample\obj\Debug\NotificationSample.pdb

@@ -1,0 +1,8 @@
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerslib\obj\Debug\TestManagerslib.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerslib\bin\Debug\TestManagerslib.dll.config
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerslib\bin\Debug\TestManagerslib.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerslib\bin\Debug\TestManagerslib.pdb
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerslib\bin\Debug\EntityFramework.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerslib\bin\Debug\EntityFramework.xml
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerslib\obj\Debug\TestManagerslib.dll
+D:\MyPractices\Web\WCF\TestManagerslib\TestManagerslib\obj\Debug\TestManagerslib.pdb

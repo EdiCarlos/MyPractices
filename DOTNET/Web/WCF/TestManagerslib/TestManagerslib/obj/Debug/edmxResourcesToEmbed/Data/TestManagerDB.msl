@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="TestManagerDB" />
+  <Alias Key="Target" Value="TestManagerDB.Store" />
+  <EntityContainerMapping CdmEntityContainer="TestManagerDBContainer" StorageEntityContainer="TestManagerDBStoreContainer">
+    <EntitySetMapping Name="TestManagers">
+      <EntityTypeMapping TypeName="TestManagerDB.TestManager">
+        <MappingFragment StoreEntitySet="TestManagers">
+          <ScalarProperty Name="PassingMark" ColumnName="PassingMark" />
+          <ScalarProperty Name="TestDuration" ColumnName="TestDuration" />
+          <ScalarProperty Name="GradeTypeID" ColumnName="GradeTypeID" />
+          <ScalarProperty Name="TotalMarks" ColumnName="TotalMarks" />
+          <ScalarProperty Name="PassPercentage" ColumnName="PassPercentage" />
+          <ScalarProperty Name="NumberOfQuestions" ColumnName="NumberOfQuestions" />
+          <ScalarProperty Name="TestDescription" ColumnName="TestDescription" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="TestManagerID" ColumnName="TestManagerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="InsertTestManager" FunctionName="TestManagerDB.Store.InsertTestManager" />
+  </EntityContainerMapping>
+</Mapping>

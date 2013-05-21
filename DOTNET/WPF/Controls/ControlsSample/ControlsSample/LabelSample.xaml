@@ -1,0 +1,16 @@
+﻿<Window x:Class="ControlsSample.LabelSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LabelSample" Height="299" Width="409">
+    <StackPanel>
+        <Label Content="User_name" Target="{Binding ElementName=txtUsername}"  Height="28" HorizontalAlignment="Left" Margin="20, 20, 0, 0" Name="label1" VerticalAlignment="Top" />
+        <TextBox x:Name="txtUsername" Margin="20, 20, 0, 0" />
+        <Label Content="Pass_word" Target="{Binding ElementName=txtPassword}" Height="28" HorizontalAlignment="Left" Margin="20, 20, 0, 0"></Label>
+        <TextBox x:Name="txtPassword" Margin="20, 20, 0, 0" />
+        <StackPanel Orientation="Horizontal">
+        <Button Content="_Login" Name="btnLogin" Width="50" Margin="120, 0, 0, 0" IsDefault="True" Click="btnLogin_Click"/>
+        <Button Content="_Cancel" Name="btnCancel" Width="50" Margin="10, 0, 0, 0" Click="btnCancel_Click"/>
+        </StackPanel>
+    </StackPanel>
+
+</Window>

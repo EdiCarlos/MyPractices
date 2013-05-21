@@ -1,0 +1,5 @@
+D:\temp\VisualC#\mysqlexample\Solution1\mycalculationClass\bin\Debug\mycalculationClass.dll
+D:\temp\VisualC#\mysqlexample\Solution1\mycalculationClass\bin\Debug\mycalculationClass.pdb
+D:\temp\VisualC#\mysqlexample\Solution1\mycalculationClass\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\mysqlexample\Solution1\mycalculationClass\obj\Debug\mycalculationClass.dll
+D:\temp\VisualC#\mysqlexample\Solution1\mycalculationClass\obj\Debug\mycalculationClass.pdb

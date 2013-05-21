@@ -1,0 +1,15 @@
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\bin\Debug\Crom.Controls.Test.exe
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\bin\Debug\Crom.Controls.Test.pdb
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\bin\Debug\Crom.Controls.dll
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\bin\Debug\Crom.Controls.pdb
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.AnimatedForm.resources
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.DockTest.resources
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.FormWithPreview.resources
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.PictureForm.resources
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.Info.resources
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.Properties.Resources.resources
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.csproj.GenerateResource.Cache
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.exe
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.pdb
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\Crom.Controls.Test\obj\Debug\Crom.Controls.Test.Forms.MyLoginForm.resources

@@ -1,0 +1,4 @@
+obj\Debug\_NumberWorkFlowActivitiess.g.cs
+obj\Debug\Prompt.g.cs
+obj\Debug\FlowchartNumberGuessWorkflow.g.cs
+obj\Debug\SequentialNumberGuessWorkflow.g.cs

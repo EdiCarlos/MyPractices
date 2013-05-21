@@ -1,0 +1,15 @@
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\bin\Debug\WorkflowDesigner.exe.config
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\bin\Debug\WorkflowDesigner.exe
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\bin\Debug\WorkflowDesigner.pdb
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\bin\Debug\Microsoft.Samples.SqlServer.Activities.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\bin\Debug\Microsoft.Samples.SqlServer.Common.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\bin\Debug\Microsoft.Samples.SqlServer.Workflow.Designer.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\bin\Debug\Microsoft.Samples.SqlServer.Activities.pdb
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\bin\Debug\Microsoft.Samples.SqlServer.Common.pdb
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\bin\Debug\Microsoft.Samples.SqlServer.Workflow.Designer.pdb
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\obj\x86\Debug\WorkflowDesigner.Properties.Resources.resources
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\obj\x86\Debug\WorkflowDesigner.exe
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\WorkflowDesigner\obj\x86\Debug\WorkflowDesigner.pdb

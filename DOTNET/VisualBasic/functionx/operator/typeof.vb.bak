@@ -1,0 +1,7 @@
+Module module1
+Sub Main()
+Dim str as String = "Arif"
+
+Console.WriteLine(typeof str)
+End Sub
+end Module

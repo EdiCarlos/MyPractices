@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AdventureWorksModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="AdventureWorksModelStoreContainer">
+          <EntitySet Name="vManufacturingInstructions" EntityType="AdventureWorksModel.Store.vManufacturingInstructions" store:Type="Views" store:Schema="Production" store:Name="vManufacturingInstructions">
+            <DefiningQuery>SELECT 
+      [vManufacturingInstructions].[ID] AS [ID], 
+      [vManufacturingInstructions].[ProductModelID] AS [ProductModelID], 
+      [vManufacturingInstructions].[ProductName] AS [ProductName], 
+      [vManufacturingInstructions].[Instructions] AS [Instructions], 
+      [vManufacturingInstructions].[LocationID] AS [LocationID], 
+      [vManufacturingInstructions].[SetupHours] AS [SetupHours], 
+      [vManufacturingInstructions].[MachineHours] AS [MachineHours], 
+      [vManufacturingInstructions].[LaborHours] AS [LaborHours], 
+      [vManufacturingInstructions].[LotSize] AS [LotSize], 
+      [vManufacturingInstructions].[Step] AS [Step]
+      FROM [Production].[vManufacturingInstructions] AS [vManufacturingInstructions]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vProductCatalog" EntityType="AdventureWorksModel.Store.vProductCatalog" store:Type="Views" store:Schema="Production" store:Name="vProductCatalog">
+            <DefiningQuery>SELECT 
+      [vProductCatalog].[ID] AS [ID], 
+      [vProductCatalog].[ProductID] AS [ProductID], 
+      [vProductCatalog].[ProductNumber] AS [ProductNumber], 
+      [vProductCatalog].[ProductName] AS [ProductName], 
+      [vProductCatalog].[ProductModel] AS [ProductModel], 
+      [vProductCatalog].[ProductCategory] AS [ProductCategory], 
+      [vProductCatalog].[ProductSubcategory] AS [ProductSubcategory], 
+      [vProductCatalog].[Description] AS [Description], 
+      [vProductCatalog].[CultureID] AS [CultureID], 
+      [vProductCatalog].[Color] AS [Color], 
+      [vProductCatalog].[Size] AS [Size], 
+      [vProductCatalog].[Weight] AS [Weight], 
+      [vProductCatalog].[ListPrice] AS [ListPrice]
+      FROM [Production].[vProductCatalog] AS [vProductCatalog]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vWorkOrderRouting" EntityType="AdventureWorksModel.Store.vWorkOrderRouting" store:Type="Views" store:Schema="Production" store:Name="vWorkOrderRouting">
+            <DefiningQuery>SELECT 
+      [vWorkOrderRouting].[ID] AS [ID], 
+      [vWorkOrderRouting].[WorkOrderID] AS [WorkOrderID], 
+      [vWorkOrderRouting].[ProductID] AS [ProductID], 
+      [vWorkOrderRouting].[ProductNumber] AS [ProductNumber], 
+      [vWorkOrderRouting].[ProductName] AS [ProductName], 
+      [vWorkOrderRouting].[OperationSequence] AS [OperationSequence], 
+      [vWorkOrderRouting].[LocationID] AS [LocationID], 
+      [vWorkOrderRouting].[Name] AS [Name], 
+      [vWorkOrderRouting].[ScheduledStartDate] AS [ScheduledStartDate], 
+      [vWorkOrderRouting].[ActualStartDate] AS [ActualStartDate], 
+      [vWorkOrderRouting].[ScheduledEndDate] AS [ScheduledEndDate], 
+      [vWorkOrderRouting].[ActualEndDate] AS [ActualEndDate], 
+      [vWorkOrderRouting].[ActualResourceHrs] AS [ActualResourceHrs], 
+      [vWorkOrderRouting].[PlannedCost] AS [PlannedCost], 
+      [vWorkOrderRouting].[ActualCost] AS [ActualCost], 
+      [vWorkOrderRouting].[OrderQty] AS [OrderQty], 
+      [vWorkOrderRouting].[ScrappedQty] AS [ScrappedQty], 
+      [vWorkOrderRouting].[DueDate] AS [DueDate], 
+      [vWorkOrderRouting].[ScrapReasonID] AS [ScrapReasonID], 
+      [vWorkOrderRouting].[ScrapReason] AS [ScrapReason]
+      FROM [Production].[vWorkOrderRouting] AS [vWorkOrderRouting]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vCompanySales" EntityType="AdventureWorksModel.Store.vCompanySales" store:Type="Views" store:Schema="Sales" store:Name="vCompanySales">
+            <DefiningQuery>SELECT 
+      [vCompanySales].[ID] AS [ID], 
+      [vCompanySales].[ProductCategory] AS [ProductCategory], 
+      [vCompanySales].[ProductSubCategory] AS [ProductSubCategory], 
+      [vCompanySales].[OrderYear] AS [OrderYear], 
+      [vCompanySales].[OrderQtr] AS [OrderQtr], 
+      [vCompanySales].[Sales] AS [Sales]
+      FROM [Sales].[vCompanySales] AS [vCompanySales]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vTerritorySalesDrilldown" EntityType="AdventureWorksModel.Store.vTerritorySalesDrilldown" store:Type="Views" store:Schema="Sales" store:Name="vTerritorySalesDrilldown">
+            <DefiningQuery>SELECT 
+      [vTerritorySalesDrilldown].[ID] AS [ID], 
+      [vTerritorySalesDrilldown].[TerritoryName] AS [TerritoryName], 
+      [vTerritorySalesDrilldown].[SalesPersonID] AS [SalesPersonID], 
+      [vTerritorySalesDrilldown].[EmployeeFirstName] AS [EmployeeFirstName], 
+      [vTerritorySalesDrilldown].[EmployeeLastName] AS [EmployeeLastName], 
+      [vTerritorySalesDrilldown].[SalesOrderNumber] AS [SalesOrderNumber], 
+      [vTerritorySalesDrilldown].[Total] AS [Total]
+      FROM [Sales].[vTerritorySalesDrilldown] AS [vTerritorySalesDrilldown]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'AdventureWorks2012.Production.vManufacturingInstructions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vManufacturingInstructions">
+          
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="ProductModelID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Instructions" Type="nvarchar(max)" />
+          <Property Name="LocationID" Type="int" />
+          <Property Name="SetupHours" Type="decimal" Precision="9" Scale="4" />
+          <Property Name="MachineHours" Type="decimal" Precision="9" Scale="4" />
+          <Property Name="LaborHours" Type="decimal" Precision="9" Scale="4" />
+          <Property Name="LotSize" Type="int" />
+          <Property Name="Step" Type="nvarchar" MaxLength="1024" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'AdventureWorks2012.Production.vProductCatalog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vProductCatalog">
+          <Key>
+            <PropertyRef Name="ID" />
+            
+            
+            
+            
+            
+            
+            
+            
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="ProductNumber" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductModel" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductSubcategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="CultureID" Type="nchar" Nullable="false" MaxLength="6" />
+          <Property Name="Color" Type="nvarchar" MaxLength="15" />
+          <Property Name="Size" Type="nvarchar" MaxLength="5" />
+          <Property Name="Weight" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="ListPrice" Type="money" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'AdventureWorks2012.Production.vWorkOrderRouting' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vWorkOrderRouting">
+          
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="WorkOrderID" Type="int" Nullable="false" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="ProductNumber" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="ProductName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="OperationSequence" Type="smallint" Nullable="false" />
+          <Property Name="LocationID" Type="smallint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ScheduledStartDate" Type="datetime" Nullable="false" />
+          <Property Name="ActualStartDate" Type="datetime" />
+          <Property Name="ScheduledEndDate" Type="datetime" Nullable="false" />
+          <Property Name="ActualEndDate" Type="datetime" />
+          <Property Name="ActualResourceHrs" Type="decimal" Precision="9" Scale="4" />
+          <Property Name="PlannedCost" Type="money" Nullable="false" />
+          <Property Name="ActualCost" Type="money" />
+          <Property Name="OrderQty" Type="int" Nullable="false" />
+          <Property Name="ScrappedQty" Type="smallint" Nullable="false" />
+          <Property Name="DueDate" Type="datetime" Nullable="false" />
+          <Property Name="ScrapReasonID" Type="smallint" />
+          <Property Name="ScrapReason" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'AdventureWorks2012.Sales.vCompanySales' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vCompanySales">
+          
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="ProductCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ProductSubCategory" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="OrderYear" Type="int" />
+          <Property Name="OrderQtr" Type="nvarchar" MaxLength="31" />
+          <Property Name="Sales" Type="money" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'AdventureWorks2012.Sales.vTerritorySalesDrilldown' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vTerritorySalesDrilldown">
+          
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="TerritoryName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SalesPersonID" Type="int" Nullable="false" />
+          <Property Name="EmployeeFirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="EmployeeLastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SalesOrderNumber" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="Total" Type="money" Nullable="false" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AdventureWorksModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AdventureWorksEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="ManufacturingInstructions" EntityType="AdventureWorksModel.vManufacturingInstructions" />
+          <EntitySet Name="WorkOrderRouting" EntityType="AdventureWorksModel.vWorkOrderRouting" />
+          <EntitySet Name="ProductCatalog" EntityType="AdventureWorksModel.vProductCatalog" />
+          <EntitySet Name="CompanySales" EntityType="AdventureWorksModel.vCompanySales" />
+          <EntitySet Name="TerritorySalesDrilldown" EntityType="AdventureWorksModel.vTerritorySalesDrilldown" />
+        </EntityContainer>
+        <EntityType Name="vManufacturingInstructions">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ProductModelID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="ProductName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Instructions" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="LocationID" />
+          <Property Type="Decimal" Name="SetupHours" Precision="9" Scale="4" />
+          <Property Type="Decimal" Name="MachineHours" Precision="9" Scale="4" />
+          <Property Type="Decimal" Name="LaborHours" Precision="9" Scale="4" />
+          <Property Type="Int32" Name="LotSize" />
+          <Property Type="String" Name="Step" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="ID" Nullable="false" />         
+        </EntityType>
+        <EntityType Name="vWorkOrderRouting">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="WorkOrderID" Nullable="false" />
+          <Property Type="Int32" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="ProductNumber" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int16" Name="OperationSequence" Nullable="false" />
+          <Property Type="Int16" Name="LocationID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ScheduledStartDate" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="ActualStartDate" Precision="3" />
+          <Property Type="DateTime" Name="ScheduledEndDate" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="ActualEndDate" Precision="3" />
+          <Property Type="Decimal" Name="ActualResourceHrs" Precision="9" Scale="4" />
+          <Property Type="Decimal" Name="PlannedCost" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="ActualCost" Precision="19" Scale="4" />
+          <Property Type="Int32" Name="OrderQty" Nullable="false" />
+          <Property Type="Int16" Name="ScrappedQty" Nullable="false" />
+          <Property Type="DateTime" Name="DueDate" Nullable="false" Precision="3" />
+          <Property Type="Int16" Name="ScrapReasonID" />
+          <Property Type="String" Name="ScrapReason" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="ID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="vProductCatalog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="ProductNumber" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductModel" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductSubcategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CultureID" Nullable="false" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="Color" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Size" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Weight" Precision="8" Scale="2" />
+          <Property Type="Decimal" Name="ListPrice" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          
+        </EntityType>
+        <EntityType Name="vCompanySales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ProductCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ProductSubCategory" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="OrderYear" />
+          <Property Type="String" Name="OrderQtr" MaxLength="31" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Sales" Precision="19" Scale="4" />
+          <Property Type="Int64" Name="ID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="vTerritorySalesDrilldown">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="TerritoryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SalesPersonID" Nullable="false" />
+          <Property Type="String" Name="EmployeeFirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EmployeeLastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SalesOrderNumber" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Total" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Int64" Name="ID" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AdventureWorksModelStoreContainer" CdmEntityContainer="AdventureWorksEntities">
+          <EntitySetMapping Name="ManufacturingInstructions">
+            <EntityTypeMapping TypeName="AdventureWorksModel.vManufacturingInstructions">
+              <MappingFragment StoreEntitySet="vManufacturingInstructions">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Step" ColumnName="Step" />
+                <ScalarProperty Name="LotSize" ColumnName="LotSize" />
+                <ScalarProperty Name="LaborHours" ColumnName="LaborHours" />
+                <ScalarProperty Name="MachineHours" ColumnName="MachineHours" />
+                <ScalarProperty Name="SetupHours" ColumnName="SetupHours" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="Instructions" ColumnName="Instructions" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductModelID" ColumnName="ProductModelID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkOrderRouting">
+            <EntityTypeMapping TypeName="AdventureWorksModel.vWorkOrderRouting">
+              <MappingFragment StoreEntitySet="vWorkOrderRouting">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ScrapReason" ColumnName="ScrapReason" />
+                <ScalarProperty Name="ScrapReasonID" ColumnName="ScrapReasonID" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="ScrappedQty" ColumnName="ScrappedQty" />
+                <ScalarProperty Name="OrderQty" ColumnName="OrderQty" />
+                <ScalarProperty Name="ActualCost" ColumnName="ActualCost" />
+                <ScalarProperty Name="PlannedCost" ColumnName="PlannedCost" />
+                <ScalarProperty Name="ActualResourceHrs" ColumnName="ActualResourceHrs" />
+                <ScalarProperty Name="ActualEndDate" ColumnName="ActualEndDate" />
+                <ScalarProperty Name="ScheduledEndDate" ColumnName="ScheduledEndDate" />
+                <ScalarProperty Name="ActualStartDate" ColumnName="ActualStartDate" />
+                <ScalarProperty Name="ScheduledStartDate" ColumnName="ScheduledStartDate" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="OperationSequence" ColumnName="OperationSequence" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="WorkOrderID" ColumnName="WorkOrderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductCatalog">
+            <EntityTypeMapping TypeName="AdventureWorksModel.vProductCatalog">
+              <MappingFragment StoreEntitySet="vProductCatalog">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ListPrice" ColumnName="ListPrice" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="CultureID" ColumnName="CultureID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ProductSubcategory" ColumnName="ProductSubcategory" />
+                <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+                <ScalarProperty Name="ProductModel" ColumnName="ProductModel" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompanySales">
+            <EntityTypeMapping TypeName="AdventureWorksModel.vCompanySales">
+              <MappingFragment StoreEntitySet="vCompanySales">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Sales" ColumnName="Sales" />
+                <ScalarProperty Name="OrderQtr" ColumnName="OrderQtr" />
+                <ScalarProperty Name="OrderYear" ColumnName="OrderYear" />
+                <ScalarProperty Name="ProductSubCategory" ColumnName="ProductSubCategory" />
+                <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TerritorySalesDrilldown">
+            <EntityTypeMapping TypeName="AdventureWorksModel.vTerritorySalesDrilldown">
+              <MappingFragment StoreEntitySet="vTerritorySalesDrilldown">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+                <ScalarProperty Name="EmployeeLastName" ColumnName="EmployeeLastName" />
+                <ScalarProperty Name="EmployeeFirstName" ColumnName="EmployeeFirstName" />
+                <ScalarProperty Name="SalesPersonID" ColumnName="SalesPersonID" />
+                <ScalarProperty Name="TerritoryName" ColumnName="TerritoryName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="AdventureWorks" ZoomLevel="102">
+        <EntityTypeShape EntityType="AdventureWorksModel.vManufacturingInstructions" Width="2.125" PointX="2.875" PointY="0.5" Height="2.7494921875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksModel.vWorkOrderRouting" Width="2.125" PointX="0.5" PointY="0.5" Height="4.6725065104166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorksModel.vProductCatalog" Width="1.875" PointX="5.25" PointY="0.5" Height="3.346396484375" />
+        <EntityTypeShape EntityType="AdventureWorksModel.vCompanySales" Width="1.75" PointX="7.375" PointY="0.5" Height="1.9802864583333335" />
+        <EntityTypeShape EntityType="AdventureWorksModel.vTerritorySalesDrilldown" Width="1.625" PointX="9.375" PointY="0.5" Height="2.1725878906249996" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

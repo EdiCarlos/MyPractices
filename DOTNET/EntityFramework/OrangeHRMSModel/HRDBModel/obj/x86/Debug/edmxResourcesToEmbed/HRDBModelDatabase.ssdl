@@ -1,0 +1,1411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HRDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="HRDBModelStoreContainer">
+    <EntitySet Name="HR_Address" EntityType="HRDBModel.Store.HR_Address" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_AccountsWithBanks" EntityType="HRDBModel.Store.HR_CMP_AccountsWithBanks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_AS_PolicyAppliedTo" EntityType="HRDBModel.Store.HR_CMP_AS_PolicyAppliedTo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_AS_WorkShifts" EntityType="HRDBModel.Store.HR_CMP_AS_WorkShifts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_ExemptionRules" EntityType="HRDBModel.Store.HR_CMP_ExemptionRules" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_ExemptionsType" EntityType="HRDBModel.Store.HR_CMP_ExemptionsType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_InsurancePolicy" EntityType="HRDBModel.Store.HR_CMP_InsurancePolicy" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_LKP_Holidays" EntityType="HRDBModel.Store.HR_CMP_LKP_Holidays" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_LKP_InsuranceCompanyDetail" EntityType="HRDBModel.Store.HR_CMP_LKP_InsuranceCompanyDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_LKP_LeaveQouta" EntityType="HRDBModel.Store.HR_CMP_LKP_LeaveQouta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_LKP_Leaves" EntityType="HRDBModel.Store.HR_CMP_LKP_Leaves" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_LKP_LeaveTypes" EntityType="HRDBModel.Store.HR_CMP_LKP_LeaveTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_LKP_ProbationPeriod" EntityType="HRDBModel.Store.HR_CMP_LKP_ProbationPeriod" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_LKP_StationType" EntityType="HRDBModel.Store.HR_CMP_LKP_StationType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_Messages" EntityType="HRDBModel.Store.HR_CMP_Messages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Cmp_PerformanceRatingType" EntityType="HRDBModel.Store.HR_Cmp_PerformanceRatingType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_Policies" EntityType="HRDBModel.Store.HR_CMP_Policies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Cmp_SalaryGenerationDate" EntityType="HRDBModel.Store.HR_Cmp_SalaryGenerationDate" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_Stations" EntityType="HRDBModel.Store.HR_CMP_Stations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CMP_WorkShifts" EntityType="HRDBModel.Store.HR_CMP_WorkShifts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Company" EntityType="HRDBModel.Store.HR_Company" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_CompanyAssets" EntityType="HRDBModel.Store.HR_CompanyAssets" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_ActualAnnualTaxExemptionDetails" EntityType="HRDBModel.Store.HR_Emp_ActualAnnualTaxExemptionDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_ActualExemptions" EntityType="HRDBModel.Store.HR_Emp_ActualExemptions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_AnnualSalaryDetails" EntityType="HRDBModel.Store.HR_Emp_AnnualSalaryDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_AnnualTaxDeductionDetails" EntityType="HRDBModel.Store.HR_Emp_AnnualTaxDeductionDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_AS_EducationDocs" EntityType="HRDBModel.Store.HR_Emp_AS_EducationDocs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_AS_EmployeeInProbation" EntityType="HRDBModel.Store.HR_Emp_AS_EmployeeInProbation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_BankAccountDetails" EntityType="HRDBModel.Store.HR_Emp_BankAccountDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_ContactDetails" EntityType="HRDBModel.Store.HR_Emp_ContactDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_EducationDetails" EntityType="HRDBModel.Store.HR_Emp_EducationDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_EducationDocs" EntityType="HRDBModel.Store.HR_Emp_EducationDocs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_EmergenceContact" EntityType="HRDBModel.Store.HR_Emp_EmergenceContact" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_EstimateAnnualTaxExemptionDetails" EntityType="HRDBModel.Store.HR_Emp_EstimateAnnualTaxExemptionDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_EstimateExemptions" EntityType="HRDBModel.Store.HR_Emp_EstimateExemptions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_ExemptionDocuments" EntityType="HRDBModel.Store.HR_Emp_ExemptionDocuments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_FamilyMembers" EntityType="HRDBModel.Store.HR_Emp_FamilyMembers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_Inbox" EntityType="HRDBModel.Store.HR_Emp_Inbox" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_InsuranceDetails" EntityType="HRDBModel.Store.HR_Emp_InsuranceDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_EMP_Leave_Hist" EntityType="HRDBModel.Store.HR_EMP_Leave_Hist" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_LeaveApprovalMessage" EntityType="HRDBModel.Store.HR_Emp_LeaveApprovalMessage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_EMP_LeaveQoutaDetails" EntityType="HRDBModel.Store.HR_EMP_LeaveQoutaDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_LeaveRequest" EntityType="HRDBModel.Store.HR_Emp_LeaveRequest" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_MonthlySalaryDeductionDetails" EntityType="HRDBModel.Store.HR_Emp_MonthlySalaryDeductionDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_MonthlySalaryDetails" EntityType="HRDBModel.Store.HR_Emp_MonthlySalaryDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_Passport" EntityType="HRDBModel.Store.HR_Emp_Passport" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_PreviousEmploymentDetails" EntityType="HRDBModel.Store.HR_Emp_PreviousEmploymentDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_Property" EntityType="HRDBModel.Store.HR_Emp_Property" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_ProvidentFundDetails" EntityType="HRDBModel.Store.HR_Emp_ProvidentFundDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_RelatedDocs" EntityType="HRDBModel.Store.HR_Emp_RelatedDocs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_RelatedDocs_Hist" EntityType="HRDBModel.Store.HR_Emp_RelatedDocs_Hist" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_ReportingDetails" EntityType="HRDBModel.Store.HR_Emp_ReportingDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_ReviewDetails" EntityType="HRDBModel.Store.HR_Emp_ReviewDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_SentMessages" EntityType="HRDBModel.Store.HR_Emp_SentMessages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_Skills" EntityType="HRDBModel.Store.HR_Emp_Skills" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_SmartGoals" EntityType="HRDBModel.Store.HR_Emp_SmartGoals" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_UserGroup" EntityType="HRDBModel.Store.HR_Emp_UserGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Emp_Users" EntityType="HRDBModel.Store.HR_Emp_Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Employee" EntityType="HRDBModel.Store.HR_Employee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_GBL_LKP_ApprovalStatus" EntityType="HRDBModel.Store.HR_GBL_LKP_ApprovalStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_GBL_LKP_IndustryType" EntityType="HRDBModel.Store.HR_GBL_LKP_IndustryType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_GBL_TaxRules" EntityType="HRDBModel.Store.HR_GBL_TaxRules" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_GLB_LKP_Banks" EntityType="HRDBModel.Store.HR_GLB_LKP_Banks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_GLB_LKP_NameTitle" EntityType="HRDBModel.Store.HR_GLB_LKP_NameTitle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_GLB_LKP_RelationType" EntityType="HRDBModel.Store.HR_GLB_LKP_RelationType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LK_Currency" EntityType="HRDBModel.Store.HR_LK_Currency" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_AddressType" EntityType="HRDBModel.Store.HR_LKP_AddressType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_BankAccountTypes" EntityType="HRDBModel.Store.HR_LKP_BankAccountTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_Country" EntityType="HRDBModel.Store.HR_LKP_Country" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_Departments" EntityType="HRDBModel.Store.HR_LKP_Departments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_DiplomaDetails" EntityType="HRDBModel.Store.HR_LKP_DiplomaDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_EductionType" EntityType="HRDBModel.Store.HR_LKP_EductionType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_JobTitle" EntityType="HRDBModel.Store.HR_LKP_JobTitle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_PropertyTypeID" EntityType="HRDBModel.Store.HR_LKP_PropertyTypeID" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_SalaryGradeDetails" EntityType="HRDBModel.Store.HR_LKP_SalaryGradeDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_SalaryGrades" EntityType="HRDBModel.Store.HR_LKP_SalaryGrades" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_LKP_Skill" EntityType="HRDBModel.Store.HR_LKP_Skill" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Locations" EntityType="HRDBModel.Store.HR_Locations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HR_Log" EntityType="HRDBModel.Store.HR_Log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="HRDBModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_HR_Emp_AddressHR_Employee" Association="HRDBModel.Store.FK_HR_Emp_AddressHR_Employee">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Address" EntitySet="HR_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LK_AddressTypeHR_Emp_Address" Association="HRDBModel.Store.FK_HR_LK_AddressTypeHR_Emp_Address">
+      <End Role="HR_LKP_AddressType" EntitySet="HR_LKP_AddressType" />
+      <End Role="HR_Address" EntitySet="HR_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LocationsHR_Emp_Address" Association="HRDBModel.Store.FK_HR_LocationsHR_Emp_Address">
+      <End Role="HR_Locations" EntitySet="HR_Locations" />
+      <End Role="HR_Address" EntitySet="HR_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_CompanyHR_Employee" Association="HRDBModel.Store.FK_HR_CompanyHR_Employee">
+      <End Role="HR_Company" EntitySet="HR_Company" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_CompanyAssetsHR_EmployeeProperty" Association="HRDBModel.Store.FK_HR_CompanyAssetsHR_EmployeeProperty">
+      <End Role="HR_CompanyAssets" EntitySet="HR_CompanyAssets" />
+      <End Role="HR_Emp_Property" EntitySet="HR_Emp_Property" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LK_PropertyTypeIDHR_CompanyAssets" Association="HRDBModel.Store.FK_HR_LK_PropertyTypeIDHR_CompanyAssets">
+      <End Role="HR_LKP_PropertyTypeID" EntitySet="HR_LKP_PropertyTypeID" />
+      <End Role="HR_CompanyAssets" EntitySet="HR_CompanyAssets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_Emp_EducationDocsHR_Emp_AS_EducationDocs" Association="HRDBModel.Store.FK_HR_Emp_EducationDocsHR_Emp_AS_EducationDocs">
+      <End Role="HR_Emp_EducationDocs" EntitySet="HR_Emp_EducationDocs" />
+      <End Role="HR_Emp_AS_EducationDocs" EntitySet="HR_Emp_AS_EducationDocs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_ContactDetails" Association="HRDBModel.Store.FK_HR_EmployeeHR_ContactDetails">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_ContactDetails" EntitySet="HR_Emp_ContactDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_Emp_EducationDetails" Association="HRDBModel.Store.FK_HR_EmployeeHR_Emp_EducationDetails">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_EducationDetails" EntitySet="HR_Emp_EducationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LKP_DiplomaDetailsHR_Emp_EducationDetails" Association="HRDBModel.Store.FK_HR_LKP_DiplomaDetailsHR_Emp_EducationDetails">
+      <End Role="HR_LKP_DiplomaDetails" EntitySet="HR_LKP_DiplomaDetails" />
+      <End Role="HR_Emp_EducationDetails" EntitySet="HR_Emp_EducationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_Emp_EmergenceContact" Association="HRDBModel.Store.FK_HR_EmployeeHR_Emp_EmergenceContact">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_EmergenceContact" EntitySet="HR_Emp_EmergenceContact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_Emp_FamilyMembers" Association="HRDBModel.Store.FK_HR_EmployeeHR_Emp_FamilyMembers">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_FamilyMembers" EntitySet="HR_Emp_FamilyMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LKP_RelationTypeHR_Emp_FamilyMembers" Association="HRDBModel.Store.FK_HR_LKP_RelationTypeHR_Emp_FamilyMembers">
+      <End Role="HR_GLB_LKP_RelationType" EntitySet="HR_GLB_LKP_RelationType" />
+      <End Role="HR_Emp_FamilyMembers" EntitySet="HR_Emp_FamilyMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_Emp_PreviousEmploymentDetails" Association="HRDBModel.Store.FK_HR_EmployeeHR_Emp_PreviousEmploymentDetails">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_PreviousEmploymentDetails" EntitySet="HR_Emp_PreviousEmploymentDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_CompanyProperty" Association="HRDBModel.Store.FK_HR_EmployeeHR_CompanyProperty">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_Property" EntitySet="HR_Emp_Property" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_Emp_SkillsHR_LKP_Skill" Association="HRDBModel.Store.FK_HR_Emp_SkillsHR_LKP_Skill">
+      <End Role="HR_LKP_Skill" EntitySet="HR_LKP_Skill" />
+      <End Role="HR_Emp_Skills" EntitySet="HR_Emp_Skills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_LKP_Departments" Association="HRDBModel.Store.FK_HR_EmployeeHR_LKP_Departments">
+      <End Role="HR_LKP_Departments" EntitySet="HR_LKP_Departments" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_GLB_LKP_NameTitleHR_Employee" Association="HRDBModel.Store.FK_HR_GLB_LKP_NameTitleHR_Employee">
+      <End Role="HR_GLB_LKP_NameTitle" EntitySet="HR_GLB_LKP_NameTitle" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_SalaryGradesHR_Employee" Association="HRDBModel.Store.FK_HR_SalaryGradesHR_Employee">
+      <End Role="HR_LKP_SalaryGrades" EntitySet="HR_LKP_SalaryGrades" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LK_CountryHR_LK_Currency" Association="HRDBModel.Store.FK_HR_LK_CountryHR_LK_Currency">
+      <End Role="HR_LK_Currency" EntitySet="HR_LK_Currency" />
+      <End Role="HR_LKP_Country" EntitySet="HR_LKP_Country" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LK_CountryHR_Locations" Association="HRDBModel.Store.FK_HR_LK_CountryHR_Locations">
+      <End Role="HR_LKP_Country" EntitySet="HR_LKP_Country" />
+      <End Role="HR_Locations" EntitySet="HR_Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades" Association="HRDBModel.Store.FK_HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades">
+      <End Role="HR_LKP_SalaryGrades" EntitySet="HR_LKP_SalaryGrades" />
+      <End Role="HR_LKP_SalaryGradeDetails" EntitySet="HR_LKP_SalaryGradeDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="HR_Address">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+    <Property Name="Street1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Street2" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LocationID" Type="int" Nullable="true" />
+    <Property Name="AddressTypeID" Type="int" Nullable="false" />
+    <Property Name="FamilyMemberID" Type="int" Nullable="true" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+    <Property Name="StationID" Type="int" Nullable="true" />
+    <Property Name="InusranceCompanyID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_AccountsWithBanks">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="BankID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_AS_PolicyAppliedTo">
+    <Key>
+      <PropertyRef Name="PolicyID" />
+    </Key>
+    <Property Name="PolicyID" Type="int" Nullable="false" />
+    <Property Name="StationID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_AS_WorkShifts">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkShiftID" Type="int" Nullable="false" />
+    <Property Name="StationID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_ExemptionRules">
+    <Key>
+      <PropertyRef Name="ExemptionRuleID" />
+    </Key>
+    <Property Name="ExemptionRuleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyID" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="ExemptionTypeID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ExemptionRule" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ExemptionRuleDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ExemptionLimitedAmount" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_ExemptionsType">
+    <Key>
+      <PropertyRef Name="ExemptionTypeId" />
+    </Key>
+    <Property Name="ExemptionTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ExemptionType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ExemptionDescriptions" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="HR_CMP_InsurancePolicy">
+    <Key>
+      <PropertyRef Name="InsurancePolicyID" />
+    </Key>
+    <Property Name="InsurancePolicyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InusranceCompanyID" Type="int" Nullable="false" />
+    <Property Name="PolicyAmount" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+    <Property Name="PolicyDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyURL" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_Holidays">
+    <Key>
+      <PropertyRef Name="HolidayID" />
+    </Key>
+    <Property Name="HolidayID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="HolidayTitle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HolidayDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HolidayDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_InsuranceCompanyDetail">
+    <Key>
+      <PropertyRef Name="InusranceCompanyID" />
+    </Key>
+    <Property Name="InusranceCompanyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_LeaveQouta">
+    <Key>
+      <PropertyRef Name="LeaveQuotaID" />
+    </Key>
+    <Property Name="LeaveQuotaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+    <Property Name="LeaveQouta" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PorbationLeaveQouta" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_Leaves">
+    <Key>
+      <PropertyRef Name="LeaveID" />
+    </Key>
+    <Property Name="LeaveID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveTypeID" Type="int" Nullable="true" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+    <Property Name="NumberOfLeaves" Type="int" Nullable="false" />
+    <Property Name="IsPaid" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_LeaveTypes">
+    <Key>
+      <PropertyRef Name="LeaveTypeID" />
+    </Key>
+    <Property Name="LeaveTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LeaveDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_ProbationPeriod">
+    <Key>
+      <PropertyRef Name="ProbationPeriodID" />
+    </Key>
+    <Property Name="ProbationPeriodID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProbationInMonths" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_StationType">
+    <Key>
+      <PropertyRef Name="StationTypeID" />
+    </Key>
+    <Property Name="StationTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StationType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_Messages">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FromEmployeeNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MessageToEmployeeNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Subject" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Body" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MessageDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Cmp_PerformanceRatingType">
+    <Key>
+      <PropertyRef Name="RatingTypeID" />
+    </Key>
+    <Property Name="RatingTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RatingType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RatingDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CMP_Policies">
+    <Key>
+      <PropertyRef Name="PolicyID" />
+    </Key>
+    <Property Name="PolicyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="PolicyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PolicyDescription" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Cmp_SalaryGenerationDate">
+    <Key>
+      <PropertyRef Name="GenerationId" />
+    </Key>
+    <Property Name="GenerationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="GenerationDay" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_Stations">
+    <Key>
+      <PropertyRef Name="StationID" />
+    </Key>
+    <Property Name="StationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StationName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StationTypeID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Location" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_WorkShifts">
+    <Key>
+      <PropertyRef Name="WorkShiftID" />
+    </Key>
+    <Property Name="WorkShiftID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Weekdays" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Weekends" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ShiftName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WorkingHoursFrom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LunchBreakHoursFrom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WorkingHoursTo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LunchBreakHoursTo" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="OrganizationCode" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="WebsiteUrl" Type="nvarchar" Nullable="true" MaxLength="300" />
+    <Property Name="OrganizationLogoPath" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="NumberOfEmployees" Type="int" Nullable="true" />
+    <Property Name="RegisteredEmailAddress" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CompanyDescription" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="IsGovermentSector" Type="bit" Nullable="true" />
+    <Property Name="IndustryTypeID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_CompanyAssets">
+    <Key>
+      <PropertyRef Name="AssetID" />
+    </Key>
+    <Property Name="AssetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PropertyTypeID" Type="int" Nullable="false" />
+    <Property Name="ModelNumber" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ActualAnnualTaxExemptionDetails">
+    <Key>
+      <PropertyRef Name="ActualTaxExemptionID" />
+    </Key>
+    <Property Name="ActualTaxExemptionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="ProffessionalTax" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProvidentFund" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VoluntaryPF" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IncomeTax" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LifeInsurance" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction1" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction2" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction3" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction4" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction5" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction6" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction7" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction8" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction9" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OD1Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD2Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD3Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD4Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD5Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD6Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD7Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD8Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD9Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ActualExemptions">
+    <Key>
+      <PropertyRef Name="MiscExemptionID" />
+    </Key>
+    <Property Name="MiscExemptionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="ExemptionRuleID" Type="int" Nullable="false" />
+    <Property Name="ExemptionAmount" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ActualTaxExemptionID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AnnualSalaryDetails">
+    <Key>
+      <PropertyRef Name="AnnualSalaryID" />
+    </Key>
+    <Property Name="AnnualSalaryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="SalaryGradeCode" Type="int" Nullable="true" />
+    <Property Name="AnnualBasic" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualHouseRent" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualMedicalReimbursment" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualLTAReimbursment" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualFuelReimbursment" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualProfessionalDevelopment" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Misc1" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc2" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc3" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc4" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc5" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc6" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc7" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc8" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc9" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc1Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc2Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc3Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc4Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc5Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc6Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc7Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc8Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc9Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="AnnualGrossSalary" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualNetSalary" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AnnualTaxDeductionDetails">
+    <Key>
+      <PropertyRef Name="AnnualTaxDeductionID" />
+    </Key>
+    <Property Name="AnnualTaxDeductionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="ProffessionalTax" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProvidentFund" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VoluntaryPF" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IncomeTax" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LifeInsurance" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction1" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction2" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction3" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction4" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction5" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction6" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction7" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction8" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction9" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OD1Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD2Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD3Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD4Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD5Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD6Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD7Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD8Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD9Description" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AS_EducationDocs">
+    <Key>
+      <PropertyRef Name="AssociateDocID" />
+    </Key>
+    <Property Name="AssociateDocID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="EducationDocID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AS_EmployeeInProbation">
+    <Key>
+      <PropertyRef Name="ProbationID" />
+    </Key>
+    <Property Name="ProbationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+    <Property Name="ProbationStartDate" Type="datetime" Nullable="false" />
+    <Property Name="ProbationEndDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_BankAccountDetails">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="BankID" Type="int" Nullable="true" />
+    <Property Name="AccountNumber" Type="int" Nullable="false" />
+    <Property Name="IsSalaryAccount" Type="bit" Nullable="true" />
+    <Property Name="IsSalaryCreditAccount" Type="bit" Nullable="true" />
+    <Property Name="BankAccountTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ContactDetails">
+    <Key>
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Name="ContactID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="MobileNumber" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="TelNumber" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="IsPrimaryMobile" Type="bit" Nullable="true" />
+    <Property Name="IsEmergencyContact" Type="bit" Nullable="true" />
+    <Property Name="WorkTelephone" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="EmpOtherEmail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WorkEmailAddress" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EducationDetails">
+    <Key>
+      <PropertyRef Name="EducationDetailID" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="EducationID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SchoolName" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="UniversityName" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="CollegeName" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="StartDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EndDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EduSeqNo" Type="smallint" Nullable="false" />
+    <Property Name="PassPercentage" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="PassGrade" Type="nchar" Nullable="true" MaxLength="2" />
+    <Property Name="DiplomaID" Type="int" Nullable="true" />
+    <Property Name="EducationDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EducationDocs">
+    <Key>
+      <PropertyRef Name="EducationDocID" />
+    </Key>
+    <Property Name="EducationDocID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CertificatePath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MarkSheetPath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DiplomaCertificatePath" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EmergenceContact">
+    <Key>
+      <PropertyRef Name="EmergencyContactID" />
+    </Key>
+    <Property Name="EmergencyContactID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FamilyMemberID" Type="int" Nullable="true" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RelationID" Type="int" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EstimateAnnualTaxExemptionDetails">
+    <Key>
+      <PropertyRef Name="EstimateTaxExemptionID" />
+    </Key>
+    <Property Name="EstimateTaxExemptionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="ProffessionalTax" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProvidentFund" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VoluntaryPF" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IncomeTax" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LifeInsurance" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction1" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction2" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction3" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction4" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction5" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction6" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction7" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction8" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction9" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OD1Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD2Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD3Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD4Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD5Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD6Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD7Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD8Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD9Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EstimateExemptions">
+    <Key>
+      <PropertyRef Name="EstimateExemptionID" />
+    </Key>
+    <Property Name="EstimateExemptionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="ExemptionRuleID" Type="int" Nullable="false" />
+    <Property Name="ExemptionAmount" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="EstimateTaxExemptionID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ExemptionDocuments">
+    <Key>
+      <PropertyRef Name="DocumentID" />
+    </Key>
+    <Property Name="DocumentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MiscExemptionID" Type="int" Nullable="false" />
+    <Property Name="DocumentName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DocumentPath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UploadDate" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_FamilyMembers">
+    <Key>
+      <PropertyRef Name="FamilyMemberID" />
+    </Key>
+    <Property Name="FamilyMemberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Age" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RelationID" Type="int" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="IsMinor" Type="bit" Nullable="true" />
+    <Property Name="IsDependent" Type="bit" Nullable="true" />
+    <Property Name="IsNominee" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ResidesWithEmployee" Type="bit" Nullable="true" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+    <Property Name="ContactPersonInEmergency" Type="bit" Nullable="false" />
+    <Property Name="EligibleForInsurance" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Inbox">
+    <Key>
+      <PropertyRef Name="InboxID" />
+    </Key>
+    <Property Name="InboxID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MessageToEmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="MessageID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_InsuranceDetails">
+    <Key>
+      <PropertyRef Name="InsuredID" />
+    </Key>
+    <Property Name="InsuredID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="InsurancePolicyID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_EMP_Leave_Hist">
+    <Key>
+      <PropertyRef Name="LeaveHistId" />
+    </Key>
+    <Property Name="LeaveHistId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="true" />
+    <Property Name="EndDate" Type="datetime" Nullable="true" />
+    <Property Name="Year" Type="int" Nullable="true" />
+    <Property Name="LeaveRequestID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_LeaveApprovalMessage">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveRequestID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RequestToEMPNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ApprovalStatusID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="ApprovedReason" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="DeniedReason" Type="nvarchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="HR_EMP_LeaveQoutaDetails">
+    <Key>
+      <PropertyRef Name="LeaveQoutaDetailID" />
+    </Key>
+    <Property Name="LeaveQoutaDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+    <Property Name="LeaveTypeID" Type="int" Nullable="false" />
+    <Property Name="AvaiableLeaves" Type="int" Nullable="false" />
+    <Property Name="LeaveTaken" Type="int" Nullable="false" />
+    <Property Name="TotalLeaves" Type="int" Nullable="false" />
+    <Property Name="Year" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PreviousYearsLeave" Type="int" Nullable="true" />
+    <Property Name="Month" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_LeaveRequest">
+    <Key>
+      <PropertyRef Name="LeaveRequestID" />
+    </Key>
+    <Property Name="LeaveRequestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+    <Property Name="LeaveID" Type="int" Nullable="true" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalNoLeavesRequested" Type="int" Nullable="false" />
+    <Property Name="ApprovalStatusID" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="IsActive" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_MonthlySalaryDeductionDetails">
+    <Key>
+      <PropertyRef Name="MonthlyDeductionID" />
+    </Key>
+    <Property Name="MonthlyDeductionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MonthlySalaryID" Type="int" Nullable="true" />
+    <Property Name="ProffessionalTax" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProvidentFund" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VoluntaryPF" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IncomeTax" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LifeInsurance" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction1" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction2" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction3" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction4" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction5" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction6" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction7" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction8" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction9" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OD1Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD2Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD3Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD4Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD5Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD6Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD7Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD8Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OD9Description" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_MonthlySalaryDetails">
+    <Key>
+      <PropertyRef Name="MonthlySalaryID" />
+    </Key>
+    <Property Name="MonthlySalaryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="SalaryGradeCode" Type="int" Nullable="true" />
+    <Property Name="Basic" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="HouseRent" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="MedicalReimbursment" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LTAReimbursment" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="FuelReimbursment" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProfessionalDevelopment" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Misc1" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc2" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc3" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc4" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc5" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc6" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc7" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc8" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc9" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Misc1Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc2Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc3Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc4Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc5Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc6Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc7Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc8Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Misc9Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Month" Type="smallint" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GrossSalary" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="NetSalary" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Passport">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+      <PropertyRef Name="PassportNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="PassportNumber" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="IssuedDate" Type="datetime" Nullable="true" />
+    <Property Name="ExpireDate" Type="datetime" Nullable="true" />
+    <Property Name="CountryCode" Type="nvarchar" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="HR_Emp_PreviousEmploymentDetails">
+    <Key>
+      <PropertyRef Name="EmploymentDetailID" />
+    </Key>
+    <Property Name="EmploymentDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="EmployeeSeqNumber" Type="smallint" Nullable="false" />
+    <Property Name="EmployerName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="JobTitle" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FromDate" Type="datetime" Nullable="false" />
+    <Property Name="ToDate" Type="datetime" Nullable="false" />
+    <Property Name="CTC" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="JobDescription" Type="nvarchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Property">
+    <Key>
+      <PropertyRef Name="AssetID" />
+    </Key>
+    <Property Name="AssetID" Type="int" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ProvidentFundDetails">
+    <Key>
+      <PropertyRef Name="ProvidentFundID" />
+    </Key>
+    <Property Name="ProvidentFundID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+    <Property Name="PFNumber" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="TotalPFAmount" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="HR_Emp_RelatedDocs">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="int" Nullable="false" />
+    <Property Name="PicPath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ResumePath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PicName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ResumeName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ResumeHeadLine" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="LicensePicPath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EmployeeFolderName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PanCarPicPath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PassportPicPath" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_RelatedDocs_Hist">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PicPath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ResumePath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ResumeName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ResumeHeaderLine" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PicName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastUsedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ReportingDetails">
+    <Key>
+      <PropertyRef Name="EmployeeManagerId" />
+    </Key>
+    <Property Name="EmployeeManagerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ReviewDetails">
+    <Key>
+      <PropertyRef Name="ReviewID" />
+    </Key>
+    <Property Name="ReviewID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReviewerID" Type="bigint" Nullable="true" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+    <Property Name="ReviewStartDate" Type="datetime" Nullable="false" />
+    <Property Name="ReviewEndDate" Type="datetime" Nullable="false" />
+    <Property Name="DateOfReview" Type="datetime" Nullable="false" />
+    <Property Name="DocPath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RatingTypeID" Type="int" Nullable="true" />
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_SentMessages">
+    <Key>
+      <PropertyRef Name="SentMessageID" />
+    </Key>
+    <Property Name="SentMessageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MessageToEmployeeNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MessageID" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Skills">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="SkillID" Type="int" Nullable="false" />
+    <Property Name="ExperienceInMonths" Type="int" Nullable="true" />
+    <Property Name="ExperienceInYears" Type="int" Nullable="true" />
+    <Property Name="TotalExperience" Type="int" Nullable="true" />
+    <Property Name="HR_LKP_Skill_SkillID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_SmartGoals">
+    <Key>
+      <PropertyRef Name="SmartGoalID" />
+    </Key>
+    <Property Name="SmartGoalID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="true" />
+    <Property Name="GoalHeadLine" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GoalDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Year" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DocPath" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_UserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupID" />
+    </Key>
+    <Property Name="UserGroupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GroupName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Users">
+    <Key>
+      <PropertyRef Name="UserGuid" />
+    </Key>
+    <Property Name="UserGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HashKey" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsAdmin" Type="bit" Nullable="true" />
+    <Property Name="EmployeeNumber" Type="bigint" Nullable="false" />
+    <Property Name="ReceiveNotification" Type="bit" Nullable="true" />
+    <Property Name="DateEntered" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ModifiedUserID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserGroupID" Type="int" Nullable="true" />
+    <Property Name="IsActive" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Employee">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="EmployeeUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyEmployeeID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Lastname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Firstname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Middlename" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Birthday" Type="datetime" Nullable="true" />
+    <Property Name="NationCode" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Gender" Type="smallint" Nullable="true" />
+    <Property Name="MaritalStatus" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="SSNNumber" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="LicenseNumber" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="LicencseExpiryDate" Type="datetime" Nullable="true" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="TitleCode" Type="int" Nullable="false" />
+    <Property Name="SalaryGradeCode" Type="int" Nullable="false" />
+    <Property Name="JoinedDate" Type="datetime" Nullable="false" />
+    <Property Name="TerminateDate" Type="datetime" Nullable="true" />
+    <Property Name="TerminationReason" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="IsActive" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BloodGroup" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="Nationality" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="true" />
+    <Property Name="JobID" Type="int" Nullable="true" />
+    <Property Name="InProbation" Type="bit" Nullable="true" />
+    <Property Name="EligibleForInsurance" Type="bit" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_GBL_LKP_ApprovalStatus">
+    <Key>
+      <PropertyRef Name="ApprovalStatusID" />
+    </Key>
+    <Property Name="ApprovalStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="HR_GBL_LKP_IndustryType">
+    <Key>
+      <PropertyRef Name="IndustryTypeID" />
+    </Key>
+    <Property Name="IndustryTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IndustryType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Domain" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NatureOfBusiness" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_GBL_TaxRules">
+    <Key>
+      <PropertyRef Name="TaxRuleID" />
+    </Key>
+    <Property Name="TaxRuleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RuleName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RuleDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RuleValue" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_GLB_LKP_Banks">
+    <Key>
+      <PropertyRef Name="BankID" />
+    </Key>
+    <Property Name="BankID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BankAddressID" Type="int" Nullable="false" />
+    <Property Name="IsNationalBank" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_GLB_LKP_NameTitle">
+    <Key>
+      <PropertyRef Name="TitleCode" />
+    </Key>
+    <Property Name="TitleCode" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TitleName" Type="nvarchar" Nullable="false" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="HR_GLB_LKP_RelationType">
+    <Key>
+      <PropertyRef Name="RelationID" />
+    </Key>
+    <Property Name="RelationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RelationName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_LK_Currency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CurrencyName" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="CurrencyCode" Type="nvarchar" Nullable="false" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="HR_LKP_AddressType">
+    <Key>
+      <PropertyRef Name="AddressTypeID" />
+    </Key>
+    <Property Name="AddressTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="AddressType" Type="nvarchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="HR_LKP_BankAccountTypes">
+    <Key>
+      <PropertyRef Name="BankTypeID" />
+    </Key>
+    <Property Name="BankTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankAccountType" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_Country">
+    <Key>
+      <PropertyRef Name="CountryCode" />
+    </Key>
+    <Property Name="CountryCode" Type="nvarchar" Nullable="false" MaxLength="3" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ISOCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CurrencyID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_Departments">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepartmentName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DepartmentRole" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DepartmentDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_LKP_DiplomaDetails">
+    <Key>
+      <PropertyRef Name="DiplomaID" />
+    </Key>
+    <Property Name="DiplomaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InstituteName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CourseName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PassGrade" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_EductionType">
+    <Key>
+      <PropertyRef Name="EducationID" />
+    </Key>
+    <Property Name="EducationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EducationShortCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EducationFullName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EducationDescription" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_LKP_JobTitle">
+    <Key>
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Name="JobID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="JobTitle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="true" />
+    <Property Name="JobRole" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="JobDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="true" />
+    <Property Name="IsActive" Type="bit" Nullable="true" />
+    <Property Name="SalaryGradeCode" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_PropertyTypeID">
+    <Key>
+      <PropertyRef Name="PropertyTypeID" />
+    </Key>
+    <Property Name="PropertyTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="PropertyType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PropertyName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_SalaryGradeDetails">
+    <Key>
+      <PropertyRef Name="SalaryDetailID" />
+    </Key>
+    <Property Name="SalaryDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalaryGradeCode" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MinCTC" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="MaxCTC" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="MinExperience" Type="int" Nullable="false" />
+    <Property Name="MaxExperience" Type="int" Nullable="false" />
+    <Property Name="CurrencyID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_LKP_SalaryGrades">
+    <Key>
+      <PropertyRef Name="SalaryGradeCode" />
+    </Key>
+    <Property Name="SalaryGradeCode" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalaryGrade" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="CurrencyID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="HR_LKP_Skill">
+    <Key>
+      <PropertyRef Name="SkillID" />
+    </Key>
+    <Property Name="SkillID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SkillName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SkillDescritpion" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Locations">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="LocationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CountryCode" Type="nvarchar" Nullable="false" MaxLength="3" />
+    <Property Name="State" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ZipCode" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Level" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="Host" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="Type" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="Source" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="Logger" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="Message" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Date" Type="datetime" Nullable="true" />
+    <Property Name="StackTrace" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" Nullable="true" />
+    <Property Name="definition" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <Association Name="FK_HR_Emp_AddressHR_Employee">
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="0..1" />
+    <End Role="HR_Address" Type="HRDBModel.Store.HR_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Address">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LK_AddressTypeHR_Emp_Address">
+    <End Role="HR_LKP_AddressType" Type="HRDBModel.Store.HR_LKP_AddressType" Multiplicity="1" />
+    <End Role="HR_Address" Type="HRDBModel.Store.HR_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_AddressType">
+        <PropertyRef Name="AddressTypeID" />
+      </Principal>
+      <Dependent Role="HR_Address">
+        <PropertyRef Name="AddressTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LocationsHR_Emp_Address">
+    <End Role="HR_Locations" Type="HRDBModel.Store.HR_Locations" Multiplicity="0..1" />
+    <End Role="HR_Address" Type="HRDBModel.Store.HR_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="HR_Address">
+        <PropertyRef Name="LocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_CompanyHR_Employee">
+    <End Role="HR_Company" Type="HRDBModel.Store.HR_Company" Multiplicity="1" />
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_CompanyAssetsHR_EmployeeProperty">
+    <End Role="HR_CompanyAssets" Type="HRDBModel.Store.HR_CompanyAssets" Multiplicity="1" />
+    <End Role="HR_Emp_Property" Type="HRDBModel.Store.HR_Emp_Property" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="HR_CompanyAssets">
+        <PropertyRef Name="AssetID" />
+      </Principal>
+      <Dependent Role="HR_Emp_Property">
+        <PropertyRef Name="AssetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LK_PropertyTypeIDHR_CompanyAssets">
+    <End Role="HR_LKP_PropertyTypeID" Type="HRDBModel.Store.HR_LKP_PropertyTypeID" Multiplicity="1" />
+    <End Role="HR_CompanyAssets" Type="HRDBModel.Store.HR_CompanyAssets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_PropertyTypeID">
+        <PropertyRef Name="PropertyTypeID" />
+      </Principal>
+      <Dependent Role="HR_CompanyAssets">
+        <PropertyRef Name="PropertyTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_Emp_EducationDocsHR_Emp_AS_EducationDocs">
+    <End Role="HR_Emp_EducationDocs" Type="HRDBModel.Store.HR_Emp_EducationDocs" Multiplicity="1" />
+    <End Role="HR_Emp_AS_EducationDocs" Type="HRDBModel.Store.HR_Emp_AS_EducationDocs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Emp_EducationDocs">
+        <PropertyRef Name="EducationDocID" />
+      </Principal>
+      <Dependent Role="HR_Emp_AS_EducationDocs">
+        <PropertyRef Name="EducationDocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_ContactDetails">
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="1" />
+    <End Role="HR_Emp_ContactDetails" Type="HRDBModel.Store.HR_Emp_ContactDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_ContactDetails">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_Emp_EducationDetails">
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="1" />
+    <End Role="HR_Emp_EducationDetails" Type="HRDBModel.Store.HR_Emp_EducationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_EducationDetails">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LKP_DiplomaDetailsHR_Emp_EducationDetails">
+    <End Role="HR_LKP_DiplomaDetails" Type="HRDBModel.Store.HR_LKP_DiplomaDetails" Multiplicity="0..1" />
+    <End Role="HR_Emp_EducationDetails" Type="HRDBModel.Store.HR_Emp_EducationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_DiplomaDetails">
+        <PropertyRef Name="DiplomaID" />
+      </Principal>
+      <Dependent Role="HR_Emp_EducationDetails">
+        <PropertyRef Name="DiplomaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_Emp_EmergenceContact">
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="1" />
+    <End Role="HR_Emp_EmergenceContact" Type="HRDBModel.Store.HR_Emp_EmergenceContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_EmergenceContact">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_Emp_FamilyMembers">
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="0..1" />
+    <End Role="HR_Emp_FamilyMembers" Type="HRDBModel.Store.HR_Emp_FamilyMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_FamilyMembers">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LKP_RelationTypeHR_Emp_FamilyMembers">
+    <End Role="HR_GLB_LKP_RelationType" Type="HRDBModel.Store.HR_GLB_LKP_RelationType" Multiplicity="1" />
+    <End Role="HR_Emp_FamilyMembers" Type="HRDBModel.Store.HR_Emp_FamilyMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_GLB_LKP_RelationType">
+        <PropertyRef Name="RelationID" />
+      </Principal>
+      <Dependent Role="HR_Emp_FamilyMembers">
+        <PropertyRef Name="RelationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_Emp_PreviousEmploymentDetails">
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="1" />
+    <End Role="HR_Emp_PreviousEmploymentDetails" Type="HRDBModel.Store.HR_Emp_PreviousEmploymentDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_PreviousEmploymentDetails">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_CompanyProperty">
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="0..1" />
+    <End Role="HR_Emp_Property" Type="HRDBModel.Store.HR_Emp_Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_Property">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_Emp_SkillsHR_LKP_Skill">
+    <End Role="HR_LKP_Skill" Type="HRDBModel.Store.HR_LKP_Skill" Multiplicity="1" />
+    <End Role="HR_Emp_Skills" Type="HRDBModel.Store.HR_Emp_Skills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_Skill">
+        <PropertyRef Name="SkillID" />
+      </Principal>
+      <Dependent Role="HR_Emp_Skills">
+        <PropertyRef Name="HR_LKP_Skill_SkillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_LKP_Departments">
+    <End Role="HR_LKP_Departments" Type="HRDBModel.Store.HR_LKP_Departments" Multiplicity="0..1" />
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_Departments">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_GLB_LKP_NameTitleHR_Employee">
+    <End Role="HR_GLB_LKP_NameTitle" Type="HRDBModel.Store.HR_GLB_LKP_NameTitle" Multiplicity="1" />
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_GLB_LKP_NameTitle">
+        <PropertyRef Name="TitleCode" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="TitleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_SalaryGradesHR_Employee">
+    <End Role="HR_LKP_SalaryGrades" Type="HRDBModel.Store.HR_LKP_SalaryGrades" Multiplicity="1" />
+    <End Role="HR_Employee" Type="HRDBModel.Store.HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_SalaryGrades">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LK_CountryHR_LK_Currency">
+    <End Role="HR_LK_Currency" Type="HRDBModel.Store.HR_LK_Currency" Multiplicity="1" />
+    <End Role="HR_LKP_Country" Type="HRDBModel.Store.HR_LKP_Country" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LK_Currency">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="HR_LKP_Country">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LK_CountryHR_Locations">
+    <End Role="HR_LKP_Country" Type="HRDBModel.Store.HR_LKP_Country" Multiplicity="1" />
+    <End Role="HR_Locations" Type="HRDBModel.Store.HR_Locations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_Country">
+        <PropertyRef Name="CountryCode" />
+      </Principal>
+      <Dependent Role="HR_Locations">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades">
+    <End Role="HR_LKP_SalaryGrades" Type="HRDBModel.Store.HR_LKP_SalaryGrades" Multiplicity="1" />
+    <End Role="HR_LKP_SalaryGradeDetails" Type="HRDBModel.Store.HR_LKP_SalaryGradeDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_SalaryGrades">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Principal>
+      <Dependent Role="HR_LKP_SalaryGradeDetails">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,8 @@
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestWindowsApplication\bin\Debug\TestWindowsApplication.exe
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestWindowsApplication\bin\Debug\TestWindowsApplication.pdb
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestWindowsApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestWindowsApplication\obj\Debug\TestWindowsApplication.Form1.resources
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestWindowsApplication\obj\Debug\TestWindowsApplication.Properties.Resources.resources
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestWindowsApplication\obj\Debug\TestWindowsApplication.csproj.GenerateResource.Cache
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestWindowsApplication\obj\Debug\TestWindowsApplication.exe
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestWindowsApplication\obj\Debug\TestWindowsApplication.pdb

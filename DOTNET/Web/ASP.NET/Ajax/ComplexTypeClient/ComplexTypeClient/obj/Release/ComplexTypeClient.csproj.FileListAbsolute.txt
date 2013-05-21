@@ -1,0 +1,4 @@
+D:\MyPractices\Web\WebExamples\Ajax\ComplexTypeClient\ComplexTypeClient\bin\ComplexTypeClient.dll
+D:\MyPractices\Web\WebExamples\Ajax\ComplexTypeClient\ComplexTypeClient\bin\ComplexTypeClient.pdb
+D:\MyPractices\Web\WebExamples\Ajax\ComplexTypeClient\ComplexTypeClient\obj\Release\ComplexTypeClient.dll
+D:\MyPractices\Web\WebExamples\Ajax\ComplexTypeClient\ComplexTypeClient\obj\Release\ComplexTypeClient.pdb

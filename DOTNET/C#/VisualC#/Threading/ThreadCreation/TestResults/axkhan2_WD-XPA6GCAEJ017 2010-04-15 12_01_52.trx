@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="cfa62f40-a528-4769-8f48-ab12574b4712" name="axkhan2@WD-XPA6GCAEJ017 2010-04-15 12:01:52" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="1b3b1e27-cef0-4cbe-866d-2e77653f5c47">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment userDeploymentRoot="D:\temp\VisualC#\Threading\ThreadCreation\TestResults" useDefaultDeploymentRoot="false" runDeploymentRoot="D:\temp\VisualC#\Threading\ThreadCreation\TestResults\axkhan2_WD-XPA6GCAEJ017 2010-04-15 12_01_52">
+      <DeploymentItem filename="D:\temp\VisualC#\Threading\ThreadCreation\ThreadCreation\bin\Debug\ThreadCreation.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-04-15T12:01:52.0955852+05:30" queuing="2010-04-15T12:01:52.4237060+05:30" start="2010-04-15T12:01:52.4393308+05:30" finish="2010-04-15T12:01:52.5330796+05:30" />
+  <TestDefinitions>
+    <UnitTest name="MyMainTest" storage="d:\temp\visualc#\threading\threadcreation\testproject1\bin\debug\testproject1.dll" id="4815134a-80c0-9447-0830-a07a64aae046">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="20fec411-5d29-4ffb-aea0-f405b70e93a2" />
+      <TestMethod codeBase="D:\temp\VisualC#\Threading\ThreadCreation\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.AddingThreadObjectTest, TestProject1" name="MyMainTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4815134a-80c0-9447-0830-a07a64aae046" executionId="20fec411-5d29-4ffb-aea0-f405b70e93a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="20fec411-5d29-4ffb-aea0-f405b70e93a2" testId="4815134a-80c0-9447-0830-a07a64aae046" testName="MyMainTest" computerName="WD-XPA6GCAEJ017" duration="00:00:00.0066500" startTime="2010-04-15T12:01:52.4393308+05:30" endTime="2010-04-15T12:01:52.5330796+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>main thread name 28
+Thread name in gethashcode 29
+10 + 10 = 20</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.AddingThreadObjectTest.MyMainTest() in D:\temp\VisualC#\Threading\ThreadCreation\TestProject1\AddingThreadObjectTest.cs:line 72
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

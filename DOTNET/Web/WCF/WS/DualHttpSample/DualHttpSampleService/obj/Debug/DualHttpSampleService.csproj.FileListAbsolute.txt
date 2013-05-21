@@ -1,0 +1,17 @@
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\obj\Debug\DualHttpSampleService.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\DualHttpSampleService.dll
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\DualHttpSampleService.pdb
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\DualHttpSample.dll
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\Microsoft.Data.Edm.dll
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\Microsoft.Data.OData.dll
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\Microsoft.Data.Services.Client.dll
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\Microsoft.Data.Services.dll
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\System.Spatial.dll
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\DualHttpSample.pdb
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\Microsoft.Data.Edm.xml
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\Microsoft.Data.OData.xml
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\Microsoft.Data.Services.xml
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\Microsoft.Data.Services.Client.xml
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\bin\System.Spatial.xml
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\obj\Debug\DualHttpSampleService.dll
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleService\obj\Debug\DualHttpSampleService.pdb

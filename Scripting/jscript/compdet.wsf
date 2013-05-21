@@ -1,0 +1,18 @@
+<job id="main">
+	<script language="JScript">
+
+var strcomputer = "."
+var objWMIService = WScript.GetObject("winmgmts:{imporsonationLevel=impersonate}!\\"+strcomputer+"\root\cimv2");
+
+var colitems = objWMIService.ExecQuery("Select * from Win32_PnPEntity");
+
+for(var myvar in colitems)
+{
+Wscript.Echo(myvar.Description);
+}
+
+	</script>
+	
+	<script language="VBScript">
+	</script>
+</job>

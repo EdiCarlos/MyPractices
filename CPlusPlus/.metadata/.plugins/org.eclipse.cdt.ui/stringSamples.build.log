@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project stringSamples ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src\strSample.o ..\src\strSample.cpp
+g++ -o stringSamples.exe src\strSample.o
+Build complete for project stringSamples
+Time consumed: 3110  ms.  

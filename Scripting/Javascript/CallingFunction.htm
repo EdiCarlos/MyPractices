@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+function getList(sp1, sp2)
+{
+   var sp = document.getElementById(sp1);
+   var inp = sp.getElementsByTagName("input");
+    try
+    {
+    var txtBlock = document.getElementById(sp2);
+    var txtBox = txtBlock.getElementsByTagName("input");
+    }
+    catch(err)
+    {
+    alert("Error getting the elment from "+sp2);
+    }
+
+   for(var i =0; i < inp.length; i++)
+   {
+   if(i == 1 || i == 2)
+   {
+   inp[i].onclick = function(){if(txtBox[0] != null){txtBox[0].value = "";}if(txtBox[1] != null){txtBox[1].value = "";} document.getElementById(sp2).style.display='block';}
+   }
+   else
+   {
+   inp[i].onclick = function(){if(txtBox[0] != null){txtBox[0].value = "";}if(txtBox[1] != null){txtBox[1].value = "";} document.getElementById(sp2).style.display='none';}
+   }
+   }
+}
+
+function MyFunction(vr)
+{
+try
+{
+
+var retValue = document.getElementById(vr);
+if(retValue != null)
+{
+return retValue;
+}
+else
+{
+alert('value is null');
+}
+
+}
+catch(err)
+{
+alert("Error in MyFunction " + err.description);
+}
+return null;
+}
+function MyFunction1(vr)
+{
+try
+{
+var txt = this.MyFunction(vr);
+alert(txt.value);
+}
+catch(err)
+{
+alert("Error " + err.description);
+}
+}
+function onSubmit()
+{
+setTimeout(
+}
+
+//alert(this.MyFunction();
+    </script>
+
+    <span id="sp1">
+        <input type="button" id="text" value="Button1" />
+        <input type="button" id="Button1" value="Button1" />
+        <input type="button" id="Button2" value="Button1" />
+    </span><span id="sp2">
+        <input type="button" id="text1" value="Button2" onclick="MyFunction1('text1');" />
+    </span>
+
+    <script type="text/javascript">
+      this.getList("sp1", "sp2");
+    </script>
+<form id="form" method="get" action="AccountsPayableScript.htm">
+
+<label>username</label><input type="text" id="username" />
+<label>userpassword</label><input type="text" id="password" />
+<input type="submit" id="sub" value="Submit" onclick="onSubmit()" />
+</form>
+
+</body>
+</html>

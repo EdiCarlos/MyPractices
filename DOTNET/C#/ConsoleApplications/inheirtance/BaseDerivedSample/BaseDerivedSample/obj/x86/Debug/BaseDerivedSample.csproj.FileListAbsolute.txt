@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\ConsoleApplications\inheirtance\BaseDerivedSample\BaseDerivedSample\bin\Debug\BaseDerivedSample.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\inheirtance\BaseDerivedSample\BaseDerivedSample\bin\Debug\BaseDerivedSample.pdb
+D:\MyPractices\DOTNET\C#\ConsoleApplications\inheirtance\BaseDerivedSample\BaseDerivedSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\ConsoleApplications\inheirtance\BaseDerivedSample\BaseDerivedSample\obj\x86\Debug\BaseDerivedSample.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\inheirtance\BaseDerivedSample\BaseDerivedSample\obj\x86\Debug\BaseDerivedSample.pdb

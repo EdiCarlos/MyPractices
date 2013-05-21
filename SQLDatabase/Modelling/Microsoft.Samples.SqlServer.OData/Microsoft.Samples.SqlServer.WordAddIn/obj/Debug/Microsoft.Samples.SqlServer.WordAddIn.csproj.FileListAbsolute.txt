@@ -1,0 +1,5 @@
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Microsoft.Samples.SqlServer.WordAddIn\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Microsoft.Samples.SqlServer.WordAddIn\obj\Debug\Microsoft.Samples.SqlServer.WordAddIn.Properties.Resources.resources
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Microsoft.Samples.SqlServer.WordAddIn\obj\Debug\Microsoft.Samples.SqlServer.WordAddIn.WorkflowRibbon.resources
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Microsoft.Samples.SqlServer.WordAddIn\obj\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Microsoft.Samples.SqlServer.WordAddIn\obj\Debug\GenerateResource.write.1.tlog

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript" language="javascript">
+        function Load() {
+            Form1.action = "http://localhost/syncada";
+        }
+        function Validate() {
+            alert("This is validate method");
+        }
+    </script>
+</head>
+<body onload="Load()">
+<form id="Form1" method="post" target="MyGlobal">
+username
+<input type='text' id="username" />
+password
+<input type='text' id="userpass" />
+<input type="submit" id="submit" value="Submit" onclick="Validate()"/>
+</form>
+<frameset border="0">
+<frame name="MyGlobal" Scrolling="no" noresize></frame>
+</frameset>
+</body>
+</html>

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnASProxyDisplayButton.Text" xml:space="preserve">
+    <value>Anzeigen</value>
+  </data>
+  <data name="chkCompression.Text" xml:space="preserve">
+    <value>Datenstrom komprimieren</value>
+  </data>
+  <data name="chkCookies.Text" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="chkDisplayImages.Text" xml:space="preserve">
+    <value>Bilder</value>
+  </data>
+  <data name="chkEncodeUrl.Text" xml:space="preserve">
+    <value>URLs verschlüsseln</value>
+  </data>
+  <data name="chkForms.Text" xml:space="preserve">
+    <value>Formulare rendern</value>
+  </data>
+  <data name="chkFrames.Text" xml:space="preserve">
+    <value>Frames</value>
+  </data>
+  <data name="chkOrginalUrl.Text" xml:space="preserve">
+    <value>Original URLs</value>
+  </data>
+  <data name="chkPageTitle.Text" xml:space="preserve">
+    <value>Seitentitel anzeigen</value>
+  </data>
+  <data name="chkProcessLinks.Text" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="chkRemoveObjects.Text" xml:space="preserve">
+    <value>Objekte entfernen</value>
+  </data>
+  <data name="chkRemoveScripts.Text" xml:space="preserve">
+    <value>Scripts entfernen</value>
+  </data>
+  <data name="chkTempCookies.Text" xml:space="preserve">
+    <value>Cookies nur temporär speichern</value>
+  </data>
+  <data name="chkUTF8.Text" xml:space="preserve">
+    <value>UTF-8 erzwingen</value>
+  </data>
+  <data name="lblCompression.Text" xml:space="preserve">
+    <value>Angeforderte Seiten komprimieren.&lt;br /&gt;Dies ist eine empfohlene Option, aber nicht kompatibel mit allen Webservern.</value>
+  </data>
+  <data name="lblCookies.Text" xml:space="preserve">
+    <value>Cookies aktivieren</value>
+  </data>
+  <data name="lblDisplayImages.Text" xml:space="preserve">
+    <value>Bilder anzeigen.</value>
+  </data>
+  <data name="lblEncodeUrl.Text" xml:space="preserve">
+    <value>Verschlüsselt die Original URL</value>
+  </data>
+  <data name="lblForms.Text" xml:space="preserve">
+    <value>Rendert Webformulare</value>
+  </data>
+  <data name="lblFrames.Text" xml:space="preserve">
+    <value>Aktiviert Frames</value>
+  </data>
+  <data name="lblMainTitle.Text" xml:space="preserve">
+    <value>Was ist ASProxy?</value>
+  </data>
+  <data name="lblOptions.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="lblOrginalUrl.Text" xml:space="preserve">
+    <value>Zeigt die ursprüngliche URL in einem Textfeld am oberen Rand der Seite an.&lt;br /&gt;Beachten Sie, dass diese Option die Seitengröße erhöhen können.&lt;br /&gt;(Tipp: Um die angezeigte URL zu kopieren, konnen Sie folgende Tastenkombination verwenden Strg + Shift + X)</value>
+  </data>
+  <data name="lblPageTitle.Text" xml:space="preserve">
+    <value>Seitentitel in Browser Titelzeile anzeigen</value>
+  </data>
+  <data name="lblProcessLinks.Text" xml:space="preserve">
+    <value>Links verarbeiten und verschlüsseln.</value>
+  </data>
+  <data name="lblRemoveObjects.Text" xml:space="preserve">
+    <value>Entfernt eingebette Objekte. Benutzen Sie diese Option um die Bandbreitenauslastung zu verringern.</value>
+  </data>
+  <data name="lblRemoveScripts.Text" xml:space="preserve">
+    <value>Entfernt Scripts. Diese Option erhöht die Anonymität, es kann aber die Seitenfunktionalität darunter leiden.</value>
+  </data>
+  <data name="lblTempCookies.Text" xml:space="preserve">
+    <value>Cookies nur in dieser Sitzung speichern, so dass diese beim schliessen des Browsers automatisch gelöscht werden.</value>
+  </data>
+  <data name="lblUrl.Text" xml:space="preserve">
+    <value>URL eingeben:</value>
+  </data>
+  <data name="lblUTF8.Text" xml:space="preserve">
+    <value>Erzwingt UTF-8 Kodierung.&lt;br /&gt;Angemessen für nicht englische Seiten, die keine ASCII-Zeichen enthalten.</value>
+  </data>
+  <data name="ltrMainDesc.Text" xml:space="preserve">
+    <value>ASProxy ist ein Open-Source Web-Proxy-Dienst, der es Benutzern erlaubt anonym im Internet zu surfen. Wenn Sie ASProxy verwenden ist nicht nur Ihre
+	Identität geschützt, Sie können damit auch Firewall-Beschränkungen in Ihrem Netzwerk umgehen.
+&lt;br /&gt;In vielen Fällen werden Sie durch Einschränkungen am Arbeitsplatz, in der Schule oder durch Ihr Land
+davon abgehalten, Ihre bevorzugten Webseiten einzusehen. ASProxy wird dies umgehen.&lt;br /&gt;
+Der Zweck von ASProxy ist, dass Sie jede Seite frei Aufrufen können, aber dieser
+Proxy kann natürlich für alle Zwecke verwendet werden. Für Ihre Aktiviitäten wird keine Haftung übernommen.</value>
+  </data>
+  <data name="Page.Title" xml:space="preserve">
+    <value>Mit ASProxy im Web surfen</value>
+  </data>
+  <data name="chkImgCompressor.Text" xml:space="preserve">
+    <value>Bilder komprimieren</value>
+  </data>
+  <data name="lblImgCompressor.Text" xml:space="preserve">
+    <value>Komprimiert alle Bilder.&lt;br /&gt;Diese Option vermindert die Datengröße der Bilder, aber leider auch deren Qualität.</value>
+  </data>
+</root>

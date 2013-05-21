@@ -1,0 +1,64 @@
+if (checkPaidBills.Checked == true)
+            {
+                this.mainbillTableAdapter.FillBySelectAllPaid(this.maindataset.mainbill);
+                DataTable table = this.maindataset.Tables["mainbill"];
+                DataTableReader read = new DataTableReader(table);
+                dataGridView1.DataSource = this.maindataset.Tables["mainbill"];
+                while (read.Read())
+                {
+                    comboDebitBillNumber.Properties.Items.Add(read.GetInt32(3).ToString());
+                }
+               
+            }
+            else 
+            {
+                this.mainbillTableAdapter.Fill(this.maindataset.mainbill);
+                DataTable table = this.maindataset.Tables["mainbill"];
+                DataTableReader read = new DataTableReader(table);
+                while (read.Read())
+                {
+                    comboDebitBillNumber.Properties.Items.Add(read.GetInt32(3).ToString());
+                }
+               
+            }
+            
+            
+        private void checkUnPaidBills_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkUnPaidBills.Checked == true)
+            {
+
+                this.mainbillTableAdapter.Fill(this.maindataset.mainbill);
+                DataTable table = this.maindataset.Tables["mainbill"];
+                DataTableReader read = new DataTableReader(table);
+                while (read.Read())
+                {
+                    comboDebitBillNumber.Properties.Items.Add(read.GetInt32(3).ToString());
+                }
+            }
+           
+        }
+        
+        
+        
+        private void checkIfUpdate_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkIfUpdate.Checked == true)
+            {
+                btnEnter.Enabled = false;
+                btnUpdate.Enabled = true;
+                FillComDebitbillIdsIsTrue();
+            }
+            else
+            {
+                btnEnter.Enabled = true;
+                btnUpdate.Enabled = false;
+                FillComDebitBillIdIsFalse();
+            }
+        }
+        
+        
+        
+        Paid Bills
+        UnPaid Bills
+        Check this box if you want to update OR To See all bills?  checkIfUpdate

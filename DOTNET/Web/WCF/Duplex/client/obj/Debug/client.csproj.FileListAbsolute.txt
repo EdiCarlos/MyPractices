@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\client\bin\Debug\client.exe
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\client\bin\Debug\client.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\client\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\client\obj\Debug\client.exe
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\client\obj\Debug\client.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\Duplex\client\bin\Debug\client.exe.config

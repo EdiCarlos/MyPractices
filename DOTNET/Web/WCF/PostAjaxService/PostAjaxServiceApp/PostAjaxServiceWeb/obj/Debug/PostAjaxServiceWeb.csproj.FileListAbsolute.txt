@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WCF\PostAjaxService\PostAjaxServiceApp\PostAjaxServiceWeb\bin\PostAjaxServiceWeb.dll
+D:\MyPractices\Web\WCF\PostAjaxService\PostAjaxServiceApp\PostAjaxServiceWeb\bin\PostAjaxServiceWeb.pdb
+D:\MyPractices\Web\WCF\PostAjaxService\PostAjaxServiceApp\PostAjaxServiceWeb\obj\Debug\PostAjaxServiceWeb.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\PostAjaxService\PostAjaxServiceApp\PostAjaxServiceWeb\obj\Debug\PostAjaxServiceWeb.dll
+D:\MyPractices\Web\WCF\PostAjaxService\PostAjaxServiceApp\PostAjaxServiceWeb\obj\Debug\PostAjaxServiceWeb.pdb

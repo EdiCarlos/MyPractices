@@ -1,0 +1,10 @@
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\obj\x86\Debug\ShowFlyWeightImages.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\bin\Debug\ShowFlyWeightImages.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\bin\Debug\ShowFlyWeightImages.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\bin\Debug\FlyWeightPatternSample.dll
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\bin\Debug\FlyWeightPatternSample.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\obj\x86\Debug\ShowFlyWeightImages.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\FlyWeightPatternSample\ShowFlyWeightImages\obj\x86\Debug\ShowFlyWeightImages.pdb

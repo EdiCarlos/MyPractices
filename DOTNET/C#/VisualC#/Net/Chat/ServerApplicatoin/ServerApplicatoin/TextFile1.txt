@@ -1,0 +1,49 @@
+﻿Program prog = (Program)sender;
+           
+            
+            if (sock.Connected)
+            {
+                Console.WriteLine("Client Connected");
+                NetworkStream networkStream = new NetworkStream(sock);
+                StreamWriter streamWriter = new StreamWriter(networkStream);
+                Console.WriteLine("Enter message for client ");
+                streamWriter.WriteLine(Console.ReadLine());
+                streamWriter.Flush();
+                //StreamReader streamReader = new StreamReader(networkStream);
+                ////string msg = "Server: Welcome to localhost";
+                ////streamWriter.WriteLine(msg);
+                ////Console.WriteLine("Enter message to client");
+                ////msg = Console.ReadLine();
+
+                ////while (!msg.Equals("Exit"))
+                ////{
+                ////    streamWriter.WriteLine(msg);
+                ////    Console.WriteLine("Enter message to client");
+                ////    msg = Console.ReadLine();
+
+                ////}
+                ////streamWriter.Close();
+                //streamWriter.WriteLine("Welcome to localhost");
+                //Console.WriteLine(streamReader.ReadLine());
+                //streamReader.Close();
+
+                //networkStream.Close();
+                Console.WriteLine("Enter message ");
+                string message = Console.ReadLine();
+
+                while (!message.Equals("Quit"))
+                {
+                    streamWriter.Flush();
+
+                    Console.WriteLine("Enter message ");
+                    message = Console.ReadLine();
+                    networkStream = new NetworkStream(sock);
+                    streamWriter.WriteLine(message);
+                    streamWriter.Flush();
+                    
+                }
+                networkStream.Close();
+            }
+            sock.Close();
+            Console.WriteLine("Exiting ");
+            Console.ReadLine();

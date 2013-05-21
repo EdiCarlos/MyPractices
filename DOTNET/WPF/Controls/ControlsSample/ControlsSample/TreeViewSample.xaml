@@ -1,0 +1,32 @@
+﻿<Window x:Class="ControlsSample.TreeViewSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TreeViewSample" Height="300" Width="300">
+    <Grid>
+        <TreeView>
+            <TreeViewItem Header="Desktop">
+                <TreeViewItem Header="Recyle Bin" />
+                <TreeViewItem Header="My Computer" />
+                <TreeViewItem Header="Control Panel">
+                    <TreeViewItem Header="User Account"/>
+                    <TreeViewItem Header="Administrator"/>
+                    <TreeViewItem Header="Volume"/>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Mobile">
+                <TreeViewItem Header="Menu">
+                    <TreeViewItem Header="Message">
+                        <TreeViewItem Header="Inbox" />
+                        <TreeViewItem Header="Sent" />
+                        <TreeViewItem Header="OutBox" />
+                    </TreeViewItem>
+                    <TreeViewItem Header="Settings">
+                        <TreeViewItem Header="Call Settings"/>
+                        <TreeViewItem Header="Phone Settings"/>
+                        <TreeViewItem Header="Display Settings" />
+                    </TreeViewItem>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+    </Grid>
+</Window>

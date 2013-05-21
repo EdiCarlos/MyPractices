@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="PracDB" Class="LinqPracDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=wd-xpa6gcaej037;Initial Catalog=PracDB;Integrated Security=True" SettingsObjectName="WCFToDB.Properties.Settings" SettingsPropertyName="PracDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.t1" Member="t1s">
+    <Type Name="t1">
+      <Column Name="t1id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EmployeeTable" Member="EmployeeTables">
+    <Type Name="EmployeeTable">
+      <Column Name="Employeeid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LoginID" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

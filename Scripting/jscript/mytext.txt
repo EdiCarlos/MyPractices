@@ -1,0 +1,613 @@
+Microsoft (R) Windows Script Host Version 5.7
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Description: ACPI Multiprocessor PC
+Manufacturer: (Standard computers)
+Name: ACPI Multiprocessor PC
+Service: \Driver\ACPI_HAL
+
+Description: Microsoft ACPI-Compliant System
+Manufacturer: Microsoft
+Name: Microsoft ACPI-Compliant System
+Service: ACPI
+
+Description: ACPI Power Button
+Manufacturer: (Standard system devices)
+Name: ACPI Power Button
+Service: 
+
+Description: Intel Processor
+Manufacturer: Intel
+Name: Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz
+Service: intelppm
+
+Description: Intel Processor
+Manufacturer: Intel
+Name: Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz
+Service: intelppm
+
+Description: Intel Processor
+Manufacturer: Intel
+Name: Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz
+Service: intelppm
+
+Description: Intel Processor
+Manufacturer: Intel
+Name: Intel(R) Core(TM)2 Quad CPU    Q6600  @ 2.40GHz
+Service: intelppm
+
+Description: PCI bus
+Manufacturer: (Standard system devices)
+Name: PCI bus
+Service: pci
+
+Description: Intel(R) X38 Express Chipset Processor to I/O Controller - 29E0
+Manufacturer: Intel
+Name: Intel(R) X38 Express Chipset Processor to I/O Controller - 29E0
+Service: 
+
+Description: Intel(R) X38 Express Chipset PCI Express Root Port - 29E1
+Manufacturer: Intel
+Name: Intel(R) X38 Express Chipset PCI Express Root Port - 29E1
+Service: pci
+
+Description: NVIDIA Quadro FX 3700
+Manufacturer: NVIDIA
+Name: NVIDIA Quadro FX 3700
+Service: nv
+
+Description: Plug and Play Monitor
+Manufacturer: (Standard monitor types)
+Name: Plug and Play Monitor
+Service: 
+
+Description: PCI standard PCI-to-PCI bridge
+Manufacturer: (Standard system devices)
+Name: PCI standard PCI-to-PCI bridge
+Service: pci
+
+Description: Intel(R) ICH9 Family USB Universal Host Controller - 2937
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family USB Universal Host Controller - 2937
+Service: usbuhci
+
+Description: USB Root Hub
+Manufacturer: (Standard USB Host Controller)
+Name: USB Root Hub
+Service: usbhub
+
+Description: Intel(R) ICH9 Family USB Universal Host Controller - 2938
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family USB Universal Host Controller - 2938
+Service: usbuhci
+
+Description: USB Root Hub
+Manufacturer: (Standard USB Host Controller)
+Name: USB Root Hub
+Service: usbhub
+
+Description: Intel(R) ICH9 Family USB Universal Host Controller - 2939
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family USB Universal Host Controller - 2939
+Service: usbuhci
+
+Description: USB Root Hub
+Manufacturer: (Standard USB Host Controller)
+Name: USB Root Hub
+Service: usbhub
+
+Description: Intel(R) ICH9 Family USB2 Enhanced Host Controller - 293C
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family USB2 Enhanced Host Controller - 293C
+Service: usbehci
+
+Description: USB Root Hub
+Manufacturer: (Standard USB Host Controller)
+Name: USB Root Hub
+Service: usbhub
+
+Description: Microsoft UAA Bus Driver for High Definition Audio
+Manufacturer: Microsoft
+Name: Microsoft UAA Bus Driver for High Definition Audio
+Service: HDAudBus
+
+Description: SoundMAX Integrated Digital HD Audio
+Manufacturer: Analog Devices
+Name: SoundMAX Integrated Digital HD Audio
+Service: ADIHdAudAddService
+
+Description: Intel(R) ICH9 Family PCI Express Root Port 1 - 2940
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family PCI Express Root Port 1 - 2940
+Service: pci
+
+Description: Intel(R) ICH9 Family PCI Express Root Port 6 - 294A
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family PCI Express Root Port 6 - 294A
+Service: pci
+
+Description: Broadcom NetXtreme Gigabit Ethernet
+Manufacturer: Broadcom
+Name: Broadcom NetXtreme Gigabit Ethernet
+Service: b57w2k
+
+Description: Intel(R) ICH9 Family USB Universal Host Controller - 2934
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family USB Universal Host Controller - 2934
+Service: usbuhci
+
+Description: USB Root Hub
+Manufacturer: (Standard USB Host Controller)
+Name: USB Root Hub
+Service: usbhub
+
+Description: Intel(R) ICH9 Family USB Universal Host Controller - 2935
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family USB Universal Host Controller - 2935
+Service: usbuhci
+
+Description: USB Root Hub
+Manufacturer: (Standard USB Host Controller)
+Name: USB Root Hub
+Service: usbhub
+
+Description: Intel(R) ICH9 Family USB Universal Host Controller - 2936
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family USB Universal Host Controller - 2936
+Service: usbuhci
+
+Description: USB Root Hub
+Manufacturer: (Standard USB Host Controller)
+Name: USB Root Hub
+Service: usbhub
+
+Description: USB Human Interface Device
+Manufacturer: (Standard system devices)
+Name: USB Human Interface Device
+Service: HidUsb
+
+Description: HID Keyboard Device
+Manufacturer: (Standard keyboards)
+Name: HID Keyboard Device
+Service: kbdhid
+
+Description: USB Human Interface Device
+Manufacturer: (Standard system devices)
+Name: USB Human Interface Device
+Service: HidUsb
+
+Description: HID-compliant mouse
+Manufacturer: Microsoft
+Name: HID-compliant mouse
+Service: mouhid
+
+Description: Intel(R) ICH9 Family USB2 Enhanced Host Controller - 293A
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family USB2 Enhanced Host Controller - 293A
+Service: usbehci
+
+Description: USB Root Hub
+Manufacturer: (Standard USB Host Controller)
+Name: USB Root Hub
+Service: usbhub
+
+Description: Intel(R) 82801 PCI Bridge - 244E
+Manufacturer: Intel
+Name: Intel(R) 82801 PCI Bridge - 244E
+Service: pci
+
+Description: PCI standard ISA bridge
+Manufacturer: (Standard system devices)
+Name: PCI standard ISA bridge
+Service: isapnp
+
+Description: ISAPNP Read Data Port
+Manufacturer: (Standard system devices)
+Name: ISAPNP Read Data Port
+Service: 
+
+Description: System board
+Manufacturer: (Standard system devices)
+Name: System board
+Service: 
+
+Description: Direct memory access controller
+Manufacturer: (Standard system devices)
+Name: Direct memory access controller
+Service: 
+
+Description: Numeric data processor
+Manufacturer: (Standard system devices)
+Name: Numeric data processor
+Service: 
+
+Description: Programmable interrupt controller
+Manufacturer: (Standard system devices)
+Name: Programmable interrupt controller
+Service: 
+
+Description: System speaker
+Manufacturer: (Standard system devices)
+Name: System speaker
+Service: 
+
+Description: System CMOS/real time clock
+Manufacturer: (Standard system devices)
+Name: System CMOS/real time clock
+Service: 
+
+Description: System timer
+Manufacturer: (Standard system devices)
+Name: System timer
+Service: 
+
+Description: Standard floppy disk controller
+Manufacturer: (Standard floppy disk controllers)
+Name: Standard floppy disk controller
+Service: fdc
+
+Description: Floppy disk drive
+Manufacturer: (Standard floppy disk drives)
+Name: Floppy disk drive
+Service: flpydisk
+
+Description: ECP Printer Port
+Manufacturer: (Standard port types)
+Name: ECP Printer Port (LPT1)
+Service: Parport
+
+Description: Printer Port Logical Interface
+Manufacturer: (Standard system devices)
+Name: Printer Port Logical Interface
+Service: 
+
+Description: Communications Port
+Manufacturer: (Standard port types)
+Name: Communications Port (COM1)
+Service: Serial
+
+Description: Intel(R) ICH9 4 port Serial ATA Storage Controller 1 - 2920
+Manufacturer: Intel
+Name: Intel(R) ICH9 4 port Serial ATA Storage Controller 1 - 2920
+Service: pciide
+
+Description: Primary IDE Channel
+Manufacturer: (Standard IDE ATA/ATAPI controllers)
+Name: Primary IDE Channel
+Service: atapi
+
+Description: Disk drive
+Manufacturer: (Standard disk drives)
+Name: WDC WD1600AAJS-75M0A0
+Service: disk
+
+Description: Secondary IDE Channel
+Manufacturer: (Standard IDE ATA/ATAPI controllers)
+Name: Secondary IDE Channel
+Service: atapi
+
+Description: CD-ROM Drive
+Manufacturer: (Standard CD-ROM drives)
+Name: TSSTcorp DVD+-RW TS-H653F
+Service: cdrom
+
+Description: Intel(R) ICH9 Family SMBus Controller - 2930
+Manufacturer: Intel
+Name: Intel(R) ICH9 Family SMBus Controller - 2930
+Service: 
+
+Description: Intel(R) ICH9 2 port Serial ATA Storage Controller 2 - 2926
+Manufacturer: Intel
+Name: Intel(R) ICH9 2 port Serial ATA Storage Controller 2 - 2926
+Service: pciide
+
+Description: Primary IDE Channel
+Manufacturer: (Standard IDE ATA/ATAPI controllers)
+Name: Primary IDE Channel
+Service: atapi
+
+Description: High precision event timer
+Manufacturer: (Standard system devices)
+Name: High precision event timer
+Service: 
+
+Description: ACPI Fixed Feature Button
+Manufacturer: (Standard system devices)
+Name: ACPI Fixed Feature Button
+Service: 
+
+Description: Logical Disk Manager
+Manufacturer: (Standard system devices)
+Name: Logical Disk Manager
+Service: dmio
+
+Description: Volume Manager
+Manufacturer: (Standard system devices)
+Name: Volume Manager
+Service: ftdisk
+
+Description: Generic volume
+Manufacturer: Microsoft
+Name: Generic volume
+Service: 
+
+Description: Generic volume
+Manufacturer: Microsoft
+Name: Generic volume
+Service: 
+
+Description: AFD
+Manufacturer: 
+Name: AFD
+Service: AFD
+
+Description: Beep
+Manufacturer: 
+Name: Beep
+Service: Beep
+
+Description: dmboot
+Manufacturer: 
+Name: dmboot
+Service: dmboot
+
+Description: dmload
+Manufacturer: 
+Name: dmload
+Service: dmload
+
+Description: Fips
+Manufacturer: 
+Name: Fips
+Service: Fips
+
+Description: Generic Packet Classifier
+Manufacturer: 
+Name: Generic Packet Classifier
+Service: Gpc
+
+Description: HTTP
+Manufacturer: 
+Name: HTTP
+Service: HTTP
+
+Description: iaStor
+Manufacturer: 
+Name: iaStor
+Service: iaStor
+
+Description: IP Network Address Translator
+Manufacturer: 
+Name: IP Network Address Translator
+Service: IpNat
+
+Description: IPSEC driver
+Manufacturer: 
+Name: IPSEC driver
+Service: IPSec
+
+Description: ksecdd
+Manufacturer: 
+Name: ksecdd
+Service: ksecdd
+
+Description: McAfee Inc.
+Manufacturer: 
+Name: McAfee Inc.
+Service: mfeapfk
+
+Description: McAfee Inc.
+Manufacturer: 
+Name: McAfee Inc.
+Service: mfeavfk
+
+Description: McAfee Inc.
+Manufacturer: 
+Name: McAfee Inc.
+Service: mfebopk
+
+Description: McAfee Inc.
+Manufacturer: 
+Name: McAfee Inc.
+Service: mfehidk
+
+Description: McAfee Inc. mferkdet
+Manufacturer: 
+Name: McAfee Inc. mferkdet
+Service: mferkdet
+
+Description: McAfee Inc.
+Manufacturer: 
+Name: McAfee Inc.
+Service: mfetdik
+
+Description: mnmdd
+Manufacturer: 
+Name: mnmdd
+Service: mnmdd
+
+Description: mountmgr
+Manufacturer: 
+Name: mountmgr
+Service: mountmgr
+
+Description: NDIS System Driver
+Manufacturer: 
+Name: NDIS System Driver
+Service: NDIS
+
+Description: Remote Access NDIS TAPI Driver
+Manufacturer: 
+Name: Remote Access NDIS TAPI Driver
+Service: NdisTapi
+
+Description: NDIS Usermode I/O Protocol
+Manufacturer: 
+Name: NDIS Usermode I/O Protocol
+Service: Ndisuio
+
+Description: NDProxy
+Manufacturer: 
+Name: NDProxy
+Service: NDProxy
+
+Description: NetBios over Tcpip
+Manufacturer: 
+Name: NetBios over Tcpip
+Service: NetBT
+
+Description: Null
+Manufacturer: 
+Name: Null
+Service: Null
+
+Description: PartMgr
+Manufacturer: 
+Name: PartMgr
+Service: PartMgr
+
+Description: ParVdm
+Manufacturer: 
+Name: ParVdm
+Service: ParVdm
+
+Description: Remote Access Auto Connection Driver
+Manufacturer: 
+Name: Remote Access Auto Connection Driver
+Service: RasAcd
+
+Description: RDPCDD
+Manufacturer: 
+Name: RDPCDD
+Service: RDPCDD
+
+Description: RDPWD
+Manufacturer: 
+Name: RDPWD
+Service: RDPWD
+
+Description: Reflex Magnetics FIPS140-2 Driver
+Manufacturer: 
+Name: Reflex Magnetics FIPS140-2 Driver
+Service: rxAES100
+
+Description: TCP/IP Protocol Driver
+Manufacturer: 
+Name: TCP/IP Protocol Driver
+Service: Tcpip
+
+Description: TDTCP
+Manufacturer: 
+Name: TDTCP
+Service: TDTCP
+
+Description: VgaSave
+Manufacturer: 
+Name: VgaSave
+Service: VgaSave
+
+Description: VolSnap
+Manufacturer: 
+Name: VolSnap
+Service: VolSnap
+
+Description: Remote Access IP ARP Driver
+Manufacturer: 
+Name: Remote Access IP ARP Driver
+Service: Wanarp
+
+Description: Audio Codecs
+Manufacturer: (Standard system devices)
+Name: Audio Codecs
+Service: audstub
+
+Description: Legacy Audio Drivers
+Manufacturer: (Standard system devices)
+Name: Legacy Audio Drivers
+Service: audstub
+
+Description: Media Control Devices
+Manufacturer: (Standard system devices)
+Name: Media Control Devices
+Service: audstub
+
+Description: Legacy Video Capture Devices
+Manufacturer: (Standard system devices)
+Name: Legacy Video Capture Devices
+Service: audstub
+
+Description: Video Codecs
+Manufacturer: (Standard system devices)
+Name: Video Codecs
+Service: audstub
+
+Description: WAN Miniport (L2TP)
+Manufacturer: Microsoft
+Name: WAN Miniport (L2TP)
+Service: Rasl2tp
+
+Description: WAN Miniport (IP)
+Manufacturer: Microsoft
+Name: WAN Miniport (IP)
+Service: NdisWan
+
+Description: WAN Miniport (PPPOE)
+Manufacturer: Microsoft
+Name: WAN Miniport (PPPOE)
+Service: RasPppoe
+
+Description: WAN Miniport (PPTP)
+Manufacturer: Microsoft
+Name: WAN Miniport (PPTP)
+Service: PptpMiniport
+
+Description: Direct Parallel
+Manufacturer: Microsoft
+Name: Direct Parallel
+Service: Raspti
+
+Description: Terminal Server Device Redirector
+Manufacturer: (Standard system devices)
+Name: Terminal Server Device Redirector
+Service: rdpdr
+
+Description: Terminal Server Keyboard Driver
+Manufacturer: (Standard system devices)
+Name: Terminal Server Keyboard Driver
+Service: TermDD
+
+Description: Terminal Server Mouse Driver
+Manufacturer: (Standard system devices)
+Name: Terminal Server Mouse Driver
+Service: TermDD
+
+Description: Plug and Play Software Device Enumerator
+Manufacturer: (Standard system devices)
+Name: Plug and Play Software Device Enumerator
+Service: swenum
+
+Description: Microsoft WINMM WDM Audio Compatibility Driver
+Manufacturer: Microsoft
+Name: Microsoft WINMM WDM Audio Compatibility Driver
+Service: wdmaud
+
+Description: Microsoft Kernel System Audio Device
+Manufacturer: Microsoft
+Name: Microsoft Kernel System Audio Device
+Service: sysaudio
+
+Description: Microsoft Kernel Wave Audio Mixer
+Manufacturer: Microsoft
+Name: Microsoft Kernel Wave Audio Mixer
+Service: kmixer
+
+Description: Microcode Update Device
+Manufacturer: (Standard system devices)
+Name: Microcode Update Device
+Service: update
+
+Description: Microsoft System Management BIOS Driver
+Manufacturer: (Standard system devices)
+Name: Microsoft System Management BIOS Driver
+Service: mssmbios
+

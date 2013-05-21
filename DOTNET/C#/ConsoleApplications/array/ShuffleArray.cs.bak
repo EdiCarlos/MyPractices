@@ -1,0 +1,44 @@
+using System;
+
+class MyClass
+{
+	public static void Main()
+	{
+		object [] str = new object[]{"A", "B", "C", "D"};
+		
+		//string [] str = new string[]{"A", "B", "C", "D"};
+		
+		foreach(object var in str)
+		{
+			Console.Write(var);
+		}
+		//RunLoop(
+		ShuffleArray(ref str);
+		foreach(object var in str)
+		{
+			Console.Write(var);
+		}
+		
+	}
+	public static void ShuffleArray(ref object [] obj)
+	{
+		int newPos = 0;
+		object newObj;
+		Random ran = new Random();
+		
+		for(int i  = 0; i < obj.Length; i++)
+		{
+			newPos = ran.Next(0, obj.Length);
+			newObj = obj[i];
+			obj[i] = obj[newPos];
+			obj[newPos] = newObj;
+		}
+	}
+	public static void RunLoop(ref string [] str)
+	{
+		foreach(string s in str)
+		{
+			Console.WriteLine(s);
+		}
+	}
+}

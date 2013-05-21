@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Threading\UseofJoin\UseofJoin\bin\Debug\UseofJoin.exe
+D:\temp\VisualC#\Threading\UseofJoin\UseofJoin\bin\Debug\UseofJoin.pdb
+D:\temp\VisualC#\Threading\UseofJoin\UseofJoin\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Threading\UseofJoin\UseofJoin\obj\Debug\UseofJoin.exe
+D:\temp\VisualC#\Threading\UseofJoin\UseofJoin\obj\Debug\UseofJoin.pdb

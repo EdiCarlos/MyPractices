@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WebExamples\DataBoundControls\DataBoundControlSln\SqlDataSourceSample\bin\SqlDataSourceSample.dll
+D:\MyPractices\Web\WebExamples\DataBoundControls\DataBoundControlSln\SqlDataSourceSample\bin\SqlDataSourceSample.pdb
+D:\MyPractices\Web\WebExamples\DataBoundControls\DataBoundControlSln\SqlDataSourceSample\obj\Debug\SqlDataSourceSample.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WebExamples\DataBoundControls\DataBoundControlSln\SqlDataSourceSample\obj\Debug\SqlDataSourceSample.dll
+D:\MyPractices\Web\WebExamples\DataBoundControls\DataBoundControlSln\SqlDataSourceSample\obj\Debug\SqlDataSourceSample.pdb

@@ -1,0 +1,9 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\ExceptionHandling\Src\Logging\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\ExceptionHandling\Src\Logging\obj\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.Configuration.DesignResources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\ExceptionHandling\Src\Logging\obj\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\ExceptionHandling\Src\Logging\obj\Debug\ExceptionHandling.Logging.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\ExceptionHandling\Src\Logging\obj\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\ExceptionHandling\Src\Logging\obj\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.pdb

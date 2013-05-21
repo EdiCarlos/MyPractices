@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension">
+	<Fragment>
+    <Feature Id="WebsiteFeature" Title="Website" Level="1">
+      <ComponentRef Id="IISConfig"/>
+    </Feature>
+  </Fragment>
+  <Fragment>
+    <iis:WebSite Id="DefaultWebSite" Description="Default Web Site">
+      <iis:WebAddress Id="DefaultWebAddress" Port="80" Secure="no"/>
+    </iis:WebSite>
+    <Component Id="IISConfig" Guid="F95A6955-31BE-4E57-B51C-492FCDCF3EC9" Directory="TARGETDIR">
+      <!--<iis:WebVirtualDir Id="TopVirtualDir" Directory="INSTALLLOCATION" Alias="WixSampleWeb" WebSite="DefaultWebSite">
+        
+      </iis:WebVirtualDir>-->
+      <iis:WebVirtualDir Id="TopVirtualDir" Directory="INSTALLLOCATION" WebSite="DefaultWebSite" Alias="SimpleWebApp">
+      </iis:WebVirtualDir>
+    </Component>
+  </Fragment>
+</Wix>

@@ -1,0 +1,34 @@
+Module mod1
+Sub Main()
+dim val as Integer
+val = 200
+
+if IsNumeric(val) then
+Console.Write("Is numeric")
+else 
+Console.Write("false")
+end if
+
+
+if val = 100 then
+Console.WriteLine("100")
+else if val = 200 then
+Console.WriteLine("200")
+else
+Console.WriteLine("not a number")
+end if
+
+select val
+
+case 1 to 100
+  Console.WriteLine("1 to 100")
+case 101 to 200
+  Console.WriteLine("101 to 200")
+case 201 to 300 
+Console.WriteLine("201 to 300")
+case 200
+Console.WriteLine("200")
+end select
+
+End Sub
+End Module

@@ -1,0 +1,4 @@
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationLib\bin\Debug\CustomAuthenticationLib.dll
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationLib\bin\Debug\CustomAuthenticationLib.pdb
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationLib\obj\Debug\CustomAuthenticationLib.dll
+D:\MyPractices\Web\WCF\CustomAuthenticationService\CustomAuthenticationLib\obj\Debug\CustomAuthenticationLib.pdb

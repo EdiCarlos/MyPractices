@@ -1,0 +1,4 @@
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\EAIOrchestration\bin\Debug\EAIOrchestration.dll
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\EAIOrchestration\bin\Debug\EAIOrchestration.pdb
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\EAIOrchestration\obj\Debug\EAIOrchestration.dll
+D:\MyPractices\BizTalk\EAIProject\EAISchemas\EAIOrchestration\obj\Debug\EAIOrchestration.pdb

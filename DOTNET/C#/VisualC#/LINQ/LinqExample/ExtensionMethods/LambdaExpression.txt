@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        delegate int NumericSequence();
+        delegate string JoinWithSpace(string fname, string lname, string mname);
+        delegate int Square(int i, int j, string z);
+        public static void Main()
+        {
+            int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+            IEnumerable result = numbers.Select(n => { return n == 1 ? n.ToString() + " True" : n.ToString() + " False"; });
+            foreach (string cube in result)
+            {
+                Console.WriteLine(cube);
+            }
+
+            Square sqr = (x, y, z) => x * y * Convert.ToInt32(z);
+            JoinWithSpace joinName = (fname, lname, mname) => { return fname + " " + lname + " " + mname; };
+            Console.WriteLine(sqr(3, 5, "10"));
+            Console.WriteLine(joinName("arif", "khan", "hasan"));
+            NumericSequence number = ReturnNumeric();
+            Console.WriteLine(number());
+            Console.WriteLine(number());
+            Console.WriteLine(number());
+            Console.WriteLine(number());
+
+        }
+        static NumericSequence ReturnNumeric()
+        {
+            int seed = 0;
+            return () => seed++;
+        }
+
+    }
+}

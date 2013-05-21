@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ExtensionMethods
+{
+    class Class1
+    {
+
+    }
+    class Class2
+    {
+        public void Method1(string str)
+        {
+            Console.WriteLine("Class2 Method1");
+        }
+    }
+    class Class3
+    {
+        public void Method1(object obj)
+        {
+            Console.WriteLine(obj);
+        }
+    }
+    class Class4
+    {
+        public void Method1(int i)
+        {
+            Console.WriteLine(i.ToString());
+        }
+    }
+    static class Program
+    {
+        static public void Method1(this object o, int i)
+        {
+            Console.WriteLine("Extension Method");
+        }
+        static void Main(string[] args)
+        {
+            new Class1().Method1(12);
+            new Class2().Method1(12);
+            new Class3().Method1(13);
+            new Class4().Method1(14);
+        }
+    }
+}

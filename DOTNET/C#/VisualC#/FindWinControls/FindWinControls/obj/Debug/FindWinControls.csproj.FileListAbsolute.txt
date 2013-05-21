@@ -1,0 +1,9 @@
+D:\temp\VisualC#\FindWinControls\FindWinControls\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\FindWinControls\FindWinControls\obj\Debug\FindWinControls.Form1.resources
+D:\temp\VisualC#\FindWinControls\FindWinControls\obj\Debug\FindWinControls.Properties.Resources.resources
+D:\temp\VisualC#\FindWinControls\FindWinControls\obj\Debug\FindWinControls.csproj.GenerateResource.Cache
+D:\temp\VisualC#\FindWinControls\FindWinControls\bin\Debug\FindWinControls.exe
+D:\temp\VisualC#\FindWinControls\FindWinControls\bin\Debug\FindWinControls.pdb
+D:\temp\VisualC#\FindWinControls\FindWinControls\obj\Debug\FindWinControls.exe
+D:\temp\VisualC#\FindWinControls\FindWinControls\obj\Debug\FindWinControls.pdb
+D:\temp\VisualC#\FindWinControls\FindWinControls\bin\Debug\FindWinControls.exe.config

@@ -1,0 +1,28 @@
+﻿@model CustomValidation.MVC.Models.Party
+@{
+  ViewBag.Title = "Party Planner";
+}
+<h2>
+  @ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+  @Html.ValidationSummary()
+  <p>
+    Start date (MM/dd/yyyy HH:mm:ss AM/PM) *: @Html.TextBoxFor(x => x.StartDate, new { size = 25 })</p>    
+  <p>
+    Duration (Hours) *: @Html.DropDownListFor(x => x.DurationInHours, new[]{
+                        new SelectListItem(){ Text = "1", Value = "1"},
+                        new SelectListItem(){ Text = "2", Value = "2"},
+                        new SelectListItem(){ Text = "3", Value = "3"},
+                        new SelectListItem(){ Text = "4", Value = "4"},
+                        new SelectListItem(){ Text = "5", Value = "5"}
+                      }, "Select the duration", new { style = "width:180px" })</p>
+  <p>
+    No. of joinees *: @Html.TextBoxFor(x => x.NoOfJoinees, new { size = 5 })</p>
+  <p>
+    Drinks? @Html.CheckBoxFor(x => x.Drinks)</p>
+  <p>
+    <input type="submit" value="Host the party!" />
+  </p>
+}

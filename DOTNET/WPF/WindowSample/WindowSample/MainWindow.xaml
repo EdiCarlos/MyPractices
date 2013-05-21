@@ -1,0 +1,9 @@
+﻿<Window x:Class="WindowSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WindowSample"
+        Title="MainWindow" Height="350" Width="525" Closing="Window_Closing">
+    <Grid>
+        <local:LoginControl x:Name="myLoginControl" Width="400" Height="100" HorizontalAlignment="Center" />
+    </Grid>
+</Window>

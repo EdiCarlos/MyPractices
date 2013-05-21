@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestManagerDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="TestManagerDBStoreContainer">
+    <EntitySet Name="TestManagers" EntityType="TestManagerDB.Store.TestManagers" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="TestManagers">
+    <Key>
+      <PropertyRef Name="TestManagerID" />
+    </Key>
+    <Property Name="TestManagerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TestName" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="TestDescription" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NumberOfQuestions" Type="int" />
+    <Property Name="PassPercentage" Type="decimal" />
+    <Property Name="TotalMarks" Type="int" />
+    <Property Name="GradeTypeID" Type="int" />
+    <Property Name="TestDuration" Type="int" />
+    <Property Name="PassingMark" Type="int" />
+  </EntityType>
+  <Function Name="InsertTestManager" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="testName" Type="varchar" Mode="In" />
+    <Parameter Name="description" Type="varchar" Mode="In" />
+    <Parameter Name="numberOfQuestion" Type="int" Mode="In" />
+    <Parameter Name="passPercentage" Type="decimal" Mode="In" />
+    <Parameter Name="totalMarks" Type="int" Mode="In" />
+    <Parameter Name="gradeId" Type="int" Mode="In" />
+    <Parameter Name="testDuration" Type="int" Mode="In" />
+    <Parameter Name="passMark" Type="int" Mode="In" />
+  </Function>
+</Schema>

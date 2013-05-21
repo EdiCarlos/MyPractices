@@ -1,0 +1,16 @@
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\bin\Debug\Microsoft.Samples.SqlServer.Common.dll.config
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\bin\Debug\Microsoft.Samples.SqlServer.Common.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\bin\Debug\Microsoft.Samples.SqlServer.Common.pdb
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\bin\Debug\Microsoft.Samples.SqlServer.Workflow.Designer.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\bin\Debug\Microsoft.Samples.SqlServer.Activities.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\bin\Debug\Microsoft.Samples.SqlServer.Workflow.Designer.pdb
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\bin\Debug\Microsoft.Samples.SqlServer.Activities.pdb
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\obj\Debug\Microsoft.Samples.SqlServer.Common.ConfigurationPropertyGrid.resources
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\obj\Debug\Microsoft.Samples.SqlServer.Common.Forms.ActivitiesForm.resources
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\obj\Debug\Microsoft.Samples.SqlServer.Common.Forms.DesignerForm.resources
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\obj\Debug\Microsoft.Samples.SqlServer.Common.WorkflowActivitiesControl.resources
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\obj\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\obj\Debug\GenerateResource.write.1.tlog
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\obj\Debug\Microsoft.Samples.SqlServer.Common.dll
+D:\MyPractices\SQLDatabase\Modelling\Microsoft.Samples.SqlServer.OData\Common\Common\obj\Debug\Microsoft.Samples.SqlServer.Common.pdb

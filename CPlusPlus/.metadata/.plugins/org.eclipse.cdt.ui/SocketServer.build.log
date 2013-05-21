@@ -1,0 +1,19 @@
+
+**** Build of configuration Debug for project SocketServer ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Server.o ..\Server.cpp
+..\Server.cpp:7:8: error: 'SOCKET socket' redeclared as different kind of symbol
+In file included from c:\mingw\bin\../lib/gcc/mingw32/4.7.0/../../../../include/windows.h:98:0,
+                 from ..\Server.cpp:2:
+c:\mingw\bin\../lib/gcc/mingw32/4.7.0/../../../../include/winsock2.h:553:35: error: previous declaration of 'SOCKET socket(int, int, int)'
+..\Server.cpp: In function 'void CloseConnection()':
+..\Server.cpp:42:11: warning: the address of 'SOCKET socket(int, int, int)' will always evaluate as 'true' [-Waddress]
+..\Server.cpp:43:21: error: invalid conversion from 'SOCKET (__attribute__((__stdcall__)) *)(int, int, int) {aka unsigned int (__attribute__((__stdcall__)) *)(int, int, int)}' to 'SOCKET {aka unsigned int}' [-fpermissive]
+In file included from c:\mingw\bin\../lib/gcc/mingw32/4.7.0/../../../../include/windows.h:98:0,
+                 from ..\Server.cpp:2:
+c:\mingw\bin\../lib/gcc/mingw32/4.7.0/../../../../include/winsock2.h:538:32: error:   initializing argument 1 of 'int closesocket(SOCKET)' [-fpermissive]
+..\Server.cpp: In function 'bool ConnectToHost(int, char*)':
+..\Server.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+Build error occurred, build is stopped
+Time consumed: 594  ms.  

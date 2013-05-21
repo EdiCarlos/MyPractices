@@ -1,0 +1,9 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.Configuration.DesignResources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides\obj\Debug\Configuration.EnvironmentalOverrides.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.pdb

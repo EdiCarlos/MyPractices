@@ -1,0 +1,18 @@
+Imports System
+
+Module Module1
+public sub Main()
+Dim i(7) as Integer
+dim j as integer = 0
+for j = 1 to i.Length - 1
+i(j) = j
+next j
+
+for each k as Integer in i
+Console.WriteLine(k)
+next k
+Console.WriteLine("value of array")
+Console.WriteLine(i.Length)
+End Sub
+
+End Module

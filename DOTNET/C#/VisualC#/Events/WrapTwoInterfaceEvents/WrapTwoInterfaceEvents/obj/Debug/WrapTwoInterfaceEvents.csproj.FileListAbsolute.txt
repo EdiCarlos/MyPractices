@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Events\WrapTwoInterfaceEvents\WrapTwoInterfaceEvents\bin\Debug\WrapTwoInterfaceEvents.exe
+D:\temp\VisualC#\Events\WrapTwoInterfaceEvents\WrapTwoInterfaceEvents\bin\Debug\WrapTwoInterfaceEvents.pdb
+D:\temp\VisualC#\Events\WrapTwoInterfaceEvents\WrapTwoInterfaceEvents\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Events\WrapTwoInterfaceEvents\WrapTwoInterfaceEvents\obj\Debug\WrapTwoInterfaceEvents.exe
+D:\temp\VisualC#\Events\WrapTwoInterfaceEvents\WrapTwoInterfaceEvents\obj\Debug\WrapTwoInterfaceEvents.pdb

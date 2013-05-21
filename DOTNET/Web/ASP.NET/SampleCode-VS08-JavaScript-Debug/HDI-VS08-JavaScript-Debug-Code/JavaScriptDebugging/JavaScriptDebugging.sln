@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HDI-VS08-JavaScript-Debug-Code", "..\..\HDI-VS08-JavaScript-Debug-Code", "{0838DA97-815C-4645-B838-FB800FFF25C7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/HDI-VS08-JavaScript-Debug-Code"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\HDI-VS08-JavaScript-Debug-Code\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\HDI-VS08-JavaScript-Debug-Code\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/HDI-VS08-JavaScript-Debug-Code"
+		Release.AspNetCompiler.PhysicalPath = "..\..\HDI-VS08-JavaScript-Debug-Code\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\HDI-VS08-JavaScript-Debug-Code\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2038"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0838DA97-815C-4645-B838-FB800FFF25C7}.Debug|.NET.ActiveCfg = Debug|.NET
+		{0838DA97-815C-4645-B838-FB800FFF25C7}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

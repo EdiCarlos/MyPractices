@@ -1,0 +1,17 @@
+<faqs>
+  <faq name="How do I re-open a ticket?">When a ticket is closed, it is still fully viewable and editable, just view the ticket and change the status from closed or click on the 'Re-Open Ticket' button.
+        To open a ticket, you have a few options.        If you already know the ticket number you can either visit 'View Ticket'         and enter the ticket number or enter it in to the 'Quick Jump' textbox in the upper right hand corner of the site.        Alternately you can        go to the 'Search' page         for it and simply click on it (make sure you un-check 'Search only open tickets').
+    </faq>
+  <faq name="Why can't I assign a ticket to the group I want to assign it to?">
+        That is because your access level is not high enough to assign to that group.          Your current access level is indicated in the upper right next to your login name, email address, etc.
+        Your access level is tied to your Active Directory memberships, a full explanation is available here in the FAQ.
+        If you need increased access,         contact your administrator.
+    </faq>
+  <faq name="Why do I only have view rights to a ticket?">
+        That ticket is assigned to a group that has an required access level that is higher than your access level and your group has not been involved in the ticket in any way; therefore you don't have any access to edit the ticket.
+    </faq>
+  <faq name="How are my read/write permissions decided?">
+        This is a multi-level process that is decided per-ticket:You have full write privileges to any tickets that are assigned to groups that have equal or lower access levels in comparison to your own.You have limited write privileges to any ticket that is assigned to a group that has a greater access level than your own and your group has participated in the ticket.
+        Otherwise you have read-only permissions.
+    </faq>
+</faqs>

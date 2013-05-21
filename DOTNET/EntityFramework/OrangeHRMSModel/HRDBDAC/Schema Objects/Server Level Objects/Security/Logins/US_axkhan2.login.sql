@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [US\axkhan2] FROM WINDOWS WITH DEFAULT_LANGUAGE=[us_english]
+
+

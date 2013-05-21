@@ -1,0 +1,8 @@
+D:\temp\VisualC#\Crystal Report\AddCommand\AddCommand\bin\Debug\AddCommand.exe
+D:\temp\VisualC#\Crystal Report\AddCommand\AddCommand\bin\Debug\AddCommand.pdb
+D:\temp\VisualC#\Crystal Report\AddCommand\AddCommand\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Crystal Report\AddCommand\AddCommand\obj\Debug\AddCommand.Form1.resources
+D:\temp\VisualC#\Crystal Report\AddCommand\AddCommand\obj\Debug\AddCommand.Properties.Resources.resources
+D:\temp\VisualC#\Crystal Report\AddCommand\AddCommand\obj\Debug\AddCommand.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Crystal Report\AddCommand\AddCommand\obj\Debug\AddCommand.exe
+D:\temp\VisualC#\Crystal Report\AddCommand\AddCommand\obj\Debug\AddCommand.pdb

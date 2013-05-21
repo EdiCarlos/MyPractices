@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Attributes\ConditionalAttributes\ConditionalAttributes\bin\Debug\ConditionalAttributes.exe
+D:\temp\VisualC#\Attributes\ConditionalAttributes\ConditionalAttributes\bin\Debug\ConditionalAttributes.pdb
+D:\temp\VisualC#\Attributes\ConditionalAttributes\ConditionalAttributes\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Attributes\ConditionalAttributes\ConditionalAttributes\obj\Debug\ConditionalAttributes.exe
+D:\temp\VisualC#\Attributes\ConditionalAttributes\ConditionalAttributes\obj\Debug\ConditionalAttributes.pdb

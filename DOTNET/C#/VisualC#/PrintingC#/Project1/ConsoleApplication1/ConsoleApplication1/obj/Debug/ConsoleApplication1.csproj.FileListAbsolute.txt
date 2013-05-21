@@ -1,0 +1,6 @@
+D:\PrintingC#\Project1\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\PrintingC#\Project1\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\PrintingC#\Project1\ConsoleApplication1\ConsoleApplication1\bin\Debug\MySql.Data.dll
+D:\PrintingC#\Project1\ConsoleApplication1\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\PrintingC#\Project1\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\PrintingC#\Project1\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

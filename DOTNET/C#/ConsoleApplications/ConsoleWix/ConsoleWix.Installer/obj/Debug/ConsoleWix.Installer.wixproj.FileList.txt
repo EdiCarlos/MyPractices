@@ -1,0 +1,4 @@
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\ConsoleWix\ConsoleWix.Installer\bin\Debug\ConsoleWix.Installer.msi
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\ConsoleWix\ConsoleWix.Installer\bin\Debug\ConsoleWix.Installer.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\Product.Generated.wixobj

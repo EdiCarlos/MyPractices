@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        public enum Relation
+        {
+            Father, 
+            Mother, 
+            Bother,
+            Sister,
+            Son, 
+            Daughter
+        }
+        public static void Main()
+        {
+            var family = new { Name = "Bannehasan", Age = 48, Relations =  Relation.Father };
+            var familyMembers = new[] {
+            new { Name = "Bannehasan", Age = 48, Relations =  Relation.Father },
+            new { Name = "Noor", Age = 20, Relations =  Relation.Bother },
+            new { Name = "Kaneez", Age = 50, Relations =  Relation.Mother }
+            };
+            var name = from fam in familyMembers where fam.Relations == Relation.Father select fam;
+            foreach(var nm in name)
+            {
+                Console.WriteLine("Name = {0}", nm.Name);
+                Console.WriteLine("age = {0}", nm.Age);
+                Console.WriteLine(nm.GetType().ToString());
+            }
+            Func<string, int> getLength = delegate(string str) { return str.Length; };
+            Console.WriteLine(getLength(family.Name));
+        }
+    }
+}

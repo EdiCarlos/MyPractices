@@ -1,0 +1,15 @@
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\bin\Debug\ExcelReader1.exe
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\bin\Debug\ExcelReader1.pdb
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\obj\Debug\ExcelReader1.Form1.resources
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\obj\Debug\ExcelReader1.Properties.Resources.resources
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\obj\Debug\ExcelReader1.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\obj\Debug\ExcelReader1.exe
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\obj\Debug\ExcelReader1.pdb
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\bin\Debug\office.dll
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\obj\Debug\ExcelReader1.csproj.ResolveComReference.cache
+D:\temp\VisualC#\Excel\ExcelReader1\ExcelReader1\obj\Debug\ExcelReader1.WriteToExcel.resources

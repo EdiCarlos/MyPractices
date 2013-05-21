@@ -1,0 +1,9 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.Configuration.DesignResources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.Configuration.Manageability.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Logging.Database.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Logging\Src\DatabaseTraceListener\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb

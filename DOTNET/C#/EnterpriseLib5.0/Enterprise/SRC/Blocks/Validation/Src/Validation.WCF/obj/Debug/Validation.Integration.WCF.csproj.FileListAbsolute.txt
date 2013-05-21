@@ -1,0 +1,8 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.WCF\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.WCF\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.WCF\obj\Debug\Validation.Integration.WCF.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.WCF\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Validation\Src\Validation.WCF\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.pdb

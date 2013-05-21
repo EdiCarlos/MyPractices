@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+<script type="text/javascript" language="javascript">
+    var win1;
+    var win2;
+    
+    function onLoad() {
+        Btn1.onclick += OpenWin1;
+        
+    }
+    function OpenWin1() {
+        win1 = window.open("http://www.google.com",
+                          "DescriptiveWindowName"); 
+    }
+    function OpenWin2() {
+        win2 = window.open("\ChildWindow.htm",
+                          "DescriptiveWindowName",
+                          "resizable=yes,scrollbars=yes,status=yes");
+   
+    }
+    function CloseWin2() {
+        win2.close(); 
+    }
+</script>
+</head>
+<body onload="onLoad();">
+<input type="button" id="Btn1" value="Window1" />
+<input type="button" id="Button1" value="Window2" onclick="OpenWin2();"/>
+<input type="button" id="btnClose" value="CloseWindow2" onclick="CloseWin2()" />
+<label>First Name</label>
+<input type="text" id="txtFirstName" />
+<label>Last Name</label>
+<input type="text" id="txtLastName" />
+
+</body>
+</html>

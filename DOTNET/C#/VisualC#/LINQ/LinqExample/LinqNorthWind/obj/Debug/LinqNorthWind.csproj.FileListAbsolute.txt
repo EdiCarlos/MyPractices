@@ -1,0 +1,9 @@
+D:\temp\VisualC#\LINQ\LinqExample\LinqNorthWind\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\LinqExample\LinqNorthWind\bin\Debug\LinqNorthWind.exe
+D:\temp\VisualC#\LINQ\LinqExample\LinqNorthWind\bin\Debug\LinqNorthWind.pdb
+D:\temp\VisualC#\LINQ\LinqExample\LinqNorthWind\obj\Debug\LinqNorthWind.exe
+D:\temp\VisualC#\LINQ\LinqExample\LinqNorthWind\obj\Debug\LinqNorthWind.pdb
+D:\temp\VisualC#\LINQ\LinqExample\LinqNorthWind\bin\Debug\LinqNorthWind.exe.config
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LinqNorthWind\bin\Debug\LinqNorthWind.exe.config
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LinqNorthWind\obj\Debug\LinqNorthWind.exe
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LinqNorthWind\obj\Debug\LinqNorthWind.pdb

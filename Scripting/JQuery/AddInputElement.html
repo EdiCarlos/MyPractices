@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="Jquery/V1.8.2/jquery-1.8.2.js">
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        function onClick() {
+            $("#div1").append("<input type='text' id='text' /><br /><input type='button' id='button1' value='Submit' />")
+        }
+    </script>
+    <div id="div1" style="border: 1px solid black; width: 100px; height: 100px;">
+    </div>
+    <input type="button" id="btn1" value="Click" onclick="onClick()"/>
+        
+</body>
+</html>

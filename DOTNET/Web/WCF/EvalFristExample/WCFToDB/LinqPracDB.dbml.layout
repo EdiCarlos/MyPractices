@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LinqPracDB">
+  <DataContextMoniker Name="/LinqPracDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ca84bc43-d1e4-4d05-aac5-1a565c697bb0" absoluteBounds="2.25, 3.125, 2, 1.0961531575520833">
+      <DataClassMoniker Name="/LinqPracDBDataContext/t1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7dc99deb-9bc1-4fa7-a0fa-133894b8a7ad" absoluteBounds="2.265, 3.585, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8671963b-3d09-4277-b723-13758d1e06eb" absoluteBounds="5, 1.125, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/LinqPracDBDataContext/EmployeeTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a3cb4f9-8052-4e35-b63c-56cec5f108d1" absoluteBounds="5.015, 1.585, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

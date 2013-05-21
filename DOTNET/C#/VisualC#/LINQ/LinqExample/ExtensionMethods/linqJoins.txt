@@ -1,0 +1,122 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+namespace ExtensionMethods
+{
+    class Program
+    {
+        class Customer
+        {
+            public string ID { get; set; }
+            public string City { get; set; }
+            public string Country { get; set; }
+            public string Region { get; set; }
+            public decimal Sales { get; set; }
+        }
+        class Orders
+        {
+            public string ID { get; set; }
+            public decimal Amount { get; set; }
+        }
+        class Employee
+        {
+            int id, role;
+            public int Id
+            {
+                get { return id; }
+                set { id = value; }
+            }
+            public int Role
+            {
+                get { return role; }
+                set { role = value; }
+            }
+            string firstName, lastName;
+            public string FirstName
+            {
+                get { return firstName; }
+                set { firstName = value; }
+            }
+            public string LastName
+            {
+                get { return lastName; }
+                set { lastName = value; }
+            }
+            //public int ID { get; set; }
+            //public int Role { get; set; }
+            //public string FirstName { get; set; }
+            //public string LastName { get; set; }
+            ////public string MiddleName { get; set; }
+        }
+        class Role
+        {
+            int _id;
+            public int Id
+            {
+                get { return _id; }
+                set { _id = value; }
+            }
+            string role;
+            public string Role1
+            {
+                get { return role; }
+                set { role = value; }
+            }
+        }
+        class Salary
+        {
+            public int ID { get; set; }
+            public int Year { get; set; }
+            public decimal SalaryPaid { get; set; }
+        }
+        class Books
+        {
+            public int ID { get; set; }
+            public string Title { get; set; }
+        }
+        static void Main()
+        {
+            List<Employee> employee = new List<Employee>{
+                new Employee{ Id=1, Role=1, FirstName="A", LastName="B"}, 
+                new Employee{ Id=2, Role=2, FirstName="C", LastName="D"}, 
+                new Employee{ Id=3, Role=2, FirstName="E", LastName="F"}, 
+                new Employee{ Id=4, Role=1, FirstName="G", LastName="H"}};
+
+            List<Role> role = new List<Role>
+            {
+                new Role{ Id=1, Role1="Manager"},
+                new Role{ Id=2, Role1="Developer"},
+            };
+
+            List<Salary> salary = new List<Salary>
+            {
+                new Salary{ ID=1, Year=2006, SalaryPaid=10.00M},
+                new Salary{ ID=1, Year=2007, SalaryPaid=15.00M},
+                new Salary{ ID=1, Year=2008, SalaryPaid=20.00M},
+                new Salary{ ID=1, Year=2009, SalaryPaid=25.00M},
+                new Salary{ ID=1, Year=2009, SalaryPaid=25.00M},
+                new Salary{ ID=2, Year=2009, SalaryPaid=25.00M},
+new Salary{ ID=3, Year=2009, SalaryPaid=25.00M},
+new Salary{ ID=4, Year=2009, SalaryPaid=25.00M}
+
+            };
+            //var query = from e in employee where e.Id == 1 from r in role where r.Id == e.Role select new { e.FirstName, e.LastName, r.Role1 };
+            //var query = from e in employee from r in role where r.Id == e.Role & r.Id == 2 select new { e.FirstName, e.LastName, r.Role1 };
+            var manager = (from e in employee
+                           join r in role on e.Role equals r.Id
+                           join s in salary on e.Id equals s.ID
+                           where e.Role == 2
+                           select new { FirstName = e.FirstName, LastName = e.LastName, Role = r.Role1, SalaryPaid = s.SalaryPaid, Year = s.Year }).Where(m => m.Year == 2009).Sum(sm => sm.SalaryPaid);
+            //var sumInYear = (from m in manager where m.Year == 2009 select m).Sum(s => s.SalaryPaid);
+
+            Console.WriteLine(manager);
+            //foreach (var qr in sumInYear)
+            //{
+            //    Console.WriteLine(qr.FirstName + " " + qr.LastName + " " + qr.Role);
+            //}
+        }
+    }
+}

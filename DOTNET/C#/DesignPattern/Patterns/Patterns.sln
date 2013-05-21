@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{15208499-A0BD-44B5-ABC9-D6A244412B34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{34FA5985-49AB-4335-83BA-C2E4F0F37334}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15208499-A0BD-44B5-ABC9-D6A244412B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15208499-A0BD-44B5-ABC9-D6A244412B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15208499-A0BD-44B5-ABC9-D6A244412B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15208499-A0BD-44B5-ABC9-D6A244412B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FA5985-49AB-4335-83BA-C2E4F0F37334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FA5985-49AB-4335-83BA-C2E4F0F37334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FA5985-49AB-4335-83BA-C2E4F0F37334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FA5985-49AB-4335-83BA-C2E4F0F37334}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+<script type='text/javascript'>
+function populateFromYear()
+    {
+     var curdt = new Date();
+     var prevdt = new Date();
+     prevdt.setMonth(-24);
+     var year = prevdt.getFullYear();
+    
+     for(var i = prevdt.getFullYear(); i <= curdt.getFullYear(); i++)
+     {
+     var opt = new Option(year);
+     frmYear.add(opt, frmYear.length);
+     year = year + 1;
+    }
+    
+</script>
+</head>
+<body onload="populateFromYear();">
+
+<select id="frmYear">
+</select>
+</body>
+</html>

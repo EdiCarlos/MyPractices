@@ -1,0 +1,8 @@
+D:\temp\VisualC#\LINQ\ControlsArray\ControlsArray\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\ControlsArray\ControlsArray\obj\Debug\ControlsArray.Form1.resources
+D:\temp\VisualC#\LINQ\ControlsArray\ControlsArray\obj\Debug\ControlsArray.Properties.Resources.resources
+D:\temp\VisualC#\LINQ\ControlsArray\ControlsArray\obj\Debug\ControlsArray.csproj.GenerateResource.Cache
+D:\temp\VisualC#\LINQ\ControlsArray\ControlsArray\bin\Debug\ControlsArray.exe
+D:\temp\VisualC#\LINQ\ControlsArray\ControlsArray\bin\Debug\ControlsArray.pdb
+D:\temp\VisualC#\LINQ\ControlsArray\ControlsArray\obj\Debug\ControlsArray.exe
+D:\temp\VisualC#\LINQ\ControlsArray\ControlsArray\obj\Debug\ControlsArray.pdb

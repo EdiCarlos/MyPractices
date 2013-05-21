@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ADW">
+      <rd:DataSourceID>31243a07-e2c7-4c94-90e2-8512b7c3a0fc</rd:DataSourceID>
+      <DataSourceReference>ADW</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <rd:ReportID>31bf1bcf-725d-4efd-aeec-dc19e8d89777</rd:ReportID>
+  <Width>5in</Width>
+  <Body>
+    <Height>4.5in</Height>
+    <ColumnSpacing>0.5in</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>20pt</FontSize>
+          <Color>SteelBlue</Color>
+          <FontWeight>Bold</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Value>EmployeeDetail</Value>
+        <CanGrow>true</CanGrow>
+        <Height>0.36in</Height>
+      </Textbox>
+      <List Name="List1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>14pt</FontSize>
+          <Color>SlateGray</Color>
+        </Style>
+        <ReportItems>
+          <Textbox Name="FirstName">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>14pt</FontSize>
+              <Color>SlateGray</Color>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <rd:DefaultName>FirstName</rd:DefaultName>
+            <Value>=Fields!FirstName.Value</Value>
+            <CanGrow>true</CanGrow>
+            <Height>0.27in</Height>
+          </Textbox>
+          <List Name="List2">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>12pt</FontSize>
+            </Style>
+            <ReportItems>
+              <Textbox Name="LastName">
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <rd:DefaultName>LastName</rd:DefaultName>
+                <Value>=Fields!LastName.Value</Value>
+                <CanGrow>true</CanGrow>
+                <Height>0.24in</Height>
+              </Textbox>
+              <List Name="List3">
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>10pt</FontSize>
+                </Style>
+                <ReportItems>
+                  <Textbox Name="MiddleName">
+                    <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>10pt</FontSize>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                    <rd:DefaultName>MiddleName</rd:DefaultName>
+                    <Value>=Fields!MiddleName.Value</Value>
+                    <CanGrow>true</CanGrow>
+                    <Height>0.21in</Height>
+                  </Textbox>
+                  <List Name="List4">
+                    <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>10pt</FontSize>
+                    </Style>
+                    <ReportItems>
+                      <Textbox Name="Title">
+                        <Style>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>10pt</FontSize>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                        <rd:DefaultName>Title</rd:DefaultName>
+                        <Value>=Fields!Title.Value</Value>
+                        <CanGrow>true</CanGrow>
+                        <Height>0.21in</Height>
+                      </Textbox>
+                      <List Name="List5">
+                        <Style>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>10pt</FontSize>
+                        </Style>
+                        <ReportItems>
+                          <Textbox Name="BirthDate">
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>10pt</FontSize>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                            <rd:DefaultName>BirthDate</rd:DefaultName>
+                            <Value>=Fields!BirthDate.Value</Value>
+                            <CanGrow>true</CanGrow>
+                            <Height>0.21in</Height>
+                          </Textbox>
+                          <List Name="List6">
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>10pt</FontSize>
+                            </Style>
+                            <ReportItems>
+                              <Textbox Name="LoginID">
+                                <Style>
+                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontSize>10pt</FontSize>
+                                  <PaddingLeft>2pt</PaddingLeft>
+                                  <PaddingRight>2pt</PaddingRight>
+                                  <PaddingTop>2pt</PaddingTop>
+                                  <PaddingBottom>2pt</PaddingBottom>
+                                </Style>
+                                <rd:DefaultName>LoginID</rd:DefaultName>
+                                <Value>=Fields!LoginID.Value</Value>
+                                <CanGrow>true</CanGrow>
+                                <Height>0.21in</Height>
+                              </Textbox>
+                              <List Name="List7">
+                                <Style>
+                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontSize>10pt</FontSize>
+                                </Style>
+                                <ReportItems>
+                                  <Textbox Name="EmailAddress">
+                                    <Style>
+                                      <FontFamily>Tahoma</FontFamily>
+                                      <FontSize>10pt</FontSize>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                    <rd:DefaultName>EmailAddress</rd:DefaultName>
+                                    <Value>=Fields!EmailAddress.Value</Value>
+                                    <CanGrow>true</CanGrow>
+                                    <Height>0.21in</Height>
+                                  </Textbox>
+                                  <Table Name="table1">
+                                    <Top>0.5in</Top>
+                                    <Style />
+                                    <Header>
+                                      <RepeatOnNewPage>true</RepeatOnNewPage>
+                                      <TableRows>
+                                        <TableRow>
+                                          <TableCells>
+                                            <TableCell>
+                                              <ReportItems>
+                                                <Textbox Name="textbox2">
+                                                  <Style>
+                                                    <BackgroundColor>SteelBlue</BackgroundColor>
+                                                    <FontFamily>Tahoma</FontFamily>
+                                                    <FontSize>11pt</FontSize>
+                                                    <FontWeight>Bold</FontWeight>
+                                                    <Color>White</Color>
+                                                    <BorderStyle>
+                                                      <Default>Solid</Default>
+                                                    </BorderStyle>
+                                                    <BorderColor>
+                                                      <Default>LightGrey</Default>
+                                                    </BorderColor>
+                                                    <PaddingLeft>2pt</PaddingLeft>
+                                                    <PaddingRight>2pt</PaddingRight>
+                                                    <PaddingTop>2pt</PaddingTop>
+                                                    <PaddingBottom>2pt</PaddingBottom>
+                                                  </Style>
+                                                  <rd:DefaultName>textbox2</rd:DefaultName>
+                                                  <Value>Gender</Value>
+                                                  <CanGrow>true</CanGrow>
+                                                  <Height>0.22in</Height>
+                                                  <Width>1in</Width>
+                                                </Textbox>
+                                              </ReportItems>
+                                            </TableCell>
+                                            <TableCell>
+                                              <ReportItems>
+                                                <Textbox Name="textbox4">
+                                                  <Style>
+                                                    <BackgroundColor>SteelBlue</BackgroundColor>
+                                                    <FontFamily>Tahoma</FontFamily>
+                                                    <FontSize>11pt</FontSize>
+                                                    <FontWeight>Bold</FontWeight>
+                                                    <Color>White</Color>
+                                                    <BorderStyle>
+                                                      <Default>Solid</Default>
+                                                    </BorderStyle>
+                                                    <BorderColor>
+                                                      <Default>LightGrey</Default>
+                                                    </BorderColor>
+                                                    <TextAlign>Right</TextAlign>
+                                                    <PaddingLeft>2pt</PaddingLeft>
+                                                    <PaddingRight>2pt</PaddingRight>
+                                                    <PaddingTop>2pt</PaddingTop>
+                                                    <PaddingBottom>2pt</PaddingBottom>
+                                                  </Style>
+                                                  <rd:DefaultName>textbox4</rd:DefaultName>
+                                                  <Value>Pay Frequency</Value>
+                                                  <CanGrow>true</CanGrow>
+                                                  <Height>0.22in</Height>
+                                                  <Width>1in</Width>
+                                                </Textbox>
+                                              </ReportItems>
+                                            </TableCell>
+                                          </TableCells>
+                                          <Height>0.22in</Height>
+                                        </TableRow>
+                                      </TableRows>
+                                    </Header>
+                                    <Details>
+                                      <TableRows>
+                                        <TableRow>
+                                          <TableCells>
+                                            <TableCell>
+                                              <ReportItems>
+                                                <Textbox Name="textbox3">
+                                                  <Style>
+                                                    <FontFamily>Tahoma</FontFamily>
+                                                    <FontSize>10pt</FontSize>
+                                                    <BorderStyle>
+                                                      <Default>Solid</Default>
+                                                    </BorderStyle>
+                                                    <BorderColor>
+                                                      <Default>LightGrey</Default>
+                                                    </BorderColor>
+                                                    <PaddingLeft>2pt</PaddingLeft>
+                                                    <PaddingRight>2pt</PaddingRight>
+                                                    <PaddingTop>2pt</PaddingTop>
+                                                    <PaddingBottom>2pt</PaddingBottom>
+                                                  </Style>
+                                                  <rd:DefaultName>textbox3</rd:DefaultName>
+                                                  <Value>
+                                                  </Value>
+                                                  <CanGrow>true</CanGrow>
+                                                  <Height>0.21in</Height>
+                                                  <Width>1in</Width>
+                                                </Textbox>
+                                              </ReportItems>
+                                            </TableCell>
+                                            <TableCell>
+                                              <ReportItems>
+                                                <Textbox Name="PayFrequency">
+                                                  <Style>
+                                                    <FontFamily>Tahoma</FontFamily>
+                                                    <FontSize>10pt</FontSize>
+                                                    <BorderStyle>
+                                                      <Default>Solid</Default>
+                                                    </BorderStyle>
+                                                    <BorderColor>
+                                                      <Default>LightGrey</Default>
+                                                    </BorderColor>
+                                                    <PaddingLeft>2pt</PaddingLeft>
+                                                    <PaddingRight>2pt</PaddingRight>
+                                                    <PaddingTop>2pt</PaddingTop>
+                                                    <PaddingBottom>2pt</PaddingBottom>
+                                                  </Style>
+                                                  <rd:DefaultName>PayFrequency</rd:DefaultName>
+                                                  <Value>=Fields!PayFrequency.Value</Value>
+                                                  <CanGrow>true</CanGrow>
+                                                  <Height>0.21in</Height>
+                                                  <Width>1in</Width>
+                                                </Textbox>
+                                              </ReportItems>
+                                            </TableCell>
+                                          </TableCells>
+                                          <Height>0.21in</Height>
+                                        </TableRow>
+                                      </TableRows>
+                                      <Visibility>
+                                        <Hidden>true</Hidden>
+                                        <ToggleItem>Gender</ToggleItem>
+                                      </Visibility>
+                                    </Details>
+                                    <TableColumns>
+                                      <TableColumn>
+                                        <Width>1in</Width>
+                                      </TableColumn>
+                                      <TableColumn>
+                                        <Width>1in</Width>
+                                      </TableColumn>
+                                    </TableColumns>
+                                    <DataSetName>DataSet1</DataSetName>
+                                    <TableGroups>
+                                      <TableGroup>
+                                        <Grouping Name="table1_Gender">
+                                          <GroupExpressions>
+                                            <GroupExpression>=Fields!Gender.Value</GroupExpression>
+                                          </GroupExpressions>
+                                        </Grouping>
+                                        <Sorting>
+                                          <SortBy>
+                                            <SortExpression>=Fields!Gender.Value</SortExpression>
+                                          </SortBy>
+                                        </Sorting>
+                                        <Header>
+                                          <TableRows>
+                                            <TableRow>
+                                              <TableCells>
+                                                <TableCell>
+                                                  <ReportItems>
+                                                    <Textbox Name="Gender">
+                                                      <Style>
+                                                        <FontFamily>Tahoma</FontFamily>
+                                                        <FontSize>10pt</FontSize>
+                                                        <FontWeight>Bold</FontWeight>
+                                                        <Color>White</Color>
+                                                        <BackgroundColor>#6e9eca</BackgroundColor>
+                                                        <BorderStyle>
+                                                          <Default>Solid</Default>
+                                                        </BorderStyle>
+                                                        <BorderColor>
+                                                          <Default>LightGrey</Default>
+                                                        </BorderColor>
+                                                        <PaddingLeft>2pt</PaddingLeft>
+                                                        <PaddingRight>2pt</PaddingRight>
+                                                        <PaddingTop>2pt</PaddingTop>
+                                                        <PaddingBottom>2pt</PaddingBottom>
+                                                      </Style>
+                                                      <rd:DefaultName>Gender</rd:DefaultName>
+                                                      <Value>=Fields!Gender.Value</Value>
+                                                      <CanGrow>true</CanGrow>
+                                                      <Height>0.21in</Height>
+                                                      <Width>1in</Width>
+                                                    </Textbox>
+                                                  </ReportItems>
+                                                </TableCell>
+                                                <TableCell>
+                                                  <ReportItems>
+                                                    <Textbox Name="textbox5">
+                                                      <Style>
+                                                        <FontFamily>Tahoma</FontFamily>
+                                                        <FontSize>10pt</FontSize>
+                                                        <FontWeight>Bold</FontWeight>
+                                                        <Color>White</Color>
+                                                        <BackgroundColor>#6e9eca</BackgroundColor>
+                                                        <BorderStyle>
+                                                          <Default>Solid</Default>
+                                                        </BorderStyle>
+                                                        <BorderColor>
+                                                          <Default>LightGrey</Default>
+                                                        </BorderColor>
+                                                        <PaddingLeft>2pt</PaddingLeft>
+                                                        <PaddingRight>2pt</PaddingRight>
+                                                        <PaddingTop>2pt</PaddingTop>
+                                                        <PaddingBottom>2pt</PaddingBottom>
+                                                      </Style>
+                                                      <rd:DefaultName>textbox5</rd:DefaultName>
+                                                      <Value>
+                                                      </Value>
+                                                      <CanGrow>true</CanGrow>
+                                                      <Height>0.21in</Height>
+                                                      <Width>1in</Width>
+                                                    </Textbox>
+                                                  </ReportItems>
+                                                </TableCell>
+                                              </TableCells>
+                                              <Height>0.21in</Height>
+                                            </TableRow>
+                                          </TableRows>
+                                        </Header>
+                                      </TableGroup>
+                                    </TableGroups>
+                                  </Table>
+                                </ReportItems>
+                                <Grouping Name="list1_EmailAddress">
+                                  <GroupExpressions>
+                                    <GroupExpression>=Fields!EmailAddress.Value</GroupExpression>
+                                  </GroupExpressions>
+                                  <PageBreakAtEnd>true</PageBreakAtEnd>
+                                </Grouping>
+                                <Sorting>
+                                  <SortBy>
+                                    <SortExpression>=Fields!EmailAddress.Value</SortExpression>
+                                  </SortBy>
+                                </Sorting>
+                                <Top>0.5in</Top>
+                                <DataSetName>DataSet1</DataSetName>
+                              </List>
+                            </ReportItems>
+                            <Grouping Name="list1_LoginID">
+                              <GroupExpressions>
+                                <GroupExpression>=Fields!LoginID.Value</GroupExpression>
+                              </GroupExpressions>
+                              <PageBreakAtEnd>true</PageBreakAtEnd>
+                            </Grouping>
+                            <Sorting>
+                              <SortBy>
+                                <SortExpression>=Fields!LoginID.Value</SortExpression>
+                              </SortBy>
+                            </Sorting>
+                            <Top>0.5in</Top>
+                            <DataSetName>DataSet1</DataSetName>
+                          </List>
+                        </ReportItems>
+                        <Grouping Name="list1_BirthDate">
+                          <GroupExpressions>
+                            <GroupExpression>=Fields!BirthDate.Value</GroupExpression>
+                          </GroupExpressions>
+                          <PageBreakAtEnd>true</PageBreakAtEnd>
+                        </Grouping>
+                        <Sorting>
+                          <SortBy>
+                            <SortExpression>=Fields!BirthDate.Value</SortExpression>
+                          </SortBy>
+                        </Sorting>
+                        <Top>0.5in</Top>
+                        <DataSetName>DataSet1</DataSetName>
+                      </List>
+                    </ReportItems>
+                    <Grouping Name="list1_Title">
+                      <GroupExpressions>
+                        <GroupExpression>=Fields!Title.Value</GroupExpression>
+                      </GroupExpressions>
+                      <PageBreakAtEnd>true</PageBreakAtEnd>
+                    </Grouping>
+                    <Sorting>
+                      <SortBy>
+                        <SortExpression>=Fields!Title.Value</SortExpression>
+                      </SortBy>
+                    </Sorting>
+                    <Top>0.5in</Top>
+                    <DataSetName>DataSet1</DataSetName>
+                  </List>
+                </ReportItems>
+                <Grouping Name="list1_MiddleName">
+                  <GroupExpressions>
+                    <GroupExpression>=Fields!MiddleName.Value</GroupExpression>
+                  </GroupExpressions>
+                  <PageBreakAtEnd>true</PageBreakAtEnd>
+                </Grouping>
+                <Sorting>
+                  <SortBy>
+                    <SortExpression>=Fields!MiddleName.Value</SortExpression>
+                  </SortBy>
+                </Sorting>
+                <Top>0.5in</Top>
+                <DataSetName>DataSet1</DataSetName>
+              </List>
+            </ReportItems>
+            <Grouping Name="list1_LastName">
+              <GroupExpressions>
+                <GroupExpression>=Fields!LastName.Value</GroupExpression>
+              </GroupExpressions>
+              <PageBreakAtEnd>true</PageBreakAtEnd>
+            </Grouping>
+            <Sorting>
+              <SortBy>
+                <SortExpression>=Fields!LastName.Value</SortExpression>
+              </SortBy>
+            </Sorting>
+            <Top>0.5in</Top>
+            <DataSetName>DataSet1</DataSetName>
+          </List>
+        </ReportItems>
+        <Grouping Name="list1_FirstName">
+          <GroupExpressions>
+            <GroupExpression>=Fields!FirstName.Value</GroupExpression>
+          </GroupExpressions>
+          <PageBreakAtEnd>true</PageBreakAtEnd>
+        </Grouping>
+        <Sorting>
+          <SortBy>
+            <SortExpression>=Fields!FirstName.Value</SortExpression>
+          </SortBy>
+        </Sorting>
+        <Top>0.36in</Top>
+        <DataSetName>DataSet1</DataSetName>
+      </List>
+    </ReportItems>
+  </Body>
+  <Language>en-US</Language>
+  <LeftMargin>1in</LeftMargin>
+  <RightMargin>1in</RightMargin>
+  <TopMargin>1in</TopMargin>
+  <BottomMargin>1in</BottomMargin>
+  <PageWidth>8.5in</PageWidth>
+  <PageHeight>11in</PageHeight>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="EmployeeKey">
+          <DataField>EmployeeKey</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParentEmployeeKey">
+          <DataField>ParentEmployeeKey</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EmployeeNationalIDAlternateKey">
+          <DataField>EmployeeNationalIDAlternateKey</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ParentEmployeeNationalIDAlternateKey">
+          <DataField>ParentEmployeeNationalIDAlternateKey</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SalesTerritoryKey">
+          <DataField>SalesTerritoryKey</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LastName">
+          <DataField>LastName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MiddleName">
+          <DataField>MiddleName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NameStyle">
+          <DataField>NameStyle</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Title">
+          <DataField>Title</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HireDate">
+          <DataField>HireDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="BirthDate">
+          <DataField>BirthDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="LoginID">
+          <DataField>LoginID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmailAddress">
+          <DataField>EmailAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Phone">
+          <DataField>Phone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MaritalStatus">
+          <DataField>MaritalStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmergencyContactName">
+          <DataField>EmergencyContactName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmergencyContactPhone">
+          <DataField>EmergencyContactPhone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SalariedFlag">
+          <DataField>SalariedFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Gender">
+          <DataField>Gender</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PayFrequency">
+          <DataField>PayFrequency</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="BaseRate">
+          <DataField>BaseRate</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="VacationHours">
+          <DataField>VacationHours</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SickLeaveHours">
+          <DataField>SickLeaveHours</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="CurrentFlag">
+          <DataField>CurrentFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SalesPersonFlag">
+          <DataField>SalesPersonFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DepartmentName">
+          <DataField>DepartmentName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StartDate">
+          <DataField>StartDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="EndDate">
+          <DataField>EndDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Status">
+          <DataField>Status</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>ADW</DataSourceName>
+        <CommandType>Text</CommandType>
+        <CommandText>SELECT     DimEmployee.*
+FROM         DimEmployee</CommandText>
+        <Timeout>0</Timeout>
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

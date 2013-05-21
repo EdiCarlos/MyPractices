@@ -1,0 +1,29 @@
+﻿<%--
+Slick-Ticket v1.0 - 2008
+http://slick-ticket.com
+Developed by Stan Naspinski - stan@naspinski.net
+http://naspinski.net
+--%>
+<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <asp:ContentPlaceHolder ID="adminHead" runat="server" />
+</asp:Content>
+<asp:Content ID="contentBody" ContentPlaceHolderID="body" Runat="Server">
+     <asp:Panel ID="pnlAdminMenu" runat="server">
+        <div class="inner_color" style="height:26px; padding:0px;">
+            <ul class="list_menu" >
+                <asp:Label ID="lblAdminMenu" runat="server" />
+            </ul>
+            <span class="clear"></span>
+        </div>
+        <div class="divider"></div>
+    </asp:Panel>
+    <asp:ContentPlaceHolder ID="adminBody" runat="server" > </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="sidebar" runat="server" >
+        <ctrl:SecurityLevels ID="secLev" runat="server" />
+        <asp:ContentPlaceHolder ID="adminSidebar" runat="server" > </asp:ContentPlaceHolder>
+</asp:Content>
+
+

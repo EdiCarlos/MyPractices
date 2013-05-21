@@ -1,0 +1,8 @@
+D:\temp\VisualC#\mysqlexample\usingmysql\usingmysql\bin\Debug\usingmysql.exe.config
+D:\temp\VisualC#\mysqlexample\usingmysql\usingmysql\bin\Debug\usingmysql.exe
+D:\temp\VisualC#\mysqlexample\usingmysql\usingmysql\bin\Debug\usingmysql.pdb
+D:\temp\VisualC#\mysqlexample\usingmysql\usingmysql\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\mysqlexample\usingmysql\usingmysql\obj\Debug\usingmysql.exe
+D:\temp\VisualC#\mysqlexample\usingmysql\usingmysql\obj\Debug\usingmysql.pdb
+D:\temp\VisualC#\mysqlexample\usingmysql\usingmysql\bin\Debug\mycalculationClass.dll
+D:\temp\VisualC#\mysqlexample\usingmysql\usingmysql\bin\Debug\mycalculationClass.pdb

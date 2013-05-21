@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+
+    <script type="text/javascript">
+function getMonthInWords(index)
+{
+    var month=new Array(12);
+month[0]="JAN";
+month[1]="FEB";
+month[2]="MAR";
+month[3]="APR";
+month[4]="MAY";
+month[5]="JUN";
+month[6]="JUL";
+month[7]="AUG";
+month[8]="SEP";
+month[9]="OCT";
+month[10]="NOV";
+month[11]="DEC";
+
+ return month[index];
+ }
+ 
+function getMonthInIndex(value)
+{
+    var month=new Array(12);
+month[0]="JAN";
+month[1]="FEB";
+month[2]="MAR";
+month[3]="APR";
+month[4]="MAY";
+month[5]="JUN";
+month[6]="JUL";
+month[7]="AUG";
+month[8]="SEP";
+month[9]="OCT";
+month[10]="NOV";
+month[11]="DEC";
+
+var mnIndex;
+for(var i =0; i < month.length;i++)
+{
+if(value == month[i])
+{
+mnIndex = i;
+}
+}
+
+ return mnIndex;
+ } 
+ 
+    function init()
+    {
+      var curdt = new Date();
+      var prvdt = new Date();
+      var prvmn = new Date();
+      prvdt.setFullYear(prvdt.getFullYear() - 2, prvdt.getMonth(), 1);
+      populateCurrentYear();
+      populatePreviousYear();
+    
+      for(var i = 0; i < thrMonth.length; i++)
+      {
+      if(thrMonth[i].text == getMonthInWords(curdt.getMonth())+"-"+curdt.getFullYear())
+      {
+      thrMonth.selectedIndex = i;
+      }
+      }
+      
+      populateCurrentYearFromdt();
+      previousYearFromdt();
+      
+      prvmn.setMonth(prvmn.getMonth() - 3);
+      for(var i = 0; i < frmMonth.length; i++)
+      {
+      if(frmMonth[i].text == getMonthInWords(prvmn.getMonth())+"-"+prvmn.getFullYear())
+      { 
+      frmMonth.selectedIndex = i;
+      }
+      }
+      
+    thrMonth.onchange = WhenChanged;
+           
+    }
+    function WhenChanged()
+    {
+       var date = new Date();
+       var year = thrMonth[thrMonth.selectedIndex].text.toString().substring(4, 9);
+       var month = thrMonth[thrMonth.selectedIndex].text.toString().substring(0, 3);
+     
+       date.setFullYear(year, getMonthInIndex(month),1);
+       ClearList();
+       var tempdate = new Date();
+       tempdate.setFullYear(year, getMonthInIndex(month), 1);
+       var tempdate1 = new Date();
+       tempdate1.setFullYear(year, getMonthInIndex(month), 1);
+       
+       onChangeFromdt(tempdate);
+       onChangePrevFromdt(tempdate1);
+       var datePrv = new Date();
+      datePrv.setFullYear(parseInt(year), getMonthInIndex(month), 1);
+      datePrv.setMonth(datePrv.getMonth() - 3);
+      for(var i = 0; i < frmMonth.length; i++)
+      {
+//      alert(frmMonth[i].text + " = " + getMonthInWords(datePrv.getMonth())+"-"+datePrv.getFullYear().toString().substring(2, 4));
+      if(frmMonth[i].text == getMonthInWords(datePrv.getMonth())+"-"+datePrv.getFullYear())
+      {
+      frmMonth.selectedIndex = i;
+      }
+      }
+    }
+    function ClearList()
+    {
+      var len = frmMonth.length;
+      for(var i = 0; i < len;i++)
+      {
+      frmMonth.remove(0);
+      }
+      
+    }
+    function onChangeFromdt(dt)
+    {
+
+      for(var i = dt.getMonth(); i >= 0; i--)
+      {
+   if(dt.getMonth() == 0)
+   {
+   break;
+   }      
+   var opt = new Option(getMonthInWords(i) + "-"+dt.getFullYear(),getMonthInWords(i) + "-"+dt.getFullYear());
+        frmMonth.add(opt, thrMonth.length);
+      }
+    }
+
+    function onChangePrevFromdt(dt)
+    {
+
+       
+      dt.setFullYear(dt.getFullYear() - 1, dt.getMonth(), 1);
+       
+       for(var i = 11; i >= dt.getMonth(); i--)
+   {
+   var opt = new Option(getMonthInWords(i) + "-"+(dt.getFullYear()),getMonthInWords(i) + "-"+(dt.getFullYear()));
+   frmMonth.add(opt, thrMonth.length);
+   }
+                
+    }
+    
+    function populateCurrentYearFromdt()
+    {
+        var curdt = new Date();
+      for(var i = curdt.getMonth(); i >= 0; i--)
+      {
+   if(curdt.getMonth() == 0)
+   {
+   break;
+   }      
+   var opt = new Option(getMonthInWords(i) + "-"+curdt.getFullYear(), getMonthInWords(i) + "-"+curdt.getFullYear());
+        frmMonth.add(opt, thrMonth.length);
+      }
+    }
+    function previousYearFromdt()
+    {
+        var curdt = new Date();
+        var prvdt = new Date();
+      prvdt.setFullYear(prvdt.getFullYear() - 1, prvdt.getMonth(), 1);
+       
+       for(var i = 11; i >= prvdt.getMonth(); i--)
+   {
+   var opt = new Option(getMonthInWords(i) + "-"+(prvdt.getFullYear()), getMonthInWords(i) + "-"+(prvdt.getFullYear()));
+   frmMonth.add(opt, thrMonth.length);
+   }
+                
+    }
+    function populatePreviousYear()
+    {
+      var curdt = new Date();
+      var prvdt = new Date();
+      
+      prvdt.setFullYear(prvdt.getFullYear() - 2, prvdt.getMonth(), 1);
+        
+       for(var y = 0; y < 2; y++)
+       { 
+       if(y == 0)
+       {
+       for(var i = 11; i >= 0; i--)
+   {
+   var opt = new Option(getMonthInWords(i) + "-"+(curdt.getFullYear()-1),getMonthInWords(i) + "-"+(curdt.getFullYear()-1));
+   thrMonth.add(opt, thrMonth.length);
+   }
+       }
+       else if(y == 1)
+       {
+          for(var i = 11; i > curdt.getMonth()-1; i--)
+   {
+   var opt = new Option(getMonthInWords(i) + "-"+(curdt.getFullYear()-2), getMonthInWords(i) + "-"+(curdt.getFullYear()-2));
+   thrMonth.add(opt, thrMonth.length);
+   }
+       }
+   
+   }
+    }
+    function populateCurrentYear()
+    {
+    var curdt = new Date();
+      for(var i = curdt.getMonth(); i >= 0; i--)
+      {
+       var opt = new Option(getMonthInWords(i) + "-"+curdt.getFullYear(),getMonthInWords(i) + "-"+curdt.getFullYear());
+        thrMonth.add(opt, thrMonth.length);
+      }
+    }
+   
+    </script>
+
+</head>
+<body onload="init()">
+    <select id="frmMonth">
+        <option></option>
+    </select>
+    <select id="thrMonth">
+        <option></option>
+    </select>
+   
+</body>
+</html>

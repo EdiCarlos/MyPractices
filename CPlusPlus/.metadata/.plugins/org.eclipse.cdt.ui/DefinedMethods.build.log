@@ -1,0 +1,13 @@
+
+**** Build of configuration Debug for project DefinedMethods ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Defined.o ..\Defined.cpp
+..\Defined.cpp:7:20: warning: extra tokens at end of #include directive [enabled by default]
+..\Defined.cpp:8:18: warning: extra tokens at end of #include directive [enabled by default]
+..\Defined.cpp:14:13: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+..\Defined.cpp: In member function 'virtual char* Test::getName()':
+..\Defined.cpp:17:2: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+g++ -o DefinedMethods.exe Defs.o Defined.o
+Build complete for project DefinedMethods
+Time consumed: 9687  ms.  

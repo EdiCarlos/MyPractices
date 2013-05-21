@@ -1,0 +1,40 @@
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\bin\Debug\AvalonDock.TestApp.exe
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\bin\Debug\AvalonDock.TestApp.pdb
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\bin\Debug\AvalonDock.dll
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\bin\Debug\AvalonDock.pdb
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\MainWindow.baml
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\MainWindow.g.cs
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\App.g.cs
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp_MarkupCompile.cache
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.g.resources
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.Properties.Resources.resources
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.exe
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.pdb
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.UserControl1.resources
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\bin\Debug\AvalonDock.TestApp.exe.config
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\bin\Debug\AvalonDock.Themes.VS2010.dll
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\bin\Debug\AvalonDock.Themes.VS2010.pdb
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\bin\Debug\AvalonDock.Themes.Aero.dll
+C:\Users\adospace\Documents\Visual Studio 2010\Projects\AvalonDock\AvalonDock.TestApp\bin\Debug\AvalonDock.Themes.Aero.pdb
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\bin\Debug\AvalonDock.TestApp.exe.config
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\bin\Debug\AvalonDock.TestApp.exe
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\bin\Debug\AvalonDock.TestApp.pdb
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\bin\Debug\AvalonDock.Themes.Aero.dll
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\bin\Debug\AvalonDock.Themes.VS2010.dll
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\bin\Debug\AvalonDock.Themes.Aero.pdb
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\bin\Debug\AvalonDock.Themes.VS2010.pdb
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\MainWindow.baml
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\MainWindow.g.cs
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\App.g.cs
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp_MarkupCompile.cache
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.g.resources
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.Properties.Resources.resources
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.UserControl1.resources
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.exe
+D:\MyPractices\DOTNET\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\obj\x86\Debug\AvalonDock.TestApp.pdb

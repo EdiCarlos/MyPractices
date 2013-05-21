@@ -1,0 +1,70 @@
+﻿    //    public CustomEventArgs(string message)
+    //    {
+    //        this.message = message;
+    //    }
+    //    public CustomEventArgs(object sender, string message)
+    //    {
+    //        this.Message = message;
+    //        this.Sender = sender;
+    //    }
+    //}
+
+    //class Publisher
+    //{
+    //    public event EventHandler<CustomEventArgs> RaiseCustomEvent;
+    //    public void OnRaise()
+    //    {
+    //        OnRaiseCustomEvent(this, new CustomEventArgs(this, "do something"));
+    //    }
+    //    protected virtual void OnRaiseCustomEvent(object sender, CustomEventArgs e)
+    //    {
+    //        EventHandler<CustomEventArgs> handler = RaiseCustomEvent;
+    //        if (handler != null)
+    //        {
+    //            e.Message += String.Format(" at {0}", DateTime.Now.ToString());
+    //            handler(sender, e);
+    //        }
+    //        //if (RaiseCustomEvent != null)
+    //        //{
+    //        //    e.Message += String.Format(" at {0}", DateTime.Now.ToString());
+    //        //    RaiseCustomEvent(sender, e);
+    //        //}
+    //    }
+
+    //}
+    ////class DupPublisher : Publisher
+    ////{
+    ////    protected override void OnRaiseCustomEvent(object sender, CustomEventArgs e)
+    ////    {
+    ////            e.Message += String.Format(" Message Received at {0}", DateTime.Now.ToString());
+    ////            base.OnRaiseCustomEvent(sender, e);  
+    ////    }
+    ////    public void DoSomeThing()
+    ////    {
+    ////        OnRaiseCustomEvent(this, new CustomEventArgs(this, "Doing Something"));
+    ////    }
+    ////}
+    //class Subscriber
+    //{
+    //    static int i = 0;
+    //    string id;
+    //    public Subscriber(string id, Publisher pub)
+    //    {
+    //        this.id = id;
+    //        pub.RaiseCustomEvent += new EventHandler<CustomEventArgs>(pub_RaiseCustomEvent);
+    //    }
+
+    //    void pub_RaiseCustomEvent(object sender, CustomEventArgs e)
+    //    {
+    //        if (i < 10)
+    //        {
+    //            Console.WriteLine(id + " received this message " + e.Message + " Sender of this Message " + sender);
+    //            i++;
+            
+    //            Publisher pub = (Publisher)sender;
+    //            pub.OnRaise();
+            
+    //        }
+    //            Console.WriteLine("Returning back " + i++);
+    //    }
+    //}

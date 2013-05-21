@@ -1,0 +1,241 @@
+﻿show tables;
+
+select * from temp;
+
+insert delayed into temp set fname = 'aqib', lname = 'khan', mname = 'shakeel', tempid = 5, gender = 'M';
+
+describe temp;
+
+create table tempcopy
+(
+id int unsigned auto_increment,
+fname varchar(30) not null,
+lname varchar(30) not null,
+mname varchar(30) not null,
+tempid int references temp (tempid),
+gender enum('M', 'F'),
+primary key (id)
+);
+
+insert into tempcopy select * from temp;
+
+select * from tempcopy;
+
+insert into tempcopy1 select * from temp;
+
+delete from tempcopy order by id desc limit 2;
+
+delete from tempcopy;
+
+SELECT * FROM books b;
+
+select * from books;
+
+delimiter $$
+drop table if exists books;
+$$
+$$
+delimiter;
+
+create table books
+(
+bookid smallint unsigned auto_increment,
+BookName varchar(40) not null,
+InStock smallint not null,
+primary key (bookid)
+);$$
+delimiter;
+
+create table rep
+(
+id tinyint unsigned auto_increment,
+city varchar(30) not null,
+description text not null,
+primary key (id)
+);
+
+insert into rep2(city, description) values('Mira Road', 'Mira road is not a city');
+
+alter table rep
+add fulltext(description);
+select * from rep where match(description) against('+kolkata - chennai' in boolean mode);
+
+create table rep2 select * from rep;
+replace into rep select * from rep2;
+
+select * from rep;
+select * from rep2;
+
+start transaction;
+insert into rep(city, description) values('Mira Road', 'Mira road is not a city');
+insert into rep(city, description) values('Mira Road', 'Mira road is not a city');
+insert into rep(city, description) values('Mira Road', 'Mira road is not a city');
+insert into rep(city, description) values('Mira Road', 'Mira road is not a city');
+insert into rep(city, description) values('Mira Road', 'Mira road is not a city');
+insert into rep(city, description) values('Mira Road', 'Mira road is not a city');
+rollback;
+
+
+create table mytable
+(
+id tinyint unsigned auto_increment,
+fname varchar(30) not null,
+lname varchar(30) not null,
+mname varchar(30) not null,
+primary key (id)
+)engine = innodb;
+
+start transaction;
+insert into mytable(fname, lname, mname) values('arif', 'khan', 'hasan');
+insert into mytable(fname, lname, mname) values('arif', 'khan', 'hasan');
+savepoint sp1;
+insert into mytable(fname, lname, mname) values('arif', 'khan', 'hasan');
+select * from mytable;
+rollback to savepoint sp1;
+select * from mytable;
+commit;
+
+select * from employee;
+
+create or replace algorithm = merge view myview
+as
+select first_name, last_name, salary, conid from employee where id = 1;
+
+select first_name, last_name, salary from myview where conid = 1;
+
+create or replace algorithm = undefined view myview
+as
+select description, count(description) as MyCount from employee group by description having MyCount != 0;
+
+
+create or replace algorithm = temptable view myview (description, NumberOfEmployee)
+as
+select description, count(description) from employee group by description having count(description) > 0;
+
+select * from myview;
+
+create or replace view ShowUnion
+as
+select * from employee where id = 1 union
+select * from employee where id = 2 union
+select * from employee where id = 3;
+
+select * from employee where description = 'Tester' union select * from employee where city = 'Vancouver';
+
+select * from employee where description = 'Tester';
+select * from employee where city = 'Vancouver';
+select * from employee where description != 'Tester';
+
+select * from showunion;
+
+create or replace view fewunion
+as
+select first_name, last_name, city, description from showunion;
+
+select * from fewunion;
+
+show create view fewunion;
+
+describe fewunion;
+
+explain select * from fewunion;
+
+create table b
+(
+mybit bit not null
+);
+
+alter table b
+modify column mybit b(8);
+insert into b set mybit = b'11111101';
+insert into b set mybit = b'11111010';
+
+select * from b;
+
+select bit_count(mybit) from b;
+
+create table bigbit
+(
+mybit bit not null
+);
+
+insert into bigbit set mybit = b'0';
+insert into bigbit values(0), (1),(1), (0);
+
+create table bulean
+(
+mybool boolean not null
+);
+
+insert into bulean set mybool = true;
+insert into bulean set mybool = false;
+
+select case mybool when 0 then 'False' when 1 then 'True' else 'Nothing' end as MyBoolean from bulean;
+
+create table mydt
+(
+dt date not null default '1988-01-10'
+);
+
+insert into mydt values('1988-01-10');
+insert into mydt set dt = curdate();
+
+select * from mydt;
+
+create table myhex
+(
+c binary(3));
+
+insert into myhex values('a');
+
+select HEX(c), c = 'a', c = 'a\0\0' from myhex;
+
+create table checkzerofill
+(
+id int zerofill not null
+);
+
+alter table checkzerofill
+add username varchar(30) not null;
+
+alter table checkzerofill
+modify column id int zerofill null;
+insert into checkzerofill set username = 'Arif788', id = null;
+
+select * from checkzerofill;
+
+create table myserial
+(
+id serial,
+gender enum('M', 'F'),
+primary key (id)
+);
+
+insert into myserial (gender) values('F');
+select * from myserial;
+
+alter table myserial
+add gender char null;
+
+alter table myserial
+add primary key (id);
+
+delimiter $$
+create function showgender(gender enum('M', 'F'))
+returns varchar(10)
+begin
+  declare var varchar(10);
+      if gender = 'M' then
+      set var = 'Male';
+      elseif gender = 'F' then
+       set var = 'Female';
+        end if;
+  return (var);
+end$$
+delimiter;
+
+select showgender('F');
+drop function if exists showgender;
+
+select * from myserial;
+select showgender(gender) as gender, count(showgender(gender)) as mycount from myserial group by gender;

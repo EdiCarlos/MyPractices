@@ -1,0 +1,13 @@
+﻿Build started 9/24/2012 5:59:30 PM.
+     1>Project "D:\MyPractices\CPlusPlus\ExternalDependencySample\ExternalSample\ExternalSample\ExternalSample.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\ExternalSample.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt emain.cpp
+         emain.cpp
+     1>d:\mypractices\cplusplus\externaldependencysample\externalsample\externalsample\emain.cpp(3): fatal error C1021: invalid preprocessor command 'typedef'
+     1>Done Building Project "D:\MyPractices\CPlusPlus\ExternalDependencySample\ExternalSample\ExternalSample\ExternalSample.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.43

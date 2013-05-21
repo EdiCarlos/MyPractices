@@ -1,0 +1,8 @@
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETDatabaseProject\sql\debug\ETDatabaseProject_Script.PreDeployment.sql
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETDatabaseProject\sql\debug\ETDatabaseProject_Script.PostDeployment.sql
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETDatabaseProject\sql\debug\ETDatabaseProject_Database.sqlsettings
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETDatabaseProject\sql\debug\ETDatabaseProject_Database.sqldeployment
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETDatabaseProject\sql\debug\ETDatabaseProject_Database.sqlcmdvars
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETDatabaseProject\sql\debug\ETDatabaseProject.deploymanifest
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETDatabaseProject\sql\debug\ETDatabaseProject.dbschema
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETDatabaseProject\obj\Debug\ETDatabaseProject.dbschema

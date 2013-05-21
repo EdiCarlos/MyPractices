@@ -1,0 +1,14 @@
+On Error Resume Next
+strComputer = "."
+
+Set objUserAccount = GetObject("winmgmts" _
+    & "{impersonationLevel=impersonate}!\\" _
+    & strComputer & _
+    "\root\cimv2:Win32_UserAccount." _
+    & "Domain='us',Name='axkhan2' ")
+
+If Err = 0 Then
+    WScript.Echo objUserAccount.LocalAccount
+Else
+    WScript.Echo "No object found" & Err.Number
+End If

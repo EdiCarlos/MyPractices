@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerExample", "TimerExample\TimerExample.csproj", "{9B959BF7-54C6-4AF1-AC77-08FAE21D63EA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MySetup", "Setup1\Setup1.vdproj", "{5753B75A-10B7-479E-A739-6B64446AF243}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B959BF7-54C6-4AF1-AC77-08FAE21D63EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B959BF7-54C6-4AF1-AC77-08FAE21D63EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B959BF7-54C6-4AF1-AC77-08FAE21D63EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B959BF7-54C6-4AF1-AC77-08FAE21D63EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5753B75A-10B7-479E-A739-6B64446AF243}.Debug|Any CPU.ActiveCfg = Debug
+		{5753B75A-10B7-479E-A739-6B64446AF243}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

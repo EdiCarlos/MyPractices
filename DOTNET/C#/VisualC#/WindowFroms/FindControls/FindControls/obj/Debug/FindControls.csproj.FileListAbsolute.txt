@@ -1,0 +1,8 @@
+D:\temp\VisualC#\WindowFroms\FindControls\FindControls\bin\Debug\FindControls.exe
+D:\temp\VisualC#\WindowFroms\FindControls\FindControls\bin\Debug\FindControls.pdb
+D:\temp\VisualC#\WindowFroms\FindControls\FindControls\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\WindowFroms\FindControls\FindControls\obj\Debug\FindControls.Form1.resources
+D:\temp\VisualC#\WindowFroms\FindControls\FindControls\obj\Debug\FindControls.Properties.Resources.resources
+D:\temp\VisualC#\WindowFroms\FindControls\FindControls\obj\Debug\FindControls.csproj.GenerateResource.Cache
+D:\temp\VisualC#\WindowFroms\FindControls\FindControls\obj\Debug\FindControls.exe
+D:\temp\VisualC#\WindowFroms\FindControls\FindControls\obj\Debug\FindControls.pdb

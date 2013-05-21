@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Threading\ThreadCreation\ThreadCreation\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Threading\ThreadCreation\ThreadCreation\bin\Debug\ThreadCreation.exe
+D:\temp\VisualC#\Threading\ThreadCreation\ThreadCreation\bin\Debug\ThreadCreation.pdb
+D:\temp\VisualC#\Threading\ThreadCreation\ThreadCreation\obj\Debug\ThreadCreation.exe
+D:\temp\VisualC#\Threading\ThreadCreation\ThreadCreation\obj\Debug\ThreadCreation.pdb

@@ -1,0 +1,46 @@
+<html>
+<head>
+<script language="javascript">
+function goFirst(){
+   document.all.myTable.dataPageSize = 2;
+   myTable.firstPage(); 
+} 
+function goPrevious(){
+   document.all.myTable.dataPageSize = 2;
+   myTable.previousPage(); 
+}
+function goNext(){
+   document.all.myTable.dataPageSize = 2;
+   myTable.nextPage(); 
+}
+function goLast(){
+   document.all.myTable.dataPageSize = 2;
+   myTable.lastPage(); } </script>
+<body>
+<button onclick="goFirst();">First Page</button>
+<button onclick="goPrevious();">Previous Page</button>
+<button onclick="goNext();">Next Page</button>
+<button onclick="goLast();">Last Page</button>
+<button onclick="alert(document.all.myData.namedRecordset(''));">Named recordset</ 
+button>
+<object classid="clsid:333C7BC4-460F-11D0-BC04-0080C7055A83" id="myData">
+    <param name="DataURL" value="myfile.csv">
+    <param name="UseHeader" value="True">
+    <param name="TextQualifier" value="'">
+</object>
+<table id="myTable" datasrc="#myData">
+    <thead>
+        <tr style="font-weight:bold">
+            <td>First</td>
+            <td>Last</td>
+        </tr>
+    </thead>
+<tbody>
+<tr id="tableList">
+   <td><span datafld="firstname"></span></td>
+   <td><span datafld="lastname"></span></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Generics\GenericsClass\GenericsClass\bin\Debug\GenericsClass.exe
+D:\temp\VisualC#\Generics\GenericsClass\GenericsClass\bin\Debug\GenericsClass.pdb
+D:\temp\VisualC#\Generics\GenericsClass\GenericsClass\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Generics\GenericsClass\GenericsClass\obj\Debug\GenericsClass.exe
+D:\temp\VisualC#\Generics\GenericsClass\GenericsClass\obj\Debug\GenericsClass.pdb

@@ -1,0 +1,7 @@
+D:\MyPractices\DOTNET\C#\ConsoleApplications\LINQ\LINQXml\ChangeResouceFile\ChangeResouceFile\bin\Debug\ChangeResouceFile.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\LINQ\LINQXml\ChangeResouceFile\ChangeResouceFile\bin\Debug\ChangeResouceFile.pdb
+D:\MyPractices\DOTNET\C#\ConsoleApplications\LINQ\LINQXml\ChangeResouceFile\ChangeResouceFile\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\ConsoleApplications\LINQ\LINQXml\ChangeResouceFile\ChangeResouceFile\obj\Debug\ChangeResouceFile.Resource.resources
+D:\MyPractices\DOTNET\C#\ConsoleApplications\LINQ\LINQXml\ChangeResouceFile\ChangeResouceFile\obj\Debug\ChangeResouceFile.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\ConsoleApplications\LINQ\LINQXml\ChangeResouceFile\ChangeResouceFile\obj\Debug\ChangeResouceFile.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\LINQ\LINQXml\ChangeResouceFile\ChangeResouceFile\obj\Debug\ChangeResouceFile.pdb

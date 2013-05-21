@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages>
+    <page name="Dashboard" image="~/images/icons/page_process.png" hidden="false">~/Default.aspx</page>
+    <page name="NewTicket" image="~/images/icons/add_page.png" hidden="false">~/new_ticket.aspx</page>
+    <page name="ViewTicket" image="~/images/icons/search_page.png" hidden="false">~/ticket.aspx</page>
+    <page name="MyIssues" image="~/images/icons/folder_full.png" hidden="false">~/my_issues.aspx</page>
+    <page name="Profile" image="~/images/icons/user.png" hidden="false">~/profile.aspx</page>
+    <page name="Search" image="~/images/icons/search.png" hidden="false">~/search.aspx</page>
+    <page name="Help" image="~/images/icons/help.png" hidden="false">~/help.aspx</page>
+    <page name="Contact" image="~/images/icons/comment.png" hidden="false">~/contact.aspx</page>
+    <admin>
+        <admin_page name="Permissions" image="~/images/icons/lock.png" hidden="false">~/admin/permissions.aspx</admin_page>
+        <admin_page name="Groups" image="~/images/icons/promotion.png" hidden="false">~/admin/groups.aspx</admin_page>
+        <admin_page name="Users" image="~/images/icons/users.png" hidden="false">~/admin/users.aspx</admin_page>
+        <admin_page name="Settings" image="~/images/icons/process.png" hidden="false">~/admin/settings.aspx</admin_page>
+        <admin_page name="Information" image="~/images/icons/info.png" hidden="false">~/admin/info.aspx</admin_page>
+        <admin_page name="Statistics" image="~/images/icons/chart.png" hidden="false">~/admin/stats.aspx</admin_page>
+    </admin>
+    <page name="Error" image="~/images/icons/delete.png" hidden="true">~/error.aspx</page>
+</pages>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StartergyPatternSample.StratergyPatternSample" HideInheritanceLine="true">
+    <Position X="2" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="StartergyPatternSample.StratergyPatternSample.Context">
+        <TypeIdentifier>
+          <NewMemberFileName>StratergyPatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Interface Name="StartergyPatternSample.StratergyPatternSample.IStratergy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StratergyPatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="StartergyPatternSample.StratergyPatternSample.Stratergy1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StratergyPatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="StartergyPatternSample.StratergyPatternSample.Stratergy2" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StratergyPatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="StartergyPatternSample.StratergyPatternSample.Client" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StratergyPatternSample.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StratergyPatternSample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

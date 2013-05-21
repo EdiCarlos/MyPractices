@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\WPF\MoviePlexSamples\MoviePlexSampleProj\MoviePlexDAL\bin\Debug\MoviePlexDAL.dll.config
+D:\MyPractices\DOTNET\WPF\MoviePlexSamples\MoviePlexSampleProj\MoviePlexDAL\bin\Debug\MoviePlexDAL.dll
+D:\MyPractices\DOTNET\WPF\MoviePlexSamples\MoviePlexSampleProj\MoviePlexDAL\bin\Debug\MoviePlexDAL.pdb
+D:\MyPractices\DOTNET\WPF\MoviePlexSamples\MoviePlexSampleProj\MoviePlexDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\WPF\MoviePlexSamples\MoviePlexSampleProj\MoviePlexDAL\obj\Debug\MoviePlexDAL.dll
+D:\MyPractices\DOTNET\WPF\MoviePlexSamples\MoviePlexSampleProj\MoviePlexDAL\obj\Debug\MoviePlexDAL.pdb

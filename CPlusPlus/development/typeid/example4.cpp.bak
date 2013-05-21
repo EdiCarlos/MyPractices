@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+class Base
+{
+	public:
+	virtual bool lays_egg(){return false;}
+};
+class derived1 : public Base
+{
+	public:
+	
+};
+class derived2 : public Base
+{
+	public:
+	virtual bool lays_egg(){return true;}
+};
+
+void WhatBase(Base &b)
+{
+	cout<<"Base type of some class"<<endl;
+	cout<<typeid(b).name()<<endl;
+}
+int main()
+{
+	Base b;
+	derived1 d1;
+	derived2 d2;
+	
+	WhatBase(&b);
+	WhatBase(&d1);
+	WhatBase(&d2);
+	return 0;
+}

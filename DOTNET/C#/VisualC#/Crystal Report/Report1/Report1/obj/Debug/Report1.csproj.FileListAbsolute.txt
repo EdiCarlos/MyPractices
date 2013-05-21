@@ -1,0 +1,13 @@
+D:\temp\VisualC#\Crystal Report\Report1\Report1\bin\Debug\MyDataBase.sdf
+D:\temp\VisualC#\Crystal Report\Report1\Report1\bin\Debug\Report1.exe.config
+D:\temp\VisualC#\Crystal Report\Report1\Report1\bin\Debug\Report1.exe
+D:\temp\VisualC#\Crystal Report\Report1\Report1\bin\Debug\Report1.pdb
+D:\temp\VisualC#\Crystal Report\Report1\Report1\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Crystal Report\Report1\Report1\obj\Debug\Report1.Form1.resources
+D:\temp\VisualC#\Crystal Report\Report1\Report1\obj\Debug\Report1.Form2.resources
+D:\temp\VisualC#\Crystal Report\Report1\Report1\obj\Debug\Report1.Properties.Resources.resources
+D:\temp\VisualC#\Crystal Report\Report1\Report1\obj\Debug\Report1.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Crystal Report\Report1\Report1\obj\Debug\RdlCompile.cache
+D:\temp\VisualC#\Crystal Report\Report1\Report1\obj\Debug\RdlCompile.compiled
+D:\temp\VisualC#\Crystal Report\Report1\Report1\obj\Debug\Report1.exe
+D:\temp\VisualC#\Crystal Report\Report1\Report1\obj\Debug\Report1.pdb

@@ -1,0 +1,885 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+    <!--HtmlScriptBlock1 script block-->
+
+    <script type='text/javascript'>
+var dateType = [['Issue Date', 'Issue Date'], ['Create Date','Create Date'],  ['Payment Due Date','Payment Due Date'], ['Financial Status Date', 'Financial Status Date']];
+var dtType = [['Issue Date', 'Issue Date'], ['Create Date','Create Date'],  ['Financial Status Date', 'Financial Status Date']];
+
+    </script>
+
+    <!--HtmlScriptBlock2 script block-->
+
+    <script type='text/javascript'>
+var fW = (typeof getFormWarpRequest == "function" ? getFormWarpRequest() : document.forms["formWarpRequest"]);
+if ( !fW || fW == undefined)
+{
+fW = ( formWarpRequest_THIS_ ? formWarpRequest_THIS_ : formWarpRequest_NS_ );
+}
+//function which checks if user has Clicked on any of the option available in Custom Financial Status
+var prompt = fW._oLstChoiceslistCustomFin;
+var dt = fW._oLstChoicesdateType;
+var docType = fW._oLstChoices_docType;
+var reportlevel = fW._oLstChoices_reportLevel;
+var analysis= fW._oLstChoices_analysis1;
+
+function displayBlock(name)
+{
+document.getElementById(name).style.display='block';
+}
+
+function hideBlock(name)
+{
+document.getElementById(name).style.display='none';
+}
+
+// function added to show or hide the sum count radio button
+reportlevel.onchange = Displaysumcount;
+// function added to show or hide the sum count radio button
+
+function Displaysumcount () 
+{ 
+if (reportlevel.selectedIndex == 2 )
+{
+displayBlock("showcount"); 
+displayBlock("showcountlabel"); 
+}
+else
+{
+hideBlock("showcount");
+hideBlock("showcountlabel");
+}
+
+if(reportlevel.selectedIndex == 3)
+{
+analysis[2].disabled = true;
+analysis[2].checked = false;
+hideBlock("desiredanalysBlock");
+analysis[0].checked =true;
+fW._textEditBoxtxt_daysLastInvoice.value = "30";
+}
+else
+{
+analysis[2].disabled = false;
+}
+}
+
+//if exists function check if value in combo box exists
+function ifExists(cmb,val)
+   {
+   try{
+    for(var x = 0; x < cmb.length; x++)
+    {
+        if(cmb.options[x].value.toString().toUpperCase() == val.toString().toUpperCase())
+        {
+        return true;
+        }  
+    }
+    }
+    catch(err)
+    {
+    var mess = "Error in function ifExists. \r\n";
+    mess += "Error Description : " + err.description;
+    alert(mess);
+    }
+    return false;
+}
+//add list of arrays in a combo box
+function AddList(cmb, list)
+    {
+    try
+    {
+     for(var x = 0; x < list.length; x++)
+     {
+     var ele = new Option(list[x][0], list[x][1]);
+     if(!ifExists(cmb, list[x][1]))
+     {
+       cmb.add(ele, cmb.length);
+     }
+     }
+    }
+    catch(err)
+    {
+    var mess = "Error in function AddList ";
+    mess += "Error Description : " + err.description;
+    alert(mess);
+    }
+    }
+//Clears the combox
+    function ClearCombo(cmb)
+    {
+    try
+    {
+      if(cmb.length > 2)
+      {
+      var tempLen = cmb.length;
+         for(var x = 2; x < tempLen; x++)
+         {
+         cmb.remove(2);
+         }
+      }
+      }
+      catch(err)
+      {
+      var mess = "Error in function ClearCombo";
+      mess += "Error Description : " + err.description;
+      alert(mess);
+      }
+    }    
+
+function SetDefault(cmb, val)
+{
+ for(var x = 0; x < cmb.length; x++)
+{
+if(cmb[x].value.toString() == val.toString())
+{
+cmb.selectedIndex = x;
+}
+}
+}
+
+</script>
+
+
+    <!--HtmlScriptBlock3 script block-->
+
+    <script type='text/javascript'>
+function DeSelectAll()
+{
+for(var x =0; x < prompt.length; x++)
+{
+prompt[x].checked = false;
+}
+}
+function docTypeSelected()
+{
+if(docType[0].checked)
+{
+ClearCombo(dt);
+AddList(dt, dateType);
+SetDefault(dt, 'Financial Status Date');
+}
+if(docType[1].checked)
+{
+ClearCombo(dt);
+AddList(dt, dateType);
+SetDefault(dt, 'Financial Status Date');
+}
+if(docType[2].checked)
+{
+ClearCombo(dt);
+AddList(dt, dtType);
+SetDefault(dt, 'Financial Status Date');
+}
+}
+    </script>
+
+    <!--HtmlScriptBlock4 script block-->
+
+    <script type="text/javascript">
+var frmMonth = fW._oLstChoices_fromMonth;
+var frmYear = fW._oLstChoices_fromYear;
+var thrMonth = fW._oLstChoices_throughMonth;
+var thrYear = fW._oLstChoices_throughYear;
+
+if(frmYear == null || thrYear == null)
+{
+alert("from month is null");
+}
+function getMonthInWords(index)
+{
+    var month=new Array(12);
+month[0]="JAN";
+month[1]="FEB";
+month[2]="MAR";
+month[3]="APR";
+month[4]="MAY";
+month[5]="JUN";
+month[6]="JUL";
+month[7]="AUG";
+month[8]="SEP";
+month[9]="OCT";
+month[10]="NOV";
+month[11]="DEC";
+ return month[index];
+ }
+ 
+function getMonthInIndex(value)
+{
+    var month=new Array(12);
+month[0]="JAN";
+month[1]="FEB";
+month[2]="MAR";
+month[3]="APR";
+month[4]="MAY";
+month[5]="JUN";
+month[6]="JUL";
+month[7]="AUG";
+month[8]="SEP";
+month[9]="OCT";
+month[10]="NOV";
+month[11]="DEC";
+var mnIndex;
+
+for(var i =0; i < month.length;i++)
+{
+if(value == month[i])
+{
+mnIndex = i;
+}
+}
+ return mnIndex;
+ }
+ 
+//added on 20/07/2011
+function frmWhenChanged()
+{
+    if(frmYear.selectedIndex == 0 || frmYear.selectedIndex == 1)
+{
+frmCheck = false;
+ShowError("fromDate");
+}
+else
+{
+frmCheck = true;
+HideError("fromDate");
+}
+}
+//complete
+function WhenChanged()
+    {
+       var date = new Date();
+       var month = thrMonth[thrMonth.selectedIndex].text.toString();
+       var year = thrYear[thrYear.selectedIndex].text.toString();
+       
+       date.setFullYear(year, getMonthInIndex(month),1);
+      ClearCombo(frmYear);   
+       
+       var datePrv = new Date();
+      datePrv.setFullYear(parseInt(year), getMonthInIndex(month), 1);
+      datePrv.setMonth(datePrv.getMonth() - 3);
+      
+for(var i = 0; i < frmYear.length; i++)
+{
+//      alert(frmMonth[i].text + " = " + getMonthInWords(datePrv.getMonth())+"-"+datePrv.getFullYear().toString().substring(2, 4));
+if(frmYear[i].text == datePrv.getFullYear())
+{
+frmYear.selectedIndex = i;
+}
+}
+if(thrYear.selectedIndex == 0 || thrYear.selectedIndex == 1)
+{
+thrCheck = false;
+ShowError("toDate");
+}
+else
+{
+thrCheck = true;
+HideError("toDate");
+}
+if(frmYear.selectedIndex == 0 || frmYear.selectedIndex == 1)
+{
+frmCheck = false;
+ShowError("fromDate");
+}
+else
+{
+frmCheck = true;
+HideError("fromDate");
+}
+}
+    
+    function ClearList()
+    {
+      var len = frmYear.length;
+      for(var i = 0; i < len;i++)
+      {
+      frmYear.remove(0);
+      }
+    }
+    
+  function populateFromYear()
+    {
+     var curdt = new Date();
+     var prevdt = new Date();
+     prevdt.setMonth(-24);
+     var year = prevdt.getFullYear();
+    
+     for(var i = prevdt.getFullYear(); i <= curdt.getFullYear(); i++)
+     {
+     var opt = new Option(year);
+     frmYear.add(opt, frmYear.length);
+     year = year + 1;
+    }
+}
+    
+  function populateThroughYear()
+    {
+     var curdt = new Date();
+     var prevdt = new Date();
+     prevdt.setMonth(-24);
+     var year = prevdt.getFullYear();
+    
+     for(var i = prevdt.getFullYear(); i <= curdt.getFullYear(); i++)
+     {
+     var opt = new Option(year);
+     thrYear.add(opt, thrYear.length);
+     year = year + 1;
+    }
+}
+
+    </script>
+
+    <!--htmlInitScript script block-->
+    <script type="text/javascript">
+//changed
+var reportLevel = fW._oLstChoices_reportLevel;
+var docType = fW._oLstChoices_docType;
+var currencyCode = fW._oLstChoices_currencyCode;
+
+
+// hiding select All/deselect All in Cognos 8.3 form.
+function DeSelectAllLink()
+{
+for(j=0;j<document.links.length;j++)
+{
+y=document.links[j];
+if (y.id.indexOf("SELECT") != -1) document.getElementById(y.id).style.display='None';
+}
+}
+
+
+function getList(sp1, sp2)
+{
+     var sp = document.getElementById(sp1);
+     var inp = sp.getElementsByTagName("input");
+     var txtBlock = document.getElementById(sp2);
+     var txtBox = txtBlock.getElementsByTagName("input");
+
+   for(var i =0; i < inp.length; i++)
+   {
+   if(i == 1 || i == 2)
+   {
+   inp[i].onclick = function(){if(txtBox[0] != null){txtBox[0].value = "";}if(txtBox[1] != null){txtBox[1].value = "";} document.getElementById(sp2).style.display='block'; }
+   }
+   else
+   {
+   inp[i].onclick = function(){if(txtBox[0] != null){txtBox[0].value = "";}if(txtBox[1] != null){txtBox[1].value = "";} document.getElementById(sp2).style.display='none';}
+   }
+   }
+}
+
+// Function written doe detailed analysis radio button box
+function analysisList(sp1, sp2)
+{
+     var sp = document.getElementById(sp1);
+     var inp = sp.getElementsByTagName("input");
+     var txtBlock = document.getElementById(sp2);
+     var txtBox = txtBlock.getElementsByTagName("input");
+
+   for(var i =0; i < inp.length; i++)
+   {
+   if(i == 1 || i == 2)
+   {
+   inp[i].onclick = function(){if(txtBox[0] != null){txtBox[0].value = "";}if(txtBox[1] != null){txtBox[1].value = "";} document.getElementById(sp2).style.display='none';}
+   }
+   else
+   {
+inp[i].onclick = function(){if(txtBox[0] != null){txtBox[0].value = "";}if(txtBox[1] != null){if(txtBox[1].value.length == 0){txtBox[1].value = "30";} if(txtBox[1].value == "30"){}} document.getElementById(sp2).style.display='block';}
+      }
+   }
+}
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------Validation Code-----------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function IsValid()
+{
+if(parseInt(fromYear[fromYear.selectedIndex].value) > parseInt(throughYear[throughYear.selectedIndex].value))
+{
+return false;
+}
+if(fromYear[fromYear.selectedIndex].value == throughYear[throughYear.selectedIndex].value)
+{
+if(parseInt(fromMonth[fromMonth.selectedIndex].value)> parseInt(throughMonth[throughMonth.selectedIndex].value))
+{
+return false;
+}
+}
+return true;
+}
+
+//added on 20/07/2011
+
+function ShowError(block)
+{
+var sp =document.getElementById(block);
+ var dv = sp.getElementsByTagName("div");
+var img = sp.getElementsByTagName("img");
+img[1].style.display = "block";
+
+dv[1].style.borderBottomStyle = "dashed";
+dv[1].style.borderBottomWidth = "2px";
+dv[1].style.borderBottomColor = "orangered";
+
+}
+
+function HideError(block)
+{
+var sp =document.getElementById(block);
+ var dv = sp.getElementsByTagName("div");
+var img = sp.getElementsByTagName("img");
+img[1].style.display = "none";
+
+dv[1].style.borderBottomStyle = "none";
+dv[1].style.borderBottomWidth = "2px";
+dv[1].style.borderBottomColor = "orangered";
+}
+
+//complete
+
+
+
+//Clear the combox when form loads
+function init()
+{
+//from month and through month initialization
+
+ClearCombo(frmMonth);
+ClearCombo(thrMonth);
+
+     
+      var curdt = new Date();
+      var prvdt = new Date();
+      var prvmn = new Date();
+      prvdt.setFullYear(prvdt.getFullYear() - 2, prvdt.getMonth(), 1);
+     
+     populateFromYear();
+     populateThroughYear();
+     
+if(fW._textEditBox_through_month.value.toString() == 1 && fW._textEditBox_through_year.value.toString() == "2022")
+{
+   for(var i = 0; i < thrMonth.length; i++)
+      {
+      if(thrMonth[i].text == getMonthInWords(curdt.getMonth())+"-"+curdt.getFullYear())
+      {
+      thrMonth.selectedIndex = i;
+break;
+      }
+      }
+   
+} 
+     else
+{
+for(var i = 0; i < thrMonth.length; i++)
+    {
+  if(thrMonth[i].text == getMonthInWords(parseInt(fW._textEditBox_through_month.value) - 1)+"-"+fW._textEditBox_through_year.value.toString())
+      {
+      thrMonth.selectedIndex = i;
+ fW.p_prm_thrumonth.value = thrMonth[thrMonth.selectedIndex].text;
+break;
+      }
+     }
+}
+      prvmn.setMonth(prvmn.getMonth() - 3);
+
+thrMonth.onchange = WhenChanged;
+frmMonth.onchange = frmWhenChanged;
+
+WhenChanged();
+frmWhenChanged();
+
+     
+     if(fW._textEditBox_from_month.value.toString() == 1 && fW._textEditBox_from_year.value.toString() == "2011")
+{
+      for(var i = 0; i < frmMonth.length; i++)
+      {
+      if(frmMonth[i].text == getMonthInWords(prvmn.getMonth())+"-"+prvmn.getFullYear())
+      { 
+      frmMonth.selectedIndex = i;
+break;
+      }
+      }
+      }
+else
+{
+      for(var i = 0; i < frmMonth.length; i++)
+      {
+
+            if(frmMonth[i].text == getMonthInWords(parseInt(fW._textEditBox_from_month.value) - 1)+"-"+fW._textEditBox_from_year.value)
+      {
+      frmMonth.selectedIndex = i;
+ fW.p_prm_frmmonth.value = frmMonth[frmMonth.selectedIndex].text;
+
+break;
+      }
+      }
+
+}
+
+
+   //end of from mont and through month code
+
+
+try
+{
+
+getList("buyerList", "buyerBlock");
+if(!fW._oLstChoices_buyerName[2].checked)
+{
+displayBlock("buyerBlock");
+}
+
+}
+catch(err)
+{
+alert("Error call function getList on buyerList and buyerBlock");
+}
+
+try
+{
+getList("sellerList", "sellerBlock");
+
+if(!fW._oLstChoices_sellerName[2].checked)
+{
+displayBlock("sellerBlock");
+}
+
+}
+catch(err)
+{
+alert("Error call function getList on sellerList and sellerBlock");
+}
+
+try
+{
+getList("billAccountList", "billAccountBlock");
+if(!fW._oLstChoices_accountNumber[2].checked)
+{
+displayBlock("billAccountBlock");
+}
+
+}
+catch(err)
+{
+alert("Error call function getList on billAccountList and billAccountBlock");
+}
+
+try
+{
+getList("sellerCompanyList", "sellerCompanyBlock");
+if(!fW._oLstChoices_sellerCompanyName[2].checked)
+{
+displayBlock("sellerCompanyBlock");
+}
+
+}
+catch(err)
+{
+alert("Error call function getList on accountCodeList and accountCodeBlock");
+}
+
+
+
+ 
+try
+{
+//set Text of report levels first element to desired value
+reportLevel[0].text = "Select Report Level";
+//set Text of Date Types first element to desired value for the display purpose
+dt[0].text = "Select Date Type";
+//set Text of Document Types first element to desired value for the display purpose
+docType[0].text = "Select Document Type";
+//set currency codes first element to to "Select Currency"
+currencyCode[0].text = "Select Currency";
+
+frmMonth[0].text = "Select From Date";
+thrMonth[0].text = "Select Through Date";
+}
+catch(err)
+{
+alert (err.description);
+}
+
+
+
+//call DeSelectAllLink which will remove all the links from the document
+try
+{
+DeSelectAllLink();
+}
+catch(err)
+{
+
+}
+
+
+
+try
+{
+//set from date to 90 days ago
+var curdate = new Date();
+
+var frmDate = new Date();
+frmDate.setDate(frmDate.getDate() - 90);
+
+}
+catch(err)
+{
+}
+
+try
+{
+Displaysumcount();
+}
+catch(err)
+{
+}
+
+try
+{
+
+analysisList("desiredanalysList", "desiredanalysBlock");
+
+if(analysis[2].disabled == true)
+{
+hideBlock("desiredanalysBlock");
+}
+else if(analysis[2].disabled == false && analysis[2].checked == true)
+{
+displayBlock("desiredanalysBlock");
+}
+
+}
+catch(err)
+{
+alert("Error call function getList on accountCodeList and accountCodeBlock");
+}
+}
+//call the initialization function 
+this.init();
+
+</script>
+
+    <!--htmlSubmitButton script block-->
+    <script type='text/javascript'>
+ function getNumberFromMonth(mon)
+    {
+    var month = mon.toString().toUpperCase();
+      if(month == "JAN")
+        return 1;
+        else if(month == "FEB")
+        return 2;
+        else if(month == "MAR")
+        return 3;
+        else if(month == "APR")
+        return 4;
+        else if(month == "MAY")
+        return 5;
+        else if(month == "JUN")
+        return 6;
+        else if(month == "JUL")
+        return 7;
+        else if(month == "AUG")
+        return 8;
+        else if(month == "SEP")
+        return 9;
+        else if(month == "OCT")
+        return 10;
+        else if(month == "NOV")
+        return 11;
+        else if(month == "DEC")
+        return 12;
+    }
+
+
+function ValidateForSpace(txt)
+{
+//validation for spatial characters
+if(txt.value.match(/^\s+|\s+$/g, ''))
+{
+var temp = txt.value.replace(/^\s+|\s+$/g, '');
+if(temp.length <= 0)
+{
+txt.value = temp;
+return false;
+}
+}
+}
+function getDateElement(dt)
+{
+var dateBlock = document.getElementById(dt);
+var  date = dateBlock.getElementsByTagName("input");
+if(date[1] != null)
+{
+return date[1];
+}
+return null;
+}
+//replace this function with ValidateIfEmpty functions to apply new validation
+function ValidateIfEmpty(block, txt)
+{
+try
+{
+var txtValue = txt.value;
+if(txt.value == '' &&  document.getElementById(block).style.display == 'block')
+{
+return false;
+}
+if(txt.value.match(/^\s+|\s+$/g, ''))
+{
+var temp = txt.value.replace(/^\s+|\s+$/g, '');
+if(temp.length <= 0)
+{
+txt.value = temp;
+return false;
+}
+}
+}
+catch(err)
+{
+alert("Error in ValidateIfEmpty() " + err.description);
+}
+return true;
+}
+function ValidateDates()
+{
+if(!IsValid())
+{
+alert("From Month Or From Year Cannot be More Than Through Month Or Through Year");
+return false;
+}
+var fromDate = new Date();
+fromDate.setFullYear(parseInt(fromYear[fromYear.selectedIndex].value));
+fromDate.setMonth(parseInt(fromMonth[fromMonth.selectedIndex].value) -1 );
+fromDate.setDate(1);
+var throughDate = new Date();
+throughDate.setFullYear(parseInt(throughYear[throughYear.selectedIndex].value));
+throughDate.setMonth(parseInt(throughMonth[throughMonth.selectedIndex].value) -1);
+throughDate.setDate(31);
+//var from = parseInt(fromDate.getMonth().toString()+""+fromDate.getFullYear().toString());
+//var through = parseInt(throughDate.getMonth().toString()+""+throughDate.getFullYear().toString());
+var msPerDay = 24 * 60 * 60 * 1000;
+if(((throughDate - fromDate) / msPerDay) + 1 > 396)
+{
+alert("More than 13 months selected");
+return false;
+}
+return true;
+}
+function validate()
+{
+try
+{
+ValidateForSpace(fW._textEditBox_txt_buyerId);
+ValidateForSpace(fW._textEditBox_txt_sellerId);
+}
+catch(err)
+{
+alert(err.description);
+}
+try
+{
+if(!ValidateIfEmpty("buyerBlock", fW._textEditBoxtxt_buyerName))
+{
+alert("One or more of the required values is missing.Required values are needed to produce the report."); return;}
+}
+catch(err)
+{
+alert(err.description);
+}
+try
+{
+if(!ValidateIfEmpty("sellerCompanyBlock", fW._textEditBoxtxt_sellerCompany))
+{alert("One or more of the required values is missing.Required values are needed to produce the report."); return;}
+}
+catch(err)
+{
+alert(err.description);
+}
+try
+{
+if(!ValidateIfEmpty("sellerBlock", fW._textEditBoxtxt_sellerName))
+{alert("One or more of the required values is missing.Required values are needed to produce the report."); return;}
+}
+catch(err)
+{
+alert(err.description);
+}
+try
+{
+if(!ValidateIfEmpty("billAccountBlock", fW._textEditBoxtxt_billNumber))
+{alert("One or more of the required values is missing.Required values are needed to produce the report."); return;}
+}
+catch(err)
+{
+alert(err.description);
+}
+if(document.getElementById("desiredanalysBlock").style.display == 'block' && fW._textEditBoxtxt_daysLastInvoice.value.length == 0)
+{
+alert("One or more of the required values is missing.Required values are needed to produce the report.");
+return;
+}
+else
+{
+if(parseInt(fW._textEditBoxtxt_daysLastInvoice.value) <= 0)
+{
+alert("Days Since Last Invoice cannot have 0 or negative number");
+return;
+}
+}
+if(!canSubmitPrompt())
+{
+return;
+}
+else                                
+{
+fW._textEditBox_from_month.value = getNumberFromMonth(frmMonth[frmMonth.selectedIndex].text);
+fW._textEditBox_from_year.value = frmYear[frmYear.selectedIndex].text;
+fW._textEditBox_through_month.value = getNumberFromMonth(thrMonth[thrMonth.selectedIndex].text);
+fW._textEditBox_through_year.value = thrYear[thrYear.selectedIndex].text;
+setTimeout(promptButtonFinish,0);
+}
+}
+    </script>
+
+</head>
+<body>
+    <select id="frmMonth">
+        <option id="Option1" value="JAN">JAN</option>
+        <option id="Option2" value="FEB">FEB</option>
+        <option id="Option3" value='MAR'>MAR</option>
+        <option id="Option4" value='APR'>APR</option>
+        <option id="Option5" value='MAY'>MAY</option>
+        <option id="Option6" value='JUN'>JUN</option>
+        <option id="Option7" value='JUL'>JUL</option>
+        <option id="Option8" value='AUG'>AUG</option>
+        <option id="Option9" value='SEP'>SEP</option>
+        <option id="Option10" value='OCT'>OCT</option>
+        <option id="Option11" value='NOV'>NOV</option>
+        <option id="Option12" value='DEC'>DEC</option>
+    </select>
+    <select id="frmYear">
+    </select>
+    <select id="thrMonth">
+        <option id="Option13" value="JAN">JAN</option>
+        <option id="Option14" value="FEB">FEB</option>
+        <option id="Option15" value='MAR'>MAR</option>
+        <option id="Option16" value='APR'>APR</option>
+        <option id="Option17" value='MAY'>MAY</option>
+        <option id="Option18" value='JUN'>JUN</option>
+        <option id="Option19" value='JUL'>JUL</option>
+        <option id="Option20" value='AUG'>AUG</option>
+        <option id="Option21" value='SEP'>SEP</option>
+        <option id="Option22" value='OCT'>OCT</option>
+        <option id="Option23" value='NOV'>NOV</option>
+        <option id="Option24" value='DEC'>DEC</option>
+    </select>
+    <select id="thrYear">
+    </select>
+    <button class="bp" onclick="validate();">
+        Submit</button>
+</body>
+</html>

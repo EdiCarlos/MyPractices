@@ -1,0 +1,86 @@
+Class Example
+public Delegate Sub TenHandler()
+public Delegate Sub TwentyHandler()
+public Event TenEvent as TenHandler
+public Event TwentyEvent As TwentyHandler
+Dim i as Integer = 0
+
+public Sub RunLoop()
+
+For i = 1 to 30
+If i = 10 then 
+RaiseEvent TenEvent()
+end if 
+If i = 20 then 
+RaiseEvent TwentyEvent()
+end if 
+Next
+End Sub
+
+public Property SetI() as Integer
+get 
+return i
+end get
+Set (ByVal value as Integer)
+i = value
+end Set
+
+End Property 
+
+End Class
+
+Class ExampleNew
+Dim i as Integer = 0
+public Event TenEvent()
+public Event TwentyEvent()
+
+public Sub RunLoop()
+For i = 1 to 30
+if i = 10 then 
+RaiseEvent TenEvent()
+else if i = 20 then 
+RaiseEvent TwentyEvent()
+end if
+
+next
+End Sub
+
+End Class
+
+
+
+Class Example1
+Dim WithEvents exn as ExampleNew
+Dim WithEvents exe as Example
+public Sub New()
+exe = new Example()
+exe.RunLoop()
+Console.WriteLine(exe.SetI)
+exn = new ExampleNew()
+exn.RunLoop()
+End Sub
+
+public Sub exn_TenEvent() handles exn.TenEvent
+Console.WriteLine("ten event called of exn")
+End Sub
+public Sub exn_TwentyEvent() handles exn.TwentyEvent
+Console.WriteLine("Twenty Event Called of exn")
+End Sub
+public Sub TenEvent_Show() Handles exe.TenEvent
+Console.WriteLine("i is Equal to ten")
+Console.WriteLine("changin i to 100")
+exe.SetI = 100
+End Sub
+
+public Sub TwentyEvent_Show() Handles exe.TwentyEvent
+Console.WriteLine("i eqauls to 20")
+End Sub
+
+End Class
+
+Module Module1
+Sub Main()
+Dim e as new Example1
+End Sub
+
+End Module

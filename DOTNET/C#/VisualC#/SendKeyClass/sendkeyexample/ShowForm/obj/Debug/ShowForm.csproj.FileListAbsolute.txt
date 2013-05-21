@@ -1,0 +1,9 @@
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\ShowForm\bin\Debug\ShowForm.exe
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\ShowForm\bin\Debug\ShowForm.pdb
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\ShowForm\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\ShowForm\obj\Debug\ShowForm.Form1.resources
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\ShowForm\obj\Debug\ShowForm.Properties.Resources.resources
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\ShowForm\obj\Debug\ShowForm.csproj.GenerateResource.Cache
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\ShowForm\obj\Debug\ShowForm.exe
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\ShowForm\obj\Debug\ShowForm.pdb
+D:\temp\VisualC#\SendKeyClass\sendkeyexample\ShowForm\obj\Debug\ShowForm.Form2.resources

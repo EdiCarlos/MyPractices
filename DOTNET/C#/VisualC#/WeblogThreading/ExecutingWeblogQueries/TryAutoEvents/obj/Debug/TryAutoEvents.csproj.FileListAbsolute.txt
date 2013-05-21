@@ -1,0 +1,5 @@
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\TryAutoEvents\bin\Debug\TryAutoEvents.exe
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\TryAutoEvents\bin\Debug\TryAutoEvents.pdb
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\TryAutoEvents\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\TryAutoEvents\obj\Debug\TryAutoEvents.exe
+D:\temp\VisualC#\WeblogThreading\ExecutingWeblogQueries\TryAutoEvents\obj\Debug\TryAutoEvents.pdb

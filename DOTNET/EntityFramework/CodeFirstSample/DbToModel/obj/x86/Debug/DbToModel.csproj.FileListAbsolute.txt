@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\DbToModel\bin\Debug\DbToModel.exe.config
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\DbToModel\bin\Debug\DbToModel.exe
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\DbToModel\bin\Debug\DbToModel.pdb
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\DbToModel\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\DbToModel\obj\x86\Debug\DbToModel.exe
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\DbToModel\obj\x86\Debug\DbToModel.pdb

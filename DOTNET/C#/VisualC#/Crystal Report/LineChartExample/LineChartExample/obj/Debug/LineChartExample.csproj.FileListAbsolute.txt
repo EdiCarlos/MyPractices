@@ -1,0 +1,11 @@
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\obj\Debug\LineChartExample.Form1.resources
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\obj\Debug\LineChartExample.Properties.Resources.resources
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\obj\Debug\LineChartExample.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\obj\Debug\RdlCompile.cache
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\obj\Debug\RdlCompile.compiled
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\bin\Debug\LineChartExample.exe.config
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\bin\Debug\LineChartExample.exe
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\bin\Debug\LineChartExample.pdb
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\obj\Debug\LineChartExample.exe
+D:\temp\VisualC#\Crystal Report\LineChartExample\LineChartExample\obj\Debug\LineChartExample.pdb

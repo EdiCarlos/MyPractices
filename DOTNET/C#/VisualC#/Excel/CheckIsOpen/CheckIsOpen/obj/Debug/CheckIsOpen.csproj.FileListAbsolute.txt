@@ -1,0 +1,9 @@
+D:\temp\VisualC#\Excel\CheckIsOpen\CheckIsOpen\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Excel\CheckIsOpen\CheckIsOpen\obj\Debug\CheckIsOpen.csproj.ResolveComReference.cache
+D:\temp\VisualC#\Excel\CheckIsOpen\CheckIsOpen\obj\Debug\CheckIsOpen.Properties.Resources.resources
+D:\temp\VisualC#\Excel\CheckIsOpen\CheckIsOpen\obj\Debug\CheckIsOpen.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Excel\CheckIsOpen\CheckIsOpen\bin\Debug\CheckIsOpen.exe
+D:\temp\VisualC#\Excel\CheckIsOpen\CheckIsOpen\bin\Debug\CheckIsOpen.pdb
+D:\temp\VisualC#\Excel\CheckIsOpen\CheckIsOpen\obj\Debug\CheckIsOpen.exe
+D:\temp\VisualC#\Excel\CheckIsOpen\CheckIsOpen\obj\Debug\CheckIsOpen.pdb
+D:\temp\VisualC#\Excel\CheckIsOpen\CheckIsOpen\obj\Debug\CheckIsOpen.Form1.resources

@@ -1,0 +1,6 @@
+D:\temp\VisualC#\Excel\SortCommand\SortCommand\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Excel\SortCommand\SortCommand\obj\Debug\SortCommand.csproj.ResolveComReference.cache
+D:\temp\VisualC#\Excel\SortCommand\SortCommand\bin\Debug\SortCommand.exe
+D:\temp\VisualC#\Excel\SortCommand\SortCommand\bin\Debug\SortCommand.pdb
+D:\temp\VisualC#\Excel\SortCommand\SortCommand\obj\Debug\SortCommand.exe
+D:\temp\VisualC#\Excel\SortCommand\SortCommand\obj\Debug\SortCommand.pdb

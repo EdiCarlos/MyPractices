@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ef439171-5e50-42fc-87d7-b7520a09df90" name="axkhan2@WD-XPA6GCAEJ037 2012-12-26 14:31:57" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="60d2611c-ed31-4dc8-9970-8070981fe519">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="axkhan2_WD-XPA6GCAEJ037 2012-12-26 14_31_57">
+      <DeploymentItem filename="D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest\bin\Debug\AutomateUnitTest.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-26T14:31:57.5110904+05:30" queuing="2012-12-26T14:31:57.6048392+05:30" start="2012-12-26T14:31:57.6048392+05:30" finish="2012-12-26T14:31:57.8704608+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RunTest" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="13677812-2b29-30dd-9331-8d956ee1838d">
+      <Execution id="057e5b44-7497-49cf-80bd-f1c040bb58f8" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.ProgramTest, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RunTest" />
+    </UnitTest>
+    <UnitTest name="AdditionTest" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="b4588f87-32e5-cf36-428d-a6e5fa89780f">
+      <Execution id="1b7650fe-3e6a-4869-93a3-6a3a38f8b98e" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.ProgramTest, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AdditionTest" />
+    </UnitTest>
+    <UnitTest name="SubtractionTest" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="698bc669-a7aa-7938-b853-f280423d79e4">
+      <Execution id="a2be3f78-4ccf-45ba-9251-eae41b806371" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.ProgramTest, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubtractionTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="13677812-2b29-30dd-9331-8d956ee1838d" executionId="057e5b44-7497-49cf-80bd-f1c040bb58f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="698bc669-a7aa-7938-b853-f280423d79e4" executionId="a2be3f78-4ccf-45ba-9251-eae41b806371" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4588f87-32e5-cf36-428d-a6e5fa89780f" executionId="1b7650fe-3e6a-4869-93a3-6a3a38f8b98e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="057e5b44-7497-49cf-80bd-f1c040bb58f8" testId="13677812-2b29-30dd-9331-8d956ee1838d" testName="RunTest" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0116674" startTime="2012-12-26T14:31:57.6048392+05:30" endTime="2012-12-26T14:31:57.8392112+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="057e5b44-7497-49cf-80bd-f1c040bb58f8">
+      <Output>
+        <StdOut>Hello world</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a2be3f78-4ccf-45ba-9251-eae41b806371" testId="698bc669-a7aa-7938-b853-f280423d79e4" testName="SubtractionTest" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0034525" startTime="2012-12-26T14:31:57.8392112+05:30" endTime="2012-12-26T14:31:57.8548360+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2be3f78-4ccf-45ba-9251-eae41b806371">
+    </UnitTestResult>
+    <UnitTestResult executionId="1b7650fe-3e6a-4869-93a3-6a3a38f8b98e" testId="b4588f87-32e5-cf36-428d-a6e5fa89780f" testName="AdditionTest" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0001988" startTime="2012-12-26T14:31:57.8548360+05:30" endTime="2012-12-26T14:31:57.8548360+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b7650fe-3e6a-4869-93a3-6a3a38f8b98e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

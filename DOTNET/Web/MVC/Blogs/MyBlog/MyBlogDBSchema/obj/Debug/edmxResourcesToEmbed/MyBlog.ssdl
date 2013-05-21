@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyBlog.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MyBlogStoreContainer">
+    <EntitySet Name="Blogs" EntityType="MyBlog.Store.Blogs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BlogPosts" EntityType="MyBlog.Store.BlogPosts" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="BlogsBlogPost" Association="MyBlog.Store.BlogsBlogPost">
+      <End Role="Blogs" EntitySet="Blogs" />
+      <End Role="BlogPost" EntitySet="BlogPosts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Blogs">
+    <Key>
+      <PropertyRef Name="BlogID" />
+    </Key>
+    <Property Name="BlogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="TStamp" Type="datetime" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="BlogPosts">
+    <Key>
+      <PropertyRef Name="PostID" />
+    </Key>
+    <Property Name="PostID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlogID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Post" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TStamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="BlogsBlogPost">
+    <End Role="Blogs" Type="MyBlog.Store.Blogs" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BlogPost" Type="MyBlog.Store.BlogPosts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Blogs">
+        <PropertyRef Name="BlogID" />
+      </Principal>
+      <Dependent Role="BlogPost">
+        <PropertyRef Name="BlogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

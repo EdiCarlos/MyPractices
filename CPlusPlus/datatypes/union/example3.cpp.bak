@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+union u_type
+{
+	
+	void swap();
+	void set_byte(unsigned short i);
+	void show_word();
+	
+	unsigned short u;
+	unsigned char ch[2];
+	
+}u;
+
+void u_type::swap()
+{
+	unsigned char t;
+	t = ch[0];
+	ch[0] = ch[1];
+	ch[1] = t;
+}
+void u_type::set_byte(unsigned short b)
+{
+	u = b;
+}
+void u_type::show_word()
+{
+	cout<< u<<endl;
+}
+int main()
+{
+	return 0;
+}

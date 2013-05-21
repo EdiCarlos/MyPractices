@@ -1,0 +1,9 @@
+D:\MyPractices\DOTNET\C#\VisualC#\ExceptionHandling\ExceptionHandlerSample\ExceptionHandlerSample\bin\Debug\ExceptionHandlerSample.exe.config
+D:\MyPractices\DOTNET\C#\VisualC#\ExceptionHandling\ExceptionHandlerSample\ExceptionHandlerSample\bin\Debug\ExceptionHandlerSample.exe
+D:\MyPractices\DOTNET\C#\VisualC#\ExceptionHandling\ExceptionHandlerSample\ExceptionHandlerSample\bin\Debug\ExceptionHandlerSample.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\ExceptionHandling\ExceptionHandlerSample\ExceptionHandlerSample\obj\Debug\ExceptionHandlerSample.csprojResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\VisualC#\ExceptionHandling\ExceptionHandlerSample\ExceptionHandlerSample\obj\Debug\ExceptionHandlerSample.exe
+D:\MyPractices\DOTNET\C#\VisualC#\ExceptionHandling\ExceptionHandlerSample\ExceptionHandlerSample\obj\Debug\ExceptionHandlerSample.pdb
+D:\MyPractices\ExceptionHandlerSample\ExceptionHandlerSample\bin\Debug\ExceptionHandlerSample.exe.config
+D:\MyPractices\ExceptionHandlerSample\ExceptionHandlerSample\obj\Debug\ExceptionHandlerSample.exe
+D:\MyPractices\ExceptionHandlerSample\ExceptionHandlerSample\obj\Debug\ExceptionHandlerSample.pdb

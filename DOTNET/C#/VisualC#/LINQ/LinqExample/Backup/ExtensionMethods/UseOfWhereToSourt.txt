@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        static void Main()
+        {
+            int[] number = {0, 1, 2, 3, 4 };
+            string[] digits = { "One", "Two", "Three", "Four", "Five" };
+            var lowNum = from low in number where low < 4 select digits[low];
+            foreach (string str in lowNum)
+            {
+                Console.WriteLine(str);
+            }
+
+        }
+    }
+}

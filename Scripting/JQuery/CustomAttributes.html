@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+        <script type="text/javascript" src="Jquery/V1.8.2/jquery-1.8.2.js">
+</script>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(
+            function () {
+                var result = $("#txtCustom").attr("questionsetid");
+                alert(result);
+                $("#txtCustom").attr("questionsetid", "200");
+                var result1 = $("#txtCustom").attr("questionsetid");
+                alert(result1);
+            });
+    </script>
+<input type="text" id="txtCustom" questionsetid="100" value="This is answer 1" />
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="mydb" Class="mydbsqlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=mydb;Integrated Security=True" SettingsObjectName="LWithDatabase.Properties.Settings" SettingsPropertyName="mydbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.det" Member="dets">
+    <Type Name="det">
+      <Column Name="empid" AutoSync="Never" Type="System.Int32" DbType="Int Not null Identity" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fname" AutoSync="OnInsert" Type="System.String" DbType="varchar(20) not null" CanBeNull="false" />
+      <Column Name="mname" AutoSync="OnInsert" Type="System.String" DbType="varchar(20) not null" CanBeNull="false" />
+      <Column Name="lname" AutoSync="OnInsert" Type="System.String" DbType="varchar(20) not null" CanBeNull="false" />
+      <Column Name="conzip" AutoSync="Always" Type="System.String" DbType="nvarchar(30) not null" CanBeNull="false" />
+      <Association Name="det_condet" Member="condets" ThisKey="conzip" OtherKey="zip" Type="condet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.condet" Member="condets">
+    <Type Name="condet">
+      <Column Name="id" Type="System.Int32" DbType="int identity not null" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="city" AutoSync="Always" Type="System.String" DbType="varchar(30) not null" CanBeNull="false" />
+      <Column Name="state" AutoSync="Always" Type="System.String" DbType="varchar(20) not null" CanBeNull="false" />
+      <Column Name="town" Type="System.String" DbType="varchar(30) " CanBeNull="true" />
+      <Column Name="zip" AutoSync="Always" Type="System.String" DbType="nvarchar(10) not null" CanBeNull="false" />
+      <Association Name="det_condet" Member="det" ThisKey="zip" OtherKey="conzip" Type="det" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.condetInsert" Method="condetInsert">
+    <Parameter Name="city" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="state" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="country" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="zip" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="town" Type="System.String" DbType="VarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.condetDelete" Method="condetDelete">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="mydbContext">
+  <DataContextMoniker Name="/mydbContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d73aca86-97ec-4ec9-8fab-9550909aad34" absoluteBounds="1.375, 1.625, 2, 1.0961531575520833">
+      <DataClassMoniker Name="/mydbContextDataContext/MyPriority" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59fe8b89-c7a8-4bf9-98a1-894017f44b10" absoluteBounds="1.3900000000000001, 2.085, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfb7be35-9827-4479-93f3-1bc5eff5f51f" absoluteBounds="5.25, 2, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/mydbContextDataContext/tb_tasklist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27938a2b-41d6-4be3-9215-8e84f65c88f8" absoluteBounds="5.265, 2.46, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.375 : 2.36057657877604); (5.25 : 2.36057657877604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/mydbContextDataContext/MyPriority/MyPriority_tb_tasklist" />
+      <nodes>
+        <classShapeMoniker Id="d73aca86-97ec-4ec9-8fab-9550909aad34" />
+        <classShapeMoniker Id="bfb7be35-9827-4479-93f3-1bc5eff5f51f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,6 @@
+D:\MyPractices\Web\WCF\Bindings\Net\DuplexOverNet\DuplexNetClient\bin\Debug\DuplexNetClient.exe.config
+D:\MyPractices\Web\WCF\Bindings\Net\DuplexOverNet\DuplexNetClient\bin\Debug\DuplexNetClient.exe
+D:\MyPractices\Web\WCF\Bindings\Net\DuplexOverNet\DuplexNetClient\bin\Debug\DuplexNetClient.pdb
+D:\MyPractices\Web\WCF\Bindings\Net\DuplexOverNet\DuplexNetClient\obj\Debug\DuplexNetClient.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\Bindings\Net\DuplexOverNet\DuplexNetClient\obj\Debug\DuplexNetClient.exe
+D:\MyPractices\Web\WCF\Bindings\Net\DuplexOverNet\DuplexNetClient\obj\Debug\DuplexNetClient.pdb

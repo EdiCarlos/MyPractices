@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WebExamples\PostBack\PostBackAndCrossPostBack\PostBackAndCrossPostBack\bin\PostBackAndCrossPostBack.dll
+D:\MyPractices\Web\WebExamples\PostBack\PostBackAndCrossPostBack\PostBackAndCrossPostBack\bin\PostBackAndCrossPostBack.pdb
+D:\MyPractices\Web\WebExamples\PostBack\PostBackAndCrossPostBack\PostBackAndCrossPostBack\obj\Debug\PostBackAndCrossPostBack.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WebExamples\PostBack\PostBackAndCrossPostBack\PostBackAndCrossPostBack\obj\Debug\PostBackAndCrossPostBack.dll
+D:\MyPractices\Web\WebExamples\PostBack\PostBackAndCrossPostBack\PostBackAndCrossPostBack\obj\Debug\PostBackAndCrossPostBack.pdb

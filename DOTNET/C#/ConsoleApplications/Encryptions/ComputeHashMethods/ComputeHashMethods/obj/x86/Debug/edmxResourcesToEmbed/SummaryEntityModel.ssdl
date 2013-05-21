@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SummaryEntityModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SummaryEntityModelStoreContainer">
+    <EntitySet Name="DC_DocHeader" EntityType="SummaryEntityModel.Store.DC_DocHeader" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="DC_DocHeader">
+    <Key>
+      <PropertyRef Name="DocHeaderDRN" />
+      <PropertyRef Name="DaysInPT" />
+    </Key>
+    <Property Name="DocHeaderDRN" Type="bigint" Nullable="false" />
+    <Property Name="DocType" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="DocSubTypeCode" Type="char" MaxLength="3" />
+    <Property Name="SourceSystem" Type="int" />
+    <Property Name="DocNumber" Type="varchar" MaxLength="30" />
+    <Property Name="PurposeCode" Type="char" MaxLength="2" />
+    <Property Name="DocReleaseNumber" Type="varchar" MaxLength="30" />
+    <Property Name="OriginCode" Type="char" MaxLength="1" />
+    <Property Name="DXTransactionSetSID" Type="bigint" />
+    <Property Name="AnchorID" Type="bigint" />
+    <Property Name="IssueDate" Type="datetime" />
+    <Property Name="PTCreationDate" Type="datetime" />
+    <Property Name="CurrencyCode" Type="char" MaxLength="3" />
+    <Property Name="PrimaryMatchID" Type="varchar" MaxLength="120" />
+    <Property Name="SecondaryMatchID" Type="varchar" MaxLength="80" />
+    <Property Name="RelatedDocDRN" Type="bigint" />
+    <Property Name="UsersMatchDocType" Type="char" MaxLength="10" />
+    <Property Name="UsersMatchDocNumber" Type="varchar" MaxLength="30" />
+    <Property Name="UsersMatchDocReleaseNumber" Type="varchar" MaxLength="30" />
+    <Property Name="UsersMatchDoc2Type" Type="char" MaxLength="10" />
+    <Property Name="UsersMatchDoc2Number" Type="varchar" MaxLength="30" />
+    <Property Name="UsersMatchDoc2ReleaseNumber" Type="varchar" MaxLength="30" />
+    <Property Name="IsGenerated" Type="char" MaxLength="1" />
+    <Property Name="IsAnyMatchedDocPaid" Type="char" MaxLength="1" />
+    <Property Name="IsPricingRequired" Type="char" MaxLength="1" />
+    <Property Name="IsReceiptRequired" Type="char" MaxLength="1" />
+    <Property Name="WasCancelledInPast" Type="char" MaxLength="1" />
+    <Property Name="WasUpdatedByOwnerCompany" Type="char" MaxLength="1" />
+    <Property Name="IsLIMatchRequired" Type="char" MaxLength="1" />
+    <Property Name="IsEventMatchingRequired" Type="char" MaxLength="1" />
+    <Property Name="ManualApproveFlag" Type="char" MaxLength="1" />
+    <Property Name="BuyerIDCodeQualifier" Type="char" MaxLength="2" />
+    <Property Name="BuyerIDCode" Type="varchar" MaxLength="80" />
+    <Property Name="BuyerUSBCCustomerID" Type="int" />
+    <Property Name="BuyerOrganizationID" Type="int" />
+    <Property Name="BuyerNAIDC" Type="bigint" />
+    <Property Name="BuyerIndustry" Type="char" MaxLength="2" />
+    <Property Name="BuyerMarket" Type="char" MaxLength="1" />
+    <Property Name="BuyerSector" Type="char" MaxLength="4" />
+    <Property Name="BuyerBusinessRuleID" Type="int" />
+    <Property Name="BuyerBusinessRuleVersion" Type="int" />
+    <Property Name="Direction" Type="char" MaxLength="1" />
+    <Property Name="ShipToIDCodeQualifier" Type="char" MaxLength="2" />
+    <Property Name="ShipToIDCode" Type="varchar" MaxLength="80" />
+    <Property Name="ShipToName" Type="varchar" MaxLength="60" />
+    <Property Name="ShipToOrganizationID" Type="int" />
+    <Property Name="ShipToNAIDC" Type="bigint" />
+    <Property Name="ShipFromIDCodeQualifier" Type="char" MaxLength="2" />
+    <Property Name="ShipFromIDCode" Type="varchar" MaxLength="80" />
+    <Property Name="ShipFromName" Type="varchar" MaxLength="60" />
+    <Property Name="ShipFromOrganizationID" Type="int" />
+    <Property Name="ShipFromNAIDC" Type="bigint" />
+    <Property Name="SellerIDCodeQualifier" Type="char" MaxLength="2" />
+    <Property Name="SellerIDCode" Type="varchar" MaxLength="80" />
+    <Property Name="SellerUSBCCustomerID" Type="int" />
+    <Property Name="SellerOrganizationID" Type="int" />
+    <Property Name="SellerNAIDC" Type="bigint" />
+    <Property Name="SellerIndustry" Type="char" MaxLength="2" />
+    <Property Name="SellerMarket" Type="char" MaxLength="1" />
+    <Property Name="SellerSector" Type="char" MaxLength="4" />
+    <Property Name="SellerBusinessRuleID" Type="int" />
+    <Property Name="SellerBusinessRuleVersion" Type="int" />
+    <Property Name="MasterDocNumber" Type="varchar" MaxLength="30" />
+    <Property Name="MasterDocDRN" Type="bigint" />
+    <Property Name="ConsolidatedInvoiceAnchorID" Type="bigint" />
+    <Property Name="TransportationMode" Type="char" MaxLength="4" />
+    <Property Name="CarrierCode" Type="char" MaxLength="17" />
+    <Property Name="FOBFreightPayCode" Type="char" MaxLength="2" />
+    <Property Name="BillToAccountNumber" Type="varchar" MaxLength="19" />
+    <Property Name="PayToAccountNumber" Type="varchar" MaxLength="19" />
+    <Property Name="EffectiveDate" Type="datetime" />
+    <Property Name="VendorOrderNumber" Type="varchar" MaxLength="30" />
+    <Property Name="UsersBOLNumber" Type="varchar" MaxLength="30" />
+    <Property Name="MPSTranCode" Type="char" MaxLength="2" />
+    <Property Name="OwnerFlag" Type="char" MaxLength="1" />
+    <Property Name="BillToOrganizationID" Type="int" />
+    <Property Name="BillToNAIDC" Type="bigint" />
+    <Property Name="SubmittedExtendedPrice" Type="money" />
+    <Property Name="FinancialExtendedPrice" Type="money" />
+    <Property Name="DeclaredShipmentValue" Type="money" />
+    <Property Name="InsurableValue" Type="money" />
+    <Property Name="TotalBillableQuantityUOM" Type="char" MaxLength="2" />
+    <Property Name="TotalBillableQuantity" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="NonFinancialFlag" Type="char" MaxLength="1" />
+    <Property Name="CurrentFinancialStatus" Type="char" MaxLength="2" />
+    <Property Name="CurrentFinancialStatusDate" Type="datetime" />
+    <Property Name="CurrentFulfillmentStatus" Type="char" MaxLength="2" />
+    <Property Name="CurrentFulfillmentStatusDate" Type="datetime" />
+    <Property Name="CurrentPriceStatus" Type="char" MaxLength="2" />
+    <Property Name="CurrentPriceStatusDate" Type="datetime" />
+    <Property Name="CurrentDocumentationStatus" Type="char" MaxLength="2" />
+    <Property Name="CurrentDocumentationStatusDate" Type="datetime" />
+    <Property Name="AccountingLockDownFlag" Type="char" MaxLength="1" />
+    <Property Name="LastUpdateDate" Type="datetime" />
+    <Property Name="LastUpdateUser" Type="varchar" MaxLength="30" />
+    <Property Name="TStamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="TemplateIDC" Type="bigint" />
+    <Property Name="FinancialStatusAttribute" Type="char" MaxLength="2" />
+    <Property Name="TotalQuantityQualifier" Type="char" MaxLength="3" />
+    <Property Name="HazMatFlag" Type="char" MaxLength="1" />
+    <Property Name="OriginalDocNumber" Type="varchar" MaxLength="30" />
+    <Property Name="SubDocNumber" Type="varchar" MaxLength="30" />
+    <Property Name="MatchKey" Type="varchar" MaxLength="30" />
+    <Property Name="RemittanceKey" Type="varchar" MaxLength="30" />
+    <Property Name="TransportationPriority" Type="char" MaxLength="1" />
+    <Property Name="PODRequested" Type="char" MaxLength="1" />
+    <Property Name="LineCount" Type="int" />
+    <Property Name="InvoiceReceiptDate" Type="datetime" />
+    <Property Name="IncBillFlag" Type="char" MaxLength="1" />
+    <Property Name="ValidationResult" Type="char" MaxLength="1" />
+    <Property Name="ValidationActionCode" Type="varchar" MaxLength="5" />
+    <Property Name="ValidationActionCodeQualifier" Type="char" MaxLength="2" />
+    <Property Name="ForceMatchedBy" Type="varchar" MaxLength="30" />
+    <Property Name="OffContractPriceFlag" Type="char" MaxLength="1" />
+    <Property Name="AuditFlag" Type="char" MaxLength="1" />
+    <Property Name="BalanceDueFlag" Type="char" MaxLength="1" />
+    <Property Name="DocBatchNumber" Type="varchar" MaxLength="30" />
+    <Property Name="PaymentCheckDate" Type="datetime" />
+    <Property Name="IsPremiumFreight" Type="char" MaxLength="1" />
+    <Property Name="LoadNumber" Type="varchar" MaxLength="20" />
+    <Property Name="CheckType" Type="char" MaxLength="3" />
+    <Property Name="FowarderSCAC" Type="varchar" MaxLength="30" />
+    <Property Name="PricingBasis" Type="char" MaxLength="1" />
+    <Property Name="RatedFinancialExtendedPrice" Type="money" />
+    <Property Name="DocFormatTypeCode" Type="varchar" MaxLength="3" />
+    <Property Name="CurrentReviewStatus" Type="char" MaxLength="2" />
+    <Property Name="CurrentReviewStatusDate" Type="datetime" />
+    <Property Name="DocumentationStatusExceptionType" Type="int" />
+    <Property Name="ReceivedDate" Type="datetime" />
+    <Property Name="ConsolidatedInvoiceNumber" Type="varchar" MaxLength="30" />
+    <Property Name="FinancialResolutionStatus" Type="char" MaxLength="2" />
+    <Property Name="AvailabilityStatus" Type="char" MaxLength="2" />
+    <Property Name="ExpectedTotalSubDocs" Type="int" />
+    <Property Name="DocClassTypeCode" Type="char" MaxLength="2" />
+    <Property Name="ContractVersion" Type="varchar" MaxLength="16" />
+    <Property Name="ContractEffectiveDate" Type="datetime" />
+    <Property Name="DelayReasonCode" Type="char" MaxLength="3" />
+    <Property Name="InvoiceNumber" Type="varchar" MaxLength="30" />
+    <Property Name="OrderNumber" Type="varchar" MaxLength="30" />
+    <Property Name="PriceExtractID" Type="bigint" />
+    <Property Name="ServiceLevelRequested" Type="char" MaxLength="2" />
+    <Property Name="ServiceLevelAvailable" Type="char" MaxLength="2" />
+    <Property Name="ServiceLevelProvided" Type="char" MaxLength="2" />
+    <Property Name="TMStamp" Type="binary" MaxLength="8" />
+    <Property Name="OverallProcessingStatus" Type="char" MaxLength="2" />
+    <Property Name="DaysInPT" Type="int" Nullable="false" />
+    <Property Name="OrderReleaseNumber" Type="varchar" MaxLength="30" />
+    <Property Name="PaymentCheckNumber" Type="bigint" />
+    <Property Name="SubContractNumber" Type="varchar" MaxLength="30" />
+    <Property Name="ContractNumber" Type="varchar" MaxLength="30" />
+    <Property Name="FinancialStatusReasonCode" Type="char" MaxLength="3" />
+    <Property Name="InvoiceAuditRole" Type="char" MaxLength="2" />
+    <Property Name="PricingInvoiceDRN" Type="bigint" />
+    <Property Name="Volume" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="VolumeUOM" Type="char" MaxLength="3" />
+    <Property Name="LadingQuantity" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="LadingQuantityUOM" Type="char" MaxLength="3" />
+    <Property Name="LineHaulChargeDistributionMethod" Type="char" MaxLength="1" />
+    <Property Name="GLProcessingControlID" Type="bigint" />
+    <Property Name="IFFGenerationFlag" Type="char" MaxLength="2" />
+    <Property Name="VATTotalAmount" Type="money" />
+  </EntityType>
+</Schema>

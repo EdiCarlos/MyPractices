@@ -1,0 +1,12 @@
+D:\temp\WCF Examples\EvalFristExample\EvalFristExample\bin\Debug\EvalFristExample.dll.config
+D:\temp\WCF Examples\EvalFristExample\EvalFristExample\bin\Debug\EvalFristExample.dll
+D:\temp\WCF Examples\EvalFristExample\EvalFristExample\bin\Debug\EvalFristExample.pdb
+D:\temp\WCF Examples\EvalFristExample\EvalFristExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\WCF Examples\EvalFristExample\EvalFristExample\obj\Debug\EvalFristExample.dll
+D:\temp\WCF Examples\EvalFristExample\EvalFristExample\obj\Debug\EvalFristExample.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalFristExample\bin\Debug\EvalFristExample.dll.config
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalFristExample\bin\Debug\EvalFristExample.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalFristExample\bin\Debug\EvalFristExample.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalFristExample\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalFristExample\obj\Debug\EvalFristExample.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\EvalFristExample\EvalFristExample\obj\Debug\EvalFristExample.pdb

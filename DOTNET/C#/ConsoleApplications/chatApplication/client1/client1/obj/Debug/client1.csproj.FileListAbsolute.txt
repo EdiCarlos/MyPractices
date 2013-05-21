@@ -1,0 +1,8 @@
+D:\temp\csc\chatApplication\client1\client1\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\csc\chatApplication\client1\client1\obj\Debug\client1.Form1.resources
+D:\temp\csc\chatApplication\client1\client1\obj\Debug\client1.Properties.Resources.resources
+D:\temp\csc\chatApplication\client1\client1\obj\Debug\client1.csproj.GenerateResource.Cache
+D:\temp\csc\chatApplication\client1\client1\bin\Debug\client1.exe
+D:\temp\csc\chatApplication\client1\client1\bin\Debug\client1.pdb
+D:\temp\csc\chatApplication\client1\client1\obj\Debug\client1.exe
+D:\temp\csc\chatApplication\client1\client1\obj\Debug\client1.pdb

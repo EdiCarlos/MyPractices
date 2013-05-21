@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\DesignPattern\StartergyPatternSample\StartergyPatternSample\bin\Debug\StartergyPatternSample.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\StartergyPatternSample\StartergyPatternSample\bin\Debug\StartergyPatternSample.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\StartergyPatternSample\StartergyPatternSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\DesignPattern\StartergyPatternSample\StartergyPatternSample\obj\x86\Debug\StartergyPatternSample.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\StartergyPatternSample\StartergyPatternSample\obj\x86\Debug\StartergyPatternSample.pdb

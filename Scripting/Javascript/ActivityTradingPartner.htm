@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+    function setThroughMonth()
+{
+var curdt = new Date();
+if(throughMonth[throughMonth.selectedIndex].text != getMonthInWords(curdt.getMonth() - 1))
+{
+for(var i = 0; i < throughMonth.length; i++)
+      {
+      if(throughMonth[i].text == getMonthInWords(curdt.getMonth() - 1))
+      {
+      throughMonth.selectedIndex = i;
+break;
+      }
+      }
+}
+}
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

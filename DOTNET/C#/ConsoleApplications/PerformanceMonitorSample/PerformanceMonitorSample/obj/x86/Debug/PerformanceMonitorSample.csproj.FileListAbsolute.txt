@@ -1,0 +1,5 @@
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\PerformanceMonitorSample\PerformanceMonitorSample\bin\Debug\PerformanceMonitorSample.exe
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\PerformanceMonitorSample\PerformanceMonitorSample\bin\Debug\PerformanceMonitorSample.pdb
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\PerformanceMonitorSample\PerformanceMonitorSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\PerformanceMonitorSample\PerformanceMonitorSample\obj\x86\Debug\PerformanceMonitorSample.exe
+D:\DDriveBackup\MyPractices\DOTNET\C#\ConsoleApplications\PerformanceMonitorSample\PerformanceMonitorSample\obj\x86\Debug\PerformanceMonitorSample.pdb

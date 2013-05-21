@@ -1,0 +1,15 @@
+﻿<Window x:Class="LayoutSample.VisibilitySample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VisibilitySample" Height="300" Width="300">
+    <StackPanel VerticalAlignment="Center">
+        <Border Height="20" Background="SkyBlue" Width="273" HorizontalAlignment="Center">
+            <TextBlock Height="15" HorizontalAlignment="Center">
+                Ok
+            </TextBlock>
+        </Border>
+        <Button Content="Button" Height="23" Name="button1" Width="75" />
+        <Button Content="Button" Height="23" Name="button2" Width="75" Visibility="Collapsed" />
+        <Button Content="Button" Height="23" Name="button3" Width="75" />
+    </StackPanel>
+</Window>

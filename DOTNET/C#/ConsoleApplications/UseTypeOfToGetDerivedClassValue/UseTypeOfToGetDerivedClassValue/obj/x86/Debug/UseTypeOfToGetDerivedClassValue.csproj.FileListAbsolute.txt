@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\ConsoleApplications\UseTypeOfToGetDerivedClassValue\UseTypeOfToGetDerivedClassValue\bin\Debug\UseTypeOfToGetDerivedClassValue.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\UseTypeOfToGetDerivedClassValue\UseTypeOfToGetDerivedClassValue\bin\Debug\UseTypeOfToGetDerivedClassValue.pdb
+D:\MyPractices\DOTNET\C#\ConsoleApplications\UseTypeOfToGetDerivedClassValue\UseTypeOfToGetDerivedClassValue\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\ConsoleApplications\UseTypeOfToGetDerivedClassValue\UseTypeOfToGetDerivedClassValue\obj\x86\Debug\UseTypeOfToGetDerivedClassValue.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\UseTypeOfToGetDerivedClassValue\UseTypeOfToGetDerivedClassValue\obj\x86\Debug\UseTypeOfToGetDerivedClassValue.pdb

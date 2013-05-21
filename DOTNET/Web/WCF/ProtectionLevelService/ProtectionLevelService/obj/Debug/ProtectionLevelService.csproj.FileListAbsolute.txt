@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WCF\ProtectionLevelService\ProtectionLevelService\bin\ProtectionLevelService.dll
+D:\MyPractices\Web\WCF\ProtectionLevelService\ProtectionLevelService\bin\ProtectionLevelService.pdb
+D:\MyPractices\Web\WCF\ProtectionLevelService\ProtectionLevelService\obj\Debug\ProtectionLevelService.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\ProtectionLevelService\ProtectionLevelService\obj\Debug\ProtectionLevelService.dll
+D:\MyPractices\Web\WCF\ProtectionLevelService\ProtectionLevelService\obj\Debug\ProtectionLevelService.pdb

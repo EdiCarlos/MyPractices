@@ -1,0 +1,8 @@
+D:\temp\csc\DCom\useofComObj\useofComObj\bin\Debug\useofComObj.exe
+D:\temp\csc\DCom\useofComObj\useofComObj\bin\Debug\useofComObj.pdb
+D:\temp\csc\DCom\useofComObj\useofComObj\bin\Debug\Interop.GetLoginFromRegistryLib.dll
+D:\temp\csc\DCom\useofComObj\useofComObj\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\csc\DCom\useofComObj\useofComObj\obj\Debug\Interop.GetLoginFromRegistryLib.dll
+D:\temp\csc\DCom\useofComObj\useofComObj\obj\Debug\useofComObj.csproj.ResolveComReference.cache
+D:\temp\csc\DCom\useofComObj\useofComObj\obj\Debug\useofComObj.exe
+D:\temp\csc\DCom\useofComObj\useofComObj\obj\Debug\useofComObj.pdb

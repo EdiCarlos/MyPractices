@@ -1,0 +1,11 @@
+        var WshShell = WScript.CreateObject("WScript.Shell");
+debugger;
+         strDesktop = WshShell.SpecialFolders("StartMenu");
+         var oShellLink = WshShell.CreateShortcut(strDesktop + "\\Shortcut Script.lnk");
+         oShellLink.TargetPath = WScript.ScriptFullName;
+         oShellLink.WindowStyle = 1;
+         oShellLink.Hotkey = "CTRL+SHIFT+F";
+         oShellLink.IconLocation = "iexplore.exe, 0";
+         oShellLink.Description = "Shortcut Script";
+         oShellLink.WorkingDirectory = strDesktop;
+         oShellLink.Save();

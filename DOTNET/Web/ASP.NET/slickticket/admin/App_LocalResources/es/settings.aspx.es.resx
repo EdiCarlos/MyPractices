@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminContactResource1.Text" xml:space="preserve">
+    <value>Email de contacto del Administrador</value>
+  </data>
+  <data name="BoundFieldResource1.HeaderText" xml:space="preserve">
+    <value>Dominios de email disponibles</value>
+  </data>
+  <data name="BoundFieldResource3.HeaderText" xml:space="preserve">
+    <value>Nombre del Nivel de Acceso</value>
+  </data>
+  <data name="BoundFieldResource4.HeaderText" xml:space="preserve">
+    <value>Descripción del Nivel de Acceso</value>
+  </data>
+  <data name="btnAddDomainResource1.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="btnApplyAppearanceResource1.Text" xml:space="preserve">
+    <value>Aplicar Cambios</value>
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnCssResetResource1.Text" xml:space="preserve">
+    <value>Resetear a Predeterminados</value>
+  </data>
+  <data name="btnDomainPopupResource1.Text" xml:space="preserve">
+    <value>Agregar Dominio</value>
+  </data>
+  <data name="btnExportFaqsResource1.Text" xml:space="preserve">
+    <value>Exportar Faqs</value>
+  </data>
+  <data name="btnExportStylesResource1.Text" xml:space="preserve">
+    <value>Exportar Temas</value>
+  </data>
+  <data name="btnFaqImportResource1.Text" xml:space="preserve">
+    <value>Importar Faqs</value>
+  </data>
+  <data name="btnNewThemeResource1.Text" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="btnStyleImportResource1.Text" xml:space="preserve">
+    <value>Importar Temas</value>
+  </data>
+  <data name="btnThemeDeleteResource1.Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="chkEmailResource1.Text" xml:space="preserve">
+    <value>Notificaciones por email automáticas</value>
+  </data>
+  <data name="chkRestrictDomainsResource1.Text" xml:space="preserve">
+    <value>Restringir a los usuarios el dominio de los emails</value>
+  </data>
+  <data name="CommandFieldResource1.DeleteText" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="CommandFieldResource1.EditText" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="CommandFieldResource1.InsertText" xml:space="preserve">
+    <value>Insertar</value>
+  </data>
+  <data name="CommandFieldResource1.NewText" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="CommandFieldResource1.SelectText" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="gvDomainsResource1.EmptyDataText" xml:space="preserve">
+    <value>&lt;h5&gt;No se especificaron Dominios&lt;/h5&gt;&lt;div style='text-align:center;'&gt;Esto causará que los usuarios no serán capaces de editar su perfil&lt;/div&gt;</value>
+  </data>
+  <data name="lbDeleteResource1.Text" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="lbl_EmailResource1.Text" xml:space="preserve">
+    <value>Configuraciones del email para el usuario</value>
+  </data>
+  <data name="lblAppearanceResource1.Text" xml:space="preserve">
+    <value>Apariencia</value>
+  </data>
+  <data name="lblAttachmentDirectoryResource1.Text" xml:space="preserve">
+    <value>Carpeta de almacenamiento de adjuntos</value>
+  </data>
+  <data name="lblCustomizeResource1.Text" xml:space="preserve">
+    <value>&lt;a href="javascript:void();" __designer:mapid="2b8"&gt;Customize&lt;/a&gt;</value>
+  </data>
+  <data name="lblDomainControllerResource1.Text" xml:space="preserve">
+    <value>Controlador de Dominio</value>
+  </data>
+  <data name="lblDomainResource1.Text" xml:space="preserve">
+    <value>Dominio</value>
+  </data>
+  <data name="lblSettingsResource1.Text" xml:space="preserve">
+    <value>Configuraciones Generales</value>
+  </data>
+  <data name="lblSMTPResource1.Text" xml:space="preserve">
+    <value>Servidor SMTP</value>
+  </data>
+  <data name="lblSystemTitleImageResource1.Text" xml:space="preserve">
+    <value>Imagen del Título del Sistema</value>
+  </data>
+  <data name="lblSystemTitleResource1.Text" xml:space="preserve">
+    <value>Título del Sistema</value>
+  </data>
+  <data name="leftResource1.Text" xml:space="preserve">
+    <value>Izquierda</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Temas pre-configurados</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="litAccessDescResource1.Text" xml:space="preserve">
+    <value>Esto no tiene un propósito funcional, pero debería hacer más fácil enteder los niveles para los administradores y los usuarios.</value>
+  </data>
+  <data name="litAccessLevelsResource1.Text" xml:space="preserve">
+    <value>Nombres y Descripciones de los Niveles de Acceso</value>
+  </data>
+  <data name="litAltRowsResource1.Text" xml:space="preserve">
+    <value>Filas alternativas</value>
+  </data>
+  <data name="litAppearanceResource1.Text" xml:space="preserve">
+    <value>Cambia la apariencia del sistema entero.</value>
+  </data>
+  <data name="litAtlRowsDescResource1.Text" xml:space="preserve">
+    <value>El color de las demás filas en las tablas; alternados con el color 'Cuerpo'</value>
+  </data>
+  <data name="litBackgroundDescsResource1.Text" xml:space="preserve">
+    <value>Fondo y ficha seleccionada</value>
+  </data>
+  <data name="litBackgroundResource1.Text" xml:space="preserve">
+    <value>Fondo</value>
+  </data>
+  <data name="litBasicSettingsResource1.Text" xml:space="preserve">
+    <value>Configuración básica requerida por su sistema para que funcione correctamente</value>
+  </data>
+  <data name="litBodyDescResource1.Text" xml:space="preserve">
+    <value>Cuerpo interior de todos los elementos</value>
+  </data>
+  <data name="litBodyResource1.Text" xml:space="preserve">
+    <value>Cuerpo</value>
+  </data>
+  <data name="litBordersResource1.Text" xml:space="preserve">
+    <value>Bordes</value>
+  </data>
+  <data name="litButtonTextDescResource1.Text" xml:space="preserve">
+    <value>Texto en botones (debería contrastar con el color de 'Links')</value>
+  </data>
+  <data name="litButtonTextResource1.Text" xml:space="preserve">
+    <value>Texto del Botón</value>
+  </data>
+  <data name="litDescriptionResource1.Text" xml:space="preserve">
+    <value>Varias configuraciones para el comportamiento del sistema y apariencia; click en las configuraciones para expandir o contraer</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="litHeadersDescsResource1.Text" xml:space="preserve">
+    <value>Encabezado Central (debería contrastar con el color de 'Bordes')</value>
+  </data>
+  <data name="litHeadersResource1.Text" xml:space="preserve">
+    <value>Encabezados</value>
+  </data>
+  <data name="litImpExpDescResource1.Text" xml:space="preserve">
+    <value>Importar/Exportar configuraciones tales como su tema actual y FAQs</value>
+  </data>
+  <data name="litImpExpResource1.Text" xml:space="preserve">
+    <value>Importar/Exportar Configuraciones</value>
+  </data>
+  <data name="litImportResource1.Text" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="litLinkHoverDescResource1.Text" xml:space="preserve">
+    <value>Color del link o botón que cambia cuando un usuario se posa encima</value>
+  </data>
+  <data name="litLinkHoverResource1.Text" xml:space="preserve">
+    <value>Resaltado del link</value>
+  </data>
+  <data name="litLinksDescResource1.Text" xml:space="preserve">
+    <value>Todos los  hyperlinks y botones</value>
+  </data>
+  <data name="litLinksResource1.Text" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="litSaveCurrentResource1.Text" xml:space="preserve">
+    <value>Guardar el actual como nueva plantilla para tema llamado</value>
+  </data>
+  <data name="litSideBarResource1.Text" xml:space="preserve">
+    <value>Barra lateral habilitada</value>
+  </data>
+  <data name="litTextDescResource1.Text" xml:space="preserve">
+    <value>Texto de todo el sistema</value>
+  </data>
+  <data name="litTextResource1.Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="litUserEmailSettingsResource1.Text" xml:space="preserve">
+    <value>Habilita/deshabilita las notificaciones vía email y restricciones de dominio, posibilitando a los usuarios a seleccionar solo los dominios especificados.</value>
+  </data>
+  <data name="regEditMailToResource1.ErrorMessage" xml:space="preserve">
+    <value>Dirección de Email inválida</value>
+  </data>
+  <data name="regEmailDomainResource1.ErrorMessage" xml:space="preserve">
+    <value>Dominio inválido</value>
+  </data>
+  <data name="regTextResource1.ErrorMessage" xml:space="preserve">
+    <value>Código de color inválido para el texto</value>
+  </data>
+  <data name="RegularExpressionValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Código de color inválido para los bordes</value>
+  </data>
+  <data name="RegularExpressionValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Código de color inválido para el cuerpo</value>
+  </data>
+  <data name="RegularExpressionValidator3Resource1.ErrorMessage" xml:space="preserve">
+    <value>Código de color inválido para los links</value>
+  </data>
+  <data name="RegularExpressionValidator4Resource1.ErrorMessage" xml:space="preserve">
+    <value>Código de color inválido para el link posado</value>
+  </data>
+  <data name="RegularExpressionValidator5Resource1.ErrorMessage" xml:space="preserve">
+    <value>Código de color inválido para el texto del botón.</value>
+  </data>
+  <data name="RegularExpressionValidator6Resource1.ErrorMessage" xml:space="preserve">
+    <value>Código de color inválido para el encabezado</value>
+  </data>
+  <data name="RegularExpressionValidator7Resource1.ErrorMessage" xml:space="preserve">
+    <value>Código de color inválido para las fila salternativas</value>
+  </data>
+  <data name="RegularExpressionValidator8Resource1.ErrorMessage" xml:space="preserve">
+    <value>Código de color inválido para el fondo</value>
+  </data>
+  <data name="RegularExpressionValidator9Resource1.ErrorMessage" xml:space="preserve">
+    <value>Dirección de email inválida</value>
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>Valores de bordes requeridos</value>
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>Valores de cuerpo requeridos</value>
+  </data>
+  <data name="RequiredFieldValidator3Resource1.ErrorMessage" xml:space="preserve">
+    <value>Valores de links requeridos</value>
+  </data>
+  <data name="RequiredFieldValidator4Resource1.ErrorMessage" xml:space="preserve">
+    <value>Valores de  link posado requeridos</value>
+  </data>
+  <data name="RequiredFieldValidator5Resource1.ErrorMessage" xml:space="preserve">
+    <value>Valores de  requeridos para texto del botón</value>
+  </data>
+  <data name="RequiredFieldValidator6Resource1.ErrorMessage" xml:space="preserve">
+    <value>Valores de encabezados requeridos</value>
+  </data>
+  <data name="RequiredFieldValidator7Resource1.ErrorMessage" xml:space="preserve">
+    <value>Valores de  filas alternativas requeridas</value>
+  </data>
+  <data name="RequiredFieldValidator8Resource1.ErrorMessage" xml:space="preserve">
+    <value>Valores de fondo requeridos</value>
+  </data>
+  <data name="rfvRequiredResource1.ErrorMessage" xml:space="preserve">
+    <value>Requerido</value>
+  </data>
+  <data name="rfvTextResource1.ErrorMessage" xml:space="preserve">
+    <value>Valor de  texto requerido</value>
+  </data>
+  <data name="rfvThemeResource1.ErrorMessage" xml:space="preserve">
+    <value>&lt;span style='padding-left:320px;'&gt;Nombre requerido&lt;/span&gt;</value>
+  </data>
+  <data name="rightResource1.Text" xml:space="preserve">
+    <value>derecha</value>
+  </data>
+  <data name="styleAlternatingRowsResource1.Text" xml:space="preserve">
+    <value>#eff5ff</value>
+  </data>
+  <data name="styleBgResource1.Text" xml:space="preserve">
+    <value>#ffffff</value>
+  </data>
+  <data name="styleBodyResource1.Text" xml:space="preserve">
+    <value>#e0ecff</value>
+  </data>
+  <data name="styleBordersResource1.Text" xml:space="preserve">
+    <value>#c3d9ff</value>
+  </data>
+  <data name="styleButtonTextResource1.Text" xml:space="preserve">
+    <value>#ffffff</value>
+  </data>
+  <data name="styleHeaderResource1.Text" xml:space="preserve">
+    <value>#eff5ff</value>
+  </data>
+  <data name="styleLinkHoverResource1.Text" xml:space="preserve">
+    <value>#ff7700</value>
+  </data>
+  <data name="styleLinkResource1.Text" xml:space="preserve">
+    <value>#ffa500</value>
+  </data>
+  <data name="styleTextResource1.Text" xml:space="preserve">
+    <value>#444444</value>
+  </data>
+  <data name="SystemEmailResource2.Text" xml:space="preserve">
+    <value>Dirección de email del sistema</value>
+  </data>
+  <data name="btnThemeDeleteResource1.OnClientClick" xml:space="preserve">
+    <value>confirm('Este tema no puede ser recuperado. Continuar?')</value>
+  </data>
+  <data name="btnUpdateResource1.Text" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="lbDeleteResource1.OnClientClick" xml:space="preserve">
+    <value>return confirm('Está seguro de remover este dominio?');</value>
+  </data>
+  <data name="litBordersDescResource1.Text" xml:space="preserve">
+    <value>Color de bordes y encabezados</value>
+  </data>
+</root>

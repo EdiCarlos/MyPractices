@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Array\ArrayExamples\ArrayExamples\bin\Debug\ArrayExamples.exe
+D:\temp\VisualC#\Array\ArrayExamples\ArrayExamples\bin\Debug\ArrayExamples.pdb
+D:\temp\VisualC#\Array\ArrayExamples\ArrayExamples\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Array\ArrayExamples\ArrayExamples\obj\Debug\ArrayExamples.exe
+D:\temp\VisualC#\Array\ArrayExamples\ArrayExamples\obj\Debug\ArrayExamples.pdb

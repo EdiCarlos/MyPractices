@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\VisualC#\FuncSample\FuncSample\bin\Debug\FuncSample.exe
+D:\MyPractices\DOTNET\C#\VisualC#\FuncSample\FuncSample\bin\Debug\FuncSample.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\FuncSample\FuncSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\VisualC#\FuncSample\FuncSample\obj\x86\Debug\FuncSample.exe
+D:\MyPractices\DOTNET\C#\VisualC#\FuncSample\FuncSample\obj\x86\Debug\FuncSample.pdb

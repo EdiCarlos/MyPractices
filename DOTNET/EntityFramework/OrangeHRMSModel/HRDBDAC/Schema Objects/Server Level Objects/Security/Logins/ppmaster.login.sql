@@ -1,0 +1,4 @@
+﻿CREATE LOGIN [ppmaster]
+    WITH PASSWORD = N'awbwpsuephjc2zzjpSfddcaJmsFT7_&#$!~<ftlxcE9eku<A', SID = 0xFF577D05A49DAA418A15DDD6BA4DF22A, DEFAULT_DATABASE = [master], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+
+

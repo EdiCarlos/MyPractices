@@ -1,0 +1,8 @@
+C:\Documents and Settings\Administrator\My Documents\C# Projects\csPortScanner\csPortScanner\bin\Release\csPortScanner.exe
+C:\Documents and Settings\Administrator\My Documents\C# Projects\csPortScanner\csPortScanner\bin\Release\csPortScanner.pdb
+C:\Documents and Settings\Administrator\My Documents\C# Projects\csPortScanner\csPortScanner\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\C# Projects\csPortScanner\csPortScanner\obj\Release\csPortScanner.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\C# Projects\csPortScanner\csPortScanner\obj\Release\csPortScanner.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\C# Projects\csPortScanner\csPortScanner\obj\Release\csPortScanner.exe
+C:\Documents and Settings\Administrator\My Documents\C# Projects\csPortScanner\csPortScanner\obj\Release\csPortScanner.pdb
+C:\Documents and Settings\Administrator\My Documents\C# Projects\csPortScanner\csPortScanner\obj\Release\csPortScanner.frmMain.resources

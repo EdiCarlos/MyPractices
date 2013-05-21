@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\SimpleAjax2\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\SimpleAjax2\bin\SimpleAjax2.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\SimpleAjax2\bin\SimpleAjax2.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\SimpleAjax2\obj\Debug\SimpleAjax2.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\SimpleAjax2\obj\Debug\SimpleAjax2.pdb

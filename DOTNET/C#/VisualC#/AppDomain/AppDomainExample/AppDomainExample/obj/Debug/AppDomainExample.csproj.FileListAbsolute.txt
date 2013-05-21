@@ -1,0 +1,6 @@
+D:\temp\VisualC#\AppDomain\AppDomainExample\AppDomainExample\bin\Debug\AppDomainExample.exe
+D:\temp\VisualC#\AppDomain\AppDomainExample\AppDomainExample\bin\Debug\AppDomainExample.pdb
+D:\temp\VisualC#\AppDomain\AppDomainExample\AppDomainExample\bin\Debug\HelloWorldRemote.exe
+D:\temp\VisualC#\AppDomain\AppDomainExample\AppDomainExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\AppDomain\AppDomainExample\AppDomainExample\obj\Debug\AppDomainExample.exe
+D:\temp\VisualC#\AppDomain\AppDomainExample\AppDomainExample\obj\Debug\AppDomainExample.pdb

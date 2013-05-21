@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\AssemblyExtensionMethods\bin\Debug\AssemblyExtensionMethods.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\AssemblyExtensionMethods\bin\Debug\AssemblyExtensionMethods.pdb
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\AssemblyExtensionMethods\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\AssemblyExtensionMethods\obj\Debug\AssemblyExtensionMethods.dll
+D:\MyPractices\DOTNET\C#\WEB\WebExamples\Directives\DirectiveSamples\AssemblyExtensionMethods\obj\Debug\AssemblyExtensionMethods.pdb

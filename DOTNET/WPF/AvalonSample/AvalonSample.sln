@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvalonDock.MVVMTestApp", "..\..\CustomControls\WPF\AvalonDock_Samples\AvalonDock.MVVMTestApp\AvalonDock.MVVMTestApp.csproj", "{AFD48591-D66C-47F3-86E7-ACE5AD3D4FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvalonDock.TestApp", "..\..\CustomControls\WPF\AvalonDock_Samples\AvalonDock.TestApp\AvalonDock.TestApp.csproj", "{339BC0D5-2A54-40ED-9850-7ED65182E6E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFD48591-D66C-47F3-86E7-ACE5AD3D4FE4}.Debug|x86.ActiveCfg = Debug|x86
+		{AFD48591-D66C-47F3-86E7-ACE5AD3D4FE4}.Debug|x86.Build.0 = Debug|x86
+		{AFD48591-D66C-47F3-86E7-ACE5AD3D4FE4}.Release|x86.ActiveCfg = Release|x86
+		{AFD48591-D66C-47F3-86E7-ACE5AD3D4FE4}.Release|x86.Build.0 = Release|x86
+		{339BC0D5-2A54-40ED-9850-7ED65182E6E1}.Debug|x86.ActiveCfg = Debug|x86
+		{339BC0D5-2A54-40ED-9850-7ED65182E6E1}.Debug|x86.Build.0 = Debug|x86
+		{339BC0D5-2A54-40ED-9850-7ED65182E6E1}.Release|x86.ActiveCfg = Release|x86
+		{339BC0D5-2A54-40ED-9850-7ED65182E6E1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

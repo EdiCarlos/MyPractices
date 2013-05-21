@@ -1,0 +1,8 @@
+D:\temp\VisualC#\WindowFroms\Design\SampleOneDesign\SampleOneDesign\bin\Debug\SampleOneDesign.exe
+D:\temp\VisualC#\WindowFroms\Design\SampleOneDesign\SampleOneDesign\bin\Debug\SampleOneDesign.pdb
+D:\temp\VisualC#\WindowFroms\Design\SampleOneDesign\SampleOneDesign\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\WindowFroms\Design\SampleOneDesign\SampleOneDesign\obj\Debug\SampleOneDesign.Form1.resources
+D:\temp\VisualC#\WindowFroms\Design\SampleOneDesign\SampleOneDesign\obj\Debug\SampleOneDesign.Properties.Resources.resources
+D:\temp\VisualC#\WindowFroms\Design\SampleOneDesign\SampleOneDesign\obj\Debug\SampleOneDesign.csproj.GenerateResource.Cache
+D:\temp\VisualC#\WindowFroms\Design\SampleOneDesign\SampleOneDesign\obj\Debug\SampleOneDesign.exe
+D:\temp\VisualC#\WindowFroms\Design\SampleOneDesign\SampleOneDesign\obj\Debug\SampleOneDesign.pdb

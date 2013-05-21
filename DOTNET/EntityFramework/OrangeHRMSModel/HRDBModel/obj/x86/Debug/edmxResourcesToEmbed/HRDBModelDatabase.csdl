@@ -1,0 +1,1455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HRDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="HRDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="HR_Address" EntityType="HRDBModel.HR_Address" />
+    <EntitySet Name="HR_CMP_AccountsWithBanks" EntityType="HRDBModel.HR_CMP_AccountsWithBanks" />
+    <EntitySet Name="HR_CMP_AS_PolicyAppliedTo" EntityType="HRDBModel.HR_CMP_AS_PolicyAppliedTo" />
+    <EntitySet Name="HR_CMP_AS_WorkShifts" EntityType="HRDBModel.HR_CMP_AS_WorkShifts" />
+    <EntitySet Name="HR_CMP_ExemptionRules" EntityType="HRDBModel.HR_CMP_ExemptionRules" />
+    <EntitySet Name="HR_CMP_ExemptionsType" EntityType="HRDBModel.HR_CMP_ExemptionsType" />
+    <EntitySet Name="HR_CMP_InsurancePolicy" EntityType="HRDBModel.HR_CMP_InsurancePolicy" />
+    <EntitySet Name="HR_CMP_LKP_Holidays" EntityType="HRDBModel.HR_CMP_LKP_Holidays" />
+    <EntitySet Name="HR_CMP_LKP_InsuranceCompanyDetail" EntityType="HRDBModel.HR_CMP_LKP_InsuranceCompanyDetail" />
+    <EntitySet Name="HR_CMP_LKP_LeaveQouta" EntityType="HRDBModel.HR_CMP_LKP_LeaveQouta" />
+    <EntitySet Name="HR_CMP_LKP_Leaves" EntityType="HRDBModel.HR_CMP_LKP_Leaves" />
+    <EntitySet Name="HR_CMP_LKP_LeaveTypes" EntityType="HRDBModel.HR_CMP_LKP_LeaveTypes" />
+    <EntitySet Name="HR_CMP_LKP_ProbationPeriod" EntityType="HRDBModel.HR_CMP_LKP_ProbationPeriod" />
+    <EntitySet Name="HR_CMP_LKP_StationType" EntityType="HRDBModel.HR_CMP_LKP_StationType" />
+    <EntitySet Name="HR_CMP_Messages" EntityType="HRDBModel.HR_CMP_Messages" />
+    <EntitySet Name="HR_Cmp_PerformanceRatingType" EntityType="HRDBModel.HR_Cmp_PerformanceRatingType" />
+    <EntitySet Name="HR_CMP_Policies" EntityType="HRDBModel.HR_CMP_Policies" />
+    <EntitySet Name="HR_Cmp_SalaryGenerationDate" EntityType="HRDBModel.HR_Cmp_SalaryGenerationDate" />
+    <EntitySet Name="HR_CMP_Stations" EntityType="HRDBModel.HR_CMP_Stations" />
+    <EntitySet Name="HR_CMP_WorkShifts" EntityType="HRDBModel.HR_CMP_WorkShifts" />
+    <EntitySet Name="HR_Company" EntityType="HRDBModel.HR_Company" />
+    <EntitySet Name="HR_CompanyAssets" EntityType="HRDBModel.HR_CompanyAssets" />
+    <EntitySet Name="HR_Emp_ActualAnnualTaxExemptionDetails" EntityType="HRDBModel.HR_Emp_ActualAnnualTaxExemptionDetails" />
+    <EntitySet Name="HR_Emp_ActualExemptions" EntityType="HRDBModel.HR_Emp_ActualExemptions" />
+    <EntitySet Name="HR_Emp_AnnualSalaryDetails" EntityType="HRDBModel.HR_Emp_AnnualSalaryDetails" />
+    <EntitySet Name="HR_Emp_AnnualTaxDeductionDetails" EntityType="HRDBModel.HR_Emp_AnnualTaxDeductionDetails" />
+    <EntitySet Name="HR_Emp_AS_EducationDocs" EntityType="HRDBModel.HR_Emp_AS_EducationDocs" />
+    <EntitySet Name="HR_Emp_AS_EmployeeInProbation" EntityType="HRDBModel.HR_Emp_AS_EmployeeInProbation" />
+    <EntitySet Name="HR_Emp_BankAccountDetails" EntityType="HRDBModel.HR_Emp_BankAccountDetails" />
+    <EntitySet Name="HR_Emp_ContactDetails" EntityType="HRDBModel.HR_Emp_ContactDetails" />
+    <EntitySet Name="HR_Emp_EducationDetails" EntityType="HRDBModel.HR_Emp_EducationDetails" />
+    <EntitySet Name="HR_Emp_EducationDocs" EntityType="HRDBModel.HR_Emp_EducationDocs" />
+    <EntitySet Name="HR_Emp_EmergenceContact" EntityType="HRDBModel.HR_Emp_EmergenceContact" />
+    <EntitySet Name="HR_Emp_EstimateAnnualTaxExemptionDetails" EntityType="HRDBModel.HR_Emp_EstimateAnnualTaxExemptionDetails" />
+    <EntitySet Name="HR_Emp_EstimateExemptions" EntityType="HRDBModel.HR_Emp_EstimateExemptions" />
+    <EntitySet Name="HR_Emp_ExemptionDocuments" EntityType="HRDBModel.HR_Emp_ExemptionDocuments" />
+    <EntitySet Name="HR_Emp_FamilyMembers" EntityType="HRDBModel.HR_Emp_FamilyMembers" />
+    <EntitySet Name="HR_Emp_Inbox" EntityType="HRDBModel.HR_Emp_Inbox" />
+    <EntitySet Name="HR_Emp_InsuranceDetails" EntityType="HRDBModel.HR_Emp_InsuranceDetails" />
+    <EntitySet Name="HR_EMP_Leave_Hist" EntityType="HRDBModel.HR_EMP_Leave_Hist" />
+    <EntitySet Name="HR_Emp_LeaveApprovalMessage" EntityType="HRDBModel.HR_Emp_LeaveApprovalMessage" />
+    <EntitySet Name="HR_EMP_LeaveQoutaDetails" EntityType="HRDBModel.HR_EMP_LeaveQoutaDetails" />
+    <EntitySet Name="HR_Emp_LeaveRequest" EntityType="HRDBModel.HR_Emp_LeaveRequest" />
+    <EntitySet Name="HR_Emp_MonthlySalaryDeductionDetails" EntityType="HRDBModel.HR_Emp_MonthlySalaryDeductionDetails" />
+    <EntitySet Name="HR_Emp_MonthlySalaryDetails" EntityType="HRDBModel.HR_Emp_MonthlySalaryDetails" />
+    <EntitySet Name="HR_Emp_Passport" EntityType="HRDBModel.HR_Emp_Passport" />
+    <EntitySet Name="HR_Emp_PreviousEmploymentDetails" EntityType="HRDBModel.HR_Emp_PreviousEmploymentDetails" />
+    <EntitySet Name="HR_Emp_Property" EntityType="HRDBModel.HR_Emp_Property" />
+    <EntitySet Name="HR_Emp_ProvidentFundDetails" EntityType="HRDBModel.HR_Emp_ProvidentFundDetails" />
+    <EntitySet Name="HR_Emp_RelatedDocs" EntityType="HRDBModel.HR_Emp_RelatedDocs" />
+    <EntitySet Name="HR_Emp_RelatedDocs_Hist" EntityType="HRDBModel.HR_Emp_RelatedDocs_Hist" />
+    <EntitySet Name="HR_Emp_ReportingDetails" EntityType="HRDBModel.HR_Emp_ReportingDetails" />
+    <EntitySet Name="HR_Emp_ReviewDetails" EntityType="HRDBModel.HR_Emp_ReviewDetails" />
+    <EntitySet Name="HR_Emp_SentMessages" EntityType="HRDBModel.HR_Emp_SentMessages" />
+    <EntitySet Name="HR_Emp_Skills" EntityType="HRDBModel.HR_Emp_Skills" />
+    <EntitySet Name="HR_Emp_SmartGoals" EntityType="HRDBModel.HR_Emp_SmartGoals" />
+    <EntitySet Name="HR_Emp_UserGroup" EntityType="HRDBModel.HR_Emp_UserGroup" />
+    <EntitySet Name="HR_Emp_Users" EntityType="HRDBModel.HR_Emp_Users" />
+    <EntitySet Name="HR_Employee" EntityType="HRDBModel.HR_Employee" />
+    <EntitySet Name="HR_GBL_LKP_ApprovalStatus" EntityType="HRDBModel.HR_GBL_LKP_ApprovalStatus" />
+    <EntitySet Name="HR_GBL_LKP_IndustryType" EntityType="HRDBModel.HR_GBL_LKP_IndustryType" />
+    <EntitySet Name="HR_GBL_TaxRules" EntityType="HRDBModel.HR_GBL_TaxRules" />
+    <EntitySet Name="HR_GLB_LKP_Banks" EntityType="HRDBModel.HR_GLB_LKP_Banks" />
+    <EntitySet Name="HR_GLB_LKP_NameTitle" EntityType="HRDBModel.HR_GLB_LKP_NameTitle" />
+    <EntitySet Name="HR_GLB_LKP_RelationType" EntityType="HRDBModel.HR_GLB_LKP_RelationType" />
+    <EntitySet Name="HR_LK_Currency" EntityType="HRDBModel.HR_LK_Currency" />
+    <EntitySet Name="HR_LKP_AddressType" EntityType="HRDBModel.HR_LKP_AddressType" />
+    <EntitySet Name="HR_LKP_BankAccountTypes" EntityType="HRDBModel.HR_LKP_BankAccountTypes" />
+    <EntitySet Name="HR_LKP_Country" EntityType="HRDBModel.HR_LKP_Country" />
+    <EntitySet Name="HR_LKP_Departments" EntityType="HRDBModel.HR_LKP_Departments" />
+    <EntitySet Name="HR_LKP_DiplomaDetails" EntityType="HRDBModel.HR_LKP_DiplomaDetails" />
+    <EntitySet Name="HR_LKP_EductionType" EntityType="HRDBModel.HR_LKP_EductionType" />
+    <EntitySet Name="HR_LKP_JobTitle" EntityType="HRDBModel.HR_LKP_JobTitle" />
+    <EntitySet Name="HR_LKP_PropertyTypeID" EntityType="HRDBModel.HR_LKP_PropertyTypeID" />
+    <EntitySet Name="HR_LKP_SalaryGradeDetails" EntityType="HRDBModel.HR_LKP_SalaryGradeDetails" />
+    <EntitySet Name="HR_LKP_SalaryGrades" EntityType="HRDBModel.HR_LKP_SalaryGrades" />
+    <EntitySet Name="HR_LKP_Skill" EntityType="HRDBModel.HR_LKP_Skill" />
+    <EntitySet Name="HR_Locations" EntityType="HRDBModel.HR_Locations" />
+    <EntitySet Name="HR_Log" EntityType="HRDBModel.HR_Log" />
+    <EntitySet Name="sysdiagrams" EntityType="HRDBModel.sysdiagram" />
+    <AssociationSet Name="FK_HR_Emp_AddressHR_Employee" Association="HRDBModel.FK_HR_Emp_AddressHR_Employee">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Address" EntitySet="HR_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LK_AddressTypeHR_Emp_Address" Association="HRDBModel.FK_HR_LK_AddressTypeHR_Emp_Address">
+      <End Role="HR_LKP_AddressType" EntitySet="HR_LKP_AddressType" />
+      <End Role="HR_Address" EntitySet="HR_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LocationsHR_Emp_Address" Association="HRDBModel.FK_HR_LocationsHR_Emp_Address">
+      <End Role="HR_Locations" EntitySet="HR_Locations" />
+      <End Role="HR_Address" EntitySet="HR_Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_CompanyHR_Employee" Association="HRDBModel.FK_HR_CompanyHR_Employee">
+      <End Role="HR_Company" EntitySet="HR_Company" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_CompanyAssetsHR_EmployeeProperty" Association="HRDBModel.FK_HR_CompanyAssetsHR_EmployeeProperty">
+      <End Role="HR_CompanyAssets" EntitySet="HR_CompanyAssets" />
+      <End Role="HR_Emp_Property" EntitySet="HR_Emp_Property" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LK_PropertyTypeIDHR_CompanyAssets" Association="HRDBModel.FK_HR_LK_PropertyTypeIDHR_CompanyAssets">
+      <End Role="HR_LKP_PropertyTypeID" EntitySet="HR_LKP_PropertyTypeID" />
+      <End Role="HR_CompanyAssets" EntitySet="HR_CompanyAssets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_Emp_EducationDocsHR_Emp_AS_EducationDocs" Association="HRDBModel.FK_HR_Emp_EducationDocsHR_Emp_AS_EducationDocs">
+      <End Role="HR_Emp_EducationDocs" EntitySet="HR_Emp_EducationDocs" />
+      <End Role="HR_Emp_AS_EducationDocs" EntitySet="HR_Emp_AS_EducationDocs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_ContactDetails" Association="HRDBModel.FK_HR_EmployeeHR_ContactDetails">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_ContactDetails" EntitySet="HR_Emp_ContactDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_Emp_EducationDetails" Association="HRDBModel.FK_HR_EmployeeHR_Emp_EducationDetails">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_EducationDetails" EntitySet="HR_Emp_EducationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LKP_DiplomaDetailsHR_Emp_EducationDetails" Association="HRDBModel.FK_HR_LKP_DiplomaDetailsHR_Emp_EducationDetails">
+      <End Role="HR_LKP_DiplomaDetails" EntitySet="HR_LKP_DiplomaDetails" />
+      <End Role="HR_Emp_EducationDetails" EntitySet="HR_Emp_EducationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_Emp_EmergenceContact" Association="HRDBModel.FK_HR_EmployeeHR_Emp_EmergenceContact">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_EmergenceContact" EntitySet="HR_Emp_EmergenceContact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_Emp_FamilyMembers" Association="HRDBModel.FK_HR_EmployeeHR_Emp_FamilyMembers">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_FamilyMembers" EntitySet="HR_Emp_FamilyMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LKP_RelationTypeHR_Emp_FamilyMembers" Association="HRDBModel.FK_HR_LKP_RelationTypeHR_Emp_FamilyMembers">
+      <End Role="HR_GLB_LKP_RelationType" EntitySet="HR_GLB_LKP_RelationType" />
+      <End Role="HR_Emp_FamilyMembers" EntitySet="HR_Emp_FamilyMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_Emp_PreviousEmploymentDetails" Association="HRDBModel.FK_HR_EmployeeHR_Emp_PreviousEmploymentDetails">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_PreviousEmploymentDetails" EntitySet="HR_Emp_PreviousEmploymentDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_CompanyProperty" Association="HRDBModel.FK_HR_EmployeeHR_CompanyProperty">
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+      <End Role="HR_Emp_Property" EntitySet="HR_Emp_Property" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_Emp_SkillsHR_LKP_Skill" Association="HRDBModel.FK_HR_Emp_SkillsHR_LKP_Skill">
+      <End Role="HR_LKP_Skill" EntitySet="HR_LKP_Skill" />
+      <End Role="HR_Emp_Skills" EntitySet="HR_Emp_Skills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_EmployeeHR_LKP_Departments" Association="HRDBModel.FK_HR_EmployeeHR_LKP_Departments">
+      <End Role="HR_LKP_Departments" EntitySet="HR_LKP_Departments" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_GLB_LKP_NameTitleHR_Employee" Association="HRDBModel.FK_HR_GLB_LKP_NameTitleHR_Employee">
+      <End Role="HR_GLB_LKP_NameTitle" EntitySet="HR_GLB_LKP_NameTitle" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_SalaryGradesHR_Employee" Association="HRDBModel.FK_HR_SalaryGradesHR_Employee">
+      <End Role="HR_LKP_SalaryGrades" EntitySet="HR_LKP_SalaryGrades" />
+      <End Role="HR_Employee" EntitySet="HR_Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LK_CountryHR_LK_Currency" Association="HRDBModel.FK_HR_LK_CountryHR_LK_Currency">
+      <End Role="HR_LK_Currency" EntitySet="HR_LK_Currency" />
+      <End Role="HR_LKP_Country" EntitySet="HR_LKP_Country" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LK_CountryHR_Locations" Association="HRDBModel.FK_HR_LK_CountryHR_Locations">
+      <End Role="HR_LKP_Country" EntitySet="HR_LKP_Country" />
+      <End Role="HR_Locations" EntitySet="HR_Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades" Association="HRDBModel.FK_HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades">
+      <End Role="HR_LKP_SalaryGrades" EntitySet="HR_LKP_SalaryGrades" />
+      <End Role="HR_LKP_SalaryGradeDetails" EntitySet="HR_LKP_SalaryGradeDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="HR_Address">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+    <Property Name="Street1" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Street2" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LocationID" Type="Int32" />
+    <Property Name="AddressTypeID" Type="Int32" Nullable="false" />
+    <Property Name="FamilyMemberID" Type="Int32" />
+    <Property Name="CompanyID" Type="Int64" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="InusranceCompanyID" Type="Int32" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_Emp_AddressHR_Employee" FromRole="HR_Address" ToRole="HR_Employee" />
+    <NavigationProperty Name="HR_LKP_AddressType" Relationship="HRDBModel.FK_HR_LK_AddressTypeHR_Emp_Address" FromRole="HR_Address" ToRole="HR_LKP_AddressType" />
+    <NavigationProperty Name="HR_Locations" Relationship="HRDBModel.FK_HR_LocationsHR_Emp_Address" FromRole="HR_Address" ToRole="HR_Locations" />
+  </EntityType>
+  <EntityType Name="HR_CMP_AccountsWithBanks">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <Property Name="BankID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_AS_PolicyAppliedTo">
+    <Key>
+      <PropertyRef Name="PolicyID" />
+    </Key>
+    <Property Name="PolicyID" Type="Int32" Nullable="false" />
+    <Property Name="StationID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="HR_CMP_AS_WorkShifts">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkShiftID" Type="Int32" Nullable="false" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_ExemptionRules">
+    <Key>
+      <PropertyRef Name="ExemptionRuleID" />
+    </Key>
+    <Property Name="ExemptionRuleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ExemptionTypeID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ExemptionRule" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ExemptionRuleDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ExemptionLimitedAmount" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_ExemptionsType">
+    <Key>
+      <PropertyRef Name="ExemptionTypeId" />
+    </Key>
+    <Property Name="ExemptionTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExemptionType" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ExemptionDescriptions" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="HR_CMP_InsurancePolicy">
+    <Key>
+      <PropertyRef Name="InsurancePolicyID" />
+    </Key>
+    <Property Name="InsurancePolicyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InusranceCompanyID" Type="Int32" Nullable="false" />
+    <Property Name="PolicyAmount" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="CompanyID" Type="Int64" />
+    <Property Name="PolicyDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyURL" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_Holidays">
+    <Key>
+      <PropertyRef Name="HolidayID" />
+    </Key>
+    <Property Name="HolidayID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <Property Name="HolidayTitle" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="HolidayDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="HolidayDate" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_InsuranceCompanyDetail">
+    <Key>
+      <PropertyRef Name="InusranceCompanyID" />
+    </Key>
+    <Property Name="InusranceCompanyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_LeaveQouta">
+    <Key>
+      <PropertyRef Name="LeaveQuotaID" />
+    </Key>
+    <Property Name="LeaveQuotaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int64" />
+    <Property Name="LeaveQouta" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PorbationLeaveQouta" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_Leaves">
+    <Key>
+      <PropertyRef Name="LeaveID" />
+    </Key>
+    <Property Name="LeaveID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeaveTypeID" Type="Int32" />
+    <Property Name="CompanyID" Type="Int64" />
+    <Property Name="NumberOfLeaves" Type="Int32" Nullable="false" />
+    <Property Name="IsPaid" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_LeaveTypes">
+    <Key>
+      <PropertyRef Name="LeaveTypeID" />
+    </Key>
+    <Property Name="LeaveTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeaveType" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LeaveDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_ProbationPeriod">
+    <Key>
+      <PropertyRef Name="ProbationPeriodID" />
+    </Key>
+    <Property Name="ProbationPeriodID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProbationInMonths" Type="Int32" Nullable="false" />
+    <Property Name="CompanyID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_LKP_StationType">
+    <Key>
+      <PropertyRef Name="StationTypeID" />
+    </Key>
+    <Property Name="StationTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationType" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_Messages">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyNumber" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="FromEmployeeNumber" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MessageToEmployeeNumber" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Subject" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Body" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MessageDate" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="HR_Cmp_PerformanceRatingType">
+    <Key>
+      <PropertyRef Name="RatingTypeID" />
+    </Key>
+    <Property Name="RatingTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RatingType" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RatingDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="HR_CMP_Policies">
+    <Key>
+      <PropertyRef Name="PolicyID" />
+    </Key>
+    <Property Name="PolicyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <Property Name="PolicyName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PolicyDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Cmp_SalaryGenerationDate">
+    <Key>
+      <PropertyRef Name="GenerationId" />
+    </Key>
+    <Property Name="GenerationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <Property Name="GenerationDay" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_Stations">
+    <Key>
+      <PropertyRef Name="StationID" />
+    </Key>
+    <Property Name="StationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="StationName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="StationTypeID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Location" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_CMP_WorkShifts">
+    <Key>
+      <PropertyRef Name="WorkShiftID" />
+    </Key>
+    <Property Name="WorkShiftID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Weekdays" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Weekends" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="WorkingHoursFrom" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LunchBreakHoursFrom" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="WorkingHoursTo" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LunchBreakHoursTo" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="OrganizationCode" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="WebsiteUrl" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="OrganizationLogoPath" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="NumberOfEmployees" Type="Int32" />
+    <Property Name="RegisteredEmailAddress" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyDescription" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="IsGovermentSector" Type="Boolean" />
+    <Property Name="IndustryTypeID" Type="Int32" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_CompanyHR_Employee" FromRole="HR_Company" ToRole="HR_Employee" />
+  </EntityType>
+  <EntityType Name="HR_CompanyAssets">
+    <Key>
+      <PropertyRef Name="AssetID" />
+    </Key>
+    <Property Name="AssetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PropertyTypeID" Type="Int32" Nullable="false" />
+    <Property Name="ModelNumber" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int64" />
+    <NavigationProperty Name="HR_Emp_Property" Relationship="HRDBModel.FK_HR_CompanyAssetsHR_EmployeeProperty" FromRole="HR_CompanyAssets" ToRole="HR_Emp_Property" />
+    <NavigationProperty Name="HR_LKP_PropertyTypeID" Relationship="HRDBModel.FK_HR_LK_PropertyTypeIDHR_CompanyAssets" FromRole="HR_CompanyAssets" ToRole="HR_LKP_PropertyTypeID" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ActualAnnualTaxExemptionDetails">
+    <Key>
+      <PropertyRef Name="ActualTaxExemptionID" />
+    </Key>
+    <Property Name="ActualTaxExemptionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="ProffessionalTax" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProvidentFund" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VoluntaryPF" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IncomeTax" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LifeInsurance" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction1" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction2" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction3" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction4" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction5" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction6" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction7" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction8" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction9" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OD1Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD2Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD3Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD4Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD5Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD6Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD7Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD8Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD9Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ActualExemptions">
+    <Key>
+      <PropertyRef Name="MiscExemptionID" />
+    </Key>
+    <Property Name="MiscExemptionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="ExemptionRuleID" Type="Int32" Nullable="false" />
+    <Property Name="ExemptionAmount" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ActualTaxExemptionID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AnnualSalaryDetails">
+    <Key>
+      <PropertyRef Name="AnnualSalaryID" />
+    </Key>
+    <Property Name="AnnualSalaryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="SalaryGradeCode" Type="Int32" />
+    <Property Name="AnnualBasic" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualHouseRent" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualMedicalReimbursment" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualLTAReimbursment" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualFuelReimbursment" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualProfessionalDevelopment" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Misc1" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc2" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc3" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc4" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc5" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc6" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc7" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc8" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc9" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc1Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc2Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc3Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc4Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc5Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc6Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc7Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc8Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc9Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="AnnualGrossSalary" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="AnnualNetSalary" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AnnualTaxDeductionDetails">
+    <Key>
+      <PropertyRef Name="AnnualTaxDeductionID" />
+    </Key>
+    <Property Name="AnnualTaxDeductionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="ProffessionalTax" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProvidentFund" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VoluntaryPF" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IncomeTax" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LifeInsurance" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction1" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction2" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction3" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction4" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction5" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction6" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction7" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction8" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction9" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OD1Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD2Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD3Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD4Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD5Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD6Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD7Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD8Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD9Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AS_EducationDocs">
+    <Key>
+      <PropertyRef Name="AssociateDocID" />
+    </Key>
+    <Property Name="AssociateDocID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="EducationDocID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HR_Emp_EducationDocs" Relationship="HRDBModel.FK_HR_Emp_EducationDocsHR_Emp_AS_EducationDocs" FromRole="HR_Emp_AS_EducationDocs" ToRole="HR_Emp_EducationDocs" />
+  </EntityType>
+  <EntityType Name="HR_Emp_AS_EmployeeInProbation">
+    <Key>
+      <PropertyRef Name="ProbationID" />
+    </Key>
+    <Property Name="ProbationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+    <Property Name="ProbationStartDate" Type="DateTime" Nullable="false" />
+    <Property Name="ProbationEndDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_BankAccountDetails">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="BankID" Type="Int32" />
+    <Property Name="AccountNumber" Type="Int32" Nullable="false" />
+    <Property Name="IsSalaryAccount" Type="Boolean" />
+    <Property Name="IsSalaryCreditAccount" Type="Boolean" />
+    <Property Name="BankAccountTypeID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ContactDetails">
+    <Key>
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Name="ContactID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="MobileNumber" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="TelNumber" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="IsPrimaryMobile" Type="Boolean" />
+    <Property Name="IsEmergencyContact" Type="Boolean" />
+    <Property Name="WorkTelephone" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="EmpOtherEmail" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="WorkEmailAddress" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_EmployeeHR_ContactDetails" FromRole="HR_Emp_ContactDetails" ToRole="HR_Employee" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EducationDetails">
+    <Key>
+      <PropertyRef Name="EducationDetailID" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="EducationID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SchoolName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UniversityName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CollegeName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StartDate" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EndDate" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EduSeqNo" Type="Int16" Nullable="false" />
+    <Property Name="PassPercentage" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PassGrade" Type="String" MaxLength="2" Unicode="true" FixedLength="true" />
+    <Property Name="DiplomaID" Type="Int32" />
+    <Property Name="EducationDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_EmployeeHR_Emp_EducationDetails" FromRole="HR_Emp_EducationDetails" ToRole="HR_Employee" />
+    <NavigationProperty Name="HR_LKP_DiplomaDetails" Relationship="HRDBModel.FK_HR_LKP_DiplomaDetailsHR_Emp_EducationDetails" FromRole="HR_Emp_EducationDetails" ToRole="HR_LKP_DiplomaDetails" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EducationDocs">
+    <Key>
+      <PropertyRef Name="EducationDocID" />
+    </Key>
+    <Property Name="EducationDocID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CertificatePath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MarkSheetPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DiplomaCertificatePath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_Emp_AS_EducationDocs" Relationship="HRDBModel.FK_HR_Emp_EducationDocsHR_Emp_AS_EducationDocs" FromRole="HR_Emp_EducationDocs" ToRole="HR_Emp_AS_EducationDocs" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EmergenceContact">
+    <Key>
+      <PropertyRef Name="EmergencyContactID" />
+    </Key>
+    <Property Name="EmergencyContactID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FamilyMemberID" Type="Int32" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RelationID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_EmployeeHR_Emp_EmergenceContact" FromRole="HR_Emp_EmergenceContact" ToRole="HR_Employee" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EstimateAnnualTaxExemptionDetails">
+    <Key>
+      <PropertyRef Name="EstimateTaxExemptionID" />
+    </Key>
+    <Property Name="EstimateTaxExemptionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="ProffessionalTax" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProvidentFund" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VoluntaryPF" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IncomeTax" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LifeInsurance" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction1" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction2" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction3" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction4" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction5" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction6" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction7" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction8" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction9" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OD1Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD2Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD3Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD4Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD5Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD6Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD7Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD8Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD9Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="HR_Emp_EstimateExemptions">
+    <Key>
+      <PropertyRef Name="EstimateExemptionID" />
+    </Key>
+    <Property Name="EstimateExemptionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="ExemptionRuleID" Type="Int32" Nullable="false" />
+    <Property Name="ExemptionAmount" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="EstimateTaxExemptionID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ExemptionDocuments">
+    <Key>
+      <PropertyRef Name="DocumentID" />
+    </Key>
+    <Property Name="DocumentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MiscExemptionID" Type="Int32" Nullable="false" />
+    <Property Name="DocumentName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DocumentPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="UploadDate" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_FamilyMembers">
+    <Key>
+      <PropertyRef Name="FamilyMemberID" />
+    </Key>
+    <Property Name="FamilyMemberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Age" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RelationID" Type="Int32" Nullable="false" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="IsMinor" Type="Boolean" />
+    <Property Name="IsDependent" Type="Boolean" />
+    <Property Name="IsNominee" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ResidesWithEmployee" Type="Boolean" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+    <Property Name="ContactPersonInEmergency" Type="Boolean" Nullable="false" />
+    <Property Name="EligibleForInsurance" Type="Boolean" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_EmployeeHR_Emp_FamilyMembers" FromRole="HR_Emp_FamilyMembers" ToRole="HR_Employee" />
+    <NavigationProperty Name="HR_GLB_LKP_RelationType" Relationship="HRDBModel.FK_HR_LKP_RelationTypeHR_Emp_FamilyMembers" FromRole="HR_Emp_FamilyMembers" ToRole="HR_GLB_LKP_RelationType" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Inbox">
+    <Key>
+      <PropertyRef Name="InboxID" />
+    </Key>
+    <Property Name="InboxID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MessageToEmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="MessageID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_InsuranceDetails">
+    <Key>
+      <PropertyRef Name="InsuredID" />
+    </Key>
+    <Property Name="InsuredID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="InsurancePolicyID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HR_EMP_Leave_Hist">
+    <Key>
+      <PropertyRef Name="LeaveHistId" />
+    </Key>
+    <Property Name="LeaveHistId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="LeaveRequestID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HR_Emp_LeaveApprovalMessage">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeaveRequestID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RequestToEMPNumber" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ApprovalStatusID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="ApprovedReason" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="DeniedReason" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_EMP_LeaveQoutaDetails">
+    <Key>
+      <PropertyRef Name="LeaveQoutaDetailID" />
+    </Key>
+    <Property Name="LeaveQoutaDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+    <Property Name="LeaveTypeID" Type="Int32" Nullable="false" />
+    <Property Name="AvaiableLeaves" Type="Int32" Nullable="false" />
+    <Property Name="LeaveTaken" Type="Int32" Nullable="false" />
+    <Property Name="TotalLeaves" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PreviousYearsLeave" Type="Int32" />
+    <Property Name="Month" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_LeaveRequest">
+    <Key>
+      <PropertyRef Name="LeaveRequestID" />
+    </Key>
+    <Property Name="LeaveRequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+    <Property Name="LeaveID" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" />
+    <Property Name="TotalNoLeavesRequested" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalStatusID" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="HR_Emp_MonthlySalaryDeductionDetails">
+    <Key>
+      <PropertyRef Name="MonthlyDeductionID" />
+    </Key>
+    <Property Name="MonthlyDeductionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MonthlySalaryID" Type="Int32" />
+    <Property Name="ProffessionalTax" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProvidentFund" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VoluntaryPF" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IncomeTax" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LifeInsurance" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction1" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction2" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction3" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction4" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction5" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction6" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction7" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction8" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OtherDeduction9" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="OD1Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD2Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD3Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD4Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD5Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD6Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD7Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD8Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="OD9Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_MonthlySalaryDetails">
+    <Key>
+      <PropertyRef Name="MonthlySalaryID" />
+    </Key>
+    <Property Name="MonthlySalaryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="SalaryGradeCode" Type="Int32" />
+    <Property Name="Basic" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="HouseRent" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="MedicalReimbursment" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="LTAReimbursment" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="FuelReimbursment" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ProfessionalDevelopment" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Misc1" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc2" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc3" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc4" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc5" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc6" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc7" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc8" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc9" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Misc1Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc2Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc3Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc4Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc5Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc6Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc7Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc8Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Misc9Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Month" Type="Int16" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="GrossSalary" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="NetSalary" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Passport">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+      <PropertyRef Name="PassportNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="PassportNumber" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="IssuedDate" Type="DateTime" />
+    <Property Name="ExpireDate" Type="DateTime" />
+    <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_PreviousEmploymentDetails">
+    <Key>
+      <PropertyRef Name="EmploymentDetailID" />
+    </Key>
+    <Property Name="EmploymentDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="EmployeeSeqNumber" Type="Int16" Nullable="false" />
+    <Property Name="EmployerName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="JobTitle" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FromDate" Type="DateTime" Nullable="false" />
+    <Property Name="ToDate" Type="DateTime" Nullable="false" />
+    <Property Name="CTC" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="JobDescription" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_EmployeeHR_Emp_PreviousEmploymentDetails" FromRole="HR_Emp_PreviousEmploymentDetails" ToRole="HR_Employee" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Property">
+    <Key>
+      <PropertyRef Name="AssetID" />
+    </Key>
+    <Property Name="AssetID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+    <NavigationProperty Name="HR_CompanyAssets" Relationship="HRDBModel.FK_HR_CompanyAssetsHR_EmployeeProperty" FromRole="HR_Emp_Property" ToRole="HR_CompanyAssets" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_EmployeeHR_CompanyProperty" FromRole="HR_Emp_Property" ToRole="HR_Employee" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ProvidentFundDetails">
+    <Key>
+      <PropertyRef Name="ProvidentFundID" />
+    </Key>
+    <Property Name="ProvidentFundID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+    <Property Name="PFNumber" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="TotalPFAmount" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="HR_Emp_RelatedDocs">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="Int32" Nullable="false" />
+    <Property Name="PicPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ResumePath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PicName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ResumeName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ResumeHeadLine" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LastUpdateDate" Type="DateTime" Nullable="false" />
+    <Property Name="LicensePicPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EmployeeFolderName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PanCarPicPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PassportPicPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_RelatedDocs_Hist">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PicPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ResumePath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ResumeName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ResumeHeaderLine" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PicName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LastUsedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ReportingDetails">
+    <Key>
+      <PropertyRef Name="EmployeeManagerId" />
+    </Key>
+    <Property Name="EmployeeManagerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+  </EntityType>
+  <EntityType Name="HR_Emp_ReviewDetails">
+    <Key>
+      <PropertyRef Name="ReviewID" />
+    </Key>
+    <Property Name="ReviewID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReviewerID" Type="Int64" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+    <Property Name="ReviewStartDate" Type="DateTime" Nullable="false" />
+    <Property Name="ReviewEndDate" Type="DateTime" Nullable="false" />
+    <Property Name="DateOfReview" Type="DateTime" Nullable="false" />
+    <Property Name="DocPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RatingTypeID" Type="Int32" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_SentMessages">
+    <Key>
+      <PropertyRef Name="SentMessageID" />
+    </Key>
+    <Property Name="SentMessageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MessageToEmployeeNumber" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MessageID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Skills">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="SkillID" Type="Int32" Nullable="false" />
+    <Property Name="ExperienceInMonths" Type="Int32" />
+    <Property Name="ExperienceInYears" Type="Int32" />
+    <Property Name="TotalExperience" Type="Int32" />
+    <Property Name="HR_LKP_Skill_SkillID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HR_LKP_Skill" Relationship="HRDBModel.FK_HR_Emp_SkillsHR_LKP_Skill" FromRole="HR_Emp_Skills" ToRole="HR_LKP_Skill" />
+  </EntityType>
+  <EntityType Name="HR_Emp_SmartGoals">
+    <Key>
+      <PropertyRef Name="SmartGoalID" />
+    </Key>
+    <Property Name="SmartGoalID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int64" />
+    <Property Name="EmployeeNumber" Type="Int64" />
+    <Property Name="GoalHeadLine" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="GoalDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Year" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DocPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_UserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupID" />
+    </Key>
+    <Property Name="UserGroupID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Emp_Users">
+    <Key>
+      <PropertyRef Name="UserGuid" />
+    </Key>
+    <Property Name="UserGuid" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="HashKey" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" />
+    <Property Name="ReceiveNotification" Type="Boolean" />
+    <Property Name="DateEntered" Type="DateTime" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ModifiedUserID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="UserGroupID" Type="Int32" />
+    <Property Name="IsActive" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_Employee">
+    <Key>
+      <PropertyRef Name="EmployeeNumber" />
+    </Key>
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <Property Name="EmployeeUID" Type="Guid" Nullable="false" />
+    <Property Name="EmployeeNumber" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyEmployeeID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Lastname" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Firstname" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Middlename" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Birthday" Type="DateTime" />
+    <Property Name="NationCode" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Gender" Type="Int16" />
+    <Property Name="MaritalStatus" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SSNNumber" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LicenseNumber" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LicencseExpiryDate" Type="DateTime" />
+    <Property Name="Status" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TitleCode" Type="Int32" Nullable="false" />
+    <Property Name="SalaryGradeCode" Type="Int32" Nullable="false" />
+    <Property Name="JoinedDate" Type="DateTime" Nullable="false" />
+    <Property Name="TerminateDate" Type="DateTime" />
+    <Property Name="TerminationReason" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsActive" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="BloodGroup" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="Nationality" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <Property Name="JobID" Type="Int32" />
+    <Property Name="InProbation" Type="Boolean" />
+    <Property Name="EligibleForInsurance" Type="Boolean" />
+    <NavigationProperty Name="HR_Address" Relationship="HRDBModel.FK_HR_Emp_AddressHR_Employee" FromRole="HR_Employee" ToRole="HR_Address" />
+    <NavigationProperty Name="HR_Company" Relationship="HRDBModel.FK_HR_CompanyHR_Employee" FromRole="HR_Employee" ToRole="HR_Company" />
+    <NavigationProperty Name="HR_Emp_ContactDetails" Relationship="HRDBModel.FK_HR_EmployeeHR_ContactDetails" FromRole="HR_Employee" ToRole="HR_Emp_ContactDetails" />
+    <NavigationProperty Name="HR_Emp_EducationDetails" Relationship="HRDBModel.FK_HR_EmployeeHR_Emp_EducationDetails" FromRole="HR_Employee" ToRole="HR_Emp_EducationDetails" />
+    <NavigationProperty Name="HR_Emp_EmergenceContact" Relationship="HRDBModel.FK_HR_EmployeeHR_Emp_EmergenceContact" FromRole="HR_Employee" ToRole="HR_Emp_EmergenceContact" />
+    <NavigationProperty Name="HR_Emp_FamilyMembers" Relationship="HRDBModel.FK_HR_EmployeeHR_Emp_FamilyMembers" FromRole="HR_Employee" ToRole="HR_Emp_FamilyMembers" />
+    <NavigationProperty Name="HR_Emp_PreviousEmploymentDetails" Relationship="HRDBModel.FK_HR_EmployeeHR_Emp_PreviousEmploymentDetails" FromRole="HR_Employee" ToRole="HR_Emp_PreviousEmploymentDetails" />
+    <NavigationProperty Name="HR_Emp_Property" Relationship="HRDBModel.FK_HR_EmployeeHR_CompanyProperty" FromRole="HR_Employee" ToRole="HR_Emp_Property" />
+    <NavigationProperty Name="HR_LKP_Departments" Relationship="HRDBModel.FK_HR_EmployeeHR_LKP_Departments" FromRole="HR_Employee" ToRole="HR_LKP_Departments" />
+    <NavigationProperty Name="HR_GLB_LKP_NameTitle" Relationship="HRDBModel.FK_HR_GLB_LKP_NameTitleHR_Employee" FromRole="HR_Employee" ToRole="HR_GLB_LKP_NameTitle" />
+    <NavigationProperty Name="HR_LKP_SalaryGrades" Relationship="HRDBModel.FK_HR_SalaryGradesHR_Employee" FromRole="HR_Employee" ToRole="HR_LKP_SalaryGrades" />
+  </EntityType>
+  <EntityType Name="HR_GBL_LKP_ApprovalStatus">
+    <Key>
+      <PropertyRef Name="ApprovalStatusID" />
+    </Key>
+    <Property Name="ApprovalStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_GBL_LKP_IndustryType">
+    <Key>
+      <PropertyRef Name="IndustryTypeID" />
+    </Key>
+    <Property Name="IndustryTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IndustryType" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Domain" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="NatureOfBusiness" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_GBL_TaxRules">
+    <Key>
+      <PropertyRef Name="TaxRuleID" />
+    </Key>
+    <Property Name="TaxRuleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RuleName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RuleDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="RuleValue" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="HR_GLB_LKP_Banks">
+    <Key>
+      <PropertyRef Name="BankID" />
+    </Key>
+    <Property Name="BankID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BankName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="BankAddressID" Type="Int32" Nullable="false" />
+    <Property Name="IsNationalBank" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_GLB_LKP_NameTitle">
+    <Key>
+      <PropertyRef Name="TitleCode" />
+    </Key>
+    <Property Name="TitleCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TitleName" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_GLB_LKP_NameTitleHR_Employee" FromRole="HR_GLB_LKP_NameTitle" ToRole="HR_Employee" />
+  </EntityType>
+  <EntityType Name="HR_GLB_LKP_RelationType">
+    <Key>
+      <PropertyRef Name="RelationID" />
+    </Key>
+    <Property Name="RelationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RelationName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_Emp_FamilyMembers" Relationship="HRDBModel.FK_HR_LKP_RelationTypeHR_Emp_FamilyMembers" FromRole="HR_GLB_LKP_RelationType" ToRole="HR_Emp_FamilyMembers" />
+  </EntityType>
+  <EntityType Name="HR_LK_Currency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CurrencyName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_LKP_Country" Relationship="HRDBModel.FK_HR_LK_CountryHR_LK_Currency" FromRole="HR_LK_Currency" ToRole="HR_LKP_Country" />
+  </EntityType>
+  <EntityType Name="HR_LKP_AddressType">
+    <Key>
+      <PropertyRef Name="AddressTypeID" />
+    </Key>
+    <Property Name="AddressTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <Property Name="AddressType" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_Address" Relationship="HRDBModel.FK_HR_LK_AddressTypeHR_Emp_Address" FromRole="HR_LKP_AddressType" ToRole="HR_Address" />
+  </EntityType>
+  <EntityType Name="HR_LKP_BankAccountTypes">
+    <Key>
+      <PropertyRef Name="BankTypeID" />
+    </Key>
+    <Property Name="BankTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BankAccountType" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_Country">
+    <Key>
+      <PropertyRef Name="CountryCode" />
+    </Key>
+    <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ISOCode" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CurrencyID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HR_LK_Currency" Relationship="HRDBModel.FK_HR_LK_CountryHR_LK_Currency" FromRole="HR_LKP_Country" ToRole="HR_LK_Currency" />
+    <NavigationProperty Name="HR_Locations" Relationship="HRDBModel.FK_HR_LK_CountryHR_Locations" FromRole="HR_LKP_Country" ToRole="HR_Locations" />
+  </EntityType>
+  <EntityType Name="HR_LKP_Departments">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DepartmentRole" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DepartmentDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int64" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_EmployeeHR_LKP_Departments" FromRole="HR_LKP_Departments" ToRole="HR_Employee" />
+  </EntityType>
+  <EntityType Name="HR_LKP_DiplomaDetails">
+    <Key>
+      <PropertyRef Name="DiplomaID" />
+    </Key>
+    <Property Name="DiplomaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InstituteName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CourseName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PassGrade" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_Emp_EducationDetails" Relationship="HRDBModel.FK_HR_LKP_DiplomaDetailsHR_Emp_EducationDetails" FromRole="HR_LKP_DiplomaDetails" ToRole="HR_Emp_EducationDetails" />
+  </EntityType>
+  <EntityType Name="HR_LKP_EductionType">
+    <Key>
+      <PropertyRef Name="EducationID" />
+    </Key>
+    <Property Name="EducationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EducationShortCode" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EducationFullName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="EducationDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_JobTitle">
+    <Key>
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Name="JobID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobTitle" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int64" />
+    <Property Name="JobRole" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="JobDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="SalaryGradeCode" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HR_LKP_PropertyTypeID">
+    <Key>
+      <PropertyRef Name="PropertyTypeID" />
+    </Key>
+    <Property Name="PropertyTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <Property Name="PropertyType" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PropertyName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_CompanyAssets" Relationship="HRDBModel.FK_HR_LK_PropertyTypeIDHR_CompanyAssets" FromRole="HR_LKP_PropertyTypeID" ToRole="HR_CompanyAssets" />
+  </EntityType>
+  <EntityType Name="HR_LKP_SalaryGradeDetails">
+    <Key>
+      <PropertyRef Name="SalaryDetailID" />
+    </Key>
+    <Property Name="SalaryDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SalaryGradeCode" Type="Int32" Nullable="false" />
+    <Property Name="CompanyID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MinCTC" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="MaxCTC" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="MinExperience" Type="Int32" Nullable="false" />
+    <Property Name="MaxExperience" Type="Int32" Nullable="false" />
+    <Property Name="CurrencyID" Type="Int32" />
+    <NavigationProperty Name="HR_LKP_SalaryGrades" Relationship="HRDBModel.FK_HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades" FromRole="HR_LKP_SalaryGradeDetails" ToRole="HR_LKP_SalaryGrades" />
+  </EntityType>
+  <EntityType Name="HR_LKP_SalaryGrades">
+    <Key>
+      <PropertyRef Name="SalaryGradeCode" />
+    </Key>
+    <Property Name="SalaryGradeCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SalaryGrade" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <Property Name="CurrencyID" Type="Int32" />
+    <NavigationProperty Name="HR_Employee" Relationship="HRDBModel.FK_HR_SalaryGradesHR_Employee" FromRole="HR_LKP_SalaryGrades" ToRole="HR_Employee" />
+    <NavigationProperty Name="HR_LKP_SalaryGradeDetails" Relationship="HRDBModel.FK_HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades" FromRole="HR_LKP_SalaryGrades" ToRole="HR_LKP_SalaryGradeDetails" />
+  </EntityType>
+  <EntityType Name="HR_LKP_Skill">
+    <Key>
+      <PropertyRef Name="SkillID" />
+    </Key>
+    <Property Name="SkillID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SkillName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SkillDescritpion" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_Emp_Skills" Relationship="HRDBModel.FK_HR_Emp_SkillsHR_LKP_Skill" FromRole="HR_LKP_Skill" ToRole="HR_Emp_Skills" />
+  </EntityType>
+  <EntityType Name="HR_Locations">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="LocationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ZipCode" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HR_Address" Relationship="HRDBModel.FK_HR_LocationsHR_Emp_Address" FromRole="HR_Locations" ToRole="HR_Address" />
+    <NavigationProperty Name="HR_LKP_Country" Relationship="HRDBModel.FK_HR_LK_CountryHR_Locations" FromRole="HR_Locations" ToRole="HR_LKP_Country" />
+  </EntityType>
+  <EntityType Name="HR_Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Level" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Host" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Source" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Logger" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" />
+    <Property Name="StackTrace" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_HR_Emp_AddressHR_Employee">
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="0..1" />
+    <End Role="HR_Address" Type="HRDBModel.HR_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Address">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LK_AddressTypeHR_Emp_Address">
+    <End Role="HR_LKP_AddressType" Type="HRDBModel.HR_LKP_AddressType" Multiplicity="1" />
+    <End Role="HR_Address" Type="HRDBModel.HR_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_AddressType">
+        <PropertyRef Name="AddressTypeID" />
+      </Principal>
+      <Dependent Role="HR_Address">
+        <PropertyRef Name="AddressTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LocationsHR_Emp_Address">
+    <End Role="HR_Locations" Type="HRDBModel.HR_Locations" Multiplicity="0..1" />
+    <End Role="HR_Address" Type="HRDBModel.HR_Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Locations">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="HR_Address">
+        <PropertyRef Name="LocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_CompanyHR_Employee">
+    <End Role="HR_Company" Type="HRDBModel.HR_Company" Multiplicity="1" />
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_CompanyAssetsHR_EmployeeProperty">
+    <End Role="HR_CompanyAssets" Type="HRDBModel.HR_CompanyAssets" Multiplicity="1" />
+    <End Role="HR_Emp_Property" Type="HRDBModel.HR_Emp_Property" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="HR_CompanyAssets">
+        <PropertyRef Name="AssetID" />
+      </Principal>
+      <Dependent Role="HR_Emp_Property">
+        <PropertyRef Name="AssetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LK_PropertyTypeIDHR_CompanyAssets">
+    <End Role="HR_LKP_PropertyTypeID" Type="HRDBModel.HR_LKP_PropertyTypeID" Multiplicity="1" />
+    <End Role="HR_CompanyAssets" Type="HRDBModel.HR_CompanyAssets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_PropertyTypeID">
+        <PropertyRef Name="PropertyTypeID" />
+      </Principal>
+      <Dependent Role="HR_CompanyAssets">
+        <PropertyRef Name="PropertyTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_Emp_EducationDocsHR_Emp_AS_EducationDocs">
+    <End Role="HR_Emp_EducationDocs" Type="HRDBModel.HR_Emp_EducationDocs" Multiplicity="1" />
+    <End Role="HR_Emp_AS_EducationDocs" Type="HRDBModel.HR_Emp_AS_EducationDocs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Emp_EducationDocs">
+        <PropertyRef Name="EducationDocID" />
+      </Principal>
+      <Dependent Role="HR_Emp_AS_EducationDocs">
+        <PropertyRef Name="EducationDocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_ContactDetails">
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="1" />
+    <End Role="HR_Emp_ContactDetails" Type="HRDBModel.HR_Emp_ContactDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_ContactDetails">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_Emp_EducationDetails">
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="1" />
+    <End Role="HR_Emp_EducationDetails" Type="HRDBModel.HR_Emp_EducationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_EducationDetails">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LKP_DiplomaDetailsHR_Emp_EducationDetails">
+    <End Role="HR_LKP_DiplomaDetails" Type="HRDBModel.HR_LKP_DiplomaDetails" Multiplicity="0..1" />
+    <End Role="HR_Emp_EducationDetails" Type="HRDBModel.HR_Emp_EducationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_DiplomaDetails">
+        <PropertyRef Name="DiplomaID" />
+      </Principal>
+      <Dependent Role="HR_Emp_EducationDetails">
+        <PropertyRef Name="DiplomaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_Emp_EmergenceContact">
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="1" />
+    <End Role="HR_Emp_EmergenceContact" Type="HRDBModel.HR_Emp_EmergenceContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_EmergenceContact">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_Emp_FamilyMembers">
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="0..1" />
+    <End Role="HR_Emp_FamilyMembers" Type="HRDBModel.HR_Emp_FamilyMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_FamilyMembers">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LKP_RelationTypeHR_Emp_FamilyMembers">
+    <End Role="HR_GLB_LKP_RelationType" Type="HRDBModel.HR_GLB_LKP_RelationType" Multiplicity="1" />
+    <End Role="HR_Emp_FamilyMembers" Type="HRDBModel.HR_Emp_FamilyMembers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_GLB_LKP_RelationType">
+        <PropertyRef Name="RelationID" />
+      </Principal>
+      <Dependent Role="HR_Emp_FamilyMembers">
+        <PropertyRef Name="RelationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_Emp_PreviousEmploymentDetails">
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="1" />
+    <End Role="HR_Emp_PreviousEmploymentDetails" Type="HRDBModel.HR_Emp_PreviousEmploymentDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_PreviousEmploymentDetails">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_CompanyProperty">
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="0..1" />
+    <End Role="HR_Emp_Property" Type="HRDBModel.HR_Emp_Property" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_Employee">
+        <PropertyRef Name="EmployeeNumber" />
+      </Principal>
+      <Dependent Role="HR_Emp_Property">
+        <PropertyRef Name="EmployeeNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_Emp_SkillsHR_LKP_Skill">
+    <End Role="HR_LKP_Skill" Type="HRDBModel.HR_LKP_Skill" Multiplicity="1" />
+    <End Role="HR_Emp_Skills" Type="HRDBModel.HR_Emp_Skills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_Skill">
+        <PropertyRef Name="SkillID" />
+      </Principal>
+      <Dependent Role="HR_Emp_Skills">
+        <PropertyRef Name="HR_LKP_Skill_SkillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_EmployeeHR_LKP_Departments">
+    <End Role="HR_LKP_Departments" Type="HRDBModel.HR_LKP_Departments" Multiplicity="0..1" />
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_Departments">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_GLB_LKP_NameTitleHR_Employee">
+    <End Role="HR_GLB_LKP_NameTitle" Type="HRDBModel.HR_GLB_LKP_NameTitle" Multiplicity="1" />
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_GLB_LKP_NameTitle">
+        <PropertyRef Name="TitleCode" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="TitleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_SalaryGradesHR_Employee">
+    <End Role="HR_LKP_SalaryGrades" Type="HRDBModel.HR_LKP_SalaryGrades" Multiplicity="1" />
+    <End Role="HR_Employee" Type="HRDBModel.HR_Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_SalaryGrades">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Principal>
+      <Dependent Role="HR_Employee">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LK_CountryHR_LK_Currency">
+    <End Role="HR_LK_Currency" Type="HRDBModel.HR_LK_Currency" Multiplicity="1" />
+    <End Role="HR_LKP_Country" Type="HRDBModel.HR_LKP_Country" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LK_Currency">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="HR_LKP_Country">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LK_CountryHR_Locations">
+    <End Role="HR_LKP_Country" Type="HRDBModel.HR_LKP_Country" Multiplicity="1" />
+    <End Role="HR_Locations" Type="HRDBModel.HR_Locations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_Country">
+        <PropertyRef Name="CountryCode" />
+      </Principal>
+      <Dependent Role="HR_Locations">
+        <PropertyRef Name="CountryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HR_LKP_SalaryGradeDetailsHR_LKP_SalaryGrades">
+    <End Role="HR_LKP_SalaryGrades" Type="HRDBModel.HR_LKP_SalaryGrades" Multiplicity="1" />
+    <End Role="HR_LKP_SalaryGradeDetails" Type="HRDBModel.HR_LKP_SalaryGradeDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HR_LKP_SalaryGrades">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Principal>
+      <Dependent Role="HR_LKP_SalaryGradeDetails">
+        <PropertyRef Name="SalaryGradeCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

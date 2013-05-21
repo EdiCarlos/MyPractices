@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+void foo(int i, int j = 30)
+{
+cout<<i + j<<endl;
+cout<<"value of i "<<i<<endl;
+cout<<"value of j "<<j<<endl;
+}
+int main()
+{
+foo(20, 20);
+}

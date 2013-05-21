@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="82d7aeb6-36be-4293-b78b-ebf4736923bd" name="axkhan2@WD-XPA6GCAEJ037 2012-12-26 13:51:07" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="60d2611c-ed31-4dc8-9970-8070981fe519">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="axkhan2_WD-XPA6GCAEJ037 2012-12-26 13_51_07">
+      <DeploymentItem filename="D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest\bin\Debug\AutomateUnitTest.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-26T13:51:07.1970496+05:30" queuing="2012-12-26T13:51:10.2595104+05:30" start="2012-12-26T13:51:10.3220096+05:30" finish="2012-12-26T13:51:15.1344480+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AdditionTest" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="b4588f87-32e5-cf36-428d-a6e5fa89780f">
+      <Execution id="f722366c-f46a-49e9-a73d-8aaba66939c9" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.ProgramTest, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AdditionTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b4588f87-32e5-cf36-428d-a6e5fa89780f" executionId="f722366c-f46a-49e9-a73d-8aaba66939c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f722366c-f46a-49e9-a73d-8aaba66939c9" testId="b4588f87-32e5-cf36-428d-a6e5fa89780f" testName="AdditionTest" computerName="WD-XPA6GCAEJ037" duration="00:00:00.2552195" startTime="2012-12-26T13:51:10.4313832+05:30" endTime="2012-12-26T13:51:14.2438344+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f722366c-f46a-49e9-a73d-8aaba66939c9">
+    </UnitTestResult>
+  </Results>
+</TestRun>

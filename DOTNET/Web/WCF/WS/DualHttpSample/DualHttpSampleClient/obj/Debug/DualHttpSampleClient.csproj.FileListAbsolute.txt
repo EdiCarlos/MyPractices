@@ -1,0 +1,8 @@
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleClient\bin\Debug\DualHttpSampleClient.exe.config
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleClient\bin\Debug\DualHttpSampleClient.exe
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleClient\bin\Debug\DualHttpSampleClient.pdb
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleClient\obj\Debug\DualHttpSampleClient.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleClient\obj\Debug\DualHttpSampleClient.exe
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleClient\obj\Debug\DualHttpSampleClient.pdb
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleClient\bin\Debug\DualHttpSample.dll
+D:\MyPractices\Web\WCF\WS\DualHttpSample\DualHttpSampleClient\bin\Debug\DualHttpSample.pdb

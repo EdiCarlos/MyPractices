@@ -1,0 +1,8 @@
+D:\temp\VisualC#\FileSearcher\SearchForFile\SearchForFile\bin\Debug\SearchForFile.exe
+D:\temp\VisualC#\FileSearcher\SearchForFile\SearchForFile\bin\Debug\SearchForFile.pdb
+D:\temp\VisualC#\FileSearcher\SearchForFile\SearchForFile\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\FileSearcher\SearchForFile\SearchForFile\obj\Debug\SearchForFile.Form1.resources
+D:\temp\VisualC#\FileSearcher\SearchForFile\SearchForFile\obj\Debug\SearchForFile.Properties.Resources.resources
+D:\temp\VisualC#\FileSearcher\SearchForFile\SearchForFile\obj\Debug\SearchForFile.csproj.GenerateResource.Cache
+D:\temp\VisualC#\FileSearcher\SearchForFile\SearchForFile\obj\Debug\SearchForFile.exe
+D:\temp\VisualC#\FileSearcher\SearchForFile\SearchForFile\obj\Debug\SearchForFile.pdb

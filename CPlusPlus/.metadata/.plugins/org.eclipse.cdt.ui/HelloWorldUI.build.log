@@ -1,0 +1,10 @@
+
+**** Rebuild of configuration Debug for project HelloWorldUI ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o HelloWorldUIMessageBox.o ..\HelloWorldUIMessageBox.cpp
+g++ -o HelloWorldUI.exe HelloWorldUIMessageBox.o
+c:/mingw/bin/../lib/gcc/mingw32/4.7.0/../../../libmingw32.a(main.o):main.c:(.text.startup+0xa7): undefined reference to `_WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 281  ms.  

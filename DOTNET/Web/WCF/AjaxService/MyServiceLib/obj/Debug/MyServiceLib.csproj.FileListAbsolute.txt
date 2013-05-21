@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\MyServiceLib\bin\Debug\MyServiceLib.dll.config
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\MyServiceLib\bin\Debug\MyServiceLib.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\MyServiceLib\bin\Debug\MyServiceLib.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\MyServiceLib\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\MyServiceLib\obj\Debug\MyServiceLib.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\AjaxService\MyServiceLib\obj\Debug\MyServiceLib.pdb

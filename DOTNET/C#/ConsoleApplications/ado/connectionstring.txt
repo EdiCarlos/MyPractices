@@ -1,0 +1,20 @@
+OleDbConnection con = new OleDbConnection("Provider=VFPOLEDB.1;Data Source=D:\\");
+try
+{
+con.Open();
+OleDbCommand cmd = new OleDbCommand(@"select * from d:\temp\mtab.dbf", con);
+dOleDbDataReader read = cmd.ExecuteReader();
+
+while(read.Read())
+{
+Console.WriteLine(read[1].ToString()+ " " + read[2].ToString() + " " + read[3].ToString());
+}
+}
+catch(OleDbException e)
+{
+Console.WriteLine(e.Message);
+}
+finally
+{
+con.Close();
+}

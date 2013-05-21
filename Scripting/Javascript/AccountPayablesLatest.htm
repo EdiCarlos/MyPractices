@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+</head>
+<body>
+<span id="ReportType">
+</span>
+<span id="customStatusLabel" style="display:none;">
+</span>
+<span id="customStatus" style="display:none;">
+</span>
+<script type="text/javascript">
+
+// Deselects all the checked from items
+function DeSelectCustom() {
+    var fW = (typeof getFormWarpRequest == "function" ? getFormWarpRequest() : document.forms["formWarpRequest"]);
+    if (!fW || fW == undefined) {
+        fW = (formWarpRequest_THIS_ ? formWarpRequest_THIS_ : formWarpRequest_NS_);
+        //alert ("Error ...");
+    }
+    try {
+        var prompt = fW._oLstChoiceslistCustomFin;
+        for (var x = 0; x < prompt.length; x++) {
+            if (prompt[x].checked) {
+                prompt[x].checked = false;
+            }
+        }
+    }
+    catch (err) {
+        alert(err.description);
+    }
+}
+
+function SelectCustom(prompt, arr) {
+    //begin of outer loop
+    for (var x = 0; x < prompt.length; x++) {
+        //begin of inner loop
+        for (var i = 0; i < arr.length; i++) {
+            //check with array list
+            if (prompt[x].value.toString() == arr[i].toString()) {
+                alert("Checking " + prompt[x].value);
+                prompt[x].checked = true; //is matching set it true
+            }
+            else {
+                prompt[x].checked = false; //if not matchin set it false
+            }
+        }
+    }
+}
+
+
+
+var fW = (typeof getFormWarpRequest == "function" ? getFormWarpRequest() : document.forms["formWarpRequest"]);
+if (!fW || fW == undefined) {
+    fW = (formWarpRequest_THIS_ ? formWarpRequest_THIS_ : formWarpRequest_NS_);
+}
+function GetPrompt(block) {
+    var sp1 = document.getElementById(block);
+    var inp = sp1.getElementsByTagName("input");
+    var arr = new Array(inp.length - 1);
+    for (var x = 0; x < inp.length; x++) {
+        if (x == 0) {
+            continue;
+        }
+        arr[x - 1] = inp[x];
+    }
+    return arr;
+}
+//function which checks if user has Clicked on any of the option available in Custom Financial Status
+//var prompt = fW._oLstChoiceslistCustomFin;
+var prompt = GetPrompt("customStatus");
+var dt = fW._oLstChoicesdateType;
+var cmb = fW._oLstChoicesreportType;
+
+//if exists function check if value in combo box exists
+function ifExists(cmb, val) {
+    try {
+        for (var x = 0; x < cmb.length; x++) {
+            if (cmb.options[x].value.toString().toUpperCase() == val.toString().toUpperCase()) {
+                return true;
+            }
+        }
+    }
+    catch (err) {
+        var mess = "Error in function ifExists. \r\n";
+        mess += "Error Description : " + err.description;
+        alert(mess);
+    }
+    return false;
+}
+//add list of arrays in a combo box
+function AddList(cmb, list) {
+    try {
+        for (var x = 0; x < list.length; x++) {
+            var ele = new Option(list[x][0], list[x][1]);
+            if (!ifExists(cmb, list[x][1])) {
+                cmb.add(ele, cmb.length);
+            }
+        }
+    }
+    catch (err) {
+        var mess = "Error in function AddList ";
+        mess += "Error Description : " + err.description;
+        alert(mess);
+    }
+}
+//Clears the combox
+function ClearCombo(cmb) {
+    try {
+        if (cmb.length > 2) {
+            var tempLen = cmb.length;
+            for (var x = 2; x < tempLen; x++) {
+                cmb.remove(2);
+            }
+        }
+    }
+    catch (err) {
+        var mess = "Error in function ClearCombo";
+        mess += "Error Description : " + err.description;
+        alert(mess);
+    }
+}
+function setDefaultForCustom(cmb, val) {
+    for (var x = 0; x < cmb.length; x++) {
+        if (cmb[x].value.toString() == val.toString()) {
+            cmb.selectedIndex = x;
+        }
+    }
+}
+function setDefaultForCustomA(cmb, val) {
+    for (var x = 0; x < cmb.length; x++) {
+        if (cmb[x].selected) {
+            cmb[x].selectedIndex = x;
+        }
+        //if(cmb[x].value.toString() == val.toString())
+        //{
+        //cmb.selectedIndex = x;
+        //}
+    }
+}
+
+function CheckFinancial() {
+    if (!prompt[0].checked && !prompt[2].checked && !prompt[3].checked && !prompt[4].checked && !prompt[5].checked && !prompt[8].checked) {
+        if (prompt[1].checked || prompt[6].checked || prompt[7].checked) {
+            ClearCombo(dt);
+            AddList(dt, approvalList);
+            setDefaultForCustom(dt, '6');
+        }
+        //if Only PI is selected then only show payment list
+        if (!prompt[1].checked && prompt[6].checked && !prompt[7].checked) {
+            ClearCombo(dt);
+            AddList(dt, paymentList);
+            setDefaultForCustom(dt, '6');
+        }
+        //if Only PI and PS are selected then only show payment list
+        if (!prompt[1].checked && prompt[6].checked && prompt[7].checked) {
+            ClearCombo(dt);
+            AddList(dt, paymentList);
+            setDefaultForCustom(dt, '6');
+        }
+        if (!prompt[1].checked && !prompt[6].checked && prompt[7].checked) {
+            ClearCombo(dt);
+            AddList(dt, mainList);
+            setDefaultForCustom(dt, '6');
+        }
+    }
+    else {
+        ClearCombo(dt);
+        AddList(dt, customList);
+        setDefaultForCustom(dt, '6');
+    }
+}
+function CheckFinancialA(def) {
+    if (!prompt[0].checked && !prompt[2].checked && !prompt[3].checked && !prompt[4].checked && !prompt[5].checked && !prompt[8].checked) {
+        if (prompt[1].checked || prompt[6].checked || prompt[7].checked) {
+            ClearCombo(dt);
+            AddList(dt, approvalList);
+            setDefaultForCustom(dt, def);
+        }
+        //if Only PI is selected then only show payment list
+        if (!prompt[1].checked && prompt[6].checked && !prompt[7].checked) {
+            ClearCombo(dt);
+            AddList(dt, paymentList);
+            setDefaultForCustom(dt, def);
+        }
+        //if Only PI and PS are selected then only show payment list
+        if (!prompt[1].checked && prompt[6].checked && prompt[7].checked) {
+            ClearCombo(dt);
+            AddList(dt, paymentList);
+            setDefaultForCustom(dt, def);
+        }
+        if (!prompt[1].checked && !prompt[6].checked && prompt[7].checked) {
+            ClearCombo(dt);
+            AddList(dt, mainList);
+            setDefaultForCustom(dt, '6');
+        }
+    }
+    else {
+        ClearCombo(dt);
+        AddList(dt, customList);
+        setDefaultForCustom(dt, def);
+    }
+}
+
+function cmbItemSelected() {
+    var curdate = new Date();
+    if (cmb.selectedIndex == 2)//if call for fund is selected the select Payment Initiated date
+    {
+        ClearCombo(dt);
+        AddList(dt, callList);
+        dt.selectedIndex = 2; //Payment initiated date
+        //set the from date to seven days ago
+        var dDate = new Date();
+        dDate.setDate(dDate.getDate() - 7);
+        try {
+            pickerControlmyFromDate1.setValue(getFormatDate(dDate, 0, 'YMD')); //sets the from date to seven days ago
+            pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD')); //sets the to date to current date
+        }
+        catch (err) {
+        }
+        DeSelectCustom();
+        prompt[6].checked = true;
+    }
+    else {
+        //pickerControlmyFromDate1.setValue(getFormatDate(curdate, 0 , 'YMD'));//sets the from date to current date
+        //pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+    }
+    if (cmb.selectedIndex == 3)//if Actual(paid) is selected the select Payment settled date
+    {
+        ClearCombo(dt);
+        AddList(dt, actualList);
+        dt.selectedIndex = 2; //Payment settled date
+        //set the from date to seven days ago
+        var dDate = new Date();
+        dDate.setDate(dDate.getDate() - 7);
+        try {
+            pickerControlmyFromDate1.setValue(getFormatDate(dDate, 0, 'YMD')); //sets the from date to seven days ago
+            pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD')); //sets the to date to current date
+        }
+        catch (err) {
+        }
+        DeSelectCustom();
+        prompt[7].checked = true;
+    }
+    else {
+        //pickerControlmyFromDate1.setValue(getFormatDate(curdate, 0 , 'YMD'));//sets the from date to current date
+        //pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+    }
+    if (cmb.selectedIndex == 4) //if accural is selected the select Financial status date
+    {
+        ClearCombo(dt);
+        AddList(dt, accrualList);
+        dt.selectedIndex = 2; //Financial status date 
+        //set the from date to seven days ago
+        var dDate = new Date();
+        dDate.setDate(dDate.getDate() - 30);
+        try {
+            pickerControlmyFromDate1.setValue(getFormatDate(dDate, 0, 'YMD')); //sets the from date to seven days ago
+            pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD')); //sets the to date to current date
+        }
+        catch (err) {
+        }
+        DeSelectCustom();
+        prompt[0].checked = true;
+        prompt[1].checked = true;
+        prompt[4].checked = true;
+        prompt[5].checked = true;
+        prompt[8].checked = true;
+    }
+    else {
+        //pickerControlmyFromDate1.setValue(getFormatDate(curdate, 0 , 'YMD'));//sets the from date to current date
+        //pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD'));//sets the to date to current date
+    }
+    if (cmb.selectedIndex == 5)//if custom is selected the select Issue date
+    {
+        ClearCombo(dt);
+        AddList(dt, customList);
+        setDefaultForCustom(dt, '6'); //Select Financial status date
+        try {
+            document.getElementById("customStatus").style.display = 'block'; //shows the cusom Report financial status block
+            document.getElementById("customStatusLabel").style.display = 'block';
+        }
+        catch (err) {
+            alert(err.description);
+        }
+        try {
+            pickerControlmyFromDate1.setValue(getFormatDate(curdate, 0, 'YMD')); //sets the from date to current date
+            pickerControlmyToDate.setValue(getFormatDate(curdate, 0, 'YMD')); //sets the to date to current date
+        }
+        catch (err) {
+        }
+        DeSelectCustom();
+        prompt[0].checked = true;
+        prompt[1].checked = true;
+        prompt[2].checked = true;
+        prompt[3].checked = true;
+        prompt[4].checked = true;
+        prompt[5].checked = true;
+        prompt[8].checked = true;
+    }
+    else {
+        try {
+            document.getElementById("customStatus").style.display = 'none'; //hides the cusom Report financial status block
+            document.getElementById("customStatusLabel").style.display = 'none';
+        }
+        catch (err) {
+            alert(err.description);
+        }
+    }
+}
+//Call the function cmbSelected so that it checks if call for fund is selected the It should display only relevant item in DateType comboBox
+cmb.onchange = cmbItemSelected;
+
+
+</script>
+
+
+
+</body>
+</html>

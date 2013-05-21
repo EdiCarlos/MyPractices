@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wwHTTP", "wwHTTP.csproj", "{3E46C988-658E-4E27-822C-6A3B0A9B983F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3E46C988-658E-4E27-822C-6A3B0A9B983F}.Debug.ActiveCfg = Debug|.NET
+		{3E46C988-658E-4E27-822C-6A3B0A9B983F}.Debug.Build.0 = Debug|.NET
+		{3E46C988-658E-4E27-822C-6A3B0A9B983F}.Release.ActiveCfg = Release|.NET
+		{3E46C988-658E-4E27-822C-6A3B0A9B983F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

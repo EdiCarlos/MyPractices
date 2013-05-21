@@ -1,0 +1,13 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\EntLibConfig.exe.config
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\EntLibConfig.exe
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\EntLibConfig.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\Shell.baml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\Shell.g.cs
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\App.g.cs
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\EntLibConfig_MarkupCompile.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\EntLibConfig.g.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Console.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\Configuration.Console.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\EntLibConfig.exe
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\Console\obj\Debug\EntLibConfig.pdb

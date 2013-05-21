@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+   <title>Untitled Page</title>
+</head>
+<body>
+<table border="1">
+<thead>
+<tr>
+<th>
+ID
+</th>
+<th>
+First Name</th>
+<th>
+Last Name</th>
+</tr>
+</thead>
+<tr id="Tr0">
+<td>Arif</td>
+<td>Khan</td>
+<td>Hasan</td>
+</tr>
+<tr id="Tr1">
+<td>Afreen</td>
+<td>Khan</td>
+<td>Shakeel</td>
+</tr>
+<tr id="Tr2">
+<td>Noor</td>
+<td>Mohammed</td>
+<td>Hasan</td>
+</tr>
+<tr id="Tr3">
+<td>Noor</td>
+<td>Mohammed</td>
+<td>Hasan</td>
+</tr>
+<tr id="Tr4">
+<td>Noor</td>
+<td>Mohammed</td>
+<td>Hasan</td>
+</tr>
+<tr id="Tr5">
+<td>Noor</td>
+<td>Mohammed</td>
+<td>Hasan</td>
+</tr>
+<tr id="Tr6">
+<td>Noor</td>
+<td>Mohammed</td>
+<td>Hasan</td>
+</tr>
+<tr id="Tr7">
+<td>Noor</td>
+<td>Mohammed</td>
+<td>Hasan</td>
+</tr>
+<tr id="Tr8">
+<td>Noor</td>
+<td>Mohammed</td>
+<td>Hasan</td>
+</tr>
+
+<tfoot>
+<tr>
+<td colspan="2">
+<input type="button" id="btn1" value="Hide"  />
+<input type="button" id="btn2" value="Show"  />
+</td>
+</tr>
+</tfoot>
+</table>
+<p>
+This is paragraph</p>
+<script type="text/javascript">
+    $(document).ready(function () { $("#btn1").click(function () { $("#Tr1").hide(); }) });
+    $(document).ready(function () { $("#btn2").click(function () { $("#Tr1").show(); }) });
+
+    $(document).ready(function () {
+
+        $("tr:odd").css("background", "green").css("color", "white");
+        $("tr:even").css("background", "yellowgreen").css("color", "white");
+        $("tr:first").css("background", "blue").css("color", "white");
+        $("tr:last").css("background", "white");
+
+    });
+    $(document).ready(function () { $("body").css("backgournd", "black"); });
+</script>
+</body>
+</html>

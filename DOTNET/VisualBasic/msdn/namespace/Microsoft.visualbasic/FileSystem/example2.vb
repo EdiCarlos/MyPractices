@@ -1,0 +1,56 @@
+Module Module1
+
+Sub Main()
+
+'Console.WriteLine(CurDir)
+'ChDrive("d:")
+'Console.WriteLine(CurDir)
+Dim arr() as Integer = new Integer(13){}
+
+for i as Integer = 0 to 10 
+arr(i) = i + 1
+next
+ 
+for each i as Integer in arr
+ Console.WriteLine(i)
+ next
+ Console.WriteLine("Begining of while loop")
+ Dim j as Integer = 0
+
+while j < 10 
+j += 1
+Console.WriteLine(j)
+end while
+
+Console.WriteLine("Begining of do loop")
+
+do while j < 20
+Console.WriteLine(j)
+j += 1
+loop
+
+Console.WriteLine("Begining of do until loop")
+
+do until j = 50
+Console.WriteLine(j)
+j += 1
+loop
+
+Console.WriteLine("Do while loop again")
+
+do 
+Console.WriteLine(j)
+j += 1
+loop while j <= 100
+
+Console.WriteLine("Begining of do until loop")
+
+do 
+Console.WriteLine(j)
+j += 1
+loop until j = 200
+
+
+End Sub
+
+end Module

@@ -1,0 +1,17 @@
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\LoginControl.baml
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\LoginControl.g.cs
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\MainWindow.g.cs
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\App.g.cs
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\WindowSample_MarkupCompile.cache
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\WindowSample_MarkupCompile.lref
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\WindowSample.exe
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\WindowSample.pdb
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\bin\Debug\WindowSample.exe
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\bin\Debug\WindowSample.pdb
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\MainWindow.baml
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\WindowSample.g.resources
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\WindowSample.Properties.Resources.resources
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\DOTNET\WPF\WindowSample\WindowSample\obj\x86\Debug\GenerateResource.write.1.tlog

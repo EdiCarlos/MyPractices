@@ -1,0 +1,7 @@
+Module Exe
+Sub Main()
+Dim choice as Integer = CInt(Console.ReadLine())
+Console.WriteLine(Choose(choice , 1, 2,3,4,5))
+
+End Sub
+End Module

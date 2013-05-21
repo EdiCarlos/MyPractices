@@ -1,0 +1,17 @@
+Module mod1
+class mycls
+shared str as String
+properties Function Str() as String
+get
+return str
+end get
+set 
+str = value
+end set
+End function 
+end class
+sub Main()
+mycls.Str = "arif"
+Console.WriteLine(myclass.Str)
+end sub
+End Module

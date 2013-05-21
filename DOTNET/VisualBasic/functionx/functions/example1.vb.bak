@@ -1,0 +1,15 @@
+Module Module1
+Dim str$ = "arif Khan"
+
+Function getName$()
+return "arif khan"
+End Function
+Function getFull$()
+getFull "arif khan bannehasan"
+End Function
+Sub Main()
+Console.WriteLine(getName())
+Console.WriteLine(str)
+Console.WriteLine(getFull())
+End Sub
+End Module

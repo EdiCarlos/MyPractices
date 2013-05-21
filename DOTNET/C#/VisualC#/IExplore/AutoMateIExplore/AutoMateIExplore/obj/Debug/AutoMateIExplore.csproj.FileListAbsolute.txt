@@ -1,0 +1,8 @@
+D:\temp\VisualC#\IExplore\AutoMateIExplore\AutoMateIExplore\bin\Debug\AutoMateIExplore.exe
+D:\temp\VisualC#\IExplore\AutoMateIExplore\AutoMateIExplore\bin\Debug\AutoMateIExplore.pdb
+D:\temp\VisualC#\IExplore\AutoMateIExplore\AutoMateIExplore\bin\Debug\Interop.SHDocVw.dll
+D:\temp\VisualC#\IExplore\AutoMateIExplore\AutoMateIExplore\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\IExplore\AutoMateIExplore\AutoMateIExplore\obj\Debug\Interop.SHDocVw.dll
+D:\temp\VisualC#\IExplore\AutoMateIExplore\AutoMateIExplore\obj\Debug\AutoMateIExplore.csproj.ResolveComReference.cache
+D:\temp\VisualC#\IExplore\AutoMateIExplore\AutoMateIExplore\obj\Debug\AutoMateIExplore.exe
+D:\temp\VisualC#\IExplore\AutoMateIExplore\AutoMateIExplore\obj\Debug\AutoMateIExplore.pdb

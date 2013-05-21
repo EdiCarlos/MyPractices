@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyBlogModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MyBlogEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="BlogPosts" EntityType="MyBlogModel.BlogPost" />
+    <EntitySet Name="Blogs" EntityType="MyBlogModel.Blog" />
+    <AssociationSet Name="FK_BlogsBlogPost" Association="MyBlogModel.FK_BlogsBlogPost">
+      <End Role="Blogs" EntitySet="Blogs" />
+      <End Role="BlogPosts" EntitySet="BlogPosts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BlogPost">
+    <Key>
+      <PropertyRef Name="PostID" />
+    </Key>
+    <Property Name="PostID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="BlogID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Post" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="TStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Blog" Relationship="MyBlogModel.FK_BlogsBlogPost" FromRole="BlogPosts" ToRole="Blogs" />
+  </EntityType>
+  <EntityType Name="Blog">
+    <Key>
+      <PropertyRef Name="BlogID" />
+    </Key>
+    <Property Name="BlogID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="TStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="BlogPosts" Relationship="MyBlogModel.FK_BlogsBlogPost" FromRole="Blogs" ToRole="BlogPosts" />
+  </EntityType>
+  <Association Name="FK_BlogsBlogPost">
+    <End Role="Blogs" Type="MyBlogModel.Blog" Multiplicity="1" />
+    <End Role="BlogPosts" Type="MyBlogModel.BlogPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Blogs">
+        <PropertyRef Name="BlogID" />
+      </Principal>
+      <Dependent Role="BlogPosts">
+        <PropertyRef Name="BlogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

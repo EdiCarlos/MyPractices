@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\EntityFramework\ModelFirstSample\ModeFirstSample\bin\Debug\ModeFirstSample.exe
+D:\MyPractices\DOTNET\EntityFramework\ModelFirstSample\ModeFirstSample\bin\Debug\ModeFirstSample.pdb
+D:\MyPractices\DOTNET\EntityFramework\ModelFirstSample\ModeFirstSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\EntityFramework\ModelFirstSample\ModeFirstSample\obj\x86\Debug\ModeFirstSample.exe
+D:\MyPractices\DOTNET\EntityFramework\ModelFirstSample\ModeFirstSample\obj\x86\Debug\ModeFirstSample.pdb

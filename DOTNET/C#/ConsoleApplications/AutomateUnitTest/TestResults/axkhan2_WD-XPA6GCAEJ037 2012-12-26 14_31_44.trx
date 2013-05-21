@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="241d2557-d637-4fb9-9905-09501a754105" name="axkhan2@WD-XPA6GCAEJ037 2012-12-26 14:31:44" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="60d2611c-ed31-4dc8-9970-8070981fe519">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="axkhan2_WD-XPA6GCAEJ037 2012-12-26 14_31_44">
+      <DeploymentItem filename="D:\MyPractices\DOTNET\C#\ConsoleApplications\AutomateUnitTest\AutomateUnitTest\bin\Debug\AutomateUnitTest.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-26T14:31:44.0112632+05:30" queuing="2012-12-26T14:31:44.3393840+05:30" start="2012-12-26T14:31:44.3706336+05:30" finish="2012-12-26T14:31:44.8393776+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RunTest" storage="d:\mypractices\dotnet\c#\consoleapplications\automateunittest\automateunittest.unittest\bin\debug\automateunittest.unittest.dll" id="13677812-2b29-30dd-9331-8d956ee1838d">
+      <Execution id="d190df18-1543-40de-9968-7f369c8cb6a9" />
+      <TestMethod codeBase="D:/MyPractices/DOTNET/C#/ConsoleApplications/AutomateUnitTest/AutomateUnitTest.UnitTest/bin/Debug/AutomateUnitTest.UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AutomateUnitTest.UnitTest.ProgramTest, AutomateUnitTest.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RunTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="13677812-2b29-30dd-9331-8d956ee1838d" executionId="d190df18-1543-40de-9968-7f369c8cb6a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d190df18-1543-40de-9968-7f369c8cb6a9" testId="13677812-2b29-30dd-9331-8d956ee1838d" testName="RunTest" computerName="WD-XPA6GCAEJ037" duration="00:00:00.0328114" startTime="2012-12-26T14:31:44.3862584+05:30" endTime="2012-12-26T14:31:44.8081280+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d190df18-1543-40de-9968-7f369c8cb6a9">
+      <Output>
+        <StdOut>Hello world</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,745 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PT.Framework.Common</name>
+    </assembly>
+    <members>
+        <member name="T:PT.Framework.Common.PTBusinessObjectBase">
+            <summary>
+            Summary description for PTBusinessObjectBase.
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTBusinessObjectBase.TRACE(System.String)">
+            <summary>
+            Writes a string to the Trace Window
+            </summary>
+            <param name="sLine">The string to write</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTBusinessObjectBase.#ctor">
+            <summary>
+            Empty constructor
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.PTDatabase">
+            <summary>
+            Summary description for PTDatabase.
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry object 
+            entry to open the desired Database</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.Data.SqlClient.SqlCommand,System.Object[])">
+            <summary>
+            Constructor
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry object
+            entry to open the desired Database</param>
+            <param name="cmd">A list of SQL Command objects to connect to the Database</param>
+            <param name="more_adapters">A list of SQL Command objects to connect to the Database</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.Data.SqlClient.SqlDataAdapter)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry object
+            entry to open the desired Database</param>
+            <param name="da">An SQL Data Adapter object to connect to the Database</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.Data.SqlClient.SqlDataAdapter,System.Object[])">
+            <summary>
+            Constructor
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry object
+            entry to open the desired Database</param>
+            <param name="da">A list of SQL Data Adapter objects to connect to the Database</param>
+            <param name="more_adapters">A list of SQL Command objects to connect to the Database</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.Data.IsolationLevel)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry object
+            entry to open the desired Database</param>
+            <param name="isolationLevel">The desired Isolation Level to use for this transaction</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.Data.IsolationLevel,System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry object
+            entry to open the desired Database</param>
+            <param name="isolationLevel">The desired Isolation Level to use for this transaction</param>
+            <param name="cmd">An SQL Command object to connect to the Database</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.Data.IsolationLevel,System.Data.SqlClient.SqlCommand,System.Object[])">
+            <summary>
+            Constructor
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry object
+            entry to open the desired Database</param>
+            <param name="isolationLevel">The desired Isolation Level to use for this transaction</param>
+            <param name="cmd">A list of SQL Command objects to connect to the Database</param>
+            <param name="more_adapters">A list of SQL Command objects to connect to the Database</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.Data.IsolationLevel,System.Data.SqlClient.SqlDataAdapter)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry object
+            entry to open the desired Database</param>
+            <param name="isolationLevel">The desired Isolation Level to use for this transaction</param>
+            <param name="da">An SQL Data Adapter object to connect to the Database</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.Data.IsolationLevel,System.Data.SqlClient.SqlDataAdapter,System.Object[])">
+            <summary>
+            Constructor
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry 
+            entry to open the desired Database</param>
+            <param name="isolationLevel">The desired Isolation Level to use for this transaction</param>
+            <param name="da">A list of SQL Data Adapter objects to connect to the Database</param>
+            <param name="more_adapters">A list of SQL Command objects to connect to the Database</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.Finalize">
+            <summary>
+            Destructor
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.Dispose">
+            <summary>
+            Closes the Database and the Transaction
+            The Transaction is rolled back if it hasn't beed commited until this point
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.Dispose(System.Boolean)">
+            <summary>
+            Closes the Database and the Transaction
+            The Transaction is rolled back if it hasn't beed commited until this point
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.Connect(PT.Framework.Common.PTDatabaseRegistryInfo)">
+            <summary>
+            Connects to a Database without opening a Transaction
+            </summary>
+            <param name="regInfo">The proper registry</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.Connect(PT.Framework.Common.PTDatabaseRegistryInfo,System.Data.IsolationLevel)">
+            <summary>
+            Connects to a Database and opens a Transaction
+            </summary>
+            <param name="regInfo">The PTDatabaseRegistryInfo registry 
+            entry to open the desired Database</param>
+            <param name="isolationLevel">The desired Isolation Level to use for this transaction</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.Commit">
+            <summary>
+            Updates the database with any changes made to the enlisted datasets
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.ConnectCommand(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Connects to a command object to the Database
+            </summary>
+            <param name="cmd">The SQL Command object you want to connect</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabase.ConnectAdapter(System.Data.SqlClient.SqlDataAdapter)">
+            <summary>
+            Connects to an adapter object to the Database
+            </summary>
+            <param name="adapter">The SQL Data Adapter object you want to connect</param>
+        </member>
+        <member name="F:PT.Framework.Common.PTDatabase._sqlTransaction">
+            <summary>
+            Transaction object
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTDatabase._sqlConnection">
+            <summary>
+            Connection object
+            </summary>
+        </member>
+        <member name="P:PT.Framework.Common.PTDatabase.IsConnected">
+            <summary>
+            Evaluates whether this object has an open connection to the database or not
+            </summary>
+            <returns>
+            Returns true if connected, false otherwise
+            </returns>
+        </member>
+        <member name="P:PT.Framework.Common.PTDatabase.Connection">
+            <summary>
+            Exposes the database connaction
+            </summary>
+            <returns>
+            Returns the SqlConnection object
+            </returns>
+        </member>
+        <member name="T:PT.Framework.Common.PTDatabaseRegistryInfo">
+            <summary>
+            Caches database registry info
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabaseRegistryInfo.#ctor(System.String,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="baseName">The prefix string of the entries in registry</param>
+            <param name="forceEncryption">Force Encryptionfor Server, database, userID, password</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTDatabaseRegistryInfo.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="baseName">The prefix string of the entries in registry</param>
+        </member>
+        <member name="F:PT.Framework.Common.PTDatabaseRegistryInfo.Server">
+            <summary>
+            Server name in the registry
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTDatabaseRegistryInfo.Database">
+            <summary>
+            Database name in the registry
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTDatabaseRegistryInfo.UserID">
+            <summary>
+            UserID in the registry
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTDatabaseRegistryInfo.Password">
+            <summary>
+            Password in the Registry
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.PTException">
+            <summary>
+            Summary description for PTException.
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTException.#ctor(System.String)">
+            <summary>
+            Constructor accepting a single string message
+            </summary>
+            <param name="message">Error message/description</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor accepting a string message and an inner exception which will be wrapped by this exception
+            </summary>
+            <param name="message">Error message/description</param>
+            <param name="inner">Inner exception to wrap into this exception</param>
+        </member>
+        <member name="P:PT.Framework.Common.PTException.ServerName">
+            <summary>
+            Name of the server that the exception occured on.
+            </summary>
+        </member>
+        <member name="P:PT.Framework.Common.PTException.TimeOfOccurrence">
+            <summary>
+            Time that the exception occurred at.
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.PTGlobalCacheEntry">
+            <summary>
+            PTGlobalCacheEntry
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTGlobalCacheEntry.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.String)">
+            <summary>
+            PTGlobalCacheEntry
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCacheEntry._dri">
+            <summary>
+            _dri
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCacheEntry._sp">
+            <summary>
+            _sp
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTGlobalCacheEntry._Retrieve(System.String)">
+            <summary>
+            _Retrieve
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTGlobalCacheEntry._Cache(System.String,PT.Framework.Common.PTGlobalCacheDS)">
+            <summary>
+            _Cache
+            </summary>
+        </member>
+        <member name="P:PT.Framework.Common.PTGlobalCacheEntry.DataView">
+            <summary>
+            DataView
+            </summary>
+        </member>
+        <member name="P:PT.Framework.Common.PTGlobalCacheEntry.DataSet">
+            <summary>
+            PTGlobalCacheDS
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.PTStateCache">
+            <summary>
+            PTStateCache
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTStateCache.#ctor(PT.Framework.Common.PTDatabaseRegistryInfo,System.String,System.String)">
+            <summary>
+            PTStateCache
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTStateCache._CountryID">
+            <summary>
+            _CountryID
+            </summary>
+        </member>
+        <member name="P:PT.Framework.Common.PTStateCache.DataSet">
+            <summary>
+            PTGlobalCacheDS
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.PTGlobalCache">
+            <summary>
+            PTGlobalCache
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.ShipmentType">
+            <summary>
+            PTGlobalCache
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.MPSTransCode">
+            <summary>
+            MPSTransCode
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTGlobalCache.State(System.String)">
+            <summary>
+            State
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.Country">
+            <summary>
+            Country
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.ServiceLevel">
+            <summary>
+            ServiceLevel
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.FreightTerm">
+            <summary>
+            FreightTerm
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.IndustryCode">
+            <summary>
+            IndustryCode
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.Market">
+            <summary>
+            Market
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.ShipmentMode">
+            <summary>
+            ShipmentMode
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.EBillAccessorialCode">
+            <summary>
+            EBillAccessorialCode
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.AssignmentCharacteristic">
+            <summary>
+            AssignmentCharacteristic
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.EffectiveDateType">
+            <summary>
+            EffectiveDateType
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.GLMethod">
+            <summary>
+            GLMethod
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.GLSegment">
+            <summary>
+            GLSegment
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.GLStatus">
+            <summary>
+            GLStatus
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.Sector">
+            <summary>
+            Sector
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.FinancialCode">
+            <summary>
+            FinancialCode
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.DocumentationStatus">
+            <summary>
+            DocumentationStatus
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTGlobalCache.FulfillmentStatus">
+            <summary>
+            FulfillmentStatus
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.PTKeyGenerator">
+            <summary>
+            Summary description for PTKeyGenerator.
+            PTKeyGenerator.Singleton
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTKeyGenerator.PowerTrack">
+            <summary>
+            Key Generator's one and only instance
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.PTKeyGenerator.GLAccounting">
+            <summary>
+            Key Generator's one and only instance
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTKeyGenerator.Init(System.String)">
+            <summary>
+            Initializes the Key Generator engine
+            </summary>
+            <param name="persistencePath">The path where the PTKeyGenerator.State.xml file should live</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTKeyGenerator.Term">
+            <summary>
+            Performs cleanup of the Key Generator engine
+            </summary>
+        </member>
+        <member name="P:PT.Framework.Common.PTKeyGenerator.Item(System.String)">
+            <summary>
+            Looks up and returns a Counter by name
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.PTKeyGenerator.Counter">
+            <summary>
+            Provides programatic access to key generation functionality
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTKeyGenerator.Counter.NewID">
+            <summary>
+            Obtains a new valid unique key
+            </summary>
+            <returns>
+            Returns the new key as a 64 bit long value
+            </returns>
+        </member>
+        <member name="T:PT.Framework.Common.PTLegacyEncryption">
+            <summary>
+            Provides Legacy Encryption for reading PowerTrack registry entries.
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTLegacyEncryption.EncryptToBase64(System.String)">
+            <summary>
+            </summary>
+            <param name="strText"></param>
+        </member>
+        <member name="M:PT.Framework.Common.PTLegacyEncryption.DecryptFromBase64(System.String)">
+            <summary>
+            </summary>
+            <param name="strText"></param>
+        </member>
+        <member name="M:PT.Framework.Common.PTLegacyEncryption.Encrypt(System.String)">
+            <summary>
+            </summary>
+            <param name="strText"></param>
+        </member>
+        <member name="M:PT.Framework.Common.PTLegacyEncryption.Decrypt(System.String)">
+            <summary>
+            </summary>
+            <param name="strText"></param>
+        </member>
+        <member name="T:PT.Framework.Common.FieldMapping">
+            <summary>
+            Field mapping struct used for static Config arrays
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.FieldMapping.#ctor(System.String,System.String)">
+            <summary>
+            Constructs a FieldMapping entry with the specified data
+            </summary>
+            <param name="sourceName">The Field Name in the Database</param>
+            <param name="dataSetName">The Field Name in the DataSet</param>
+        </member>
+        <member name="F:PT.Framework.Common.FieldMapping.SourceName">
+            <summary>
+            The Field Name in the Database
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.FieldMapping.DataSetName">
+            <summary>
+            The Field Name in the DataSet
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.TableMapping">
+            <summary>
+            Table mapping used for stored procedures that return multiple tables.
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.TableMapping.#ctor(System.String,System.String,PT.Framework.Common.FieldMapping[])">
+            <summary>
+            Constructs a TableMapping.  Used to configure stored procedures that return multiple tables.
+            </summary>
+            <param name="sourceName">Table name returned from the stored procedure.  
+            Tables are numbered as such: Table, Table1, Table2, TableN ...</param>
+            <param name="dataSetName">Corresponding table name in the dataset.</param>
+            <param name="fieldMappings">Array of field mappings for the table.</param>
+        </member>
+        <member name="F:PT.Framework.Common.TableMapping.SourceName">
+            <summary>
+            Table name returned from the stored procedure.  
+            Tables are numbered as such: Table, Table1, Table2, TableN ...
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.TableMapping.DataSetName">
+            <summary>
+            Corresponding table name in the dataset.
+            </summary>
+        </member>
+        <member name="F:PT.Framework.Common.TableMapping.FieldMappings">
+            <summary>
+            Array of field mappings for the table.
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.IPTAdapterConfig">
+            <summary>
+            Provides unified access to mappings information
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.IPTAdapterConfig.ConfigAdapter(System.Data.SqlClient.SqlDataAdapter)">
+            <summary>
+            Configures the specified Data Adapter's commands (as many of them as appropriate)
+            </summary>
+            <param name="da">The Data Adapter object to configure</param>
+        </member>
+        <member name="P:PT.Framework.Common.IPTAdapterConfig.Fields">
+            <summary>
+            Field mappings array
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.IPTMultiTableAdapterConfig">
+            <summary>
+            Provides unified access to mappings with multiple tables.
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.IPTMultiTableAdapterConfig.ConfigAdapter(System.Data.SqlClient.SqlDataAdapter)">
+            <summary>
+            Configures the specified Data Adapter's commands (as many of them as appropriate)
+            </summary>
+            <param name="da">The Data Adapter object to configure</param>
+        </member>
+        <member name="P:PT.Framework.Common.IPTMultiTableAdapterConfig.Tables">
+            <summary>
+            Table mappings array
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.PTMapper">
+            <summary>
+            Mapping information utility class
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTMapper.#ctor">
+            <summary>
+            Empty Constructor
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTMapper.NewAdapter(PT.Framework.Common.IPTMultiTableAdapterConfig)">
+            <summary>
+            Creates a new configured DataAdapter for procedures that return multiple tables.
+            </summary>
+            <param name="tableConfig">The multi-table config.</param>
+            <returns>A configured DataAdapter.</returns>
+        </member>
+        <member name="M:PT.Framework.Common.PTMapper.NewAdapter(PT.Framework.Common.IPTAdapterConfig,System.String)">
+            <summary>
+            Creates a new configured Data Adapter
+            </summary>
+            <param name="tableConfig">The configuration singleton to gather  mapping information from</param>
+            <param name="tableName">The name of the target table in the DataSet this adapter will operate on</param>
+            <returns>
+            A configured Data Adapter
+            </returns>
+        </member>
+        <member name="M:PT.Framework.Common.PTMapper.NewAdapter(PT.Framework.Common.IPTAdapterConfig,System.Data.DataTable)">
+            <summary>
+            Creates a new configured Data Adapter
+            </summary>
+            <param name="tableConfig">The configuration singleton to gather  mapping information from</param>
+            <param name="table">The target table object in the DataSet this adapter will operate on</param>
+            <returns>
+            A configured Data Adapter
+            </returns>
+        </member>
+        <member name="M:PT.Framework.Common.PTMapper.NewAdapter(System.Data.SqlClient.SqlCommand,PT.Framework.Common.FieldMapping[],System.String)">
+            <summary>
+            Creates a new configured Data Adapter
+            </summary>
+            <param name="sqlSelectCmd">The Select Command object for this adapter</param>
+            <param name="fields">Fields mapping information array</param>
+            <param name="tableName">The name of the target table in the DataSet this adapter will operate on</param>
+            <returns>
+            A configured Data Adapter
+            </returns>
+        </member>
+        <member name="M:PT.Framework.Common.PTMapper.NewAdapter(System.Data.SqlClient.SqlCommand,PT.Framework.Common.FieldMapping[],System.Data.DataTable)">
+            <summary>
+            Creates a new configured Data Adapter
+            </summary>
+            <param name="sqlSelectCmd">The Select Command object for this adapter</param>
+            <param name="fields">Fields mapping information array</param>
+            <param name="table">The target table object in the DataSet this adapter will operate on</param>
+            <returns>
+            A configured Data Adapter
+            </returns>
+        </member>
+        <member name="M:PT.Framework.Common.PTMapper.SetArguments(System.Data.SqlClient.SqlCommand,System.Object[])">
+            <summary>
+            Sets the values of the arguments to the procedure parameters for a given command object
+            </summary>
+            <param name="sqlCmd">The Command object whose parameters are to be assigned values to</param>
+            <param name="args">The list of arguments in sequential order (order MUST match that of the parameters Config</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTMapper.SetArguments(System.Data.SqlClient.SqlDataAdapter,System.Object[])">
+            <summary>
+            Sets the values of the arguments to the procedure parameters for the Select Command object of a given Data Adapter
+            </summary>
+            <param name="da">The Data Adapter object whose Select Command parameters are to be assigned values to</param>
+            <param name="args">The list of arguments in sequential order (order MUST match that of the parameters Config</param>
+        </member>
+        <member name="T:PT.Framework.Common.PTStringRegistryEntry">
+            <summary>
+            Caches a String registry entrie
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTStringRegistryEntry.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="entryName">Registry entry name</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTStringRegistryEntry.#ctor(System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="entryName">Registry entry name</param>
+            <param name="subKeyName">Registry sub key name where the entry should be found</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTStringRegistryEntry.ReadValue(System.String)">
+            <summary>
+            Read
+            </summary>
+            <param name="entryName">Registry entry name</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTStringRegistryEntry.ReadValue(System.String,System.String)">
+            <summary>
+            Read
+            </summary>
+            <param name="entryName">Registry entry name</param>
+            <param name="subKeyName">Registry sub key name where the entry should be found</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTStringRegistryEntry.TryReadValue(System.String,System.String,System.String)">
+            <summary>
+            Read
+            </summary>
+            <param name="entryName">Registry entry name</param>
+            <param name="subKeyName">Registry sub key name where the entry should be found</param>
+            <param name="defaultValue">Value to return if the entry is not found</param>
+        </member>
+        <member name="F:PT.Framework.Common.PTStringRegistryEntry.Value">
+            <summary>
+            Password in the Registry
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.PTInt64RegistryEntry">
+            <summary>
+            Caches an Int64 registry entrie
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.PTInt64RegistryEntry.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="entryName">Registry entry name</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTInt64RegistryEntry.#ctor(System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="entryName">Registry entry name</param>
+            <param name="subKeyName">Registry sub key name where the entry should be found</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTInt64RegistryEntry.ReadValue(System.String)">
+            <summary>
+            Read
+            </summary>
+            <param name="entryName">Registry entry name</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTInt64RegistryEntry.ReadValue(System.String,System.String)">
+            <summary>
+            Read
+            </summary>
+            <param name="entryName">Registry entry name</param>
+            <param name="subKeyName">Registry sub key name where the entry should be found</param>
+        </member>
+        <member name="M:PT.Framework.Common.PTInt64RegistryEntry.TryReadValue(System.String,System.String,System.Int64)">
+            <summary>
+            Read
+            </summary>
+            <param name="entryName">Registry entry name</param>
+            <param name="subKeyName">Registry sub key name where the entry should be found</param>
+            <param name="defaultValue">Value to return if the entry is not found</param>
+        </member>
+        <member name="F:PT.Framework.Common.PTInt64RegistryEntry.Value">
+            <summary>
+            Password in the Registry
+            </summary>
+        </member>
+        <member name="T:PT.Framework.Common.Utils">
+            <summary>
+            Utils
+            </summary>
+        </member>
+        <member name="M:PT.Framework.Common.Utils.FormatException(System.Exception)">
+            <summary>
+            FormatException
+            </summary>
+            <param name="exception">The Exception object</param>
+        </member>
+        <member name="M:PT.Framework.Common.Utils.CalculateGlLookupHashKey(System.String[])">
+            <summary>
+            CalculateGlLookupHashKey
+            </summary>
+            <param name="segmentValues">Segmen values array</param>
+        </member>
+    </members>
+</doc>

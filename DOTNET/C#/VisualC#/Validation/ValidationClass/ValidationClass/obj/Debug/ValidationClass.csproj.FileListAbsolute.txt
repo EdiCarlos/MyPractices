@@ -1,0 +1,10 @@
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\bin\Debug\ValidationClass.exe
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\bin\Debug\ValidationClass.pdb
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\bin\Debug\CustomErrorProvider.dll
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\bin\Debug\CustomErrorProvider.pdb
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\obj\Debug\ValidationClass.Form1.resources
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\obj\Debug\ValidationClass.Properties.Resources.resources
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\obj\Debug\ValidationClass.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\obj\Debug\ValidationClass.exe
+D:\temp\VisualC#\Validation\ValidationClass\ValidationClass\obj\Debug\ValidationClass.pdb

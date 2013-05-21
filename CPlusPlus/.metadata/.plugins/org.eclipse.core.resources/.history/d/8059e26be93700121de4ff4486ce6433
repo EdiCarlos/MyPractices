@@ -1,0 +1,27 @@
+//============================================================================
+// Name        : Calculator.cpp
+// Author      : Arif Khan
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "Headers\Calculator.h"
+
+using namespace std;
+
+void Calculator::Addition(double n1, double n2)
+{
+	result = n1 + n2;
+	//cout<<n1 + n2<<endl;
+}
+
+void Calculator::Subtraction(double n1, double n2)
+{
+	result = n1 - n2;
+}
+int main() {
+Calculator calc;
+calc.Addition(100, 100);
+}

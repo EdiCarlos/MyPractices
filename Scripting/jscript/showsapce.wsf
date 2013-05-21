@@ -1,0 +1,7 @@
+<job id="includeexample">
+<script language="JScript" src="d:\temp\jscript\fso.js">
+var s = GetFreeSpace("c:");
+WScript.Echo(s);
+WScript.Echo(username.UserName);
+</script>
+</job>

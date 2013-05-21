@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MyBlog" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="MyBlogContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Blogs" EntityType="MyBlog.Blogs" />
+    <EntitySet Name="BlogPosts" EntityType="MyBlog.BlogPost" />
+    <AssociationSet Name="BlogsBlogPost" Association="MyBlog.BlogsBlogPost">
+      <End Role="Blogs" EntitySet="Blogs" />
+      <End Role="BlogPost" EntitySet="BlogPosts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Blogs">
+    <Key>
+      <PropertyRef Name="BlogID" />
+    </Key>
+    <Property Type="Int32" Name="BlogID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="BlogPosts" Relationship="MyBlog.BlogsBlogPost" FromRole="Blogs" ToRole="BlogPost" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="100" ConcurrencyMode="None" />
+    <Property Type="DateTime" Name="TStamp" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="BlogPost">
+    <Key>
+      <PropertyRef Name="PostID" />
+    </Key>
+    <Property Type="Int32" Name="PostID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Blog" Relationship="MyBlog.BlogsBlogPost" FromRole="BlogPost" ToRole="Blogs" />
+    <Property Type="Int32" Name="BlogID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Post" Nullable="false" MaxLength="1000" />
+    <Property Type="DateTime" Name="TStamp" Nullable="false" />
+  </EntityType>
+  <Association Name="BlogsBlogPost">
+    <End Type="MyBlog.Blogs" Role="Blogs" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MyBlog.BlogPost" Role="BlogPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Blogs">
+        <PropertyRef Name="BlogID" />
+      </Principal>
+      <Dependent Role="BlogPost">
+        <PropertyRef Name="BlogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

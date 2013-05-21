@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+extern "C" void mycfunc();
+
+int main()
+{
+	
+}
+void mycfunc()
+{
+	cout<<"This is c function"<<endl;
+}

@@ -1,0 +1,7 @@
+Module Module1
+Sub Main()
+Dim FirstName 
+FirstName = InputBox("Enter your first name")
+MsgBox("you First name is " + FirstName)
+End Sub
+End Module

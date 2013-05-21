@@ -1,0 +1,9 @@
+D:\temp\VisualC#\TimerClass\TimerExample\TimerExample\bin\Debug\TimerExample.exe
+D:\temp\VisualC#\TimerClass\TimerExample\TimerExample\bin\Debug\TimerExample.pdb
+D:\temp\VisualC#\TimerClass\TimerExample\TimerExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\TimerClass\TimerExample\TimerExample\obj\Debug\TimerExample.exe
+D:\temp\VisualC#\TimerClass\TimerExample\TimerExample\obj\Debug\TimerExample.pdb
+D:\temp\VisualC#\TimerClass\TimerExample\TimerExample\bin\Debug\TimerExample.exe.manifest
+D:\temp\VisualC#\TimerClass\TimerExample\TimerExample\bin\Debug\TimerExample.application
+D:\temp\VisualC#\TimerClass\TimerExample\TimerExample\obj\Debug\TimerExample.exe.manifest
+D:\temp\VisualC#\TimerClass\TimerExample\TimerExample\obj\Debug\TimerExample.application

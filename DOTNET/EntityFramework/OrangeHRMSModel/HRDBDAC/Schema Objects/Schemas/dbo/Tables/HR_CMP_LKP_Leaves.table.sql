@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[HR_CMP_LKP_Leaves](
+	[LeaveID] [int] IDENTITY(1,1) NOT NULL,
+	[LeaveTypeID] [int] NULL,
+	[CompanyID] [bigint] NULL,
+	[NumberOfLeaves] [int] NOT NULL,
+	[IsPaid] [bit] NOT NULL,
+ CONSTRAINT [PK_HR_CMP_LKP_Leaves] PRIMARY KEY CLUSTERED 
+(
+	[LeaveID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON)
+)
+
+

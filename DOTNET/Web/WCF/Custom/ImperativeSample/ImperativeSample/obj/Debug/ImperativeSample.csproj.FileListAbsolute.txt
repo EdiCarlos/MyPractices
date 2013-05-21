@@ -1,0 +1,6 @@
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeSample\bin\Debug\ImperativeSample.exe.config
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeSample\obj\Debug\ImperativeSample.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeSample\bin\Debug\ImperativeSample.exe
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeSample\bin\Debug\ImperativeSample.pdb
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeSample\obj\Debug\ImperativeSample.exe
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeSample\obj\Debug\ImperativeSample.pdb

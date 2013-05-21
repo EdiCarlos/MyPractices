@@ -1,0 +1,7 @@
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\bin\Debug\MyTestApplication.dll
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\bin\Debug\MyTestApplication.pdb
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\obj\Debug\MyTestApplication.dll
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\obj\Debug\MyTestApplication.pdb
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\bin\Debug\ClassTestProject.exe
+D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\bin\Debug\ClassTestProject.pdb

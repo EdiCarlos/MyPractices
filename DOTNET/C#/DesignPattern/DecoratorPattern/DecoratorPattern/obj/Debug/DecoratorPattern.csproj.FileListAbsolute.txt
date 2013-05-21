@@ -1,0 +1,10 @@
+D:\temp\DesignPattern\DecoratorPattern\DecoratorPattern\bin\Debug\DecoratorPattern.exe
+D:\temp\DesignPattern\DecoratorPattern\DecoratorPattern\bin\Debug\DecoratorPattern.pdb
+D:\temp\DesignPattern\DecoratorPattern\DecoratorPattern\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\DesignPattern\DecoratorPattern\DecoratorPattern\obj\Debug\DecoratorPattern.exe
+D:\temp\DesignPattern\DecoratorPattern\DecoratorPattern\obj\Debug\DecoratorPattern.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\DecoratorPattern\obj\Debug\DecoratorPattern.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\DecoratorPattern\obj\Debug\DecoratorPattern.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\DecoratorPattern\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\DecoratorPattern\bin\Debug\DecoratorPattern.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\DecoratorPattern\DecoratorPattern\bin\Debug\DecoratorPattern.pdb

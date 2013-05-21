@@ -1,0 +1,14 @@
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\bin\Debug\CodeFirstSample.exe.config
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\bin\Debug\CodeFirstSample.exe
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\bin\Debug\CodeFirstSample.pdb
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\bin\Debug\EntityFramework.dll
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\bin\Debug\EntityFramework.xml
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\obj\x86\Debug\CodeFirstSample.exe
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\obj\x86\Debug\CodeFirstSample.pdb
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\obj\x86\Debug\CodeFirstSample.Migrations.InitialCreate.resources
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\obj\x86\Debug\CodeFirstSample.Migrations.AddedUrl.resources
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\obj\x86\Debug\CodeFirstSample.Migrations.usersAdded.resources
+D:\MyPractices\DOTNET\EntityFramework\CodeFirstSample\CodeFirstSample\obj\x86\Debug\CodeFirstSample.Migrations.usersDeleted.resources

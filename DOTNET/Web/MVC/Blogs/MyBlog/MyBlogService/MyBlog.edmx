@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MyBlogModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="MyBlogModelStoreContainer">
+          <EntitySet Name="BlogPosts" EntityType="MyBlogModel.Store.BlogPosts" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Blogs" EntityType="MyBlogModel.Store.Blogs" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_BlogsBlogPost" Association="MyBlogModel.Store.FK_BlogsBlogPost">
+            <End Role="Blogs" EntitySet="Blogs" />
+            <End Role="BlogPosts" EntitySet="BlogPosts" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="BlogPosts">
+          <Key>
+            <PropertyRef Name="PostID" />
+          </Key>
+          <Property Name="PostID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BlogID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Post" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="TStamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Blogs">
+          <Key>
+            <PropertyRef Name="BlogID" />
+          </Key>
+          <Property Name="BlogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="TStamp" Type="datetime" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="1000" />
+        </EntityType>
+        <Association Name="FK_BlogsBlogPost">
+          <End Role="Blogs" Type="MyBlogModel.Store.Blogs" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="BlogPosts" Type="MyBlogModel.Store.BlogPosts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Blogs">
+              <PropertyRef Name="BlogID" />
+            </Principal>
+            <Dependent Role="BlogPosts">
+              <PropertyRef Name="BlogID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MyBlogModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MyBlogEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="BlogPosts" EntityType="MyBlogModel.BlogPost" />
+          <EntitySet Name="Blogs" EntityType="MyBlogModel.Blog" />
+          <AssociationSet Name="FK_BlogsBlogPost" Association="MyBlogModel.FK_BlogsBlogPost">
+            <End Role="Blogs" EntitySet="Blogs" />
+            <End Role="BlogPosts" EntitySet="BlogPosts" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="BlogPost">
+          <Key>
+            <PropertyRef Name="PostID" />
+          </Key>
+          <Property Name="PostID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="BlogID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Post" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="TStamp" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Blog" Relationship="MyBlogModel.FK_BlogsBlogPost" FromRole="BlogPosts" ToRole="Blogs" />
+        </EntityType>
+        <EntityType Name="Blog">
+          <Key>
+            <PropertyRef Name="BlogID" />
+          </Key>
+          <Property Name="BlogID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="TStamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="BlogPosts" Relationship="MyBlogModel.FK_BlogsBlogPost" FromRole="Blogs" ToRole="BlogPosts" />
+        </EntityType>
+        <Association Name="FK_BlogsBlogPost">
+          <End Role="Blogs" Type="MyBlogModel.Blog" Multiplicity="1" />
+          <End Role="BlogPosts" Type="MyBlogModel.BlogPost" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Blogs">
+              <PropertyRef Name="BlogID" />
+            </Principal>
+            <Dependent Role="BlogPosts">
+              <PropertyRef Name="BlogID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MyBlogModelStoreContainer" CdmEntityContainer="MyBlogEntities">
+          <EntitySetMapping Name="BlogPosts">
+            <EntityTypeMapping TypeName="MyBlogModel.BlogPost">
+              <MappingFragment StoreEntitySet="BlogPosts">
+                <ScalarProperty Name="PostID" ColumnName="PostID" />
+                <ScalarProperty Name="BlogID" ColumnName="BlogID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Post" ColumnName="Post" />
+                <ScalarProperty Name="TStamp" ColumnName="TStamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Blogs">
+            <EntityTypeMapping TypeName="MyBlogModel.Blog">
+              <MappingFragment StoreEntitySet="Blogs">
+                <ScalarProperty Name="BlogID" ColumnName="BlogID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="TStamp" ColumnName="TStamp" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="372820da-7489-410d-84b0-5d5b202da87d" name="axkhan2@WD-XPA6GCAEJ017 2010-11-11 16:12:58" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="2c894182-914a-4f68-8dd2-cab7f4535c6c">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="D:\temp\VisualC#\TestExamples\TestWindowsApplication\TestResults\axkhan2_WD-XPA6GCAEJ017 2010-11-11 16_12_58">
+      <DeploymentItem filename="D:\temp\VisualC#\TestExamples\TestWindowsApplication\ClassTestProject\bin\Debug\ClassTestProject.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-11-11T16:12:58.6905017+05:30" queuing="2010-11-11T16:13:00.0186947+05:30" start="2010-11-11T16:13:00.1749527+05:30" finish="2010-11-11T16:13:00.6749783+05:30" />
+  <TestDefinitions>
+    <UnitTest name="GetSivSetUpIdTest" storage="d:\temp\visualc#\testexamples\testwindowsapplication\mytestapplication\bin\debug\mytestapplication.dll" id="bb8e15ea-7f5d-5664-8154-d55f975c9fb4">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="afcd7bd2-94b2-45db-8f12-304fe3823619" />
+      <TestMethod codeBase="D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\bin\Debug\MyTestApplication.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyTestApplication.ProgramTest, MyTestApplication" name="GetSivSetUpIdTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="bb8e15ea-7f5d-5664-8154-d55f975c9fb4" executionId="afcd7bd2-94b2-45db-8f12-304fe3823619" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="afcd7bd2-94b2-45db-8f12-304fe3823619" testId="bb8e15ea-7f5d-5664-8154-d55f975c9fb4" testName="GetSivSetUpIdTest" computerName="WD-XPA6GCAEJ017" duration="00:00:00.0781111" startTime="2010-11-11T16:13:00.2843333+05:30" endTime="2010-11-11T16:13:00.6124751+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;677&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at MyTestApplication.ProgramTest.GetSivSetUpIdTest() in D:\temp\VisualC#\TestExamples\TestWindowsApplication\MyTestApplication\ProgramTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

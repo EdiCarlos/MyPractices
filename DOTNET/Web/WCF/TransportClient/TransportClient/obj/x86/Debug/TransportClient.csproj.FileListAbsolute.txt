@@ -1,0 +1,12 @@
+D:\MyPractices\DOTNET\C#\DesignPattern\TransportClient\TransportClient\bin\Debug\TransportClient.exe.config
+D:\MyPractices\DOTNET\C#\DesignPattern\TransportClient\TransportClient\bin\Debug\TransportClient.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\TransportClient\TransportClient\bin\Debug\TransportClient.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\TransportClient\TransportClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\DesignPattern\TransportClient\TransportClient\obj\x86\Debug\TransportClient.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\TransportClient\TransportClient\obj\x86\Debug\TransportClient.pdb
+D:\MyPractices\DOTNET\WCF\TransportClient\TransportClient\bin\Debug\TransportClient.exe.config
+D:\MyPractices\DOTNET\WCF\TransportClient\TransportClient\obj\x86\Debug\TransportClient.exe
+D:\MyPractices\DOTNET\WCF\TransportClient\TransportClient\obj\x86\Debug\TransportClient.pdb
+D:\MyPractices\DOTNET\WCF\TransportClient\TransportClient\bin\Debug\TransportClient.exe
+D:\MyPractices\DOTNET\WCF\TransportClient\TransportClient\bin\Debug\TransportClient.pdb
+D:\MyPractices\DOTNET\WCF\TransportClient\TransportClient\obj\x86\Debug\ResolveAssemblyReference.cache

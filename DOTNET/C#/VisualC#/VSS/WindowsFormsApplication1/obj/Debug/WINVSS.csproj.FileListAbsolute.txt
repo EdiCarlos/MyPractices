@@ -1,0 +1,8 @@
+D:\temp\VisualC#\VSS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\temp\VisualC#\VSS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\temp\VisualC#\VSS\WindowsFormsApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\VSS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\temp\VisualC#\VSS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\temp\VisualC#\VSS\WindowsFormsApplication1\obj\Debug\WINVSS.csproj.GenerateResource.Cache
+D:\temp\VisualC#\VSS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\temp\VisualC#\VSS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+    
+  
+
+    function onLoad()
+    {
+       var sp1 = document.getElementById("sp1");
+     var inp = sp1.getElementsByTagName("input");
+     var arr = new Array(inp.length - 1);
+  
+     for(var x = 0; x < inp.length; x++)
+     {
+       if(x == 0)
+       {
+       continue;
+       }
+       arr[x - 1] = inp[x];
+     }
+     alert(arr.length);
+     for(var x = 0; x < arr.length; x++)
+     {
+     arr[x].onclick = function(){alert("checked");}
+     }
+    }
+ 
+   </script>
+</head>
+<body onload="onLoad();">
+<span id="sp1">
+
+<input type="checkbox" id="Checkbox1" value="0" />
+<input type="checkbox" id="Checkbox2" value="1" />
+<input type="checkbox" id="Checkbox3" value="2" />
+<input type="checkbox" id="Checkbox4" value="3" />
+<input type="checkbox" id="Checkbox5" value="4" />
+<input type="checkbox" id="Checkbox6" value="5" />
+<input type="checkbox" id="Checkbox7" value="6" />
+<input type="checkbox" id="Checkbox8" value="7" />
+<input type="checkbox" id="Checkbox9" value="8" />
+<input type="checkbox" id="Checkbox10" value="9" />
+<input type="checkbox" id="Checkbox11" value="10" />
+
+</span>
+
+</body>
+</html>

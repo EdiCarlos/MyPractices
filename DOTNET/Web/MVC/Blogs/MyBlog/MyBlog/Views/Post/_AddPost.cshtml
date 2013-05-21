@@ -1,0 +1,33 @@
+﻿@model MyBlog.Models.Post
+
+<h2>Add Post to : @ViewData["blogtitle"]</h2>
+
+@{
+    if(Model != null)
+    {
+    Model.Name = "";
+    Model.Email = "";
+    Model.BlogPost = "";
+    }
+}
+@using (Html.BeginForm("InsertPost", "Post", new { blogId = Convert.ToInt32(ViewData["blogId"]), blogtitle = ViewData["blogtitle"] }, FormMethod.Post))
+{
+    <ul>
+        <li>
+            @Html.LabelFor(e => e.Name)
+            @Html.TextBoxFor(e => e.Name)
+            @Html.ValidationMessageFor(e => e.Name)
+        </li>
+        <li>
+            @Html.LabelFor(e => e.Email)
+            @Html.TextBoxFor(e => e.Email)
+            @Html.ValidationMessageFor(e => e.Email)
+        </li>
+        <li>
+            @Html.LabelFor(e => e.BlogPost)
+            @Html.TextAreaFor(e => e.BlogPost, 10, 10, new object())
+            @Html.ValidationMessageFor(e => e.BlogPost)
+        </li>
+    </ul>
+    <input type="submit" value="Add Post" />
+}

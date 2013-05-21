@@ -1,0 +1,10 @@
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\bin\Debug\printpreviewcontrollerex.exe
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\bin\Debug\printpreviewcontrollerex.pdb
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\bin\Debug\printpreviewcontrollerex.xml
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\obj\Debug\ResolveAssemblyReference.cache
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\obj\Debug\printpreviewcontrollerex.Form1.resources
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\obj\Debug\printpreviewcontrollerex.Resources.resources
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\obj\Debug\printpreviewcontrollerex.vbproj.GenerateResource.Cache
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\obj\Debug\printpreviewcontrollerex.exe
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\obj\Debug\printpreviewcontrollerex.xml
+D:\PrintingC#\Project1\printpreviewcontrollerex\printpreviewcontrollerex\obj\Debug\printpreviewcontrollerex.pdb

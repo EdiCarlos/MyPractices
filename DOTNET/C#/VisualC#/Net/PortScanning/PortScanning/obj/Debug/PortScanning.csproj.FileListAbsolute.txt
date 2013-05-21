@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Net\PortScanning\PortScanning\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Net\PortScanning\PortScanning\bin\Debug\PortScanning.exe
+D:\temp\VisualC#\Net\PortScanning\PortScanning\bin\Debug\PortScanning.pdb
+D:\temp\VisualC#\Net\PortScanning\PortScanning\obj\Debug\PortScanning.exe
+D:\temp\VisualC#\Net\PortScanning\PortScanning\obj\Debug\PortScanning.pdb

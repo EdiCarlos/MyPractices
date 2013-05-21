@@ -1,0 +1,5 @@
+D:\Development\RemoteDebuggin\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Development\RemoteDebuggin\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Development\RemoteDebuggin\ConsoleApplication1\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\RemoteDebuggin\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Development\RemoteDebuggin\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

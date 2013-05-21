@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyHRMSModelStoreContainer" CdmEntityContainer="MyHRMSModelContainer">
+    <EntitySetMapping Name="HR_Employee">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Employee)">
+        <MappingFragment StoreEntitySet="HR_Employee">
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EmployeeUID" ColumnName="EmployeeUID" />
+          <ScalarProperty Name="CompanyEmployeeID" ColumnName="CompanyEmployeeID" />
+          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="Middlename" ColumnName="Middlename" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="NationCode" ColumnName="NationCode" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="SSNNumber" ColumnName="SSNNumber" />
+          <ScalarProperty Name="LicenseNumber" ColumnName="LicenseNumber" />
+          <ScalarProperty Name="LicencseExpiryDate" ColumnName="LicencseExpiryDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TitleCode" ColumnName="TitleCode" />
+          <ScalarProperty Name="SalaryGradeCode" ColumnName="SalaryGradeCode" />
+          <ScalarProperty Name="JoinedDate" ColumnName="JoinedDate" />
+          <ScalarProperty Name="TerminateDate" ColumnName="TerminateDate" />
+          <ScalarProperty Name="TerminationReason" ColumnName="TerminationReason" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="InProbation" ColumnName="InProbation" />
+          <ScalarProperty Name="EligibleForInsurance" ColumnName="EligibleForInsurance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_Property">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_Property)">
+        <MappingFragment StoreEntitySet="HR_Emp_Property">
+          <ScalarProperty Name="AssetID" ColumnName="AssetID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_PropertyTypeID">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_PropertyTypeID)">
+        <MappingFragment StoreEntitySet="HR_LKP_PropertyTypeID">
+          <ScalarProperty Name="PropertyTypeID" ColumnName="PropertyTypeID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="PropertyType" ColumnName="PropertyType" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Company">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Company)">
+        <MappingFragment StoreEntitySet="HR_Company">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="OrganizationCode" ColumnName="OrganizationCode" />
+          <ScalarProperty Name="WebsiteUrl" ColumnName="WebsiteUrl" />
+          <ScalarProperty Name="OrganizationLogo" ColumnName="OrganizationLogo" />
+          <ScalarProperty Name="NumberOfEmployees" ColumnName="NumberOfEmployees" />
+          <ScalarProperty Name="RegisteredEmailAddress" ColumnName="RegisteredEmailAddress" />
+          <ScalarProperty Name="CompanyDescription" ColumnName="CompanyDescription" />
+          <ScalarProperty Name="IsGovermentSector" ColumnName="IsGovermentSector" />
+          <ScalarProperty Name="IndustryTypeID" ColumnName="IndustryTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CompanyAssets">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CompanyAssets)">
+        <MappingFragment StoreEntitySet="HR_CompanyAssets">
+          <ScalarProperty Name="AssetID" ColumnName="AssetID" />
+          <ScalarProperty Name="PropertyTypeID" ColumnName="PropertyTypeID" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Address">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Address)">
+        <MappingFragment StoreEntitySet="HR_Address">
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="Street1" ColumnName="Street1" />
+          <ScalarProperty Name="Street2" ColumnName="Street2" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="AddressTypeID" ColumnName="AddressTypeID" />
+          <ScalarProperty Name="FamilyMemberID" ColumnName="FamilyMemberID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="InusranceCompanyID" ColumnName="InusranceCompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_Country">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_Country)">
+        <MappingFragment StoreEntitySet="HR_LKP_Country">
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ISOCode" ColumnName="ISOCode" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Locations">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Locations)">
+        <MappingFragment StoreEntitySet="HR_Locations">
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_ContactDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_ContactDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_ContactDetails">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="TelNumber" ColumnName="TelNumber" />
+          <ScalarProperty Name="IsPrimaryMobile" ColumnName="IsPrimaryMobile" />
+          <ScalarProperty Name="IsEmergencyContact" ColumnName="IsEmergencyContact" />
+          <ScalarProperty Name="WorkTelephone" ColumnName="WorkTelephone" />
+          <ScalarProperty Name="EmpOtherEmail" ColumnName="EmpOtherEmail" />
+          <ScalarProperty Name="WorkEmailAddress" ColumnName="WorkEmailAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_AddressType">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_AddressType)">
+        <MappingFragment StoreEntitySet="HR_LKP_AddressType">
+          <ScalarProperty Name="AddressTypeID" ColumnName="AddressTypeID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_GLB_LKP_NameTitle">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_GLB_LKP_NameTitle)">
+        <MappingFragment StoreEntitySet="HR_GLB_LKP_NameTitle">
+          <ScalarProperty Name="TitleCode" ColumnName="TitleCode" />
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_SalaryGrades">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_SalaryGrades)">
+        <MappingFragment StoreEntitySet="HR_LKP_SalaryGrades">
+          <ScalarProperty Name="SalaryGradeCode" ColumnName="SalaryGradeCode" />
+          <ScalarProperty Name="SalaryGrade" ColumnName="SalaryGrade" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LK_Currency">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LK_Currency)">
+        <MappingFragment StoreEntitySet="HR_LK_Currency">
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_SalaryGradeDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_SalaryGradeDetails)">
+        <MappingFragment StoreEntitySet="HR_LKP_SalaryGradeDetails">
+          <ScalarProperty Name="SalaryDetailID" ColumnName="SalaryDetailID" />
+          <ScalarProperty Name="SalaryGradeCode" ColumnName="SalaryGradeCode" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="MinCTC" ColumnName="MinCTC" />
+          <ScalarProperty Name="MaxCTC" ColumnName="MaxCTC" />
+          <ScalarProperty Name="MinExperience" ColumnName="MinExperience" />
+          <ScalarProperty Name="MaxExperience" ColumnName="MaxExperience" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_FamilyMembers">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_FamilyMembers)">
+        <MappingFragment StoreEntitySet="HR_Emp_FamilyMembers">
+          <ScalarProperty Name="FamilyMemberID" ColumnName="FamilyMemberID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="IsMinor" ColumnName="IsMinor" />
+          <ScalarProperty Name="IsDependent" ColumnName="IsDependent" />
+          <ScalarProperty Name="IsNominee" ColumnName="IsNominee" />
+          <ScalarProperty Name="ResidesWithEmployee" ColumnName="ResidesWithEmployee" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ContactPersonInEmergency" ColumnName="ContactPersonInEmergency" />
+          <ScalarProperty Name="EligibleForInsurance" ColumnName="EligibleForInsurance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_GLB_LKP_RelationType">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_GLB_LKP_RelationType)">
+        <MappingFragment StoreEntitySet="HR_GLB_LKP_RelationType">
+          <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+          <ScalarProperty Name="RelationName" ColumnName="RelationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_Departments">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_Departments)">
+        <MappingFragment StoreEntitySet="HR_LKP_Departments">
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="DepartmentRole" ColumnName="DepartmentRole" />
+          <ScalarProperty Name="DepartmentDescription" ColumnName="DepartmentDescription" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_JobTitle">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_JobTitle)">
+        <MappingFragment StoreEntitySet="HR_LKP_JobTitle">
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="JobRole" ColumnName="JobRole" />
+          <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SalaryGradeCode" ColumnName="SalaryGradeCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_RelatedDocs">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_RelatedDocs)">
+        <MappingFragment StoreEntitySet="HR_Emp_RelatedDocs">
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="PicPath" ColumnName="PicPath" />
+          <ScalarProperty Name="ResumePath" ColumnName="ResumePath" />
+          <ScalarProperty Name="PicName" ColumnName="PicName" />
+          <ScalarProperty Name="ResumeName" ColumnName="ResumeName" />
+          <ScalarProperty Name="ResumeHeadLine" ColumnName="ResumeHeadLine" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="LicensePicPath" ColumnName="LicensePicPath" />
+          <ScalarProperty Name="EmployeeFolderName" ColumnName="EmployeeFolderName" />
+          <ScalarProperty Name="PanCarPicPath" ColumnName="PanCarPicPath" />
+          <ScalarProperty Name="PassportPicPath" ColumnName="PassportPicPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_Passport">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_Passport)">
+        <MappingFragment StoreEntitySet="HR_Emp_Passport">
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="IssuedDate" ColumnName="IssuedDate" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_ReportingDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_ReportingDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_ReportingDetails">
+          <ScalarProperty Name="EmployeeManagerId" ColumnName="EmployeeManagerId" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_RelatedDocs_Hist">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_RelatedDocs_Hist)">
+        <MappingFragment StoreEntitySet="HR_Emp_RelatedDocs_Hist">
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="PicPath" ColumnName="PicPath" />
+          <ScalarProperty Name="ResumePath" ColumnName="ResumePath" />
+          <ScalarProperty Name="ResumeName" ColumnName="ResumeName" />
+          <ScalarProperty Name="ResumeHeaderLine" ColumnName="ResumeHeaderLine" />
+          <ScalarProperty Name="PicName" ColumnName="PicName" />
+          <ScalarProperty Name="LastUsedDate" ColumnName="LastUsedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_PreviousEmploymentDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_PreviousEmploymentDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_PreviousEmploymentDetails">
+          <ScalarProperty Name="EmploymentDetailID" ColumnName="EmploymentDetailID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="EmployeeSeqNumber" ColumnName="EmployeeSeqNumber" />
+          <ScalarProperty Name="EmployerName" ColumnName="EmployerName" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="CTC" ColumnName="CTC" />
+          <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_Skill">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_Skill)">
+        <MappingFragment StoreEntitySet="HR_LKP_Skill">
+          <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+          <ScalarProperty Name="SkillName" ColumnName="SkillName" />
+          <ScalarProperty Name="SkillDescritpion" ColumnName="SkillDescritpion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_Skills">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_Skills)">
+        <MappingFragment StoreEntitySet="HR_Emp_Skills">
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+          <ScalarProperty Name="ExperienceInMonths" ColumnName="ExperienceInMonths" />
+          <ScalarProperty Name="ExperienceInYears" ColumnName="ExperienceInYears" />
+          <ScalarProperty Name="TotalExperience" ColumnName="TotalExperience" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_EmergenceContact">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_EmergenceContact)">
+        <MappingFragment StoreEntitySet="HR_Emp_EmergenceContact">
+          <ScalarProperty Name="EmergencyContactID" ColumnName="EmergencyContactID" />
+          <ScalarProperty Name="FamilyMemberID" ColumnName="FamilyMemberID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_EducationDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_EducationDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_EducationDetails">
+          <ScalarProperty Name="EducationDetailID" ColumnName="EducationDetailID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="EducationID" ColumnName="EducationID" />
+          <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
+          <ScalarProperty Name="UniversityName" ColumnName="UniversityName" />
+          <ScalarProperty Name="CollegeName" ColumnName="CollegeName" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="EduSeqNo" ColumnName="EduSeqNo" />
+          <ScalarProperty Name="PassPercentage" ColumnName="PassPercentage" />
+          <ScalarProperty Name="PassGrade" ColumnName="PassGrade" />
+          <ScalarProperty Name="DiplomaID" ColumnName="DiplomaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_EductionType">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_EductionType)">
+        <MappingFragment StoreEntitySet="HR_LKP_EductionType">
+          <ScalarProperty Name="EducationID" ColumnName="EducationID" />
+          <ScalarProperty Name="EducationShortCode" ColumnName="EducationShortCode" />
+          <ScalarProperty Name="EducationFullName" ColumnName="EducationFullName" />
+          <ScalarProperty Name="EducationDescription" ColumnName="EducationDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_DiplomaDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_DiplomaDetails)">
+        <MappingFragment StoreEntitySet="HR_LKP_DiplomaDetails">
+          <ScalarProperty Name="DiplomaID" ColumnName="DiplomaID" />
+          <ScalarProperty Name="InstituteName" ColumnName="InstituteName" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="PassGrade" ColumnName="PassGrade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_BankAccountDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_BankAccountDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_BankAccountDetails">
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="IsSalaryAccount" ColumnName="IsSalaryAccount" />
+          <ScalarProperty Name="IsSalaryCreditAccount" ColumnName="IsSalaryCreditAccount" />
+          <ScalarProperty Name="BankAccountTypeID" ColumnName="BankAccountTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_GLB_LKP_Banks">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_GLB_LKP_Banks)">
+        <MappingFragment StoreEntitySet="HR_GLB_LKP_Banks">
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankAddressID" ColumnName="BankAddressID" />
+          <ScalarProperty Name="IsNationalBank" ColumnName="IsNationalBank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_LKP_BankAccountTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_LKP_BankAccountTypes)">
+        <MappingFragment StoreEntitySet="HR_LKP_BankAccountTypes">
+          <ScalarProperty Name="BankTypeID" ColumnName="BankTypeID" />
+          <ScalarProperty Name="BankAccountType" ColumnName="BankAccountType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_AccountsWithBanks">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_AccountsWithBanks)">
+        <MappingFragment StoreEntitySet="HR_CMP_AccountsWithBanks">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_Stations">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_Stations)">
+        <MappingFragment StoreEntitySet="HR_CMP_Stations">
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="StationName" ColumnName="StationName" />
+          <ScalarProperty Name="StationTypeID" ColumnName="StationTypeID" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_LKP_StationType">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_LKP_StationType)">
+        <MappingFragment StoreEntitySet="HR_CMP_LKP_StationType">
+          <ScalarProperty Name="StationTypeID" ColumnName="StationTypeID" />
+          <ScalarProperty Name="StationType" ColumnName="StationType" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_Policies">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_Policies)">
+        <MappingFragment StoreEntitySet="HR_CMP_Policies">
+          <ScalarProperty Name="PolicyID" ColumnName="PolicyID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="PolicyName" ColumnName="PolicyName" />
+          <ScalarProperty Name="PolicyDescription" ColumnName="PolicyDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_AS_PolicyAppliedTo">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_AS_PolicyAppliedTo)">
+        <MappingFragment StoreEntitySet="HR_CMP_AS_PolicyAppliedTo">
+          <ScalarProperty Name="PolicyID" ColumnName="PolicyID" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_LKP_Holidays">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_LKP_Holidays)">
+        <MappingFragment StoreEntitySet="HR_CMP_LKP_Holidays">
+          <ScalarProperty Name="HolidayID" ColumnName="HolidayID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="HolidayTitle" ColumnName="HolidayTitle" />
+          <ScalarProperty Name="HolidayDescription" ColumnName="HolidayDescription" />
+          <ScalarProperty Name="HolidayDate" ColumnName="HolidayDate" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_WorkShifts">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_WorkShifts)">
+        <MappingFragment StoreEntitySet="HR_CMP_WorkShifts">
+          <ScalarProperty Name="WorkShiftID" ColumnName="WorkShiftID" />
+          <ScalarProperty Name="Weekdays" ColumnName="Weekdays" />
+          <ScalarProperty Name="Weekends" ColumnName="Weekends" />
+          <ScalarProperty Name="ShiftName" ColumnName="ShiftName" />
+          <ScalarProperty Name="WorkingHoursFrom" ColumnName="WorkingHoursFrom" />
+          <ScalarProperty Name="LunchBreakHoursFrom" ColumnName="LunchBreakHoursFrom" />
+          <ScalarProperty Name="WorkingHoursTo" ColumnName="WorkingHoursTo" />
+          <ScalarProperty Name="LunchBreakHoursTo" ColumnName="LunchBreakHoursTo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_GBL_LKP_IndustryType">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_GBL_LKP_IndustryType)">
+        <MappingFragment StoreEntitySet="HR_GBL_LKP_IndustryType">
+          <ScalarProperty Name="IndustryTypeID" ColumnName="IndustryTypeID" />
+          <ScalarProperty Name="IndustryType" ColumnName="IndustryType" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="NatureOfBusiness" ColumnName="NatureOfBusiness" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_AS_WorkShifts">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_AS_WorkShifts)">
+        <MappingFragment StoreEntitySet="HR_CMP_AS_WorkShifts">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="WorkShiftID" ColumnName="WorkShiftID" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_LKP_Leaves">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_LKP_Leaves)">
+        <MappingFragment StoreEntitySet="HR_CMP_LKP_Leaves">
+          <ScalarProperty Name="LeaveID" ColumnName="LeaveID" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="NumberOfLeaves" ColumnName="NumberOfLeaves" />
+          <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_LKP_LeaveTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_LKP_LeaveTypes)">
+        <MappingFragment StoreEntitySet="HR_CMP_LKP_LeaveTypes">
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="LeaveType" ColumnName="LeaveType" />
+          <ScalarProperty Name="LeaveDescription" ColumnName="LeaveDescription" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_LKP_LeaveQouta">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_LKP_LeaveQouta)">
+        <MappingFragment StoreEntitySet="HR_CMP_LKP_LeaveQouta">
+          <ScalarProperty Name="LeaveQuotaID" ColumnName="LeaveQuotaID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LeaveQouta" ColumnName="LeaveQouta" />
+          <ScalarProperty Name="PorbationLeaveQouta" ColumnName="PorbationLeaveQouta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_AS_EmployeeInProbation">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_AS_EmployeeInProbation)">
+        <MappingFragment StoreEntitySet="HR_Emp_AS_EmployeeInProbation">
+          <ScalarProperty Name="ProbationID" ColumnName="ProbationID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ProbationStartDate" ColumnName="ProbationStartDate" />
+          <ScalarProperty Name="ProbationEndDate" ColumnName="ProbationEndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_LKP_ProbationPeriod">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_LKP_ProbationPeriod)">
+        <MappingFragment StoreEntitySet="HR_CMP_LKP_ProbationPeriod">
+          <ScalarProperty Name="ProbationPeriodID" ColumnName="ProbationPeriodID" />
+          <ScalarProperty Name="ProbationInMonths" ColumnName="ProbationInMonths" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_LeaveRequest">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_LeaveRequest)">
+        <MappingFragment StoreEntitySet="HR_Emp_LeaveRequest">
+          <ScalarProperty Name="LeaveRequestID" ColumnName="LeaveRequestID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="LeaveID" ColumnName="LeaveID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="TotalNoLeavesRequested" ColumnName="TotalNoLeavesRequested" />
+          <ScalarProperty Name="ApprovalStatusID" ColumnName="ApprovalStatusID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_LeaveApprovalMessage">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_LeaveApprovalMessage)">
+        <MappingFragment StoreEntitySet="HR_Emp_LeaveApprovalMessage">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="LeaveRequestID" ColumnName="LeaveRequestID" />
+          <ScalarProperty Name="RequestToEMPNumber" ColumnName="RequestToEMPNumber" />
+          <ScalarProperty Name="ApprovalStatusID" ColumnName="ApprovalStatusID" />
+          <ScalarProperty Name="ApprovedReason" ColumnName="ApprovedReason" />
+          <ScalarProperty Name="DeniedReason" ColumnName="DeniedReason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_EMP_LeaveQoutaDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_EMP_LeaveQoutaDetails)">
+        <MappingFragment StoreEntitySet="HR_EMP_LeaveQoutaDetails">
+          <ScalarProperty Name="LeaveQoutaDetailID" ColumnName="LeaveQoutaDetailID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="AvaiableLeaves" ColumnName="AvaiableLeaves" />
+          <ScalarProperty Name="LeaveTaken" ColumnName="LeaveTaken" />
+          <ScalarProperty Name="TotalLeaves" ColumnName="TotalLeaves" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PreviousYearsLeave" ColumnName="PreviousYearsLeave" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_GBL_LKP_ApprovalStatus">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_GBL_LKP_ApprovalStatus)">
+        <MappingFragment StoreEntitySet="HR_GBL_LKP_ApprovalStatus">
+          <ScalarProperty Name="ApprovalStatusID" ColumnName="ApprovalStatusID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_EMP_Leave_Hist">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_EMP_Leave_Hist)">
+        <MappingFragment StoreEntitySet="HR_EMP_Leave_Hist">
+          <ScalarProperty Name="LeaveHistId" ColumnName="LeaveHistId" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="LeaveRequestID" ColumnName="LeaveRequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_InsurancePolicy">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_InsurancePolicy)">
+        <MappingFragment StoreEntitySet="HR_CMP_InsurancePolicy">
+          <ScalarProperty Name="InsurancePolicyID" ColumnName="InsurancePolicyID" />
+          <ScalarProperty Name="InusranceCompanyID" ColumnName="InusranceCompanyID" />
+          <ScalarProperty Name="PolicyAmount" ColumnName="PolicyAmount" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="PolicyDescription" ColumnName="PolicyDescription" />
+          <ScalarProperty Name="CompanyURL" ColumnName="CompanyURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_InsuranceDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_InsuranceDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_InsuranceDetails">
+          <ScalarProperty Name="InsuredID" ColumnName="InsuredID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="InsurancePolicyID" ColumnName="InsurancePolicyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_LKP_InsuranceCompanyDetail">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_LKP_InsuranceCompanyDetail)">
+        <MappingFragment StoreEntitySet="HR_CMP_LKP_InsuranceCompanyDetail">
+          <ScalarProperty Name="InusranceCompanyID" ColumnName="InusranceCompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_EducationDocs">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_EducationDocs)">
+        <MappingFragment StoreEntitySet="HR_Emp_EducationDocs">
+          <ScalarProperty Name="EducationDocID" ColumnName="EducationDocID" />
+          <ScalarProperty Name="CertificatePath" ColumnName="CertificatePath" />
+          <ScalarProperty Name="MarkSheetPath" ColumnName="MarkSheetPath" />
+          <ScalarProperty Name="DiplomaCertificatePath" ColumnName="DiplomaCertificatePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_AS_EducationDocs">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_AS_EducationDocs)">
+        <MappingFragment StoreEntitySet="HR_Emp_AS_EducationDocs">
+          <ScalarProperty Name="AssociateDocID" ColumnName="AssociateDocID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="EducationDocID" ColumnName="EducationDocID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_Messages">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_Messages)">
+        <MappingFragment StoreEntitySet="HR_CMP_Messages">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="CompanyNumber" ColumnName="CompanyNumber" />
+          <ScalarProperty Name="FromEmployeeNumber" ColumnName="FromEmployeeNumber" />
+          <ScalarProperty Name="MessageToEmployeeNumber" ColumnName="MessageToEmployeeNumber" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="MessageDate" ColumnName="MessageDate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_Inbox">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_Inbox)">
+        <MappingFragment StoreEntitySet="HR_Emp_Inbox">
+          <ScalarProperty Name="InboxID" ColumnName="InboxID" />
+          <ScalarProperty Name="MessageToEmployeeNumber" ColumnName="MessageToEmployeeNumber" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_SentMessages">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_SentMessages)">
+        <MappingFragment StoreEntitySet="HR_Emp_SentMessages">
+          <ScalarProperty Name="SentMessageID" ColumnName="SentMessageID" />
+          <ScalarProperty Name="MessageToEmployeeNumber" ColumnName="MessageToEmployeeNumber" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_ProvidentFundDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_ProvidentFundDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_ProvidentFundDetails">
+          <ScalarProperty Name="ProvidentFundID" ColumnName="ProvidentFundID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="PFNumber" ColumnName="PFNumber" />
+          <ScalarProperty Name="TotalPFAmount" ColumnName="TotalPFAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_AnnualSalaryDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_AnnualSalaryDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_AnnualSalaryDetails">
+          <ScalarProperty Name="AnnualSalaryID" ColumnName="AnnualSalaryID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="SalaryGradeCode" ColumnName="SalaryGradeCode" />
+          <ScalarProperty Name="AnnualBasic" ColumnName="AnnualBasic" />
+          <ScalarProperty Name="AnnualHouseRent" ColumnName="AnnualHouseRent" />
+          <ScalarProperty Name="AnnualMedicalReimbursment" ColumnName="AnnualMedicalReimbursment" />
+          <ScalarProperty Name="AnnualLTAReimbursment" ColumnName="AnnualLTAReimbursment" />
+          <ScalarProperty Name="AnnualFuelReimbursment" ColumnName="AnnualFuelReimbursment" />
+          <ScalarProperty Name="AnnualProfessionalDevelopment" ColumnName="AnnualProfessionalDevelopment" />
+          <ScalarProperty Name="Misc1" ColumnName="Misc1" />
+          <ScalarProperty Name="Misc2" ColumnName="Misc2" />
+          <ScalarProperty Name="Misc3" ColumnName="Misc3" />
+          <ScalarProperty Name="Misc4" ColumnName="Misc4" />
+          <ScalarProperty Name="Misc5" ColumnName="Misc5" />
+          <ScalarProperty Name="Misc6" ColumnName="Misc6" />
+          <ScalarProperty Name="Misc7" ColumnName="Misc7" />
+          <ScalarProperty Name="Misc8" ColumnName="Misc8" />
+          <ScalarProperty Name="Misc9" ColumnName="Misc9" />
+          <ScalarProperty Name="Misc1Description" ColumnName="Misc1Description" />
+          <ScalarProperty Name="Misc2Description" ColumnName="Misc2Description" />
+          <ScalarProperty Name="Misc3Description" ColumnName="Misc3Description" />
+          <ScalarProperty Name="Misc4Description" ColumnName="Misc4Description" />
+          <ScalarProperty Name="Misc5Description" ColumnName="Misc5Description" />
+          <ScalarProperty Name="Misc6Description" ColumnName="Misc6Description" />
+          <ScalarProperty Name="Misc7Description" ColumnName="Misc7Description" />
+          <ScalarProperty Name="Misc8Description" ColumnName="Misc8Description" />
+          <ScalarProperty Name="Misc9Description" ColumnName="Misc9Description" />
+          <ScalarProperty Name="AnnualGrossSalary" ColumnName="AnnualGrossSalary" />
+          <ScalarProperty Name="AnnualNetSalary" ColumnName="AnnualNetSalary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_AnnualTaxDeductionDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_AnnualTaxDeductionDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_AnnualTaxDeductionDetails">
+          <ScalarProperty Name="AnnualTaxDeductionID" ColumnName="AnnualTaxDeductionID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ProffessionalTax" ColumnName="ProffessionalTax" />
+          <ScalarProperty Name="ProvidentFund" ColumnName="ProvidentFund" />
+          <ScalarProperty Name="VoluntaryPF" ColumnName="VoluntaryPF" />
+          <ScalarProperty Name="IncomeTax" ColumnName="IncomeTax" />
+          <ScalarProperty Name="LifeInsurance" ColumnName="LifeInsurance" />
+          <ScalarProperty Name="OtherDeduction1" ColumnName="OtherDeduction1" />
+          <ScalarProperty Name="OtherDeduction2" ColumnName="OtherDeduction2" />
+          <ScalarProperty Name="OtherDeduction3" ColumnName="OtherDeduction3" />
+          <ScalarProperty Name="OtherDeduction4" ColumnName="OtherDeduction4" />
+          <ScalarProperty Name="OtherDeduction5" ColumnName="OtherDeduction5" />
+          <ScalarProperty Name="OtherDeduction6" ColumnName="OtherDeduction6" />
+          <ScalarProperty Name="OtherDeduction7" ColumnName="OtherDeduction7" />
+          <ScalarProperty Name="OtherDeduction8" ColumnName="OtherDeduction8" />
+          <ScalarProperty Name="OtherDeduction9" ColumnName="OtherDeduction9" />
+          <ScalarProperty Name="OD1Description" ColumnName="OD1Description" />
+          <ScalarProperty Name="OD2Description" ColumnName="OD2Description" />
+          <ScalarProperty Name="OD3Description" ColumnName="OD3Description" />
+          <ScalarProperty Name="OD4Description" ColumnName="OD4Description" />
+          <ScalarProperty Name="OD5Description" ColumnName="OD5Description" />
+          <ScalarProperty Name="OD6Description" ColumnName="OD6Description" />
+          <ScalarProperty Name="OD7Description" ColumnName="OD7Description" />
+          <ScalarProperty Name="OD8Description" ColumnName="OD8Description" />
+          <ScalarProperty Name="OD9Description" ColumnName="OD9Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_GBL_TaxRules">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_GBL_TaxRules)">
+        <MappingFragment StoreEntitySet="HR_GBL_TaxRules">
+          <ScalarProperty Name="TaxRuleID" ColumnName="TaxRuleID" />
+          <ScalarProperty Name="RuleName" ColumnName="RuleName" />
+          <ScalarProperty Name="RuleDescription" ColumnName="RuleDescription" />
+          <ScalarProperty Name="RuleValue" ColumnName="RuleValue" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_ExemptionsType">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_ExemptionsType)">
+        <MappingFragment StoreEntitySet="HR_CMP_ExemptionsType">
+          <ScalarProperty Name="ExemptionTypeId" ColumnName="ExemptionTypeId" />
+          <ScalarProperty Name="ExemptionType" ColumnName="ExemptionType" />
+          <ScalarProperty Name="ExemptionDescriptions" ColumnName="ExemptionDescriptions" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_CMP_ExemptionRules">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_CMP_ExemptionRules)">
+        <MappingFragment StoreEntitySet="HR_CMP_ExemptionRules">
+          <ScalarProperty Name="ExemptionRuleID" ColumnName="ExemptionRuleID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ExemptionTypeID" ColumnName="ExemptionTypeID" />
+          <ScalarProperty Name="ExemptionRule" ColumnName="ExemptionRule" />
+          <ScalarProperty Name="ExemptionRuleDescription" ColumnName="ExemptionRuleDescription" />
+          <ScalarProperty Name="ExemptionLimitedAmount" ColumnName="ExemptionLimitedAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_EstimateExemptions">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_EstimateExemptions)">
+        <MappingFragment StoreEntitySet="HR_Emp_EstimateExemptions">
+          <ScalarProperty Name="EstimateExemptionID" ColumnName="EstimateExemptionID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ExemptionRuleID" ColumnName="ExemptionRuleID" />
+          <ScalarProperty Name="ExemptionAmount" ColumnName="ExemptionAmount" />
+          <ScalarProperty Name="EstimateTaxExemptionID" ColumnName="EstimateTaxExemptionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_ActualExemptions">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_ActualExemptions)">
+        <MappingFragment StoreEntitySet="HR_Emp_ActualExemptions">
+          <ScalarProperty Name="MiscExemptionID" ColumnName="MiscExemptionID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ExemptionRuleID" ColumnName="ExemptionRuleID" />
+          <ScalarProperty Name="ExemptionAmount" ColumnName="ExemptionAmount" />
+          <ScalarProperty Name="ActualTaxExemptionID" ColumnName="ActualTaxExemptionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_ExemptionDocuments">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_ExemptionDocuments)">
+        <MappingFragment StoreEntitySet="HR_Emp_ExemptionDocuments">
+          <ScalarProperty Name="DocumentID" ColumnName="DocumentID" />
+          <ScalarProperty Name="MiscExemptionID" ColumnName="MiscExemptionID" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="DocumentPath" ColumnName="DocumentPath" />
+          <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_MonthlySalaryDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_MonthlySalaryDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_MonthlySalaryDetails">
+          <ScalarProperty Name="MonthlySalaryID" ColumnName="MonthlySalaryID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="SalaryGradeCode" ColumnName="SalaryGradeCode" />
+          <ScalarProperty Name="Basic" ColumnName="Basic" />
+          <ScalarProperty Name="HouseRent" ColumnName="HouseRent" />
+          <ScalarProperty Name="MedicalReimbursment" ColumnName="MedicalReimbursment" />
+          <ScalarProperty Name="LTAReimbursment" ColumnName="LTAReimbursment" />
+          <ScalarProperty Name="FuelReimbursment" ColumnName="FuelReimbursment" />
+          <ScalarProperty Name="ProfessionalDevelopment" ColumnName="ProfessionalDevelopment" />
+          <ScalarProperty Name="Misc1" ColumnName="Misc1" />
+          <ScalarProperty Name="Misc2" ColumnName="Misc2" />
+          <ScalarProperty Name="Misc3" ColumnName="Misc3" />
+          <ScalarProperty Name="Misc4" ColumnName="Misc4" />
+          <ScalarProperty Name="Misc5" ColumnName="Misc5" />
+          <ScalarProperty Name="Misc6" ColumnName="Misc6" />
+          <ScalarProperty Name="Misc7" ColumnName="Misc7" />
+          <ScalarProperty Name="Misc8" ColumnName="Misc8" />
+          <ScalarProperty Name="Misc9" ColumnName="Misc9" />
+          <ScalarProperty Name="Misc1Description" ColumnName="Misc1Description" />
+          <ScalarProperty Name="Misc2Description" ColumnName="Misc2Description" />
+          <ScalarProperty Name="Misc3Description" ColumnName="Misc3Description" />
+          <ScalarProperty Name="Misc4Description" ColumnName="Misc4Description" />
+          <ScalarProperty Name="Misc5Description" ColumnName="Misc5Description" />
+          <ScalarProperty Name="Misc6Description" ColumnName="Misc6Description" />
+          <ScalarProperty Name="Misc7Description" ColumnName="Misc7Description" />
+          <ScalarProperty Name="Misc8Description" ColumnName="Misc8Description" />
+          <ScalarProperty Name="Misc9Description" ColumnName="Misc9Description" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="GrossSalary" ColumnName="GrossSalary" />
+          <ScalarProperty Name="NetSalary" ColumnName="NetSalary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_MonthlySalaryDeductionDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_MonthlySalaryDeductionDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_MonthlySalaryDeductionDetails">
+          <ScalarProperty Name="MonthlyDeductionID" ColumnName="MonthlyDeductionID" />
+          <ScalarProperty Name="MonthlySalaryID" ColumnName="MonthlySalaryID" />
+          <ScalarProperty Name="ProffessionalTax" ColumnName="ProffessionalTax" />
+          <ScalarProperty Name="ProvidentFund" ColumnName="ProvidentFund" />
+          <ScalarProperty Name="VoluntaryPF" ColumnName="VoluntaryPF" />
+          <ScalarProperty Name="IncomeTax" ColumnName="IncomeTax" />
+          <ScalarProperty Name="LifeInsurance" ColumnName="LifeInsurance" />
+          <ScalarProperty Name="OtherDeduction1" ColumnName="OtherDeduction1" />
+          <ScalarProperty Name="OtherDeduction2" ColumnName="OtherDeduction2" />
+          <ScalarProperty Name="OtherDeduction3" ColumnName="OtherDeduction3" />
+          <ScalarProperty Name="OtherDeduction4" ColumnName="OtherDeduction4" />
+          <ScalarProperty Name="OtherDeduction5" ColumnName="OtherDeduction5" />
+          <ScalarProperty Name="OtherDeduction6" ColumnName="OtherDeduction6" />
+          <ScalarProperty Name="OtherDeduction7" ColumnName="OtherDeduction7" />
+          <ScalarProperty Name="OtherDeduction8" ColumnName="OtherDeduction8" />
+          <ScalarProperty Name="OtherDeduction9" ColumnName="OtherDeduction9" />
+          <ScalarProperty Name="OD1Description" ColumnName="OD1Description" />
+          <ScalarProperty Name="OD2Description" ColumnName="OD2Description" />
+          <ScalarProperty Name="OD3Description" ColumnName="OD3Description" />
+          <ScalarProperty Name="OD4Description" ColumnName="OD4Description" />
+          <ScalarProperty Name="OD5Description" ColumnName="OD5Description" />
+          <ScalarProperty Name="OD6Description" ColumnName="OD6Description" />
+          <ScalarProperty Name="OD7Description" ColumnName="OD7Description" />
+          <ScalarProperty Name="OD8Description" ColumnName="OD8Description" />
+          <ScalarProperty Name="OD9Description" ColumnName="OD9Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Cmp_SalaryGenerationDate">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Cmp_SalaryGenerationDate)">
+        <MappingFragment StoreEntitySet="HR_Cmp_SalaryGenerationDate">
+          <ScalarProperty Name="GenerationId" ColumnName="GenerationId" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="GenerationDay" ColumnName="GenerationDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_EstimateAnnualTaxExemptionDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_EstimateAnnualTaxExemptionDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_EstimateAnnualTaxExemptionDetails">
+          <ScalarProperty Name="EstimateTaxExemptionID" ColumnName="EstimateTaxExemptionID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ProffessionalTax" ColumnName="ProffessionalTax" />
+          <ScalarProperty Name="ProvidentFund" ColumnName="ProvidentFund" />
+          <ScalarProperty Name="VoluntaryPF" ColumnName="VoluntaryPF" />
+          <ScalarProperty Name="IncomeTax" ColumnName="IncomeTax" />
+          <ScalarProperty Name="LifeInsurance" ColumnName="LifeInsurance" />
+          <ScalarProperty Name="OtherDeduction1" ColumnName="OtherDeduction1" />
+          <ScalarProperty Name="OtherDeduction2" ColumnName="OtherDeduction2" />
+          <ScalarProperty Name="OtherDeduction3" ColumnName="OtherDeduction3" />
+          <ScalarProperty Name="OtherDeduction4" ColumnName="OtherDeduction4" />
+          <ScalarProperty Name="OtherDeduction5" ColumnName="OtherDeduction5" />
+          <ScalarProperty Name="OtherDeduction6" ColumnName="OtherDeduction6" />
+          <ScalarProperty Name="OtherDeduction7" ColumnName="OtherDeduction7" />
+          <ScalarProperty Name="OtherDeduction8" ColumnName="OtherDeduction8" />
+          <ScalarProperty Name="OtherDeduction9" ColumnName="OtherDeduction9" />
+          <ScalarProperty Name="OD1Description" ColumnName="OD1Description" />
+          <ScalarProperty Name="OD2Description" ColumnName="OD2Description" />
+          <ScalarProperty Name="OD3Description" ColumnName="OD3Description" />
+          <ScalarProperty Name="OD4Description" ColumnName="OD4Description" />
+          <ScalarProperty Name="OD5Description" ColumnName="OD5Description" />
+          <ScalarProperty Name="OD6Description" ColumnName="OD6Description" />
+          <ScalarProperty Name="OD7Description" ColumnName="OD7Description" />
+          <ScalarProperty Name="OD8Description" ColumnName="OD8Description" />
+          <ScalarProperty Name="OD9Description" ColumnName="OD9Description" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_ActualAnnualTaxExemptionDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_ActualAnnualTaxExemptionDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_ActualAnnualTaxExemptionDetails">
+          <ScalarProperty Name="ActualTaxExemptionID" ColumnName="ActualTaxExemptionID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ProffessionalTax" ColumnName="ProffessionalTax" />
+          <ScalarProperty Name="ProvidentFund" ColumnName="ProvidentFund" />
+          <ScalarProperty Name="VoluntaryPF" ColumnName="VoluntaryPF" />
+          <ScalarProperty Name="IncomeTax" ColumnName="IncomeTax" />
+          <ScalarProperty Name="LifeInsurance" ColumnName="LifeInsurance" />
+          <ScalarProperty Name="OtherDeduction1" ColumnName="OtherDeduction1" />
+          <ScalarProperty Name="OtherDeduction2" ColumnName="OtherDeduction2" />
+          <ScalarProperty Name="OtherDeduction3" ColumnName="OtherDeduction3" />
+          <ScalarProperty Name="OtherDeduction4" ColumnName="OtherDeduction4" />
+          <ScalarProperty Name="OtherDeduction5" ColumnName="OtherDeduction5" />
+          <ScalarProperty Name="OtherDeduction6" ColumnName="OtherDeduction6" />
+          <ScalarProperty Name="OtherDeduction7" ColumnName="OtherDeduction7" />
+          <ScalarProperty Name="OtherDeduction8" ColumnName="OtherDeduction8" />
+          <ScalarProperty Name="OtherDeduction9" ColumnName="OtherDeduction9" />
+          <ScalarProperty Name="OD1Description" ColumnName="OD1Description" />
+          <ScalarProperty Name="OD2Description" ColumnName="OD2Description" />
+          <ScalarProperty Name="OD3Description" ColumnName="OD3Description" />
+          <ScalarProperty Name="OD4Description" ColumnName="OD4Description" />
+          <ScalarProperty Name="OD5Description" ColumnName="OD5Description" />
+          <ScalarProperty Name="OD6Description" ColumnName="OD6Description" />
+          <ScalarProperty Name="OD7Description" ColumnName="OD7Description" />
+          <ScalarProperty Name="OD8Description" ColumnName="OD8Description" />
+          <ScalarProperty Name="OD9Description" ColumnName="OD9Description" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Cmp_PerformanceRatingType">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Cmp_PerformanceRatingType)">
+        <MappingFragment StoreEntitySet="HR_Cmp_PerformanceRatingType">
+          <ScalarProperty Name="RatingTypeID" ColumnName="RatingTypeID" />
+          <ScalarProperty Name="RatingType" ColumnName="RatingType" />
+          <ScalarProperty Name="RatingDescription" ColumnName="RatingDescription" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_SmartGoals">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_SmartGoals)">
+        <MappingFragment StoreEntitySet="HR_Emp_SmartGoals">
+          <ScalarProperty Name="SmartGoalID" ColumnName="SmartGoalID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="GoalHeadLine" ColumnName="GoalHeadLine" />
+          <ScalarProperty Name="GoalDescription" ColumnName="GoalDescription" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="DocPath" ColumnName="DocPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_ReviewDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_ReviewDetails)">
+        <MappingFragment StoreEntitySet="HR_Emp_ReviewDetails">
+          <ScalarProperty Name="ReviewID" ColumnName="ReviewID" />
+          <ScalarProperty Name="ReviewerID" ColumnName="ReviewerID" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ReviewStartDate" ColumnName="ReviewStartDate" />
+          <ScalarProperty Name="ReviewEndDate" ColumnName="ReviewEndDate" />
+          <ScalarProperty Name="DateOfReview" ColumnName="DateOfReview" />
+          <ScalarProperty Name="DocPath" ColumnName="DocPath" />
+          <ScalarProperty Name="RatingTypeID" ColumnName="RatingTypeID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_Users">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_Users)">
+        <MappingFragment StoreEntitySet="HR_Emp_Users">
+          <ScalarProperty Name="UserGuid" ColumnName="UserGuid" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="HashKey" ColumnName="HashKey" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+          <ScalarProperty Name="ReceiveNotification" ColumnName="ReceiveNotification" />
+          <ScalarProperty Name="DateEntered" ColumnName="DateEntered" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedUserID" ColumnName="ModifiedUserID" />
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HR_Emp_UserGroup">
+      <EntityTypeMapping TypeName="IsTypeOf(MyHRMSModel.HR_Emp_UserGroup)">
+        <MappingFragment StoreEntitySet="HR_Emp_UserGroup">
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="HR_EmployeeHR_LKP_JobTitle" TypeName="MyHRMSModel.HR_EmployeeHR_LKP_JobTitle" StoreEntitySet="HR_Employee">
+      <EndProperty Name="HR_LKP_JobTitle">
+        <ScalarProperty Name="JobID" ColumnName="HR_LKP_JobTitle_JobID" />
+      </EndProperty>
+      <EndProperty Name="HR_Employee">
+        <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+      </EndProperty>
+      <Condition ColumnName="HR_LKP_JobTitle_JobID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="HR_Emp_SkillsHR_LKP_Skill" TypeName="MyHRMSModel.HR_Emp_SkillsHR_LKP_Skill" StoreEntitySet="HR_Emp_Skills">
+      <EndProperty Name="HR_LKP_Skill">
+        <ScalarProperty Name="SkillID" ColumnName="HR_LKP_Skill_SkillID" />
+      </EndProperty>
+      <EndProperty Name="HR_Emp_Skills">
+        <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

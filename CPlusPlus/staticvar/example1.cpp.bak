@@ -1,0 +1,41 @@
+#define endln "\n";
+#include <iostream>
+
+using namespace std;
+
+	
+void starter(int x)
+{static int a = 10;
+	static int b = 20;
+	a = a + x;
+	b = b + x;
+	
+	cout<<"value of x " << x<<endln;
+	cout<<"valud of a " << a<<endln;
+	cout<<"value of b " << b<<endln;
+	cout<<"End of function starter"<<endln;
+}
+void starter(double x)
+{
+	double a = 10.00;
+	 double b = 20;
+	a = a + x;
+	b = b + x;
+	
+	cout<<"value of x " << x<<endln;
+	cout<<"valud of a " << a<<endln;
+	cout<<"value of b " << b<<endln;
+	cout<<"End of function starter with double"<<endln;
+
+}
+ int main(int argc, char* argv[])
+{
+	double d = 0.100;
+	starter(2);
+	starter(2);
+	starter(2);
+	starter(d);
+	starter(10.00);
+	return 0;
+	
+}

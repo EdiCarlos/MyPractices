@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Collections\CollectionSample\CollectionSample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Collections\CollectionSample\CollectionSample\bin\Debug\CollectionSample.exe
+D:\temp\VisualC#\Collections\CollectionSample\CollectionSample\bin\Debug\CollectionSample.pdb
+D:\temp\VisualC#\Collections\CollectionSample\CollectionSample\obj\Debug\CollectionSample.exe
+D:\temp\VisualC#\Collections\CollectionSample\CollectionSample\obj\Debug\CollectionSample.pdb

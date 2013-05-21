@@ -1,0 +1,15 @@
+
+#include <iostream>
+#include <string.h>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+ string str = "arif khan";
+ string str1 = "bannehasan";
+ cout<<str<<endl;
+ cout<<str +" " + str1<<endl;
+ return 0;
+}

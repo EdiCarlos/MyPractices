@@ -1,0 +1,10 @@
+Module Module1
+Sub Main()
+Dim arr(3) as Integer
+
+'for i as Integer = 0 to arr.GetUpperBound(0)
+
+'next
+Console.WriteLine(arr.GetUpperBound(0))
+End Sub
+End Module

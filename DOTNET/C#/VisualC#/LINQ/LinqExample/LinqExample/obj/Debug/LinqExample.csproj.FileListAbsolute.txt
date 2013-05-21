@@ -1,0 +1,7 @@
+D:\temp\VisualC#\LINQ\LinqExample\LinqExample\bin\Debug\LinqExample.exe
+D:\temp\VisualC#\LINQ\LinqExample\LinqExample\bin\Debug\LinqExample.pdb
+D:\temp\VisualC#\LINQ\LinqExample\LinqExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\LinqExample\LinqExample\obj\Debug\LinqExample.exe
+D:\temp\VisualC#\LINQ\LinqExample\LinqExample\obj\Debug\LinqExample.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LinqExample\obj\Debug\LinqExample.exe
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LinqExample\obj\Debug\LinqExample.pdb

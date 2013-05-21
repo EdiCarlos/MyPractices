@@ -1,0 +1,11 @@
+
+**** Build of configuration Debug for project Calculator ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o src\Calculator.o ..\src\Calculator.cpp
+..\src\Calculator.cpp: In function 'int main()':
+..\src\Calculator.cpp:44:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+..\src\Calculator.cpp:44:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+g++ -o Calculator.exe src\Person.o src\Calculator.o
+Build complete for project Calculator
+Time consumed: 485  ms.  

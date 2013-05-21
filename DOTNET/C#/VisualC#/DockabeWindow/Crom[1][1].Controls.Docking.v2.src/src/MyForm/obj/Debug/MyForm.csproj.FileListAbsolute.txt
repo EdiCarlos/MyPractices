@@ -1,0 +1,12 @@
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\bin\Debug\MyForm.exe
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\bin\Debug\MyForm.pdb
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\bin\Debug\Crom.Controls.dll
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\bin\Debug\Crom.Controls.pdb
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\obj\Debug\MyForm.Properties.Resources.resources
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\obj\Debug\MyForm.csproj.GenerateResource.Cache
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\obj\Debug\MyForm.exe
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\obj\Debug\MyForm.pdb
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\obj\Debug\MyForm.DetailsForm.resources
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\obj\Debug\MyForm.LoginForm.resources
+D:\temp\VisualC#\DockabeWindow\Crom[1][1].Controls.Docking.v2.src\src\MyForm\obj\Debug\MyForm.MainForm.resources

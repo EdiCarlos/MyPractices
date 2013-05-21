@@ -1,0 +1,153 @@
+/* Iconize 0.5 */
+
+.iconize a{display:block; padding:2px 0;}
+/* extensions */
+
+.iconize .doc, .iconize .rtf, .iconize .docx
+{
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_doc.gif) no-repeat center left;
+}
+
+.iconize .txt {
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_txt.gif) no-repeat center left;
+}
+
+.iconize .sql {
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_sql.gif) no-repeat center left;
+}
+
+.iconize .xml {
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_xml.gif) no-repeat center left;
+}
+
+
+.iconize .iso {
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_iso.gif) no-repeat center left;
+}
+
+.iconize .xls, .iconize .xlsx {
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_xls.gif) no-repeat center left;
+}
+
+.iconize .rss, .iconize .atom { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_feed.gif) no-repeat center left;
+}
+
+.iconize .opml { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_opml.gif) no-repeat center left;
+}
+
+.iconize .phps { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_phps.gif) no-repeat center left;
+}
+
+.iconize .phps { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_phps.gif) no-repeat center left;
+}
+
+.iconize .torrent { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_torrent.gif) no-repeat center left;
+}
+
+.iconize .vcard { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_vcard.gif) no-repeat center left;
+}
+
+.iconize .bat{ 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_bat.gif) no-repeat center left;
+} 
+
+.iconize .exe { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_exe.gif) no-repeat center left;
+}
+
+.iconize .dmg, .iconize .app { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_dmg.gif) no-repeat center left;
+}
+
+.iconize .pps, .iconize .ppt, .iconize .pptx { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_pps.gif) no-repeat center left;
+}
+
+.iconize .mmc, .iconize .msc { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_mmc.gif) no-repeat center left;
+}
+
+.iconize .pdf { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_pdf.gif) no-repeat center left;
+}
+
+.iconize .xpi { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_plugin.gif) no-repeat center left;
+}
+
+.iconize .fla, .iconize .swf { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_flash.gif) no-repeat center left;
+}
+
+.iconize .zip, .iconize .rar, .iconize .gzip, .iconize .bzip, .iconize .ace { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_archive.gif) no-repeat center left;
+}
+
+.iconize .ical { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_ical.gif) no-repeat center left;
+}
+
+.iconize .css { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_css.gif) no-repeat center left;
+}
+
+.iconize .ttf { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_ttf.gif) no-repeat center left;
+}
+
+.iconize .jpg, .iconize .gif, .iconize .png, .iconize .bmp, .iconize .jpeg, .iconize .svg, .iconize .eps { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_pic.gif) no-repeat center left;
+}
+
+.iconize .mov, .iconize .wmv, .iconize .mp4, .iconize .avi, .iconize .mpg { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_film.gif) no-repeat center left;
+}
+
+.iconize .mp3, .iconize .wav, .iconize .ogg, .iconize .wma, .iconize .m4a { 
+	padding-left:20px;
+	background: transparent url(../images/icons/icon_music.gif) no-repeat center left;
+}
+
+/* use this class to make sure that images won't get iconized */
+
+.imageLink {
+	padding-right: 0px !important;
+	background: none !important;
+}
+
+.iconize .htm, .iconize .asp, .iconize .aspx, .iconize .html, .iconize .php, .iconize .cgi, .iconize .cfm { 
+	padding-left:20px;
+	background: transparent url(../images/icons/ff.gif) no-repeat center left;
+}

@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\DesignPattern\ComponentPatterns\ComponentPattern\CompositePatternShape\bin\Debug\CompositePatternShape.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\ComponentPatterns\ComponentPattern\CompositePatternShape\bin\Debug\CompositePatternShape.pdb
+D:\MyPractices\DOTNET\C#\DesignPattern\ComponentPatterns\ComponentPattern\CompositePatternShape\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\DesignPattern\ComponentPatterns\ComponentPattern\CompositePatternShape\obj\x86\Debug\CompositePatternShape.exe
+D:\MyPractices\DOTNET\C#\DesignPattern\ComponentPatterns\ComponentPattern\CompositePatternShape\obj\x86\Debug\CompositePatternShape.pdb

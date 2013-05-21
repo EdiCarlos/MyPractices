@@ -1,0 +1,35 @@
+#include <iostream>
+#include "Headers/Person.h"
+
+using namespace std;
+
+Person::Person(char* fName, char * lName, int page)
+{
+	firstName = fName;
+	lastName = lName;
+	age = page;
+}
+
+char* Person::FirstName()
+{
+	return firstName;
+}
+
+char* Person::LastName(){
+	return lastName;
+}
+
+int Person::GetAge(){
+	return age;
+}
+
+Employee::Employee(double salary){
+	baseSalary = salary;
+}
+void Employee::ShowNameAndSalary()
+{
+	cout<<"Employee Name: ";
+	cout<<FirstName() + " " + LastName()<<endl;
+    cout<<"Employee Salary: ";
+    cout<<baseSalary<<endl;
+}

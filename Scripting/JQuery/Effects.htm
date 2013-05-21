@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript" src="Jquery/V1.7.2/jquery-1.7.2.js">
+    </script>
+</head>
+<body>
+<div id="clickme">
+Click me to hide picture.
+</div>
+<div id="showImg">
+Click here to show picture.
+</div>
+<img id="hideme" src="http://api.jquery.com/images/0042_06_05.png" alt="http://api.jquery.com/images/0042_06_05.png
+" />
+<script>
+//    $("#clickme").click(function() { $("#hideme").hide('slow'); });
+    //    $("#showImg").click(function() { $("#hideme").show('slow'); });
+    $.fn.animateHighlight = function(highlightColor, duration) {
+        var highlightBg = highlightColor || "#FFFF9C";
+        var animateMs = duration || 1500;
+        this.stop(true, true);
+        var originalBg = this.css("backgroundColor");
+        return this.css("background-color", highlightBg).animate({ backgroundColor: originalBg }, animateMs);
+    };
+
+    $("#hideme").animateHighlight("#FFFF00", 2000);
+</script>
+
+</body>
+</html>

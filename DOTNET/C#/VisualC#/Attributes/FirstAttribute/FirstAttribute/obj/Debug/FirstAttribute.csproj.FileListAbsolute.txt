@@ -1,0 +1,7 @@
+D:\temp\VisualC#\Attributes\FirstAttribute\FirstAttribute\bin\Debug\FirstAttribute.exe
+D:\temp\VisualC#\Attributes\FirstAttribute\FirstAttribute\bin\Debug\FirstAttribute.pdb
+D:\temp\VisualC#\Attributes\FirstAttribute\FirstAttribute\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Attributes\FirstAttribute\FirstAttribute\obj\Debug\FirstAttribute.exe
+D:\temp\VisualC#\Attributes\FirstAttribute\FirstAttribute\obj\Debug\FirstAttribute.pdb
+D:\temp\VisualC#\Attributes\FirstAttribute\FirstAttribute\bin\Debug\Calculator.dll
+D:\temp\VisualC#\Attributes\FirstAttribute\FirstAttribute\bin\Debug\Calculator.pdb

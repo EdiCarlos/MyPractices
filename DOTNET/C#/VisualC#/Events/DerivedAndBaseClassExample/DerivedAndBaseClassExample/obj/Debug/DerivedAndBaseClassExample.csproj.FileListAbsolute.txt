@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Events\DerivedAndBaseClassExample\DerivedAndBaseClassExample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Events\DerivedAndBaseClassExample\DerivedAndBaseClassExample\bin\Debug\DerivedAndBaseClassExample.exe
+D:\temp\VisualC#\Events\DerivedAndBaseClassExample\DerivedAndBaseClassExample\bin\Debug\DerivedAndBaseClassExample.pdb
+D:\temp\VisualC#\Events\DerivedAndBaseClassExample\DerivedAndBaseClassExample\obj\Debug\DerivedAndBaseClassExample.exe
+D:\temp\VisualC#\Events\DerivedAndBaseClassExample\DerivedAndBaseClassExample\obj\Debug\DerivedAndBaseClassExample.pdb

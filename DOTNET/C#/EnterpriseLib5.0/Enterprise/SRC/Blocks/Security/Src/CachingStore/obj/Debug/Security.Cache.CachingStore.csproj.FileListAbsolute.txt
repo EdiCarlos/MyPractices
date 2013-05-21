@@ -1,0 +1,9 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.xml
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\CachingStore\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\CachingStore\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.Configuration.DesignResources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\CachingStore\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\CachingStore\obj\Debug\Security.Cache.CachingStore.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\CachingStore\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Security\Src\CachingStore\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.pdb

@@ -1,0 +1,5 @@
+D:\temp\VisualC#\ActiveDirectory\ActiveDirectorySample\ActiveDirectorySample\bin\Debug\ActiveDirectorySample.exe
+D:\temp\VisualC#\ActiveDirectory\ActiveDirectorySample\ActiveDirectorySample\bin\Debug\ActiveDirectorySample.pdb
+D:\temp\VisualC#\ActiveDirectory\ActiveDirectorySample\ActiveDirectorySample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\ActiveDirectory\ActiveDirectorySample\ActiveDirectorySample\obj\Debug\ActiveDirectorySample.exe
+D:\temp\VisualC#\ActiveDirectory\ActiveDirectorySample\ActiveDirectorySample\obj\Debug\ActiveDirectorySample.pdb

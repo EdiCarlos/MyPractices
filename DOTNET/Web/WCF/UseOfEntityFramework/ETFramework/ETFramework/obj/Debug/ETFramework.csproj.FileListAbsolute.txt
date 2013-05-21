@@ -1,0 +1,6 @@
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETFramework\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETFramework\bin\Debug\ETFramework.dll.config
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETFramework\bin\Debug\ETFramework.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETFramework\bin\Debug\ETFramework.pdb
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETFramework\obj\Debug\ETFramework.dll
+D:\MyPractices\DOTNET\C#\WCF Examples\UseOfEntityFramework\ETFramework\ETFramework\obj\Debug\ETFramework.pdb

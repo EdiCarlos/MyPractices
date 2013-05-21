@@ -1,0 +1,1335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MoviePlexModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MoviePlexModelStoreContainer">
+          <EntitySet Name="MP_Address" EntityType="MoviePlexModel.Store.MP_Address" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_AddressGroups" EntityType="MoviePlexModel.Store.MP_AddressGroups" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_City" EntityType="MoviePlexModel.Store.MP_City" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_Country" EntityType="MoviePlexModel.Store.MP_Country" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_Genere" EntityType="MoviePlexModel.Store.MP_Genere" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_Language" EntityType="MoviePlexModel.Store.MP_Language" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_MovieCertifications" EntityType="MoviePlexModel.Store.MP_MovieCertifications" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_Movies" EntityType="MoviePlexModel.Store.MP_Movies" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_ReservedSeats" EntityType="MoviePlexModel.Store.MP_ReservedSeats" store:Type="Tables" store:Schema="dbo" store:Name="MP_ReservedSeats">
+            <DefiningQuery>SELECT 
+      [MP_ReservedSeats].[ReservationId] AS [ReservationId], 
+      [MP_ReservedSeats].[ScreenSeatId] AS [ScreenSeatId]
+      FROM [dbo].[MP_ReservedSeats] AS [MP_ReservedSeats]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MP_Screens" EntityType="MoviePlexModel.Store.MP_Screens" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_ScreenSeats" EntityType="MoviePlexModel.Store.MP_ScreenSeats" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_ScreenZones" EntityType="MoviePlexModel.Store.MP_ScreenZones" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_ShowCost" EntityType="MoviePlexModel.Store.MP_ShowCost" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_ShowReservations" EntityType="MoviePlexModel.Store.MP_ShowReservations" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_Shows" EntityType="MoviePlexModel.Store.MP_Shows" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_State" EntityType="MoviePlexModel.Store.MP_State" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_Theaters" EntityType="MoviePlexModel.Store.MP_Theaters" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_TheatersBrand" EntityType="MoviePlexModel.Store.MP_TheatersBrand" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_UserInfo" EntityType="MoviePlexModel.Store.MP_UserInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MP_ZipCodes" EntityType="MoviePlexModel.Store.MP_ZipCodes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="MoviePlexModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="ck_fk_mp_Movies_certificationid" Association="MoviePlexModel.Store.ck_fk_mp_Movies_certificationid">
+            <End Role="MP_MovieCertifications" EntitySet="MP_MovieCertifications" />
+            <End Role="MP_Movies" EntitySet="MP_Movies" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Movies_genereid" Association="MoviePlexModel.Store.ck_fk_mp_Movies_genereid">
+            <End Role="MP_Genere" EntitySet="MP_Genere" />
+            <End Role="MP_Movies" EntitySet="MP_Movies" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Movies_LanguageCode" Association="MoviePlexModel.Store.ck_fk_mp_Movies_LanguageCode">
+            <End Role="MP_Language" EntitySet="MP_Language" />
+            <End Role="MP_Movies" EntitySet="MP_Movies" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Show_movie_id" Association="MoviePlexModel.Store.ck_fk_mp_Show_movie_id">
+            <End Role="MP_Movies" EntitySet="MP_Movies" />
+            <End Role="MP_Shows" EntitySet="MP_Shows" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_showcost_showid" Association="MoviePlexModel.Store.ck_fk_mp_showcost_showid">
+            <End Role="MP_Shows" EntitySet="MP_Shows" />
+            <End Role="MP_ShowCost" EntitySet="MP_ShowCost" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Shows_screen_id" Association="MoviePlexModel.Store.ck_fk_mp_Shows_screen_id">
+            <End Role="MP_Screens" EntitySet="MP_Screens" />
+            <End Role="MP_Shows" EntitySet="MP_Shows" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Zone_zoneid" Association="MoviePlexModel.Store.ck_fk_mp_Zone_zoneid">
+            <End Role="MP_ScreenZones" EntitySet="MP_ScreenZones" />
+            <End Role="MP_ShowCost" EntitySet="MP_ShowCost" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_ReservedSeats" Association="MoviePlexModel.Store.ck_fk_ReservedSeats">
+            <End Role="MP_ShowReservations" EntitySet="MP_ShowReservations" />
+            <End Role="MP_ReservedSeats" EntitySet="MP_ReservedSeats" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_ReserverSeats_ScreenSeat_id" Association="MoviePlexModel.Store.ck_fk_ReserverSeats_ScreenSeat_id">
+            <End Role="MP_ScreenSeats" EntitySet="MP_ScreenSeats" />
+            <End Role="MP_ReservedSeats" EntitySet="MP_ReservedSeats" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_ScreenSeats_ZoneId" Association="MoviePlexModel.Store.ck_fk_ScreenSeats_ZoneId">
+            <End Role="MP_ScreenZones" EntitySet="MP_ScreenZones" />
+            <End Role="MP_ScreenSeats" EntitySet="MP_ScreenSeats" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_screentseats_Screenid" Association="MoviePlexModel.Store.ck_fk_screentseats_Screenid">
+            <End Role="MP_Screens" EntitySet="MP_Screens" />
+            <End Role="MP_ScreenSeats" EntitySet="MP_ScreenSeats" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_mp_address_groupid" Association="MoviePlexModel.Store.FK_ck_fk_mp_address_groupid">
+            <End Role="MP_AddressGroups" EntitySet="MP_AddressGroups" />
+            <End Role="MP_Address" EntitySet="MP_Address" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_mp_city_stateid" Association="MoviePlexModel.Store.FK_ck_fk_mp_city_stateid">
+            <End Role="MP_State" EntitySet="MP_State" />
+            <End Role="MP_City" EntitySet="MP_City" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_mp_state_countryid" Association="MoviePlexModel.Store.FK_ck_fk_mp_state_countryid">
+            <End Role="MP_Country" EntitySet="MP_Country" />
+            <End Role="MP_State" EntitySet="MP_State" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_mp_Theaters_TheaterBrandId" Association="MoviePlexModel.Store.FK_ck_fk_mp_Theaters_TheaterBrandId">
+            <End Role="MP_TheatersBrand" EntitySet="MP_TheatersBrand" />
+            <End Role="MP_Theaters" EntitySet="MP_Theaters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_mp_zip_cityid" Association="MoviePlexModel.Store.FK_ck_fk_mp_zip_cityid">
+            <End Role="MP_City" EntitySet="MP_City" />
+            <End Role="MP_ZipCodes" EntitySet="MP_ZipCodes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_ShowReservation_showid" Association="MoviePlexModel.Store.FK_ck_fk_ShowReservation_showid">
+            <End Role="MP_Shows" EntitySet="MP_Shows" />
+            <End Role="MP_ShowReservations" EntitySet="MP_ShowReservations" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="MP_Address">
+          <Key>
+            <PropertyRef Name="AddressId" />
+          </Key>
+          <Property Name="AddressId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ReferenceId" Type="int" Nullable="false" />
+          <Property Name="Address1" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="Address2" Type="nvarchar" MaxLength="300" />
+          <Property Name="AddressGroupId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MP_AddressGroups">
+          <Key>
+            <PropertyRef Name="AddressGroupId" />
+          </Key>
+          <Property Name="AddressGroupId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CountryId" Type="int" Nullable="false" />
+          <Property Name="CityId" Type="int" Nullable="false" />
+          <Property Name="StateId" Type="int" Nullable="false" />
+          <Property Name="ZipCodeId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MP_City">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Name="CityId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="StateId" Type="int" Nullable="false" />
+          <Property Name="CityName" Type="varchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="MP_Country">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Name="CountryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CountryISOCode" Type="nvarchar" MaxLength="10" />
+          <Property Name="CountryName" Type="varchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="MP_Genere">
+          <Key>
+            <PropertyRef Name="GenereID" />
+          </Key>
+          <Property Name="GenereID" Type="int" Nullable="false" />
+          <Property Name="GenereType" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MP_Language">
+          <Key>
+            <PropertyRef Name="LanguageCode" />
+          </Key>
+          <Property Name="LanguageCode" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="Language" Type="char" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="MP_MovieCertifications">
+          <Key>
+            <PropertyRef Name="CertificationId" />
+          </Key>
+          <Property Name="CertificationId" Type="int" Nullable="false" />
+          <Property Name="CertificationType" Type="char" MaxLength="2" />
+          <Property Name="CertificationName" Type="varchar" MaxLength="30" />
+          <Property Name="CertificationDescription" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="MP_Movies">
+          <Key>
+            <PropertyRef Name="MovieId" />
+          </Key>
+          <Property Name="MovieId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MovieName" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="LanguageCode" Type="char" MaxLength="5" />
+          <Property Name="CertificationId" Type="int" />
+          <Property Name="GenereId" Type="int" />
+          <Property Name="ReleaseDate" Type="datetime" Nullable="false" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="1000" />
+          <Property Name="Duration" Type="numeric" Precision="2" Scale="2" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'MoviePlex.dbo.MP_ReservedSeats' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="MP_ReservedSeats">
+          <Key>
+            <PropertyRef Name="ReservationId" />
+            <PropertyRef Name="ScreenSeatId" />
+          </Key>
+          <Property Name="ReservationId" Type="int" Nullable="false" />
+          <Property Name="ScreenSeatId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MP_Screens">
+          <Key>
+            <PropertyRef Name="ScreenId" />
+          </Key>
+          <Property Name="ScreenId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TheaterId" Type="int" Nullable="false" />
+          <Property Name="ScreenName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Capacity" Type="int" />
+        </EntityType>
+        <EntityType Name="MP_ScreenSeats">
+          <Key>
+            <PropertyRef Name="ScreenSeatId" />
+          </Key>
+          <Property Name="ScreenSeatId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ZoneId" Type="int" Nullable="false" />
+          <Property Name="ScreenId" Type="int" Nullable="false" />
+          <Property Name="SeatName" Type="nvarchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="MP_ScreenZones">
+          <Key>
+            <PropertyRef Name="ZoneId" />
+          </Key>
+          <Property Name="ZoneId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ZoneName" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="MP_ShowCost">
+          <Key>
+            <PropertyRef Name="ShowId" />
+            <PropertyRef Name="ZoneId" />
+            <PropertyRef Name="Cost" />
+          </Key>
+          <Property Name="ShowId" Type="int" Nullable="false" />
+          <Property Name="ZoneId" Type="int" Nullable="false" />
+          <Property Name="Cost" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MP_ShowReservations">
+          <Key>
+            <PropertyRef Name="ReservationId" />
+          </Key>
+          <Property Name="ReservationId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ShowId" Type="int" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TotalSeats" Type="int" />
+          <Property Name="TotalAmount" Type="money" Nullable="false" />
+          <Property Name="ReservationDate" Type="datetime" Nullable="false" />
+          <Property Name="ReferenceNumber" Type="nvarchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="MP_Shows">
+          <Key>
+            <PropertyRef Name="ShowId" />
+          </Key>
+          <Property Name="ShowId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ScreenId" Type="int" Nullable="false" />
+          <Property Name="MovieId" Type="int" Nullable="false" />
+          <Property Name="MinimumAgeLimit" Type="int" Nullable="false" />
+          <Property Name="ShowDate" Type="datetime" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="EndTime" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MP_State">
+          <Key>
+            <PropertyRef Name="StateId" />
+          </Key>
+          <Property Name="StateId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CountryId" Type="int" Nullable="false" />
+          <Property Name="StateName" Type="varchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="MP_Theaters">
+          <Key>
+            <PropertyRef Name="TheaterId" />
+          </Key>
+          <Property Name="TheaterId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="NumberOfScreens" Type="int" Nullable="false" />
+          <Property Name="TheaterBrandID" Type="int" />
+          <Property Name="DBCreationDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationUserId" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="MP_TheatersBrand">
+          <Key>
+            <PropertyRef Name="TheaterBrandId" />
+          </Key>
+          <Property Name="TheaterBrandId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BrandName" Type="varchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="MP_UserInfo">
+          <Key>
+            <PropertyRef Name="Uid" />
+          </Key>
+          <Property Name="Uid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EmailId" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="IsValidEmail" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MP_ZipCodes">
+          <Key>
+            <PropertyRef Name="ZipId" />
+          </Key>
+          <Property Name="ZipId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CityId" Type="int" Nullable="false" />
+          <Property Name="ZipCodes" Type="nvarchar" Nullable="false" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="ck_fk_mp_Movies_certificationid">
+          <End Role="MP_MovieCertifications" Type="MoviePlexModel.Store.MP_MovieCertifications" Multiplicity="0..1" />
+          <End Role="MP_Movies" Type="MoviePlexModel.Store.MP_Movies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_MovieCertifications">
+              <PropertyRef Name="CertificationId" />
+            </Principal>
+            <Dependent Role="MP_Movies">
+              <PropertyRef Name="CertificationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Movies_genereid">
+          <End Role="MP_Genere" Type="MoviePlexModel.Store.MP_Genere" Multiplicity="0..1" />
+          <End Role="MP_Movies" Type="MoviePlexModel.Store.MP_Movies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Genere">
+              <PropertyRef Name="GenereID" />
+            </Principal>
+            <Dependent Role="MP_Movies">
+              <PropertyRef Name="GenereId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Movies_LanguageCode">
+          <End Role="MP_Language" Type="MoviePlexModel.Store.MP_Language" Multiplicity="0..1" />
+          <End Role="MP_Movies" Type="MoviePlexModel.Store.MP_Movies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Language">
+              <PropertyRef Name="LanguageCode" />
+            </Principal>
+            <Dependent Role="MP_Movies">
+              <PropertyRef Name="LanguageCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Show_movie_id">
+          <End Role="MP_Movies" Type="MoviePlexModel.Store.MP_Movies" Multiplicity="1" />
+          <End Role="MP_Shows" Type="MoviePlexModel.Store.MP_Shows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Movies">
+              <PropertyRef Name="MovieId" />
+            </Principal>
+            <Dependent Role="MP_Shows">
+              <PropertyRef Name="MovieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_showcost_showid">
+          <End Role="MP_Shows" Type="MoviePlexModel.Store.MP_Shows" Multiplicity="1" />
+          <End Role="MP_ShowCost" Type="MoviePlexModel.Store.MP_ShowCost" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Shows">
+              <PropertyRef Name="ShowId" />
+            </Principal>
+            <Dependent Role="MP_ShowCost">
+              <PropertyRef Name="ShowId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Shows_screen_id">
+          <End Role="MP_Screens" Type="MoviePlexModel.Store.MP_Screens" Multiplicity="1" />
+          <End Role="MP_Shows" Type="MoviePlexModel.Store.MP_Shows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Screens">
+              <PropertyRef Name="ScreenId" />
+            </Principal>
+            <Dependent Role="MP_Shows">
+              <PropertyRef Name="ScreenId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Zone_zoneid">
+          <End Role="MP_ScreenZones" Type="MoviePlexModel.Store.MP_ScreenZones" Multiplicity="1" />
+          <End Role="MP_ShowCost" Type="MoviePlexModel.Store.MP_ShowCost" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_ScreenZones">
+              <PropertyRef Name="ZoneId" />
+            </Principal>
+            <Dependent Role="MP_ShowCost">
+              <PropertyRef Name="ZoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_ReservedSeats">
+          <End Role="MP_ShowReservations" Type="MoviePlexModel.Store.MP_ShowReservations" Multiplicity="1" />
+          <End Role="MP_ReservedSeats" Type="MoviePlexModel.Store.MP_ReservedSeats" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_ShowReservations">
+              <PropertyRef Name="ReservationId" />
+            </Principal>
+            <Dependent Role="MP_ReservedSeats">
+              <PropertyRef Name="ReservationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_ReserverSeats_ScreenSeat_id">
+          <End Role="MP_ScreenSeats" Type="MoviePlexModel.Store.MP_ScreenSeats" Multiplicity="1" />
+          <End Role="MP_ReservedSeats" Type="MoviePlexModel.Store.MP_ReservedSeats" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_ScreenSeats">
+              <PropertyRef Name="ScreenSeatId" />
+            </Principal>
+            <Dependent Role="MP_ReservedSeats">
+              <PropertyRef Name="ScreenSeatId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_ScreenSeats_ZoneId">
+          <End Role="MP_ScreenZones" Type="MoviePlexModel.Store.MP_ScreenZones" Multiplicity="1" />
+          <End Role="MP_ScreenSeats" Type="MoviePlexModel.Store.MP_ScreenSeats" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_ScreenZones">
+              <PropertyRef Name="ZoneId" />
+            </Principal>
+            <Dependent Role="MP_ScreenSeats">
+              <PropertyRef Name="ZoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_screentseats_Screenid">
+          <End Role="MP_Screens" Type="MoviePlexModel.Store.MP_Screens" Multiplicity="1" />
+          <End Role="MP_ScreenSeats" Type="MoviePlexModel.Store.MP_ScreenSeats" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Screens">
+              <PropertyRef Name="ScreenId" />
+            </Principal>
+            <Dependent Role="MP_ScreenSeats">
+              <PropertyRef Name="ScreenId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_mp_address_groupid">
+          <End Role="MP_AddressGroups" Type="MoviePlexModel.Store.MP_AddressGroups" Multiplicity="1" />
+          <End Role="MP_Address" Type="MoviePlexModel.Store.MP_Address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_AddressGroups">
+              <PropertyRef Name="AddressGroupId" />
+            </Principal>
+            <Dependent Role="MP_Address">
+              <PropertyRef Name="AddressGroupId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_mp_city_stateid">
+          <End Role="MP_State" Type="MoviePlexModel.Store.MP_State" Multiplicity="1" />
+          <End Role="MP_City" Type="MoviePlexModel.Store.MP_City" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_State">
+              <PropertyRef Name="StateId" />
+            </Principal>
+            <Dependent Role="MP_City">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_mp_state_countryid">
+          <End Role="MP_Country" Type="MoviePlexModel.Store.MP_Country" Multiplicity="1" />
+          <End Role="MP_State" Type="MoviePlexModel.Store.MP_State" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Country">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="MP_State">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_mp_Theaters_TheaterBrandId">
+          <End Role="MP_TheatersBrand" Type="MoviePlexModel.Store.MP_TheatersBrand" Multiplicity="0..1" />
+          <End Role="MP_Theaters" Type="MoviePlexModel.Store.MP_Theaters" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_TheatersBrand">
+              <PropertyRef Name="TheaterBrandId" />
+            </Principal>
+            <Dependent Role="MP_Theaters">
+              <PropertyRef Name="TheaterBrandID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_mp_zip_cityid">
+          <End Role="MP_City" Type="MoviePlexModel.Store.MP_City" Multiplicity="1" />
+          <End Role="MP_ZipCodes" Type="MoviePlexModel.Store.MP_ZipCodes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_City">
+              <PropertyRef Name="CityId" />
+            </Principal>
+            <Dependent Role="MP_ZipCodes">
+              <PropertyRef Name="CityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_ShowReservation_showid">
+          <End Role="MP_Shows" Type="MoviePlexModel.Store.MP_Shows" Multiplicity="1" />
+          <End Role="MP_ShowReservations" Type="MoviePlexModel.Store.MP_ShowReservations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Shows">
+              <PropertyRef Name="ShowId" />
+            </Principal>
+            <Dependent Role="MP_ShowReservations">
+              <PropertyRef Name="ShowId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MoviePlexModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MoviePlexEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MP_Address" EntityType="MoviePlexModel.MP_Address" />
+          <EntitySet Name="MP_AddressGroups" EntityType="MoviePlexModel.MP_AddressGroups" />
+          <EntitySet Name="MP_City" EntityType="MoviePlexModel.MP_City" />
+          <EntitySet Name="MP_Country" EntityType="MoviePlexModel.MP_Country" />
+          <EntitySet Name="MP_Genere" EntityType="MoviePlexModel.MP_Genere" />
+          <EntitySet Name="MP_Language" EntityType="MoviePlexModel.MP_Language" />
+          <EntitySet Name="MP_MovieCertifications" EntityType="MoviePlexModel.MP_MovieCertifications" />
+          <EntitySet Name="MP_Movies" EntityType="MoviePlexModel.MP_Movies" />
+          <EntitySet Name="MP_Screens" EntityType="MoviePlexModel.MP_Screens" />
+          <EntitySet Name="MP_ScreenSeats" EntityType="MoviePlexModel.MP_ScreenSeats" />
+          <EntitySet Name="MP_ScreenZones" EntityType="MoviePlexModel.MP_ScreenZones" />
+          <EntitySet Name="MP_ShowCost" EntityType="MoviePlexModel.MP_ShowCost" />
+          <EntitySet Name="MP_ShowReservations" EntityType="MoviePlexModel.MP_ShowReservations" />
+          <EntitySet Name="MP_Shows" EntityType="MoviePlexModel.MP_Shows" />
+          <EntitySet Name="MP_State" EntityType="MoviePlexModel.MP_State" />
+          <EntitySet Name="MP_Theaters" EntityType="MoviePlexModel.MP_Theaters" />
+          <EntitySet Name="MP_TheatersBrand" EntityType="MoviePlexModel.MP_TheatersBrand" />
+          <EntitySet Name="MP_UserInfo" EntityType="MoviePlexModel.MP_UserInfo" />
+          <EntitySet Name="MP_ZipCodes" EntityType="MoviePlexModel.MP_ZipCodes" />
+          <EntitySet Name="sysdiagrams" EntityType="MoviePlexModel.sysdiagram" />
+          <AssociationSet Name="FK_ck_fk_mp_address_groupid" Association="MoviePlexModel.FK_ck_fk_mp_address_groupid">
+            <End Role="MP_AddressGroups" EntitySet="MP_AddressGroups" />
+            <End Role="MP_Address" EntitySet="MP_Address" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_mp_city_stateid" Association="MoviePlexModel.FK_ck_fk_mp_city_stateid">
+            <End Role="MP_State" EntitySet="MP_State" />
+            <End Role="MP_City" EntitySet="MP_City" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_mp_zip_cityid" Association="MoviePlexModel.FK_ck_fk_mp_zip_cityid">
+            <End Role="MP_City" EntitySet="MP_City" />
+            <End Role="MP_ZipCodes" EntitySet="MP_ZipCodes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_mp_state_countryid" Association="MoviePlexModel.FK_ck_fk_mp_state_countryid">
+            <End Role="MP_Country" EntitySet="MP_Country" />
+            <End Role="MP_State" EntitySet="MP_State" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Movies_genereid" Association="MoviePlexModel.ck_fk_mp_Movies_genereid">
+            <End Role="MP_Genere" EntitySet="MP_Genere" />
+            <End Role="MP_Movies" EntitySet="MP_Movies" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Movies_LanguageCode" Association="MoviePlexModel.ck_fk_mp_Movies_LanguageCode">
+            <End Role="MP_Language" EntitySet="MP_Language" />
+            <End Role="MP_Movies" EntitySet="MP_Movies" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Movies_certificationid" Association="MoviePlexModel.ck_fk_mp_Movies_certificationid">
+            <End Role="MP_MovieCertifications" EntitySet="MP_MovieCertifications" />
+            <End Role="MP_Movies" EntitySet="MP_Movies" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Show_movie_id" Association="MoviePlexModel.ck_fk_mp_Show_movie_id">
+            <End Role="MP_Movies" EntitySet="MP_Movies" />
+            <End Role="MP_Shows" EntitySet="MP_Shows" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Shows_screen_id" Association="MoviePlexModel.ck_fk_mp_Shows_screen_id">
+            <End Role="MP_Screens" EntitySet="MP_Screens" />
+            <End Role="MP_Shows" EntitySet="MP_Shows" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_screentseats_Screenid" Association="MoviePlexModel.ck_fk_screentseats_Screenid">
+            <End Role="MP_Screens" EntitySet="MP_Screens" />
+            <End Role="MP_ScreenSeats" EntitySet="MP_ScreenSeats" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_ScreenSeats_ZoneId" Association="MoviePlexModel.ck_fk_ScreenSeats_ZoneId">
+            <End Role="MP_ScreenZones" EntitySet="MP_ScreenZones" />
+            <End Role="MP_ScreenSeats" EntitySet="MP_ScreenSeats" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_Zone_zoneid" Association="MoviePlexModel.ck_fk_mp_Zone_zoneid">
+            <End Role="MP_ScreenZones" EntitySet="MP_ScreenZones" />
+            <End Role="MP_ShowCost" EntitySet="MP_ShowCost" />
+          </AssociationSet>
+          <AssociationSet Name="ck_fk_mp_showcost_showid" Association="MoviePlexModel.ck_fk_mp_showcost_showid">
+            <End Role="MP_Shows" EntitySet="MP_Shows" />
+            <End Role="MP_ShowCost" EntitySet="MP_ShowCost" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_ShowReservation_showid" Association="MoviePlexModel.FK_ck_fk_ShowReservation_showid">
+            <End Role="MP_Shows" EntitySet="MP_Shows" />
+            <End Role="MP_ShowReservations" EntitySet="MP_ShowReservations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ck_fk_mp_Theaters_TheaterBrandId" Association="MoviePlexModel.FK_ck_fk_mp_Theaters_TheaterBrandId">
+            <End Role="MP_TheatersBrand" EntitySet="MP_TheatersBrand" />
+            <End Role="MP_Theaters" EntitySet="MP_Theaters" />
+          </AssociationSet>
+          <AssociationSet Name="MP_ReservedSeats" Association="MoviePlexModel.MP_ReservedSeats">
+            <End Role="MP_ShowReservations" EntitySet="MP_ShowReservations" />
+            <End Role="MP_ScreenSeats" EntitySet="MP_ScreenSeats" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="MP_Address">
+          <Key>
+            <PropertyRef Name="AddressId" />
+          </Key>
+          <Property Type="Int32" Name="AddressId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ReferenceId" Nullable="false" />
+          <Property Type="String" Name="Address1" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address2" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="AddressGroupId" Nullable="false" />
+          <NavigationProperty Name="MP_AddressGroups" Relationship="MoviePlexModel.FK_ck_fk_mp_address_groupid" FromRole="MP_Address" ToRole="MP_AddressGroups" />
+        </EntityType>
+        <EntityType Name="MP_AddressGroups">
+          <Key>
+            <PropertyRef Name="AddressGroupId" />
+          </Key>
+          <Property Type="Int32" Name="AddressGroupId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CountryId" Nullable="false" />
+          <Property Type="Int32" Name="CityId" Nullable="false" />
+          <Property Type="Int32" Name="StateId" Nullable="false" />
+          <Property Type="Int32" Name="ZipCodeId" Nullable="false" />
+          <NavigationProperty Name="MP_Address" Relationship="MoviePlexModel.FK_ck_fk_mp_address_groupid" FromRole="MP_AddressGroups" ToRole="MP_Address" />
+        </EntityType>
+        <EntityType Name="MP_City">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Type="Int32" Name="CityId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="StateId" Nullable="false" />
+          <Property Type="String" Name="CityName" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MP_State" Relationship="MoviePlexModel.FK_ck_fk_mp_city_stateid" FromRole="MP_City" ToRole="MP_State" />
+          <NavigationProperty Name="MP_ZipCodes" Relationship="MoviePlexModel.FK_ck_fk_mp_zip_cityid" FromRole="MP_City" ToRole="MP_ZipCodes" />
+        </EntityType>
+        <EntityType Name="MP_Country">
+          <Key>
+            <PropertyRef Name="CountryId" />
+          </Key>
+          <Property Type="Int32" Name="CountryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="CountryISOCode" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CountryName" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MP_State" Relationship="MoviePlexModel.FK_ck_fk_mp_state_countryid" FromRole="MP_Country" ToRole="MP_State" />
+        </EntityType>
+        <EntityType Name="MP_Genere">
+          <Key>
+            <PropertyRef Name="GenereID" />
+          </Key>
+          <Property Type="Int32" Name="GenereID" Nullable="false" />
+          <Property Type="String" Name="GenereType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MP_Movies" Relationship="MoviePlexModel.ck_fk_mp_Movies_genereid" FromRole="MP_Genere" ToRole="MP_Movies" />
+        </EntityType>
+        <EntityType Name="MP_Language">
+          <Key>
+            <PropertyRef Name="LanguageCode" />
+          </Key>
+          <Property Type="String" Name="LanguageCode" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Language" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="MP_Movies" Relationship="MoviePlexModel.ck_fk_mp_Movies_LanguageCode" FromRole="MP_Language" ToRole="MP_Movies" />
+        </EntityType>
+        <EntityType Name="MP_MovieCertifications">
+          <Key>
+            <PropertyRef Name="CertificationId" />
+          </Key>
+          <Property Type="Int32" Name="CertificationId" Nullable="false" />
+          <Property Type="String" Name="CertificationType" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="CertificationName" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CertificationDescription" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MP_Movies" Relationship="MoviePlexModel.ck_fk_mp_Movies_certificationid" FromRole="MP_MovieCertifications" ToRole="MP_Movies" />
+        </EntityType>
+        <EntityType Name="MP_Movies">
+          <Key>
+            <PropertyRef Name="MovieId" />
+          </Key>
+          <Property Type="Int32" Name="MovieId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="MovieName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LanguageCode" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Type="Int32" Name="CertificationId" />
+          <Property Type="Int32" Name="GenereId" />
+          <Property Type="DateTime" Name="ReleaseDate" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="Duration" Precision="2" Scale="2" />
+          <NavigationProperty Name="MP_Genere" Relationship="MoviePlexModel.ck_fk_mp_Movies_genereid" FromRole="MP_Movies" ToRole="MP_Genere" />
+          <NavigationProperty Name="MP_Language" Relationship="MoviePlexModel.ck_fk_mp_Movies_LanguageCode" FromRole="MP_Movies" ToRole="MP_Language" />
+          <NavigationProperty Name="MP_MovieCertifications" Relationship="MoviePlexModel.ck_fk_mp_Movies_certificationid" FromRole="MP_Movies" ToRole="MP_MovieCertifications" />
+          <NavigationProperty Name="MP_Shows" Relationship="MoviePlexModel.ck_fk_mp_Show_movie_id" FromRole="MP_Movies" ToRole="MP_Shows" />
+        </EntityType>
+        <EntityType Name="MP_Screens">
+          <Key>
+            <PropertyRef Name="ScreenId" />
+          </Key>
+          <Property Type="Int32" Name="ScreenId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="TheaterId" Nullable="false" />
+          <Property Type="String" Name="ScreenName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Capacity" />
+          <NavigationProperty Name="MP_Shows" Relationship="MoviePlexModel.ck_fk_mp_Shows_screen_id" FromRole="MP_Screens" ToRole="MP_Shows" />
+          <NavigationProperty Name="MP_ScreenSeats" Relationship="MoviePlexModel.ck_fk_screentseats_Screenid" FromRole="MP_Screens" ToRole="MP_ScreenSeats" />
+        </EntityType>
+        <EntityType Name="MP_ScreenSeats">
+          <Key>
+            <PropertyRef Name="ScreenSeatId" />
+          </Key>
+          <Property Type="Int32" Name="ScreenSeatId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ZoneId" Nullable="false" />
+          <Property Type="Int32" Name="ScreenId" Nullable="false" />
+          <Property Type="String" Name="SeatName" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MP_Screens" Relationship="MoviePlexModel.ck_fk_screentseats_Screenid" FromRole="MP_ScreenSeats" ToRole="MP_Screens" />
+          <NavigationProperty Name="MP_ScreenZones" Relationship="MoviePlexModel.ck_fk_ScreenSeats_ZoneId" FromRole="MP_ScreenSeats" ToRole="MP_ScreenZones" />
+          <NavigationProperty Name="MP_ShowReservations" Relationship="MoviePlexModel.MP_ReservedSeats" FromRole="MP_ScreenSeats" ToRole="MP_ShowReservations" />
+        </EntityType>
+        <EntityType Name="MP_ScreenZones">
+          <Key>
+            <PropertyRef Name="ZoneId" />
+          </Key>
+          <Property Type="Int32" Name="ZoneId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ZoneName" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MP_ScreenSeats" Relationship="MoviePlexModel.ck_fk_ScreenSeats_ZoneId" FromRole="MP_ScreenZones" ToRole="MP_ScreenSeats" />
+          <NavigationProperty Name="MP_ShowCost" Relationship="MoviePlexModel.ck_fk_mp_Zone_zoneid" FromRole="MP_ScreenZones" ToRole="MP_ShowCost" />
+        </EntityType>
+        <EntityType Name="MP_ShowCost">
+          <Key>
+            <PropertyRef Name="ShowId" />
+            <PropertyRef Name="ZoneId" />
+            <PropertyRef Name="Cost" />
+          </Key>
+          <Property Type="Int32" Name="ShowId" Nullable="false" />
+          <Property Type="Int32" Name="ZoneId" Nullable="false" />
+          <Property Type="Decimal" Name="Cost" Nullable="false" Precision="19" Scale="4" />
+          <NavigationProperty Name="MP_ScreenZones" Relationship="MoviePlexModel.ck_fk_mp_Zone_zoneid" FromRole="MP_ShowCost" ToRole="MP_ScreenZones" />
+          <NavigationProperty Name="MP_Shows" Relationship="MoviePlexModel.ck_fk_mp_showcost_showid" FromRole="MP_ShowCost" ToRole="MP_Shows" />
+        </EntityType>
+        <EntityType Name="MP_ShowReservations">
+          <Key>
+            <PropertyRef Name="ReservationId" />
+          </Key>
+          <Property Type="Int32" Name="ReservationId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ShowId" Nullable="false" />
+          <Property Type="String" Name="UserId" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="TotalSeats" />
+          <Property Type="Decimal" Name="TotalAmount" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="DateTime" Name="ReservationDate" Nullable="false" />
+          <Property Type="String" Name="ReferenceNumber" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MP_Shows" Relationship="MoviePlexModel.FK_ck_fk_ShowReservation_showid" FromRole="MP_ShowReservations" ToRole="MP_Shows" />
+          <NavigationProperty Name="MP_ScreenSeats" Relationship="MoviePlexModel.MP_ReservedSeats" FromRole="MP_ShowReservations" ToRole="MP_ScreenSeats" />
+        </EntityType>
+        <EntityType Name="MP_Shows">
+          <Key>
+            <PropertyRef Name="ShowId" />
+          </Key>
+          <Property Type="Int32" Name="ShowId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ScreenId" Nullable="false" />
+          <Property Type="Int32" Name="MovieId" Nullable="false" />
+          <Property Type="Int32" Name="MinimumAgeLimit" Nullable="false" />
+          <Property Type="DateTime" Name="ShowDate" Nullable="false" />
+          <Property Type="DateTime" Name="StartTime" Nullable="false" />
+          <Property Type="DateTime" Name="EndTime" Nullable="false" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <NavigationProperty Name="MP_Movies" Relationship="MoviePlexModel.ck_fk_mp_Show_movie_id" FromRole="MP_Shows" ToRole="MP_Movies" />
+          <NavigationProperty Name="MP_Screens" Relationship="MoviePlexModel.ck_fk_mp_Shows_screen_id" FromRole="MP_Shows" ToRole="MP_Screens" />
+          <NavigationProperty Name="MP_ShowCost" Relationship="MoviePlexModel.ck_fk_mp_showcost_showid" FromRole="MP_Shows" ToRole="MP_ShowCost" />
+          <NavigationProperty Name="MP_ShowReservations" Relationship="MoviePlexModel.FK_ck_fk_ShowReservation_showid" FromRole="MP_Shows" ToRole="MP_ShowReservations" />
+        </EntityType>
+        <EntityType Name="MP_State">
+          <Key>
+            <PropertyRef Name="StateId" />
+          </Key>
+          <Property Type="Int32" Name="StateId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CountryId" Nullable="false" />
+          <Property Type="String" Name="StateName" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MP_City" Relationship="MoviePlexModel.FK_ck_fk_mp_city_stateid" FromRole="MP_State" ToRole="MP_City" />
+          <NavigationProperty Name="MP_Country" Relationship="MoviePlexModel.FK_ck_fk_mp_state_countryid" FromRole="MP_State" ToRole="MP_Country" />
+        </EntityType>
+        <EntityType Name="MP_Theaters">
+          <Key>
+            <PropertyRef Name="TheaterId" />
+          </Key>
+          <Property Type="Int32" Name="TheaterId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="NumberOfScreens" Nullable="false" />
+          <Property Type="Int32" Name="TheaterBrandID" />
+          <Property Type="DateTime" Name="DBCreationDate" Nullable="false" />
+          <Property Type="String" Name="CreationUserId" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MP_TheatersBrand" Relationship="MoviePlexModel.FK_ck_fk_mp_Theaters_TheaterBrandId" FromRole="MP_Theaters" ToRole="MP_TheatersBrand" />
+        </EntityType>
+        <EntityType Name="MP_TheatersBrand">
+          <Key>
+            <PropertyRef Name="TheaterBrandId" />
+          </Key>
+          <Property Type="Int32" Name="TheaterBrandId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="BrandName" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MP_Theaters" Relationship="MoviePlexModel.FK_ck_fk_mp_Theaters_TheaterBrandId" FromRole="MP_TheatersBrand" ToRole="MP_Theaters" />
+        </EntityType>
+        <EntityType Name="MP_UserInfo">
+          <Key>
+            <PropertyRef Name="Uid" />
+          </Key>
+          <Property Type="Guid" Name="Uid" Nullable="false" />
+          <Property Type="String" Name="EmailId" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsValidEmail" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MP_ZipCodes">
+          <Key>
+            <PropertyRef Name="ZipId" />
+          </Key>
+          <Property Type="Int32" Name="ZipId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CityId" Nullable="false" />
+          <Property Type="String" Name="ZipCodes" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MP_City" Relationship="MoviePlexModel.FK_ck_fk_mp_zip_cityid" FromRole="MP_ZipCodes" ToRole="MP_City" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="principal_id" Nullable="false" />
+          <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="version" />
+          <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_ck_fk_mp_address_groupid">
+          <End Type="MoviePlexModel.MP_AddressGroups" Role="MP_AddressGroups" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_Address" Role="MP_Address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_AddressGroups">
+              <PropertyRef Name="AddressGroupId" />
+            </Principal>
+            <Dependent Role="MP_Address">
+              <PropertyRef Name="AddressGroupId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_mp_city_stateid">
+          <End Type="MoviePlexModel.MP_State" Role="MP_State" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_City" Role="MP_City" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_State">
+              <PropertyRef Name="StateId" />
+            </Principal>
+            <Dependent Role="MP_City">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_mp_zip_cityid">
+          <End Type="MoviePlexModel.MP_City" Role="MP_City" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_ZipCodes" Role="MP_ZipCodes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_City">
+              <PropertyRef Name="CityId" />
+            </Principal>
+            <Dependent Role="MP_ZipCodes">
+              <PropertyRef Name="CityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_mp_state_countryid">
+          <End Type="MoviePlexModel.MP_Country" Role="MP_Country" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_State" Role="MP_State" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Country">
+              <PropertyRef Name="CountryId" />
+            </Principal>
+            <Dependent Role="MP_State">
+              <PropertyRef Name="CountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Movies_genereid">
+          <End Type="MoviePlexModel.MP_Genere" Role="MP_Genere" Multiplicity="0..1" />
+          <End Type="MoviePlexModel.MP_Movies" Role="MP_Movies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Genere">
+              <PropertyRef Name="GenereID" />
+            </Principal>
+            <Dependent Role="MP_Movies">
+              <PropertyRef Name="GenereId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Movies_LanguageCode">
+          <End Type="MoviePlexModel.MP_Language" Role="MP_Language" Multiplicity="0..1" />
+          <End Type="MoviePlexModel.MP_Movies" Role="MP_Movies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Language">
+              <PropertyRef Name="LanguageCode" />
+            </Principal>
+            <Dependent Role="MP_Movies">
+              <PropertyRef Name="LanguageCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Movies_certificationid">
+          <End Type="MoviePlexModel.MP_MovieCertifications" Role="MP_MovieCertifications" Multiplicity="0..1" />
+          <End Type="MoviePlexModel.MP_Movies" Role="MP_Movies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_MovieCertifications">
+              <PropertyRef Name="CertificationId" />
+            </Principal>
+            <Dependent Role="MP_Movies">
+              <PropertyRef Name="CertificationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Show_movie_id">
+          <End Type="MoviePlexModel.MP_Movies" Role="MP_Movies" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_Shows" Role="MP_Shows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Movies">
+              <PropertyRef Name="MovieId" />
+            </Principal>
+            <Dependent Role="MP_Shows">
+              <PropertyRef Name="MovieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Shows_screen_id">
+          <End Type="MoviePlexModel.MP_Screens" Role="MP_Screens" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_Shows" Role="MP_Shows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Screens">
+              <PropertyRef Name="ScreenId" />
+            </Principal>
+            <Dependent Role="MP_Shows">
+              <PropertyRef Name="ScreenId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_screentseats_Screenid">
+          <End Type="MoviePlexModel.MP_Screens" Role="MP_Screens" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_ScreenSeats" Role="MP_ScreenSeats" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Screens">
+              <PropertyRef Name="ScreenId" />
+            </Principal>
+            <Dependent Role="MP_ScreenSeats">
+              <PropertyRef Name="ScreenId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_ScreenSeats_ZoneId">
+          <End Type="MoviePlexModel.MP_ScreenZones" Role="MP_ScreenZones" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_ScreenSeats" Role="MP_ScreenSeats" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_ScreenZones">
+              <PropertyRef Name="ZoneId" />
+            </Principal>
+            <Dependent Role="MP_ScreenSeats">
+              <PropertyRef Name="ZoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_Zone_zoneid">
+          <End Type="MoviePlexModel.MP_ScreenZones" Role="MP_ScreenZones" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_ShowCost" Role="MP_ShowCost" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_ScreenZones">
+              <PropertyRef Name="ZoneId" />
+            </Principal>
+            <Dependent Role="MP_ShowCost">
+              <PropertyRef Name="ZoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ck_fk_mp_showcost_showid">
+          <End Type="MoviePlexModel.MP_Shows" Role="MP_Shows" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_ShowCost" Role="MP_ShowCost" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Shows">
+              <PropertyRef Name="ShowId" />
+            </Principal>
+            <Dependent Role="MP_ShowCost">
+              <PropertyRef Name="ShowId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_ShowReservation_showid">
+          <End Type="MoviePlexModel.MP_Shows" Role="MP_Shows" Multiplicity="1" />
+          <End Type="MoviePlexModel.MP_ShowReservations" Role="MP_ShowReservations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_Shows">
+              <PropertyRef Name="ShowId" />
+            </Principal>
+            <Dependent Role="MP_ShowReservations">
+              <PropertyRef Name="ShowId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ck_fk_mp_Theaters_TheaterBrandId">
+          <End Type="MoviePlexModel.MP_TheatersBrand" Role="MP_TheatersBrand" Multiplicity="0..1" />
+          <End Type="MoviePlexModel.MP_Theaters" Role="MP_Theaters" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MP_TheatersBrand">
+              <PropertyRef Name="TheaterBrandId" />
+            </Principal>
+            <Dependent Role="MP_Theaters">
+              <PropertyRef Name="TheaterBrandID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MP_ReservedSeats">
+          <End Type="MoviePlexModel.MP_ShowReservations" Role="MP_ShowReservations" Multiplicity="*" />
+          <End Type="MoviePlexModel.MP_ScreenSeats" Role="MP_ScreenSeats" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MoviePlexModelStoreContainer" CdmEntityContainer="MoviePlexEntities">
+          <EntitySetMapping Name="MP_Address">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_Address">
+              <MappingFragment StoreEntitySet="MP_Address">
+                <ScalarProperty Name="AddressGroupId" ColumnName="AddressGroupId" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="ReferenceId" ColumnName="ReferenceId" />
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_AddressGroups">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_AddressGroups">
+              <MappingFragment StoreEntitySet="MP_AddressGroups">
+                <ScalarProperty Name="ZipCodeId" ColumnName="ZipCodeId" />
+                <ScalarProperty Name="StateId" ColumnName="StateId" />
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="AddressGroupId" ColumnName="AddressGroupId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_City">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_City">
+              <MappingFragment StoreEntitySet="MP_City">
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+                <ScalarProperty Name="StateId" ColumnName="StateId" />
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_Country">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_Country">
+              <MappingFragment StoreEntitySet="MP_Country">
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="CountryISOCode" ColumnName="CountryISOCode" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_Genere">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_Genere">
+              <MappingFragment StoreEntitySet="MP_Genere">
+                <ScalarProperty Name="GenereType" ColumnName="GenereType" />
+                <ScalarProperty Name="GenereID" ColumnName="GenereID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_Language">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_Language">
+              <MappingFragment StoreEntitySet="MP_Language">
+                <ScalarProperty Name="Language" ColumnName="Language" />
+                <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_MovieCertifications">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_MovieCertifications">
+              <MappingFragment StoreEntitySet="MP_MovieCertifications">
+                <ScalarProperty Name="CertificationDescription" ColumnName="CertificationDescription" />
+                <ScalarProperty Name="CertificationName" ColumnName="CertificationName" />
+                <ScalarProperty Name="CertificationType" ColumnName="CertificationType" />
+                <ScalarProperty Name="CertificationId" ColumnName="CertificationId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_Movies">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_Movies">
+              <MappingFragment StoreEntitySet="MP_Movies">
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+                <ScalarProperty Name="GenereId" ColumnName="GenereId" />
+                <ScalarProperty Name="CertificationId" ColumnName="CertificationId" />
+                <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+                <ScalarProperty Name="MovieName" ColumnName="MovieName" />
+                <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_Screens">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_Screens">
+              <MappingFragment StoreEntitySet="MP_Screens">
+                <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+                <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
+                <ScalarProperty Name="TheaterId" ColumnName="TheaterId" />
+                <ScalarProperty Name="ScreenId" ColumnName="ScreenId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_ScreenSeats">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_ScreenSeats">
+              <MappingFragment StoreEntitySet="MP_ScreenSeats">
+                <ScalarProperty Name="SeatName" ColumnName="SeatName" />
+                <ScalarProperty Name="ScreenId" ColumnName="ScreenId" />
+                <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+                <ScalarProperty Name="ScreenSeatId" ColumnName="ScreenSeatId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_ScreenZones">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_ScreenZones">
+              <MappingFragment StoreEntitySet="MP_ScreenZones">
+                <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+                <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_ShowCost">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_ShowCost">
+              <MappingFragment StoreEntitySet="MP_ShowCost">
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+                <ScalarProperty Name="ShowId" ColumnName="ShowId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_ShowReservations">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_ShowReservations">
+              <MappingFragment StoreEntitySet="MP_ShowReservations">
+                <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+                <ScalarProperty Name="ReservationDate" ColumnName="ReservationDate" />
+                <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+                <ScalarProperty Name="TotalSeats" ColumnName="TotalSeats" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ShowId" ColumnName="ShowId" />
+                <ScalarProperty Name="ReservationId" ColumnName="ReservationId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_Shows">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_Shows">
+              <MappingFragment StoreEntitySet="MP_Shows">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="ShowDate" ColumnName="ShowDate" />
+                <ScalarProperty Name="MinimumAgeLimit" ColumnName="MinimumAgeLimit" />
+                <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+                <ScalarProperty Name="ScreenId" ColumnName="ScreenId" />
+                <ScalarProperty Name="ShowId" ColumnName="ShowId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_State">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_State">
+              <MappingFragment StoreEntitySet="MP_State">
+                <ScalarProperty Name="StateName" ColumnName="StateName" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="StateId" ColumnName="StateId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_Theaters">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_Theaters">
+              <MappingFragment StoreEntitySet="MP_Theaters">
+                <ScalarProperty Name="CreationUserId" ColumnName="CreationUserId" />
+                <ScalarProperty Name="DBCreationDate" ColumnName="DBCreationDate" />
+                <ScalarProperty Name="TheaterBrandID" ColumnName="TheaterBrandID" />
+                <ScalarProperty Name="NumberOfScreens" ColumnName="NumberOfScreens" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TheaterId" ColumnName="TheaterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_TheatersBrand">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_TheatersBrand">
+              <MappingFragment StoreEntitySet="MP_TheatersBrand">
+                <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+                <ScalarProperty Name="TheaterBrandId" ColumnName="TheaterBrandId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_UserInfo">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_UserInfo">
+              <MappingFragment StoreEntitySet="MP_UserInfo">
+                <ScalarProperty Name="IsValidEmail" ColumnName="IsValidEmail" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="Uid" ColumnName="Uid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MP_ZipCodes">
+            <EntityTypeMapping TypeName="MoviePlexModel.MP_ZipCodes">
+              <MappingFragment StoreEntitySet="MP_ZipCodes">
+                <ScalarProperty Name="ZipCodes" ColumnName="ZipCodes" />
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+                <ScalarProperty Name="ZipId" ColumnName="ZipId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="MoviePlexModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="MP_ReservedSeats" TypeName="MoviePlexModel.MP_ReservedSeats" StoreEntitySet="MP_ReservedSeats">
+            <EndProperty Name="MP_ScreenSeats">
+              <ScalarProperty Name="ScreenSeatId" ColumnName="ScreenSeatId" />
+            </EndProperty>
+            <EndProperty Name="MP_ShowReservations">
+              <ScalarProperty Name="ReservationId" ColumnName="ReservationId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="MPEntity" ZoomLevel="72">
+        <EntityTypeShape EntityType="MoviePlexModel.MP_Address" Width="1.5" PointX="5" PointY="10.875" Height="1.9210009765625031" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_AddressGroups" Width="1.5" PointX="2.75" PointY="10.875" Height="1.921000976562496" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_City" Width="1.5" PointX="12.25" PointY="1.875" Height="1.7566536458333388" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_Country" Width="1.5" PointX="7.75" PointY="2" Height="1.5923063151041674" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_Genere" Width="1.5" PointX="1.5" PointY="7.25" Height="1.427958984374996" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_Language" Width="1.5" PointX="1.5" PointY="14.375" Height="1.427958984374996" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_MovieCertifications" Width="1.5" PointX="1.5" PointY="16.5" Height="1.7566536458333246" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_Movies" Width="1.5" PointX="0.75" PointY="9.75" Height="2.907084960937496" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_Screens" Width="1.5" PointX="0.75" PointY="3.625" Height="1.9210009765625107" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_ScreenSeats" Width="1.5" PointX="7.5" PointY="4.875" Height="2.0853483072916674" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_ScreenZones" Width="1.5" PointX="3" PointY="0.75" Height="1.5923063151041674" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_ShowCost" Width="1.5" PointX="5.25" PointY="2.625" Height="1.7566536458333388" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_ShowReservations" Width="1.5" PointX="5.25" PointY="5.875" Height="2.4140429687500102" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_Shows" Width="1.5" PointX="3" PointY="3.125" Height="2.907084960937496" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_State" Width="1.5" PointX="10" PointY="1.875" Height="1.7566536458333388" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_Theaters" Width="1.5" PointX="10" PointY="8" Height="2.0853483072916674" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_TheatersBrand" Width="1.5" PointX="7.75" PointY="8.25" Height="1.427958984374996" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_UserInfo" Width="1.5" PointX="9.75" PointY="4.75" Height="1.5923063151041674" />
+        <EntityTypeShape EntityType="MoviePlexModel.MP_ZipCodes" Width="1.5" PointX="14.5" PointY="2" Height="1.5923063151041674" />
+        <EntityTypeShape EntityType="MoviePlexModel.sysdiagram" Width="1.5" PointX="7.75" PointY="11.75" Height="1.7566536458333246" />
+        <AssociationConnector Association="MoviePlexModel.FK_ck_fk_mp_address_groupid" >
+          <ConnectorPoint PointX="4.25" PointY="11.835500488281248" />
+          <ConnectorPoint PointX="5" PointY="11.835500488281248" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.FK_ck_fk_mp_city_stateid" >
+          <ConnectorPoint PointX="11.5" PointY="2.7533268229166694" />
+          <ConnectorPoint PointX="12.25" PointY="2.7533268229166694" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.FK_ck_fk_mp_zip_cityid" >
+          <ConnectorPoint PointX="13.75" PointY="2.7961531575520837" />
+          <ConnectorPoint PointX="14.5" PointY="2.7961531575520837" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.FK_ck_fk_mp_state_countryid" >
+          <ConnectorPoint PointX="9.25" PointY="2.7961531575520837" />
+          <ConnectorPoint PointX="10" PointY="2.7961531575520837" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.ck_fk_mp_Movies_genereid" >
+          <ConnectorPoint PointX="1.875" PointY="8.677958984374996" />
+          <ConnectorPoint PointX="1.875" PointY="9.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.ck_fk_mp_Movies_LanguageCode" >
+          <ConnectorPoint PointX="1.875" PointY="14.375" />
+          <ConnectorPoint PointX="1.875" PointY="12.657084960937496" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.ck_fk_mp_Movies_certificationid" >
+          <ConnectorPoint PointX="1.5" PointY="17.378326822916662" />
+          <ConnectorPoint PointX="1.1249995" PointY="17.378326822916662" />
+          <ConnectorPoint PointX="1.1249995" PointY="12.657084960937496" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.ck_fk_mp_Show_movie_id" >
+          <ConnectorPoint PointX="2.25" PointY="10.28125" />
+          <ConnectorPoint PointX="4.40625" PointY="10.28125" />
+          <ConnectorPoint PointX="4.40625" PointY="6.032084960937496" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.ck_fk_mp_Shows_screen_id" >
+          <ConnectorPoint PointX="2.25" PointY="4.5855004882812551" />
+          <ConnectorPoint PointX="3" PointY="4.5855004882812551" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.ck_fk_screentseats_Screenid" >
+          <ConnectorPoint PointX="1.5" PointY="5.54600097656251" />
+          <ConnectorPoint PointX="1.5" PointY="6.282084960937496" />
+          <ConnectorPoint PointX="3.6197891666666666" PointY="6.2820849609374951" />
+          <ConnectorPoint PointX="3.7864558333333336" PointY="6.282084960937496" />
+          <ConnectorPoint PointX="4.322916666666667" PointY="6.2820849609374951" />
+          <ConnectorPoint PointX="4.489583333333333" PointY="6.282084960937496" />
+          <ConnectorPoint PointX="5" PointY="6.282084960937496" />
+          <ConnectorPoint PointX="5" PointY="5.625" />
+          <ConnectorPoint PointX="7.125" PointY="5.625" />
+          <ConnectorPoint PointX="7.125" PointY="5.9176741536458337" />
+          <ConnectorPoint PointX="7.5" PointY="5.9176741536458337" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.ck_fk_ScreenSeats_ZoneId" >
+          <ConnectorPoint PointX="4.5" PointY="1.34375" />
+          <ConnectorPoint PointX="7.59375" PointY="1.34375" />
+          <ConnectorPoint PointX="7.59375" PointY="4.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.ck_fk_mp_Zone_zoneid" >
+          <ConnectorPoint PointX="4.5" PointY="1.8742806575520774" />
+          <ConnectorPoint PointX="6" PointY="1.8742806575520774" />
+          <ConnectorPoint PointX="6" PointY="2.625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.ck_fk_mp_showcost_showid" >
+          <ConnectorPoint PointX="4.5" PointY="3.7533268229166694" />
+          <ConnectorPoint PointX="5.25" PointY="3.7533268229166694" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.FK_ck_fk_ShowReservation_showid" >
+          <ConnectorPoint PointX="3.7031225" PointY="6.032084960937496" />
+          <ConnectorPoint PointX="3.7031225" PointY="7.2855639648437531" />
+          <ConnectorPoint PointX="4.322916666666667" PointY="7.2855639648437522" />
+          <ConnectorPoint PointX="4.489583333333333" PointY="7.2855639648437531" />
+          <ConnectorPoint PointX="5.25" PointY="7.2855639648437531" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.FK_ck_fk_mp_Theaters_TheaterBrandId" >
+          <ConnectorPoint PointX="9.25" PointY="8.963979492187498" />
+          <ConnectorPoint PointX="10" PointY="8.963979492187498" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviePlexModel.MP_ReservedSeats" >
+          <ConnectorPoint PointX="6.75" PointY="6.5015112304687506" />
+          <ConnectorPoint PointX="7.5" PointY="6.5015112304687506" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

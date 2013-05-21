@@ -1,0 +1,52 @@
+using System;
+using System.Data;
+using System.Data.OleDb;
+
+class exe
+{
+	public static void Main(string [] str)
+	{
+		string path = "D:\\temp\\csc\\dataset";
+		string table = path+"\\temp.dbf";
+		
+		OleDbConnection con = new OleDbConnection("Provider=VFPOLEDB.1;Data Source=D:\\temp\\csc\\dataset");
+    	con.Open();
+  
+  try
+  {
+  	OleDbDataAdapter da = new OleDbDataAdapter("select * from "+table, con);
+ // 	da.SelectCommand = new OleDbCommand("select * from "+table, con);
+  da.UpdateCommand = new OleDbCommand("update "+ table+"set fname = ? where id = 1", con);
+  
+  da.UpdateCommand.Parameters.Add("fname", OleDbType.VarChar, 200, "@fname").SourceVersion = DataRowVersion.Original;
+  DataTable tb = new DataTable();
+  da.Fill(tb);
+  /*	DataSet ds = new DataSet();
+  	da.Fill(ds);
+  	DataTable tb = ds.Tables[0];
+  	DataRow rw = tb.NewRow();
+  	rw["id"] = 4;
+  	rw["fname"] = "afreen";
+  	rw["lname"] = "khan";
+  	rw["mname"] = "arif";
+  */
+ // tb.Rows.Add(rw);
+ Console.WriteLine("Enter you first name");
+  	DataRow rw = tb.Rows[0];
+  	rw["fname"] = Console.ReadLine();
+  //	Console.WriteLine("row added to table");
+  //	OleDbCommandBuilder build = new OleDbCommandBuilder(da);
+  	da.Update(tb);
+  	Console.WriteLine("Table updated");  
+   
+    }
+    catch(OleDbException ex)
+    {
+    	Console.WriteLine(ex.Message);
+    }
+    finally
+    {
+    	con.Close();
+    }
+	}
+}

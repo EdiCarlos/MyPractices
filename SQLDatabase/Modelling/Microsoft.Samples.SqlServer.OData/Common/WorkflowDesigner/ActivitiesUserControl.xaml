@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Microsoft.Samples.SqlServer.Workflow.Designer.ActivitiesUserControl"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="469" Width="344.4">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+    
+            <Border Name="toolboxArea" Grid.Row="0" Margin="2,2,2,0"  BorderThickness="1" BorderBrush="Gray" />
+        </Grid>
+    </Grid>
+</UserControl>
+

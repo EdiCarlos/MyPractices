@@ -1,0 +1,23 @@
+using System;
+using System.Data;
+
+class exe
+{
+	public static void Main(string [] str)
+	{
+		DataSet set = new DataSet("School");
+		DataTable table = set.Tables.Add("class");
+		DataColumn col = table.Columns.Add("rollno", typeof(Int32));
+		table.Columns.Add("studentname", typeof(string));
+		table.Columns.Add("schoolname", typeof(string));
+	  table.PrimaryKey = new DataColumn[] { col};
+		
+		DataTable table1 = set.Tables.Add("subclass");
+		
+		DataColumn col1 = table1.Columns.Add("rollnumber", typeof(Int32));
+		table1.Columns.Add("studentname", typeof(string));
+		table1.Columns.Add("schoolname", typeof(string));
+		
+		set.Relation.Add("frg", set.Tables["class"].Columns["rollno"], set.Tables["subclass"].Columns["rollnumber"]);
+		}
+}

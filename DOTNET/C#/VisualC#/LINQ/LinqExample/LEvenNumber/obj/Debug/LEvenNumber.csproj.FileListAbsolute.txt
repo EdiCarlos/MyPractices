@@ -1,0 +1,7 @@
+D:\temp\VisualC#\LINQ\LinqExample\LEvenNumber\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\LinqExample\LEvenNumber\bin\Debug\LEvenNumber.exe
+D:\temp\VisualC#\LINQ\LinqExample\LEvenNumber\bin\Debug\LEvenNumber.pdb
+D:\temp\VisualC#\LINQ\LinqExample\LEvenNumber\obj\Debug\LEvenNumber.exe
+D:\temp\VisualC#\LINQ\LinqExample\LEvenNumber\obj\Debug\LEvenNumber.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LEvenNumber\obj\Debug\LEvenNumber.exe
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\LEvenNumber\obj\Debug\LEvenNumber.pdb

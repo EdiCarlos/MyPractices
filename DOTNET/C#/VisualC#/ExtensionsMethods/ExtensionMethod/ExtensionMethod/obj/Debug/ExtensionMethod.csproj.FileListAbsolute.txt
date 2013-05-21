@@ -1,0 +1,3 @@
+D:\temp\VisualC#\ExtensionsMethods\ExtensionMethod\ExtensionMethod\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\ExtensionsMethods\ExtensionMethod\ExtensionMethod\obj\Debug\ExtensionMethod.Properties.Resources.resources
+D:\temp\VisualC#\ExtensionsMethods\ExtensionMethod\ExtensionMethod\obj\Debug\ExtensionMethod.csproj.GenerateResource.Cache

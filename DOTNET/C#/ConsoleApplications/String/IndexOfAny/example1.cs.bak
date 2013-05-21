@@ -1,0 +1,16 @@
+using System;
+
+class exe
+{
+	public static void Main()
+	{
+		string str = @"c:\myfolder\myfile.txt";
+		char [] ch = {'\\', '\\'};
+		str.IndexOfAny(ch);
+str.LastIndexOfAny(ch);
+string filename = str.Remove(0, str.LastIndexOfAny(ch) + 1);
+Console.WriteLine(filename);
+Console.WriteLine(str.Replace(filename, "file.txt"));
+Console.WriteLine(str.Substring(str.LastIndexOfAny(ch) + 1, "newfile.txt"));
+}
+}

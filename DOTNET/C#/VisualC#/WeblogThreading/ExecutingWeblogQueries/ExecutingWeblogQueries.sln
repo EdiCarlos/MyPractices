@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutingWeblogQueries", "ExecutingWeblogQueries\ExecutingWeblogQueries.csproj", "{A482E854-63CB-4C14-9A0D-5A41270639A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryAutoEvents", "TryAutoEvents\TryAutoEvents.csproj", "{4FC7CFB3-6D57-4FBE-B2B9-95DCEE6136FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A482E854-63CB-4C14-9A0D-5A41270639A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A482E854-63CB-4C14-9A0D-5A41270639A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A482E854-63CB-4C14-9A0D-5A41270639A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A482E854-63CB-4C14-9A0D-5A41270639A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC7CFB3-6D57-4FBE-B2B9-95DCEE6136FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC7CFB3-6D57-4FBE-B2B9-95DCEE6136FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC7CFB3-6D57-4FBE-B2B9-95DCEE6136FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC7CFB3-6D57-4FBE-B2B9-95DCEE6136FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+﻿Installing assembly 'D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.exe
+   logfile = D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.exe assembly.
+Committing assembly 'D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.exe
+   logfile = D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\temp\VisualC#\IExplore\MyService\MyService\bin\Debug\MyService.exe assembly.
+Remove InstallState file because there are no installers.

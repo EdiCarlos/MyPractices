@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\ExplicitAndImplicit\ExplicitAndImplicit\bin\Debug\ExplicitAndImplicit.exe
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\ExplicitAndImplicit\ExplicitAndImplicit\bin\Debug\ExplicitAndImplicit.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\ExplicitAndImplicit\ExplicitAndImplicit\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\ExplicitAndImplicit\ExplicitAndImplicit\obj\x86\Debug\ExplicitAndImplicit.exe
+D:\MyPractices\DOTNET\C#\VisualC#\InterfaceSamples\ExplicitAndImplicit\ExplicitAndImplicit\obj\x86\Debug\ExplicitAndImplicit.pdb

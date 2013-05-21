@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForLoop\SimpleForLoop\bin\Debug\SimpleForLoop.exe
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForLoop\SimpleForLoop\bin\Debug\SimpleForLoop.pdb
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForLoop\SimpleForLoop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForLoop\SimpleForLoop\obj\x86\Debug\SimpleForLoop.exe
+D:\MyPractices\DOTNET\4.0\TPL\SimpleForLoop\SimpleForLoop\obj\x86\Debug\SimpleForLoop.pdb

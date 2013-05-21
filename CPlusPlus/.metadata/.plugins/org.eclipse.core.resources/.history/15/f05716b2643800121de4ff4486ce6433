@@ -1,0 +1,23 @@
+
+#include "Headers/Person.h";
+
+Person::Person(char* firstName, char * lastName, int age)
+{
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.age = age;
+}
+
+char* Person::FirstName()
+{
+	return firstName;
+}
+
+char* Person::LastName(){
+	return lastName;
+}
+
+int Person::GetAge(){
+	return age;
+}
+

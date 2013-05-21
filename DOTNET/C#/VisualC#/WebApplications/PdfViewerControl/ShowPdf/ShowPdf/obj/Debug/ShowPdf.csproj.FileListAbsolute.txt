@@ -1,0 +1,5 @@
+D:\temp\VisualC#\WebApplications\PdfViewerControl\ShowPdf\ShowPdf\bin\ShowPdf.dll
+D:\temp\VisualC#\WebApplications\PdfViewerControl\ShowPdf\ShowPdf\bin\ShowPdf.pdb
+D:\temp\VisualC#\WebApplications\PdfViewerControl\ShowPdf\ShowPdf\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\WebApplications\PdfViewerControl\ShowPdf\ShowPdf\obj\Debug\ShowPdf.dll
+D:\temp\VisualC#\WebApplications\PdfViewerControl\ShowPdf\ShowPdf\obj\Debug\ShowPdf.pdb

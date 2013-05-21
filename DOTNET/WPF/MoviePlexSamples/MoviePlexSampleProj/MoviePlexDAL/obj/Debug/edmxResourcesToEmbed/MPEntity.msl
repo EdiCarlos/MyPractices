@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MoviePlexModelStoreContainer" CdmEntityContainer="MoviePlexEntities">
+    <EntitySetMapping Name="MP_Address">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_Address">
+        <MappingFragment StoreEntitySet="MP_Address">
+          <ScalarProperty Name="AddressGroupId" ColumnName="AddressGroupId" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="ReferenceId" ColumnName="ReferenceId" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_AddressGroups">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_AddressGroups">
+        <MappingFragment StoreEntitySet="MP_AddressGroups">
+          <ScalarProperty Name="ZipCodeId" ColumnName="ZipCodeId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="AddressGroupId" ColumnName="AddressGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_City">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_City">
+        <MappingFragment StoreEntitySet="MP_City">
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_Country">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_Country">
+        <MappingFragment StoreEntitySet="MP_Country">
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryISOCode" ColumnName="CountryISOCode" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_Genere">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_Genere">
+        <MappingFragment StoreEntitySet="MP_Genere">
+          <ScalarProperty Name="GenereType" ColumnName="GenereType" />
+          <ScalarProperty Name="GenereID" ColumnName="GenereID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_Language">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_Language">
+        <MappingFragment StoreEntitySet="MP_Language">
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_MovieCertifications">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_MovieCertifications">
+        <MappingFragment StoreEntitySet="MP_MovieCertifications">
+          <ScalarProperty Name="CertificationDescription" ColumnName="CertificationDescription" />
+          <ScalarProperty Name="CertificationName" ColumnName="CertificationName" />
+          <ScalarProperty Name="CertificationType" ColumnName="CertificationType" />
+          <ScalarProperty Name="CertificationId" ColumnName="CertificationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_Movies">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_Movies">
+        <MappingFragment StoreEntitySet="MP_Movies">
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+          <ScalarProperty Name="GenereId" ColumnName="GenereId" />
+          <ScalarProperty Name="CertificationId" ColumnName="CertificationId" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+          <ScalarProperty Name="MovieName" ColumnName="MovieName" />
+          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_Screens">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_Screens">
+        <MappingFragment StoreEntitySet="MP_Screens">
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
+          <ScalarProperty Name="TheaterId" ColumnName="TheaterId" />
+          <ScalarProperty Name="ScreenId" ColumnName="ScreenId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_ScreenSeats">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_ScreenSeats">
+        <MappingFragment StoreEntitySet="MP_ScreenSeats">
+          <ScalarProperty Name="SeatName" ColumnName="SeatName" />
+          <ScalarProperty Name="ScreenId" ColumnName="ScreenId" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="ScreenSeatId" ColumnName="ScreenSeatId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_ScreenZones">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_ScreenZones">
+        <MappingFragment StoreEntitySet="MP_ScreenZones">
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_ShowCost">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_ShowCost">
+        <MappingFragment StoreEntitySet="MP_ShowCost">
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="ShowId" ColumnName="ShowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_ShowReservations">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_ShowReservations">
+        <MappingFragment StoreEntitySet="MP_ShowReservations">
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="ReservationDate" ColumnName="ReservationDate" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="TotalSeats" ColumnName="TotalSeats" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ShowId" ColumnName="ShowId" />
+          <ScalarProperty Name="ReservationId" ColumnName="ReservationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_Shows">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_Shows">
+        <MappingFragment StoreEntitySet="MP_Shows">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="ShowDate" ColumnName="ShowDate" />
+          <ScalarProperty Name="MinimumAgeLimit" ColumnName="MinimumAgeLimit" />
+          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="ScreenId" ColumnName="ScreenId" />
+          <ScalarProperty Name="ShowId" ColumnName="ShowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_State">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_State">
+        <MappingFragment StoreEntitySet="MP_State">
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_Theaters">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_Theaters">
+        <MappingFragment StoreEntitySet="MP_Theaters">
+          <ScalarProperty Name="CreationUserId" ColumnName="CreationUserId" />
+          <ScalarProperty Name="DBCreationDate" ColumnName="DBCreationDate" />
+          <ScalarProperty Name="TheaterBrandID" ColumnName="TheaterBrandID" />
+          <ScalarProperty Name="NumberOfScreens" ColumnName="NumberOfScreens" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TheaterId" ColumnName="TheaterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_TheatersBrand">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_TheatersBrand">
+        <MappingFragment StoreEntitySet="MP_TheatersBrand">
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="TheaterBrandId" ColumnName="TheaterBrandId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_UserInfo">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_UserInfo">
+        <MappingFragment StoreEntitySet="MP_UserInfo">
+          <ScalarProperty Name="IsValidEmail" ColumnName="IsValidEmail" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="Uid" ColumnName="Uid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MP_ZipCodes">
+      <EntityTypeMapping TypeName="MoviePlexModel.MP_ZipCodes">
+        <MappingFragment StoreEntitySet="MP_ZipCodes">
+          <ScalarProperty Name="ZipCodes" ColumnName="ZipCodes" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="ZipId" ColumnName="ZipId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MoviePlexModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MP_ReservedSeats" TypeName="MoviePlexModel.MP_ReservedSeats" StoreEntitySet="MP_ReservedSeats">
+      <EndProperty Name="MP_ScreenSeats">
+        <ScalarProperty Name="ScreenSeatId" ColumnName="ScreenSeatId" />
+      </EndProperty>
+      <EndProperty Name="MP_ShowReservations">
+        <ScalarProperty Name="ReservationId" ColumnName="ReservationId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

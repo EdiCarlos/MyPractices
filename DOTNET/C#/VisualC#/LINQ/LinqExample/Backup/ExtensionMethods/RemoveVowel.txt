@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+namespace ExtensionMethods
+{
+    class Program
+    {
+        delegate string getString(IEnumerable<char> ie);
+        static void Main()
+        {
+            IEnumerable<char> val = "Not what you might expect";
+            //string val = "Not what you might expect";
+            //ch val = "Not what you might expect";
+            //query = query.Where(c => c != 'a').Where(c => c != 'e').Where(c => c != 'i').Where(c => c != 'o').Where(c => c != 'u');
+            //query = query.Where(c => (c) == 'a').Select(c => c.ToString().Replace('a', '$').ToCharArray()[0]);
+            //query = query.Where(c => (c) == 'e').Select(c => c.ToString().Replace('e', '$').ToCharArray()[0]);
+            //query = query.Where(c => (c) == 'i').Select(c => c.ToString().Replace('i', '$').ToCharArray()[0]);
+            //query = query.Where(c => (c) == 'o').Select(c => c.ToString().Replace('o', '$').ToCharArray()[0]);
+            //query = query.Where(c => (c) == 'u').Select(c => c.ToString().Replace('u', '$').ToCharArray()[0]);
+
+            //var result = from q in query.ToStringArray() select q.Replace('a', '$').Replace('e', '$').Replace('i', '$').Replace('o', '$').Replace('u', '$'); 
+            //var result = from q in string.Join(
+            //var query = from q in val select q.ToString().Replace('a', '$').Replace('e', '$').Replace('i', '$').Replace('o', '$').Replace('u', '$');
+            //string[] strArr = val.ToStringArray();
+            //string str = string.Join("", strArr);
+            //var query = from q in string.Join("", val.ToStringArray()) select q.ToString().Replace('a', '$').Replace('e', '$').Replace('i', '$').Replace('o', '$').Replace('u', '$');
+
+            //string query = string.Join("", val.ToStringArray().Select(s => s.Replace('a', '$').Replace('e', '$').Replace('i', '$').Replace('o', '$').Replace('u', '$')).ToArray<string>());
+            getString query = (v) => string.Join("", v.ToStringArray().Select(s => s.Replace('a', '$').Replace('e', '$').Replace('i', '$').Replace('o', '$').Replace('u', '$')).ToArray<string>());
+            Console.WriteLine(query(val));
+            //foreach (char c in query)
+            //{
+            //    Console.Write(c);
+            //}
+        }
+    }
+    static class Extension
+    {
+        public static string[] ToStringArray(this IEnumerable<char> ie)
+        {
+            List<string> list = new List<string>();
+            foreach (char c in ie)
+            {
+                list.Add(c.ToString());
+            }
+            return list.ToArray<string>();
+        }
+    }
+}

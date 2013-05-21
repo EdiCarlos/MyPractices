@@ -1,0 +1,7 @@
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\MergeConfiguration.exe
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\bin\Debug\MergeConfiguration.pdb
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides.Console\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides.Console\obj\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.Console.Properties.Resources.resources
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides.Console\obj\Debug\Configuration.EnvironmentalOverrides.Console.csproj.GenerateResource.Cache
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides.Console\obj\Debug\MergeConfiguration.exe
+D:\MyPractices\DOTNET\C#\EnterpriseLib5.0\Enterprise\SRC\Blocks\Configuration\Src\EnvironmentalOverrides.Console\obj\Debug\MergeConfiguration.pdb

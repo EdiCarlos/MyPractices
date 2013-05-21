@@ -1,0 +1,7 @@
+D:\temp\VisualC#\LINQ\LinqExample\ExtensionMethods\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\LinqExample\ExtensionMethods\bin\Debug\ExtensionMethods.exe
+D:\temp\VisualC#\LINQ\LinqExample\ExtensionMethods\bin\Debug\ExtensionMethods.pdb
+D:\temp\VisualC#\LINQ\LinqExample\ExtensionMethods\obj\Debug\ExtensionMethods.exe
+D:\temp\VisualC#\LINQ\LinqExample\ExtensionMethods\obj\Debug\ExtensionMethods.pdb
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\ExtensionMethods\obj\Debug\ExtensionMethods.exe
+D:\MyPractices\DOTNET\C#\VisualC#\LINQ\LinqExample\ExtensionMethods\obj\Debug\ExtensionMethods.pdb

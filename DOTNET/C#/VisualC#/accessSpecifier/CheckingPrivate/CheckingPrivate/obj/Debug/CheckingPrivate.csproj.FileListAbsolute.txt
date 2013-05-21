@@ -1,0 +1,5 @@
+D:\temp\VisualC#\accessSpecifier\CheckingPrivate\CheckingPrivate\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\accessSpecifier\CheckingPrivate\CheckingPrivate\bin\Debug\CheckingPrivate.exe
+D:\temp\VisualC#\accessSpecifier\CheckingPrivate\CheckingPrivate\bin\Debug\CheckingPrivate.pdb
+D:\temp\VisualC#\accessSpecifier\CheckingPrivate\CheckingPrivate\obj\Debug\CheckingPrivate.exe
+D:\temp\VisualC#\accessSpecifier\CheckingPrivate\CheckingPrivate\obj\Debug\CheckingPrivate.pdb

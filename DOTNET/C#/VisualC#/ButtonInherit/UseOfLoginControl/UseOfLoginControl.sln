@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseOfLoginControl", "UseOfLoginControl\UseOfLoginControl.csproj", "{C6B868C4-5483-4AFB-9339-951E2138D55E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6B868C4-5483-4AFB-9339-951E2138D55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B868C4-5483-4AFB-9339-951E2138D55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B868C4-5483-4AFB-9339-951E2138D55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B868C4-5483-4AFB-9339-951E2138D55E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

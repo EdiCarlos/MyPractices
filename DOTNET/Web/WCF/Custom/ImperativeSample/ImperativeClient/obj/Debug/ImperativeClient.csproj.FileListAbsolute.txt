@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeClient\bin\Debug\ImperativeClient.exe.config
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeClient\bin\Debug\ImperativeClient.exe
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeClient\bin\Debug\ImperativeClient.pdb
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeClient\obj\Debug\ImperativeClient.exe
+D:\MyPractices\Web\WCF\Custom\ImperativeSample\ImperativeClient\obj\Debug\ImperativeClient.pdb

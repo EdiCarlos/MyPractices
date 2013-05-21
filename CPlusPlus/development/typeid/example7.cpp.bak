@@ -1,0 +1,26 @@
+#include <iostream>
+#include <ostream>
+#include <typeinfo>
+
+using namespace std;
+
+class Base
+{
+	public:
+	virtual ~Base(){}
+};
+
+class derived : public Base
+{
+};
+
+int main()
+{
+	Base* b;
+	derived d1;
+	b = &d1;
+cout<<"typeid of base class "<<typeid(*b).name()<<endl;
+cout<<"typeid of derived class "<<typeid(Base).name()<<endl;
+	
+	return 0;
+}

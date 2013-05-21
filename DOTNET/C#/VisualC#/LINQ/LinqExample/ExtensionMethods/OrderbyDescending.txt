@@ -1,0 +1,88 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+namespace ExtensionMethods
+{
+    class Program
+    {
+        class Customer
+        {
+            public string ID { get; set; }
+            public string City { get; set; }
+            public string Country { get; set; }
+            public string Region { get; set; }
+            public decimal Sales { get; set; }
+        }
+        class Orders
+        {
+            public string ID { get; set; }
+            public decimal Amount { get; set; }
+        }
+        class Employee
+        {
+            int id, role;
+            public int Id
+            {
+                get { return id; }
+                set { id = value; }
+            }
+            public int Role
+            {
+                get { return role; }
+                set { role = value; }
+            }
+            string firstName, lastName;
+            public string FirstName
+            {
+                get { return firstName; }
+                set { firstName = value; }
+            }
+            public string LastName
+            {
+                get { return lastName; }
+                set { lastName = value; }
+            }
+            //public int ID { get; set; }
+            //public int Role { get; set; }
+            //public string FirstName { get; set; }
+            //public string LastName { get; set; }
+            ////public string MiddleName { get; set; }
+        }
+        class Role
+        {
+            int _id;
+            public int Id
+            {
+                get { return _id; }
+                set { _id = value; }
+            }
+            string role;
+            public string Role1
+            {
+                get { return role; }
+                set { role = value; }
+            }
+        }
+        class Books
+        {
+            public int ID { get; set; }
+            public string Title { get; set; }
+        }
+        static void Main()
+        {
+            string[] mosus = { "D G", "R W", "R W" };
+            //IEnumerable<string> query = mosus.OrderBy(o => o.Split().Last());
+            IEnumerable<string> query = mosus.OrderByDescending(o => o.Split().Last());
+            
+            //var query1 = from ms in mosus orderby ms descending select ms;
+
+            foreach (var item in query)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+}

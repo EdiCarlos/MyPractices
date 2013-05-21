@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        static void Main()
+        {
+            List<string> myList2 = new List<string>();
+            myList2.Add("A");
+            myList2.Add("B");
+            myList2.Add("C");
+            myList2.Add("D");
+            
+            string vanilla = myList2.Find((string name) => name.Equals("B"));
+            Console.WriteLine(vanilla);
+
+        }
+    }
+}

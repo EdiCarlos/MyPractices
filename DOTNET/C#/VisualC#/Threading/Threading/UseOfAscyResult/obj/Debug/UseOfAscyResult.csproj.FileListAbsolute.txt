@@ -1,0 +1,5 @@
+D:\temp\VisualC#\Threading\Threading\UseOfAscyResult\bin\Debug\UseOfAscyResult.exe
+D:\temp\VisualC#\Threading\Threading\UseOfAscyResult\bin\Debug\UseOfAscyResult.pdb
+D:\temp\VisualC#\Threading\Threading\UseOfAscyResult\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Threading\Threading\UseOfAscyResult\obj\Debug\UseOfAscyResult.exe
+D:\temp\VisualC#\Threading\Threading\UseOfAscyResult\obj\Debug\UseOfAscyResult.pdb

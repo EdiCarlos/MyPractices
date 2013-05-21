@@ -1,0 +1,7 @@
+D:\MyPractices\Web\ASPNetProfile\ProfileSample\ProfileSample\bin\ProfileSample.dll
+D:\MyPractices\Web\ASPNetProfile\ProfileSample\ProfileSample\bin\ProfileSample.pdb
+D:\MyPractices\Web\ASPNetProfile\ProfileSample\ProfileSample\bin\EntityFramework.dll
+D:\MyPractices\Web\ASPNetProfile\ProfileSample\ProfileSample\bin\EntityFramework.xml
+D:\MyPractices\Web\ASPNetProfile\ProfileSample\ProfileSample\obj\Debug\ProfileSample.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\ASPNetProfile\ProfileSample\ProfileSample\obj\Debug\ProfileSample.dll
+D:\MyPractices\Web\ASPNetProfile\ProfileSample\ProfileSample\obj\Debug\ProfileSample.pdb

@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ProductPayModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ProductPayModelStoreContainer">
+          <EntitySet Name="DC_DocHeader" EntityType="ProductPayModel.Store.DC_DocHeader" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="DC_DocHeader">
+          <Key>
+            <PropertyRef Name="DocHeaderDRN" />
+            <PropertyRef Name="DaysInPT" />
+          </Key>
+          <Property Name="DocHeaderDRN" Type="bigint" Nullable="false" />
+          <Property Name="DocType" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="DocSubTypeCode" Type="char" MaxLength="3" />
+          <Property Name="SourceSystem" Type="int" />
+          <Property Name="DocNumber" Type="varchar" MaxLength="30" />
+          <Property Name="PurposeCode" Type="char" MaxLength="2" />
+          <Property Name="DocReleaseNumber" Type="varchar" MaxLength="30" />
+          <Property Name="OriginCode" Type="char" MaxLength="1" />
+          <Property Name="DXTransactionSetSID" Type="bigint" />
+          <Property Name="AnchorID" Type="bigint" />
+          <Property Name="IssueDate" Type="datetime" />
+          <Property Name="PTCreationDate" Type="datetime" />
+          <Property Name="CurrencyCode" Type="char" MaxLength="3" />
+          <Property Name="PrimaryMatchID" Type="varchar" MaxLength="120" />
+          <Property Name="SecondaryMatchID" Type="varchar" MaxLength="80" />
+          <Property Name="RelatedDocDRN" Type="bigint" />
+          <Property Name="UsersMatchDocType" Type="char" MaxLength="10" />
+          <Property Name="UsersMatchDocNumber" Type="varchar" MaxLength="30" />
+          <Property Name="UsersMatchDocReleaseNumber" Type="varchar" MaxLength="30" />
+          <Property Name="UsersMatchDoc2Type" Type="char" MaxLength="10" />
+          <Property Name="UsersMatchDoc2Number" Type="varchar" MaxLength="30" />
+          <Property Name="UsersMatchDoc2ReleaseNumber" Type="varchar" MaxLength="30" />
+          <Property Name="IsGenerated" Type="char" MaxLength="1" />
+          <Property Name="IsAnyMatchedDocPaid" Type="char" MaxLength="1" />
+          <Property Name="IsPricingRequired" Type="char" MaxLength="1" />
+          <Property Name="IsReceiptRequired" Type="char" MaxLength="1" />
+          <Property Name="WasCancelledInPast" Type="char" MaxLength="1" />
+          <Property Name="WasUpdatedByOwnerCompany" Type="char" MaxLength="1" />
+          <Property Name="IsLIMatchRequired" Type="char" MaxLength="1" />
+          <Property Name="IsEventMatchingRequired" Type="char" MaxLength="1" />
+          <Property Name="ManualApproveFlag" Type="char" MaxLength="1" />
+          <Property Name="BuyerIDCodeQualifier" Type="char" MaxLength="2" />
+          <Property Name="BuyerIDCode" Type="varchar" MaxLength="80" />
+          <Property Name="BuyerUSBCCustomerID" Type="int" />
+          <Property Name="BuyerOrganizationID" Type="int" />
+          <Property Name="BuyerNAIDC" Type="bigint" />
+          <Property Name="BuyerIndustry" Type="char" MaxLength="2" />
+          <Property Name="BuyerMarket" Type="char" MaxLength="1" />
+          <Property Name="BuyerSector" Type="char" MaxLength="4" />
+          <Property Name="BuyerBusinessRuleID" Type="int" />
+          <Property Name="BuyerBusinessRuleVersion" Type="int" />
+          <Property Name="Direction" Type="char" MaxLength="1" />
+          <Property Name="ShipToIDCodeQualifier" Type="char" MaxLength="2" />
+          <Property Name="ShipToIDCode" Type="varchar" MaxLength="80" />
+          <Property Name="ShipToName" Type="varchar" MaxLength="60" />
+          <Property Name="ShipToOrganizationID" Type="int" />
+          <Property Name="ShipToNAIDC" Type="bigint" />
+          <Property Name="ShipFromIDCodeQualifier" Type="char" MaxLength="2" />
+          <Property Name="ShipFromIDCode" Type="varchar" MaxLength="80" />
+          <Property Name="ShipFromName" Type="varchar" MaxLength="60" />
+          <Property Name="ShipFromOrganizationID" Type="int" />
+          <Property Name="ShipFromNAIDC" Type="bigint" />
+          <Property Name="SellerIDCodeQualifier" Type="char" MaxLength="2" />
+          <Property Name="SellerIDCode" Type="varchar" MaxLength="80" />
+          <Property Name="SellerUSBCCustomerID" Type="int" />
+          <Property Name="SellerOrganizationID" Type="int" />
+          <Property Name="SellerNAIDC" Type="bigint" />
+          <Property Name="SellerIndustry" Type="char" MaxLength="2" />
+          <Property Name="SellerMarket" Type="char" MaxLength="1" />
+          <Property Name="SellerSector" Type="char" MaxLength="4" />
+          <Property Name="SellerBusinessRuleID" Type="int" />
+          <Property Name="SellerBusinessRuleVersion" Type="int" />
+          <Property Name="MasterDocNumber" Type="varchar" MaxLength="30" />
+          <Property Name="MasterDocDRN" Type="bigint" />
+          <Property Name="ConsolidatedInvoiceAnchorID" Type="bigint" />
+          <Property Name="TransportationMode" Type="char" MaxLength="4" />
+          <Property Name="CarrierCode" Type="char" MaxLength="17" />
+          <Property Name="FOBFreightPayCode" Type="char" MaxLength="2" />
+          <Property Name="BillToAccountNumber" Type="varchar" MaxLength="19" />
+          <Property Name="PayToAccountNumber" Type="varchar" MaxLength="19" />
+          <Property Name="EffectiveDate" Type="datetime" />
+          <Property Name="VendorOrderNumber" Type="varchar" MaxLength="30" />
+          <Property Name="UsersBOLNumber" Type="varchar" MaxLength="30" />
+          <Property Name="MPSTranCode" Type="char" MaxLength="2" />
+          <Property Name="OwnerFlag" Type="char" MaxLength="1" />
+          <Property Name="BillToOrganizationID" Type="int" />
+          <Property Name="BillToNAIDC" Type="bigint" />
+          <Property Name="SubmittedExtendedPrice" Type="money" />
+          <Property Name="FinancialExtendedPrice" Type="money" />
+          <Property Name="DeclaredShipmentValue" Type="money" />
+          <Property Name="InsurableValue" Type="money" />
+          <Property Name="TotalBillableQuantityUOM" Type="char" MaxLength="2" />
+          <Property Name="TotalBillableQuantity" Type="decimal" Precision="12" Scale="3" />
+          <Property Name="NonFinancialFlag" Type="char" MaxLength="1" />
+          <Property Name="CurrentFinancialStatus" Type="char" MaxLength="2" />
+          <Property Name="CurrentFinancialStatusDate" Type="datetime" />
+          <Property Name="CurrentFulfillmentStatus" Type="char" MaxLength="2" />
+          <Property Name="CurrentFulfillmentStatusDate" Type="datetime" />
+          <Property Name="CurrentPriceStatus" Type="char" MaxLength="2" />
+          <Property Name="CurrentPriceStatusDate" Type="datetime" />
+          <Property Name="CurrentDocumentationStatus" Type="char" MaxLength="2" />
+          <Property Name="CurrentDocumentationStatusDate" Type="datetime" />
+          <Property Name="AccountingLockDownFlag" Type="char" MaxLength="1" />
+          <Property Name="LastUpdateDate" Type="datetime" />
+          <Property Name="LastUpdateUser" Type="varchar" MaxLength="30" />
+          <Property Name="TStamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="TemplateIDC" Type="bigint" />
+          <Property Name="FinancialStatusAttribute" Type="char" MaxLength="2" />
+          <Property Name="TotalQuantityQualifier" Type="char" MaxLength="3" />
+          <Property Name="HazMatFlag" Type="char" MaxLength="1" />
+          <Property Name="OriginalDocNumber" Type="varchar" MaxLength="30" />
+          <Property Name="SubDocNumber" Type="varchar" MaxLength="30" />
+          <Property Name="MatchKey" Type="varchar" MaxLength="30" />
+          <Property Name="RemittanceKey" Type="varchar" MaxLength="30" />
+          <Property Name="TransportationPriority" Type="char" MaxLength="1" />
+          <Property Name="PODRequested" Type="char" MaxLength="1" />
+          <Property Name="LineCount" Type="int" />
+          <Property Name="InvoiceReceiptDate" Type="datetime" />
+          <Property Name="IncBillFlag" Type="char" MaxLength="1" />
+          <Property Name="ValidationResult" Type="char" MaxLength="1" />
+          <Property Name="ValidationActionCode" Type="varchar" MaxLength="5" />
+          <Property Name="ValidationActionCodeQualifier" Type="char" MaxLength="2" />
+          <Property Name="ForceMatchedBy" Type="varchar" MaxLength="30" />
+          <Property Name="OffContractPriceFlag" Type="char" MaxLength="1" />
+          <Property Name="AuditFlag" Type="char" MaxLength="1" />
+          <Property Name="BalanceDueFlag" Type="char" MaxLength="1" />
+          <Property Name="DocBatchNumber" Type="varchar" MaxLength="30" />
+          <Property Name="PaymentCheckDate" Type="datetime" />
+          <Property Name="IsPremiumFreight" Type="char" MaxLength="1" />
+          <Property Name="LoadNumber" Type="varchar" MaxLength="20" />
+          <Property Name="CheckType" Type="char" MaxLength="3" />
+          <Property Name="FowarderSCAC" Type="varchar" MaxLength="30" />
+          <Property Name="PricingBasis" Type="char" MaxLength="1" />
+          <Property Name="RatedFinancialExtendedPrice" Type="money" />
+          <Property Name="DocFormatTypeCode" Type="varchar" MaxLength="3" />
+          <Property Name="CurrentReviewStatus" Type="char" MaxLength="2" />
+          <Property Name="CurrentReviewStatusDate" Type="datetime" />
+          <Property Name="DocumentationStatusExceptionType" Type="int" />
+          <Property Name="ReceivedDate" Type="datetime" />
+          <Property Name="ConsolidatedInvoiceNumber" Type="varchar" MaxLength="30" />
+          <Property Name="FinancialResolutionStatus" Type="char" MaxLength="2" />
+          <Property Name="AvailabilityStatus" Type="char" MaxLength="2" />
+          <Property Name="ExpectedTotalSubDocs" Type="int" />
+          <Property Name="DocClassTypeCode" Type="char" MaxLength="2" />
+          <Property Name="ContractVersion" Type="varchar" MaxLength="16" />
+          <Property Name="ContractEffectiveDate" Type="datetime" />
+          <Property Name="DelayReasonCode" Type="char" MaxLength="3" />
+          <Property Name="InvoiceNumber" Type="varchar" MaxLength="30" />
+          <Property Name="OrderNumber" Type="varchar" MaxLength="30" />
+          <Property Name="PriceExtractID" Type="bigint" />
+          <Property Name="ServiceLevelRequested" Type="char" MaxLength="2" />
+          <Property Name="ServiceLevelAvailable" Type="char" MaxLength="2" />
+          <Property Name="ServiceLevelProvided" Type="char" MaxLength="2" />
+          <Property Name="TMStamp" Type="binary" MaxLength="8" />
+          <Property Name="OverallProcessingStatus" Type="char" MaxLength="2" />
+          <Property Name="DaysInPT" Type="int" Nullable="false" />
+          <Property Name="OrderReleaseNumber" Type="varchar" MaxLength="30" />
+          <Property Name="PaymentCheckNumber" Type="bigint" />
+          <Property Name="SubContractNumber" Type="varchar" MaxLength="30" />
+          <Property Name="ContractNumber" Type="varchar" MaxLength="30" />
+          <Property Name="FinancialStatusReasonCode" Type="char" MaxLength="3" />
+          <Property Name="InvoiceAuditRole" Type="char" MaxLength="2" />
+          <Property Name="PricingInvoiceDRN" Type="bigint" />
+          <Property Name="Volume" Type="decimal" Precision="15" Scale="2" />
+          <Property Name="VolumeUOM" Type="char" MaxLength="3" />
+          <Property Name="LadingQuantity" Type="decimal" Precision="15" Scale="2" />
+          <Property Name="LadingQuantityUOM" Type="char" MaxLength="3" />
+          <Property Name="LineHaulChargeDistributionMethod" Type="char" MaxLength="1" />
+          <Property Name="GLProcessingControlID" Type="bigint" />
+          <Property Name="IFFGenerationFlag" Type="char" MaxLength="2" />
+          <Property Name="VATTotalAmount" Type="money" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ProductPayModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ProductPayEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DC_DocHeader" EntityType="ProductPayModel.DC_DocHeader" />
+        </EntityContainer>
+        <EntityType Name="DC_DocHeader">
+          <Key>
+            <PropertyRef Name="DocHeaderDRN" />
+            <PropertyRef Name="DaysInPT" />
+          </Key>
+          <Property Name="DocHeaderDRN" Type="Int64" Nullable="false" />
+          <Property Name="DocType" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="DocSubTypeCode" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="SourceSystem" Type="Int32" />
+          <Property Name="DocNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="PurposeCode" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="DocReleaseNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="OriginCode" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="DXTransactionSetSID" Type="Int64" />
+          <Property Name="AnchorID" Type="Int64" />
+          <Property Name="IssueDate" Type="DateTime" />
+          <Property Name="PTCreationDate" Type="DateTime" />
+          <Property Name="CurrencyCode" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="PrimaryMatchID" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <Property Name="SecondaryMatchID" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="RelatedDocDRN" Type="Int64" />
+          <Property Name="UsersMatchDocType" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="UsersMatchDocNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="UsersMatchDocReleaseNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="UsersMatchDoc2Type" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="UsersMatchDoc2Number" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="UsersMatchDoc2ReleaseNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="IsGenerated" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="IsAnyMatchedDocPaid" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="IsPricingRequired" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="IsReceiptRequired" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="WasCancelledInPast" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="WasUpdatedByOwnerCompany" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="IsLIMatchRequired" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="IsEventMatchingRequired" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="ManualApproveFlag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="BuyerIDCodeQualifier" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="BuyerIDCode" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="BuyerUSBCCustomerID" Type="Int32" />
+          <Property Name="BuyerOrganizationID" Type="Int32" />
+          <Property Name="BuyerNAIDC" Type="Int64" />
+          <Property Name="BuyerIndustry" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="BuyerMarket" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="BuyerSector" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="BuyerBusinessRuleID" Type="Int32" />
+          <Property Name="BuyerBusinessRuleVersion" Type="Int32" />
+          <Property Name="Direction" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="ShipToIDCodeQualifier" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ShipToIDCode" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="ShipToName" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="ShipToOrganizationID" Type="Int32" />
+          <Property Name="ShipToNAIDC" Type="Int64" />
+          <Property Name="ShipFromIDCodeQualifier" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ShipFromIDCode" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="ShipFromName" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="ShipFromOrganizationID" Type="Int32" />
+          <Property Name="ShipFromNAIDC" Type="Int64" />
+          <Property Name="SellerIDCodeQualifier" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="SellerIDCode" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="SellerUSBCCustomerID" Type="Int32" />
+          <Property Name="SellerOrganizationID" Type="Int32" />
+          <Property Name="SellerNAIDC" Type="Int64" />
+          <Property Name="SellerIndustry" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="SellerMarket" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="SellerSector" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="SellerBusinessRuleID" Type="Int32" />
+          <Property Name="SellerBusinessRuleVersion" Type="Int32" />
+          <Property Name="MasterDocNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="MasterDocDRN" Type="Int64" />
+          <Property Name="ConsolidatedInvoiceAnchorID" Type="Int64" />
+          <Property Name="TransportationMode" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="CarrierCode" Type="String" MaxLength="17" Unicode="false" FixedLength="true" />
+          <Property Name="FOBFreightPayCode" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="BillToAccountNumber" Type="String" MaxLength="19" Unicode="false" FixedLength="false" />
+          <Property Name="PayToAccountNumber" Type="String" MaxLength="19" Unicode="false" FixedLength="false" />
+          <Property Name="EffectiveDate" Type="DateTime" />
+          <Property Name="VendorOrderNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="UsersBOLNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="MPSTranCode" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="OwnerFlag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="BillToOrganizationID" Type="Int32" />
+          <Property Name="BillToNAIDC" Type="Int64" />
+          <Property Name="SubmittedExtendedPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="FinancialExtendedPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DeclaredShipmentValue" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="InsurableValue" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TotalBillableQuantityUOM" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="TotalBillableQuantity" Type="Decimal" Precision="12" Scale="3" />
+          <Property Name="NonFinancialFlag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CurrentFinancialStatus" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="CurrentFinancialStatusDate" Type="DateTime" />
+          <Property Name="CurrentFulfillmentStatus" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="CurrentFulfillmentStatusDate" Type="DateTime" />
+          <Property Name="CurrentPriceStatus" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="CurrentPriceStatusDate" Type="DateTime" />
+          <Property Name="CurrentDocumentationStatus" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="CurrentDocumentationStatusDate" Type="DateTime" />
+          <Property Name="AccountingLockDownFlag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="LastUpdateDate" Type="DateTime" />
+          <Property Name="LastUpdateUser" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="TStamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="TemplateIDC" Type="Int64" />
+          <Property Name="FinancialStatusAttribute" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="TotalQuantityQualifier" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="HazMatFlag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="OriginalDocNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="SubDocNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="MatchKey" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="RemittanceKey" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="TransportationPriority" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="PODRequested" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="LineCount" Type="Int32" />
+          <Property Name="InvoiceReceiptDate" Type="DateTime" />
+          <Property Name="IncBillFlag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="ValidationResult" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="ValidationActionCode" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="ValidationActionCodeQualifier" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ForceMatchedBy" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="OffContractPriceFlag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="AuditFlag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="BalanceDueFlag" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="DocBatchNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentCheckDate" Type="DateTime" />
+          <Property Name="IsPremiumFreight" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="LoadNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CheckType" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="FowarderSCAC" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="PricingBasis" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="RatedFinancialExtendedPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="DocFormatTypeCode" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="CurrentReviewStatus" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="CurrentReviewStatusDate" Type="DateTime" />
+          <Property Name="DocumentationStatusExceptionType" Type="Int32" />
+          <Property Name="ReceivedDate" Type="DateTime" />
+          <Property Name="ConsolidatedInvoiceNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="FinancialResolutionStatus" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="AvailabilityStatus" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ExpectedTotalSubDocs" Type="Int32" />
+          <Property Name="DocClassTypeCode" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ContractVersion" Type="String" MaxLength="16" Unicode="false" FixedLength="false" />
+          <Property Name="ContractEffectiveDate" Type="DateTime" />
+          <Property Name="DelayReasonCode" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="InvoiceNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="OrderNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="PriceExtractID" Type="Int64" />
+          <Property Name="ServiceLevelRequested" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ServiceLevelAvailable" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ServiceLevelProvided" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="TMStamp" Type="Binary" MaxLength="8" FixedLength="true" />
+          <Property Name="OverallProcessingStatus" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="DaysInPT" Type="Int32" Nullable="false" />
+          <Property Name="OrderReleaseNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="PaymentCheckNumber" Type="Int64" />
+          <Property Name="SubContractNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="ContractNumber" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="FinancialStatusReasonCode" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="InvoiceAuditRole" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="PricingInvoiceDRN" Type="Int64" />
+          <Property Name="Volume" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="VolumeUOM" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="LadingQuantity" Type="Decimal" Precision="15" Scale="2" />
+          <Property Name="LadingQuantityUOM" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="LineHaulChargeDistributionMethod" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="GLProcessingControlID" Type="Int64" />
+          <Property Name="IFFGenerationFlag" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="VATTotalAmount" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ProductPayModelStoreContainer" CdmEntityContainer="ProductPayEntities">
+          <EntitySetMapping Name="DC_DocHeader"><EntityTypeMapping TypeName="ProductPayModel.DC_DocHeader"><MappingFragment StoreEntitySet="DC_DocHeader">
+            <ScalarProperty Name="DocHeaderDRN" ColumnName="DocHeaderDRN" />
+            <ScalarProperty Name="DocType" ColumnName="DocType" />
+            <ScalarProperty Name="DocSubTypeCode" ColumnName="DocSubTypeCode" />
+            <ScalarProperty Name="SourceSystem" ColumnName="SourceSystem" />
+            <ScalarProperty Name="DocNumber" ColumnName="DocNumber" />
+            <ScalarProperty Name="PurposeCode" ColumnName="PurposeCode" />
+            <ScalarProperty Name="DocReleaseNumber" ColumnName="DocReleaseNumber" />
+            <ScalarProperty Name="OriginCode" ColumnName="OriginCode" />
+            <ScalarProperty Name="DXTransactionSetSID" ColumnName="DXTransactionSetSID" />
+            <ScalarProperty Name="AnchorID" ColumnName="AnchorID" />
+            <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+            <ScalarProperty Name="PTCreationDate" ColumnName="PTCreationDate" />
+            <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+            <ScalarProperty Name="PrimaryMatchID" ColumnName="PrimaryMatchID" />
+            <ScalarProperty Name="SecondaryMatchID" ColumnName="SecondaryMatchID" />
+            <ScalarProperty Name="RelatedDocDRN" ColumnName="RelatedDocDRN" />
+            <ScalarProperty Name="UsersMatchDocType" ColumnName="UsersMatchDocType" />
+            <ScalarProperty Name="UsersMatchDocNumber" ColumnName="UsersMatchDocNumber" />
+            <ScalarProperty Name="UsersMatchDocReleaseNumber" ColumnName="UsersMatchDocReleaseNumber" />
+            <ScalarProperty Name="UsersMatchDoc2Type" ColumnName="UsersMatchDoc2Type" />
+            <ScalarProperty Name="UsersMatchDoc2Number" ColumnName="UsersMatchDoc2Number" />
+            <ScalarProperty Name="UsersMatchDoc2ReleaseNumber" ColumnName="UsersMatchDoc2ReleaseNumber" />
+            <ScalarProperty Name="IsGenerated" ColumnName="IsGenerated" />
+            <ScalarProperty Name="IsAnyMatchedDocPaid" ColumnName="IsAnyMatchedDocPaid" />
+            <ScalarProperty Name="IsPricingRequired" ColumnName="IsPricingRequired" />
+            <ScalarProperty Name="IsReceiptRequired" ColumnName="IsReceiptRequired" />
+            <ScalarProperty Name="WasCancelledInPast" ColumnName="WasCancelledInPast" />
+            <ScalarProperty Name="WasUpdatedByOwnerCompany" ColumnName="WasUpdatedByOwnerCompany" />
+            <ScalarProperty Name="IsLIMatchRequired" ColumnName="IsLIMatchRequired" />
+            <ScalarProperty Name="IsEventMatchingRequired" ColumnName="IsEventMatchingRequired" />
+            <ScalarProperty Name="ManualApproveFlag" ColumnName="ManualApproveFlag" />
+            <ScalarProperty Name="BuyerIDCodeQualifier" ColumnName="BuyerIDCodeQualifier" />
+            <ScalarProperty Name="BuyerIDCode" ColumnName="BuyerIDCode" />
+            <ScalarProperty Name="BuyerUSBCCustomerID" ColumnName="BuyerUSBCCustomerID" />
+            <ScalarProperty Name="BuyerOrganizationID" ColumnName="BuyerOrganizationID" />
+            <ScalarProperty Name="BuyerNAIDC" ColumnName="BuyerNAIDC" />
+            <ScalarProperty Name="BuyerIndustry" ColumnName="BuyerIndustry" />
+            <ScalarProperty Name="BuyerMarket" ColumnName="BuyerMarket" />
+            <ScalarProperty Name="BuyerSector" ColumnName="BuyerSector" />
+            <ScalarProperty Name="BuyerBusinessRuleID" ColumnName="BuyerBusinessRuleID" />
+            <ScalarProperty Name="BuyerBusinessRuleVersion" ColumnName="BuyerBusinessRuleVersion" />
+            <ScalarProperty Name="Direction" ColumnName="Direction" />
+            <ScalarProperty Name="ShipToIDCodeQualifier" ColumnName="ShipToIDCodeQualifier" />
+            <ScalarProperty Name="ShipToIDCode" ColumnName="ShipToIDCode" />
+            <ScalarProperty Name="ShipToName" ColumnName="ShipToName" />
+            <ScalarProperty Name="ShipToOrganizationID" ColumnName="ShipToOrganizationID" />
+            <ScalarProperty Name="ShipToNAIDC" ColumnName="ShipToNAIDC" />
+            <ScalarProperty Name="ShipFromIDCodeQualifier" ColumnName="ShipFromIDCodeQualifier" />
+            <ScalarProperty Name="ShipFromIDCode" ColumnName="ShipFromIDCode" />
+            <ScalarProperty Name="ShipFromName" ColumnName="ShipFromName" />
+            <ScalarProperty Name="ShipFromOrganizationID" ColumnName="ShipFromOrganizationID" />
+            <ScalarProperty Name="ShipFromNAIDC" ColumnName="ShipFromNAIDC" />
+            <ScalarProperty Name="SellerIDCodeQualifier" ColumnName="SellerIDCodeQualifier" />
+            <ScalarProperty Name="SellerIDCode" ColumnName="SellerIDCode" />
+            <ScalarProperty Name="SellerUSBCCustomerID" ColumnName="SellerUSBCCustomerID" />
+            <ScalarProperty Name="SellerOrganizationID" ColumnName="SellerOrganizationID" />
+            <ScalarProperty Name="SellerNAIDC" ColumnName="SellerNAIDC" />
+            <ScalarProperty Name="SellerIndustry" ColumnName="SellerIndustry" />
+            <ScalarProperty Name="SellerMarket" ColumnName="SellerMarket" />
+            <ScalarProperty Name="SellerSector" ColumnName="SellerSector" />
+            <ScalarProperty Name="SellerBusinessRuleID" ColumnName="SellerBusinessRuleID" />
+            <ScalarProperty Name="SellerBusinessRuleVersion" ColumnName="SellerBusinessRuleVersion" />
+            <ScalarProperty Name="MasterDocNumber" ColumnName="MasterDocNumber" />
+            <ScalarProperty Name="MasterDocDRN" ColumnName="MasterDocDRN" />
+            <ScalarProperty Name="ConsolidatedInvoiceAnchorID" ColumnName="ConsolidatedInvoiceAnchorID" />
+            <ScalarProperty Name="TransportationMode" ColumnName="TransportationMode" />
+            <ScalarProperty Name="CarrierCode" ColumnName="CarrierCode" />
+            <ScalarProperty Name="FOBFreightPayCode" ColumnName="FOBFreightPayCode" />
+            <ScalarProperty Name="BillToAccountNumber" ColumnName="BillToAccountNumber" />
+            <ScalarProperty Name="PayToAccountNumber" ColumnName="PayToAccountNumber" />
+            <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+            <ScalarProperty Name="VendorOrderNumber" ColumnName="VendorOrderNumber" />
+            <ScalarProperty Name="UsersBOLNumber" ColumnName="UsersBOLNumber" />
+            <ScalarProperty Name="MPSTranCode" ColumnName="MPSTranCode" />
+            <ScalarProperty Name="OwnerFlag" ColumnName="OwnerFlag" />
+            <ScalarProperty Name="BillToOrganizationID" ColumnName="BillToOrganizationID" />
+            <ScalarProperty Name="BillToNAIDC" ColumnName="BillToNAIDC" />
+            <ScalarProperty Name="SubmittedExtendedPrice" ColumnName="SubmittedExtendedPrice" />
+            <ScalarProperty Name="FinancialExtendedPrice" ColumnName="FinancialExtendedPrice" />
+            <ScalarProperty Name="DeclaredShipmentValue" ColumnName="DeclaredShipmentValue" />
+            <ScalarProperty Name="InsurableValue" ColumnName="InsurableValue" />
+            <ScalarProperty Name="TotalBillableQuantityUOM" ColumnName="TotalBillableQuantityUOM" />
+            <ScalarProperty Name="TotalBillableQuantity" ColumnName="TotalBillableQuantity" />
+            <ScalarProperty Name="NonFinancialFlag" ColumnName="NonFinancialFlag" />
+            <ScalarProperty Name="CurrentFinancialStatus" ColumnName="CurrentFinancialStatus" />
+            <ScalarProperty Name="CurrentFinancialStatusDate" ColumnName="CurrentFinancialStatusDate" />
+            <ScalarProperty Name="CurrentFulfillmentStatus" ColumnName="CurrentFulfillmentStatus" />
+            <ScalarProperty Name="CurrentFulfillmentStatusDate" ColumnName="CurrentFulfillmentStatusDate" />
+            <ScalarProperty Name="CurrentPriceStatus" ColumnName="CurrentPriceStatus" />
+            <ScalarProperty Name="CurrentPriceStatusDate" ColumnName="CurrentPriceStatusDate" />
+            <ScalarProperty Name="CurrentDocumentationStatus" ColumnName="CurrentDocumentationStatus" />
+            <ScalarProperty Name="CurrentDocumentationStatusDate" ColumnName="CurrentDocumentationStatusDate" />
+            <ScalarProperty Name="AccountingLockDownFlag" ColumnName="AccountingLockDownFlag" />
+            <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+            <ScalarProperty Name="LastUpdateUser" ColumnName="LastUpdateUser" />
+            <ScalarProperty Name="TStamp" ColumnName="TStamp" />
+            <ScalarProperty Name="TemplateIDC" ColumnName="TemplateIDC" />
+            <ScalarProperty Name="FinancialStatusAttribute" ColumnName="FinancialStatusAttribute" />
+            <ScalarProperty Name="TotalQuantityQualifier" ColumnName="TotalQuantityQualifier" />
+            <ScalarProperty Name="HazMatFlag" ColumnName="HazMatFlag" />
+            <ScalarProperty Name="OriginalDocNumber" ColumnName="OriginalDocNumber" />
+            <ScalarProperty Name="SubDocNumber" ColumnName="SubDocNumber" />
+            <ScalarProperty Name="MatchKey" ColumnName="MatchKey" />
+            <ScalarProperty Name="RemittanceKey" ColumnName="RemittanceKey" />
+            <ScalarProperty Name="TransportationPriority" ColumnName="TransportationPriority" />
+            <ScalarProperty Name="PODRequested" ColumnName="PODRequested" />
+            <ScalarProperty Name="LineCount" ColumnName="LineCount" />
+            <ScalarProperty Name="InvoiceReceiptDate" ColumnName="InvoiceReceiptDate" />
+            <ScalarProperty Name="IncBillFlag" ColumnName="IncBillFlag" />
+            <ScalarProperty Name="ValidationResult" ColumnName="ValidationResult" />
+            <ScalarProperty Name="ValidationActionCode" ColumnName="ValidationActionCode" />
+            <ScalarProperty Name="ValidationActionCodeQualifier" ColumnName="ValidationActionCodeQualifier" />
+            <ScalarProperty Name="ForceMatchedBy" ColumnName="ForceMatchedBy" />
+            <ScalarProperty Name="OffContractPriceFlag" ColumnName="OffContractPriceFlag" />
+            <ScalarProperty Name="AuditFlag" ColumnName="AuditFlag" />
+            <ScalarProperty Name="BalanceDueFlag" ColumnName="BalanceDueFlag" />
+            <ScalarProperty Name="DocBatchNumber" ColumnName="DocBatchNumber" />
+            <ScalarProperty Name="PaymentCheckDate" ColumnName="PaymentCheckDate" />
+            <ScalarProperty Name="IsPremiumFreight" ColumnName="IsPremiumFreight" />
+            <ScalarProperty Name="LoadNumber" ColumnName="LoadNumber" />
+            <ScalarProperty Name="CheckType" ColumnName="CheckType" />
+            <ScalarProperty Name="FowarderSCAC" ColumnName="FowarderSCAC" />
+            <ScalarProperty Name="PricingBasis" ColumnName="PricingBasis" />
+            <ScalarProperty Name="RatedFinancialExtendedPrice" ColumnName="RatedFinancialExtendedPrice" />
+            <ScalarProperty Name="DocFormatTypeCode" ColumnName="DocFormatTypeCode" />
+            <ScalarProperty Name="CurrentReviewStatus" ColumnName="CurrentReviewStatus" />
+            <ScalarProperty Name="CurrentReviewStatusDate" ColumnName="CurrentReviewStatusDate" />
+            <ScalarProperty Name="DocumentationStatusExceptionType" ColumnName="DocumentationStatusExceptionType" />
+            <ScalarProperty Name="ReceivedDate" ColumnName="ReceivedDate" />
+            <ScalarProperty Name="ConsolidatedInvoiceNumber" ColumnName="ConsolidatedInvoiceNumber" />
+            <ScalarProperty Name="FinancialResolutionStatus" ColumnName="FinancialResolutionStatus" />
+            <ScalarProperty Name="AvailabilityStatus" ColumnName="AvailabilityStatus" />
+            <ScalarProperty Name="ExpectedTotalSubDocs" ColumnName="ExpectedTotalSubDocs" />
+            <ScalarProperty Name="DocClassTypeCode" ColumnName="DocClassTypeCode" />
+            <ScalarProperty Name="ContractVersion" ColumnName="ContractVersion" />
+            <ScalarProperty Name="ContractEffectiveDate" ColumnName="ContractEffectiveDate" />
+            <ScalarProperty Name="DelayReasonCode" ColumnName="DelayReasonCode" />
+            <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+            <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+            <ScalarProperty Name="PriceExtractID" ColumnName="PriceExtractID" />
+            <ScalarProperty Name="ServiceLevelRequested" ColumnName="ServiceLevelRequested" />
+            <ScalarProperty Name="ServiceLevelAvailable" ColumnName="ServiceLevelAvailable" />
+            <ScalarProperty Name="ServiceLevelProvided" ColumnName="ServiceLevelProvided" />
+            <ScalarProperty Name="TMStamp" ColumnName="TMStamp" />
+            <ScalarProperty Name="OverallProcessingStatus" ColumnName="OverallProcessingStatus" />
+            <ScalarProperty Name="DaysInPT" ColumnName="DaysInPT" />
+            <ScalarProperty Name="OrderReleaseNumber" ColumnName="OrderReleaseNumber" />
+            <ScalarProperty Name="PaymentCheckNumber" ColumnName="PaymentCheckNumber" />
+            <ScalarProperty Name="SubContractNumber" ColumnName="SubContractNumber" />
+            <ScalarProperty Name="ContractNumber" ColumnName="ContractNumber" />
+            <ScalarProperty Name="FinancialStatusReasonCode" ColumnName="FinancialStatusReasonCode" />
+            <ScalarProperty Name="InvoiceAuditRole" ColumnName="InvoiceAuditRole" />
+            <ScalarProperty Name="PricingInvoiceDRN" ColumnName="PricingInvoiceDRN" />
+            <ScalarProperty Name="Volume" ColumnName="Volume" />
+            <ScalarProperty Name="VolumeUOM" ColumnName="VolumeUOM" />
+            <ScalarProperty Name="LadingQuantity" ColumnName="LadingQuantity" />
+            <ScalarProperty Name="LadingQuantityUOM" ColumnName="LadingQuantityUOM" />
+            <ScalarProperty Name="LineHaulChargeDistributionMethod" ColumnName="LineHaulChargeDistributionMethod" />
+            <ScalarProperty Name="GLProcessingControlID" ColumnName="GLProcessingControlID" />
+            <ScalarProperty Name="IFFGenerationFlag" ColumnName="IFFGenerationFlag" />
+            <ScalarProperty Name="VATTotalAmount" ColumnName="VATTotalAmount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="SummaryEntity">
+        <EntityTypeShape EntityType="ProductPayModel.DC_DocHeader" Width="1.5" PointX="0.75" PointY="0.75" Height="27.394837239583335" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

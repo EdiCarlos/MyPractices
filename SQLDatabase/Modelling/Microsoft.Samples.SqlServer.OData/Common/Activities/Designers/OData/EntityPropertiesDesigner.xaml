@@ -1,0 +1,85 @@
+﻿<sap:ActivityDesigner x:Class="Microsoft.Samples.SqlServer.Activities.EntityPropertiesDesigner"
+    xmlns:s="clr-namespace:System;assembly=mscorlib"                      
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation" 
+      xmlns:local="clr-namespace:Microsoft.Samples.SqlServer.Activities.ActivityPublishers"                   
+                      Collapsible="True">
+
+    <sap:ActivityDesigner.Resources>
+        <sapc:ArgumentToExpressionConverter 
+                x:Key="ArgumentToExpressionConverter" />
+
+        <DataTemplate x:Key="ShowAsCollapsed">
+            <TextBlock Foreground="Gray">
+                <TextBlock Text="For Each Entity Properties"/>
+            </TextBlock>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ShowAsExpanded">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="For Each" Grid.Row ="0" Grid.Column="0"
+                 HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/> 
+                
+                <sapv:ExpressionTextBox HintText="Propeties" 
+                Grid.Row ="0" Grid.Column="1" MaxWidth="150" MinWidth="150" Margin="5"
+                OwnerActivity="{Binding Path=ModelItem}"
+                Expression="{Binding Path=ModelItem.Properties, Mode=TwoWay, 
+                Converter={StaticResource ArgumentToExpressionConverter}, 
+                ConverterParameter=In }"
+                ExpressionType="s:Object" />
+                              
+                <sap:WorkflowItemPresenter HintText="ContentPart"
+                    Grid.Row ="2" Grid.Column="0" Grid.ColumnSpan="2"                                    
+                Margin="0" MinHeight="30" AllowedItemType="{x:Type TypeName=local:DocumentPart}" 
+                Item="{Binding Path=ModelItem.DocumentPartActivity, Mode=TwoWay}"/>
+                    
+            </Grid>
+        </DataTemplate>
+
+        <Style x:Key="StyleWithCollapse" TargetType="{x:Type ContentPresenter}">
+            <Setter Property="ContentTemplate" 
+                Value="{DynamicResource ShowAsExpanded}"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=ShowExpanded}" Value="False">
+                    <Setter Property="ContentTemplate" 
+                        Value="{DynamicResource ShowAsCollapsed }"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </sap:ActivityDesigner.Resources>
+
+    <sap:ActivityDesigner.Icon>
+        <DrawingBrush>
+            <DrawingBrush.Drawing>
+                <ImageDrawing>
+                    <ImageDrawing.Rect>
+                        <Rect Location="0,0"  Size="16,16" />
+                    </ImageDrawing.Rect>
+                    <ImageDrawing.ImageSource>
+                        <BitmapImage UriSource="SelectDataTableActivity.png"/>
+                    </ImageDrawing.ImageSource>
+                </ImageDrawing>
+            </DrawingBrush.Drawing>
+        </DrawingBrush>
+    </sap:ActivityDesigner.Icon>
+
+    <Grid>
+        <ContentPresenter Style="{DynamicResource StyleWithCollapse}" 
+            Content="{Binding}" />
+    </Grid>
+
+</sap:ActivityDesigner>

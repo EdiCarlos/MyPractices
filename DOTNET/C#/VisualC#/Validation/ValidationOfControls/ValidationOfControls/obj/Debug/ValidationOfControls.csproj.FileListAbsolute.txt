@@ -1,0 +1,8 @@
+D:\temp\VisualC#\Validation\ValidationOfControls\ValidationOfControls\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\Validation\ValidationOfControls\ValidationOfControls\obj\Debug\ValidationOfControls.Form1.resources
+D:\temp\VisualC#\Validation\ValidationOfControls\ValidationOfControls\obj\Debug\ValidationOfControls.Properties.Resources.resources
+D:\temp\VisualC#\Validation\ValidationOfControls\ValidationOfControls\obj\Debug\ValidationOfControls.csproj.GenerateResource.Cache
+D:\temp\VisualC#\Validation\ValidationOfControls\ValidationOfControls\bin\Debug\ValidationOfControls.exe
+D:\temp\VisualC#\Validation\ValidationOfControls\ValidationOfControls\bin\Debug\ValidationOfControls.pdb
+D:\temp\VisualC#\Validation\ValidationOfControls\ValidationOfControls\obj\Debug\ValidationOfControls.exe
+D:\temp\VisualC#\Validation\ValidationOfControls\ValidationOfControls\obj\Debug\ValidationOfControls.pdb

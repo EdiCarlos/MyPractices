@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3B14BA8-D028-4B01-92B6-36D2E7F6CCB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SalarSoft.ASProxy</RootNamespace>
+    <AssemblyName>SalarSoft.ASProxy</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\SalarSoft.ASProxy.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Trace|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Trace\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuiltIn\DataManagement\ResumableResponseData.cs" />
+    <Compile Include="BuiltIn\DataManagement\ResumableTransfers.cs" />
+    <Compile Include="BuiltIn\DataManagement\ASProxyCredentialCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataManagement\ASProxyEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataManagement\CookieManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataManagement\WebData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataProcessor\CSS\CSSParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataProcessor\CSS\CSSProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataProcessor\CSS\CSSReplacer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataProcessor\HtmlRegex\RegexHtmlProcessor.cs" />
+    <Compile Include="BuiltIn\DataProcessor\HTML\HtmlParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataProcessor\HTML\HtmlProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataProcessor\HTML\HtmlReplacer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\Compressors\ImageCompressor.cs" />
+    <Compile Include="BuiltIn\DataProcessor\JavaScript\JSParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataProcessor\JavaScript\JSProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataProcessor\JavaScript\JSReplacer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataProcessor\Processors.cs" />
+    <Compile Include="BuiltIn\LogSystem\LogSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\Plugins\AjaxEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuiltIn\DataManagement\ResumableResponse.cs" />
+    <Compile Include="BuiltIn\UserAccessControl\UAC.cs" />
+    <Compile Include="Configurations\Configurations.cs" />
+    <Compile Include="Configurations\CurrentContext.cs" />
+    <Compile Include="Configurations\CustomErrors.cs" />
+    <Compile Include="BuiltIn\Compressors\HttpCompressor.cs" />
+    <Compile Include="Configurations\Plugins.cs" />
+    <Compile Include="Configurations\Providers.cs" />
+    <Compile Include="Definitions\Enumerations.cs" />
+    <Compile Include="Definitions\PluginHosts.cs" />
+    <Compile Include="Definitions\PluginInfo.cs" />
+    <Compile Include="Definitions\ProviderInfo.cs" />
+    <Compile Include="Definitions\RequestInfo.cs" />
+    <Compile Include="Definitions\ResponseInfo.cs" />
+    <Compile Include="Definitions\TextRange.cs" />
+    <Compile Include="Definitions\UserOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exposed\ExCookieManager.cs" />
+    <Compile Include="Exposed\ExDataParser.cs" />
+    <Compile Include="Exposed\ExDataProcessor.cs" />
+    <Compile Include="Exposed\ExEngine.cs" />
+    <Compile Include="Exposed\ExUAC.cs" />
+    <Compile Include="Exposed\ExWebData.cs" />
+    <Compile Include="Exposed\ExJSProcessor.cs" />
+    <Compile Include="Exposed\ExCssProcessor.cs" />
+    <Compile Include="Exposed\Interfaces\IJSProcessor.cs" />
+    <Compile Include="Exposed\Interfaces\ICssProcessor.cs" />
+    <Compile Include="Exposed\Interfaces\ICredentialCache.cs" />
+    <Compile Include="Exposed\Interfaces\ICookieManager.cs" />
+    <Compile Include="Exposed\Interfaces\IDataParser.cs" />
+    <Compile Include="Exposed\Interfaces\IDataProcessor.cs" />
+    <Compile Include="Exposed\Interfaces\IEngine.cs" />
+    <Compile Include="Exposed\Interfaces\IHtmlProcessor.cs" />
+    <Compile Include="Exposed\Interfaces\IUAC.cs" />
+    <Compile Include="Exposed\Interfaces\IWebData.cs" />
+    <Compile Include="Exposed\Interfaces\IExeptionHandled.cs" />
+    <Compile Include="Exposed\ExLogSystem.cs" />
+    <Compile Include="Exposed\ExCredentialCache.cs" />
+    <Compile Include="Exposed\Interfaces\ILogSystem.cs" />
+    <Compile Include="Exposed\ExHtmlProcessor.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginUAC.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginCredentialCache.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginCSSProcessor.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginHost.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginHtmlProcessor.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginJSProcessor.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginLogSystem.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginWebData.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginEngine.cs" />
+    <Compile Include="Exposed\PluginInterfaces\IPluginCookieManager.cs" />
+    <Compile Include="General\Common.cs" />
+    <Compile Include="General\Consts.cs" />
+    <Compile Include="Configurations\Systems.cs" />
+    <Compile Include="General\UrlEncoders.cs" />
+    <Compile Include="General\Encoders\ASProxyBase64.cs" />
+    <Compile Include="General\Encoders\Base64.cs" />
+    <Compile Include="General\Encoders\Decoder00E.cs" />
+    <Compile Include="General\Encoders\Decoder3To4.cs" />
+    <Compile Include="General\Encoders\DecoderBase64.cs" />
+    <Compile Include="General\Encoders\Encoder00E.cs" />
+    <Compile Include="General\Encoders\Encoder3To4.cs" />
+    <Compile Include="General\Encoders\EncoderBase64.cs" />
+    <Compile Include="General\Encoders\XXE.cs" />
+    <Compile Include="Pages\PageInMasterLocale.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Update\EngineUpdater.cs" />
+    <Compile Include="Update\PluginsUpdater.cs" />
+    <Compile Include="Update\ProvidersUpdater.cs" />
+    <Compile Include="Update\Updaters.cs" />
+    <Compile Include="Utility\ASProxyPagesFormat.cs" />
+    <Compile Include="BuiltIn\UserAccessControl\CompareIPs.cs" />
+    <Compile Include="Utility\EPluginStopRequest.cs" />
+    <Compile Include="Utility\QValueList.cs" />
+    <Compile Include="Utility\StringStream.cs" />
+    <Compile Include="Utility\HtmlTags.cs" />
+    <Compile Include="Utility\StringCompare.cs" />
+    <Compile Include="Utility\UnicodeUrlDecoder.cs" />
+    <Compile Include="Utility\UrlBuilder.cs" />
+    <Compile Include="Utility\UrlProvider.cs" />
+    <Compile Include="Utility\WebMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="References\ICSharpCode.SharpZipLib.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

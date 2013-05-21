@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentPattern", "ComponentPattern\ComponentPattern.csproj", "{1869F2F4-1537-484D-BEB9-4D125219FBC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePatternShape", "CompositePatternShape\CompositePatternShape.csproj", "{FEE8A06D-A519-4A9F-AE8E-E2A05F00179F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1869F2F4-1537-484D-BEB9-4D125219FBC2}.Debug|x86.ActiveCfg = Debug|x86
+		{1869F2F4-1537-484D-BEB9-4D125219FBC2}.Debug|x86.Build.0 = Debug|x86
+		{1869F2F4-1537-484D-BEB9-4D125219FBC2}.Release|x86.ActiveCfg = Release|x86
+		{1869F2F4-1537-484D-BEB9-4D125219FBC2}.Release|x86.Build.0 = Release|x86
+		{FEE8A06D-A519-4A9F-AE8E-E2A05F00179F}.Debug|x86.ActiveCfg = Debug|x86
+		{FEE8A06D-A519-4A9F-AE8E-E2A05F00179F}.Debug|x86.Build.0 = Debug|x86
+		{FEE8A06D-A519-4A9F-AE8E-E2A05F00179F}.Release|x86.ActiveCfg = Release|x86
+		{FEE8A06D-A519-4A9F-AE8E-E2A05F00179F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

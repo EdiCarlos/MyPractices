@@ -1,0 +1,86 @@
+﻿  
+    
+    class Program
+    {
+        DerivedClass cl;
+        static DerivedClass c1;
+        static void Main(string[] args)
+        {
+            c1 = new DerivedClass();
+            c1.RaiseOnTen += new EventHandler(c1_RaiseOnTen);
+            c1.RaiseOnTwenty += new EventHandler(c1_RaiseOnTwenty);
+            c1.RunLoop();
+            new Program().BeginEvents();
+        }
+
+        static void c1_RaiseOnTwenty(object sender, EventArgs e)
+        {
+            Console.WriteLine("i = 20 in static "+sender+" class");
+        }
+
+        static void c1_RaiseOnTen(object sender, EventArgs e)
+        {
+            Console.WriteLine("i = 10 in stat " + sender+" class");
+        }
+
+        public void BeginEvents()
+        {
+            cl = new DerivedClass();
+            cl.RaiseOnTen += new EventHandler(cl_RaiseOnTen);
+            cl.RaiseOnTwenty += new EventHandler(cl_RaiseOnTwenty);
+            cl.RunLoop();
+        }
+
+        void cl_RaiseOnTwenty(object sender, EventArgs e)
+        {
+            Console.WriteLine("i = 20 "+sender+" class");
+        }
+
+        void cl_RaiseOnTen(object sender, EventArgs e)
+        {
+            Console.WriteLine("i = 20 " + sender + " class");
+        }
+        
+        
+
+        
+    }
+    /// <summary>
+    /// This is a base class which has some events which will be raised by derived class
+    /// </summary>
+    class BaseClass
+    {
+        public event EventHandler RaiseOnTen;
+        public event EventHandler RaiseOnTwenty;
+        public BaseClass()
+        {
+        }
+        protected virtual void OnBeginLoop()
+        {
+            for (int i = 1; i < 30; i++)
+            {
+                if (i == 10)
+                {
+                    RaiseOnTen(this, new EventArgs());
+                }
+                if (i == 20)
+                {
+                    RaiseOnTwenty(this, new EventArgs());
+                }
+            }
+        }
+    }
+    class DerivedClass : BaseClass
+    {
+        public DerivedClass()
+        {
+        }
+        protected override void OnBeginLoop()
+        {
+            base.OnBeginLoop();
+        }
+        public void RunLoop()
+        {
+            OnBeginLoop();
+        }
+    }

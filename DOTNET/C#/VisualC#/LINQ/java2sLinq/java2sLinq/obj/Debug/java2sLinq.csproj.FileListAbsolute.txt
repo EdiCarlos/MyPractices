@@ -1,0 +1,5 @@
+D:\temp\VisualC#\LINQ\java2sLinq\java2sLinq\bin\Debug\java2sLinq.exe
+D:\temp\VisualC#\LINQ\java2sLinq\java2sLinq\bin\Debug\java2sLinq.pdb
+D:\temp\VisualC#\LINQ\java2sLinq\java2sLinq\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\LINQ\java2sLinq\java2sLinq\obj\Debug\java2sLinq.exe
+D:\temp\VisualC#\LINQ\java2sLinq\java2sLinq\obj\Debug\java2sLinq.pdb

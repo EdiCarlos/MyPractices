@@ -1,0 +1,19 @@
+﻿body { color:#444444; font-family:Arial; padding:10px; }
+h1, h2{ font-weight:bold;  padding:10px;margin:0 0 15px 0;}
+h1{ font-family:"Arial Black"; font-size:1.5em; color:Orange; }
+h2{ font-size:1.2em;background:White; color:Orange; }
+
+ul {margin:5px 5px 5px 15px;}
+ul li { list-style-type:square; padding:3px; }
+ul li ul li { list-style-type:circle; }
+
+#working { position:fixed; left:0; top:0; padding:5px 10px; background:Red; font-weight:bold; color:White; }
+
+table.list { width:100%;}
+table.list tr th {font-weight:bold; }
+table.list, table.list tr td, table.list tr th { border:0; padding:1px 5px;  }
+
+.border { border:solid 5px white; padding:10px; margin-top:10px; background:#eeeeee; }
+.container{ background:#eeeeee; padding:10px;}
+.error{ color:Red; font-weight:bold; }
+.success {color:Green; font-weight:bold; }

@@ -1,0 +1,64 @@
+﻿Installing assembly 'D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   logfile = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.InstallLog
+   assemblypath = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe
+Installing service MyCalcService...
+Service MyCalcService has been successfully installed.
+Creating EventLog source MyCalcService in log Application...
+Committing assembly 'D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   logfile = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.InstallLog
+   assemblypath = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe
+Uninstalling assembly 'D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.InstallLog
+   assemblypath = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe
+Removing EventLog source MyCalcService.
+Service MyCalcService is being removed from the system...
+Service MyCalcService was successfully removed from the system.
+Installing assembly 'D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   logfile = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.InstallLog
+   assemblypath = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe
+Installing service MyCalcService...
+Service MyCalcService has been successfully installed.
+Creating EventLog source MyCalcService in log Application...
+Committing assembly 'D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   logfile = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.InstallLog
+   assemblypath = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe
+Uninstalling assembly 'D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.InstallLog
+   assemblypath = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe
+Removing EventLog source MyCalcService.
+Service MyCalcService is being removed from the system...
+Service MyCalcService was successfully removed from the system.
+Installing assembly 'D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   logfile = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.InstallLog
+   assemblypath = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe
+Installing service MyCalcService...
+Service MyCalcService has been successfully installed.
+Creating EventLog source MyCalcService in log Application...
+Rolling back assembly 'D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   i = 
+   logfile = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.InstallLog
+   assemblypath = D:\MyPractices\DOTNET\C#\WindowsService\MathService\MathService\bin\Debug\MathService.exe
+Restoring event log to previous state for source MyCalcService.
+Service MyCalcService is being removed from the system...
+Service MyCalcService was successfully removed from the system.

@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        delegate Boolean CheckString(string str);
+        static void Main()
+        {
+            string [] TestArray = { "L", "J", "K", "G", "P" };
+            IEnumerable<string> istr = TestArray.Where(w => w.Contains("L")).OrderBy(w => w.Length).Select(w => w.ToUpper());
+            foreach(string item in istr)
+            {
+                Console.WriteLine(item + "|");
+            }
+        }
+    }
+}

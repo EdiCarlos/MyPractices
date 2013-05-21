@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+union u_type
+{
+	public:
+	u_type(short int a){ i = a;}
+	u_type(char x, char y) { ch[0] = x; ch[1] = y;}
+  void showValue()
+  {
+  	cout<<ch[0]<<endl;
+  	cout<<ch[1]<<endl;
+  }
+  
+  short int i;
+  char ch[2];
+  
+};
+
+int main()
+{
+	u_type u(100);
+  u_type u1('a', 'b');
+	cout<<"value of x "<<u.i<<endl;
+	u.showValue();
+	cout<<"value of x "<<u1.i<<endl;
+	u1.showValue();
+	return 0;
+}

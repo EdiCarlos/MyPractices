@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAttribute", "..\FirstAttribute\FirstAttribute\FirstAttribute.csproj", "{64A1BF88-060F-4159-A2B5-709ACE836026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{54884FF9-F014-4C48-A525-30025978B641}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64A1BF88-060F-4159-A2B5-709ACE836026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A1BF88-060F-4159-A2B5-709ACE836026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A1BF88-060F-4159-A2B5-709ACE836026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A1BF88-060F-4159-A2B5-709ACE836026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54884FF9-F014-4C48-A525-30025978B641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54884FF9-F014-4C48-A525-30025978B641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54884FF9-F014-4C48-A525-30025978B641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54884FF9-F014-4C48-A525-30025978B641}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

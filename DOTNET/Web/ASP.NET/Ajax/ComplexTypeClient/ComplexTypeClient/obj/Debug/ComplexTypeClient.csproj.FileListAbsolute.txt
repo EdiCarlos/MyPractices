@@ -1,0 +1,5 @@
+D:\MyPractices\Web\WebExamples\Ajax\ComplexTypeClient\ComplexTypeClient\bin\ComplexTypeClient.dll
+D:\MyPractices\Web\WebExamples\Ajax\ComplexTypeClient\ComplexTypeClient\bin\ComplexTypeClient.pdb
+D:\MyPractices\Web\WebExamples\Ajax\ComplexTypeClient\ComplexTypeClient\obj\Debug\ComplexTypeClient.csprojResolveAssemblyReference.cache
+D:\MyPractices\Web\WebExamples\Ajax\ComplexTypeClient\ComplexTypeClient\obj\Debug\ComplexTypeClient.dll
+D:\MyPractices\Web\WebExamples\Ajax\ComplexTypeClient\ComplexTypeClient\obj\Debug\ComplexTypeClient.pdb

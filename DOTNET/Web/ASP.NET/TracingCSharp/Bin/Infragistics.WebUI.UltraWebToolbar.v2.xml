@@ -1,0 +1,1738 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Infragistics.WebUI.UltraWebToolbar.v2</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents" -->
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents.#ctor">
+            <summary>
+            Public constructor for ClientSideEvents object
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents.Reset">
+            <summary>
+            Resets all properties of the <see cref="T:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents"/> class to their default values.
+            </summary>
+            <remarks>
+            <p class="body">Invoke this method to reset all properties of the ClientSideEvents class to their default values.</p>
+            </remarks>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents.CopyFrom(Infragistics.WebUI.UltraWebToolbar.ClientSideEvents)">
+            <summary>
+            Copies the ClientSideEvents object
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents.Click">
+            <summary>
+            Returns or sets a string of text that specifies the name of the JavaScript function to be called
+            when a button is clicked on the client.
+            </summary>
+            <remarks>
+            <p class="body">The name of the JavaScript function can be user defined or native. For example, to specify that the native function alert should be called, this property could be set to "alert('hello')." To specify that a user-defined function, myFunction, should be called, this property would be set to "myFunction."</p>
+            <p class="body">A user-defined function must be defined either inline or in a linked JavaScript (.JS) file and can accept the following parameters:</p>
+            <dl>
+            <dt><i>parameter1</i></dt><dd><p class="body">Object. The CSOM toolbar object calling the function.</p></dd>
+            <dt><i>parameter2</i></dt><dd><p class="body">Object. The CSOM object of the button that was clicked.</p></dd>
+            <dt><i>parameter3</i></dt><dd><p class="body">Object. The CSOM event object.</p></dd>
+            </dl>
+            <p class="body">The parameters above are optional and can be named as desired.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents.InitializeToolbar">
+            <summary>
+            Returns or sets a string of text that specifies the name of the JavaScript function to be called
+            when the internal document object model is being initialized on the client.
+            </summary>
+            <remarks>
+            <p class="body">The name of the JavaScript function can be user defined or native. For example, to specify that the native function alert should be called, this property could be set to "alert('hello')." To specify that a user-defined function, myFunction, should be called, this property would be set to "myFunction."</p>
+            <p class="body">A user-defined function must be defined either inline or in a linked JavaScript (.JS) file, above where the UltraWebToolbar control is defined on the page, and can accept the following parameters:</p>
+            <dl>
+            <dt><i>parameter1</i></dt><dd><p class="body">Object. The CSOM toolbar object calling the function.</p></dd>
+            <dt><i>parameter2</i></dt><dd><p class="body">Object. The CSOM event object.</p></dd>
+            </dl>
+            <p class="body">The parameters above are optional and can be named as desired.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents.MouseOver">
+            <summary>
+            Returns or sets a string of text that specifies the name of the JavaScript function to be called
+            when the cursor enters a button of the toolbar on the client.
+            </summary>
+            <remarks>
+            <p class="body">The name of the JavaScript function can be user defined or native. For example, to specify that the native function alert should be called, this property could be set to "alert('hello')." To specify that a user-defined function, myFunction, should be called, this property would be set to "myFunction."</p>
+            <p class="body">A user-defined function must be defined either inline or in a linked JavaScript (.JS) file and can accept the following parameters:</p>
+            <dl>
+            <dt><i>parameter1</i></dt><dd><p class="body">Object. The CSOM toolbar object calling the function.</p></dd>
+            <dt><i>parameter2</i></dt><dd><p class="body">Object. The CSOM object of the button the cursor entered.</p></dd>
+            <dt><i>parameter3</i></dt><dd><p class="body">Object. The CSOM event object.</p></dd>
+            </dl>
+            <p class="body">The parameters above are optional and can be named as desired.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents.MouseOut">
+            <summary>
+            Returns or sets a string of text that specifies the name of the JavaScript function to be called
+            when the cursor leaves a button of the toolbar on the client.
+            </summary>
+            <remarks>
+            <p class="body">The name of the JavaScript function can be user defined or native. For example, to specify that the native function alert should be called, this property could be set to "alert('hello')." To specify that a user-defined function, myFunction, should be called, this property would be set to "myFunction."</p>
+            <p class="body">A user-defined function must be defined either inline or in a linked JavaScript (.JS) file and can accept the following parameters:</p>
+            <dl>
+            <dt><i>parameter1</i></dt><dd><p class="body">Object. The CSOM toolbar object calling the function.</p></dd>
+            <dt><i>parameter2</i></dt><dd><p class="body">Object. The CSOM object of the button the cursor left.</p></dd>
+            <dt><i>parameter3</i></dt><dd><p class="body">Object. The CSOM event object.</p></dd>
+            </dl>
+            <p class="body">The parameters above are optional and can be named as desired.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.ClientSideEvents.ViewState">
+            <summary>
+            Gets a dictionary of state information (StateBag) that allows you to save and restore the view state of a server control across multiple requests for the same page.
+            </summary>
+            <remarks>
+            <p class="body">A server control's view state is the accumulation of all its property values. In order to preserve these values across HTTP requests, ASP.NET server controls use this property, which is an instance of the StateBag class, to store the property values. The values are then passed as a variable to an HTML hidden input element when subsequent requests are processed. For more information about saving server control view state, see <a href="ms-help://MS.NETFrameworkSDK/cpguidenf/html/cpconmantainingstateincontrol.htm">Maintaining State in a Control</a>.</p>
+            </remarks>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor">
+            <summary>
+               <para>
+                  A custom Type Editor for class styles.  This editor allows the style class
+                  names to be added to a list from which the user can select.  
+                  This is possible because
+                  the property grid is signed with a "reflection" permission that
+                  allows for private reflection.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor.CreateListBox(System.ComponentModel.ITypeDescriptorContext,System.Object)">
+            <summary>
+               <para>
+                    Creates a list box to show in the property grid.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+               <para>
+                    This is an override from UITypeEditor.  The property grid will call this when
+                    it wants to display the editor for the given value.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor.FillValues(System.Windows.Forms.ListBox,System.ComponentModel.ITypeDescriptorContext,System.String)">
+            <summary>
+               <para>
+                    Private function to fill the contents of our list box.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+               <para>
+                    This is an override from UITypeEditor.  The editor style indicates what
+                    type of editor we are providing:  we can either display a dialog or a
+                    drop-down box.  Our editor always shows a drop-down box.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+               <para>
+                    This is an override from UITypeEditor and indicates if we support 
+                    painting a small representation of our value in the property grid.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor.OnListClick(System.Object,System.EventArgs)">
+            <summary>
+               <para>
+                    Called when the user clicks something in the list box.  We close
+                    the drop down at this time.
+               </para>
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor.CursorEditorListBox">
+            <summary>
+               <para>
+                    Owner draw list box displays classess in the list box
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor.CursorEditorListBox.IsInputKey(System.Windows.Forms.Keys)">
+            <summary>
+               <para>
+                    We override this from Control so we can designate
+                    that the return key should be used for input.  In
+                    other words, we want return to come to us, not be
+                    treated as the "OK" to dismiss a dialog.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CursorUIEditor.CursorEditorListBox.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+               <para>
+                    We handle keyboard processing here for the return
+                    key.  We treat this key like a click on the list
+                    box.
+               </para>
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.FilePathUIEditor">
+            <summary>
+               <para>
+                  A custom Type Editor for the tree.  This Editor invokes 
+                  a FileDialog for retrieving url paths
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.FilePathUIEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+               <para>
+                    This is an override from UITypeEditor.  The property grid will call this when
+                    it wants to display the editor for the given value.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.FilePathUIEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+               <para>
+                    This is an override from UITypeEditor.  The editor style indicates what
+                    type of editor we are providing:  we can either display a dialog or a
+                    drop-down box.  Our editor always shows a drop-down box.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.FilePathUIEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+               <para>
+                    This is an override from UITypeEditor and indicates if we support 
+                    painting a small representation of our value in the property grid.
+               </para>
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.Items">
+             <summary>
+            The collection of Items which belong to the UltraWebToolbar object.  The objects in this collection may be one of several different types.  These types include: 
+             TBarButton, TBButtonGroup, TBCustom, TBLabel, TBSeparator, TBTextBox.  All types except for TBCustom are derived from TBObject.  The TBCustom type is derived from WebControl in order 
+             to allow other ASP.NET controls to be hosted within it. Care must be taken when accessing
+             the Items collection to ensure that invalide assignments do not cause an exception.
+             </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase">
+            <summary>
+            Abstract base class for keyed collections 
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.owner">
+            <summary>
+            Contains a reference to the Grid control that owns this collection
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.GetItem(System.Int32)">
+            <summary>
+            Virtual method that returns the object at the specified index
+            </summary>
+            <param name="index"></param>
+            <returns>The object at the index</returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.IndexOf(System.String)">
+            <summary>
+            Returns the index of the item in the collection that has the
+            passed in key or -1 if key not found.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.GetItem(System.String)">
+            <summary>
+            Returns the object with the passed in key
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.Exists(System.String)">
+            <summary>
+            Returns true if an object with this key is already
+            in the collection. Note, if key is null or a zero
+            length string this method returns false
+            
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.ValidateKeyDoesNotExist(System.String)">
+            <summary>
+            Throws an DuplicateNameException if the key already exists
+            </summary>
+            <param name="key">The key to check</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.ValidateKeyDoesNotExist(System.String,Infragistics.WebUI.UltraWebToolbar.IKeyedObject)">
+            <summary>
+            Throws an DuplicateNameException if the key already exists
+            </summary>
+            <param name="key">The key to check</param>
+            <param name="ignoreObject">Don't throw an exception if the key matches this item.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.CreateArray">
+            <summary>
+            Virtual method used by the All 'get' method to
+            create the array it returns.
+            </summary>
+            <returns>The newly created object array</returns>
+            <remarks>This is normally overridden in a derived class to allocate a type safe array.</remarks>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.CopyTo(Infragistics.WebUI.UltraWebToolbar.IKeyedObject[],System.Int32)">
+            <summary>
+            Copies the items into the array
+            </summary>
+            <param name="array">Target array</param>
+            <param name="index">Index where to begin copying</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.Contains(Infragistics.WebUI.UltraWebToolbar.IKeyedObject)">
+            <summary>
+            Returns true if the collection contains this item
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.IndexOf(Infragistics.WebUI.UltraWebToolbar.IKeyedObject)">
+            <summary>
+            Returns the index of the item in the collection
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.InternalAdd(Infragistics.WebUI.UltraWebToolbar.IKeyedObject)">
+            <summary>
+            Appends the object to the collection
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.InternalInsert(System.Int32,Infragistics.WebUI.UltraWebToolbar.IKeyedObject)">
+            <summary>
+            Inserts an object into the collection
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.InternalClear">
+            <summary>
+            Clears the collection
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.InternalRemove(Infragistics.WebUI.UltraWebToolbar.IKeyedObject)">
+            <summary>
+            Removes an item from the collection
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.InternalRemoveAt(System.Int32)">
+            <summary>
+            Removes an item from the collection
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.Owner">
+            <summary>
+            Provides public access to the owning object of this collection
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.IsReadOnly">
+            <summary>
+            Returns true if the collection is read-only
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase.All">
+            <summary>
+            The collection as an array of objects
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.#ctor(Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar)">
+            <summary>
+            Creates a new collection to store items for the specified UltraWebToolbar.
+            </summary>
+            <param name="tbar">The UltraWebToolbar which owns this collection.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddButton(System.String)">
+            <summary>
+            Adds a ToolBar Button to the collection with the specified text.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="text">The text of the toolbar button</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddButton(System.String,System.String)">
+            <summary>
+            Adds a ToolBar Button to the collection with the specified text and key.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="text">The text of the toolbar button</param>
+            <param name="key">The key value of the toolbar button</param>
+            
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddButtonGroup">
+            <summary>
+            Adds a ToolBar Button Group to the collection with the specified text.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddButtonGroup(System.String)">
+            <summary>
+            Adds a ToolBar Button Group to the collection with the specified key.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="key">The key value of the toolbar button group</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddCustom">
+            <summary>
+            Adds a custom control to the collection.  The added custom object serves as a container for adding any asp.net control within it using the the TBCustom.Children.Add method.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddCustom(System.String)">
+            <summary>
+            Adds a custom control to the collection with the specified key.  The added custom object serves as a container for adding any asp.net control within it using the the TBCustom.Children.Add method.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="key">The key value of the toolbar button group</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddLabel(System.String)">
+            <summary>
+            Adds a ToolBar Label to the collection with the specified text.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddLabel(System.String,System.String)">
+            <summary>
+            Adds a ToolBar Label to the collection with the specified text and key.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="key">The key value of the toolbar button group</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddSeparator">
+            <summary>
+            Adds a ToolBar Separator to the collection.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddTextBox(System.String)">
+            <summary>
+            Adds a ToolBar TextBox to the collection with the specified text.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="text">The text of the toolbar button</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.AddTextBox(System.String,System.String)">
+            <summary>
+            Adds a ToolBar TextBox to the collection with the specified text and key.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="text">The text of the toolbar button</param>
+            <param name="key">The key value of the toolbar button</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBObject)">
+            <summary>
+            Adds any object which has a base type of TBObject, to this collection.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="o">Any <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBObject"/> or object derrived from the TBObject class.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)">
+            <summary>
+            Creates a new <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBCustom"/> object, uses it to wrap the specified Control, and adds the new TBCustom object to this collection.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBObject)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="custom">The System.Web.UI.Control to add to this collection.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBCustom)">
+            <summary>
+            Adds the specified <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBCustom"/> object to this collection.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(Infragistics.WebUI.UltraWebToolbar.TBObject)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Add(System.Web.UI.Control)"/>
+            </summary>
+            <param name="custom">The <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBCustom"/> object to add.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.FromKeyButton(System.String)">
+            <summary>
+            Key string indexer for the collection. Uses the Key string to return a TBarButton Item.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.FromKeyButtonGroup(System.String)">
+            <summary>
+            Key string indexer for the collection. Uses the Key string to return a TBButtonGroup Item.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.FromKeyLabel(System.String)">
+            <summary>
+            Key string indexer for the collection. Uses the Key string to return a TBLabel Item.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.FromKeyTextBox(System.String)">
+            <summary>
+            Key string indexer for the collection. Uses the Key string to return a TBTextBox Item.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.FromKeyCustom(System.String)">
+            <summary>
+            Key string indexer for the collection. Uses the Key string to return a TBCustom Item.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.FromKeySeparator(System.String)">
+            <summary>
+            Key string indexer for the collection. Uses the Key string to return a TBSeparator Item.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.FromKey(System.String)">
+            <summary>
+            Property indexer for the collection. Uses the Key string to return an Item object.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.Remove(System.Object)">
+            <summary>
+            Removes the specified object from this collection.
+            </summary>
+            <param name="o">The object to remove from this collection.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.Insert(System.Int32,Infragistics.WebUI.UltraWebToolbar.TBObject)">
+            <summary>
+            Insert the specified <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBObject"/> into this collection at the specified index.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Insert(System.Int32,System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Insert(System.Int32,Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </summary>
+            <param name="index">The index to insert the <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBObject"/> at.</param>
+            <param name="o">The non-null <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBObject"/> to be inserted</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.Insert(System.Int32,System.Web.UI.Control)">
+            <summary>
+            Wraps the Control using the TBCustom class, and inserts it into this collection.
+            </summary>
+            <remarks><p class="body">This is the same as:</p>
+            <p class="code">Insert(index,new TBCustom(o));</p>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Insert(System.Int32,Infragistics.WebUI.UltraWebToolbar.TBObject)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Insert(System.Int32,Infragistics.WebUI.UltraWebToolbar.TBCustom)"/>
+            </remarks>
+            <param name="index">The index to insert the System.Web.UI.Control at.</param>
+            <param name="o">The non-null System.Web.UI.Control to be inserted.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.Insert(System.Int32,Infragistics.WebUI.UltraWebToolbar.TBCustom)">
+            <summary>
+            Inserts the TBCustom object into this collection, at the specified index.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Insert(System.Int32,System.Web.UI.Control)"/>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Insert(System.Int32,Infragistics.WebUI.UltraWebToolbar.TBObject)"/>
+            </summary>
+            <param name="index">The index where this <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBCustom"/> object should be inserted.</param>
+            <param name="custom">The <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBCustom"/> object which should be inserted.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.Index(System.Object)">
+            <summary>
+            Used to determine the index of the specified object in this collection.
+            </summary>
+            <param name="item">The object whose index you are looking for.</param>
+            <returns>The objects index in this colletion, or -1 if the object is not in this collection.</returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Items.Clone">
+            <summary>
+            Creates a deep copy of this collection. 
+            </summary>
+            <remarks><p class="body">This method will create a new collection and create clones of each item in the original collection, and add them to the new Items collection.</p>
+            <p class="note">Note: Any custom objects (<see cref="T:Infragistics.WebUI.UltraWebToolbar.TBCustom"/>) will not be deep cloned, instead a reference will be added to the original object.</p></remarks>
+            <returns>A deep copy of this Items collection.</returns>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Items.IsReadOnly">
+            <summary>
+            Returns a Boolean value indicating whether the collection is read-only.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Items.Item(System.Int32)">
+            <summary>
+            Returns the object located at the specified index.
+            </summary>
+            <remarks><p class="body">If the index is out of range, null will be returned.  Otherwise the object which is located at the specified index, is returned.</p>
+            <p class="note">Note: Indexes start at 0, and can not be negative.</p> 
+            </remarks>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.IKeyedObject">
+            <summary>
+            Interface used by sub objects that will be part of a keyed 
+            collection (where each item can be accessed either through 
+            a zero based index or a string key)
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.IKeyedObject.OnRemovedFromCollection(Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase)">
+            <summary>
+            Called when this object is being removed from the passed
+            in collection. 
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.IKeyedObject.OnAddedToCollection(Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase)">
+            <summary>
+            Called when this object is being added to the passed
+            in collection. 
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.IKeyedObject.Key">
+            <summary>
+            The key to use to access this item in the collection
+            </summary>
+            
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.KeyedObjectBase">
+            <summary>
+            Abstract base class which implements IKeyedSubObject for sub objects
+            that will be part of a keyed collection (where each item can be accessed
+            either through a zero based index or a string key) 
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectBase.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectBase.#ctor(System.String)">
+            <summary>
+            Constructor that takes a key value
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectBase.ResetKey">
+            <summary>
+            Sets the key back to null
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectBase.OnRemovedFromCollection(Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase)">
+            <summary>
+            Called when this object is being removed from the passed
+            in collection. The default implementation nulls out the
+            primaryCollection if the passed in collection matches
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.KeyedObjectBase.OnAddedToCollection(Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase)">
+            <summary>
+            Called when this object is being added to the passed
+            in collection. The default implementation sets the internal
+            primaryCollection reference if it hasn't already been set
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.KeyedObjectBase.Key">
+            <summary>
+            The Key of the item in its collection
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.KeyedObjectBase.PrimaryCollection">
+            <summary>
+            The primary collection that owns this object
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.RenderDownLevelToolbar">
+            <summary>
+            Summary description for RenderDownLevelToolbar.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.RendererBase">
+            <summary>
+            Summary description for RendererBase.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.RenderUpLevelToolBar">
+            <summary>
+               Summary description for RenderUpLevelToolBar.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.LocalizedCategoryAttribute.GetLocalizedString(System.String)">
+            <summary>
+            Returns the localized category name
+            </summary>
+            <param name="value">Name of the category to retreive</param>
+            <returns>The localized string value</returns>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.TextAlign">
+            <summary>
+               Enumeration of the alignment styles supported for text within a toolbar item.
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.TextAlign.Left">
+            <summary>
+            Item will be aligned to the left margin of the toolbar element.
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.TextAlign.Center">
+            <summary>
+            Item will be aligned in the center of the toolbar element.
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.TextAlign.Right">
+            <summary>
+            Item will be aligned to the right margin of the toolbar element.
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.TextAlign.Justify">
+            <summary>
+            Item will be distributed within the space allocated for it.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.Rectangle">
+            Class for representing rectangular coordinates and allowing them to be displayed
+            and edited in the PropertyGrid.
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Rectangle.ToString">
+            <summary>
+            <p class="body">Returns a string representation of an object.</p>
+            </summary>
+            <returns>
+            <p class="body">String</p>
+            </returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Rectangle.IsEmpty">
+            <summary>
+            <p class="body">Returns a Boolean value that determines whether an object is set to Nothing or Null.</p>
+            </summary>
+            <returns>
+            <p class="body">True, if the object is set to Nothing or Null; otherwise, False.</p>
+            </returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.Rectangle.Copy(Infragistics.WebUI.UltraWebToolbar.Rectangle)">
+            <summary>
+            <p class="body">Copies a specified object's property settings to an object.</p>
+            </summary>
+            <param name="rect">
+            <p class="body">A reference to the source <b>Rectangle</b> object, from which the property values are received.</p>
+            </param>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Rectangle.Top">
+            <summary>
+            <p class="body">Returns or sets a value that determines the y-coordinate of the top edge of a <b>Rectangle</b> object.</p>
+            </summary>
+            <remarks>
+            <p class="body">The <b>Bottom</b> property returns or sets the y-coordinate of the bottom edge of a <b>Rectangle</b> object.</p>
+            <p class="body">The <b>Left</b> property returns or sets the x-coordinate of the left edge of a <b>Rectangle</b> object.</p>
+            <p class="body">The <b>Right</b> property returns or sets the x-coordinate of the right edge of a <b>Rectangle</b> object.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Rectangle.Left">
+            <summary>
+            <p class="body">Returns or sets a value that determines the x-coordinate of the left edge of a <b>Rectangle</b> object.</p>
+            </summary>
+            <remarks>
+            <p class="body">The <b>Right</b> property returns or sets the x-coordinate of the right edge of a <b>Rectangle</b> object.</p>
+            <p class="body">The <b>Top</b> property returns or sets the y-coordinate of the top edge of a <b>Rectangle</b> object.</p>
+            <p class="body">The <b>Bottom</b> property returns or sets the y-coordinate of the bottom edge of a <b>Rectangle</b> object.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Rectangle.Right">
+            <summary>
+            <p class="body">Returns or sets a value that determines the x-coordinate of the right edge of a <b>Rectangle</b> object.</p>
+            </summary>
+            <remarks>
+            <p class="body">The <b>Left</b> property returns or sets the x-coordinate of the left edge of a <b>Rectangle</b> object.</p>
+            <p class="body">The <b>Top</b> property returns or sets the y-coordinate of the top edge of a <b>Rectangle</b> object.</p>
+            <p class="body">The <b>Bottom</b> property returns or sets the y-coordinate of the bottom edge of a <b>Rectangle</b> object.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Rectangle.Bottom">
+            <summary>
+            <p class="body">Returns or sets a value that determines the y-coordinate of the bottom edge of a <b>Rectangle</b> object.</p>
+            </summary>
+            <remarks>
+            <p class="body">The <b>Top</b> property returns or sets the y-coordinate of the top edge of a <b>Rectangle</b> object.</p>
+            <p class="body">The <b>Left</b> property returns or sets the x-coordinate of the left edge of a <b>Rectangle</b> object.</p>
+            <p class="body">The <b>Right</b> property returns or sets the x-coordinate of the right edge of a <b>Rectangle</b> object.</p>
+            </remarks>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.Style">
+            <summary>
+            Class for implementing CSS style attributes and functionality
+            </summary>
+            
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Style.BackgroundImage">
+            <summary>
+            <p class="body">Returns or sets a string of text that determines the URL of an image to be displayed in the background of an object.</p>
+            </summary>
+            <remarks>
+            <p class="body">Use this property to specify the CSS class to render the object on the client. It will be rendered as the CSS background-image:url attribute.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Style.CustomRules">
+            <summary>
+            <p class="body">Returns or sets a string of text that determines additional CSS rules to apply to the object.</p>
+            </summary>
+            <remarks>
+            <p class="body">Use this property to specify the CSS class to render the object on the client. It will be rendered as the CSS padding attribute.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Style.Cursor">
+            <summary>
+            <p class="body">Returns or sets a string of text that determines the type of cursor displayed for an object when the mouse pointer is over it.</p>
+            </summary>
+            <remarks>
+            <p class="body">Use this property to specify the cursor to use for the object on the client. It will be rendered as the CSS cursor attribute.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Style.Margin">
+            <summary>
+            <p class="body">Returns a reference to or sets the <b>Margin</b> object that determines the amount of space for an object's margins.</p>
+            </summary>
+            <remarks>
+            <p class="body">Margins can be set for the entire object or for one or more of its sides.</p>
+            <p class="body">Use this property to specify the margins to render the object with on the client. It will be rendered as the CSS margin attribute.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.Style.Padding">
+            <summary>
+            <p class="body">Returns a reference to or sets the <b>Padding</b> object that determines the amount of space to insert between an object and its margin.</p>
+            </summary>
+            <remarks>
+            <p class="body">Padding can be set for the entire object or for one or more of its sides.</p>
+            <p class="body">Use this property to specify the padding to render the object with on the client. It will be rendered as the CSS padding attribute.</p>
+            </remarks>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.StylePresets">
+            <summary>
+            Summary description for StylePresets.
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.StylePresets.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.StylePresets.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.StylePresets.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.TagConverter">
+            <summary>
+            Summary description for TagConverter.
+            </summary>
+            
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.TBarButton">
+            <summary>
+            The TBarButton object is the mos common type of item used in the toolbar.  It renders like a button that the user can press to invoke a command.
+            The TBarButton behaves much like an HTML button, but gives you the ability to include images, keep state, and customize borders.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.TBObject">
+            <summary>
+            The base class for all Toolbar objects except for TBCustom.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBObject.#ctor">
+            <summary>
+            Default no parameter constructor.  
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBObject.Clone">
+            <summary>
+            Creates and returns a deep copy of this object.
+            </summary>
+            <returns>A deep copy of this object.</returns>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBObject.Key">
+            <summary>
+            Unique string identifier for this Item within the Items collection
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBObject.ID">
+            <summary>
+            Returns a unique ID for this item. 
+            </summary>
+            <remarks><p class="body">It is composed of the UltraWebToolbar's id, and this object's <see cref="M:Infragistics.WebUI.UltraWebToolbar.Items.Index(System.Object)"/> in the <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.Items"/> collection at runtime.</p>
+            </remarks>  
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBObject.Parent">
+             <summary>
+             Used to get a reference to this object's parent. 
+             </summary>
+             <remarks><p class="body"> This could be the UltraWebToolbar, or if this object is a <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBarButton"/> inside of a <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/>, the <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/> which it is part of.
+            </p></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBObject.ToolBar">
+            <summary>
+            Returns the Toolbar control that owns the toolbar item.
+            </summary>
+            
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBObject.Tag">
+            <summary>
+            Used to store extra data for specific development needs.
+            </summary>
+            
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBarButton.#ctor">
+            <summary>
+            Creates a new Button with <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Text"/> "Button".
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.TBarButton.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBarButton.#ctor(System.String)">
+            <summary>
+            Creates a new button with the specified <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Text"/>.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.TBarButton.#ctor"/>
+            </summary>
+            <param name="text">The <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Text"/> to be used for this button.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBarButton.Pressed(System.Boolean)">
+            <summary>
+            Set's a buttons <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/> state.
+            </summary>
+            <param name="state">Use true to select, false to un-select.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBarButton.Clone">
+            <summary>
+            Creates a deep copy of this button.
+            </summary>
+            <returns>A deep copy of this button.</returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBarButton.ToString">
+            <summary>
+            Overridden to give a short description of this class.
+            </summary>
+            <returns>A description of this class.</returns>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Enabled">
+            <summary>
+            Determines if this button should appear enabled and react to user input.
+            </summary>
+            <remarks><p class="body">When Enabled is set to false, a button's appearance will stay static.  No <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.HoverStyle"/> or <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.SelectedStyle"/> will be applied.  If the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.DisabledImage"/> property is set, that image will be displayed instead of the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Image"/>.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.DisabledImage"/></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected">
+            <summary>
+              Determines if a button is currently selected or not.
+            </summary>
+            <remarks><p class="body">If the button belongs to a <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/>, the group's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.SelectedButton"/> will be set to this button.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.SelectedButton"/></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Text">
+            <summary>
+               The text which will be displayed when this button is rendered.
+            </summary>	
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Image">
+            <summary>
+            A relative path to the Image which should be displayed for this button.
+            </summary>
+            <remarks><p class="body">When set, this image will be displayed along with the button's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Text"/>.  If the button is <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/>, the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.SelectedImage"/> will be displayed, if set.</p>
+            <p class="note">Note: If the <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ImageDirectory"/> property is set, this path should be relative to the ImageDirectory.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ImageDirectory"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.SelectedImage"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.HoverImage"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.DisabledImage"/>
+            </remarks>
+            
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.TargetFrame">
+            <summary>
+            Used to determine what frame the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.TargetURL"/> should be displayed in.
+            </summary>
+            <remarks><p class="body">You can specify an HTML frame, an object such as an IFrame, or use "_blank" to launch in a new window.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.TargetURL"/>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.TargetURL">
+            <summary>
+            A URL which will be navigated to, when this button is clicked.
+            </summary>
+            <remarks><p class="body">When set, the TargetURL will be displayed in the frame specified by the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.TargetFrame"/> property.  The TargetUrl should be fully qualifyied, for example "http://www.infragistics.com".  You can also use this property to make a script call.  For example:</p>
+            <p class="code">TargetURL="javascript:myFunction()";</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.TargetFrame"/>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.DisabledImage">
+            <summary>
+            A relative path to the Image which should be displayed for this button when <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Enabled"/> =False.
+            </summary>
+            <remarks><p class="body">When set, this image will be displayed along with the button's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Text"/>, if the button is disabled (<see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Enabled"/>=False).</p>
+            <p class="note">Note: If the <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ImageDirectory"/> property is set, this path should be relative to the ImageDirectory.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ImageDirectory"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.SelectedImage"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.HoverImage"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Image"/>
+            </remarks>
+            
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.ToolTip">
+            <summary>
+               The text which should be displayed when this object is moused over.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.ImageAlign">
+            <summary>
+               If an image should be displayed, this determines the alignment of it.  All alignment settings are with respect to the text of the item.
+            </summary>
+            <remarks><p class="note">Note: Certain settings, such as Right, may cause undesired results, due to the way browsers position the image.</p></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.ToggleButton">
+            <summary>
+            Determines if the button should keep its state.  When true, the button will remain depressed after first being clicked.  Clicking the button again will restore the button to its normal state.
+            </summary>
+            <remarks><p class="body">Setting this to True, will cause the button to be selected on the first click, and the second click will unselect the button.  When set to False, a button will only stay selected while the mouse button is pressed down.</p></remarks>
+            
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.DefaultStyle">
+            <summary>
+            The style which will be used when rendering this button in the UltraWebToolbar.
+            </summary>
+            <remarks>
+            <p class="body">The DefaultStyle is the style which is applied to a button when not selected, or moused over.  When set, DefaultStyle overrides <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.DefaultStyle"/>, on the UltraWebToolbar object.  If the button is part of a <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/>, this style overrides the TBButtonGroup's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.DefaultStyle"/>.  To force the UltraWebToolbar to your your own style, specify the name of your class in the CssClass property.  To force the use of no style, specify "none" for the CssClass property.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.SelectedStyle"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.HoverStyle"/>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.HoverStyle">
+            <summary>
+            The style which will be used when this button is moused over.
+            </summary>
+            <remarks>
+            <p class="body">The HoverStyle is the style which is applied to a button when moused over, if not <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/>.  If the button is part of a <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/>, this style overrides the TBButtonGroup's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.HoverStyle"/>.  When set, HoverStyle overrides <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.HoverStyle"/>, on the UltraWebToolbar object.  To force the UltraWebToolbar to your your own style, specify the name of your class in the CssClass property.  To force the use of no style, specify "none" for the CssClass property.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.SelectedStyle"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.DefaultStyle"/>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.SelectedStyle">
+            <summary>
+            The style which will be used when this button is <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/>.
+            </summary>
+            <remarks>
+            <p class="body">The SelectedStyle is the style which is applied to a button when <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/>.  If the button is part of a <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/>, this style overrides the TBButtonGroup's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.SelectedStyle"/>.  When set, SelectedStyle overrides <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.SelectedStyle"/>, on the UltraWebToolbar object.  To force the UltraWebToolbar to your your own style, specify the name of your class in the CssClass property.  To force the use of no style, specify "none" for the CssClass property.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.DefaultStyle"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.HoverStyle"/>
+            </remarks>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup">
+            <summary>
+             A ButtonGroup represents a series of <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBarButton"/> items which maintain a mutually exclusive selection state.  Only one button within the group is depressed at one time.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.Clone">
+            <summary>
+            Creates a deep copy of this object.
+            </summary>
+            <returns>A deep copy of this object.</returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.#ctor">
+            <summary>
+            Default Constructor, initializes an empty collection of buttons.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.ToString">
+            <summary>
+            A description of the object.
+            </summary>
+            <returns>Provides a short description of the object.</returns>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.SelectedButton">
+            <summary>
+            A reference to the selected button in this group.
+            </summary>
+            <remarks><p class="body">Setting this property will also set the button's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/> property to the proper value.  </p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.Buttons">
+            <summary>
+            The collection of buttons which belong to this group.
+            </summary>
+            <remarks><p class="body">This property will return a collection of <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBarButton"/> objects.  You can use this property to access any of the buttons which belong to this group.  For example, the following would return the first button in the group.</p>
+            <p class="code">TBarButton myButton=buttongroup.Buttons[0]; //buttongroup is a <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/> object</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.DefaultStyle">
+            <summary>
+            The style which will be used when rendering a button in this group.
+            </summary>
+            <remarks>
+            <p class="body">The DefaultStyle is the style which is applied to a button in this group, when not selected, or moused over.  When set, DefaultStyle overrides <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.DefaultStyle"/>, on the UltraWebToolbar object, and is overridden by <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.DefaultStyle"/> on the <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBarButton"/> object.  To force the UltraWebToolbar to your your own style, specify the name of your class in the CssClass property.  To force the use of no style, specify "none" for the CssClass property.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.SelectedStyle"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.HoverStyle"/>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.HoverStyle">
+            <summary>
+            The style which will be used when a button in this group is moused over.
+            </summary>
+            <remarks>
+            <p class="body">The HoverStyle is the style which is applied to a button in this group when moused over, if not <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/>.  When set, HoverStyle overrides <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.HoverStyle"/>, on the UltraWebToolbar object, and is overridden by <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.HoverStyle"/> on the <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBarButton"/> object.  To force the UltraWebToolbar to your your own style, specify the name of your class in the CssClass property.  To force the use of no style, specify "none" for the CssClass property.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.DefaultStyle"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.SelectedStyle"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.SelectedButton"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.SelectedStyle">
+            <summary>
+            The style which will be used when a button in this group is clicked.
+            </summary>
+            <remarks>
+            <p class="body">The SelectedStyle is the style which is applied to a button in this group when <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/>.  When set, SelectedStyle overrides <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.SelectedStyle"/>, on the UltraWebToolbar object, and is overridden by <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.SelectedStyle"/> on the <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBarButton"/> object.  If the button's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.ToggleButton"/> property is true, the SelectedStyle will be present until the button is clicked again.  Otherwise, the SelectedStyle only lasts as long as the mouse button is pressed down.  To force the UltraWebToolbar to your your own style, specify the name of your class in the CssClass property.  To force the use of no style, specify "none" for the CssClass property.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.DefaultStyle"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.HoverStyle"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup.SelectedButton"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Selected"/>
+            </remarks>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.CheckItems">
+            <summary>
+            Internal class used to store Buttons of a particular <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/>.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CheckItems.Index(Infragistics.WebUI.UltraWebToolbar.TBarButton)">
+            <summary>
+            The index of the button in it's owner group.
+            </summary>
+            <remarks><p class="body">If the button does not belong to this group, -1 will be returned.</p></remarks>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CheckItems.Add(Infragistics.WebUI.UltraWebToolbar.TBarButton)">
+            <summary>
+            Adds a button to this collection.
+            </summary>
+            <remarks><p class="body">When a button is added to the collection, it is linked to the <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/> which parents this collection.</p></remarks>
+            <param name="button">The button to be added.</param>
+            <returns>The button which was added.</returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CheckItems.Add(System.String)">
+            <summary>
+            Adds a button to this collection.
+            </summary>
+            <remarks><p class="body">When a button is added to the collection, it is linked to the <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/> which parents this collection.</p></remarks>
+            <param name="button">The button to be added.</param>
+            <returns>The button which was added.</returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CheckItems.Add(System.String,System.String)">
+            <summary>
+            Adds a button to this collection.
+            </summary>
+            <remarks><p class="body">When a button is added to the collection, it is linked to the <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/> which parents this collection.</p></remarks>
+            <param name="button">The button to be added.</param>
+            <returns>The button which was added.</returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CheckItems.Remove(System.Object)">
+            <summary>
+            Removes a button from this group.
+            </summary>
+            <param name="ob">The button to be removed.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CheckItems.Insert(System.Int32,Infragistics.WebUI.UltraWebToolbar.TBarButton)">
+            <summary>
+            Insertes a button into this group at the specified index.
+            </summary>
+            <param name="index">The position to insert the button at.</param>
+            <param name="ob">The button to be inserted.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.CheckItems.OnInsertComplete(System.Int32,System.Object)">
+            <summary>
+            Overridden to set the newly added button's parent to the group which it belongs to.
+            </summary>
+            <remarks><p class="body">If you override this method, you must call base.OnInsertComplete for the UltraWebToolbar to continue to work properly.</p></remarks>
+            <param name="index"></param>
+            <param name="o"></param>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.CheckItems.Parent">
+            <summary>
+            The <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBButtonGroup"/> which this collection belongs to.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.CheckItems.Item(System.Int32)">
+            <summary>
+            Returns the button located at the specified index.
+            </summary>
+            <remarks><p class="body">If the index is out of range, null will be returned.  Otherwise the group which is located at the specified index, is returned.</p>
+            <p class="note">Note: Indexes start at 0, and can not be negative.</p> 
+            </remarks>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.MySubObjectBuilder">
+            <summary>
+            Class built for design time support.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.TBCustom">
+            <summary>
+            This class is used to encapsulate WebControl objects, so that they can be placed inside of the UltraWebToolbar.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBCustom.Clone">
+            <summary>
+            Returns a new object, based on this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBCustom.#ctor">
+            <summary>
+            Creates an empty object.
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.TBCustom.primaryCollection">
+            
+            IKeyedObject interface implementation
+            
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBCustom.OnRemovedFromCollection(Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase)">
+            <summary>
+            Called when this object is being removed from the passed
+            in collection. The default implementation nulls out the
+            primaryCollection if the passed in collection matches
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBCustom.OnAddedToCollection(Infragistics.WebUI.UltraWebToolbar.KeyedObjectCollectionBase)">
+            <summary>
+            Called when this object is being added to the passed
+            in collection. The default implementation sets the internal
+            primaryCollection reference if it hasn't already been set
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBCustom.#ctor(System.Web.UI.Control)">
+            
+            
+            <summary>
+            Encapsulates the Control object passed in, to be used inside of the UltraWebToolbar.
+            </summary>
+            <remarks><p class="body">This constructor creates a new TBCustom object which wraps the specified control.</p>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.TBCustom.#ctor"/>
+            </remarks>
+            <param name="custom">A System.Web.UI.Control object you wish to be rendered inside of the UltraWebToolbar.</param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBCustom.ToString">
+            <summary>
+            A string description of this object.
+            </summary>
+            <returns>A description of this object.</returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBCustom.AddParsedSubObject(System.Object)">
+            <summary>
+            Overridden to provide design time support.
+            </summary>
+            <param name="o">The object to be added.</param>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBCustom.Key">
+            <summary>
+            The Key of the item in its collection
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBCustom.Tag">
+            <summary>
+            Used to store extra data for specific development requirements.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBCustom.Width">
+            <summary>
+            Used to store extra data for specific development requirements.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBCustom.Children">
+            <summary>
+            Collection which stores the Control which this TBCustom object is wrapping.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.TBLabel">
+            <summary>
+            The Label object is a Text object which is mainly static in nature.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBLabel.#ctor">
+            <summary>
+            Creates a new label object and Sets it's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.Text"/> to "Label", and it's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.ImageAlign"/> to Left.
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.TBLabel.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBLabel.#ctor(System.String)">
+            <summary>
+            Creates a new Label object and sets it's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.Text"/> property to the specified value.
+            </summary>
+            <remarks><p class="body">This constructor basically follows the same logic as the default, no parameter constructor.  In addition, however, it sets the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.Text"/> of this Label to the specified value.</p>
+            <seealso cref="M:Infragistics.WebUI.UltraWebToolbar.TBLabel.#ctor"/></remarks>
+            <param name="Text">The value to be used for this Label's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.Text"/></param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBLabel.ToString">
+            <summary>
+            A short description of this object.
+            </summary>
+            <returns>A short description of this object.</returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBLabel.Clone">
+            <summary>
+            Returns a Deep copy of this.
+            </summary>
+            <returns>A deep copy of this.</returns>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.Text">
+            <summary>
+               The text which will be displayed when this object is rendered.
+            </summary>	 
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.Image">
+            <summary>
+            A relative path to the Image which should be displayed along with this Label's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.Text"/>.
+            </summary>
+            <remarks><p class="body">When set, this image will be displayed along with the Label's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.Text"/>.  It's alignment with respect to the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.Text"/> is determined by the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.ImageAlign"/> property.</p>
+            <p class="note">Note: If the <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ImageDirectory"/> property is set, this path should be relative to the ImageDirectory.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ImageDirectory"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.ImageAlign"/>
+            </remarks>
+            
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.DefaultStyle">
+            <summary>
+            The style which will be used when rendering this Label in the UltraWebToolbar.
+            </summary>
+            <remarks>
+            <p class="body">When set, DefaultStyle overrides <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.DefaultStyle"/>, on the UltraWebToolbar object.  To force the UltraWebToolbar to your your own style, specify the name of your class in the CssClass property.  To force the use of no style, specify "none" for the CssClass property.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.ToolTip">
+            <summary>
+            The text which will be displayed when this object is moused over.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBLabel.ImageAlign">
+            <summary>
+               If the Image property is set, this will determine how the image should be aligned.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.TBSeparator">
+            <summary>
+            The Separator object is used as a visual separator between items in the ToolBar.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBSeparator.#ctor">
+            <summary>
+            Default no paramaeter Constructor.  Simply creates a new object.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBSeparator.ToString">
+            <summary>
+            A short description of this object.
+            </summary>
+            <returns>A short description of this object.</returns>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBSeparator.Image">
+            <summary>
+            A relative path to the Image which should be used as a graphical separator.
+            </summary>
+            <remarks><p class="body">When set, this image will be displayed as a separator, instead of the default bar.  </p>
+            <p class="note">Note: If the <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ImageDirectory"/> property is set, this path should be relative to the ImageDirectory.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ImageDirectory"/>
+            </remarks>
+            
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.TBTextBox">
+            <summary>
+            Constructor for TBTextBox.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBTextBox.#ctor">
+            <summary>
+            Creates a new TextBox with maxlength=20 and textmode set to SingleLine.
+            </summary>
+            <remarks><p class="body">By default, the CssClass property of the TextBox's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.DefaultStyle"/> is set to "none".</p></remarks>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.TBTextBox.ToString">
+            <summary>
+               A brief description of this object.
+            </summary>
+            <returns>A brief description of this object.</returns>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.DefaultStyle">
+            <summary>
+            The style which will be used when rendering this TextBox in the UltraWebToolbar.
+            </summary>
+            <remarks>
+            <p class="body">When set, DefaultStyle overrides <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.DefaultStyle"/>, on the UltraWebToolbar object.  To force the UltraWebToolbar to your your own style, specify the name of your class in the CssClass property.  To force the use of no style, specify "none" for the CssClass property.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.Text">
+            <summary>
+               The text Which will be displayed inside of this TextBox when rendered.
+            </summary>
+            <remarks><p class="body">The way in which the text is rendered depends upon the value of the<see cref="T:System.Web.UI.WebControls.TextBoxMode"/> property.</p>
+            <seealso cref="T:System.Web.UI.WebControls.TextBoxMode"/></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.TextMode">
+            <summary>
+               Determines the behavior of this TextBox.  
+            </summary>
+            <remarks><p class="body">Values come from System.Web.UI.WebControls.TextBoxMode.</p></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.MaxLength">
+            <summary>
+               The Maximum lenght a string entered into this TextBox can be.
+            </summary>
+            <remarks><p class="body">This limit is only checked at Run-Time.</p></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.ToolTip">
+            <summary>
+              The text which will be displayed when this object is moused over.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.Rows">
+             <summary>
+            Determines how many rows of text can be entered when the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.TextMode"/> = MultiLine.
+             </summary>
+             <remarks>
+             <p class="body">This property is ignored if <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.TextMode"/> is not set to MultiLine.  Use zero to specify an infinite number of rows.</p>
+             <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.TextMode"/>
+             <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.Columns"/>
+            </remarks>
+            
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.Columns">
+            <summary>
+            Use this property to determine how many characters wide the TextBox should be.
+            </summary>
+            <remarks>
+            <p class="body">This property determines the width of the TextBox in characters.  Use the <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.MaxLength"/> property set a limit on the number of characters which an be entered.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.MaxLength"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.TextMode"/>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.TBTextBox.Rows"/>
+            </remarks>
+            
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.ToolbarEditor">
+            <summary>
+               <para>
+                  A custom Type Editor for the nodes collection.  This Editor invokes 
+                  a dialog for editing nodes and children
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.ToolbarEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+               <para>
+                    This is an override from UITypeEditor.  The property grid will call this when
+                    it wants to display the editor for the given value.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.ToolbarEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+               <para>
+                    This is an override from UITypeEditor.  The editor style indicates what
+                    type of editor we are providing:  we can either display a dialog or a
+                    drop-down box.  Our editor always shows a drop-down box.
+               </para>
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.ToolbarEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+               <para>
+                    This is an override from UITypeEditor and indicates if we support 
+                    painting a small representation of our value in the property grid.
+               </para>
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.ToolbarEditorForm">
+            <summary>
+            Summary description for StyleDesigner.
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.ToolbarEditorForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.ToolbarEditorForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.ToolbarEditorForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.RenderProps">
+            <summary>
+            Class that encapsulates the majority of rendering attributes for the toolbar.
+            This class is instantiated by the toolbar and is passed
+            to the renderer whenever the toolbar needs to be rendered.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbarLicenseAttribute.LicensedWithProducts">
+            <summary>
+            Return the list of products that this control can be licensed with
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.UltraToolbarDesigner">
+            <summary>
+            Summary description for ServerTreeDesigner.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.UltraWebControlDesigner">
+            <summary>
+            The base designer used for Infragistics components
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebControlDesigner.ShowAboutBox(System.Object,System.EventArgs)">
+            <summary>
+            Shows the about box
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebControlDesigner.Verbs">
+            <summary>
+            Adds the about verb to the collection
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.BrowserTarget">
+             <summary>
+            <p class="body"> Used to determine what type of HTML should be rendered.</p>
+             </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.BrowserTarget.Auto">
+            <summary>
+            <p class="body">Determine what type of HTML to render, by finding out the browser type and version.</p>
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.BrowserTarget.DownLevel">
+             <summary>
+            <p class="body"> Render HTML that can be seen in a DownLevel browser only.  This setting is useful to determine what a downlevel browser will see, without having one installed on your machine.</p>
+             </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.BrowserTarget.UpLevel">
+            <summary>
+            <p class="body">Render HTML that will only display properly in an UpLevel browser, which supports DHTML.</p>
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.GroupButtonEvent">
+            <summary>
+            Event object for events from TBButtonGroup objects.
+            The TBButtonGroup object contain a collection of TBarButton objects that act as a group.  Only one TBarButton in the group can be selected at one time.  The GroupButtonEvent object is passed as the second argument to the GroupButtonClicked event.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.GroupButtonEvent.Button">
+            <summary>
+            The Button which was clicked causing this event to fire.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.GroupButtonEvent.Group">
+            <summary>
+            The parent Group which this Button belongs to.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.GroupButtonEvent.Data">
+            <summary>
+            Used to store any extra information needed for this event.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.ButtonEvent">
+            <summary>
+            Event object used for ButtonClick events on the server. The GroupButtonClicked event fires for TBarButtons which belong to a ButtonGroup.
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.ButtonEvent.buttonDown">
+            <summary>
+            A boolean value that indicates if the button is currently depressed.
+            
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.ButtonEvent.Button">
+            <summary>
+            Returns the TBarButton object which was clicked on.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.ButtonEvent.Data">
+            <summary>
+            Used to store any extra information needed for this event.
+            </summary>
+        </member>
+        <member name="F:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.postData">
+            <summary>
+               UltraWebToolbar default constuctor.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.CreateControlStyle">
+            <summary>
+            Creates a style object for the control of type Infragistics.WebUI.UltraWebToolbar.Style.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.Dispose">
+            <summary>
+            Handles the disposing of resources within the control on shutdown.  
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.PreRenderToolbar(System.Object,System.EventArgs)">
+            <summary><p class="body">Determines and initializes the proper renderer according to the BrowserTarget value.</p>
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Render this control to the output parameter specified.
+            </summary>
+            <param name="output"> The HTML writer to write out to </param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.OnGroupButtonClicked(Infragistics.WebUI.UltraWebToolbar.TBButtonGroup,Infragistics.WebUI.UltraWebToolbar.TBarButton)">
+            <summary>
+               Raise the ButtonClicked event to all listeners.
+            </summary>
+            
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.getButtonFromID(System.String)">
+            <summary>
+               Parse the client updates and apply them to the proper items.
+            </summary>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.RaisePostBackEvent(System.String)">
+            <summary>
+            Used to fire events on the Server, when an action occurs on the Client.
+            </summary>
+            <param name="eventArgument"></param>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Called when ViewState is enabled, to create the ServerSide object from the ClientSide data.
+            </summary>
+            <param name="postDataKey"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.LoadViewState(System.Object)">
+            <summary>
+            Loads all properties and sub-objects for the UltraWebToolbar from text.
+            </summary>
+            <param name="savedState"></param>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ControlStyle">
+            <summary>
+            Overrides the WebControl ControlStyle property to return a Style of type Infragistics.WebUI.UltraWebToolbar.Style containing additional style properties.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.Movable" -->
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.MergeStyles">
+            <summary>
+            Determines if Hover and Selected styles will automatically be merged with the DefaultStyle of the Toolbar and Toolbar Items.
+            </summary>
+            <remarks><p class="body">When this property is set to true, the Hover and Selected styles will take on the values of the default style unless overridden for particular property values.</p>
+            <p class="body">By default, this property is set to true so that style settings are blended automatically.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.RenderAnchors">
+            <summary>
+            Determines whether a button's <see cref="P:Infragistics.WebUI.UltraWebToolbar.TBarButton.Text"/> should be rendered as an HTML Anchor tag.
+            </summary>
+            <remarks><p class="body">
+            If the <see cref="!:TBarButton.TargetUrl"/> is not specified, the anchor will not be rendered.  In a downlevel browser, anchors will always be rendered.
+            </p></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ItemWidthDefault">
+            <summary>
+            Determines the default width of items within the toolbar when not explicitly set within the item's default style.  When this property is not set and the Item.Style.Width is also not set, the widths of items are automatically determined by the browser to occupy the horizontal width of the toolbar equally for each item.
+            To set the widths of individual items, use the DefaultStyle.Width property setting.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ItemPadding">
+            <summary>
+             Determines the amount of CellPadding used for the HTML Table that contains the toolbar items.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ItemSpacing">
+            <summary>
+             Determines the amount of CellSpacing used for the HTML Table that contains the toolbar items.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.TextAlign">
+            <summary>
+            Determines the alignment of the items within the toolbar.   Values for this property include Left, Right, Center and Justified.  
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.BackgroundImage">
+            <summary>
+            An image Url that specifies an image to be displayed on the background of the toolbar.  This image will appear wherever there is space not occupied by other toolbar items.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.OnTop">
+            <summary>
+            Determines the Z-Index placement of the UltraWebToolbar.
+            </summary>
+            <remarks><p class="body">When set to true, the UltraWebToolbar will always be rendered as the topmost object.  This is especially useful when <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.Movable"/> is set to true, so that the user always see the entire toolbar.</p></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.BrowserTarget">
+            <summary>
+            Sets which type of browser the html should be rendered for. Possible values are: Auto (Default), UpLevel, DownLevel.
+            </summary>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.MovableImage">
+            <summary><p class="body">The image which when clicked on, will allow the UltraWebTool bar to be repositioned.</p>
+            </summary>
+            <remarks><p class="body">If this is not set, a vertical bar will be drawn by default.</p>
+            <p class="note">Note: The image is only rendered if <see cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.Movable"/> is set to True.</p>
+            <seealso cref="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.Movable"/></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.DefaultStyle">
+            <summary><p class="body">
+            The default style used for any item in the UltraWebToolbar.</p>
+            </summary>
+            <remarks><p class="body">This style is overridden by the item's DefaultStyle.</p></remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.HoverStyle">
+             <summary> <p class="body">The style to be applied to a TBarButton item when moused over.
+             </p></summary>
+             <remarks><p class="body">By default, the only object which supports a HoverStyle is the <see cref="T:Infragistics.WebUI.UltraWebToolbar.TBarButton"/>.</p>
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.SelectedStyle" -->
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.JavaScriptFileName">
+            <summary>
+            <p class="body"> A relative path to the JavaScript file.</p>
+            </summary>
+            <remarks><p class="body">The default JavaScript file is ig_webtoolbar.js.  By default, this file is located in a virtual directory called /ig_webbars2_scripts.</p>
+            <p class="note">Note: The JavaScript file is required for the UltraWebToolbar to function properly at runtime.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.JavaScriptFileNameCommon">
+            <summary>
+            <p class="body"> A relative path to the Infragistics common JavaScript file.</p>
+            </summary>
+            <remarks><p class="body">The default common JavaScript file is ig_csom.js and is located in a virtual directory called /ig_common/scripts.</p>
+            <p class="note">Note: The common JavaScript file is required for the UltraWebToolbar to function properly at runtime.</p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ImageDirectory">
+            <summary>
+            <p class="body">A directory where images can be found.</p>
+            </summary>
+            <remarks><p class="body">When this property is set, any image specified for an UltraWebToolbar item, will be relative to this directory.</p>
+            <p class="body">To specify an image in the current application directory, use a ./ prefix for the image name as in: ./myimage.gif</p>
+            </remarks>
+            
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.Items">
+            <summary><p class="body">The collection of items for this UltraWebToolbar.  The Items collections can be made up of different object types depending on requirements.  The most common type is the TBarButton.  Other types include: TBButtonGroup, TBLabel, TBSeparator, TBTextBox and TBCustom.  All types, with the exception of TBCustom, derive from a common base type: TBObject.  The TBCustom type derives from <b>System.Web.UI.Control</b> in order to support child controls.
+            </p></summary>
+            <remarks><p class="body">This collection is created when the UltraWebToolbar is created.  
+            </p><p class="note">This property is read-only. </p>
+            </remarks>
+        </member>
+        <member name="P:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ClientSideEvents">
+            <summary>
+            Object holder for client-side event names.
+            </summary>
+            <remarks>
+            <p class="body">Client-side events are events that occur in the web-browser, such as mouse-related events. Because the events are local to the browser, they must be implemented in JavaScript. Client-side events do not require a new connection to the server or a refresh of the current page. The other type of events found in the UltraWebToolbar are <i>server-side events.</i> These events require the browser to make a new connection with the server in response to some event that occurs at the control level on the server, such as the addition of a new row of data.</p>
+            <p class="body">When you are implementing client-side events in your application, your JavaScript routines should use the names provided by the <b>ClientSideEvents</b> property.</p>
+            </remarks>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.ButtonClickedEventHandler">
+            <summary>
+            Event handler signature for the ButtonClicked event.
+            </summary>
+        </member>
+        <member name="T:Infragistics.WebUI.UltraWebToolbar.UltraWebToolbar.GroupButtonClickedEventHandler">
+            <summary>
+            Event handler signature for the GroupButtonClicked event.
+            </summary>
+            
+        </member>
+    </members>
+</doc>

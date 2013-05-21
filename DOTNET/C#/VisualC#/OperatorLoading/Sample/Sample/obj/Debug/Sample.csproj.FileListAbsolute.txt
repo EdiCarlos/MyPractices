@@ -1,0 +1,5 @@
+D:\temp\VisualC#\OperatorLoading\Sample\Sample\bin\Debug\Sample.exe
+D:\temp\VisualC#\OperatorLoading\Sample\Sample\bin\Debug\Sample.pdb
+D:\temp\VisualC#\OperatorLoading\Sample\Sample\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\VisualC#\OperatorLoading\Sample\Sample\obj\Debug\Sample.exe
+D:\temp\VisualC#\OperatorLoading\Sample\Sample\obj\Debug\Sample.pdb

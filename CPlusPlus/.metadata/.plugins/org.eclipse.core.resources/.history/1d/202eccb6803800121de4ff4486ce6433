@@ -1,0 +1,12 @@
+
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main()
+{
+ string str = "arif khan";
+ cout<<str<<endl;
+ return 0;
+}

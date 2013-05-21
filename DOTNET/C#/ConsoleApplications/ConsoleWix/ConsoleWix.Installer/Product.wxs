@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="f18415db-ad0e-404e-9a3e-1907d0e62609" Name="ConsoleWix.Installer" Language="1033" Version="1.0.0.0" Manufacturer="ConsoleWix.Installer" UpgradeCode="2491187e-1c67-46b7-8a1b-e0cfc8ddbdf3">
+    <Package InstallerVersion="200" Compressed="yes" />
+
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="Syncada" Name="Syncada">
+        <Directory Id="Console" Name="ConsoleWix">
+          <Directory Id="INSTALLLOCATION" Name="ConsoleWix.Installer">
+            <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+            <!--<Component Id="ProductComponent" Guid="EE3A4274-E021-45C1-A845-406BBB211BCC">-->
+            <!-- TODO: Insert files, registry keys, and other resources here. -->
+            <!--</Component>-->
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <Feature Id="ProductFeature" Title="ConsoleWix.Installer" Level="1">
+      <!-- TODO: Remove the comments around this ComponentRef element and the Component above in order to add resources to this installer. -->
+      <ComponentRef Id="ConsoleWix.exe" />
+      <ComponentRef Id="ConsoleWix.pdb" />
+
+      <!-- Note: The following ComponentGroupRef is required to pull in generated authoring from project references. -->
+      <!--<ComponentGroupRef Id="Product.Generated" />-->
+    </Feature>
+  </Product>
+  <Fragment>
+    <DirectoryRef Id="INSTALLLOCATION">
+      <Component Id="ConsoleWix.exe" Guid="904D8BCC-6468-4AFD-B3E4-A42AE8A6BFE6">
+        <File Id="ConsoleWix.exe" Source="$(var.ConsoleWix.TargetDir)\ConsoleWix.exe" />
+      </Component>
+      <Component Id="ConsoleWix.pdb" Guid="7463A088-B359-434F-8EBE-41AA0699DE39">
+        <File Id="ConsoleWix.pdb" Source="$(var.ConsoleWix.TargetDir)\ConsoleWix.pdb" />
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+</Wix>

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="litDescriptionResource1.Text" xml:space="preserve">
+    <value>Here you can find some guidance for setup and exactly what each administration area does.</value>
+  </data>
+  <data name="litInitSetup2Resource1.Text" xml:space="preserve">
+    <value>Initial Setup</value>
+  </data>
+  <data name="litInitSetupResource1.Text" xml:space="preserve">
+    <value>Initial Setup</value>
+  </data>
+  <data name="litText1Resource1.Text" xml:space="preserve">
+    <value>&lt;ol&gt;
+            &lt;li&gt;
+                &lt;div class="bold"&gt;Set up AD relational permissions on the &lt;a href="permissions.aspx"&gt;permissions page&lt;/a&gt;&lt;/div&gt;
+                Without permissions set, all users will have the lowest access level of 1
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;div class="bold"&gt;Set the groups in your system on the &lt;a href="groups.aspx"&gt;groups page&lt;/a&gt;&lt;/div&gt;
+                No tickets can be assigned if there are no groups to assign to
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;div class="bold"&gt;Adjust system settings on the &lt;a href="settings.aspx"&gt;settings&lt;/a&gt; page&lt;/div&gt;
+                For the system to work correctly, the following settings must be set correctly (others are optional):
+                &lt;ul class="sublist"&gt;
+                    &lt;li&gt;Admin Contact Email Address Required Invalid Email Address&lt;/li&gt;
+                    &lt;li&gt;SMTP Server&lt;/li&gt;
+                    &lt;li&gt;Attachment Storage Directory&lt;/li&gt;
+                &lt;/ul&gt;
+                 &lt;span class="bold"&gt;*You may need to set your &amp;#39;Attachment Storage Directory' permissions to allow authenticated users to write&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;</value>
+  </data>
+  <data name="litText2Resource1.Text" xml:space="preserve">
+    <value>This section ties user Active Directory membership to their access level in the system. The
+&lt;a href="../help.aspx"&gt;permission system is explained here&lt;/a&gt;.
+&lt;br /&gt;&lt;br /&gt;
+&lt;span class="bold"&gt;Add Group&lt;/span&gt; - This button allows you to add a new AD group to the system. This group must already be part of Active Directory. 
+All users that are members of a specified group will be granted that corresponding access level with the highest level taking priority.
+&lt;br /&gt;&lt;br /&gt;
+&lt;span class="bold"&gt;Update AD&lt;/span&gt; - Due to the large size of many AD forests (this forest has &lt;%= Utils.Settings.Get("ad_groups") %&gt;) the groups are cached in a local xml file instead of querying AD every log on. 
+This greatly increases the performance of the system, but will not recognize new/deleted groups in AD until this button is pushed and the cache is refreshed.</value>
+  </data>
+  <data name="litText3Resource1.Text" xml:space="preserve">
+    <value>Designate the groups and sub-groups your users will be able to join and assign tickts to.  
+The required access level of the sub-groups is the lowest access level that a user can have and be able to assign tickets to, or join that group. 
+View all sub-groups by selecting a different group in the drop-down menu.
+The
+&lt;a href="../help.aspx"&gt;permission system is explained here&lt;/a&gt;.
+&lt;br /&gt;&lt;br /&gt;
+&lt;span class="bold"&gt;Add Group&lt;/span&gt; - This button allows you to add a new group to the system.
+A group is nothing more than a upper-level classification, think of it as a &amp;#39;folder&amp;#39; to keep your sub-groups in.
+&lt;br /&gt;&lt;br /&gt;
+&lt;span class="bold"&gt;Add Sub-Group&lt;/span&gt; - Sub-groups are what groups users are members of.
+If a sub-group gets a ticket assigned to it, an email will be sent to the &amp;#39;Mail to&amp;#39; email address for that group.
+Sub-groups also decide what you see in &lt;a href="../my_issues.aspx"&gt;my issues&lt;/a&gt;.</value>
+  </data>
+  <data name="litText4Resource1.Text" xml:space="preserve">
+    <value>This is simply an area to view and delete users as well as assign/revoke administration privileges.
+In order to avoid a broken system, you can not remove your own administration privileges.
+&lt;br /&gt;&lt;br /&gt;
+In an effort to keep this as simple as possible.  There will be no adding of users by the administration.
+This is possible since permissions are handled via Active Directory and the &lt;a href="permissions.aspx"&gt;permissions&lt;/a&gt; you set.
+Adding of users is all done automatically when a users first logs on, not allowing them to do anything until they fill out their profile.
+Users are unable to use anything but their logon name, so identity checking is not a problem.</value>
+  </data>
+  <data name="litText5Resource1.Text" xml:space="preserve">
+    <value>&lt;ul&gt;
+    &lt;li&gt;
+        &lt;span class="bold"&gt;General Settings&lt;/span&gt;&lt;br /&gt;
+        This is where you set your general settings to make the site work, like site title, SMTP server, domain controller, etc.
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class="bold"&gt;User Email Settings&lt;/span&gt;&lt;br /&gt;
+        Here you decide whether or not to send out automatic email notifications for things such as ticket assignment.  
+        You also set whether or not to restrict email address domains for users.
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class="bold"&gt;Access Level Names and Descriptions&lt;/span&gt;&lt;br /&gt;
+        Here you set the names and descriptions of the access levels used within the system.
+        These have no functional purpose, but should make it easier for the administrators and users to understand the levels. 
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class="bold"&gt;Import/Export Settings&lt;/span&gt;&lt;br /&gt;
+        Allows you to import/export your themes and faq contents via xml file.
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class="bold"&gt;Appearance&lt;/span&gt;&lt;br /&gt;
+        Allows you to change the appearance of the entire system.
+        Also allows you to save your current appearance as a theme.
+    &lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="litText6Resource1.Text" xml:space="preserve">
+    <value>You&amp;#39;re looking at it!
+Information about the administration interface and setup of Slick Ticket.</value>
+  </data>
+  <data name="litText7Resource1.Text" xml:space="preserve">
+    <value>Allows a quick overview of ticket status throughout your organization.
+Show statistics such as average ticket age, average closure time, etc.</value>
+  </data>
+</root>

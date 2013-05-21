@@ -1,0 +1,18 @@
+using System;
+
+class ReverseNumber
+{
+	public static void Main()
+	{
+		int i = 123456789;
+		string str = i.ToString();
+	  string newstr = string.empty;
+	  foreach(char st in str)
+	  {
+	  	newstr += st;
+	      Console.WriteLine(st);
+	  }
+	  Console.WriteLine(newstr);
+	  
+	}
+}

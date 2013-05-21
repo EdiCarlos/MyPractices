@@ -1,0 +1,20 @@
+#define endln "\n";
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int value1 = 10;
+int value2 = 20;
+int value3 = !value2;
+
+cout<<"value1 = " << value1<<endln;
+cout<<"value2 = " << !value2<<endln;
+cout<<"value3 = " << !value3<<endln;
+cout<<"value2 = " << value2<<endln;
+value3 = 100;
+cout<<"value3 = " <<value3<<endln;
+
+
+}

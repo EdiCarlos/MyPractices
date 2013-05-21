@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+using System.Linq.Expressions;
+
+namespace ExtensionMethods
+{
+    class Program
+    {
+        delegate Boolean CheckString(string str);
+        static void Main()
+        {
+            string [] TestArray = { "One", "Two", "Three", "Four", "Five" };
+            string [] ResultArray = FilterString(TestArray, testArr => testArr.Length > 3);
+            foreach (string item in ResultArray)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        private static string[] FilterString(string[] TestArray, CheckString Filter)
+        {
+            ArrayList list = new ArrayList();
+            foreach (string testStr in TestArray)
+            {
+                if (Filter(testStr))
+                    list.Add(testStr);
+            }
+            return (string[])list.ToArray(typeof(string));
+        }
+    }
+}

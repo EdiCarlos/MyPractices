@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int x = 19;
+	
+	if(x == 19)
+	{
+		int y = 20;
+		}
+		cout<<"Value of x + y is "<<x + y<<endl;
+	return 0;
+}

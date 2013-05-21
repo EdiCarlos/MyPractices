@@ -1,0 +1,7 @@
+D:\MyPractices\DOTNET\C#\UnitTestingSamples\HelloWorldSample\HelloWorldTestProject\bin\Debug\HelloWorldTestProject.dll
+D:\MyPractices\DOTNET\C#\UnitTestingSamples\HelloWorldSample\HelloWorldTestProject\bin\Debug\HelloWorldTestProject.pdb
+D:\MyPractices\DOTNET\C#\UnitTestingSamples\HelloWorldSample\HelloWorldTestProject\bin\Debug\HelloWorldSample.exe
+D:\MyPractices\DOTNET\C#\UnitTestingSamples\HelloWorldSample\HelloWorldTestProject\bin\Debug\HelloWorldSample.pdb
+D:\MyPractices\DOTNET\C#\UnitTestingSamples\HelloWorldSample\HelloWorldTestProject\obj\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\UnitTestingSamples\HelloWorldSample\HelloWorldTestProject\obj\Debug\HelloWorldTestProject.dll
+D:\MyPractices\DOTNET\C#\UnitTestingSamples\HelloWorldSample\HelloWorldTestProject\obj\Debug\HelloWorldTestProject.pdb

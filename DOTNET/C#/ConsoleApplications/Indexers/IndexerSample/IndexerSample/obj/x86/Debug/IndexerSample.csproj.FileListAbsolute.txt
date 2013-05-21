@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\C#\ConsoleApplications\Indexers\IndexerSample\IndexerSample\bin\Debug\IndexerSample.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\Indexers\IndexerSample\IndexerSample\bin\Debug\IndexerSample.pdb
+D:\MyPractices\DOTNET\C#\ConsoleApplications\Indexers\IndexerSample\IndexerSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\C#\ConsoleApplications\Indexers\IndexerSample\IndexerSample\obj\x86\Debug\IndexerSample.exe
+D:\MyPractices\DOTNET\C#\ConsoleApplications\Indexers\IndexerSample\IndexerSample\obj\x86\Debug\IndexerSample.pdb

@@ -1,0 +1,40 @@
+﻿@model MyBlog.Models.Blog
+
+@{
+    ViewBag.Title = "AddBlog";
+}
+
+<h2>AddBlog</h2>
+
+@using (Html.BeginForm("AddBlog", "Blog"))
+{
+
+    if (!ViewBag.Success)
+    {
+        if (!String.IsNullOrEmpty(ViewBag.BlogException))
+        {
+            <label>Blog creation failed.</label>
+        }
+    <fieldset>
+        <ul>
+            <li>
+                @Html.LabelFor(e => e.Title)
+                @Html.TextBoxFor(e => e.Title)
+                @Html.ValidationMessageFor(e => e.Title)
+            </li>
+            <li>
+                @Html.LabelFor(e => e.Description)
+                @Html.TextBoxFor(e => e.Description)
+                @Html.ValidationMessageFor(e => e.Description)
+            </li>
+        </ul>
+        <input type="submit"
+            value="Add Blog" />
+
+    </fieldset>
+    }
+    else
+    {    
+    <label>Blog Created SuccessFully: @ViewBag.BlogTitle</label>
+    }
+}

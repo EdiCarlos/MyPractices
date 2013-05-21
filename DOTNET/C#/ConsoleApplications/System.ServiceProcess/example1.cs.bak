@@ -1,0 +1,28 @@
+using System;
+using System.Diagnostics;
+using System.ServiceProcess;
+
+class exe
+{
+	static void Main()
+	{
+		ServiceController myservice = new ServiceController();
+		myservice.ServiceName = "Marimba";
+		string svcname = myservice.Status.ToString();
+	
+	  if(svcname.Equals("Running"))
+	  {
+	  	Console.WriteLine("Service is Running");
+	  	Console.WriteLine("Stop Services");
+	  	
+	  	myservice.Stop();
+	  	Console.WriteLine("Service Stopped");
+	  }
+	  else
+	  {
+	  	Console.WriteLine("Starting service");
+	  	myservice.Start();
+	  }
+		Console.WriteLine(svcname);
+	}
+}

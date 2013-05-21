@@ -1,0 +1,16 @@
+
+#include <iostream>
+#include <string.h>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+// string str = "arif khan";
+// string str1 = "bannehasan";
+// cout<<str<<endl;
+// cout<<str +" " + str1<<endl;
+	cout<<system("ping 10.63.9.91")<<endl;
+ return 0;
+}

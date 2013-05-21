@@ -1,0 +1,5 @@
+D:\MyPractices\DOTNET\WCF\ImperativeService\ImperativeService\bin\Debug\ImperativeService.exe
+D:\MyPractices\DOTNET\WCF\ImperativeService\ImperativeService\bin\Debug\ImperativeService.pdb
+D:\MyPractices\DOTNET\WCF\ImperativeService\ImperativeService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyPractices\DOTNET\WCF\ImperativeService\ImperativeService\obj\x86\Debug\ImperativeService.exe
+D:\MyPractices\DOTNET\WCF\ImperativeService\ImperativeService\obj\x86\Debug\ImperativeService.pdb

@@ -1,0 +1,19 @@
+#include <cassert>
+#include <iomanip>
+#include <iostream>
+#include <ostream>
+
+using namespace std;
+
+int main()
+{
+	float pi = 1.1;
+	int i;
+	
+	cout<<setfill('0')<<showbase<<hex<<internal<<endl;
+ 
+ assert(sizeof(int) == sizeof(float));
+ 	i = reinterpret_cast<int&> (pi);
+ 	cout<<"pi base = "<<setw(10)<<i<<endl;
+	return 0;
+}

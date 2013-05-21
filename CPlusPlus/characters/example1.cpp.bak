@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+char *fullname = "arif khan bannehasan";
+
+cout<<*fullname<<endl;
+int sample = 100;
+int *number = new int[100];
+number = &sample;
+cout<<*number;
+}

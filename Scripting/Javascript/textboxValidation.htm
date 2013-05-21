@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+    function Validate()
+    {
+     var trimmed = Text1.value.replace(/^\s+|\s+$/g, '');
+     if(Text1.value.match(/^\s+|\s+$/g))
+     {
+     alert("true");
+     alert(trimmed.toString().length);
+     if(trimmed.toString().length == 0)
+     {
+     alert("cannot have empty value in textbox");
+     }
+     }
+     else
+     {
+     alert("false");
+    }
+    }
+    
+    
+     </script>
+</head>
+<body>
+<div id="lbl" style="border: solid 1px black">Starts With</div>
+<div id="Div1" style="border: solid 1px black">Starts With</div>
+
+    <input id="Text1" type="text"  />
+    <input id="button1" type="button" value="Submit" onclick="Validate();" />
+    
+    
+</body>
+</html>

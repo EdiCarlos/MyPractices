@@ -1,0 +1,3 @@
+obj\x86\Debug\_SimpleExpenseReport.g.cs
+obj\x86\Debug\FlowChartActivityForAmount.g.cs
+obj\x86\Debug\MainWindowActivity.g.cs

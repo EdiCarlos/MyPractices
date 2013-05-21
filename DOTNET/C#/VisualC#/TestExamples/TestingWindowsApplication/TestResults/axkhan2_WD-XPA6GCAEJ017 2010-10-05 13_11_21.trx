@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fb420d61-40fe-4b91-b189-682e3e4e8704" name="axkhan2@WD-XPA6GCAEJ017 2010-10-05 13:11:21" runUser="US\axkhan2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="ef5a1ccc-2fa5-48ba-b05f-bcc3e7ca5974">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="D:\temp\VisualC#\TestExamples\TestingWindowsApplication\TestResults\axkhan2_WD-XPA6GCAEJ017 2010-10-05 13_11_21">
+      <DeploymentItem filename="D:\temp\VisualC#\TestExamples\TestingWindowsApplication\TestingWindowsApplication\bin\Debug\TestingWindowsApplication.exe" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2010-10-05T13:11:21.6318950+05:30" queuing="2010-10-05T13:11:24.0068950+05:30" start="2010-10-05T13:11:24.2100200+05:30" finish="2010-10-05T13:11:24.9287700+05:30" />
+  <TestDefinitions>
+    <UnitTest name="sumTest" storage="d:\temp\visualc#\testexamples\testingwindowsapplication\mytestproject\bin\debug\mytestproject.dll" id="548fc899-721e-cb00-c5fa-4871ca5834c5">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="2ea745af-24c0-4dfc-b7f5-381d07b6c8fe" />
+      <TestMethod codeBase="D:\temp\VisualC#\TestExamples\TestingWindowsApplication\MyTestProject\bin\Debug\MyTestProject.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MyTestProject.Form1Test, MyTestProject" name="sumTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="548fc899-721e-cb00-c5fa-4871ca5834c5" executionId="2ea745af-24c0-4dfc-b7f5-381d07b6c8fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2ea745af-24c0-4dfc-b7f5-381d07b6c8fe" testId="548fc899-721e-cb00-c5fa-4871ca5834c5" testName="sumTest" computerName="WD-XPA6GCAEJ017" duration="00:00:00.2312950" startTime="2010-10-05T13:11:24.3037700+05:30" endTime="2010-10-05T13:11:24.8350200+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at MyTestProject.Form1Test.sumTest() in D:\temp\VisualC#\TestExamples\TestingWindowsApplication\MyTestProject\Form1Test.cs:line 78
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

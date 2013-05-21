@@ -1,0 +1,33 @@
+﻿<Window x:Class="RoutedEventArgsSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel>
+        <!--<Grid DockPanel.Dock="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200*" />
+            </Grid.RowDefinitions>
+            <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="174,73,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" MouseEnter="button1_MouseEnter" MouseLeave="button1_MouseLeave"/>
+        </Grid>-->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File" />
+            <MenuItem Header="_Edit" />
+            <MenuItem Header="_View" />
+            <MenuItem Header="_Windows" />
+            <MenuItem Header="_Help" />
+        </Menu>
+        <StackPanel DockPanel.Dock="Right">
+            <TextBlock Width="20" Height="100"/>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Left">
+            <TextBlock Width="20" Height="100"/>
+        </StackPanel>
+        <Grid>
+            
+        </Grid>
+            <StatusBar Name="statusBar" DockPanel.Dock="Bottom" Height="30" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" VerticalAlignment="Bottom">
+            <TextBlock Name="txtMessage" Width="300" Height="20"/>
+        </StatusBar>
+    </DockPanel>
+    
+</Window>
